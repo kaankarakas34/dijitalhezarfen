@@ -14,50 +14,50 @@ import BlogSection from '../components/BlogSection';
 import EventsSection from '../components/EventsSection';
 import PortfolioReferences from '../components/PortfolioReferences';
 
-export default function Home({ onOpenApplyModal, onFocusSection }) {
+export default function Home({ onOpenApplyModal, onFocusSection, lang }) {
   return (
     <div className="space-y-4 animate-fade-in">
       {/* Section 1: Hero */}
-      <Hero onOpenApplyModal={onOpenApplyModal} />
+      <Hero lang={lang} onOpenApplyModal={onOpenApplyModal} />
       
       {/* Section 3: Pillars */}
-      <AboutPillars />
+      <AboutPillars lang={lang} />
 
       {/* Section 2: Audiences */}
-      <Audiences onOpenApplyModal={onOpenApplyModal} onFocusSection={onFocusSection} />
+      <Audiences lang={lang} onOpenApplyModal={onOpenApplyModal} onFocusSection={onFocusSection} />
 
       {/* Section 3 cont: Ecosystem */}
-      <Ecosystem />
+      <Ecosystem lang={lang} />
 
       {/* Section 4: Entrepreneur Tunnel */}
-      <EntrepreneurTunnel onOpenApplyModal={onOpenApplyModal} />
+      <EntrepreneurTunnel lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
       {/* Section 6: Learning vs Application */}
-      <LearningVsApp />
+      <LearningVsApp lang={lang} />
 
       {/* Section 7: Application Services */}
-      <AppServices onOpenApplyModal={onOpenApplyModal} />
+      <AppServices lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
       {/* Section 5: Modular Academy Programs */}
-      <OtherPrograms onOpenApplyModal={onOpenApplyModal} />
+      <OtherPrograms lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
       {/* Section 8: Startup Stages progress */}
-      <StartupStages onOpenApplyModal={onOpenApplyModal} />
+      <StartupStages lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
       {/* Section 9: Growth & Venture */}
-      <GrowthInvestment onOpenApplyModal={onOpenApplyModal} />
+      <GrowthInvestment lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
       {/* Section 10: Media */}
-      <MediaSection />
+      <MediaSection lang={lang} />
 
       {/* Blog Section */}
-      <BlogSection />
+      <BlogSection lang={lang} />
 
       {/* Section 11: Events */}
-      <EventsSection onOpenApplyModal={onOpenApplyModal} />
+      <EventsSection lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
       {/* Section 12: Team & Portfolio Results */}
-      <PortfolioReferences />
+      <PortfolioReferences lang={lang} />
     </div>
   );
 }

@@ -40,6 +40,35 @@ function App() {
   const [modalType, setModalType] = useState('genel');
   const [initialStageId, setInitialStageId] = useState('');
   const [currentPath, setCurrentPath] = useState(window.location.hash.slice(1) || '/');
+  const [lang, setLang] = useState('tr');
+
+  useEffect(() => {
+    // 1. Check local storage
+    const savedLang = localStorage.getItem('lang');
+    if (savedLang) {
+      setLang(savedLang);
+    } else {
+      // 2. Browser language check
+      const browserLang = navigator.language || navigator.userLanguage;
+      const isBrowserTr = browserLang && browserLang.toLowerCase().startsWith('tr');
+      const initialLang = isBrowserTr ? 'tr' : 'en';
+      setLang(initialLang);
+      localStorage.setItem('lang', initialLang);
+    }
+
+    // 3. Geolocation IP check (hybrid fallback)
+    fetch('https://ipapi.co/json/')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.country_code) {
+          if (data.country_code !== 'TR' && !savedLang) {
+            setLang('en');
+            localStorage.setItem('lang', 'en');
+          }
+        }
+      })
+      .catch((err) => console.log('Geolocation detection failed:', err));
+  }, []);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -64,6 +93,11 @@ function App() {
     window.location.hash = path;
   };
 
+  const handleLanguageChange = (newLang) => {
+    setLang(newLang);
+    localStorage.setItem('lang', newLang);
+  };
+
   const handleOpenApplyModal = (type = 'genel', stageId = '') => {
     setModalType(type);
     setInitialStageId(stageId);
@@ -86,73 +120,73 @@ function App() {
   const renderPage = () => {
     switch (currentPath) {
       case '/':
-        return <Home onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
+        return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
       case '/dijital-hezarfen':
-        return <About onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <About lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler':
-        return <ForStartups onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <ForStartups lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler/fikir-asamasi':
-        return <Fikir onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <Fikir lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler/pre-seed':
-        return <PreSeed onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <PreSeed lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler/seed':
-        return <Seed onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <Seed lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler/series-a-ve-sonrasi':
-        return <SeriesA onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <SeriesA lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler/scale-up':
-        return <Scaleup onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <Scaleup lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/akademi':
-        return <AkademiHome onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <AkademiHome lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/akademi/girisimcilik-tuneli':
-        return <Tunnel onOpenApplyModal={handleOpenApplyModal} />;
+        return <Tunnel lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/akademi/egitimler':
-        return <Egitimler onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <Egitimler lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/akademi/pazarlama-satis':
-        return <AkademiCategory type="pazarlama-satis" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <AkademiCategory lang={lang} type="pazarlama-satis" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/akademi/teknoloji-yapay-zeka':
-        return <AkademiCategory type="teknoloji-yapay-zeka" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <AkademiCategory lang={lang} type="teknoloji-yapay-zeka" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/akademi/finans-hukuk-yonetim':
-        return <AkademiCategory type="finans-hukuk-yonetim" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <AkademiCategory lang={lang} type="finans-hukuk-yonetim" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/akademi/kurumsal':
-        return <AkademiCategory type="kurumsal" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <AkademiCategory lang={lang} type="kurumsal" onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/uygulama':
-        return <UygulamaHome onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <UygulamaHome lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/uygulama/yazilim-mvp':
-        return <UygulamaMVP onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaMVP lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/uygulama/yapay-zeka-otomasyon':
-        return <UygulamaAI onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaAI lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/uygulama/dijital-pazarlama-growth':
-        return <UygulamaGrowth onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaGrowth lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/uygulama/satis-crm':
-        return <UygulamaSatis onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaSatis lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/uygulama/finans-hukuk':
-        return <UygulamaFinans onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaFinans lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/uygulama/yonetim-organizasyon':
-        return <UygulamaYonetim onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaYonetim lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/uygulama/medya-tasarim':
-        return <UygulamaMedya onOpenApplyModal={handleOpenApplyModal} />;
+        return <UygulamaMedya lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/buyume-yatirim':
-        return <GrowthVenture onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
+        return <GrowthVenture lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/buyume-yatirim/yatirima-hazirlik':
-        return <YatirimHazirlik onOpenApplyModal={handleOpenApplyModal} />;
+        return <YatirimHazirlik lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/buyume-yatirim/uluslararasilasma':
-        return <Globallesme onOpenApplyModal={handleOpenApplyModal} />;
+        return <Globallesme lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/kurumsal':
-        return <Kurumsal onOpenApplyModal={handleOpenApplyModal} />;
+        return <Kurumsal lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/medya':
-        return <Medya onNavigate={handleNavigate} />;
+        return <Medya lang={lang} onNavigate={handleNavigate} />;
       case '/etkinlikler':
-        return <Etkinlikler onOpenApplyModal={handleOpenApplyModal} />;
+        return <Etkinlikler lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/icerikler':
-        return <Blog />;
+        return <Blog lang={lang} />;
       case '/basvur':
-        return <Basvur onOpenApplyModal={handleOpenApplyModal} />;
+        return <Basvur lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/iletisim':
-        return <Iletisim onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
+        return <Iletisim lang={lang} onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
       case '/sik-sorulan-sorular':
-        return <Sss onNavigate={handleNavigate} />;
+        return <Sss lang={lang} onNavigate={handleNavigate} />;
       default:
-        return <Home onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
+        return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
     }
   };
 
@@ -160,7 +194,7 @@ function App() {
     <div className="min-h-screen bg-[#000000] text-gray-100 flex flex-col justify-between font-sans selection:bg-cyan-500/30 selection:text-white relative">
       
       {/* Dynamic Navigation Header */}
-      <Navbar onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />
+      <Navbar lang={lang} onLanguageChange={handleLanguageChange} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />
 
       {/* Dynamic Routing Container */}
       <main className="flex-grow">
@@ -168,7 +202,7 @@ function App() {
       </main>
 
       {/* Footer & Final CTA */}
-      <Footer onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />
+      <Footer lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />
 
       {/* Interactive Application Modal Wizard */}
       <ApplicationModal

@@ -30,31 +30,49 @@ const Youtube = (props) => (
   </svg>
 );
 
-export default function Footer({ onOpenApplyModal, onNavigate }) {
-  
+export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    ctaTitle: isTr ? 'Fikrinizin bir girişime, girişiminizin büyüyen bir şirkete dönüşmesi için ilk adımı atın.' : 'Take the first step to turn your idea into a venture, and your venture into a growing company.',
+    ctaDesc: isTr ? 'Dijital Hezarfen ekosistemi, ihtiyacınız olan eğitim, uygulama gücü ve network\'ü tek bir çatı altında sunar. Girişim tipinize göre en uygun programı seçip hemen başvurun.' : 'The Dijital Hezarfen ecosystem offers the training, execution power, and network you need under one roof. Choose the best program for your startup type and apply today.',
+    btnVenture: isTr ? 'Girişimin İçin Başvur' : 'Apply for Your Venture',
+    btnTunnel: isTr ? 'Girişimcilik Tüneli\'ne Başvur' : 'Apply to Entrepreneur Tunnel',
+    btnCourses: isTr ? 'Eğitimleri İncele' : 'Explore Programs',
+    btnCorporate: isTr ? 'Kurumsal Çözüm Talep Et' : 'Request Corporate Solution',
+    aboutText: isTr ? 'Dijital Hezarfen; girişimcileri yetiştiren, fikirleri çalışan girişimlere dönüştüren ve şirketleri sürdürülebilir büyümeye taşıyan akademi, uygulama ve büyüme ekosistemidir.' : 'Dijital Hezarfen is an academy, execution, and growth ecosystem that trains entrepreneurs, transforms ideas into working ventures, and leads companies to sustainable growth.',
+    colLinks: isTr ? 'Hızlı Bağlantılar' : 'Quick Links',
+    colResources: isTr ? 'Kaynaklar' : 'Resources',
+    colCorporate: isTr ? 'Kurumsal' : 'Corporate',
+    privacy: isTr ? 'Gizlilik Politikası' : 'Privacy Policy',
+    terms: isTr ? 'Kullanım Şartları' : 'Terms of Use',
+    kvkk: isTr ? 'KVKK Aydınlatma Metni' : 'Data Protection (GDPR)',
+    rights: isTr ? 'Tüm hakları saklıdır.' : 'All rights reserved.'
+  };
+
   const handleScrollToTop = (e) => {
     e.preventDefault();
     onNavigate('/');
   };
 
   const footerLinks = {
-    'Hızlı Bağlantılar': [
-      { name: 'Girişimler İçin', path: '/girisimler' },
-      { name: 'Girişimcilik Tüneli', path: '/akademi/girisimcilik-tuneli' },
-      { name: 'Akademi & Eğitimler', path: '/akademi' },
-      { name: 'Uygulama Hizmetleri', path: '/uygulama' },
-      { name: 'Büyüme & Yatırım', path: '/buyume-yatirim' }
+    [t.colLinks]: [
+      { name: isTr ? 'Girişimler İçin' : 'For Startups', path: '/girisimler' },
+      { name: isTr ? 'Girişimcilik Tüneli' : 'Entrepreneur Tunnel', path: '/akademi/girisimcilik-tuneli' },
+      { name: isTr ? 'Akademi & Eğitimler' : 'Academy & Courses', path: '/akademi' },
+      { name: isTr ? 'Uygulama Hizmetleri' : 'Application Services', path: '/uygulama' },
+      { name: isTr ? 'Büyüme & Yatırım' : 'Growth & Venture', path: '/buyume-yatirim' }
     ],
-    'Kaynaklar': [
-      { name: 'YouTube & Podcast', path: '/medya' },
-      { name: 'Demo Day & Etkinlikler', path: '/etkinlikler' },
-      { name: 'Makaleler & Blog', path: '/icerikler' },
-      { name: 'Sık Sorulan Sorular', path: '/sik-sorulan-sorular' }
+    [t.colResources]: [
+      { name: isTr ? 'YouTube & Podcast' : 'YouTube & Podcast', path: '/medya' },
+      { name: isTr ? 'Demo Day & Etkinlikler' : 'Demo Days & Events', path: '/etkinlikler' },
+      { name: isTr ? 'Makaleler & Blog' : 'Articles & Blog', path: '/icerikler' },
+      { name: isTr ? 'Sık Sorulan Sorular' : 'FAQ', path: '/sik-sorulan-sorular' }
     ],
-    'Kurumsal': [
-      { name: 'Hakkımızda', path: '/hakkimizda' },
-      { name: 'Kurumsal Çözümler', path: '/kurumsal' },
-      { name: 'İletişim & Konum', path: '/iletisim' }
+    [t.colCorporate]: [
+      { name: isTr ? 'Hakkımızda' : 'About Us', path: '/hakkimizda' },
+      { name: isTr ? 'Kurumsal Çözümler' : 'Corporate Solutions', path: '/kurumsal' },
+      { name: isTr ? 'İletişim & Konum' : 'Contact & Location', path: '/iletisim' }
     ]
   };
 
@@ -72,19 +90,19 @@ export default function Footer({ onOpenApplyModal, onNavigate }) {
       {/* Section 13: Final CTA */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center relative z-10 border-b border-white/5">
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-6 font-sans max-w-3xl mx-auto leading-tight">
-          Fikrinizin bir girişime, girişiminizin büyüyen bir şirkete dönüşmesi için ilk adımı atın.
+          {t.ctaTitle}
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-10 text-sm sm:text-base leading-relaxed font-light">
-          Dijital Hezarfen ekosistemi, ihtiyacınız olan eğitim, uygulama gücü ve network'ü tek bir çatı altında sunar. Girişim tipinize göre en uygun programı seçip hemen başvurun.
+          {t.ctaDesc}
         </p>
         
         {/* Buttons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto font-sans">
           <button
             onClick={() => onOpenApplyModal('girisim')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
-            <span>Girişimin İçin Başvur</span>
+            <span>{t.btnVenture}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
           
@@ -92,7 +110,7 @@ export default function Footer({ onOpenApplyModal, onNavigate }) {
             onClick={() => onOpenApplyModal('tunel')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-violet text-white hover:shadow-lg hover:shadow-violet-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
-            <span>Girişimcilik Tüneli'ne Başvur</span>
+            <span>{t.btnTunnel}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
 
@@ -100,7 +118,7 @@ export default function Footer({ onOpenApplyModal, onNavigate }) {
             onClick={() => onNavigate('/akademi/egitimler')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
-            <span>Eğitimleri İncele</span>
+            <span>{t.btnCourses}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
 
@@ -108,7 +126,7 @@ export default function Footer({ onOpenApplyModal, onNavigate }) {
             onClick={() => onOpenApplyModal('kurumsal')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
-            <span>Kurumsal Çözüm Talep Et</span>
+            <span>{t.btnCorporate}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
         </div>
@@ -124,7 +142,7 @@ export default function Footer({ onOpenApplyModal, onNavigate }) {
               <img src={logoBlue} alt="Dijital Hezarfen" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
             </a>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm font-light">
-              Dijital Hezarfen; girişimcileri yetiştiren, fikirleri çalışan girişimlere dönüştüren ve şirketleri sürdürülebilir büyümeye taşıyan akademi, uygulama ve büyüme ekosistemidir.
+              {t.aboutText}
             </p>
             
             {/* Social Links */}
@@ -167,11 +185,11 @@ export default function Footer({ onOpenApplyModal, onNavigate }) {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} Dijital Hezarfen. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} Dijital Hezarfen. {t.rights}</p>
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a>
-            <a href="#" className="hover:text-white transition-colors">Kullanım Şartları</a>
-            <a href="#" className="hover:text-white transition-colors">KVKK Aydınlatma Metni</a>
+            <a href="#" className="hover:text-white transition-colors">{t.privacy}</a>
+            <a href="#" className="hover:text-white transition-colors">{t.terms}</a>
+            <a href="#" className="hover:text-white transition-colors">{t.kvkk}</a>
           </div>
         </div>
       </div>

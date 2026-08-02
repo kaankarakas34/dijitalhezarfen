@@ -1,0 +1,119 @@
+import React from 'react';
+import PageHero from '../components/UI/PageHero';
+import { Target, Users, BookOpen, MessageSquare, Zap, ShieldCheck } from 'lucide-react';
+
+export default function Hakkimizda({ onNavigate, onOpenApplyModal }) {
+  const team = [
+    { name: 'Kaan Karakaş', role: 'Kurucu / Büyüme Stratejisti', value: 'Girişimlerin büyüme denklemini kurmalarına, RevOps altyapısını tasarlamalarına ve küresel pazarlara açılmalarına rehberlik eder.' },
+    { name: 'Dr. Ahmet Yılmaz', role: 'Akademik Lider / Başmentör', value: 'Girişimcilik Tüneli müfredatını yönetir, problem keşfi ve iş modeli doğrulaması konularında kurucuları yönlendirir.' },
+    { name: 'Merve Kaya', role: 'Teknoloji & Yapay Zekâ Lideri', value: 'Yapay zekâ destekli MVP geliştirme süreçlerini, süreç otomasyonu ve entegrasyon çözümlerini hayata geçirir.' },
+    { name: 'Buse Demir', role: 'Pazarlama & Medya Direktörü', value: 'Startup marka kimliği, reklam yönetimi, YouTube/podcast yapım süreçleri ve sosyal medya büyüme stratejilerini kurgular.' }
+  ];
+
+  return (
+    <div className="animate-fade-in bg-[#000000] text-gray-100 min-h-screen">
+      {/* Hero */}
+      <PageHero
+        badge="Hakkımızda"
+        title="Farklı disiplinleri aynı büyüme hedefinde birleştiriyoruz."
+        description="Girişimcilik, teknoloji, pazarlama, satış, finans, yönetim ve insan gelişimini birbirinden ayrı görmeyen bütünleşik bir ekosistemiz."
+        primaryCtaText="Bizimle Çalış"
+        onPrimaryClick={() => onOpenApplyModal('isbirligi')}
+        secondaryCtaText="İletişime Geç"
+        onSecondaryClick={() => onNavigate('/iletisim')}
+      />
+
+      {/* Hikâyemiz */}
+      <section className="py-20 border-t border-white/5 bg-[#080B12]">
+        <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
+          <h2 className="text-3xl font-extrabold text-white font-sans">Hikâyemiz</h2>
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+            Dijital Hezarfen; bir girişimin yalnızca pazarlama, yalnızca yazılım veya yalnızca yatırım problemi olmadığı düşüncesinden doğdu. Kurucuların çoğu parçalı hizmetler, çelişen tavsiyeler ve uygulamaya dönüşmeyen raporlar arasında ilerlemeye çalışıyor. Biz bu parçaları aynı şirket mantığı içinde birleştiren bir yapı tasarladık.
+          </p>
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+            Hezarfen ismi; farklı alanlarda derin bilgi sahibi olmayı, disiplinler arasında sağlam bağlantılar kurmayı ve bilinmeyene doğru cesaretle ilerlemeyi temsil eder. Dijital Hezarfen ise bu kadim hezarfen zihniyetini modern teknoloji, girişimcilik ve büyüme dünyasına taşır.
+          </p>
+        </div>
+      </section>
+
+      {/* Vizyon & Misyon */}
+      <section className="py-20 border-t border-white/5">
+        <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          {/* Vizyon */}
+          <div className="p-8 rounded-2xl glass border border-white/5 space-y-4 hover:border-cyan-500/20 transition-all">
+            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyber-cyan flex items-center justify-center">
+              <Zap className="w-5.5 h-5.5" />
+            </div>
+            <h3 className="text-xl font-extrabold text-white font-sans">Vizyonumuz</h3>
+            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              Türkiye’den ve yakın coğrafyadan çıkan girişimlerin daha güçlü insan kaynağıyla kurulmasını, daha hızlı doğrulanmasını, sürdürülebilir gelir üretmesini ve uluslararası ölçekte rekabet edebilmesini sağlayan öncü yapılardan biri olmak.
+            </p>
+          </div>
+
+          {/* Misyon */}
+          <div className="p-8 rounded-2xl glass border border-white/5 space-y-4 hover:border-cyan-500/20 transition-all">
+            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyber-cyan flex items-center justify-center">
+              <ShieldCheck className="w-5.5 h-5.5" />
+            </div>
+            <h3 className="text-xl font-extrabold text-white font-sans">Misyonumuz</h3>
+            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              Girişimcileri yetiştirmek; fikirleri çalışan ürünlere dönüştürmek; şirketlerin ürün, müşteri, teknoloji, finans ve yönetim sistemlerini geliştirerek sürdürülebilir büyümelerine yardımcı olmak.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Ekip Profilleri */}
+      <section className="py-20 border-t border-white/5 bg-[#080B12]">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-extrabold text-white text-center font-sans mb-5">Ekibimiz</h2>
+          <p className="text-gray-400 text-sm text-center max-w-2xl mx-auto mb-12">
+            Kişileri yalnızca unvanlarıyla değil, girişimlere hangi somut değeri sunduklarıyla tanıtıyoruz.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {team.map((member, idx) => (
+              <div 
+                key={idx}
+                className="p-6 rounded-2xl glass border border-white/5 flex flex-col justify-between hover:border-cyan-500/20 transition-all"
+              >
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-cyan-500/10 border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan font-bold text-sm">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </div>
+                    <div>
+                      <h4 className="font-extrabold text-white">{member.name}</h4>
+                      <p className="text-xs text-cyber-cyan font-semibold">{member.role}</p>
+                    </div>
+                  </div>
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed bg-white/2 p-4 rounded-xl border border-white/3">
+                    <strong className="text-gray-300">Girişimlere Sunduğu Değer:</strong> {member.value}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16">
+            <button
+              onClick={() => onOpenApplyModal('isbirligi')}
+              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/20 transition-all cursor-pointer"
+            >
+              Dijital Hezarfen ile Çalış
+            </button>
+            <button
+              onClick={() => onNavigate('/iletisim')}
+              className="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:bg-white/10 text-white transition-all cursor-pointer"
+            >
+              İletişime Geç
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+}

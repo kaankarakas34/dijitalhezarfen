@@ -30,49 +30,37 @@ const Youtube = (props) => (
   </svg>
 );
 
-export default function Footer({ onOpenApplyModal }) {
+export default function Footer({ onOpenApplyModal, onNavigate }) {
   
   const handleScrollToTop = (e) => {
     e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    onNavigate('/');
   };
 
   const footerLinks = {
-    ekosistem: [
-      { name: 'Dijital Hezarfen Nedir?', path: '#nedir' },
-      { name: 'Girişimler İçin Destekler', path: '#kimler-icin' },
-      { name: 'Akademi & Eğitimler', path: '#akademi' },
-      { name: 'Uygulama Hizmetleri', path: '#uygulama' },
+    'Hızlı Bağlantılar': [
+      { name: 'Girişimler İçin', path: '/girisimler' },
+      { name: 'Girişimcilik Tüneli', path: '/akademi/girisimcilik-tuneli' },
+      { name: 'Akademi & Eğitimler', path: '/akademi' },
+      { name: 'Uygulama Hizmetleri', path: '/uygulama' },
+      { name: 'Büyüme & Yatırım', path: '/buyume-yatirim' }
     ],
-    büyüme: [
-      { name: 'Büyüme & Yatırım', path: '#buyume' },
-      { name: 'Girişimcilik Tüneli', path: '#akademi' },
-      { name: 'Etkinlikler & Buluşmalar', path: '#etkinlikler' },
-      { name: 'Medya & Raporlar', path: '#medya' },
+    'Kaynaklar': [
+      { name: 'YouTube & Podcast', path: '/medya' },
+      { name: 'Demo Day & Etkinlikler', path: '/etkinlikler' },
+      { name: 'Makaleler & Blog', path: '/icerikler' },
+      { name: 'Sık Sorulan Sorular', path: '/sik-sorulan-sorular' }
     ],
-    hakkımızda: [
-      { name: 'Ekibimiz', path: '#hakkimizda' },
-      { name: 'Uzmanlarımız', path: '#hakkimizda' },
-      { name: 'İş Ortaklarımız', path: '#hakkimizda' },
-      { name: 'İletişim & Konum', path: '#hakkimizda' },
+    'Kurumsal': [
+      { name: 'Hakkımızda', path: '/hakkimizda' },
+      { name: 'Kurumsal Çözümler', path: '/kurumsal' },
+      { name: 'İletişim & Konum', path: '/iletisim' }
     ]
   };
 
   const handleNavClick = (e, path) => {
     e.preventDefault();
-    const element = document.querySelector(path);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    onNavigate(path);
   };
 
   return (
@@ -86,12 +74,12 @@ export default function Footer({ onOpenApplyModal }) {
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-6 font-sans max-w-3xl mx-auto leading-tight">
           Fikrinizin bir girişime, girişiminizin büyüyen bir şirkete dönüşmesi için ilk adımı atın.
         </h2>
-        <p className="text-gray-400 max-w-xl mx-auto mb-10 text-sm sm:text-base leading-relaxed">
+        <p className="text-gray-400 max-w-xl mx-auto mb-10 text-sm sm:text-base leading-relaxed font-light">
           Dijital Hezarfen ekosistemi, ihtiyacınız olan eğitim, uygulama gücü ve network'ü tek bir çatı altında sunar. Girişim tipinize göre en uygun programı seçip hemen başvurun.
         </p>
-
+        
         {/* Buttons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
           <button
             onClick={() => onOpenApplyModal('girisim')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
@@ -109,7 +97,7 @@ export default function Footer({ onOpenApplyModal }) {
           </button>
 
           <button
-            onClick={() => onOpenApplyModal('egitim')}
+            onClick={() => onNavigate('/akademi/egitimler')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>Eğitimleri İncele</span>
@@ -135,22 +123,22 @@ export default function Footer({ onOpenApplyModal }) {
             <a href="#" className="flex items-center gap-2.5 group" onClick={handleScrollToTop}>
               <img src={logoBlue} alt="Dijital Hezarfen" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
             </a>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Dijital Hezarfen; girişimcileri yetiştiren, fikirleri girişime dönüştüren ve şirketleri büyüten akademi, uygulama ve büyüme ekosistemidir.
+            <p className="text-gray-400 text-sm leading-relaxed max-w-sm font-light">
+              Dijital Hezarfen; girişimcileri yetiştiren, fikirleri çalışan girişimlere dönüştüren ve şirketleri sürdürülebilir büyümeye taşıyan akademi, uygulama ve büyüme ekosistemidir.
             </p>
             
             {/* Social Links */}
             <div className="flex items-center space-x-3.5 pt-2">
-              <a href="#" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
                 <Youtube className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+              <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
                 <Github className="w-4 h-4" />
               </a>
             </div>
@@ -164,9 +152,9 @@ export default function Footer({ onOpenApplyModal }) {
                 {footerLinks[columnKey].map((link) => (
                   <li key={link.name}>
                     <a
-                      href={link.path}
+                      href="#"
                       onClick={(e) => handleNavClick(e, link.path)}
-                      className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                      className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-200"
                     >
                       {link.name}
                     </a>

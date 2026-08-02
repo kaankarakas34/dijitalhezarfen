@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
-import { Menu, X, ChevronDown, BookOpen, Layers, TrendingUp, HelpCircle, Calendar, FileText, Users, Award, Briefcase, Star, UserPlus } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, Layers, TrendingUp, HelpCircle, Calendar, FileText, Users, Award, Briefcase, UserPlus } from 'lucide-react';
 import logoWhite from '../../logo/Dijital Hezarfen (8).png';
 
-export default function Navbar({ onOpenApplyModal }) {
+export default function Navbar({ onOpenApplyModal, onNavigate }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null); // 'programlar', 'medya', 'hakkimizda', 'kariyer'
   const timeoutRef = useRef(null);
@@ -17,23 +17,14 @@ export default function Navbar({ onOpenApplyModal }) {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
-    }, 200); // 200ms delay to keep the menu open during transitions
+    }, 200);
   };
 
   const handleNavClick = (e, path) => {
     e.preventDefault();
     setIsOpen(false);
     setActiveMenu(null);
-    const element = document.querySelector(path);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    onNavigate(path);
   };
 
   const handleApplyClick = (type) => {
@@ -49,13 +40,13 @@ export default function Navbar({ onOpenApplyModal }) {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '#root')}>
+            <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '/')}>
               <img src={logoWhite} alt="Dijital Hezarfen" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
             </a>
           </div>
 
-          {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-2">
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center space-x-1">
             
             {/* Mega Menu 1: Programlar & Hizmetler */}
             <div 
@@ -70,12 +61,10 @@ export default function Navbar({ onOpenApplyModal }) {
                 <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${activeMenu === 'programlar' ? 'rotate-180 text-cyber-cyan' : ''}`} />
               </button>
 
-              {/* Mega Dropdown Wrapper - uses padding top to bridge the gap contiguous to parent */}
               {activeMenu === 'programlar' && (
                 <div className="absolute top-full left-1/2 -translate-x-[35%] pt-4 w-[850px] z-50">
                   <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('programlar')}>
                     
-                    {/* Columns of links */}
                     <div className="col-span-8 grid grid-cols-3 gap-6">
                       <div>
                         <h4 className="text-xs font-bold text-cyber-cyan uppercase tracking-wider mb-4 flex items-center gap-1.5">
@@ -84,13 +73,13 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#akademi" onClick={(e) => handleNavClick(e, '#akademi')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Girişimcilik Tüneli</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">3-5 aylık yoğun kurucu yetiştirme programı</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#akademi-diger" onClick={(e) => handleNavClick(e, '#akademi-diger')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/akademi/egitimler')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Modüler Eğitimler</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Teknoloji, satış, finans ve liderlik</span>
                             </a>
@@ -105,14 +94,14 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#uygulama" onClick={(e) => handleNavClick(e, '#uygulama')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/uygulama/yazilim-mvp')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Yazılım & AI MVP</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Çalışan prototip, SaaS ve AI otomasyonları</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#uygulama" onClick={(e) => handleNavClick(e, '#uygulama')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Büyüme & Operasyon</span>
+                            <a href="#" onClick={(e) => handleNavClick(e, '/uygulama')} className="block group">
+                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Uygulama Hizmetleri</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Pazarlama, satış ve finans altyapı işleri</span>
                             </a>
                           </li>
@@ -126,13 +115,13 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#buyume" onClick={(e) => handleNavClick(e, '#buyume')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim/yatirima-hazirlik')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Yatırıma Hazırlık</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Pitch deck, finansal model, mock pitch</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#buyume" onClick={(e) => handleNavClick(e, '#buyume')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim/uluslararasilasma')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Küresel Büyüme</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Growth hacking, globalleşme modelleri</span>
                             </a>
@@ -141,7 +130,6 @@ export default function Navbar({ onOpenApplyModal }) {
                       </div>
                     </div>
 
-                    {/* Right Column Visual Banner */}
                     <div className="col-span-4 rounded-xl bg-gradient-to-br from-cyan-950 via-slate-900 to-violet-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/5 rounded-full filter blur-xl"></div>
                       <div>
@@ -177,7 +165,6 @@ export default function Navbar({ onOpenApplyModal }) {
                 <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${activeMenu === 'medya' ? 'rotate-180 text-cyber-cyan' : ''}`} />
               </button>
 
-              {/* Mega Dropdown Wrapper */}
               {activeMenu === 'medya' && (
                 <div className="absolute top-full left-1/2 -translate-x-[40%] pt-4 w-[800px] z-50">
                   <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('medya')}>
@@ -190,15 +177,9 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#medya" onClick={(e) => handleNavClick(e, '#medya')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">YouTube Programları</span>
+                            <a href="#" onClick={(e) => handleNavClick(e, '/medya')} className="block group">
+                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">YouTube & Podcast</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Kurucu röportajları ve analiz videoları</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#medya" onClick={(e) => handleNavClick(e, '#medya')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Podcast Serileri</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Sesli girişimcilik deneyimleri ve dersleri</span>
                             </a>
                           </li>
                         </ul>
@@ -211,15 +192,9 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#etkinlikler" onClick={(e) => handleNavClick(e, '#etkinlikler')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Demo Day Buluşmaları</span>
+                            <a href="#" onClick={(e) => handleNavClick(e, '/etkinlikler')} className="block group">
+                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Demo Day & Buluşmalar</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Girişim sunumları ve yatırımcı görüşmeleri</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#etkinlikler" onClick={(e) => handleNavClick(e, '#etkinlikler')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Konferans & Atölye</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Growth Lab ve founder session günleri</span>
                             </a>
                           </li>
                         </ul>
@@ -228,26 +203,19 @@ export default function Navbar({ onOpenApplyModal }) {
                       <div>
                         <h4 className="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
                           <BookOpen className="w-4 h-4" />
-                          Blog (Yeni)
+                          Blog
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#blog" onClick={(e) => handleNavClick(e, '#blog')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/icerikler')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Makaleler & Rehberler</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Yazılım, AI, pazarlama ve hukuk yazıları</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#blog" onClick={(e) => handleNavClick(e, '#blog')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Başarı Hikâyeleri</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Büyüyen startup vaka çalışmaları</span>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    {/* Visual Preview */}
                     <div className="col-span-4 rounded-xl bg-gradient-to-br from-violet-950 via-slate-900 to-fuchsia-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/5 rounded-full filter blur-xl"></div>
                       <div>
@@ -258,7 +226,7 @@ export default function Navbar({ onOpenApplyModal }) {
                         <p className="text-[9px] text-gray-400 mt-1 leading-normal">Derslerin dışına taşan podcast, video serileri ve blog rehberleriyle bilgiye her an erişim sağlayın.</p>
                       </div>
                       <button 
-                        onClick={(e) => handleNavClick(e, '#blog')}
+                        onClick={(e) => handleNavClick(e, '/icerikler')}
                         className="mt-4 py-2 w-full text-center text-[10px] font-bold text-violet-400 bg-violet-500/10 rounded-lg hover:bg-violet-500/20 transition-all cursor-pointer"
                       >
                         Blogu İncele
@@ -283,7 +251,6 @@ export default function Navbar({ onOpenApplyModal }) {
                 <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${activeMenu === 'hakkimizda' ? 'rotate-180 text-cyber-cyan' : ''}`} />
               </button>
 
-              {/* Mega Dropdown Wrapper */}
               {activeMenu === 'hakkimizda' && (
                 <div className="absolute top-full left-1/2 -translate-x-[45%] pt-4 w-[800px] z-50">
                   <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('hakkimizda')}>
@@ -296,9 +263,9 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#nedir" onClick={(e) => handleNavClick(e, '#nedir')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/dijital-hezarfen')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Vizyon & Yaklaşım</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Yenilikçi girişimcilik ve çalışma modelimiz</span>
+                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Yenilikçi çalışma modelimiz</span>
                             </a>
                           </li>
                         </ul>
@@ -311,15 +278,15 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#hakkimizda" onClick={(e) => handleNavClick(e, '#hakkimizda')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Ekibimiz & Uzmanlar</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Tecrübeli mentör ve uzman kadromuz</span>
+                            <a href="#" onClick={(e) => handleNavClick(e, '/hakkimizda')} className="block group">
+                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Ekibimiz & Hikayemiz</span>
+                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Kurucu hikayemiz ve uzman kadromuz</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#akademi" onClick={(e) => handleNavClick(e, '#akademi')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Nasıl Kabul Edilir?</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Değerlendirme, mülakat ve kabul süreçleri</span>
+                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">Değerlendirme ve kabul süreçleri</span>
                             </a>
                           </li>
                         </ul>
@@ -332,7 +299,7 @@ export default function Navbar({ onOpenApplyModal }) {
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#buyume" onClick={(e) => handleNavClick(e, '#buyume')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">Yatırımcı Ağı</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">İş birliği yaptığımız melek ağları & fonlar</span>
                             </a>
@@ -341,7 +308,6 @@ export default function Navbar({ onOpenApplyModal }) {
                       </div>
                     </div>
 
-                    {/* Visual Preview */}
                     <div className="col-span-4 rounded-xl bg-gradient-to-br from-pink-950 via-slate-900 to-rose-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-pink-500/5 rounded-full filter blur-xl"></div>
                       <div>
@@ -352,7 +318,7 @@ export default function Navbar({ onOpenApplyModal }) {
                         <p className="text-[9px] text-gray-400 mt-1 leading-normal">Uzman ekibimiz, iş ortaklarımız ve geniş yatırımcı ağımızla girişiminizin arkasındaki itici güç oluyoruz.</p>
                       </div>
                       <button 
-                        onClick={(e) => handleNavClick(e, '#hakkimizda')}
+                        onClick={(e) => handleNavClick(e, '/hakkimizda')}
                         className="mt-4 py-2 w-full text-center text-[10px] font-bold text-pink-400 bg-pink-500/10 rounded-lg hover:bg-pink-500/20 transition-all cursor-pointer"
                       >
                         Bizi Tanıyın
@@ -377,7 +343,6 @@ export default function Navbar({ onOpenApplyModal }) {
                 <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${activeMenu === 'kariyer' ? 'rotate-180 text-cyber-cyan' : ''}`} />
               </button>
 
-              {/* Mega Dropdown Wrapper */}
               {activeMenu === 'kariyer' && (
                 <div className="absolute top-full left-1/2 -translate-x-[50%] pt-4 w-[800px] z-50">
                   <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('kariyer')}>
@@ -428,7 +393,6 @@ export default function Navbar({ onOpenApplyModal }) {
                       </div>
                     </div>
 
-                    {/* Visual Preview */}
                     <div className="col-span-4 rounded-xl bg-gradient-to-br from-cyan-950 via-slate-900 to-amber-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full filter blur-xl"></div>
                       <div>
@@ -456,7 +420,7 @@ export default function Navbar({ onOpenApplyModal }) {
           {/* Action CTA Button */}
           <div className="hidden lg:flex items-center">
             <button
-              onClick={() => handleApplyClick('genel')}
+              onClick={(e) => handleNavClick(e, '/basvur')}
               className="px-6 py-2.5 rounded-xl font-semibold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer font-sans"
             >
               Başvur
@@ -496,24 +460,24 @@ export default function Navbar({ onOpenApplyModal }) {
               {/* Programlar */}
               <div className="space-y-1">
                 <div className="text-[10px] font-bold text-cyber-cyan uppercase tracking-wider px-2">Programlar & Hizmetler</div>
-                <a href="#akademi" onClick={(e) => handleNavClick(e, '#akademi')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Girişimcilik Tüneli</a>
-                <a href="#uygulama" onClick={(e) => handleNavClick(e, '#uygulama')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Uygulama Hizmetleri</a>
-                <a href="#buyume" onClick={(e) => handleNavClick(e, '#buyume')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Büyüme & Yatırım</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Girişimcilik Tüneli</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/uygulama')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Uygulama Hizmetleri</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Büyüme & Yatırım</a>
               </div>
 
               {/* Medya & Buluşmalar */}
               <div className="space-y-1 pt-2 border-t border-white/5">
                 <div className="text-[10px] font-bold text-violet-400 uppercase tracking-wider px-2">Yayınlar & Etkinlikler</div>
-                <a href="#medya" onClick={(e) => handleNavClick(e, '#medya')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">YouTube & Podcast</a>
-                <a href="#etkinlikler" onClick={(e) => handleNavClick(e, '#etkinlikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Demo Day & Etkinlikler</a>
-                <a href="#blog" onClick={(e) => handleNavClick(e, '#blog')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Makaleler & Blog</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/medya')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">YouTube & Podcast</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/etkinlikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Demo Day & Etkinlikler</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/icerikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Makaleler & Blog</a>
               </div>
 
               {/* Hakkımızda */}
               <div className="space-y-1 pt-2 border-t border-white/5">
                 <div className="text-[10px] font-bold text-pink-400 uppercase tracking-wider px-2">Hakkımızda</div>
-                <a href="#nedir" onClick={(e) => handleNavClick(e, '#nedir')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Vizyon & Yaklaşım</a>
-                <a href="#hakkimizda" onClick={(e) => handleNavClick(e, '#hakkimizda')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Ekibimiz & Kabul Süreci</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/dijital-hezarfen')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Vizyon & Yaklaşım</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/hakkimizda')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">Ekibimiz & Kabul Süreci</a>
               </div>
 
               {/* Kariyer */}
@@ -528,7 +492,7 @@ export default function Navbar({ onOpenApplyModal }) {
 
           <div className="pt-6 border-t border-white/5">
             <button
-              onClick={() => handleApplyClick('genel')}
+              onClick={(e) => handleNavClick(e, '/basvur')}
               className="w-full py-3.5 rounded-xl font-bold bg-gradient-cyber text-[#0B0F19] text-center shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/35 transition-all duration-300 cursor-pointer"
             >
               Başvur

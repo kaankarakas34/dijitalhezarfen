@@ -1,25 +1,64 @@
 import React, { useState } from 'react';
 import { Award, Briefcase, Globe2, Lightbulb, Users, Network, TrendingUp, DollarSign } from 'lucide-react';
 
-export default function PortfolioReferences() {
+export default function PortfolioReferences({ lang }) {
   const [activeTab, setActiveTab] = useState('experience');
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Kabiliyetler & Sonuçlar' : 'Capabilities & Metrics',
+    title: isTr ? 'Referanslar ve Sonuçlar' : 'Track Record & Metrics',
+    desc: isTr 
+      ? 'Ekibimizin geçmiş birikimi ve Dijital Hezarfen ekosisteminin ürettiği güncel çıktılar.'
+      : 'Our team\'s background experience combined with Dijital Hezarfen\'s ecosystem output.',
+    tabExp: isTr ? 'Ekibin Geçmiş Deneyimi & Gücü' : 'Team Background & Expertise',
+    tabResults: isTr ? 'Ekosistem Büyüme Metrikleri' : 'Ecosystem Growth Metrics',
+
+    // Exp items
+    e1: isTr ? 'Ekip Deneyimi' : 'Team Experience',
+    ed1: isTr ? '15+ yıl teknoloji ve girişimcilik ekosistemi tecrübesi.' : '15+ years technology & entrepreneurship experience.',
+    e2: isTr ? 'Sektör Genişliği' : 'Sector Breadth',
+    ed2: isTr ? 'SaaS, FinTech, AI, EdTech, B2B ve E-ticaret başta olmak üzere 10+ dikey sektör.' : '10+ verticals including SaaS, FinTech, GenAI, EdTech, and B2B.',
+    e3: isTr ? 'Tamamlanan Projeler' : 'Software Shipped',
+    ed3: isTr ? 'Sıfırdan tasarlanıp lansmanı yapılan 40+ yazılım ürünü.' : '40+ custom software products designed & launched from scratch.',
+    e4: isTr ? 'Geliştirilen Teknolojiler' : 'Tech Stack Mastered',
+    ed4: isTr ? 'Modern web, mobil, LLM entegrasyonlu yapay zeka ve API sistemleri.' : 'Modern web, mobile, LLM integrations, and custom database APIs.',
+    e5: isTr ? 'Kurucu & Uzman Kadrosu' : 'Founders & Experts',
+    ed5: isTr ? 'Tecrübeli seri girişimciler, yazılım mimarları ve pazarlama uzmanları.' : 'Experienced serial founders, software architects, and growth specialists.',
+    e6: isTr ? 'Küresel İş Ortakları' : 'Global Partners',
+    ed6: isTr ? 'AWS, Google Cloud, Stripe ve önde gelen melek yatırım ağları.' : 'AWS, Google Cloud, Stripe, and prominent angel VC networks.',
+
+    // Results items
+    r1: isTr ? 'Geliştirilen MVP Sayısı' : 'AI MVPs Launched',
+    rd1: isTr ? 'Yapay zeka destekli ve çalışan prototipler.' : 'Functional AI-assisted working prototypes.',
+    r2: isTr ? 'Kurulan Satış Sistemi' : 'Sales Systems Configured',
+    rd2: isTr ? 'CRM entegrasyonlu gelir kanalları.' : 'CRM integrations & automated revenue streams.',
+    r3: isTr ? 'Yatırıma Hazırlanan Girişim' : 'Investor Ready Startups',
+    rd3: isTr ? 'Pitch deck ve finansal modellemesi tamamlanan ekipler.' : 'Pitch deck & financial modeling fully constructed.',
+    r4: isTr ? 'Alınan Toplam Yatırım' : 'Total Funding Raised',
+    rd4: isTr ? 'İş ortaklarımız aracılığıyla kapatılan turlar.' : 'Funding rounds closed via our ecosystem investor network.',
+    r5: isTr ? 'Açılan Yeni Pazarlar' : 'Global Markets Entered',
+    rd5: isTr ? 'Küresel pazarlara açılan yerli girişimler.' : 'Local startups successfully expanded cross-border.',
+    r6: isTr ? 'Yaratılan Ek Gelir' : 'Incremental Sales Generated',
+    rd6: isTr ? 'Startup\'ların satış sistemleriyle ürettiği ciro.' : 'Revenue generated via our deployed sales systems.'
+  };
 
   const experienceMetrics = [
-    { title: 'Ekip Deneyimi', desc: '15+ yıl teknoloji ve girişimcilik ekosistemi tecrübesi.' },
-    { title: 'Sektör Genişliği', desc: 'SaaS, FinTech, AI, EdTech, B2B ve E-ticaret başta olmak üzere 10+ dikey sektör.' },
-    { title: 'Tamamlanan Projeler', desc: 'Sıfırdan tasarlanıp lansmanı yapılan 40+ yazılım ürünü.' },
-    { title: 'Geliştirilen Teknolojiler', desc: 'Modern web, mobil, LLM entegrasyonlu yapay zeka ve API sistemleri.' },
-    { title: 'Kurucu & Uzman Kadrosu', desc: 'Tecrübeli seri girişimciler, yazılım mimarları ve pazarlama uzmanları.' },
-    { title: 'Küresel İş Ortakları', desc: 'AWS, Google Cloud, Stripe ve önde gelen melek yatırım ağları.' }
+    { title: t.e1, desc: t.ed1 },
+    { title: t.e2, desc: t.ed2 },
+    { title: t.e3, desc: t.ed3 },
+    { title: t.e4, desc: t.ed4 },
+    { title: t.e5, desc: t.ed5 },
+    { title: t.e6, desc: t.ed6 }
   ];
 
   const futureMetrics = [
-    { label: 'Geliştirilen MVP Sayısı', value: '18+', desc: 'Yapay zeka destekli ve çalışan prototipler.' },
-    { label: 'Kurulan Satış Sistemi', value: '25+', desc: 'CRM entegrasyonlu gelir kanalları.' },
-    { label: 'Yatırıma Hazırlanan Girişim', value: '12', desc: 'Pitch deck ve finansal modellemesi tamamlanan ekipler.' },
-    { label: 'Alınan Toplam Yatırım', value: '$3.2M+', desc: 'İş ortaklarımız aracılığıyla kapatılan turlar.' },
-    { label: 'Açılan Yeni Pazarlar', value: '6', desc: 'Küresel pazarlara açılan yerli girişimler.' },
-    { label: 'Yaratılan Ek Gelir', value: '₺12M+', desc: 'Startup\'ların satış sistemleriyle ürettiği ciro.' }
+    { label: t.r1, value: '18+', desc: t.rd1 },
+    { label: t.r2, value: '25+', desc: t.rd2 },
+    { label: t.r3, value: '12', desc: t.rd3 },
+    { label: t.r4, value: '$3.2M+', desc: t.rd4 },
+    { label: t.r5, value: '6', desc: t.rd5 },
+    { label: t.r6, value: isTr ? '₺12M+' : '$400K+', desc: t.rd6 }
   ];
 
   return (
@@ -30,38 +69,38 @@ export default function PortfolioReferences() {
         
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Kabiliyetler & Sonuçlar</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans mt-5 mb-5">
-            Referanslar ve Sonuçlar
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Ekibimizin geçmiş birikimi ve Dijital Hezarfen ekosisteminin ürettiği güncel çıktılar.
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed font-light">
+            {t.desc}
           </p>
         </div>
 
         {/* Tab Switcher */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex rounded-xl bg-white/3 border border-white/5 p-1.5">
+          <div className="inline-flex rounded-xl bg-white/3 border border-white/5 p-1.5 font-sans">
             <button
               onClick={() => setActiveTab('experience')}
-              className={`px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+              className={`px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                 activeTab === 'experience'
                   ? 'bg-gradient-cyber text-[#0B0F19] shadow-md shadow-cyan-500/10'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Ekibin Geçmiş Deneyimi & Gücü
+              {t.tabExp}
             </button>
             <button
               onClick={() => setActiveTab('results')}
-              className={`px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+              className={`px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                 activeTab === 'results'
                   ? 'bg-gradient-cyber text-[#0B0F19] shadow-md shadow-cyan-500/10'
-                  : 'text-gray-400 hover:text-white'
+                  : 'text-gray-400 hover:text-white font-semibold'
               }`}
             >
-              Ekosistem Büyüme Metrikleri
+              {t.tabResults}
             </button>
           </div>
         </div>
@@ -80,7 +119,7 @@ export default function PortfolioReferences() {
                 <h3 className="font-extrabold text-sm sm:text-base text-white font-sans group-hover:text-cyber-cyan transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-gray-400 mt-2.5 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-400 mt-2.5 leading-relaxed font-light">
                   {item.desc}
                 </p>
               </div>
@@ -103,7 +142,7 @@ export default function PortfolioReferences() {
                 <h3 className="font-extrabold text-sm sm:text-base text-white font-sans">
                   {item.label}
                 </h3>
-                <p className="text-xs sm:text-sm text-gray-400 mt-2 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-400 mt-2 leading-relaxed font-light">
                   {item.desc}
                 </p>
               </div>

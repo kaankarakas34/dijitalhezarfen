@@ -1,33 +1,71 @@
 import React from 'react';
 import { ArrowUpRight, BookOpen, Clock, Tag } from 'lucide-react';
 
-export default function BlogSection() {
+export default function BlogSection({ lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Kütüphane' : 'Library',
+    title: isTr ? 'Dijital Hezarfen Blog' : 'Dijital Hezarfen Blog',
+    desc: isTr 
+      ? 'Girişimcilik, yazılım, AI otomasyonları, pazarlama, satış ve finans konularında güncel rehberler ve uzman analizleri.'
+      : 'Guides, frameworks, and expert analyses covering software engineering, growth hacking, RevOps, and startup fundraising.',
+    btnRead: isTr ? 'Yazının Tamamını Oku' : 'Read Full Article',
+    
+    // Post 1
+    t1: isTr ? 'Yapay Zekâ Destekli MVP Geliştirme Rehberi' : 'AI-Assisted MVP Development Guide',
+    s1: isTr
+      ? 'Geleneksel yazılım süreçlerini geride bırakın. No-code ve AI araçları kullanarak 48 saatte çalışan bir ürünü nasıl yayına alırsınız?'
+      : 'Move beyond legacy software dev cycles. How to build and deploy a working MVP in 48 hours using AI and no-code tools.',
+    cat1: isTr ? 'Teknoloji & AI' : 'Tech & AI',
+    time1: isTr ? '5 dk okuma' : '5 min read',
+    date1: isTr ? '02 Ağustos 2026' : 'August 02, 2026',
+
+    // Post 2
+    t2: isTr ? 'Yatırımcı Sunumu (Pitch Deck) Hazırlama Sanatı' : 'The Art of Pitch Deck Preparation',
+    s2: isTr
+      ? 'Yatırımcıların ilk 30 saniyede neye baktığını biliyor musunuz? Sizi fonlamaya ikna edecek 10 slaytlık sunum şablonu ve detayları.'
+      : 'Do you know what VCs look for in the first 30 seconds? A 10-slide template designed to convince investors.',
+    cat2: isTr ? 'Yatırım Hazırlığı' : 'Fundraising Prep',
+    time2: isTr ? '7 dk okuma' : '7 min read',
+    date2: isTr ? '28 Temmuz 2026' : 'July 28, 2026',
+
+    // Post 3
+    t3: isTr ? 'Birim Ekonomi (Unit Economics) Nedir ve Nasıl Hesaplanır?' : 'What is Unit Economics & How to Track It?',
+    s3: isTr
+      ? 'Bir girişimin batıp batmayacağını belirleyen en önemli metrik: LTV / CAC oranı. Reklam bütçenizi yakmadan önce mutlaka hesaplayın.'
+      : 'The metric that predicts whether a startup will fail: LTV/CAC ratio. Make sure to model this before spending your marketing budget.',
+    cat3: isTr ? 'Finans & Büyüme' : 'Finance & Growth',
+    time3: isTr ? '6 dk okuma' : '6 min read',
+    date3: isTr ? '15 Temmuz 2026' : 'July 15, 2026'
+  };
+
   const posts = [
     {
       id: 1,
-      title: 'Yapay Zekâ Destekli MVP Geliştirme Rehberi',
-      summary: 'Geleneksel yazılım süreçlerini geride bırakın. No-code ve AI araçları kullanarak 48 saatte çalışan bir ürünü nasıl yayına alırsınız?',
-      category: 'Teknoloji & AI',
-      readTime: '5 dk okuma',
-      date: '02 Ağustos 2026',
+      title: t.t1,
+      summary: t.s1,
+      category: t.cat1,
+      readTime: t.time1,
+      date: t.date1,
       imageGradient: 'from-cyan-500 to-blue-600'
     },
     {
       id: 2,
-      title: 'Yatırımcı Sunumu (Pitch Deck) Hazırlama Sanatı',
-      summary: 'Yatırımcıların ilk 30 saniyede neye baktığını biliyor musunuz? Sizi fonlamaya ikna edecek 10 slaytlık sunum şablonu ve detayları.',
-      category: 'Yatırım Hazırlığı',
-      readTime: '7 dk okuma',
-      date: '28 Temmuz 2026',
+      title: t.t2,
+      summary: t.s2,
+      category: t.cat2,
+      readTime: t.time2,
+      date: t.date2,
       imageGradient: 'from-violet-600 to-fuchsia-600'
     },
     {
       id: 3,
-      title: 'Birim Ekonomi (Unit Economics) Nedir ve Nasıl Hesaplanır?',
-      summary: 'Bir girişimin batıp batmayacağını belirleyen en önemli metrik: LTV / CAC oranı. Reklam bütçenizi yakmadan önce mutlaka hesaplayın.',
-      category: 'Finans & Büyüme',
-      readTime: '6 dk okuma',
-      date: '15 Temmuz 2026',
+      title: t.t3,
+      summary: t.s3,
+      category: t.cat3,
+      readTime: t.time3,
+      date: t.date3,
       imageGradient: 'from-pink-500 to-rose-500'
     }
   ];
@@ -40,13 +78,13 @@ export default function BlogSection() {
         
         {/* Title Block */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Kütüphane</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans mt-5 mb-5">
-            Dijital Hezarfen Blog
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Girişimcilik, yazılım, AI otomasyonları, pazarlama, satış ve finans konularında güncel rehberler ve uzman analizleri.
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed font-light">
+            {t.desc}
           </p>
         </div>
 
@@ -78,8 +116,8 @@ export default function BlogSection() {
                 <div className="p-6 space-y-4">
                   <div className="flex items-center gap-4 text-[10px] text-gray-500 font-semibold uppercase tracking-wider">
                     <span>{post.date}</span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
+                    <span className="flex items-center gap-1 font-light">
+                      <Clock className="w-3.5 h-3.5" />
                       {post.readTime}
                     </span>
                   </div>
@@ -88,7 +126,7 @@ export default function BlogSection() {
                     {post.title}
                   </h3>
                   
-                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed line-clamp-3">
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed line-clamp-3 font-light">
                     {post.summary}
                   </p>
                 </div>
@@ -98,9 +136,9 @@ export default function BlogSection() {
               <div className="p-6 pt-0 mt-4 border-t border-white/5 pt-4">
                 <a
                   href="#"
-                  className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1 group/link"
+                  className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1 group/link font-sans"
                 >
-                  <span>Yazının Tamamını Oku</span>
+                  <span>{t.btnRead}</span>
                   <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                 </a>
               </div>

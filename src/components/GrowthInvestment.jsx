@@ -1,50 +1,100 @@
 import React from 'react';
 import { Target, Users, Landmark, HeartHandshake, CheckCircle2, ArrowRight } from 'lucide-react';
 
-export default function GrowthInvestment({ onOpenApplyModal }) {
-  
+export default function GrowthInvestment({ onOpenApplyModal, lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Finansman & Ölçeklenme' : 'Funding & Scaling',
+    title: isTr ? 'Büyüme ve Yatırım' : 'Growth & Venture',
+    desc: isTr 
+      ? 'Girişiminizi pay veya ortaklık oranlarından bahsetmeksizin, tamamen sunduğumuz operasyonel ve finansal faydalarla yatırıma ve global pazarlara hazırlıyoruz.'
+      : 'Without demanding equity upfront, we prepare your startup for investment rounds and global scaling purely through operational and financial value.',
+    btnRequest: isTr ? 'Bilgi ve Destek Talep Et' : 'Request Info & Support',
+    partnerTitle: isTr ? 'İş Ağı & Stratejik Network' : 'Strategic Network & Ecosystem',
+    partnerDesc: isTr 
+      ? 'Girişimler yatırımcılar, diğer girişimciler ve ihtiyaç duydukları stratejik taraflarla buluşturulabilir. Daha geniş iş ağı ihtiyaçlarında Event for Network ile iş birliği yapılabilir.'
+      : 'Startups are introduced to VCs, angel networks, alumni founders, and corporate decision-makers. For larger strategic networking events, we partner with Event for Network.',
+    btnPartner: isTr ? 'Network Detayları' : 'Explore Network',
+    
+    // Column titles
+    c1: isTr ? 'Yatırıma Hazırlık' : 'Fundraising Prep',
+    c2: isTr ? 'Yatırımcı Erişimi' : 'Investor Relations',
+    c3: isTr ? 'Büyüme & Globalleşme' : 'Growth & Global Scaling'
+  };
+
   const blocks = [
     {
-      title: 'Yatırıma Hazırlık',
+      title: t.c1,
       icon: Target,
       color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20',
-      items: [
-        'Yatırımcı Pitch Deck tasarımı',
-        'Finansal model & projeksiyonlar',
-        'Çarpıcı yatırım hikâyesi yazımı',
-        'Data Room altyapısının kurulması',
-        'Finansal ve teknik değerleme hazırlığı',
-        'Mock Pitch (Simüle yatırımcı sunumları)',
-        'Due Diligence hazırlık koordinasyonu'
-      ]
+      items: isTr 
+        ? [
+            'Yatırımcı Pitch Deck tasarımı',
+            'Finansal model & projeksiyonlar',
+            'Çarpıcı yatırım hikâyesi yazımı',
+            'Data Room altyapısının kurulması',
+            'Finansal ve teknik değerleme hazırlığı',
+            'Mock Pitch (Simüle yatırımcı sunumları)',
+            'Due Diligence hazırlık koordinasyonu'
+          ]
+        : [
+            'Investor Pitch Deck design',
+            'Financial models & projections',
+            'Venture narrative & story craft',
+            'Data Room directory setup',
+            'Financial & technical valuation',
+            'Mock Pitch simulations',
+            'Due Diligence preparation support'
+          ]
     },
     {
-      title: 'Yatırımcı Erişimi',
+      title: t.c2,
       icon: Landmark,
       color: 'text-blue-400 bg-blue-500/10 border-blue-500/20',
-      items: [
-        'Bireysel Melek Yatırımcı ağları',
-        'Girişim Sermayesi (VC) Fonları',
-        'Aile Ofisleri (Family Offices) erişimi',
-        'Kurumsal & Stratejik Yatırımcılar',
-        'Özel Demo Day sunum fırsatları',
-        'Yatırımcı birebir görüşme saatleri',
-        'Küresel fon erişim ağları'
-      ]
+      items: isTr
+        ? [
+            'Bireysel Melek Yatırımcı ağları',
+            'Girişim Sermayesi (VC) Fonları',
+            'Aile Ofisleri (Family Offices) erişimi',
+            'Kurumsal & Stratejik Yatırımcılar',
+            'Özel Demo Day sunum fırsatları',
+            'Yatırımcı birebir görüşme saatleri',
+            'Küresel fon erişim ağları'
+          ]
+        : [
+            'Angel Investor networks',
+            'Venture Capital (VC) Funds',
+            'Family Office integrations',
+            'Corporate & Strategic partners',
+            'Exclusive Demo Day spots',
+            'Investor 1-on-1 office hours',
+            'Global VC syndicates'
+          ]
     },
     {
-      title: 'Büyüme & Globalleşme',
+      title: t.c3,
       icon: Users,
       color: 'text-violet-400 bg-violet-500/10 border-violet-500/20',
-      items: [
-        'Growth Hacking stratejisi & testleri',
-        'B2B/B2C Satış Sistemleri kurulumu',
-        'Yeni gelir kanalları geliştirme',
-        'Yeni coğrafi pazarlara giriş',
-        'Kurumsallaşma & süreç yönetimi',
-        'Uluslararasılaşma (Global scaling)',
-        'Operasyonel verimlilik otomasyonları'
-      ]
+      items: isTr
+        ? [
+            'Growth Hacking stratejisi & testleri',
+            'B2B/B2C Satış Sistemleri kurulumu',
+            'Yeni gelir kanalları geliştirme',
+            'Yeni coğrafi pazarlara giriş',
+            'Kurumsallaşma & süreç yönetimi',
+            'Uluslararasılaşma (Global scaling)',
+            'Operasyonel verimlilik otomasyonları'
+          ]
+        : [
+            'Growth Hacking experiments',
+            'B2B/B2C sales system deployment',
+            'New revenue channel discovery',
+            'Cross-border market entry',
+            'Governance & workflow optimization',
+            'International scaling frameworks',
+            'Operational efficiency & AI'
+          ]
     }
   ];
 
@@ -57,13 +107,13 @@ export default function GrowthInvestment({ onOpenApplyModal }) {
         
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Finansman & Ölçeklenme</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans mt-5 mb-5">
-            Büyüme ve Yatırım
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-400 text-sm sm:text-base">
-            Girişiminizi pay veya ortaklık oranlarından bahsetmeksizin, tamamen sunduğumuz operasyonel ve finansal faydalarla yatırıma ve global pazarlara hazırlıyoruz.
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed font-light">
+            {t.desc}
           </p>
         </div>
 
@@ -88,7 +138,7 @@ export default function GrowthInvestment({ onOpenApplyModal }) {
 
                   <div className="space-y-3.5">
                     {block.items.map((item, idx) => (
-                      <div key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-gray-400 leading-snug">
+                      <div key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-gray-400 leading-snug font-light">
                         <CheckCircle2 className="w-4 h-4 text-cyber-cyan shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>
@@ -99,9 +149,9 @@ export default function GrowthInvestment({ onOpenApplyModal }) {
                 <div className="mt-8 pt-4 border-t border-white/5">
                   <button
                     onClick={() => onOpenApplyModal('girisim')}
-                    className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-cyber-cyan/30 transition-all duration-200 cursor-pointer"
+                    className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-cyber-cyan/30 transition-all duration-200 cursor-pointer font-sans"
                   >
-                    Bilgi ve Destek Talep Et
+                    {t.btnRequest}
                   </button>
                 </div>
               </div>
@@ -110,15 +160,15 @@ export default function GrowthInvestment({ onOpenApplyModal }) {
         </div>
 
         {/* Networking & Partnership Box */}
-        <div className="max-w-4xl mx-auto p-6 rounded-2xl bg-gradient-to-r from-[#0C111F] to-[#0A0D17] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="max-w-4xl mx-auto p-6 rounded-2xl bg-gradient-to-r from-[#0C111F] to-[#0A0D17] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-6 font-sans">
           <div className="flex items-start gap-4">
             <div className="p-3 rounded-xl bg-violet-500/10 text-violet-400 shrink-0">
               <HeartHandshake className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-extrabold text-sm sm:text-base text-white font-sans">İş Ağı & Stratejik Network</h4>
-              <p className="text-xs sm:text-sm text-gray-400 mt-1 leading-relaxed">
-                Girişimler yatırımcılar, diğer girişimciler ve ihtiyaç duydukları stratejik taraflarla buluşturulabilir. Daha geniş iş ağı ihtiyaçlarında <strong className="text-white">Event for Network</strong> ile iş birliği yapılabilir.
+              <h4 className="font-extrabold text-sm sm:text-base text-white font-sans">{t.partnerTitle}</h4>
+              <p className="text-xs sm:text-sm text-gray-400 mt-1 leading-relaxed font-light">
+                {t.partnerDesc}
               </p>
             </div>
           </div>
@@ -126,7 +176,7 @@ export default function GrowthInvestment({ onOpenApplyModal }) {
             onClick={() => onOpenApplyModal('egitim')}
             className="w-full sm:w-auto px-5 py-3 rounded-xl text-xs font-bold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-violet-500/30 transition-all duration-200 shrink-0 flex items-center justify-center gap-1.5 cursor-pointer"
           >
-            <span>Network Detayları</span>
+            <span>{t.btnPartner}</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>

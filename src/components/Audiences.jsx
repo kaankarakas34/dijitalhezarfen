@@ -1,76 +1,109 @@
 import React from 'react';
 import { UserCheck, Star, LineChart, Building2, CheckCircle2, ArrowRight } from 'lucide-react';
 
-export default function Audiences({ onOpenApplyModal, onFocusSection }) {
-  
+export default function Audiences({ onOpenApplyModal, onFocusSection, lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    title: isTr ? 'Kimin İçin Çalışıyoruz?' : 'Who We Work With',
+    subtitle: isTr 
+      ? 'Fikirden küresel pazara uzanan yolculuğun her aşamasında girişimcinin, ekibin ve kurumun yanındayız.'
+      : 'We stand by founders, teams, and enterprises at every step from idea validation to international markets.',
+    supportLabel: isTr ? 'Sağlanan Destekler:' : 'Support Provided:',
+    
+    // Adaylar
+    t1: isTr ? 'Girişimci Adayları' : 'Aspiring Founders',
+    d1: isTr ? 'Henüz şirketi olmayan ancak bir fikri, uzmanlığı veya girişimcilik hedefi bulunan kişiler.' : 'Individuals who do not have a company yet, but have an idea, expertise, or a startup goal.',
+    s1: [
+      isTr ? 'Girişimcilik eğitimi' : 'Entrepreneurship training',
+      isTr ? 'Problem ve fikir geliştirme' : 'Problem & idea discovery',
+      isTr ? 'İş modeli oluşturma' : 'Business modeling',
+      isTr ? 'Yapay zekâ destekli MVP' : 'AI-assisted MVP build',
+      isTr ? 'İlk müşteri hazırlığı' : 'Early customer readiness'
+    ],
+    c1: isTr ? 'Girişimcilik Tüneli’ni İncele' : 'Explore Entrepreneur Tunnel',
+
+    // Erken
+    t2: isTr ? 'Erken Aşama Girişimler' : 'Early Stage Startups',
+    d2: isTr ? 'Fikir, pre-seed ve seed aşamasındaki startup’lar.' : 'Startups in idea, pre-seed, and seed stages.',
+    s2: [
+      isTr ? 'Ürün ve müşteri doğrulama' : 'Product & customer validation',
+      isTr ? 'MVP ve yazılım geliştirme' : 'MVP & software development',
+      isTr ? 'Marka ve konumlandırma' : 'Branding & positioning',
+      isTr ? 'Satış ve CRM kurulumları' : 'Sales & CRM setups',
+      isTr ? 'Dijital pazarlama operasyonu' : 'Digital marketing operations',
+      isTr ? 'Finansal model tasarımı' : 'Financial model design',
+      isTr ? 'Yatırıma hazırlık süreçleri' : 'Fundraising preparation'
+    ],
+    c2: isTr ? 'Girişimini Geliştir' : 'Develop Your Venture',
+
+    // Büyüyen
+    t3: isTr ? 'Büyüyen Girişimler & Şirketler' : 'Scale-ups & Growing Companies',
+    d3: isTr ? 'Ürünü, müşterisi veya geliri bulunan; ancak daha hızlı ve sistemli büyümek isteyen yapılar.' : 'Entities with an active product, customers, or revenues seeking structured and accelerated growth.',
+    s3: [
+      isTr ? 'Growth hacking altyapısı' : 'Growth hacking infrastructure',
+      isTr ? 'Satış sistemi optimizasyonu' : 'Sales system optimization',
+      isTr ? 'Revenue Operations (RevOps)' : 'Revenue Operations (RevOps)',
+      isTr ? 'Süreç otomasyonu ve yapay zeka' : 'Process automation & AI',
+      isTr ? 'Organizasyon tasarımı ve liderlik' : 'Organizational design & leadership',
+      isTr ? 'Yeni pazarlara açılma stratejisi' : 'International expansion strategy',
+      isTr ? 'Yatırım ve uluslararasılaşma' : 'Funding & globalization'
+    ],
+    c3: isTr ? 'Büyüme Programlarını İncele' : 'Explore Growth Programs',
+
+    // Kurumsal
+    t4: isTr ? 'Kurumlar' : 'Corporates',
+    d4: isTr ? 'Çalışanlarını geliştirmek, inovasyon programı kurmak veya girişimlerle çalışmak isteyen şirketler.' : 'Enterprises seeking internal training, innovation frameworks, or startup integrations.',
+    s4: [
+      isTr ? 'Kurumsal akademi kurulumu' : 'Corporate academy setup',
+      isTr ? 'Yapay zekâ ve dijital dönüşüm eğitimleri' : 'AI & digital transformation training',
+      isTr ? 'Yönetici gelişim programları' : 'Executive development programs',
+      isTr ? 'Kurum içi girişimcilik (intraprenörlük)' : 'Intrapreneurship frameworks',
+      isTr ? 'Startup iş birlikleri yönetimi' : 'Startup engagement management',
+      isTr ? 'Özel eğitim ve kurumsal etkinlikler' : 'Custom training & corporate events'
+    ],
+    c4: isTr ? 'Kurumsal Çözümleri İncele' : 'Explore Corporate Solutions'
+  };
+
   const sections = [
     {
       id: 'adaylar',
-      title: 'Girişimci Adayları',
+      title: t.t1,
       icon: UserCheck,
       color: 'from-cyan-400 to-blue-500',
-      description: 'Henüz şirketi olmayan ancak bir fikri, uzmanlığı veya girişimcilik hedefi bulunan kişiler.',
-      supports: [
-        'Girişimcilik eğitimi',
-        'Problem ve fikir geliştirme',
-        'İş modeli oluşturma',
-        'Yapay zekâ destekli MVP',
-        'İlk müşteri hazırlığı'
-      ],
-      ctaText: 'Girişimcilik Tüneli’ni İncele',
+      description: t.d1,
+      supports: t.s1,
+      ctaText: t.c1,
       action: () => onFocusSection('#akademi')
     },
     {
       id: 'erken',
-      title: 'Erken Aşama Girişimler',
+      title: t.t2,
       icon: Star,
       color: 'from-blue-400 to-indigo-500',
-      description: 'Fikir, pre-seed ve seed aşamasındaki startup’lar.',
-      supports: [
-        'Ürün ve müşteri doğrulama',
-        'MVP ve yazılım geliştirme',
-        'Marka ve konumlandırma',
-        'Satış ve CRM kurulumları',
-        'Dijital pazarlama operasyonu',
-        'Finansal model tasarımı',
-        'Yatırıma hazırlık süreçleri'
-      ],
-      ctaText: 'Girişimini Geliştir',
+      description: t.d2,
+      supports: t.s2,
+      ctaText: t.c2,
       action: () => onOpenApplyModal('girisim')
     },
     {
       id: 'buyuyen',
-      title: 'Büyüyen Girişimler & Şirketler',
+      title: t.t3,
       icon: LineChart,
       color: 'from-violet-500 to-fuchsia-500',
-      description: 'Ürünü, müşterisi veya geliri bulunan; ancak daha hızlı ve sistemli büyümek isteyen yapılar.',
-      supports: [
-        'Growth hacking altyapısı',
-        'Satış sistemi optimizasyonu',
-        'Revenue Operations (RevOps)',
-        'Süreç otomasyonu ve yapay zeka',
-        'Organizasyon tasarımı ve liderlik',
-        'Yeni pazarlara açılma stratejisi',
-        'Yatırım ve uluslararasılaşma'
-      ],
-      ctaText: 'Büyüme Programlarını İncele',
+      description: t.d3,
+      supports: t.s3,
+      ctaText: t.c3,
       action: () => onFocusSection('#buyume')
     },
     {
       id: 'kurumlar',
-      title: 'Kurumlar',
+      title: t.t4,
       icon: Building2,
       color: 'from-pink-500 to-rose-500',
-      description: 'Çalışanlarını geliştirmek, inovasyon programı kurmak veya girişimlerle çalışmak isteyen şirketler.',
-      supports: [
-        'Kurumsal akademi kurulumu',
-        'Yapay zekâ ve dijital dönüşüm eğitimleri',
-        'Yönetici gelişim programları',
-        'Kurum içi girişimcilik (intraprenörlük)',
-        'Startup iş birlikleri yönetimi',
-        'Özel eğitim ve kurumsal etkinlikler'
-      ],
-      ctaText: 'Kurumsal Çözümleri İncele',
+      description: t.d4,
+      supports: t.s4,
+      ctaText: t.c4,
       action: () => onOpenApplyModal('kurumsal')
     }
   ];
@@ -84,11 +117,11 @@ export default function Audiences({ onOpenApplyModal, onFocusSection }) {
         {/* Title and Intro */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans leading-tight mb-5">
-            Kimin İçin Çalışıyoruz?
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
           <p className="text-gray-400 text-base sm:text-lg">
-            Fikirden küresel pazara uzanan yolculuğun her aşamasında girişimcinin, ekibin ve kurumun yanındayız.
+            {t.subtitle}
           </p>
         </div>
 
@@ -117,7 +150,7 @@ export default function Audiences({ onOpenApplyModal, onFocusSection }) {
 
                   {/* Support points list */}
                   <div className="border-t border-white/5 pt-5 mb-8">
-                    <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Sağlanan Destekler:</h4>
+                    <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">{t.supportLabel}</h4>
                     <ul className="space-y-2.5">
                       {sec.supports.map((sup, idx) => (
                         <li key={idx} className="flex items-start gap-2.5">

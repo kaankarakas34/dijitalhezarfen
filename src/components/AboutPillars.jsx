@@ -2,31 +2,45 @@ import React from 'react';
 import { Layers, Activity, Cpu } from 'lucide-react';
 import logoStacked from '../../logo/Dijital Hezarfen (7).png';
 
-export default function AboutPillars() {
+export default function AboutPillars({ lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    vision: isTr ? 'Vizyonumuz' : 'Our Vision',
+    titleLine1: isTr ? 'Akademiden' : 'More than just',
+    titleLine2: isTr ? 'daha fazlası.' : 'an academy.',
+    description: isTr
+      ? 'Dijital Hezarfen yalnızca girişimcilik eğitimi veren bir akademi değildir. Girişimcinin öğrendiği bilgiyi gerçek bir ürüne, müşteriye, gelire ve büyüyen bir şirkete dönüştürmesini sağlayan akademi ve uygulama ekosistemidir.'
+      : 'Dijital Hezarfen is not just a startup education academy. It is an academy and execution ecosystem that transforms founder knowledge into actual working products, customers, revenues, and growing businesses.',
+    descScalable: isTr ? 'Ölçeklenebilir ürünler, ekipler ve büyüme sistemleri tasarlıyoruz.' : 'We design scalable products, team structures, and growth engines.',
+    descSustainable: isTr ? 'Geçici rüzgarlar yerine kalıcı ve sürdürülebilir şirketler inşa ediyoruz.' : 'We build long-term, sustainable companies instead of chasing short-term trends.',
+    descSmart: isTr ? 'Yapay zekâ, modern teknoloji, veri ve akıllı yönetim sistemlerini entegre ediyoruz.' : 'We integrate artificial intelligence, modern tech stacks, data, and smart operations.'
+  };
+
   const pillars = [
     {
       title: 'Scalable',
-      subtitle: 'Ölçeklenebilir',
+      subtitle: isTr ? 'Ölçeklenebilir' : 'Scalable',
       icon: Layers,
       color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20',
       shadow: 'group-hover:shadow-cyan-500/10',
-      description: 'Ölçeklenebilir ürünler, ekipler ve büyüme sistemleri tasarlıyoruz.'
+      description: t.descScalable
     },
     {
       title: 'Sustainable',
-      subtitle: 'Sürdürülebilir',
+      subtitle: isTr ? 'Sürdürülebilir' : 'Sustainable',
       icon: Activity,
       color: 'text-violet-400 bg-violet-500/10 border-violet-500/20',
       shadow: 'group-hover:shadow-violet-500/10',
-      description: 'Geçici rüzgarlar yerine kalıcı ve sürdürülebilir şirketler inşa ediyoruz.'
+      description: t.descSustainable
     },
     {
       title: 'Smart',
-      subtitle: 'Akıllı',
+      subtitle: isTr ? 'Akıllı' : 'Smart',
       icon: Cpu,
       color: 'text-pink-400 bg-pink-500/10 border-pink-500/20',
       shadow: 'group-hover:shadow-pink-500/10',
-      description: 'Yapay zekâ, modern teknoloji, veri ve akıllı yönetim sistemlerini entegre ediyoruz.'
+      description: t.descSmart
     }
   ];
 
@@ -45,14 +59,14 @@ export default function AboutPillars() {
               <img src={logoStacked} alt="Dijital Hezarfen" className="h-16 w-auto object-contain" />
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
-              <span className="text-xs font-semibold uppercase tracking-wider text-cyber-cyan">Vizyonumuz</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-cyber-cyan">{t.vision}</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans leading-tight">
-              Akademiden<br />
-              <span className="text-gradient-cyan">daha fazlası.</span>
+              {t.titleLine1}<br />
+              <span className="text-gradient-cyan">{t.titleLine2}</span>
             </h2>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Dijital Hezarfen yalnızca girişimcilik eğitimi veren bir akademi değildir. Girişimcinin öğrendiği bilgiyi gerçek bir ürüne, müşteriye, gelire ve büyüyen bir şirkete dönüştürmesini sağlayan akademi ve uygulama ekosistemidir.
+              {t.description}
             </p>
             <div className="pt-4 flex items-center gap-4">
               <div className="flex -space-x-2">

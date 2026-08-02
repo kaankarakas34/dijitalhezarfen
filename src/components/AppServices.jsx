@@ -1,67 +1,133 @@
 import React from 'react';
 import { Layers, ShieldCheck, Laptop, Database, Cpu, Megaphone, Target, ArrowRight, UserPlus } from 'lucide-react';
 
-export default function AppServices({ onOpenApplyModal }) {
+export default function AppServices({ onOpenApplyModal, lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Ne Yapıyoruz?' : 'What We Do',
+    title: isTr ? 'Uygulama Hizmetleri' : 'Execution Services',
+    desc: isTr 
+      ? 'Girişimlerin yalnızca stratejiye değil, işi hızlıca yapacak uzman ellere de ihtiyacı var. Tüm operasyonu sizin yerinize yürütüyoruz.'
+      : 'Startups don\'t just need strategies; they need expert hands to execute tasks fast. We run the operations for you.',
+    btnRequest: isTr ? 'Hizmet Talebi Oluştur' : 'Request Service',
+    talentTitle: isTr ? 'Yetenek & Ekip Desteği' : 'Talent & Task Force',
+    talentDesc: isTr 
+      ? 'Gerektiğinde girişime uygun co-founder, uzman veya proje ekibi oluşturulmasına destek verilebilir.'
+      : 'We assist startups in recruiting co-founders, advisors, or key project members when needed.',
+    btnTalent: isTr ? 'Ekip İhtiyacı Bildir' : 'Request Talent Search',
+    
+    // Group titles
+    g1: isTr ? 'Ürün, Yazılım & AI' : 'Product, Software & AI',
+    g2: isTr ? 'Pazarlama & Medya' : 'Marketing & Media',
+    g3: isTr ? 'Satış & Büyüme' : 'Sales & Growth',
+    g4: isTr ? 'Finans & Yönetim' : 'Finance & Operations'
+  };
+
   const serviceGroups = [
     {
-      title: 'Ürün, Yazılım & AI',
+      title: t.g1,
       icon: Laptop,
       color: 'from-cyan-400 to-blue-500',
-      services: [
-        'Yapay zekâ destekli MVP',
-        'Web & mobil uygulama geliştirme',
-        'SaaS ürün mimarisi',
-        'CRM & ERP entegrasyonları',
-        'AI chatbot & voice agent',
-        'İş akışı otomasyonu (Workflow)',
-        'Veri altyapısı & analitik',
-        'Siber güvenlik denetimi'
-      ]
+      services: isTr 
+        ? [
+            'Yapay zekâ destekli MVP',
+            'Web & mobil uygulama geliştirme',
+            'SaaS ürün mimarisi',
+            'CRM & ERP entegrasyonları',
+            'AI chatbot & voice agent',
+            'İş akışı otomasyonu (Workflow)',
+            'Veri altyapısı & analitik',
+            'Siber güvenlik denetimi'
+          ]
+        : [
+            'AI-assisted MVP build',
+            'Web & mobile application dev',
+            'SaaS product architecture',
+            'CRM & ERP integrations',
+            'AI chatbot & voice agent',
+            'Workflow automations',
+            'Data infrastructure & analytics',
+            'Cybersecurity auditing'
+          ]
     },
     {
-      title: 'Pazarlama & Medya',
+      title: t.g2,
       icon: Megaphone,
       color: 'from-blue-400 to-indigo-500',
-      services: [
-        'Marka kimliği & konumlandırma',
-        'Dijital pazarlama operasyonları',
-        'Performans reklamları yönetimi',
-        'Arama motoru optimizasyonu (SEO)',
-        'Sosyal medya & topluluk yönetimi',
-        'İçerik pazarlaması (Metin & görsel)',
-        'Görsel tasarım (UI/UX)',
-        'Video & reklam prodüksiyonu'
-      ]
+      services: isTr
+        ? [
+            'Marka kimliği & konumlandırma',
+            'Dijital pazarlama operasyonları',
+            'Performans reklamları yönetimi',
+            'Arama motoru optimizasyonu (SEO)',
+            'Sosyal medya & topluluk yönetimi',
+            'İçerik pazarlaması (Metin & görsel)',
+            'Görsel tasarım (UI/UX)',
+            'Video & reklam prodüksiyonu'
+          ]
+        : [
+            'Brand identity & positioning',
+            'Digital marketing operations',
+            'Performance ads management',
+            'Search engine optimization (SEO)',
+            'Social media & community management',
+            'Content marketing (Copy & graphic)',
+            'Visual design (UI/UX)',
+            'Video & ad production'
+          ]
     },
     {
-      title: 'Satış & Büyüme',
+      title: t.g3,
       icon: Target,
       color: 'from-violet-500 to-fuchsia-500',
-      services: [
-        'Satış sistemi kurulumu & optimizasyonu',
-        'CRM kurulumu & veri akışları',
-        'Potansiyel müşteri yaratma (Lead gen)',
-        'B2B satış kanalları geliştirme',
-        'Revenue Operations (RevOps)',
-        'Growth hacking testleri',
-        'Müşteri başarısı (CS) süreçleri',
-        'Uluslararası satış stratejisi'
-      ]
+      services: isTr
+        ? [
+            'Satış sistemi kurulumu & optimizasyonu',
+            'CRM kurulumu & veri akışları',
+            'Potansiyel müşteri yaratma (Lead gen)',
+            'B2B satış kanalları geliştirme',
+            'Revenue Operations (RevOps)',
+            'Growth hacking testleri',
+            'Müşteri başarısı (CS) süreçleri',
+            'Uluslararası satış stratejisi'
+          ]
+        : [
+            'Sales pipelines & optimization',
+            'CRM setups & data mapping',
+            'Lead generation programs',
+            'B2B sales channel development',
+            'Revenue Operations (RevOps)',
+            'Growth hacking experiments',
+            'Customer Success (CS) workflows',
+            'International sales strategy'
+          ]
     },
     {
-      title: 'Finans & Yönetim',
+      title: t.g4,
       icon: Database,
       color: 'from-pink-500 to-rose-500',
-      services: [
-        'Finansal modelleme & tahminler',
-        'Bütçe yönetimi & raporlama',
-        'Nakit akışı (Cashflow) yönetimi',
-        'Muhasebe koordinasyon desteği',
-        'Hukuki sözleşmeler & süreçler',
-        'Süreç yönetimi (Operations)',
-        'Organizasyon tasarımı',
-        'Liderlik & yönetim mentorluğu'
-      ]
+      services: isTr
+        ? [
+            'Finansal modelleme & tahminler',
+            'Bütçe yönetimi & raporlama',
+            'Nakit akışı (Cashflow) yönetimi',
+            'Muhasebe koordinasyon desteği',
+            'Hukuki sözleşmeler & süreçler',
+            'Süreç yönetimi (Operations)',
+            'Organizasyon tasarımı',
+            'Liderlik & yönetim mentorluğu'
+          ]
+        : [
+            'Financial modeling & projections',
+            'Budgeting & financial reporting',
+            'Cash flow management',
+            'Bookkeeping & accounting sync',
+            'Legal drafting & processes',
+            'Operations & workflow design',
+            'Organizational design',
+            'Leadership & management coaching'
+          ]
     }
   ];
 
@@ -74,13 +140,13 @@ export default function AppServices({ onOpenApplyModal }) {
         
         {/* Title Block */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Ne Yapıyoruz?</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans mt-5 mb-5">
-            Uygulama Hizmetleri
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
           <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Girişimlerin yalnızca stratejiye değil, işi hızlıca yapacak uzman ellere de ihtiyacı var. Tüm operasyonu sizin yerinize yürütüyoruz.
+            {t.desc}
           </p>
         </div>
 
@@ -109,7 +175,7 @@ export default function AppServices({ onOpenApplyModal }) {
                     {group.services.map((service, idx) => (
                       <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-gray-400 leading-snug">
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 shrink-0 mt-2"></span>
-                        <span>{service}</span>
+                        <span className="font-light">{service}</span>
                       </div>
                     ))}
                   </div>
@@ -118,9 +184,9 @@ export default function AppServices({ onOpenApplyModal }) {
                 <div className="mt-8 pt-4 border-t border-white/5">
                   <button
                     onClick={() => onOpenApplyModal('girisim')}
-                    className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 cursor-pointer"
+                    className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 cursor-pointer font-sans"
                   >
-                    Hizmet Talebi Oluştur
+                    {t.btnRequest}
                   </button>
                 </div>
               </div>
@@ -129,15 +195,15 @@ export default function AppServices({ onOpenApplyModal }) {
         </div>
 
         {/* Talent Callout note */}
-        <div className="max-w-4xl mx-auto p-5 rounded-xl bg-[#080B12] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-4xl mx-auto p-5 rounded-xl bg-[#080B12] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 font-sans">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg bg-cyan-500/10 text-cyber-cyan">
               <UserPlus className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-white uppercase tracking-wider">Yetenek & Ekip Desteği</h4>
-              <p className="text-xs text-gray-400 mt-0.5 leading-relaxed">
-                Gerektiğinde girişime uygun co-founder, uzman veya proje ekibi oluşturulmasına destek verilebilir.
+              <h4 className="text-xs font-bold text-white uppercase tracking-wider">{t.talentTitle}</h4>
+              <p className="text-xs text-gray-400 mt-0.5 leading-relaxed font-light">
+                {t.talentDesc}
               </p>
             </div>
           </div>
@@ -145,7 +211,7 @@ export default function AppServices({ onOpenApplyModal }) {
             onClick={() => onOpenApplyModal('girisim')}
             className="px-4 py-2 rounded-lg text-xs font-bold bg-white/5 hover:bg-white/10 text-white border border-white/10 transition-colors cursor-pointer shrink-0"
           >
-            Ekip İhtiyacı Bildir
+            {t.btnTalent}
           </button>
         </div>
 

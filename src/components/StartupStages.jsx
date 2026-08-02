@@ -1,53 +1,88 @@
 import React, { useState } from 'react';
 import { Target, Milestone, Zap, Rocket, Globe, ArrowRight } from 'lucide-react';
 
-export default function StartupStages({ onOpenApplyModal }) {
+export default function StartupStages({ onOpenApplyModal, lang }) {
   const [selectedStage, setSelectedStage] = useState(0);
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Yol Haritası' : 'Roadmap',
+    title: isTr ? 'Girişimin Hangi Aşamasında?' : 'What Stage is Your Startup?',
+    desc: isTr 
+      ? 'Girişiminizin bulunduğu evreye özel olarak tasarlanmış desteklerle, riskleri minimize edip büyümenizi hızlandırıyoruz.'
+      : 'With custom support tailored to your startup\'s exact stage, we minimize execution risks and accelerate growth.',
+    stageLabel: isTr ? 'Aşama' : 'Stage',
+    cardTitleSuffix: isTr ? 'Aşaması Destekleri' : 'Stage Support',
+    supportLabel: isTr ? 'Sunulan Destek' : 'Support Provided',
+    noteText: isTr ? '* Girişiminizin bu aşamadaki ihtiyaçlarına özel uygulama desteği verilir.' : '* Custom execution support tailored to your startup\'s needs at this stage.',
+    btnApplyAt: isTr ? 'Aşamasında Başvur' : 'Stage Application',
+    btnDiagnose: isTr ? 'Girişiminin Aşamasını Belirle' : 'Diagnose Your Startup Stage'
+  };
 
   const stages = [
     {
       id: 'fikir',
-      name: 'Fikir',
+      name: isTr ? 'Fikir' : 'Idea',
       icon: Target,
-      tag: 'Aşama 1',
-      description: 'Henüz başlangıçta, fikir geliştirme ve doğrulama evresi.',
-      support: 'Problem, müşteri ve iş modeli doğrulaması.',
+      tag: `${t.stageLabel} 1`,
+      description: isTr 
+        ? 'Henüz başlangıçta, fikir geliştirme ve doğrulama evresi.' 
+        : 'Early ideation, feasibility planning, and market validation phase.',
+      support: isTr 
+        ? 'Problem, müşteri ve iş modeli doğrulaması.' 
+        : 'Problem, customer discovery, and business model validation.',
       color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20'
     },
     {
       id: 'pre-seed',
       name: 'Pre-seed',
       icon: Milestone,
-      tag: 'Aşama 2',
-      description: 'Minimum ürün geliştirme ve ilk ekibi kurma evresi.',
-      support: 'MVP geliştirme, ilk ekip kurulumu ve ilk müşteri lansmanı.',
+      tag: `${t.stageLabel} 2`,
+      description: isTr 
+        ? 'Minimum ürün geliştirme ve ilk ekibi kurma evresi.' 
+        : 'Minimum viable product scoping and core team formation stage.',
+      support: isTr 
+        ? 'MVP geliştirme, ilk ekip kurulumu ve ilk müşteri lansmanı.' 
+        : 'MVP coding, team scaling, and launching a pilot cohort.',
       color: 'text-blue-400 bg-blue-500/10 border-blue-500/20'
     },
     {
       id: 'seed',
       name: 'Seed',
       icon: Zap,
-      tag: 'Aşama 3',
-      description: 'Ürünün pazara çıktığı ve büyümeye başladığı evre.',
-      support: 'Satış kanalları, pazarlama, finansal model ve yatırım hazırlığı.',
+      tag: `${t.stageLabel} 3`,
+      description: isTr 
+        ? 'Ürünün pazara çıktığı ve büyümeye başladığı evre.' 
+        : 'Product launch in active markets and customer acquisition scale stage.',
+      support: isTr 
+        ? 'Satış kanalları, pazarlama, finansal model ve yatırım hazırlığı.' 
+        : 'Sales funnels, growth marketing, 3-year model, and data room prep.',
       color: 'text-violet-400 bg-violet-500/10 border-violet-500/20'
     },
     {
       id: 'series-a',
       name: 'Series A+',
       icon: Rocket,
-      tag: 'Aşama 4',
-      description: 'Ölçeklenmeye hazır, sistemlerin kurulduğu evre.',
-      support: 'Tekrarlanabilir büyüme modelleri ve kurumsal organizasyon tasarımı.',
+      tag: `${t.stageLabel} 4`,
+      description: isTr 
+        ? 'Ölçeklenmeye hazır, sistemlerin kurulduğu evre.' 
+        : 'Prepared for systemic scale and organizational structuring.',
+      support: isTr 
+        ? 'Tekrarlanabilir büyüme modelleri ve kurumsal organizasyon tasarımı.' 
+        : 'Repeatable growth funnels, RevOps execution, and team matrix design.',
       color: 'text-fuchsia-400 bg-fuchsia-500/10 border-fuchsia-500/20'
     },
     {
       id: 'scale-up',
       name: 'Scale-up',
       icon: Globe,
-      tag: 'Aşama 5',
-      description: 'Küresel pazarlara açılma ve ileri büyüme evresi.',
-      support: 'Uluslararasılaşma, global büyüme ve ileri seviye yatırım süreçleri.',
+      tag: `${t.stageLabel} 5`,
+      description: isTr 
+        ? 'Küresel pazarlara açılma ve ileri büyüme evresi.' 
+        : 'International expansion planning and late-stage scaling.',
+      support: isTr 
+        ? 'Uluslararasılaşma, global büyüme ve ileri seviye yatırım süreçleri.' 
+        : 'Cross-border sales development, global entity setup, and next-round fundraising.',
       color: 'text-pink-400 bg-pink-500/10 border-pink-500/20'
     }
   ];
@@ -61,13 +96,13 @@ export default function StartupStages({ onOpenApplyModal }) {
         
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Yol Haritası</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-sans mt-5 mb-5">
-            Girişimin Hangi Aşamasında?
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-400 text-sm sm:text-base">
-            Girişiminizin bulunduğu evreye özel olarak tasarlanmış desteklerle, riskleri minimize edip büyümenizi hızlandırıyoruz.
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed font-light">
+            {t.desc}
           </p>
         </div>
 
@@ -134,41 +169,41 @@ export default function StartupStages({ onOpenApplyModal }) {
                 <div className={`w-9 h-9 rounded-lg flex items-center justify-center border ${stages[selectedStage].color}`}>
                   {React.createElement(stages[selectedStage].icon, { className: 'w-5 h-5' })}
                 </div>
-                <h4 className="text-xl font-bold text-white font-sans">{stages[selectedStage].name} Aşaması Destekleri</h4>
+                <h4 className="text-xl font-bold text-white font-sans">{stages[selectedStage].name} {t.cardTitleSuffix}</h4>
               </div>
-              <p className="text-sm text-gray-400 max-w-xl leading-relaxed">
+              <p className="text-sm text-gray-400 max-w-xl leading-relaxed font-light">
                 {stages[selectedStage].description}
               </p>
             </div>
 
             {/* Support Highlight Box */}
             <div className="w-full md:max-w-xs p-4 rounded-xl bg-white/3 border border-white/5 shrink-0">
-              <span className="text-[10px] font-bold text-cyber-cyan uppercase tracking-wider block mb-1">Sunulan Destek</span>
+              <span className="text-[10px] font-bold text-cyber-cyan uppercase tracking-wider block mb-1">{t.supportLabel}</span>
               <p className="text-xs sm:text-sm font-semibold text-white leading-normal">
                 {stages[selectedStage].support}
               </p>
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span className="text-xs text-gray-500">* Girişiminizin bu aşamadaki ihtiyaçlarına özel uygulama desteği verilir.</span>
+          <div className="mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 font-sans">
+            <span className="text-xs text-gray-500 font-light">{t.noteText}</span>
             <button 
               onClick={() => onOpenApplyModal('girisim', stages[selectedStage].id)}
               className="text-xs font-bold text-cyber-cyan hover:underline flex items-center gap-1 cursor-pointer shrink-0"
             >
-              <span>{stages[selectedStage].name} Aşamasında Başvur</span>
+              <span>{isTr ? `${stages[selectedStage].name} ${t.btnApplyAt}` : `Apply for ${stages[selectedStage].name} Stage`}</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>
 
         {/* General Assessment CTA */}
-        <div className="text-center">
+        <div className="text-center font-sans">
           <button
             onClick={() => onOpenApplyModal('girisim')}
-            className="px-8 py-4 rounded-xl font-bold text-base bg-gradient-cyber text-[#0B0F19] hover:shadow-xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 rounded-xl font-bold text-sm sm:text-base bg-gradient-cyber text-[#0B0F19] hover:shadow-xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center gap-2 cursor-pointer"
           >
-            Girişiminin Aşamasını Belirle
+            {t.btnDiagnose}
           </button>
         </div>
 

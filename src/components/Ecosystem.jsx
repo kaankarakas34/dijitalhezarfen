@@ -1,55 +1,84 @@
 import React from 'react';
 import { BookOpen, Code, LineChart, PlayCircle, Users } from 'lucide-react';
 
-export default function Ecosystem() {
+export default function Ecosystem({ lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Bileşenler' : 'Components',
+    title: isTr ? 'Ekosistemin Ana Güçleri' : 'Core Forces of the Ecosystem',
+    desc: isTr 
+      ? 'Dijital Hezarfen; eğitimi, tasarımı, teknolojiyi ve büyümeyi tek bir çatı altında birleştirerek parçalı yapıları ortadan kaldırır.'
+      : 'Dijital Hezarfen eliminates fragmented structures by combining training, design, technology, and growth under a single roof.',
+    talentLabel: isTr ? 'Yetenek Desteği:' : 'Talent Support:',
+    
+    // Elements
+    t1: isTr ? 'Akademi' : 'Academy',
+    d1: isTr ? 'Girişimcilik, yönetim, teknoloji ve büyüme yetkinlikleri.' : 'Entrepreneurship, management, tech, and growth capabilities.',
+    b1: [
+      isTr ? 'Girişimcilik Tüneli programı' : 'Entrepreneur Tunnel program',
+      isTr ? 'Uygulamalı ve proje tabanlı öğrenim' : 'Applied & project-based learning',
+      isTr ? 'Zihniyet ve liderlik eğitimleri' : 'Mindset & leadership workshops',
+      isTr ? 'Alanında uzman mentor desteği' : 'Expert advisory & mentor support'
+    ],
+
+    t2: isTr ? 'Uygulama' : 'Execution',
+    d2: isTr ? 'Girişimin ihtiyaç duyduğu işlerin uzman ekiplerle hayata geçirilmesi.' : 'Hands-on execution of startup tasks by specialized teams.',
+    b2: [
+      isTr ? 'Yazılım ve çalışan MVP geliştirme' : 'Software & working MVP development',
+      isTr ? 'Yapay zekâ otomasyonları & entegrasyonlar' : 'AI automations & API integrations',
+      isTr ? 'Pazarlama, satış ve finans altyapısı' : 'Marketing, sales & financial setups'
+    ],
+    e2: isTr ? 'İhtiyaç hâlinde co-founder, uzman ve proje ekibi desteği.' : 'Optional co-founder, expert, and task force matching.',
+
+    t3: isTr ? 'Büyüme ve Yatırım' : 'Growth & Venture',
+    d3: isTr ? 'Girişimi müşteriye, yatırıma ve küresel pazarlara hazırlama.' : 'Preparing the startup for customers, funding, and global markets.',
+    b3: [
+      isTr ? 'Growth hacking ve gelir operasyonları' : 'Growth hacking & revenue operations',
+      isTr ? 'Finansal modelleme & pitch deck tasarımı' : 'Financial models & pitch deck design',
+      isTr ? 'Data room & due diligence hazırlığı' : 'Data room & due diligence preparation',
+      isTr ? 'Yatırımcı ve stratejik network erişimi' : 'Access to investor & strategic networks'
+    ],
+
+    t4: isTr ? 'Medya ve Etkinlikler' : 'Media & Events',
+    d4: isTr ? 'Ekosistemi besleyen, birleştiren ve büyüten iletişim platformları.' : 'Communication channels that nourish, connect, and scale the ecosystem.',
+    b4: [
+      isTr ? 'YouTube programları ve podcast serileri' : 'YouTube programs & podcast series',
+      isTr ? 'Sektörel raporlar, analizler ve makaleler' : 'Sector reports, analyses & guides',
+      isTr ? 'Demo Day, konferanslar ve meetup\'lar' : 'Demo Days, conferences & meetups',
+      isTr ? 'Girişimci & Yatırımcı buluşma saatleri' : 'Founder & Investor networking hours'
+    ]
+  };
+
   const elements = [
     {
-      title: 'Akademi',
+      title: t.t1,
       icon: BookOpen,
       color: 'from-cyan-400 to-blue-500',
-      description: 'Girişimcilik, yönetim, teknoloji ve büyüme yetkinlikleri.',
-      bullets: [
-        'Girişimcilik Tüneli programı',
-        'Uygulamalı ve proje tabanlı öğrenim',
-        'Zihniyet ve liderlik eğitimleri',
-        'Alanında uzman mentor desteği'
-      ]
+      description: t.d1,
+      bullets: t.b1
     },
     {
-      title: 'Uygulama',
+      title: t.t2,
       icon: Code,
       color: 'from-blue-400 to-indigo-500',
-      description: 'Girişimin ihtiyaç duyduğu işlerin uzman ekiplerle hayata geçirilmesi.',
-      bullets: [
-        'Yazılım ve çalışan MVP geliştirme',
-        'Yapay zekâ otomasyonları & entegrasyonlar',
-        'Pazarlama, satış ve finans altyapısı',
-      ],
-      extra: 'İhtiyaç hâlinde co-founder, uzman ve proje ekibi desteği.'
+      description: t.d2,
+      bullets: t.b2,
+      extra: t.e2
     },
     {
-      title: 'Büyüme ve Yatırım',
+      title: t.t3,
       icon: LineChart,
       color: 'from-violet-500 to-fuchsia-500',
-      description: 'Girişimi müşteriye, yatırıma ve küresel pazarlara hazırlama.',
-      bullets: [
-        'Growth hacking ve gelir operasyonları',
-        'Finansal modelleme & pitch deck tasarımı',
-        'Data room & due diligence hazırlığı',
-        'Yatırımcı ve stratejik network erişimi'
-      ]
+      description: t.d3,
+      bullets: t.b3
     },
     {
-      title: 'Medya ve Etkinlikler',
+      title: t.t4,
       icon: PlayCircle,
       color: 'from-pink-500 to-rose-500',
-      description: 'Ekosistemi besleyen, birleştiren ve büyüten iletişim platformları.',
-      bullets: [
-        'YouTube programları ve podcast serileri',
-        'Sektörel raporlar, analizler ve makaleler',
-        'Demo Day, konferanslar ve meetup\'lar',
-        'Girişimci & Yatırımcı buluşma saatleri'
-      ]
+      description: t.d4,
+      bullets: t.b4
     }
   ];
 
@@ -59,13 +88,13 @@ export default function Ecosystem() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Bileşenler</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans mt-5 mb-5">
-            Ekosistemin Ana Güçleri
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
           <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Dijital Hezarfen; eğitimi, tasarımı, teknolojiyi ve büyümeyi tek bir çatı altında birleştirerek parçalı yapıları ortadan kaldırır.
+            {t.desc}
           </p>
         </div>
 
@@ -108,7 +137,7 @@ export default function Ecosystem() {
                   <div className="mt-4 p-4 rounded-xl bg-white/5 border border-white/5 flex items-start gap-3">
                     <Users className="w-4.5 h-4.5 text-cyber-cyan shrink-0 mt-0.5" />
                     <p className="text-xs text-gray-400 leading-normal">
-                      <strong className="text-gray-300">Yetenek Desteği:</strong> {el.extra}
+                      <strong className="text-gray-300">{t.talentLabel}</strong> {el.extra}
                     </p>
                   </div>
                 )}

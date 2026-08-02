@@ -8,31 +8,66 @@ const Youtube = (props) => (
   </svg>
 );
 
-export default function MediaSection() {
+export default function MediaSection({ lang }) {
+  const isTr = lang === 'tr';
+
+  const t = {
+    badge: isTr ? 'Yayınlarımız' : 'Publications',
+    title: isTr ? 'Medya & İçerik Dünyamız' : 'Media & Content Ecosystem',
+    desc: isTr 
+      ? 'Bilgiyi yalnızca kapalı sınıflarda değil, herkes için erişilebilir medya içerikleriyle daha geniş kitlelere ulaştırıyoruz.'
+      : 'We distribute actionable knowledge to larger audiences through publicly available media content beyond classroom walls.',
+    btnBrowse: isTr ? 'İçerikleri İncele' : 'Browse Content',
+    videoLive: isTr ? 'Yeni Bölüm Yayında' : 'New Episode Live',
+    videoTitle: isTr ? 'Yapay Zekâ ile Girişim Kurmak ve MVP Süreçleri' : 'Building Startups & MVP Cycles with Generative AI',
+    
+    // Items
+    t1: isTr ? 'YouTube Programları' : 'YouTube Shows',
+    ty1: isTr ? 'Video' : 'Video',
+    l1: isTr 
+      ? ['Kurucu röportajları', 'Eğitim videoları', 'Haftalık gündem analizleri']
+      : ['Founder interviews', 'Tutorial videos', 'Weekly market updates'],
+    d1: isTr ? 'Girişimcilik sohbetleri, canlı yayınlar ve sektörel incelemeler.' : 'Founder stories, live streams, and market evaluations.',
+
+    t2: isTr ? 'Podcasts' : 'Podcasts',
+    ty2: isTr ? 'Ses' : 'Audio',
+    l2: isTr
+      ? ['Girişim Hikâyeleri', 'Scale-up Dersleri', 'Yatırımcı Perspektifi']
+      : ['Founder Journeys', 'Scale-up Lessons', 'Investor Perspectives'],
+    d2: isTr ? 'Yolda, sporda veya çalışırken dinleyebileceğiniz girişimcilik dersleri.' : 'Venture building lectures you can listen to while commuting or working.',
+
+    t3: isTr ? 'Yazılı Yayınlar & Raporlar' : 'Written Reports & Guides',
+    ty3: isTr ? 'Döküman' : 'Document',
+    l3: isTr
+      ? ['Girişimcilik Raporları', 'Teknoloji Trendleri', 'Sektörel İncelemeler']
+      : ['Startup Ecosystem Reports', 'Technology Trends', 'Sector Deep Dives'],
+    d3: isTr ? 'Veri odaklı pazar araştırmaları, detaylı startup analizleri ve rehberler.' : 'Data-backed market research, detailed startup analyses, and practical guides.'
+  };
+
   const mediaItems = [
     {
-      title: 'YouTube Programları',
-      type: 'Video',
+      title: t.t1,
+      type: t.ty1,
       icon: Youtube,
       color: 'text-rose-400 bg-rose-500/10 border-rose-500/20',
-      description: 'Girişimcilik sohbetleri, canlı yayınlar ve sektörel incelemeler.',
-      links: ['Kurucu röportajları', 'Eğitim videoları', 'Haftalık gündem analizleri']
+      description: t.d1,
+      links: t.l1
     },
     {
-      title: 'Podcasts',
-      type: 'Ses',
+      title: t.t2,
+      type: t.ty2,
       icon: Mic,
       color: 'text-violet-400 bg-violet-500/10 border-violet-500/20',
-      description: 'Yolda, sporda veya çalışırken dinleyebileceğiniz girişimcilik dersleri.',
-      links: ['Girişim Hikâyeleri', 'Scale-up Dersleri', 'Yatırımcı Perspektifi']
+      description: t.d2,
+      links: t.l2
     },
     {
-      title: 'Yazılı Yayınlar & Raporlar',
-      type: 'Döküman',
+      title: t.t3,
+      type: t.ty3,
       icon: Newspaper,
       color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20',
-      description: 'Veri odaklı pazar araştırmaları, detaylı startup analizleri ve rehberler.',
-      links: ['Girişimcilik Raporları', 'Teknoloji Trendleri', 'Sektörel İncelemeler']
+      description: t.d3,
+      links: t.l3
     }
   ];
 
@@ -44,13 +79,13 @@ export default function MediaSection() {
         
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">Yayınlarımız</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-cyber-cyan bg-cyan-500/10 px-3.5 py-1.5 rounded-full">{t.badge}</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-sans mt-5 mb-5">
-            Medya & İçerik Dünyamız
+            {t.title}
           </h2>
           <div className="h-1.5 w-24 bg-gradient-cyber mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-            Bilgiyi yalnızca kapalı sınıflarda değil, herkes için erişilebilir medya içerikleriyle daha geniş kitlelere ulaştırıyoruz.
+          <p className="text-gray-400 text-sm sm:text-base leading-relaxed font-light">
+            {t.desc}
           </p>
         </div>
 
@@ -80,15 +115,15 @@ export default function MediaSection() {
                   <h3 className="font-extrabold text-lg text-white font-sans group-hover:text-cyber-cyan transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mt-2.5 mb-6">
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mt-2.5 mb-6 font-light">
                     {item.description}
                   </p>
 
                   <div className="space-y-2.5 border-t border-white/5 pt-5">
                     {item.links.map((link, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-xs text-gray-300">
-                        <span className="w-1 h-1 rounded-full bg-cyan-500"></span>
-                        <span>{link}</span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                        <span className="font-light">{link}</span>
                       </div>
                     ))}
                   </div>
@@ -97,9 +132,9 @@ export default function MediaSection() {
                 <div className="mt-8 pt-4 border-t border-white/5">
                   <a
                     href="#"
-                    className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1.5 group/link"
+                    className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1.5 group/link font-sans"
                   >
-                    <span>İçerikleri İncele</span>
+                    <span>{t.btnBrowse}</span>
                     <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
@@ -126,8 +161,8 @@ export default function MediaSection() {
 
             {/* Graphic mock elements representing charts */}
             <div className="absolute bottom-6 left-6 z-20 text-left">
-              <span className="text-[10px] font-bold text-cyber-cyan uppercase tracking-widest block mb-1">Yeni Bölüm Yayında</span>
-              <h4 className="text-sm sm:text-lg font-bold text-white leading-tight">Yapay Zekâ ile Girişim Kurmak ve MVP Süreçleri</h4>
+              <span className="text-[10px] font-bold text-cyber-cyan uppercase tracking-widest block mb-1">{t.videoLive}</span>
+              <h4 className="text-sm sm:text-lg font-bold text-white leading-tight font-sans">{t.videoTitle}</h4>
             </div>
 
             <div className="absolute top-6 right-6 z-20 flex items-center gap-2 bg-[#0B0F19]/60 backdrop-blur-md px-3 py-1 rounded-lg border border-white/10">

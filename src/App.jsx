@@ -184,7 +184,7 @@ function App() {
       case '/iletisim':
         return <Iletisim lang={lang} onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
       case '/sik-sorulan-sorular':
-        return <Sss lang={lang} onNavigate={handleNavigate} />;
+        return <Sss lang={lang} onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
       default:
         return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
     }

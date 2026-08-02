@@ -40,6 +40,9 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
     blogDesc: isTr ? 'Makaleler & Rehberler' : 'Articles & Guides',
     blogDetail: isTr ? 'Yazılım, AI, pazarlama ve hukuk yazıları' : 'Software, AI, marketing & legal resources',
     blogExplore: isTr ? 'Blogu İncele' : 'Browse Blog',
+    faq: isTr ? 'Sık Sorulan Sorular' : 'FAQ',
+    faqDesc: isTr ? 'SSS & Sık Sorulan Sorular' : 'FAQ & Support',
+    faqDetail: isTr ? 'Süreçler hakkında 175 detaylı soru-cevap' : '175 detailed Q&As about our model',
     mediaBannerTitle: isTr ? 'Bilgi & İletişim Yayında' : 'Knowledge Hub Live',
     mediaBannerDesc: isTr ? 'Derslerin dışına taşan podcast, video serileri ve blog rehberleriyle bilgiye her an erişim sağlayın.' : 'Access podcasts, video series, and blog guides beyond classroom learning.',
     
@@ -236,7 +239,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                 <div className="absolute top-full left-1/2 -translate-x-[40%] pt-4 w-[800px] z-50">
                   <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('medya')}>
                     
-                    <div className="col-span-8 grid grid-cols-3 gap-6">
+                    <div className="col-span-9 grid grid-cols-4 gap-6">
                       <div>
                         <h4 className="text-xs font-bold text-rose-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
                           <FileText className="w-4 h-4" />
@@ -281,9 +284,24 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                           </li>
                         </ul>
                       </div>
+
+                      <div>
+                        <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
+                          <HelpCircle className="w-4 h-4" />
+                          {t.faq}
+                        </h4>
+                        <ul className="space-y-3.5">
+                          <li>
+                            <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="block group">
+                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.faqDesc}</span>
+                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.faqDetail}</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
 
-                    <div className="col-span-4 rounded-xl bg-gradient-to-br from-violet-950 via-slate-900 to-fuchsia-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
+                    <div className="col-span-3 rounded-xl bg-gradient-to-br from-violet-950 via-slate-900 to-fuchsia-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/5 rounded-full filter blur-xl"></div>
                       <div>
                         <div className="w-8 h-8 rounded-lg bg-violet-500/10 text-violet-400 flex items-center justify-center mb-3">
@@ -552,6 +570,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                 <a href="#" onClick={(e) => handleNavClick(e, '/medya')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.mediaDesc}</a>
                 <a href="#" onClick={(e) => handleNavClick(e, '/etkinlikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.eventsDesc}</a>
                 <a href="#" onClick={(e) => handleNavClick(e, '/icerikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.blogDesc}</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.faq}</a>
               </div>
 
               {/* Hakkımızda */}

@@ -11,10 +11,9 @@ import StartupStages from '../components/StartupStages';
 import GrowthInvestment from '../components/GrowthInvestment';
 import MediaSection from '../components/MediaSection';
 import BlogSection from '../components/BlogSection';
-import EventsSection from '../components/EventsSection';
 import PortfolioReferences from '../components/PortfolioReferences';
 
-export default function Home({ onOpenApplyModal, onFocusSection, lang }) {
+export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lang }) {
   return (
     <div className="space-y-4 animate-fade-in">
       {/* Section 1: Hero */}
@@ -51,10 +50,7 @@ export default function Home({ onOpenApplyModal, onFocusSection, lang }) {
       <MediaSection lang={lang} />
 
       {/* Blog Section */}
-      <BlogSection lang={lang} />
-
-      {/* Section 11: Events */}
-      <EventsSection lang={lang} onOpenApplyModal={onOpenApplyModal} />
+      <BlogSection lang={lang} onNavigate={onNavigate} />
 
       {/* Section 12: Team & Portfolio Results */}
       <PortfolioReferences lang={lang} />

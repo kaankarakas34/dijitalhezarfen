@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Menu, X, ChevronDown, BookOpen, Layers, TrendingUp, HelpCircle, Calendar, FileText, Users, Award, Briefcase, UserPlus } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, Layers, TrendingUp, HelpCircle, FileText, Users, Award, Briefcase, UserPlus, Newspaper } from 'lucide-react';
 import logoWhite from '../../logo/Dijital Hezarfen (8).png';
 
 export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageChange }) {
@@ -29,22 +29,22 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
     ekosistemTitle: isTr ? 'Dijital Hezarfen Ekosistemi' : 'Dijital Hezarfen Ecosystem',
     ekosistemDesc: isTr ? 'Fikirden global büyümeye giden tüm yolda, akademi ve uygulama gücü tek bir çatı altında.' : 'Academy and application power under one roof, from idea to global growth.',
     
-    publications: isTr ? 'Yayınlar & Etkinlikler' : 'Publications & Events',
+    publications: isTr ? 'Yayınlarımız' : 'Publications',
     media: isTr ? 'Medya' : 'Media',
     mediaDesc: isTr ? 'YouTube & Podcast' : 'YouTube & Podcast',
     mediaDetail: isTr ? 'Kurucu röportajları ve analiz videoları' : 'Founder interviews & analyses',
-    events: isTr ? 'Etkinlikler' : 'Events',
-    eventsDesc: isTr ? 'Demo Day & Buluşmalar' : 'Demo Day & Meetups',
-    eventsDetail: isTr ? 'Girişim sunumları ve yatırımcı görüşmeleri' : 'Pitch events & investor networking',
+    publicationsPage: isTr ? 'Yayınlarımız' : 'Publications',
+    publicationsDesc: isTr ? 'Haberler & İçgörüler' : 'News & Insights',
+    publicationsDetail: isTr ? 'Ekosistemden haberler, analizler ve seçili yayınlar' : 'Ecosystem news, analysis, and featured publications',
     blog: isTr ? 'Blog' : 'Blog',
     blogDesc: isTr ? 'Makaleler & Rehberler' : 'Articles & Guides',
     blogDetail: isTr ? 'Yazılım, AI, pazarlama ve hukuk yazıları' : 'Software, AI, marketing & legal resources',
-    blogExplore: isTr ? 'Blogu İncele' : 'Browse Blog',
+    blogExplore: isTr ? 'Yayınları İncele' : 'Browse Publications',
     faq: isTr ? 'Sık Sorulan Sorular' : 'FAQ',
     faqDesc: isTr ? 'SSS & Sık Sorulan Sorular' : 'FAQ & Support',
     faqDetail: isTr ? 'Süreçler hakkında 175 detaylı soru-cevap' : '175 detailed Q&As about our model',
     mediaBannerTitle: isTr ? 'Bilgi & İletişim Yayında' : 'Knowledge Hub Live',
-    mediaBannerDesc: isTr ? 'Derslerin dışına taşan podcast, video serileri ve blog rehberleriyle bilgiye her an erişim sağlayın.' : 'Access podcasts, video series, and blog guides beyond classroom learning.',
+    mediaBannerDesc: isTr ? 'Derslerin dışına taşan podcast, video serileri, haberler ve rehberlerle bilgiye her an erişim sağlayın.' : 'Access podcasts, video series, news, and guides beyond classroom learning.',
     
     about: isTr ? 'Hakkımızda' : 'About Us',
     vision: isTr ? 'Vizyon & Yaklaşım' : 'Vision & Approach',
@@ -222,7 +222,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
               )}
             </div>
 
-            {/* Mega Menu 2: Yayınlar & Etkinlikler */}
+            {/* Mega Menu 2: Yayınlarımız */}
             <div 
               className="relative"
               onMouseEnter={() => handleMouseEnter('medya')}
@@ -239,7 +239,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                 <div className="absolute top-full left-1/2 -translate-x-[40%] pt-4 w-[800px] z-50">
                   <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('medya')}>
                     
-                    <div className="col-span-9 grid grid-cols-4 gap-6">
+                    <div className="col-span-9 grid grid-cols-3 gap-6">
                       <div>
                         <h4 className="text-xs font-bold text-rose-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
                           <FileText className="w-4 h-4" />
@@ -257,14 +257,14 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
 
                       <div>
                         <h4 className="text-xs font-bold text-violet-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                          <Calendar className="w-4 h-4" />
-                          {t.events}
+                          <Newspaper className="w-4 h-4" />
+                          {t.publicationsPage}
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/etkinlikler')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.eventsDesc}</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.eventsDetail}</span>
+                            <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="block group">
+                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.publicationsDesc}</span>
+                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.publicationsDetail}</span>
                             </a>
                           </li>
                         </ul>
@@ -277,7 +277,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/icerikler')} className="block group">
+                            <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.blogDesc}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.blogDetail}</span>
                             </a>
@@ -311,7 +311,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         <p className="text-[9px] text-gray-400 mt-1 leading-normal">{t.mediaBannerDesc}</p>
                       </div>
                       <button 
-                        onClick={(e) => handleNavClick(e, '/icerikler')}
+                        onClick={(e) => handleNavClick(e, '/yayinlar')}
                         className="mt-4 py-2 w-full text-center text-[10px] font-bold text-violet-400 bg-violet-500/10 rounded-lg hover:bg-violet-500/20 transition-all cursor-pointer"
                       >
                         {t.blogExplore}
@@ -564,12 +564,12 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                 <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.growthVenture}</a>
               </div>
 
-              {/* Medya & Buluşmalar */}
+              {/* Yayınlarımız */}
               <div className="space-y-1 pt-2 border-t border-white/5">
                 <div className="text-[10px] font-bold text-violet-400 uppercase tracking-wider px-2">{t.publications}</div>
                 <a href="#" onClick={(e) => handleNavClick(e, '/medya')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.mediaDesc}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/etkinlikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.eventsDesc}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/icerikler')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.blogDesc}</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.publicationsDesc}</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.blogDesc}</a>
                 <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.faq}</a>
               </div>
 

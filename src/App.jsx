@@ -29,8 +29,7 @@ import YatirimHazirlik from './pages/YatirimHazirlik';
 import Globallesme from './pages/Globallesme';
 import Kurumsal from './pages/Kurumsal';
 import Medya from './pages/Medya';
-import Etkinlikler from './pages/Etkinlikler';
-import Blog from './pages/Blog';
+import Yayinlar from './pages/Yayinlar';
 import Basvur from './pages/Basvur';
 import Iletisim from './pages/Iletisim';
 import Sss from './pages/Sss';
@@ -120,7 +119,7 @@ function App() {
   const renderPage = () => {
     switch (currentPath) {
       case '/':
-        return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
+        return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} onNavigate={handleNavigate} />;
       case '/dijital-hezarfen':
         return <About lang={lang} onOpenApplyModal={handleOpenApplyModal} onNavigate={handleNavigate} />;
       case '/girisimler':
@@ -175,10 +174,12 @@ function App() {
         return <Kurumsal lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/medya':
         return <Medya lang={lang} onNavigate={handleNavigate} />;
+      case '/yayinlar':
+        return <Yayinlar lang={lang} />;
       case '/etkinlikler':
-        return <Etkinlikler lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
+        return <Yayinlar lang={lang} />;
       case '/icerikler':
-        return <Blog lang={lang} />;
+        return <Yayinlar lang={lang} />;
       case '/basvur':
         return <Basvur lang={lang} onOpenApplyModal={handleOpenApplyModal} />;
       case '/iletisim':

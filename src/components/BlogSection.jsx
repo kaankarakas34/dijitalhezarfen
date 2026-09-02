@@ -1,16 +1,17 @@
 import React from 'react';
-import { ArrowUpRight, BookOpen, Clock, Tag } from 'lucide-react';
+import { ArrowUpRight, BarChart3, BookOpen, Clock, Newspaper, Tag, Video } from 'lucide-react';
 
-export default function BlogSection({ lang }) {
+export default function BlogSection({ lang, onNavigate }) {
   const isTr = lang === 'tr';
 
   const t = {
-    badge: isTr ? 'Kütüphane' : 'Library',
-    title: isTr ? 'Dijital Hezarfen Blog' : 'Dijital Hezarfen Blog',
+    badge: isTr ? 'Yayınlarımız' : 'Publications',
+    title: isTr ? 'Bilgiyi, uygulama ve büyüme pratiğiyle birlikte yayınlıyoruz.' : 'We publish knowledge with execution and growth practice.',
     desc: isTr 
-      ? 'Girişimcilik, yazılım, AI otomasyonları, pazarlama, satış ve finans konularında güncel rehberler ve uzman analizleri.'
-      : 'Guides, frameworks, and expert analyses covering software engineering, growth hacking, RevOps, and startup fundraising.',
-    btnRead: isTr ? 'Yazının Tamamını Oku' : 'Read Full Article',
+      ? 'Haberler, rehberler, medya içerikleri ve analizler; Dijital Hezarfen’in akademi, uygulama ve yatırım hazırlığı yaklaşımını besleyen canlı bir yayın alanında birleşiyor.'
+      : 'News, guides, media content, and analyses come together in a living publication hub that supports Dijital Hezarfen’s academy, execution, and fundraising approach.',
+    btnRead: isTr ? 'Yayını İncele' : 'View Publication',
+    btnAll: isTr ? 'Tüm Yayınları Gör' : 'View All Publications',
     
     // Post 1
     t1: isTr ? 'Yapay Zekâ Destekli MVP Geliştirme Rehberi' : 'AI-Assisted MVP Development Guide',
@@ -22,21 +23,21 @@ export default function BlogSection({ lang }) {
     date1: isTr ? '02 Ağustos 2026' : 'August 02, 2026',
 
     // Post 2
-    t2: isTr ? 'Yatırımcı Sunumu (Pitch Deck) Hazırlama Sanatı' : 'The Art of Pitch Deck Preparation',
+    t2: isTr ? 'Dijital Hezarfen hibrit girişim geliştirme modelini genişletiyor' : 'Dijital Hezarfen expands its hybrid venture building model',
     s2: isTr
-      ? 'Yatırımcıların ilk 30 saniyede neye baktığını biliyor musunuz? Sizi fonlamaya ikna edecek 10 slaytlık sunum şablonu ve detayları.'
-      : 'Do you know what VCs look for in the first 30 seconds? A 10-slide template designed to convince investors.',
-    cat2: isTr ? 'Yatırım Hazırlığı' : 'Fundraising Prep',
-    time2: isTr ? '7 dk okuma' : '7 min read',
+      ? 'Akademi, uygulama hizmetleri ve büyüme desteğini aynı modelde birleştiren yaklaşımın kurucular için nasıl çalıştığını anlattık.'
+      : 'A look at how the model combines academy, execution services, and growth support for founders.',
+    cat2: isTr ? 'Haber' : 'News',
+    time2: isTr ? '4 dk okuma' : '4 min read',
     date2: isTr ? '28 Temmuz 2026' : 'July 28, 2026',
 
     // Post 3
-    t3: isTr ? 'Birim Ekonomi (Unit Economics) Nedir ve Nasıl Hesaplanır?' : 'What is Unit Economics & How to Track It?',
+    t3: isTr ? 'Kurucu sohbetleri: fikrin ürüne dönüştüğü ilk 90 gün' : 'Founder talks: the first 90 days from idea to product',
     s3: isTr
-      ? 'Bir girişimin batıp batmayacağını belirleyen en önemli metrik: LTV / CAC oranı. Reklam bütçenizi yakmadan önce mutlaka hesaplayın.'
-      : 'The metric that predicts whether a startup will fail: LTV/CAC ratio. Make sure to model this before spending your marketing budget.',
-    cat3: isTr ? 'Finans & Büyüme' : 'Finance & Growth',
-    time3: isTr ? '6 dk okuma' : '6 min read',
+      ? 'Podcast ve video serilerinde kurucularla ürün, müşteri görüşmesi, satış ve ekip kurma pratiklerini konuşuyoruz.'
+      : 'Our podcast and video series explore product, customer discovery, sales, and team-building practices with founders.',
+    cat3: isTr ? 'Medya' : 'Media',
+    time3: isTr ? '22 dk izleme' : '22 min watch',
     date3: isTr ? '15 Temmuz 2026' : 'July 15, 2026'
   };
 
@@ -48,7 +49,8 @@ export default function BlogSection({ lang }) {
       category: t.cat1,
       readTime: t.time1,
       date: t.date1,
-      imageGradient: 'from-cyan-500 to-blue-600'
+      imageGradient: 'from-cyan-500 to-blue-600',
+      icon: BookOpen
     },
     {
       id: 2,
@@ -57,7 +59,8 @@ export default function BlogSection({ lang }) {
       category: t.cat2,
       readTime: t.time2,
       date: t.date2,
-      imageGradient: 'from-violet-600 to-fuchsia-600'
+      imageGradient: 'from-violet-600 to-fuchsia-600',
+      icon: Newspaper
     },
     {
       id: 3,
@@ -66,13 +69,14 @@ export default function BlogSection({ lang }) {
       category: t.cat3,
       readTime: t.time3,
       date: t.date3,
-      imageGradient: 'from-pink-500 to-rose-500'
+      imageGradient: 'from-emerald-500 to-cyan-600',
+      icon: Video
     }
   ];
 
   return (
-    <section id="blog" className="py-24 relative overflow-hidden bg-[#0A0D17]">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl h-[400px] bg-violet-500/2 rounded-full filter blur-[120px] pointer-events-none"></div>
+    <section id="yayinlar" className="py-24 relative overflow-hidden bg-[#0A0D17]">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:linear-gradient(to_bottom,transparent,#000_20%,#000_80%,transparent)] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -88,23 +92,42 @@ export default function BlogSection({ lang }) {
           </p>
         </div>
 
+        <div className="max-w-6xl mx-auto mb-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {[
+            { icon: BookOpen, label: isTr ? 'Rehberler' : 'Guides', text: isTr ? 'Kurucular için uygulanabilir bilgi.' : 'Actionable knowledge for founders.' },
+            { icon: BarChart3, label: isTr ? 'Analizler' : 'Analyses', text: isTr ? 'Büyüme, finans ve pazar içgörüleri.' : 'Growth, finance, and market insights.' },
+            { icon: Newspaper, label: isTr ? 'Haberler' : 'News', text: isTr ? 'Ekosistemden seçili gelişmeler.' : 'Selected ecosystem updates.' }
+          ].map((item) => {
+            const Icon = item.icon;
+            return (
+              <div key={item.label} className="rounded-xl border border-white/5 bg-white/3 px-5 py-4 flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyber-cyan flex items-center justify-center shrink-0">
+                  <Icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-extrabold text-white">{item.label}</h3>
+                  <p className="text-xs text-gray-400 mt-1 leading-relaxed">{item.text}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {posts.map((post) => (
-            <article 
-              key={post.id}
-              className="group flex flex-col justify-between rounded-2xl glass overflow-hidden border border-white/5 hover:border-cyan-500/20 transition-all duration-300 transform hover:-translate-y-1"
-            >
+          {posts.map((post) => {
+            const Icon = post.icon;
+            return (
+              <article
+                key={post.id}
+                className="group flex flex-col justify-between rounded-2xl glass overflow-hidden border border-white/5 hover:border-cyan-500/20 transition-all duration-300 transform hover:-translate-y-1"
+              >
               <div>
                 {/* Visual Image Banner with Gradients */}
                 <div className={`h-48 bg-gradient-to-tr ${post.imageGradient} relative flex items-center justify-center p-6 text-white overflow-hidden`}>
                   <div className="absolute inset-0 bg-[#0B0F19]/20 backdrop-blur-[1px]"></div>
-                  
-                  {/* Decorative background vectors */}
-                  <div className="absolute -bottom-10 -left-10 w-28 h-28 bg-white/10 rounded-full filter blur-md"></div>
-                  <div className="absolute -top-10 -right-10 w-28 h-28 bg-black/10 rounded-full filter blur-md"></div>
 
-                  <BookOpen className="w-12 h-12 text-white relative z-10 opacity-80 group-hover:scale-110 transition-transform duration-300" />
+                  <Icon className="w-12 h-12 text-white relative z-10 opacity-80 group-hover:scale-110 transition-transform duration-300" />
                   
                   <div className="absolute bottom-4 left-4 z-10 flex items-center gap-1.5 bg-[#0C1220]/70 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/5 text-[10px] font-bold uppercase tracking-wider">
                     <Tag className="w-3.5 h-3.5 text-cyber-cyan" />
@@ -136,6 +159,10 @@ export default function BlogSection({ lang }) {
               <div className="p-6 pt-0 mt-4 border-t border-white/5 pt-4">
                 <a
                   href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate?.('/yayinlar');
+                  }}
                   className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1 group/link font-sans"
                 >
                   <span>{t.btnRead}</span>
@@ -143,10 +170,20 @@ export default function BlogSection({ lang }) {
                 </a>
               </div>
 
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
 
+        <div className="mt-12 flex justify-center">
+          <button
+            onClick={() => onNavigate?.('/yayinlar')}
+            className="px-6 py-3 rounded-xl font-bold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 flex items-center gap-2 cursor-pointer"
+          >
+            <span>{t.btnAll}</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </button>
+        </div>
       </div>
     </section>
   );

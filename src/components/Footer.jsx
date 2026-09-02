@@ -65,8 +65,8 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
     ],
     [t.colResources]: [
       { name: isTr ? 'YouTube & Podcast' : 'YouTube & Podcast', path: '/medya' },
-      { name: isTr ? 'Demo Day & Etkinlikler' : 'Demo Days & Events', path: '/etkinlikler' },
-      { name: isTr ? 'Makaleler & Blog' : 'Articles & Blog', path: '/icerikler' },
+      { name: isTr ? 'Yayınlarımız' : 'Publications', path: '/yayinlar' },
+      { name: isTr ? 'Makaleler & Rehberler' : 'Articles & Guides', path: '/yayinlar' },
       { name: isTr ? 'Sık Sorulan Sorular' : 'FAQ', path: '/sik-sorulan-sorular' }
     ],
     [t.colCorporate]: [

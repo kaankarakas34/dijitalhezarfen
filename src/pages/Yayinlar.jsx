@@ -20,7 +20,7 @@ export default function Yayinlar({ lang }) {
     read: isTr ? 'İncele' : 'Read',
     featured: isTr ? 'Öne Çıkan Yayın' : 'Featured Publication',
     noResults: isTr ? 'Bu kritere uygun yayın bulunamadı.' : 'No publications match this criteria.',
-    author: 'Kaan Karakaş'
+    authorLabel: isTr ? 'Yazar' : 'Author'
   };
 
   const categories = articleCategories.map((category) => ({
@@ -96,6 +96,7 @@ export default function Yayinlar({ lang }) {
                 <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-5">
                   <span className="text-cyber-cyan font-bold">{categories.find((category) => category.id === featured.category)?.label}</span>
                   <span>{featured.date}</span>
+                  <span>{t.authorLabel}: {featured.author}</span>
                   <span className="inline-flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" />
                     {featured.readTime}
@@ -174,7 +175,7 @@ export default function Yayinlar({ lang }) {
                       {publication.desc}
                     </p>
                     <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
-                      <span className="text-[11px] text-gray-500">{t.author}</span>
+                      <span className="text-[11px] text-gray-500">{t.authorLabel}: {publication.author}</span>
                       <a href={`#${publication.path}`} className="inline-flex items-center gap-1.5 text-xs font-bold text-cyber-cyan">
                         {t.read}
                         <ArrowUpRight className="w-3.5 h-3.5" />

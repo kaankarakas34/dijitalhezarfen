@@ -12,7 +12,8 @@ export default function BlogSection({ lang, onNavigate }) {
       ? 'Haberler, rehberler, medya içerikleri ve analizler; Dijital Hezarfen’in akademi, uygulama ve yatırım hazırlığı yaklaşımını besleyen canlı bir yayın alanında birleşiyor.'
       : 'News, guides, media content, and analyses come together in a living publication hub that supports Dijital Hezarfen’s academy, execution, and fundraising approach.',
     btnRead: isTr ? 'Yayını İncele' : 'View Publication',
-    btnAll: isTr ? 'Tüm Yayınları Gör' : 'View All Publications'
+    btnAll: isTr ? 'Tüm Yayınları Gör' : 'View All Publications',
+    authorLabel: isTr ? 'Yazar' : 'Author'
   };
 
   const iconMap = {
@@ -38,6 +39,7 @@ export default function BlogSection({ lang, onNavigate }) {
       category: categoryLabels[article.category],
       readTime: localized.readTime,
       date: localized.date,
+      author: localized.author,
       imageGradient: article.color?.replace('/20', '').replace('/25', '') || 'from-cyan-500 to-blue-600',
       icon: iconMap[article.category] || BookOpen,
       image: article.image,
@@ -118,6 +120,7 @@ export default function BlogSection({ lang, onNavigate }) {
                       {post.readTime}
                     </span>
                   </div>
+                  <p className="text-[11px] text-gray-500 font-semibold">{t.authorLabel}: {post.author}</p>
 
                   <h3 className="font-extrabold text-base sm:text-lg text-white font-sans leading-snug group-hover:text-cyber-cyan transition-colors">
                     {post.title}

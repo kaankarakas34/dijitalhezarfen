@@ -9,7 +9,7 @@ export const articleCategories = [
 export const articles = [
   {
     slug: 'yapay-zeka-calisanlar-meta-project-ot',
-    category: 'rapor',
+    category: 'rehber',
     title: {
       tr: 'Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi Bize Ne Anlatıyor?',
       en: 'Is AI Ready to Replace Employees? What Meta’s Project OT Experiment Tells Us'

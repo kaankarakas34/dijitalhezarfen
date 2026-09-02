@@ -9,7 +9,7 @@ export default function YatirimHazirlik({ onOpenApplyModal }) {
     'One-pager (tek sayfalık özet) ve kısa yatırım özeti.',
     '3–5 yıllık detaylı finansal model ve gelecek senaryoları.',
     'Yatırım miktarı, runway süresi ve sermaye kullanım planı.',
-    'Cap table (ortaklık yapısı) ve sulanma (dilution) senaryoları.',
+    'Cap table (ortaklık yapısı) ve seyrelme (dilution) senaryoları.',
     'Data room (veri odası) yapısı ve kontrol listesi.',
     'Yatırımcı hedef listesi ve görüşme akışı planı.',
     'Mock pitch (sunum simülasyonları) ve soru-cevap hazırlığı.'

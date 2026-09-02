@@ -14,7 +14,7 @@ export default function GrowthVenture({ onOpenApplyModal, onNavigate }) {
   const preparePoints = [
     'Yatırımcı odaklı pitch deck sunumu, tek sayfalık yönetici özeti ve demo.',
     'Finansal modelleme, değerleme yaklaşımı, bütçe ve yatırım fonu kullanım planı.',
-    'Cap table (ortaklık tablosu) modelleme ve hisse sulanma senaryolarının analizi.',
+    'Cap table (ortaklık tablosu) modelleme ve hisse seyrelme senaryolarının analizi.',
     'Data room (veri odası) yapısının kurulması, mock pitch simülasyonları.',
     'Hukuki ve teknik due diligence (durum tespiti) hazırlığı ve koordinasyonu.'
   ];

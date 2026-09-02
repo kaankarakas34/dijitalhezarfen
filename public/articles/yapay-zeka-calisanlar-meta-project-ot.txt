@@ -1,0 +1,819 @@
+Benim gözümden mesele hiçbir zaman “Yapay zekâ insanların yerini alacak mı?” sorusu olmadı.
+
+Alacak.
+
+Hatta bazı alanlarda almaya başladı bile.
+
+Bugün bir şirket içerisinde yapılan işlerin önemli bir kısmını doğru kurgulanmış AI agentlar, otomasyonlar ve yapay zekâ destekli sistemlerle çok daha düşük maliyetle gerçekleştirmek mümkün.
+
+Müşteri hizmetleri, satış öncesi lead qualification, raporlama, veri analizi, CRM operasyonları, müşteri takibi, içerik üretiminin belirli aşamaları, yazılım geliştirme, doküman analizi, araştırma, monitoring, veri sınıflandırma…
+
+Liste giderek uzuyor.
+
+Ben zaten yapay zekânın asıl değerinin sadece “bana bir metin yaz” seviyesinde olmadığını düşünüyorum.
+
+Asıl değer;
+
+karar verebildiği, aksiyon alabildiği, diğer sistemlerle konuşabildiği ve bir süreci baştan sona yönetebildiği noktada ortaya çıkıyor.
+
+Fakat burada çok önemli bir ayrım var.
+
+Bir insanın yaptığı bazı görevleri otomatikleştirmek başka bir şey.
+
+O insanı organizasyondan tamamen çıkartabileceğinizi düşünmek başka bir şey.
+
+Meta'nın son dönemde yaşadığı Project OT deneyi bence önümüzdeki birkaç yıl boyunca şirketlerin yapay zekâ dönüşümünü anlamak için incelenmesi gereken en önemli vakalardan biri olacak.
+
+Çünkü bunu küçük bir startup değil, dünyanın en büyük teknoloji şirketlerinden biri yaptı.
+
+Ve sonuç pek de planlandığı gibi olmadı.
+
+Zuckerberg'in fikri aslında mantıksız değildi
+Reuters'ın 26 Ağustos 2026 tarihinde yayımladığı kapsamlı araştırmaya göre Meta yönetimi 2026 yılının başında Project OT – Organization Transformation adında oldukça radikal bir organizasyon dönüşümü üzerinde çalışmaya başladı.
+
+Amaç Meta'yı klasik anlamda AI kullanan bir şirket olmaktan çıkarıp “AI-native” bir organizasyona dönüştürmekti.
+
+Yani mevcut çalışanların eline ChatGPT benzeri araçlar vermekten bahsetmiyoruz.
+
+Organizasyonun kendisini yeniden tasarlamaktan bahsediyoruz.
+
+Planlanan yapıda çok sayıda günlük operasyonu AI agentlar üstlenecek, daha küçük ve yüksek yetkinlikli insan ekipleri ise bu agentları yönetecekti.
+
+Reuters'ın gördüğü senaryolarda Meta'nın bazı ekiplerinin büyüklüğünün %60'a kadar azaltılması değerlendirildi. Burada %60'ın tüm Meta çalışanlarını ifade etmediğini özellikle belirtmek gerekiyor. Meta da yaptığı açıklamada bunun bazı takımlar için oluşturulan en agresif senaryolardan biri olduğunu söyledi. Plan; işten çıkarmalar kadar açık pozisyonların kapatılması ve çalışanların farklı öncelikli bölümlere kaydırılmasını da içeriyordu.
+
+Bence fikir kağıt üzerinde aslında oldukça mantıklı.
+
+Çünkü AI gerçekten bir çalışanın üretim kapasitesini 2 kat, 3 kat hatta bazı görevlerde 10 kat artırabiliyorsa şirketlerin aynı organizasyon yapılarını korumasının ekonomik olarak bir anlamı kalmayacak.
+
+Meta yöneticilerinden Ime Archibong'un yaptığı ilk pilotlardan biri bu mantığı çok güzel gösteriyor.
+
+Klasik büyük ürün ekipleri yerine iki-üç mühendis ve bir tasarımcıdan oluşan küçük “tech pod” ekipleri kuruluyor.
+
+Altı aylık geliştirme planları yerine dört haftalık sprintler düşünülüyor.
+
+Mantık basit:
+
+AI sayesinde daha az insanla daha fazla fikir denenebilir.
+
+Daha fazla prototip oluşturulabilir.
+
+Başarısız fikirlerin maliyeti düşürülebilir.
+
+Ürün geliştirme hızı artırılabilir.
+
+Benim gözümden bu tam anlamıyla bir growth yaklaşımı.
+
+Daha fazla experiment.
+
+Daha kısa feedback loop.
+
+Daha düşük experiment cost.
+
+Daha yüksek iteration velocity.
+
+Buraya kadar Zuckerberg'e katılmamak zor.
+
+Sorun bundan sonra başlıyor.
+
+Kod %220 arttı, peki değer?
+Reuters'ın gördüğü Meta iç verilerindeki en çarpıcı sayı bence şu:
+
+Meta'nın iç yazılım platformları ve altyapısındaki code changes yıllık bazda %220 artıyor.
+
+İlk bakışta inanılmaz bir verimlilik artışı.
+
+AI çalışıyor.
+
+Engineerlar daha fazla kod üretiyor.
+
+Agentlar kod yazıyor.
+
+Üretim üç kattan fazla artmış gibi görünüyor.
+
+Ancak aynı dönemde Meta kullanıcılarına ulaşan yeni veya geliştirilmiş feature'lardaki artış yalnızca %36.
+
+Ben burada haberi okumayı bırakıp biraz durdum.
+
+Çünkü bu aslında teknoloji probleminden çok klasik bir growth problemi.
+
+Bir sistemi optimize ederken yanlış metriği optimize ederseniz rakamlar çok güzel görünür ama şirket daha fazla değer üretmez.
+
+Growth dünyasında buna yıllardır rastlıyoruz.
+
+Traffic artıyor ama revenue artmıyor.
+
+Lead artıyor ama satış artmıyor.
+
+App download artıyor ama retention düşüyor.
+
+Impression artıyor ama conversion değişmiyor.
+
+Meta örneğinde ise:
+
+Code output +%220
+
+ama
+
+user-facing improvements +%36.
+
+Yani AI çok daha fazla output üretmiş.
+
+Ama output aynı oranda outcome üretmemiş.
+
+Benim için buradaki en önemli formül şu:
+
+Output ≠ Outcome ≠ Business Value
+
+Kod yazmak değer üretmek değildir.
+
+Feature yayınlamak bile tek başına değer üretmek değildir.
+
+Asıl mesele o feature'ın kullanıcıya, retention'a, revenue'ya, maliyete veya şirketin başka bir North Star metriğine ne kattığıdır.
+
+Bir Growth Hacker mantığıyla bakarsanız Meta burada en tehlikeli hatalardan birine yaklaşmış:
+
+local metric optimization.
+
+Sistemin bir parçasını inanılmaz hızlandırıyorsunuz ama bütün sistem aynı oranda hızlanmıyor.
+
+Çünkü bottleneck başka yerde.
+
+AI üretkenliği değil, hatayı da ölçeklendiriyor
+İşin daha ilginç kısmı bundan sonra geliyor.
+
+Meta'nın altyapı ekipleri Mart ayında AI kaynaklı kod artışının bazı reliability warning signs oluşturduğunu raporlamaya başlamış.
+
+Nisan ayındaki başka bir şirket içi paylaşımda kontrolsüz AI agentların insanların normalde yapmayacağı ölçekte büyük ve bozucu aksiyonlar gerçekleştirdiği belirtilmiş.
+
+Reuters'ın incelediği iç verilere göre bunun ardından büyük teknik ve güvenlik olayları önceki yıla göre %40 artmış.
+
+Çalışanların bu problemleri çözmek için harcadığı “firefighting” zamanı ise %70 yükselmiş.
+
+İşte benim yapay zekâ agentları konusunda en fazla üzerinde durduğum konulardan biri tam olarak burada.
+
+AI sadece başarıyı ölçeklendirmiyor.
+
+Hatayı da ölçeklendiriyor.
+
+Bir çalışan yanlış bir CRM kaydı açabilir.
+
+Bir agent yanlış workflow ile on bin CRM kaydını birkaç dakika içerisinde değiştirebilir.
+
+Bir çalışan yanlış kişiye mail gönderebilir.
+
+Bir agent yanlış segmentasyonla on binlerce kişiye mail gönderebilir.
+
+Bir developer yanlış bir işlem yapabilir.
+
+Ama yetkileri doğru sınırlandırılmamış bir agent aynı hatayı yüzlerce sistemde saniyeler içerisinde tekrarlayabilir.
+
+Yapay zekânın en büyük avantajı olan;
+
+speed + scale + autonomy
+
+aynı zamanda kontrolsüz bırakıldığında en büyük riski haline geliyor.
+
+Bu yüzden bana göre agent kurarken sorulması gereken soru sadece:
+
+“Bu agent ne yapabiliyor?”
+
+değil.
+
+Aynı zamanda:
+
+“Bu agent yanlış yaptığında maksimum ne kadar zarar verebilir?”
+
+olmalı.
+
+Bu klasik yazılım geliştirmeden farklı bir risk yönetimi gerektiriyor.
+
+Asıl paradoks: Meta'nın AI agentları başka yerde inanılmaz başarılı
+Project OT haberini çok daha ilginç yapan şey ise şu:
+
+Meta'nın AI agentları başarısız değil.
+
+Tam tersine Meta kendi Engineering Blog'unda son derece başarılı agent sistemleri anlatıyor.
+
+Örneğin Capacity Efficiency Program.
+
+Meta'nın devasa altyapısında küçük performans kayıpları bile yüzlerce megawatt enerji anlamına gelebiliyor.
+
+Meta bunun için performans problemlerini araştıran AI agentlar oluşturmuş.
+
+Agent;
+
+problemin belirtilerini topluyor,
+
+ilgili code change'i buluyor,
+
+dokümantasyonu inceliyor,
+
+geçmişteki benzer problemlere bakıyor,
+
+domain-specific engineering knowledge kullanıyor,
+
+ardından çözüm için kod hazırlayıp pull request oluşturuyor.
+
+Ancak burada çok kritik bir detay var.
+
+Agent oluşturduğu çözümü doğrudan istediği gibi production'a basmıyor.
+
+Orijinal mühendise review için gönderiyor.
+
+Meta'nın kendi verilerine göre bazı performans araştırmalarında yaklaşık 10 saatlik manuel inceleme 30 dakikaya kadar düşebiliyor.
+
+Program yüzlerce megawatt kapasite geri kazanılmasına katkı sağlamış ve bu işler büyürken ekibin aynı oranda büyümesine gerek kalmamasını sağlamış.
+
+Yani AI burada tam olarak yapmasını istediğimiz şeyi yapıyor.
+
+Headcount ihtiyacını azaltıyor.
+
+Ama nasıl?
+
+Dar bir problem alanı var.
+
+Doğru araçlara erişimi var.
+
+Domain knowledge tanımlanmış.
+
+Validation criteria var.
+
+Guardrail var.
+
+İnsan review'u var.
+
+Kısacası agenta:
+
+“Git şirkette ne yapılması gerekiyorsa yap”
+
+denmemiş.
+
+Çok iyi tasarlanmış bir execution environment verilmiş.
+
+Bence Meta'nın başarısız Project OT deneyi ile başarılı Capacity Efficiency sistemi arasındaki fark bize AI'ın bugünkü kapasitesini çok iyi anlatıyor.
+
+AI'ın problemi bazen zekâ değil, şirketi tanımaması
+Meta'nın başka bir mühendislik çalışması bunu daha da güzel ortaya koyuyor.
+
+Meta AI agentları büyük bir data processing pipeline üzerinde kullanmak istiyor.
+
+Sistem:
+
+4 repository,
+
+3 programlama dili,
+
+4.100'den fazla dosya
+
+ve birbirine bağlı çok sayıda sistemden oluşuyor.
+
+İlk denemelerde agentlar yeterince iyi çalışmıyor.
+
+Çünkü AI kodu görebiliyor.
+
+Ama şirketin yıllar içerisinde oluşmuş “tribal knowledge” dediğimiz örtük bilgisini bilmiyor.
+
+Örneğin bir enum deprecated görünüyor.
+
+Normal bir model:
+
+“Artık kullanılmıyor, silelim.”
+
+diyebilir.
+
+Ama yıllardır o sistem üzerinde çalışan engineer bilir ki onu silersen eski serialization compatibility bozulacak.
+
+Başka bir configuration anlamsız görünebilir.
+
+Ama başka bir downstream sistem ona bağlı olabilir.
+
+Bir field başka yerde farklı isimle kullanılıyor olabilir.
+
+Bunların çoğu hiçbir dokümantasyonda yazmaz.
+
+İnsanların kafasındadır.
+
+Meta bunun üzerine 50'den fazla specialized AI agent kullanarak tüm sistemi taratıyor.
+
+4.100'den fazla dosya haritalanıyor.
+
+59 adet context file oluşturuluyor.
+
+50'den fazla “non-obvious pattern” çıkarılıyor.
+
+Ardından critic agentlar bu bilgileri kontrol ediyor.
+
+Sonuç?
+
+AI navigation coverage yaklaşık %5 seviyesinden %100'e çıkıyor.
+
+Pre-computed context kullanan agentların tool call ve token kullanımı yaklaşık %40 azalıyor.
+
+Daha önce engineerlarla konuşarak yaklaşık iki gün sürebilecek bazı workflow araştırmaları yaklaşık 30 dakikaya düşüyor.
+
+Bana göre geleceğin şirketleri için burada çok büyük bir ders var.
+
+Şirket bilgisinin AI-readable hale gelmesi gerekiyor.
+
+CRM'iniz kötü.
+
+Dokümantasyonunuz kötü.
+
+Databases birbirinden kopuk.
+
+Süreçlerin yarısı WhatsApp mesajlarında.
+
+Bir görevin neden öyle yapıldığını kimse yazmamış.
+
+Hangi çalışanın hangi kararı neden verdiği bilinmiyor.
+
+Sonra şirket AI agent kuruyor ve:
+
+“Niye doğru çalışmıyor?”
+
+diyor.
+
+Çünkü model şirketinizi bilmiyor.
+
+Daha doğrusu şirketiniz kendisini bilmiyor olabilir.
+
+McKinsey'in 2026 araştırması da buna oldukça yakın bir tablo çiziyor.
+
+Dünya genelinde şirketlerin yaklaşık üçte ikisi agentları denemiş durumda ancak %10'dan azı bunları ölçülebilir değer üretecek şekilde ölçekleyebilmiş.
+
+Şirketlerin yaklaşık 10'da 8'i data limitations'ı ölçeklemenin önündeki engellerden biri olarak gösteriyor.
+
+Bu yüzden benim gözümden geleceğin AI dönüşümü aslında biraz da:
+
+knowledge infrastructure dönüşümü.
+
+Bir task'ı otomatikleştirmek bir job'ı otomatikleştirmek değildir
+Bence Project OT'deki temel düşünce hatalarından biri burada olabilir.
+
+Bir software engineer'ın çok fazla kod yazdığı görülüyor.
+
+AI kod yazabiliyor.
+
+O halde daha az engineer gerekir.
+
+Belirli ölçüde doğru.
+
+Ama bir engineer'ın işi sadece kod yazmak değil.
+
+Engineer;
+
+requirement'ın yanlış olduğunu fark eder,
+
+iki sistem arasındaki görünmeyen bağı bilir,
+
+geçmişte neden belirli bir karar alındığını hatırlar,
+
+risk değerlendirir,
+
+başka ekiplerle konuşur,
+
+production'da oluşabilecek sonuçları düşünür,
+
+öncelik belirler,
+
+bazen de yapılabilecek bir şeyi yapmamaya karar verir.
+
+AI ilk bölümü çok iyi yapıyor olabilir.
+
+Ancak bu, rolün tamamını ikame ettiği anlamına gelmez.
+
+Microsoft Research'ün 2026'da yayımladığı CORPGEN araştırması tam da bunu göstermeye çalışıyor.
+
+Çünkü klasik agent benchmarklarının çoğu AI'a tek görev veriyor.
+
+Gerçek hayatta çalışanlar böyle çalışmıyor.
+
+Sabah bilgisayarını açtığında:
+
+mail,
+
+rapor,
+
+spreadsheet,
+
+müşteri,
+
+sunum,
+
+Slack,
+
+bekleyen proje,
+
+başkasına bağımlı görev,
+
+deadline
+
+aynı anda geliyor.
+
+Microsoft agentları bu şekilde çoklu iş ortamına soktuğunda concurrent task sayısı 12'den 46'ya çıktıkça başarı oranının %16,7'den %8,7'ye düştüğünü gözlemledi.
+
+Problemler:
+
+memory overload,
+
+task interference,
+
+karmaşık dependencies,
+
+sürekli yeniden önceliklendirme.
+
+Microsoft daha iyi memory isolation, hierarchical planning ve orchestration ile sonuçları 3,5 kata kadar artırabildi.
+
+Ama araştırmanın verdiği mesaj çok açık:
+
+Tek bir görevi mükemmel yapan agent ile bütün gün çalışan dijital employee aynı şey değil.
+
+AI insanların yerini almıyor demek de kendimizi kandırmak olur
+Burada diğer uca da düşmek istemiyorum.
+
+“Bak Meta başaramadı, demek ki AI insanların yerini alamayacak.”
+
+Bence çok yanlış bir sonuç olur.
+
+Stanford'ın 2026 AI Index Report verileri oldukça açık.
+
+Raporda derlenen araştırmalarda AI kullanımıyla;
+
+müşteri hizmetlerinde %14–15
+
+software development'ta %26
+
+marketing output'ta %50
+
+seviyelerine ulaşan productivity gains raporlanıyor.
+
+Üstelik kazanımların en yüksek olduğu alanların ortak özelliği:
+
+structured + measurable + monitorable
+
+işler olması.
+
+Aynı rapora göre şirketlerin yaklaşık üçte biri önümüzdeki yıl AI nedeniyle workforce reduction bekliyor.
+
+En yüksek azalma beklentileri arasında service operations, supply chain ve software engineering bulunuyor.
+
+Dolayısıyla evet.
+
+AI bazı işleri ortadan kaldıracak.
+
+Bazı şirketlerde 10 kişinin yaptığı işi 3 kişi + agentlar yapacak.
+
+Bazı departmanlar küçülecek.
+
+Bazı roller tamamen kaybolacak.
+
+Bazı junior pozisyonlarına eskisi kadar ihtiyaç olmayacak.
+
+Bunu görmezden gelmenin anlamı yok.
+
+Ancak bana göre yanlış denklem şu:
+
+Bir çalışanın yaptığı işlerin %60'ını AI yapabiliyor → çalışanların %60'ını çıkartabiliriz.
+
+İş hayatı böyle matematiksel çalışmıyor.
+
+Çünkü o çalışanın kalan %40'ı şirket için ürettiği değerin %80'i olabilir.
+
+Growth tarafından baktığımda başka bir problem daha görüyorum: gerçek Unit Economics
+Şirketlerin AI dönüşümünü değerlendirirken yalnızca:
+
+kaç kişiyi azalttık?
+
+sorusuna bakması bence büyük hata.
+
+Asıl hesap:
+
+Employee cost saved
+
+eksi
+
+AI infrastructure
+
+eksi
+
+model/token cost
+
+eksi
+
+integration cost
+
+eksi
+
+engineering cost
+
+eksi
+
+monitoring
+
+eksi
+
+error correction
+
+eksi
+
+security incidents
+
+eksi
+
+downtime
+
+eksi
+
+human review
+
+eksi
+
+rework.
+
+Meta'da teknik ve güvenlik olayları %40 artarken firefighting zamanının %70 yükselmesi tam burada önemli hale geliyor.
+
+Kağıt üzerinde 100 kişinin işini 50 kişiye düşürdünüz diyelim.
+
+Harika.
+
+Ama kalan 50 kişi zamanının yarısını AI'ın ürettiği problemleri düzeltmeye harcıyorsa beklediğiniz economics oluşmamış olabilir.
+
+Growth bana göre sadece geliri büyütmek değildir.
+
+Bir sistemin sürdürülebilir şekilde daha fazla değer üretmesini sağlamak.
+
+AI da ancak bu denklemin tamamını iyileştiriyorsa optimizasyondur.
+
+Yalnızca payroll küçülüyorsa değil.
+
+Kötü sürece AI koyunca iyi süreç oluşmuyor
+Deloitte'un 2026 araştırmalarındaki en dikkat çekici noktalardan biri de bu.
+
+Şirketlerin %84'ü AI'a uygun olacak şekilde işleri yeniden tasarlamamış durumda.
+
+Birçok şirket mevcut insan süreçlerinin üzerine autonomous agent ekliyor.
+
+Deloitte bunu oldukça yerinde bir benzetmeyle mevcut organizasyon modeline agent eklemeyi bisiklete jet motoru takmaya benzetiyor.
+
+Sorun motorun gücü değil.
+
+Bisiklet o hız için tasarlanmamış.
+
+Bence burada şirketlerin yapması gereken:
+
+process → AI
+
+değil.
+
+Önce:
+
+process redesign
+
+sonra:
+
+AI-native workflow.
+
+Çünkü kötü tasarlanmış bir süreci otomatikleştirirseniz kötü süreci yalnızca hızlandırırsınız.
+
+Growth dünyasında yıllardır aynı şeyi söylüyoruz.
+
+Çalışmayan funnel'a daha fazla trafik göndermek funnel'ı düzeltmez.
+
+Conversion rate %0,5 ise media budget'ı iki katına çıkarmak problemi çözmez.
+
+Aynı şey AI'da da geçerli.
+
+Broken Process × AI = Faster Broken Process
+
+Peki hangi işleri bugün AI'a bırakabiliriz?
+Ben burada işleri dört gruba ayırırım.
+
+1. Copilot
+AI önerir.
+
+İnsan yapar.
+
+Strateji geliştirme, yaratıcı karar, karmaşık analiz gibi alanlar.
+
+2. Human in the loop
+AI işi yapar.
+
+İnsan kontrol eder ve onaylar.
+
+Meta'nın pull request sistemi buna güzel örnek.
+
+3. Human on the loop
+AI karar verir ve işlemi yapar.
+
+İnsan sistemi monitor eder.
+
+Sadece exception olduğunda devreye girer.
+
+4. Autonomous
+AI karar verir.
+
+AI uygular.
+
+AI sonucu kontrol eder.
+
+İnsan yalnızca sistem seviyesinde oversight yapar.
+
+Asıl şirket maliyetlerinin dramatik olarak düştüğü seviye üçüncü ve dördüncü seviye olacak.
+
+Ve ben şirketlerin buraya geleceğini düşünüyorum.
+
+Ancak her süreç aynı hızda gelmeyecek.
+
+Deloitte'un 2026 State of AI çalışmasında da daha ileri organizasyonların AI'ın baştan sona yapabildiği workflow'ları ayırdığı, insanların ise judgment, exception handling ve strategic oversight tarafına kaydığı görülüyor.
+
+Bence geleceğin organizasyon şeması da buna benzeyecek.
+
+Eskiden:
+
+10 insan → 10 birim output
+
+vardı.
+
+Sonra:
+
+10 insan + AI → 20 birim output
+
+oldu.
+
+Gelecekte büyük ihtimalle:
+
+3 insan + 20 agent → 50 birim output
+
+gibi organizasyonlar göreceğiz.
+
+Dolayısıyla insan tamamen sistemin dışına çıkmıyor.
+
+Ancak rolü değişiyor.
+
+Execution azalıyor.
+
+Orchestration artıyor.
+
+Review artıyor.
+
+Exception handling artıyor.
+
+Strategy artıyor.
+
+Decision rights değişiyor.
+
+Meta'nın hatası AI'a güvenmek değildi
+Bence Project OT'yi sadece bir Zuckerberg başarısızlığı olarak okumak da haksızlık olur.
+
+Çünkü denedikleri şey muhtemelen şirketlerin önümüzdeki beş-on yıl içerisinde yapmak zorunda kalacağı dönüşümün erken bir versiyonu.
+
+Üstelik Zuckerberg yaptığı hatayı da tamamen reddetmedi.
+
+Reuters'a göre Temmuz ayında yapılan şirket içi town hall'da agentic teknolojinin beklediği kadar hızlı “accelerate” olmadığını kabul etti ve önümüzdeki üç-altı ayda teknolojinin daha fazla fayda üretmesini beklediğini söyledi.
+
+Bence burada söylenen şey:
+
+“AI çalışmıyor.”
+
+değil.
+
+Daha çok:
+
+“Teknolojinin readiness seviyesini organizasyon değişiminden daha hızlı tahmin ettik.”
+
+Ve benim gözümden asıl hata burada.
+
+AI'a güvenmek değil.
+
+AI'ın hazır olduğu seviyeyi yanlış değerlendirmek.
+
+Meta Mayıs ayında Project OT'nin ilk dalgası kapsamında yaklaşık %10'luk kesintiyi uyguladı ancak Kasım için düşünülen ikinci geniş dalganın planlamasını Zuckerberg ilk dalgadan saatler önce durdurdu.
+
+Çalışan sentiment'inin de aynı süreçte Meta'nın Pulse Survey verilerine göre %74 favorable seviyesinden %55'e düşmesi önemli.
+
+Çünkü organizasyon dönüşümü yalnızca teknoloji mimarisi değildir.
+
+İnsan mimarisidir.
+
+Meta çalışanların keyboard ve mouse hareketlerini AI sistemlerini eğitmek amacıyla kaydedecek bir sistemi devreye aldığında çalışanların bir bölümü doğal olarak:
+
+“Kendi yerimize gelecek AI'ı biz eğitiyoruz.”
+
+diye düşündü.
+
+Sonrasında bu program durduruldu.
+
+Bir tarafta çalışanınıza:
+
+“AI sizin işinizi değiştirecek.”
+
+deyip,
+
+diğer tarafta organizasyonun %60 küçülebileceği senaryolar hazırlayıp,
+
+sonra aynı çalışanlardan:
+
+“Şimdi bu AI dönüşümünü başarıya ulaştırın.”
+
+demek change management açısından oldukça zor bir denklem.
+
+Benim çıkardığım sonuç
+Ben AI'ın insanları tamamen ikame edemeyeceğini düşünmüyorum.
+
+Bence edecek.
+
+Ama iş bazında değil, görev kümeleri ve süreçler üzerinden başlayacak.
+
+Önce:
+
+task automation.
+
+Sonra:
+
+workflow automation.
+
+Sonra:
+
+decision automation.
+
+Sonra:
+
+department automation.
+
+En son belki gerçekten:
+
+organization automation.
+
+Ama aradaki basamakları atlayamazsınız.
+
+Bir şirkete AI agent koymadan önce benim soracağım sorular şunlar olur:
+
+Görev açıkça tanımlı mı?
+
+Agent'ın ihtiyacı olan bütün context erişilebilir mi?
+
+Başarılı ve başarısız sonuç ölçülebiliyor mu?
+
+Yanlış karar geri alınabilir mi?
+
+Agent'ın yetkileri sınırlandırılmış mı?
+
+Audit log tutuluyor mu?
+
+Agent kendi sonucunu doğrulayabiliyor mu?
+
+Exception olduğunda insan escalation noktası var mı?
+
+Bu workflow gerçekten iyi tasarlanmış mı?
+
+Ve en önemlisi bu otomasyon şirketin gerçek North Star metriğini iyileştiriyor mu?
+
+Çünkü AI çağında da değişmeyen bir growth kuralı var.
+
+Ölçemediğiniz şeyi optimize edemezsiniz.
+
+Meta kod miktarını %220 artırdı.
+
+Ama bu sayı tek başına başarının ölçüsü değildi.
+
+Bence önümüzdeki birkaç yıl içerisinde yapay zekâyı gerçekten başarılı kullanan şirketlerle sadece “AI kullanıyoruz” diyen şirketleri birbirinden ayıracak şey model seçimi olmayacak.
+
+Herkes aynı modellere erişebilecek.
+
+Farkı;
+
+process design
+
+data infrastructure
+
+company knowledge
+
+orchestration
+
+guardrails
+
+measurement
+
+decision architecture
+
+ve
+
+insan ile AI arasındaki görev dağılımı
+
+yaratacak.
+
+Meta'nın Project OT deneyi bu yüzden benim için bir AI başarısızlığı değil.
+
+Tam tersine AI ekonomisine geçişin erken dönemlerinden çok değerli bir vaka çalışması.
+
+Çünkü bize şunu gösteriyor:
+
+AI çalışanların yerini alacak.
+
+Ama şirketlerin önce çalışanlarının gerçekte ne yaptığını anlaması gerekiyor.
+
+Ve belki bundan da önemlisi:
+
+Bir insanın yaptığı işi otomatikleştirmekle, bir insanın organizasyondaki değerini otomatikleştirmek aynı şey değil.
+
+Kaynaklar: Reuters'ın 26 Ağustos 2026 tarihli Project OT özel araştırması; Meta Engineering'in “Capacity Efficiency at Meta” ve “How Meta Used AI to Map Tribal Knowledge” teknik yazıları; Microsoft Research CORPGEN araştırması; Stanford HAI 2026 AI Index Report; Deloitte State of AI in the Enterprise 2026 ve operating model araştırmaları; McKinsey'nin agentic AI'ın ölçeklenmesi ve data altyapısı üzerine 2026 araştırmaları.

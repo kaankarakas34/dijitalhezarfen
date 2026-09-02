@@ -8,6 +8,79 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'yapay-zeka-calisanlar-meta-project-ot',
+    category: 'rapor',
+    title: {
+      tr: 'Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi Bize Ne Anlatıyor?',
+      en: 'Is AI Ready to Replace Employees? What Meta’s Project OT Experiment Tells Us'
+    },
+    desc: {
+      tr: 'Meta’nın Project OT deneyi üzerinden AI agentların çalışanları, görevleri ve şirket organizasyonlarını gerçekten ne ölçüde dönüştürebileceğini tartışan kapsamlı analiz.',
+      en: 'A deep analysis of Meta’s Project OT experiment and what it reveals about AI agents, employees, workflows, and organizational redesign.'
+    },
+    date: {
+      tr: '02 Eylül 2026',
+      en: 'September 02, 2026'
+    },
+    readTime: {
+      tr: '16 dk okuma',
+      en: '16 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/yapay-zeka-calisanlar-meta-project-ot.png',
+    imageAlt: 'AI agentlar ve insan ekiplerin birlikte çalıştığı yazısız teknoloji operasyon görseli',
+    source: '/articles/yapay-zeka-calisanlar-meta-project-ot.txt',
+    publishedAt: '2026-09-02T09:00:00+03:00',
+    modifiedAt: '2026-09-02T15:30:00+03:00',
+    keywords: [
+      'yapay zeka çalışanların yerini alacak mı',
+      'AI agent',
+      'Meta Project OT',
+      'agentic AI',
+      'organizasyon dönüşümü',
+      'AI otomasyon',
+      'growth hacking',
+      'iş gücü dönüşümü'
+    ],
+    color: 'from-cyan-500/20 to-violet-500/10',
+    accent: 'text-cyber-cyan',
+    featured: true,
+    sources: [
+      {
+        label: 'Reuters - Mark Zuckerberg had a bold plan to replace Meta staff with AI. Here’s how it imploded',
+        url: 'https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/'
+      },
+      {
+        label: 'Meta Engineering - Capacity Efficiency at Meta',
+        url: 'https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/'
+      },
+      {
+        label: 'Meta Engineering - How Meta Used AI to Map Tribal Knowledge',
+        url: 'https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/'
+      },
+      {
+        label: 'Microsoft Research - CORPGEN advances AI agents for real work',
+        url: 'https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/'
+      },
+      {
+        label: 'Stanford HAI - 2026 AI Index Report',
+        url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report'
+      },
+      {
+        label: 'Deloitte - The State of AI in the Enterprise 2026',
+        url: 'https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html'
+      },
+      {
+        label: 'Deloitte - Rethinking operating models for humans with agents',
+        url: 'https://www.deloitte.com/us/en/insights/topics/talent/operating-models-for-humans-ai-agents.html'
+      },
+      {
+        label: 'McKinsey - Building the foundations for agentic AI at scale',
+        url: 'https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-the-foundations-for-agentic-ai-at-scale'
+      }
+    ]
+  },
+  {
     slug: 'tim-cook-apple-miras',
     category: 'rapor',
     title: {
@@ -28,11 +101,45 @@ export const articles = [
     },
     author: 'Kaan Karakaş',
     image: '/images/tim-cook-apple-miras.png',
+    imageAlt: 'Tim Cook ve Apple operasyon mirası için yazısız editorial teknoloji görseli',
     source: '/articles/tim-cook-apple-miras.txt',
+    publishedAt: '2026-08-31T09:00:00+03:00',
+    modifiedAt: '2026-09-02T15:30:00+03:00',
+    keywords: [
+      'Tim Cook Apple mirası',
+      'Apple tedarik zinciri',
+      'Apple operasyon yönetimi',
+      'Apple supply chain',
+      'Apple growth',
+      'John Ternus',
+      'Steve Jobs Tim Cook',
+      'operational excellence'
+    ],
     color: 'from-slate-500/25 to-cyan-500/10',
     accent: 'text-cyber-cyan',
-    featured: true,
-    replaceTodayWithDate: true
+    replaceTodayWithDate: true,
+    sources: [
+      {
+        label: 'Apple Newsroom',
+        url: 'https://www.apple.com/newsroom/'
+      },
+      {
+        label: 'Reuters - Technology coverage',
+        url: 'https://www.reuters.com/technology/'
+      },
+      {
+        label: 'Financial Times - Apple coverage',
+        url: 'https://www.ft.com/apple'
+      },
+      {
+        label: 'MarketWatch - Apple market data and commentary',
+        url: 'https://www.marketwatch.com/investing/stock/aapl'
+      },
+      {
+        label: 'Apple Investor Relations - SEC filings',
+        url: 'https://investor.apple.com/sec-filings/default.aspx'
+      }
+    ]
   },
   {
     slug: 'ai-mvp-kapsam',

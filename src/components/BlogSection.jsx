@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, BarChart3, BookOpen, Clock, Newspaper, Tag, Video } from 'lucide-react';
+import { articles, localizedArticle } from '../data/articles';
 
 export default function BlogSection({ lang, onNavigate }) {
   const isTr = lang === 'tr';
@@ -11,72 +12,38 @@ export default function BlogSection({ lang, onNavigate }) {
       ? 'Haberler, rehberler, medya içerikleri ve analizler; Dijital Hezarfen’in akademi, uygulama ve yatırım hazırlığı yaklaşımını besleyen canlı bir yayın alanında birleşiyor.'
       : 'News, guides, media content, and analyses come together in a living publication hub that supports Dijital Hezarfen’s academy, execution, and fundraising approach.',
     btnRead: isTr ? 'Yayını İncele' : 'View Publication',
-    btnAll: isTr ? 'Tüm Yayınları Gör' : 'View All Publications',
-    
-    // Post 1
-    t1: isTr ? 'Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine' : 'Tim Cook’s real Apple legacy: a machine bigger than products',
-    s1: isTr
-      ? 'Tim Cook dönemini ürünlerden çok Apple’ın tedarik zinciri, sermaye disiplini ve operasyonel mimarisi üzerinden okuyan kapsamlı analiz.'
-      : 'A deep analysis of Tim Cook’s Apple era through supply chain, capital discipline, and operational architecture.',
-    cat1: isTr ? 'Analiz' : 'Analysis',
-    time1: isTr ? '18 dk okuma' : '18 min read',
-    date1: isTr ? '31 Ağustos 2026' : 'August 31, 2026',
-
-    // Post 2
-    t2: isTr ? 'Dijital Hezarfen hibrit girişim geliştirme modelini genişletiyor' : 'Dijital Hezarfen expands its hybrid venture building model',
-    s2: isTr
-      ? 'Akademi, uygulama hizmetleri ve büyüme desteğini aynı modelde birleştiren yaklaşımın kurucular için nasıl çalıştığını anlattık.'
-      : 'A look at how the model combines academy, execution services, and growth support for founders.',
-    cat2: isTr ? 'Haber' : 'News',
-    time2: isTr ? '4 dk okuma' : '4 min read',
-    date2: isTr ? '28 Temmuz 2026' : 'July 28, 2026',
-
-    // Post 3
-    t3: isTr ? 'Kurucu sohbetleri: fikrin ürüne dönüştüğü ilk 90 gün' : 'Founder talks: the first 90 days from idea to product',
-    s3: isTr
-      ? 'Podcast ve video serilerinde kurucularla ürün, müşteri görüşmesi, satış ve ekip kurma pratiklerini konuşuyoruz.'
-      : 'Our podcast and video series explore product, customer discovery, sales, and team-building practices with founders.',
-    cat3: isTr ? 'Medya' : 'Media',
-    time3: isTr ? '22 dk izleme' : '22 min watch',
-    date3: isTr ? '15 Temmuz 2026' : 'July 15, 2026'
+    btnAll: isTr ? 'Tüm Yayınları Gör' : 'View All Publications'
   };
 
-  const posts = [
-    {
-      id: 1,
-      title: t.t1,
-      summary: t.s1,
-      category: t.cat1,
-      readTime: t.time1,
-      date: t.date1,
-      imageGradient: 'from-cyan-500 to-blue-600',
-      icon: BookOpen,
-      image: '/images/tim-cook-apple-miras.png',
-      path: '/yayinlar/tim-cook-apple-miras'
-    },
-    {
-      id: 2,
-      title: t.t2,
-      summary: t.s2,
-      category: t.cat2,
-      readTime: t.time2,
-      date: t.date2,
-      imageGradient: 'from-violet-600 to-fuchsia-600',
-      icon: Newspaper,
-      path: '/yayinlar'
-    },
-    {
-      id: 3,
-      title: t.t3,
-      summary: t.s3,
-      category: t.cat3,
-      readTime: t.time3,
-      date: t.date3,
-      imageGradient: 'from-emerald-500 to-cyan-600',
-      icon: Video,
-      path: '/yayinlar'
-    }
-  ];
+  const iconMap = {
+    haber: Newspaper,
+    rehber: BookOpen,
+    rapor: BarChart3,
+    medya: Video
+  };
+
+  const categoryLabels = {
+    haber: isTr ? 'Haber' : 'News',
+    rehber: isTr ? 'Rehber' : 'Guide',
+    rapor: isTr ? 'Analiz' : 'Analysis',
+    medya: isTr ? 'Medya' : 'Media'
+  };
+
+  const posts = articles.slice(0, 3).map((article) => {
+    const localized = localizedArticle(article, lang);
+    return {
+      id: article.slug,
+      title: localized.title,
+      summary: localized.desc,
+      category: categoryLabels[article.category],
+      readTime: localized.readTime,
+      date: localized.date,
+      imageGradient: article.color?.replace('/20', '').replace('/25', '') || 'from-cyan-500 to-blue-600',
+      icon: iconMap[article.category] || BookOpen,
+      image: article.image,
+      path: localized.path
+    };
+  });
 
   return (
     <section id="yayinlar" className="py-24 relative overflow-hidden bg-[#0A0D17]">

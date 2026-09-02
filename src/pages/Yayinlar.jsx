@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PageHero from '../components/UI/PageHero';
 import { ArrowUpRight, BarChart3, BookOpen, Clock, FileText, Newspaper, Search, Sparkles, Video } from 'lucide-react';
+import { articleCategories, articles, localizedArticle } from '../data/articles';
 
 export default function Yayinlar({ lang }) {
   const isTr = lang === 'tr';
@@ -22,13 +23,10 @@ export default function Yayinlar({ lang }) {
     author: 'Kaan Karakaş'
   };
 
-  const categories = [
-    { id: 'hepsi', label: isTr ? 'Tümü' : 'All' },
-    { id: 'haber', label: isTr ? 'Haberler' : 'News' },
-    { id: 'rehber', label: isTr ? 'Rehberler' : 'Guides' },
-    { id: 'rapor', label: isTr ? 'Raporlar' : 'Reports' },
-    { id: 'medya', label: isTr ? 'Medya' : 'Media' }
-  ];
+  const categories = articleCategories.map((category) => ({
+    id: category.id,
+    label: category.label[isTr ? 'tr' : 'en']
+  }));
 
   const iconMap = {
     haber: Newspaper,
@@ -37,81 +35,7 @@ export default function Yayinlar({ lang }) {
     medya: Video
   };
 
-  const publications = [
-    {
-      category: 'rapor',
-      title: isTr ? 'Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine' : 'Tim Cook’s real Apple legacy: a machine bigger than products',
-      desc: isTr
-        ? 'Tim Cook dönemini yalnızca ürünler veya piyasa değeriyle değil; Apple’ın tedarik zinciri, sermaye kullanımı ve operasyonel mimarisi üzerinden okuyan kapsamlı analiz.'
-        : 'A deep analysis of Tim Cook’s Apple era through supply chain, capital allocation, and operational architecture rather than products alone.',
-      date: isTr ? '31 Ağustos 2026' : 'August 31, 2026',
-      readTime: isTr ? '18 dk' : '18 min',
-      color: 'from-slate-500/25 to-cyan-500/10',
-      accent: 'text-cyber-cyan',
-      image: '/images/tim-cook-apple-miras.png',
-      path: '/yayinlar/tim-cook-apple-miras'
-    },
-    {
-      category: 'rehber',
-      title: isTr ? 'Yapay zekâ destekli MVP geliştirirken kapsam nasıl çizilir?' : 'How to scope an AI-assisted MVP',
-      desc: isTr
-        ? 'AI ve no-code araçlarıyla hızlı ürün çıkarırken teknik borç, müşteri doğrulama ve lansman sınırlarını birlikte düşünmek gerekir.'
-        : 'When building quickly with AI and no-code tools, technical debt, customer validation, and launch limits should be considered together.',
-      date: isTr ? '28 Temmuz 2026' : 'July 28, 2026',
-      readTime: isTr ? '6 dk' : '6 min',
-      color: 'from-violet-500/20 to-fuchsia-500/10',
-      accent: 'text-violet-300',
-      path: '/yayinlar'
-    },
-    {
-      category: 'rapor',
-      title: isTr ? 'Erken aşama girişimler için büyüme ve yatırım hazırlığı notları' : 'Growth and fundraising notes for early-stage startups',
-      desc: isTr
-        ? 'Pitch deck, finansal model, satış hunisi ve yatırımcı görüşmelerinde kurucuların en sık zorlandığı alanları özetleyen analiz.'
-        : 'An analysis of the areas founders struggle with most across pitch decks, financial models, sales funnels, and investor meetings.',
-      date: isTr ? '15 Temmuz 2026' : 'July 15, 2026',
-      readTime: isTr ? '8 dk' : '8 min',
-      color: 'from-emerald-500/20 to-cyan-500/10',
-      accent: 'text-emerald-300',
-      path: '/yayinlar'
-    },
-    {
-      category: 'medya',
-      title: isTr ? 'Kurucu sohbetleri: fikrin ürüne dönüştüğü ilk 90 gün' : 'Founder talks: the first 90 days from idea to product',
-      desc: isTr
-        ? 'Podcast ve video serilerinde kurucularla ürün, müşteri görüşmesi, satış ve ekip kurma pratiklerini konuşuyoruz.'
-        : 'Our podcast and video series explore product, customer discovery, sales, and team-building practices with founders.',
-      date: isTr ? '09 Temmuz 2026' : 'July 09, 2026',
-      readTime: isTr ? '22 dk' : '22 min',
-      color: 'from-rose-500/20 to-orange-500/10',
-      accent: 'text-rose-300',
-      path: '/yayinlar'
-    },
-    {
-      category: 'rehber',
-      title: isTr ? 'B2B satışta ilk pipeline nasıl kurulur?' : 'How to build the first B2B sales pipeline',
-      desc: isTr
-        ? 'ICP, lead kaynakları, CRM aşamaları ve founder-led sales düzeni için uygulanabilir bir başlangıç çerçevesi.'
-        : 'A practical starting framework for ICP, lead sources, CRM stages, and founder-led sales rhythm.',
-      date: isTr ? '01 Temmuz 2026' : 'July 01, 2026',
-      readTime: isTr ? '7 dk' : '7 min',
-      color: 'from-sky-500/20 to-indigo-500/10',
-      accent: 'text-sky-300',
-      path: '/yayinlar'
-    },
-    {
-      category: 'haber',
-      title: isTr ? 'Akademi ve uygulama ekipleri yeni içerik serilerini yayına alıyor' : 'Academy and execution teams launch new content series',
-      desc: isTr
-        ? 'Teknoloji, pazarlama, finans ve yönetim başlıklarında yeni yayın serileri kurucuların pratik ihtiyaçlarına göre planlandı.'
-        : 'New publication series across technology, marketing, finance, and management were planned around practical founder needs.',
-      date: isTr ? '24 Haziran 2026' : 'June 24, 2026',
-      readTime: isTr ? '3 dk' : '3 min',
-      color: 'from-amber-500/20 to-cyan-500/10',
-      accent: 'text-amber-300',
-      path: '/yayinlar'
-    }
-  ];
+  const publications = articles.map((article) => localizedArticle(article, lang));
 
   const filteredPublications = publications.filter((publication) => {
     const matchesCategory = activeCategory === 'hepsi' || publication.category === activeCategory;
@@ -120,7 +44,7 @@ export default function Yayinlar({ lang }) {
     return matchesCategory && matchesSearch;
   });
 
-  const featured = publications[0];
+  const featured = publications.find((publication) => publication.featured) || publications[0];
 
   return (
     <div className="animate-fade-in bg-[#000000] text-gray-100 min-h-screen">

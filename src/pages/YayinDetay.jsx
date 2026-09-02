@@ -1,26 +1,17 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, Calendar, Clock, Newspaper } from 'lucide-react';
+import { articleCategories, getArticleBySlug, localizedArticle } from '../data/articles';
 
-const articleMeta = {
-  title: 'Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine',
-  category: 'Analiz',
-  date: '31 Ağustos 2026',
-  readTime: '18 dk okuma',
-  author: 'Kaan Karakaş',
-  image: '/images/tim-cook-apple-miras.png',
-  source: '/articles/tim-cook-apple-miras.txt',
-  summary:
-    'Tim Cook dönemini yalnızca piyasa değeriyle değil; Apple’ın üretim, tedarik zinciri, sermaye kullanımı ve operasyonel mimarisi üzerinden okuyan kapsamlı bir analiz.'
-};
-
-function normalizeArticle(rawText) {
-  return rawText
+function normalizeArticle(rawText, article) {
+  let normalizedText = rawText
     .replace(/^\uFEFF/, '')
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter(Boolean)
-    .filter((line, index) => !(index === 0 && line.startsWith('Bugün Apple’da yalnızca bir CEO değişmiyor')))
-    .map((line) =>
+    .filter((line, index) => !(index === 0 && (line === article.title || line.startsWith('Bugün Apple’da yalnızca bir CEO değişmiyor'))));
+
+  if (article.replaceTodayWithDate) {
+    normalizedText = normalizedText.map((line) =>
       line
         .replace(/^Bugün Apple’da/, '31 Ağustos’ta Apple’da')
         .replace(/^Bugün Apple’ın/, '31 Ağustos itibarıyla Apple’ın')
@@ -28,6 +19,9 @@ function normalizeArticle(rawText) {
         .replace(/^Bugün\b/, '31 Ağustos itibarıyla')
         .replace(/\bbugün\b/g, '31 Ağustos itibarıyla')
     );
+  }
+
+  return normalizedText;
 }
 
 function isSectionHeading(line) {
@@ -36,18 +30,40 @@ function isSectionHeading(line) {
   return /^(Jobs|Asıl|Bir growth|Apple’ın|Cook’un|Daha da|Ama|Belki|Peki|Burası|Şimdi|Tim Cook’un|Jobs yaşasaydı|Bu kelime|MarketWatch|Ve bütün|Growth açısından)/.test(line);
 }
 
-export default function YayinDetay({ onNavigate }) {
+export default function YayinDetay({ slug, lang, onNavigate }) {
   const [articleLines, setArticleLines] = useState([]);
+  const rawArticle = getArticleBySlug(slug);
+  const articleMeta = rawArticle ? localizedArticle(rawArticle, lang) : null;
+  const categoryLabel = articleMeta
+    ? articleCategories.find((category) => category.id === articleMeta.category)?.label[lang === 'en' ? 'en' : 'tr']
+    : '';
+  const firstParagraph = useMemo(() => articleLines[0] || articleMeta?.desc || '', [articleLines, articleMeta?.desc]);
+  const bodyLines = useMemo(() => articleLines.slice(1), [articleLines]);
 
   useEffect(() => {
+    if (!articleMeta?.source) return;
+
     fetch(articleMeta.source)
       .then((response) => response.text())
-      .then((text) => setArticleLines(normalizeArticle(text)))
+      .then((text) => setArticleLines(normalizeArticle(text, articleMeta)))
       .catch(() => setArticleLines([]));
-  }, []);
+  }, [articleMeta?.source, articleMeta?.title, articleMeta?.replaceTodayWithDate]);
 
-  const firstParagraph = useMemo(() => articleLines[0] || articleMeta.summary, [articleLines]);
-  const bodyLines = useMemo(() => articleLines.slice(1), [articleLines]);
+  if (!articleMeta) {
+    return (
+      <div className="animate-fade-in bg-[#000000] text-gray-100 min-h-screen pt-32">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h1 className="text-3xl font-extrabold text-white">Yayın bulunamadı</h1>
+          <button
+            onClick={() => onNavigate('/yayinlar')}
+            className="mt-8 px-5 py-3 rounded-xl bg-gradient-cyber text-[#0B0F19] text-sm font-bold cursor-pointer"
+          >
+            Yayınlara dön
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="animate-fade-in bg-[#000000] text-gray-100 min-h-screen">
@@ -65,7 +81,7 @@ export default function YayinDetay({ onNavigate }) {
             <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400 mb-5">
               <span className="inline-flex items-center gap-1.5 rounded-lg bg-cyan-500/10 text-cyber-cyan px-2.5 py-1 font-bold">
                 <Newspaper className="w-3.5 h-3.5" />
-                {articleMeta.category}
+                {categoryLabel}
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <Calendar className="w-3.5 h-3.5" />

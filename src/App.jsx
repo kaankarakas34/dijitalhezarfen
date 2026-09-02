@@ -118,6 +118,10 @@ function App() {
   };
 
   const renderPage = () => {
+    if (currentPath.startsWith('/yayinlar/')) {
+      return <YayinDetay slug={currentPath.replace('/yayinlar/', '')} lang={lang} onNavigate={handleNavigate} />;
+    }
+
     switch (currentPath) {
       case '/':
         return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} onNavigate={handleNavigate} />;
@@ -177,8 +181,6 @@ function App() {
         return <Medya lang={lang} onNavigate={handleNavigate} />;
       case '/yayinlar':
         return <Yayinlar lang={lang} />;
-      case '/yayinlar/tim-cook-apple-miras':
-        return <YayinDetay lang={lang} onNavigate={handleNavigate} />;
       case '/etkinlikler':
         return <Yayinlar lang={lang} />;
       case '/icerikler':

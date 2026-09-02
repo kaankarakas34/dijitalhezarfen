@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
-import { Menu, X, ChevronDown, BookOpen, Layers, TrendingUp, HelpCircle, FileText, Users, Award, Briefcase, UserPlus, Newspaper } from 'lucide-react';
+import { Menu, X, ChevronDown, BookOpen, Layers, TrendingUp, Users, Award, Briefcase, UserPlus } from 'lucide-react';
 import logoWhite from '../../logo/Dijital Hezarfen (8).png';
 
 export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageChange }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null); // 'programlar', 'medya', 'hakkimizda', 'kariyer'
+  const [activeMenu, setActiveMenu] = useState(null); // 'programlar', 'hakkimizda', 'kariyer'
   const timeoutRef = useRef(null);
 
   const isTr = lang === 'tr';
@@ -30,21 +30,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
     ekosistemDesc: isTr ? 'Fikirden global büyümeye giden tüm yolda, akademi ve uygulama gücü tek bir çatı altında.' : 'Academy and application power under one roof, from idea to global growth.',
     
     publications: isTr ? 'Yayınlarımız' : 'Publications',
-    media: isTr ? 'Medya' : 'Media',
-    mediaDesc: isTr ? 'YouTube & Podcast' : 'YouTube & Podcast',
-    mediaDetail: isTr ? 'Kurucu röportajları ve analiz videoları' : 'Founder interviews & analyses',
-    publicationsPage: isTr ? 'Yayınlarımız' : 'Publications',
-    publicationsDesc: isTr ? 'Haberler & İçgörüler' : 'News & Insights',
-    publicationsDetail: isTr ? 'Ekosistemden haberler, analizler ve seçili yayınlar' : 'Ecosystem news, analysis, and featured publications',
-    blog: isTr ? 'Blog' : 'Blog',
-    blogDesc: isTr ? 'Makaleler & Rehberler' : 'Articles & Guides',
-    blogDetail: isTr ? 'Yazılım, AI, pazarlama ve hukuk yazıları' : 'Software, AI, marketing & legal resources',
-    blogExplore: isTr ? 'Yayınları İncele' : 'Browse Publications',
     faq: isTr ? 'Sık Sorulan Sorular' : 'FAQ',
-    faqDesc: isTr ? 'SSS & Sık Sorulan Sorular' : 'FAQ & Support',
-    faqDetail: isTr ? 'Süreçler hakkında 175 detaylı soru-cevap' : '175 detailed Q&As about our model',
-    mediaBannerTitle: isTr ? 'Bilgi & İletişim Yayında' : 'Knowledge Hub Live',
-    mediaBannerDesc: isTr ? 'Derslerin dışına taşan podcast, video serileri, haberler ve rehberlerle bilgiye her an erişim sağlayın.' : 'Access podcasts, video series, news, and guides beyond classroom learning.',
     
     about: isTr ? 'Hakkımızda' : 'About Us',
     vision: isTr ? 'Vizyon & Yaklaşım' : 'Vision & Approach',
@@ -222,106 +208,13 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
               )}
             </div>
 
-            {/* Mega Menu 2: Yayınlarımız */}
-            <div 
-              className="relative"
-              onMouseEnter={() => handleMouseEnter('medya')}
-              onMouseLeave={handleMouseLeave}
+            <a
+              href="#"
+              onClick={(e) => handleNavClick(e, '/yayinlar')}
+              className="flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-gray-300 hover:text-white hover:bg-white/3 transition-all duration-200"
             >
-              <button className={`flex items-center gap-1 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${
-                activeMenu === 'medya' ? 'text-cyber-cyan bg-white/5' : 'text-gray-300 hover:text-white hover:bg-white/3'
-              }`}>
-                <span>{t.publications}</span>
-                <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${activeMenu === 'medya' ? 'rotate-180 text-cyber-cyan' : ''}`} />
-              </button>
-
-              {activeMenu === 'medya' && (
-                <div className="absolute top-full left-1/2 -translate-x-[40%] pt-4 w-[800px] z-50">
-                  <div className="rounded-2xl bg-[#0F1424] border border-white/10 p-6 shadow-2xl animate-fade-in grid grid-cols-12 gap-6" onMouseEnter={() => handleMouseEnter('medya')}>
-                    
-                    <div className="col-span-9 grid grid-cols-3 gap-6">
-                      <div>
-                        <h4 className="text-xs font-bold text-rose-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                          <FileText className="w-4 h-4" />
-                          {t.media}
-                        </h4>
-                        <ul className="space-y-3.5">
-                          <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/medya')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.mediaDesc}</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.mediaDetail}</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs font-bold text-violet-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                          <Newspaper className="w-4 h-4" />
-                          {t.publicationsPage}
-                        </h4>
-                        <ul className="space-y-3.5">
-                          <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.publicationsDesc}</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.publicationsDetail}</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                          <BookOpen className="w-4 h-4" />
-                          {t.blog}
-                        </h4>
-                        <ul className="space-y-3.5">
-                          <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.blogDesc}</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.blogDetail}</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                          <HelpCircle className="w-4 h-4" />
-                          {t.faq}
-                        </h4>
-                        <ul className="space-y-3.5">
-                          <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="block group">
-                              <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.faqDesc}</span>
-                              <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.faqDetail}</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="col-span-3 rounded-xl bg-gradient-to-br from-violet-950 via-slate-900 to-fuchsia-950 p-4 border border-white/5 flex flex-col justify-between relative overflow-hidden">
-                      <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/5 rounded-full filter blur-xl"></div>
-                      <div>
-                        <div className="w-8 h-8 rounded-lg bg-violet-500/10 text-violet-400 flex items-center justify-center mb-3">
-                          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
-                        </div>
-                        <h5 className="text-xs font-bold text-white">{t.mediaBannerTitle}</h5>
-                        <p className="text-[9px] text-gray-400 mt-1 leading-normal">{t.mediaBannerDesc}</p>
-                      </div>
-                      <button 
-                        onClick={(e) => handleNavClick(e, '/yayinlar')}
-                        className="mt-4 py-2 w-full text-center text-[10px] font-bold text-violet-400 bg-violet-500/10 rounded-lg hover:bg-violet-500/20 transition-all cursor-pointer"
-                      >
-                        {t.blogExplore}
-                      </button>
-                    </div>
-
-                  </div>
-                </div>
-              )}
-            </div>
+              {t.publications}
+            </a>
 
             {/* Mega Menu 3: Hakkımızda */}
             <div 
@@ -567,10 +460,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
               {/* Yayınlarımız */}
               <div className="space-y-1 pt-2 border-t border-white/5">
                 <div className="text-[10px] font-bold text-violet-400 uppercase tracking-wider px-2">{t.publications}</div>
-                <a href="#" onClick={(e) => handleNavClick(e, '/medya')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.mediaDesc}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.publicationsDesc}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.blogDesc}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.faq}</a>
+                <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.publications}</a>
               </div>
 
               {/* Hakkımızda */}

@@ -22,6 +22,9 @@ export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lan
       {/* Section 3: Pillars */}
       <AboutPillars lang={lang} />
 
+      {/* Section 3: Featured Publications */}
+      <BlogSection lang={lang} onNavigate={onNavigate} />
+
       {/* Section 2: Audiences */}
       <Audiences lang={lang} onOpenApplyModal={onOpenApplyModal} onFocusSection={onFocusSection} />
 
@@ -45,9 +48,6 @@ export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lan
 
       {/* Section 9: Growth & Venture */}
       <GrowthInvestment lang={lang} onOpenApplyModal={onOpenApplyModal} />
-
-      {/* Featured Publications */}
-      <BlogSection lang={lang} onNavigate={onNavigate} />
 
       {/* Section 10: Media */}
       <MediaSection lang={lang} />

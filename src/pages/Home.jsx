@@ -46,11 +46,11 @@ export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lan
       {/* Section 9: Growth & Venture */}
       <GrowthInvestment lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
+      {/* Featured Publications */}
+      <BlogSection lang={lang} onNavigate={onNavigate} />
+
       {/* Section 10: Media */}
       <MediaSection lang={lang} />
-
-      {/* Blog Section */}
-      <BlogSection lang={lang} onNavigate={onNavigate} />
 
       {/* Section 12: Team & Portfolio Results */}
       <PortfolioReferences lang={lang} />

@@ -68,6 +68,12 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
   });
 }
 
+function getAbsoluteImageUrl(image) {
+  if (!image) return `${window.location.origin}/favicon.svg`;
+  if (/^https?:\/\//.test(image)) return image;
+  return `${window.location.origin}${image}`;
+}
+
 function normalizeArticle(rawText, article) {
   let normalizedText = rawText
     .replace(/^\uFEFF/, '')
@@ -92,11 +98,21 @@ function normalizeArticle(rawText, article) {
 }
 
 function isSectionHeading(line) {
+  if (/^!\[[^\]]*\]\([^)]+\)$/.test(line)) return false;
   if (line.length > 95) return false;
   if (/[.!?:]$/.test(line)) return false;
   const wordCount = line.split(/\s+/).length;
   if (wordCount >= 4 && wordCount <= 14) return true;
   return /^(Jobs|Asıl|Bir growth|Apple’ın|Cook’un|Daha da|Ama|Belki|Peki|Burası|Şimdi|Tim Cook’un|Jobs yaşasaydı|Bu kelime|MarketWatch|Ve bütün|Growth açısından)/.test(line);
+}
+
+function parseMarkdownImage(line) {
+  const match = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+  if (!match) return null;
+  return {
+    alt: match[1] || 'Makale içi görsel',
+    src: match[2]
+  };
 }
 
 export default function YayinDetay({ slug, lang, onNavigate }) {
@@ -106,8 +122,8 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
   const categoryLabel = articleMeta
     ? articleCategories.find((category) => category.id === articleMeta.category)?.label[lang === 'en' ? 'en' : 'tr']
     : '';
-  const firstParagraph = useMemo(() => articleLines[0] || articleMeta?.desc || '', [articleLines, articleMeta?.desc]);
-  const bodyLines = useMemo(() => articleLines.slice(1), [articleLines]);
+  const firstParagraph = useMemo(() => articleMeta?.desc || articleLines[0] || '', [articleLines, articleMeta?.desc]);
+  const bodyLines = useMemo(() => articleLines, [articleLines]);
 
   useEffect(() => {
     if (!articleMeta) {
@@ -117,7 +133,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
     }
 
     const canonicalUrl = `${window.location.origin}/#${articleMeta.path}`;
-    const imageUrl = articleMeta.image ? `${window.location.origin}${articleMeta.image}` : `${window.location.origin}/favicon.svg`;
+    const imageUrl = getAbsoluteImageUrl(articleMeta.image);
     const seoTitle = `${articleMeta.title} | ${siteName}`;
 
     document.title = seoTitle;
@@ -224,8 +240,18 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
           </div>
 
           <div className="space-y-5">
-            {bodyLines.map((line, index) =>
-              isSectionHeading(line) ? (
+            {bodyLines.map((line, index) => {
+              const markdownImage = parseMarkdownImage(line);
+
+              if (markdownImage) {
+                return (
+                  <figure key={`${markdownImage.src}-${index}`} className="my-10 overflow-hidden rounded-2xl border border-white/10 bg-white/3">
+                    <img src={markdownImage.src} alt={markdownImage.alt} className="w-full h-auto object-contain bg-[#080B12]" loading="lazy" />
+                  </figure>
+                );
+              }
+
+              return isSectionHeading(line) ? (
                 <h2 key={`${line}-${index}`} className="text-2xl sm:text-3xl font-extrabold text-white leading-tight pt-8">
                   {line}
                 </h2>
@@ -233,8 +259,8 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 <p key={`${line}-${index}`} className="text-sm sm:text-base text-gray-300 leading-8 font-light">
                   {line}
                 </p>
-              )
-            )}
+              );
+            })}
           </div>
 
           {articleMeta.sources?.length ? (

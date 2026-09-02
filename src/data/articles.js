@@ -8,6 +8,73 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'ben-bu-fikire-2-milyon-dolar-yatirim-alirim',
+    category: 'rehber',
+    title: {
+      tr: 'Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım',
+      en: 'I Would Raise 2 Million Dollars for This Idea'
+    },
+    desc: {
+      tr: 'Pre-seed döneminden yatırım turuna; fikir, risk, kanıt, hisse, seyrelme ve yatırımcı matematiği üzerinden girişim değerlemesini anlatan kapsamlı rehber.',
+      en: 'A comprehensive guide to startup valuation from pre-seed to fundraising, covering idea risk, evidence, shares, dilution, and investor math.'
+    },
+    date: {
+      tr: '05 Ağustos 2026',
+      en: 'August 05, 2026'
+    },
+    readTime: {
+      tr: '48 dk okuma',
+      en: '48 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/ben-bu-fikire-2-milyon-dolar.png',
+    imageAlt: 'Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım yazısı kapak görseli',
+    source: '/articles/ben-bu-fikire-2-milyon-dolar-yatirim-alirim.txt',
+    publishedAt: '2026-08-05T13:50:11+03:00',
+    modifiedAt: '2026-09-02T16:30:00+03:00',
+    keywords: [
+      'girişim değerlemesi',
+      'pre-seed değerleme',
+      'startup valuation',
+      'yatırım turu',
+      'pre-money post-money',
+      'cap table',
+      'seyrelme',
+      'SAFE',
+      'venture capital',
+      'yatırımcı matematiği'
+    ],
+    color: 'from-emerald-500/20 to-cyan-500/10',
+    accent: 'text-emerald-300',
+    featured: true,
+    sources: [
+      {
+        label: 'LinkedIn - Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım',
+        url: 'https://www.linkedin.com/pulse/ben-bu-fikire-2-milyon-dolar-yat%25C4%25B1r%25C4%25B1m-al%25C4%25B1r%25C4%25B1m-kaan-karaka%25C5%259F-ib7qf/'
+      },
+      {
+        label: 'Wiley - Valuation: Measuring and Managing the Value of Companies',
+        url: 'https://www.wiley.com/en-us/Valuation%3A%2BMeasuring%2Band%2BManaging%2Bthe%2BValue%2Bof%2BCompanies%2C%2B4th%2BEdition%2C%2BUniversity%2BEdition-p-9780470893616'
+      },
+      {
+        label: 'Everand - The Startup Funding Book',
+        url: 'https://www.everand.com/book/507626078/The-Startup-Funding-Book'
+      },
+      {
+        label: 'Gust - Angel Investing: The Gust Guide',
+        url: 'https://gust.com/guide'
+      },
+      {
+        label: 'Wiley - Venture Capital and the Finance of Innovation, 3rd Edition',
+        url: 'https://www.wiley.com/en-us/Venture%2BCapital%2Band%2Bthe%2BFinance%2Bof%2BInnovation%2C%2B3rd%2BEdition-p-9781119490111'
+      },
+      {
+        label: 'Wiley Online Library - The Business of Venture Capital, Second Edition',
+        url: 'https://onlinelibrary.wiley.com/doi/book/10.1002/9781118931646'
+      }
+    ]
+  },
+  {
     slug: 'yapay-zeka-calisanlar-meta-project-ot',
     category: 'rehber',
     title: {
@@ -44,7 +111,7 @@ export const articles = [
     ],
     color: 'from-cyan-500/20 to-violet-500/10',
     accent: 'text-cyber-cyan',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'Reuters - Mark Zuckerberg had a bold plan to replace Meta staff with AI. Here’s how it imploded',

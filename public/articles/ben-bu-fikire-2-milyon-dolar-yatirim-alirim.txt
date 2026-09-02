@@ -1,0 +1,2055 @@
+DİJİTAL HEZARFEN
+
+GİRİŞİMLERDE ŞİRKET DEĞERLEMESİ
+
+Pre-seed döneminden yatırım turuna: Fikir, risk, kanıt, hisse ve yatırımcı matematiği
+
+Ağustos 2026
+
+Bu dosyayı neden hazırladım?
+
+Girişimcilik dünyasında en fazla konuşulan ama en az anlaşılan konulardan biri şirket değerlemesidir. Bir tarafta elinde yalnızca fikir varken “Bu proje en az 2 milyon dolar eder” diyen girişimciler görüyorum. Diğer tarafta yatırımcının şirkete para koyduğunda her ay cirodan pay alacağını, şirketin yarısını ele geçireceğini veya otomatik olarak patron hâline geleceğini düşünen insanlar var.
+
+Ben bu iki uçtan da uzak duruyorum. Bir fikre güvenmek başka şeydir; o fikrin yatırım yapılabilir bir şirkete dönüşme ihtimalini sayılarla, kanıtlarla ve mantıklı varsayımlarla savunmak başka şeydir.
+
+Benim için girişim değerlemesi tek bir formülün verdiği mutlak sonuç değildir. Özellikle pre-seed aşamasında değerleme:
+
+gelecekte yaratılabilecek ekonomik değerin,
+
+bu değere ulaşma ihtimalinin,
+
+bugün ortadan kaldırılmış risklerin,
+
+ihtiyaç duyulan sermayenin,
+
+yatırımcının hedef getirisinin,
+
+tarafların pazarlık gücünün ve
+
+anlaşmayla verilen ekonomik ve yönetsel hakların
+
+birlikte fiyatlanmasıdır.
+
+Bu nedenle bu rehberde yalnızca “pre-money + yatırım = post-money” anlatmayacağım. Bir fikrin neden tek başına çok az ettiğini, hangi kanıtın şirketin değerini yükselttiğini, yatırımcının neden belirli bir yüzde istediğini, çıkıştan geriye doğru değerlemenin nasıl yapıldığını, seyrelmenin nasıl hesaplandığını ve yüksek değerlemenin neden bazen kurucu için tuzağa dönüşebildiğini teknik olarak ele alacağım.
+
+Benim temel tezim: Pre-seed değerleme, geçmiş finansalların fotoğrafı değil; gelecekteki büyük sonuca ulaşma ihtimalinin bugünkü pazarlık fiyatıdır.
+
+Bu rehberi nasıl okumalı?
+
+Bu dosyayı finans eğitimi almamış bir girişimcinin de anlayabilmesini isteyerek yazdım. Bu nedenle teknik bir kavramı mümkün olduğunca dört basamakta anlatacağım:
+
+1. Gündelik dil: Kavramın normal hayattaki karşılığı.
+
+2. Sade tanım: Ne olduğunu tek cümlede açıklama.
+
+3. Teknik karşılık: Gerekliyse İngilizce adı ve formülü.
+
+4. Benim yorumum: Kurucu olarak bu bilginin kararımı nasıl değiştirdiği.
+
+İngilizce terimleri tamamen yok saymak doğru olmaz. Yatırımcı toplantısında, veri odasında ve yatırım sözleşmesinde bu kelimeler karşınıza çıkacaktır. Ancak bir kelimeyi İngilizce söylemek, onu anlamak değildir. Benim için uzmanlık; karmaşık bir kavramı daha karmaşık anlatmak değil, özünü kaybetmeden sadeleştirebilmektir.
+
+Benim bakış açıma göre: Bir girişimci finansçı olmak zorunda değildir; ama kendi şirketinin yüzdesini, parasını, kontrolünü ve geleceğini başkasının hesabına bırakamaz. “Avukat bakar”, “mali müşavir hesaplar”, “yatırımcı zaten bilir” diyerek imza atan kurucu, şirket yönetmiyordur. Şirketini emanet ediyordur.
+
+Bu rehberde sık kullanacağım dört kelime
+
+Kanıt: Müşterinin söylediği değil, yaptığı şeydir. Ödeme, tekrar kullanım, sözleşme, yenileme veya ölçülebilir davranış gibi.
+
+Varsayım: Henüz doğrulanmamış kabulümüzdür. “Müşteri bunu ister” bir varsayımdır; müşteri ödeme yaptığında kanıta yaklaşır.
+
+Risk: Planın gerçekleşmemesine yol açabilecek belirsizliktir. Erken aşama değerleme, büyük ölçüde bu risklerin kaçının azaltıldığıyla ilgilidir.
+
+Kilometre taşı: Şirketi bir sonraki daha değerli ve daha az belirsiz noktaya taşıyan ölçülebilir sonuçtur. “Daha çok çalışacağız” kilometre taşı değildir; “altı ayda 20 ücretli kurumsal müşteri ve yüzde 80 yenileme” kilometre taşıdır.
+
+Bu rehberdeki hesapların arkasında benim girişimciliğe bakışım var:
+
+Fikir kutsal değildir; uygulama, öğrenme hızı ve dağıtım değerlidir. İnsanların fikrinizi çalmasından korkarken çoğu zaman asıl problem, kimsenin fikrinizi umursamamasıdır.
+
+Yatırım almak başarı değildir. Yatırım, gelecekte yaratacağınız değerin bir kısmını bugün sermayeye çevirmektir. Yanlış alınırsa pahalıdır; gereksiz alınırsa daha da pahalıdır.
+
+Ciro alkış alır, nakit şirketi yaşatır. Kâğıt üzerinde büyüyüp kasasında para kalmayan şirket güçlü değildir.
+
+Büyüme her zaman değer yaratmaz. Zararlı birim ekonomiyi reklam bütçesiyle büyütmek, başarıyı değil zararı ölçeklemektir.
+
+Veri önemlidir ama veri yolu seçmez. Geçmiş veriler mevcut yolları gösterir; bazen büyük fırsat, henüz verisi oluşmamış yoldadır. Veriyi putlaştırmam, fakat sezgiyi de kanıtsız özgüvenle karıştırmam.
+
+Network ihtiyaç anında aranacak telefon rehberi değildir. Güven, iş düşmeden önce kurulur. Doğru yatırımcı da yalnızca çek yazan kişi değil, şirketin değer üretme ihtimalini artıran ortaktır.
+
+Sürdürülebilir, ölçeklenebilir ve akıllı büyüme birlikte düşünülmelidir. Yalnızca hızlı büyümek yetmez; büyümenin taşınabilir, finanse edilebilir ve tekrar edilebilir olması gerekir.
+
+Bu yüzden bazı bölümlerde sert konuşacağım. Çünkü girişimcilik ekosisteminde nazikçe tekrarlanan yanlışlar, kuruculara gerçek para ve gerçek yıllar kaybettiriyor.
+
+1. Önce kavramları ayırıyorum: Değer, fiyat ve yatırım turu aynı şey değildir
+
+Bir girişimin “değeri” konuşulurken çoğu insan üç farklı şeyi birbirine karıştırır.
+
+1.1. İçsel veya ekonomik değer
+
+Şirketin gelecekte üretmesi beklenen nakit akışlarının, risk dikkate alınarak bugüne indirgenmiş değeridir. Olgun şirketlerde indirgenmiş nakit akımı (DCF) gibi yöntemler bu mantığa dayanır.
+
+Birisi size “Beş yıl sonra 100 lira vereceğim” derse, o söz bugün cebinizdeki 100 lira kadar değerli değildir. Çünkü beş yıl bekleyeceksiniz; bu sırada fiyatlar artabilir ve o kişi parayı hiç vermeyebilir. Bu nedenle gelecekteki 100 liraya bugün daha düşük bir değer biçersiniz. “Bugüne indirgeme” özünde budur.
+
+Nakit akımı , şirkete giren ve şirketten çıkan gerçek paradır. Serbest nakit akımı ise şirket işini yürüttükten ve gerekli yatırımları yaptıktan sonra sermaye sağlayanlara kalabilecek paradır. Muhasebe kârıyla aynı değildir: şirket kârlı göründüğü hâlde müşteriler ödeme yapmadıysa kasası boş olabilir.
+
+1.2. Piyasa değeri veya karşılaştırmalı değer
+
+Benzer şirketlerin, benzer yatırım turlarının veya benzer satın almaların hangi çarpanlarla fiyatlandığına göre oluşan referans değerdir. Bu, “piyasa şu anda buna benzeyen şirketlere ne ödüyor?” sorusuna cevap verir.
+
+1.3. Tur fiyatı
+
+Yatırımcı ile girişimcinin belirli bir tarihte, belirli bir yatırım miktarı ve belirli sözleşme hakları karşılığında uzlaştığı fiyattır. Pre-seed’de çoğu zaman konuştuğumuz gerçek rakam budur.
+
+Tur fiyatı ekonomik değerle aynı olmak zorunda değildir. Şirketin paraya çok ihtiyacı varsa, tek yatırımcı varsa veya kurucu hazırlıksızsa fiyat aşağı gelebilir. Tersine güçlü rekabet, birden fazla yatırım teklifi, hızlı büyüyen metrikler veya stratejik yatırımcı ilgisi fiyatı yukarı taşıyabilir.
+
+Bu yüzden ben hiçbir değerleme rakamını şu beş soru olmadan ciddiye almam:
+
+5. Bu rakam pre-money mi, post-money mi?
+
+6. Yatırım şirkete mi giriyor, kurucudan hisse mi alınıyor?
+
+7. Bu rakam hangi pay sınıfı ve hangi imtiyazlarla birlikte konuşuluyor?
+
+8. Opsiyon havuzu yatırım öncesinde mi, sonrasında mı oluşturuluyor?
+
+9. SAFE, dönüştürülebilir borç veya başka dönüşebilir araçlar tamamen seyreltilmiş hesaba katıldı mı?
+
+2. En temel yatırım matematiği
+
+2.1. Pre-money ve post-money
+
+Pre-money değerleme , yeni yatırım girmeden hemen önce şirket için kabul edilen değerdir.
+
+Post-money değerleme , yatırım girdikten sonraki değerdir.
+
+Formül 1
+
+Post-money değerleme = Pre-money değerleme + yeni yatırım
+
+Formül 2
+
+Yeni yatırımcının payı = Yeni yatırım / Post-money değerleme
+
+Formül 3
+
+Pre-money değerleme = Yeni yatırım × (1 - yatırımcı payı) / yatırımcı payı
+
+Örnek: 500.000 dolar yatırım, yüzde 15 pay
+
+Yatırım: 500.000 $
+
+Yatırımcının post-money payı: %15
+
+Post-money değer: 500.000 / 0,15 = 3.333.333 $
+
+Pre-money değer: 3.333.333 - 500.000 = 2.833.333 $
+
+Burada yapılan en yaygın hata şudur: “Şirketim 3 milyon dolar, 500 bin dolar karşılığında yüzde 10 veririm.” Eğer 500 bin dolar yüzde 10’a karşılık geliyorsa post-money değer 5 milyon dolar, pre-money değer 4,5 milyon dolardır. Söylenen 3 milyon dolar ile teklif edilen yüzde birbirini tutmaz.
+
+2.2. İstenen yatırımla kabul edilen seyrelmeden değer türetme
+
+Pre-seed aşamasında çoğu zaman önce matematiksel bir “gerçek değer” bulamam. Bunun yerine şu iki soruyu birlikte çözerim:
+
+Bir sonraki anlamlı kilometre taşına ulaşmak için gerçekten ne kadar para gerekiyor?
+
+Kurucu ekibin bu turda taşıyabileceği makul seyrelme ne kadar?
+
+Örneğin 18 aylık plan için 750.000 dolar gerekiyorsa:
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGoDJ6VzsDkvw/article-inline_image-shrink_1500_2232/B4DZ_RWzLAJsAQ-/0/1785923843132?e=2147483647&v=beta&t=uM1-qYKVfw6lRhaDrAFAM10iGQ-PkDaFC7p6qtgjKfQ)
+
+Bu tablo şirketin “gerçek değeri”ni kanıtlamaz. Yalnızca yatırım ihtiyacı ile satılacak payın hangi değerlemeyi zorunlu kıldığını gösterir. Sonraki işim, bu değerlemenin ekip, pazar, ürün ve kanıtlarla savunulup savunulamayacağını test etmektir.
+
+2.3. Hisse fiyatı ve çıkarılacak yeni hisse
+
+Şirketin yatırım öncesinde 1.000.000 tamamen seyreltilmiş hissesi ve 4.000.000 dolar pre-money değeri olduğunu varsayayım.
+
+Yatırım öncesi hisse fiyatı = 4.000.000 / 1.000.000 = 4 $
+
+Yatırımcı 1.000.000 dolar yatırırsa:
+
+Çıkarılacak yeni hisse = 1.000.000 / 4 = 250.000 hisse
+
+Yatırım sonrasında toplam hisse 1.250.000 olur. Yatırımcının payı:
+
+250.000 / 1.250.000 = %20
+
+Bu basit örneğin içine opsiyonlar, SAFE’ler, warrant’lar veya dönüştürülebilir borçlar girdiğinde “tamamen seyreltilmiş hisse sayısı” kritik hâle gelir.
+
+3. Bir fikir ne kadar eder?
+
+Benim kısa cevabım serttir: Çıplak bir fikir, çoğu durumda yatırım yapılabilir şirket değeri yaratmaz.
+
+Bu, fikrin önemsiz olduğu anlamına gelmez. Fikir yönü belirler; fakat yatırımcı açısından fikir hâlâ bir hipotezdir. Aynı fikri başkaları düşünebilir. Müşterinin bunu isteyip istemediği, teknik olarak üretilebilir olup olmadığı, doğru fiyatla satılıp satılamayacağı ve ekibin uygulayıp uygulayamayacağı henüz belli değildir.
+
+David S. Rose’un kitabında kullanılan kısa ifade bunu iyi özetler: “Ideas are worth nothing unless executed.” Kitaptaki fikir-uygulama örneği bilimsel bir değerleme modeli değildir; ama yatırımcının zihnini doğru gösterir: fikir değeri, uygulama kapasitesiyle çarpılmadıkça ekonomik sonuç üretmez. [Rose, 2014, ss. 6-8]
+
+Nicolaj Højer Nielsen de yatırımcıların fikri değil risk-getiri profilini değerlendirdiğini; fikrin ilk aşamada yüksek risk, düşük kanıt taşıdığını vurgular. Onun çerçevesinde pazar, iş modeli, ekip ve traction ilerledikçe risk azalır; dolayısıyla girişimci aynı sermaye için daha az pay vermeye başlayabilir. [Nielsen, 2017, ss. 23-32 ve 41-52]
+
+3.1. Fikirden ekonomik değere geçiş merdiveni
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGigEZ1hvDyuQ/article-inline_image-shrink_1000_1488/B4DZ_RXNOBJsAI-/0/1785923949724?e=2147483647&v=beta&t=Zk45jfPRbrf-ODZ1yezlecGmNj-V83ygATYaYIu7wFo)
+
+3.2. Fikrin tek başına daha anlamlı olabileceği istisnalar
+
+Fikir ile beraber aşağıdakilerden biri varsa artık yalnızca “fikir” konuşmuyoruz:
+
+Tescilli veya güçlü patentlenebilir teknoloji,
+
+Üniversite ya da laboratuvar kaynaklı doğrulanmış bilimsel buluş,
+
+Zor elde edilen özel veri seti,
+
+Münhasır lisans veya dağıtım hakkı,
+
+Regülasyon izni,
+
+Önceden imzalanmış satın alma taahhüdü,
+
+Kurucunun sektörde kanıtlanmış olağanüstü geçmişi,
+
+Ürünü dağıtabilecek mevcut ve erişilebilir kitle,
+
+Rakiplerin kolayca erişemeyeceği stratejik varlık.
+
+Bu unsurlar fikirden bağımsız varlıklardır. Değer yaratan şey fikrin parlaklığı değil, fikrin etrafında biriktirilmiş kıt kaynaklar ve azaltılmış belirsizliktir.
+
+3.3. Pre-seed, seed ve Series A ne demektir?
+
+Bu aşamalar şirketlerin yaşını gösteren resmî sınıflar değildir. Bir girişimin hangi temel soruyu cevaplamaya çalıştığını ve sermayeyi ne için kullandığını anlatan finansman evreleridir. Aynı gelir seviyesindeki iki şirket farklı sektörlerde farklı aşamada kabul edilebilir. İlaç geliştiren bir şirket ile yazılım şirketinin kanıt yolu aynı değildir.
+
+Fikir ve doğrulama dönemi
+
+Ortada bir problem varsayımı ve çözüm fikri vardır. Kurucu müşteri görüşmeleri, masa başı araştırma, basit prototip ve talep testleri yapar.
+
+Bu aşamanın sorusu: Gerçek ve yeterince önemli bir problem bulduk mu?
+
+Bu dönemde alınan para çoğu zaman kurucunun kendi parası, yakın çevre desteği, hibe veya çok erken melek yatırım olabilir. Henüz “şirketim şu kadar eder” demekten çok, ucuz ve hızlı biçimde yanlışlanabilecek varsayımları test etmek gerekir.
+
+Pre-seed — ilk kurumsal kanıt sermayesi
+
+Pre-seed , “tohum öncesi” demektir. Şirket çoğunlukla ilk ürününü kurar, kurucu ekibi tamamlar ve gerçek müşteri talebini kanıtlamaya çalışır. Gelir olmayabilir; fakat sadece sunumdan daha fazlası beklenir.
+
+Bu aşamanın sorusu: Bu ekip, bu problemi çalışan bir çözümle ve ilk gerçek kullanıcılarla doğrulayabilir mi?
+
+Pre-seed sermayesi genellikle şunlara gider:
+
+MVP veya teknik prototip,
+
+İlk çekirdek ekip,
+
+Kullanıcı testleri ve pilotlar,
+
+İlk satışlar,
+
+Ürün güvenliği veya regülasyon adımları,
+
+Seed turunu mümkün kılacak ölçülebilir kanıtlar.
+
+Benim bakış açıma göre: Pre-seed’de yatırımcı bitmiş bir şirket satın almaz. Kurucunun, belirsizliği parayla azaltma becerisine ortak olur. Bu yüzden “Fikrim çok büyük” cümlesinden çok “Bu parayla şu üç riski ortadan kaldıracağım” cümlesi değerlidir.
+
+Seed — tekrar edilebilirliği arama dönemi
+
+Seed , “tohum” aşamasıdır. Ürün piyasadadır; en azından bazı kullanıcıların veya müşterilerin ürünü istediğine dair işaretler vardır. Şirket ürün-pazar uyumunu bulmaya, satış kanalını tekrar edilebilir hâle getirmeye ve temel birim ekonomisini anlamaya çalışır.
+
+Bu aşamanın sorusu: Ürün yalnızca birkaç kişinin ilgisini mi çekti, yoksa büyütülebilecek gerçek bir iş mi doğuyor?
+
+Seed sermayesi çoğunlukla ürün ekibini büyütmek, satış-pazarlama kanallarını test etmek, müşteri başarısını kurmak ve belirli bir gelir/kullanım ölçeğine ulaşmak için kullanılır.
+
+Series A — çalışan motoru büyütme dönemi
+
+Series A , “A Serisi yatırım turu”dur. Buradaki harf şirketin kalitesini değil, fiyatlanmış kurumsal yatırım turlarının sırasını anlatır. Şirketten artık daha güçlü ürün-pazar uyumu, düzenli büyüme, ölçülebilir müşteri ekonomisi ve ölçeklenebilir organizasyon işaretleri beklenir.
+
+Bu aşamanın sorusu: Çalıştığı kanıtlanan büyüme motoruna daha fazla sermaye koyarsak sonuç öngörülebilir biçimde büyür mü?
+
+Series A parası çoğu zaman yeni pazar, daha büyük satış organizasyonu, ürün ailesi, yönetim kadrosu ve teknolojik ölçek için kullanılır.
+
+Series B, C ve devamı
+
+Bu turlarda amaç genellikle kanıtlanmış modeli hızla genişletmek, yeni ülkelere girmek, rakip satın almak, kapasite kurmak veya halka arz/satış öncesi ölçeğe ulaşmaktır. Harf büyüdükçe risk yok olmaz; riskin türü değişir. İlk aşamada “ürünü yapabilir miyiz?” sorusu varken ileri aşamada “organizasyonu ve sermayeyi bozmadan bu büyüklüğü yönetebilir miyiz?” sorusu öne çıkar.
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQH_qA1vKs-N1Q/article-inline_image-shrink_1000_1488/B4DZ_RXldXKkAI-/0/1785924048963?e=2147483647&v=beta&t=de974czGtEgbvUcNF_pMYegZjxTCAH3hLBDkTTlXQPg)
+
+3.4. Startup ile iyi bir işletme aynı şey değildir
+
+Startup , yüksek belirsizlik altında tekrar edilebilir ve hızlı ölçeklenebilir bir iş modeli arayan girişimdir. KOBİ ise küçük ve orta büyüklükteki işletmeyi anlatan ekonomik/hukuki sınıftır. Bir şirket hem startup hem KOBİ olabilir; ancak kavramların anlattığı şey farklıdır.
+
+Mahallesinde çok kârlı çalışan tek şubeli restoran kötü bir işletme değildir. Hatta zarar eden birçok teknoloji girişiminden daha sağlıklı olabilir. Ancak aynı modeli yüzlerce noktaya düşük ek maliyetle taşıyamıyorsa klasik VC için uygun olmayabilir.
+
+Sert gerçek: Her işletmenin yatırım alması gerekmez. “Yatırımcı ilgilenmedi” demek “iş kötü” demek değildir. Bazen yatırımcı yanlıştır; bazen finansman aracı yanlıştır; bazen de kurucu şirketini startup gibi anlatmaya çalışırken aslında gayet iyi bir nakit işi kurmuştur.
+
+4. Şirketin değerini gerçekte ne artırır?
+
+McKinsey’nin klasik değerleme yaklaşımı olgun şirketlerde değerin beklenen nakit akımlarından; nakit akımlarının da büyüme ve yatırılan sermaye getirisi gibi ekonomik sürücülerden doğduğunu söyler. Büyüme tek başına değer yaratmaz: yeni yatırılan sermayenin getirisi sermaye maliyetini aşmıyorsa büyüme değer yaratmayabilir, hatta değer yok edebilir. [Koller, Goedhart ve Wessels, 2005, ss. 55-68]
+
+Pre-seed şirketinde henüz istikrarlı ROIC veya nakit akışı olmayabilir. Yine de temel mantık değişmez. Ben erken aşama sinyallerini, gelecekteki nakit akımlarının ve rekabet üstü getirinin öncü göstergeleri olarak okurum.
+
+4.1. Kurucu ekip
+
+Pre-seed’de yatırımcı çoğu zaman üründen önce ekibi fiyatlar. Ben ekibi değerlendirirken yalnızca CV’ye bakmam:
+
+Kurucu-pazar uyumu var mı?
+
+Problem kurucunun gerçekten bildiği bir alandan mı geliyor?
+
+Teknik, ticari ve operasyonel yetkinlikler tamamlayıcı mı?
+
+Ekip birlikte çalışmış mı?
+
+Tam zamanlı bağlılık var mı?
+
+Zor karar alabiliyor ve hızlı öğrenebiliyor mu?
+
+Kurucular arasındaki pay dağılımı motivasyonu koruyor mu?
+
+Referans kontrolleri güven veriyor mu?
+
+Hızlı deney yapıp kanıt üretebiliyorlar mı?
+
+Tekrarlı girişimcilik ve başarılı exit güçlü sinyal olabilir; fakat otomatik başarı garantisi değildir. Benim için asıl değer, ekibin yanlış Plan A’dan doğru Plan B’ye geçme yeteneğidir.
+
+4.2. Problemin şiddeti ve müşterinin ödeme isteği
+
+“İnsanlar bunu beğendi” düşük kaliteli bir sinyaldir. Aşağıdakiler daha değerlidir:
+
+Müşteri problemi bugün çözmek için para veya zaman harcıyor mu?
+
+Problem sık mı yaşanıyor?
+
+Problem çözülemediğinde finansal veya operasyonel kayıp büyük mü?
+
+Bütçe sahibi kim?
+
+Satın alma aciliyeti var mı?
+
+Müşteri yalnızca görüşmeye mi katıldı, yoksa ön sipariş/sözleşme verdi mi?
+
+Bir müşterinin ödeme yapması, yüz kişinin “güzel fikir” demesinden çoğu zaman daha değerlidir.
+
+4.3. Pazar büyüklüğü ve erişilebilir pazar
+
+Ben TAM-SAM-SOM sunumuna tek başına ikna olmam.
+
+TAM: Teorik toplam pazar.
+
+SAM: Ürün ve coğrafyayla gerçekten hizmet verilebilecek bölüm.
+
+SOM: Dağıtım, ekip ve sermayeyle makul sürede alınabilecek bölüm.
+
+“Dünya pazarının yüzde 1’ini alsak...” cümlesi değerleme değildir. O yüzde 1’e hangi kanalla, hangi maliyetle, hangi sürede ve hangi rakiplerin arasından ulaşılacağı gösterilmelidir.
+
+Pazarın büyük olması kadar şunlar da önemlidir:
+
+Pazar büyüyor mu, daralıyor mu?
+
+Müşteri bütçesi oluşmuş mu?
+
+Regülasyon talebi hızlandırıyor mu?
+
+Yeni teknoloji maliyet yapısını değiştiriyor mu?
+
+Dağıtım kanalları erişilebilir mi?
+
+Büyük oyuncular pazara girmeyi kolay mı görüyor?
+
+4.4. Traction ve büyümenin kalitesi
+
+Traction yalnızca kullanıcı sayısı değildir. Ben şu metriklerin niteliğine bakarım:
+
+Traction , girişimin yerinde saymadığını ve pazarın ürüne gerçek bir tepki verdiğini gösteren ölçülebilir ilerlemedir. Türkçede “çekiş”, “pazar karşılığı” veya “ilerleme kanıtı” denebilir. Ben çoğu zaman pazar kanıtı ifadesini kullanmayı tercih ederim.
+
+Beş yaşındaki bir çocuğa anlatır gibi: Bir limonata tezgâhı açtığınızı düşünün. “Mahallede herkes limonata sever” demeniz fikir; on kişinin tezgâha gelmesi ilgi; beş kişinin para vermesi satış; ertesi hafta aynı kişilerin yeniden gelmesi ise güçlü traction’dır. Çünkü insanlar yalnızca beğendiğini söylememiş, davranmıştır.
+
+Aylık/haftalık aktif kullanıcı,
+
+Cohort retention,
+
+Churn,
+
+Gelir büyümesi,
+
+Tekrarlayan gelir oranı,
+
+Brüt marj,
+
+Satış pipeline’ı ve kapanma oranı,
+
+Satış döngüsü,
+
+CAC geri ödeme süresi,
+
+Net gelir tutma oranı,
+
+Kullanım sıklığı ve ürünün iş akışındaki kritikliği,
+
+Ücretsizden ücretliye geçiş,
+
+Müşteri yoğunlaşması.
+
+Bir ayda reklamla kazanılmış 100.000 kayıt, üç ay sonra kimse kalmıyorsa değer yaratmaz. Buna karşılık dar bir B2B pazarda 10 ücretli müşterinin sekizinin yenileme yapması çok güçlü kanıt olabilir.
+
+Traction sayılarının sade Türkçesi
+
+Aktif kullanıcı: Kayıt olmuş olmakla kalmayıp belirli dönemde ürünün değer yaratan davranışını yapan kişi.
+
+Retention / elde tutma: Kullanıcıların veya müşterilerin zaman geçtikçe üründe kalma oranı. “Geldiler mi?” değil, “Kaldılar mı?” sorusudur.
+
+Cohort / kohort: Aynı dönemde veya aynı yolla gelen kullanıcı grubu. Ocak ayında gelenlerle şubat ayında gelenleri ayrı izlemek gibi.
+
+Churn / kayıp oranı: Belirli dönemde ayrılan müşteri veya kaybedilen gelir oranı. Delik kovadan akan suya benzer.
+
+Pipeline / satış havuzu: Henüz müşteri olmamış, satış sürecindeki potansiyel fırsatların tamamı. Tekliflerin toplamı gelir değildir; yalnızca olasılıktır.
+
+Conversion / dönüşüm: Bir aşamadan diğerine geçenlerin oranı. 100 görüşmeden 10 satış çıkıyorsa satış dönüşümü yüzde 10’dur.
+
+MRR: Aylık tekrar eden gelir. Aboneliklerden her ay düzenli gelmesi beklenen tutar.
+
+ARR: Yıllık tekrar eden gelir. Basit bir durumda MRR’nin 12 ile çarpılmasıdır; tek seferlik gelirler eklenmez.
+
+Benim bakış açıma göre: “100 bin üyemiz var” tek başına neredeyse hiçbir şey söylemez. Kaçı aktif, kaçı ödüyor, kaçı kalıyor, kaçı başkasına öneriyor? Kalabalık ile değer aynı şey değildir. Reklamla kalabalık satın alabilirsiniz; bağlılık ve ödeme isteği satın alamazsınız.
+
+4.5. İş modeli ve birim ekonomi
+
+Şirket büyüdükçe zarar da aynı hızda büyüyorsa ölçeklenebilirlik iddiası zayıflar. Ben şu sorulara cevap ararım:
+
+Brüt marj ne kadar?
+
+Bir müşteri ekonomik olarak ne kadar değer üretiyor?
+
+Müşteri edinmenin tam maliyeti nedir?
+
+Satış ve onboarding maliyeti ölçekle düşüyor mu?
+
+Gelir tekrarlanıyor mu?
+
+Fiyat artırma gücü var mı?
+
+Negatif çalışma sermayesi veya ön ödeme avantajı var mı?
+
+Hizmet bileşeni büyümeyi insan sayısına bağımlı kılıyor mu?
+
+Temel formüller:
+
+LTV ≈ Müşteri başına aylık brüt kâr / aylık churn
+
+LTV/CAC = Müşteri yaşam boyu brüt kârı / müşteri edinme maliyeti
+
+CAC geri ödeme süresi = CAC / müşteri başına aylık brüt kâr
+
+Bu formüllerdeki kelimeler ne demek?
+
+CAC — Customer Acquisition Cost / müşteri edinme maliyeti: Bir yeni müşteri kazanmak için yapılan satış ve pazarlama harcamasının müşteri sayısına bölünmesidir. 100.000 TL harcayıp 20 yeni müşteri aldıysanız kaba CAC 5.000 TL’dir.
+
+LTV — Lifetime Value / müşteri yaşam boyu değeri: Bir müşterinin sizinle kaldığı süre boyunca bıraktığı toplam brüt kâr tahminidir. Ciro değil, mümkün olduğunca brüt kâr üzerinden düşünülmelidir.
+
+Brüt marj: Satıştan, o satışı üretmek için doğrudan katlanılan maliyet çıkarıldıktan sonra kalan orandır. 100 TL satışın doğrudan maliyeti 30 TL ise brüt kâr 70 TL, brüt marj yüzde 70’tir.
+
+CAC geri ödeme süresi: Müşteriyi kazanmak için harcadığınız parayı, o müşterinin bıraktığı aylık brüt kârla kaç ayda geri aldığınızı gösterir.
+
+Örnek: Müşteri kazanmak 12.000 TL, müşterinin aylık brüt kâr katkısı 2.000 TL ise geri ödeme süresi 6 aydır. Müşteri ortalama dördüncü ayda ayrılıyorsa model zarar üretir; çünkü onu kazanmak için harcadığınız parayı henüz geri alamadan müşteri gitmiştir.
+
+Sert gerçek: LTV/CAC oranını bir sunumda süslü göstermek kolaydır. Altı aylık şirketin üç yıllık müşteri ömrü varsayması kolay; o müşterinin üç yıl kalması zordur. Kısa veriyi uzun gelecek gibi satmak analiz değil, temennidir.
+
+Bu basitleştirilmiş formüller her iş modeline körlemesine uygulanmaz. Churn değişken, kohortlar farklı veya gelir proje bazlıysa kohort-temelli hesap gerekir.
+
+4.6. Savunulabilir rekabet avantajı
+
+“İlk biz yaptık” savunulabilir avantaj değildir. Değeri yükseltebilecek gerçek savunmalar şunlardır:
+
+Network etkisi,
+
+Özel ve büyüyen veri avantajı,
+
+Patent ve know-how,
+
+Yüksek switching cost,
+
+İş akışına derin entegrasyon,
+
+Güçlü dağıtım kanalı,
+
+Marka ve güven,
+
+Regülasyon lisansı,
+
+Ölçek ekonomisi,
+
+Tedarik veya dağıtım münhasırlığı,
+
+Topluluk ve ekosistem.
+
+Savunma, bugünkü satıştan çok gelecekteki marjın ve pazar payının korunmasına yarar.
+
+4.7. Sermaye verimliliği ve kilometre taşı üretme kapasitesi
+
+Aynı 500.000 dolarla bir ekip yalnızca ürün yazarken başka bir ekip ürün, ilk müşteriler ve tekrarlanabilir satış kanıtı çıkarabiliyorsa ikinci şirket daha değerlidir.
+
+Ben yatırımın “kaç ay yaşatacağı” kadar “hangi riskleri ortadan kaldıracağına” bakarım:
+
+Teknik risk mi azalacak?
+
+İlk ücretli müşteri mi gelecek?
+
+Regülasyon izni mi alınacak?
+
+Uluslararası ölçek kanıtı mı üretilecek?
+
+Brüt marj mı iyileşecek?
+
+Satış süreci tekrarlanabilir mi olacak?
+
+4.8. Temiz cap table ve hukuki hazırlık
+
+Kirli ortaklık yapısı doğrudan değer düşürür. Aşağıdakiler yatırımcıyı kaçırabilir:
+
+Aktif olmayan eski ortağın yüksek payı,
+
+Yazılı fikri mülkiyet devrinin olmaması,
+
+Çalışan veya freelancer kodlarının şirkete devredilmemesi,
+
+Belirsiz SAFE ve borçlar,
+
+Aşırı danışman hisseleri,
+
+Kurucu vesting’inin hiç düzenlenmemesi,
+
+Davalar, vergi ve regülasyon sorunları,
+
+Kişisel hesap ile şirket hesabının karışması.
+
+5. Pre-seed değerleme neden zordur?
+
+Olgun bir şirkette geçmiş gelir, kâr, nakit akımı, varlıklar ve karşılaştırılabilir şirketler vardır. Pre-seed’de ise çoğu veri ya yoktur ya da kısa bir dönemi kapsar. Bu nedenle klasik yöntemlerin bazıları teknik olarak uygulanabilse bile sonuç varsayımlara aşırı duyarlı olur.
+
+McKinsey’nin yüksek büyüme şirketleri için önerdiği yaklaşım önemli bir zihinsel model sunar: gelecekte şirketin ve sektörün sürdürülebilir hâlini tasarlamak, pazar penetrasyonu, müşteri başına gelir ve sürdürülebilir marj gibi sınırlar koymak, sonra bugüne geri gelmek. Kitap bunu “start from the future” yaklaşımıyla açıklar. [Koller, Goedhart ve Wessels, 2005, ss. 655-670]
+
+Fakat pre-seed’de 10-15 yıllık nakit akışını kesinmiş gibi yazmak sahte hassasiyet üretir. Bu yüzden ben tek yöntem kullanmam. Birden fazla yöntemi üçgenleme için kullanırım:
+
+10. Piyasa/benzer tur referansı,
+
+11. Kanıt ve risk azaltma skoru,
+
+12. Yatırım ihtiyacı ve seyrelme sınırı,
+
+13. Çıkıştan geriye yatırımcı getirisi,
+
+14. Senaryo ağırlıklı ekonomik kontrol.
+
+Bu yöntemlerin kesiştiği alan benim savunulabilir değerleme bandım olur.
+
+Ben veriye nasıl bakıyorum?
+
+Veriyle çalışan biri olarak veriyi önemsiyorum; fakat verinin sınırını da önemsiyorum. Bir pazar daha önce hiç oluşmadıysa geçmiş satış tablosunda görünmez. İnsanlara yalnızca bugün ne satın aldıklarını sorarsanız, henüz hayal edemedikleri ürünü tarif etmelerini bekleyemezsiniz.
+
+Ben üç ayrı veri türünü ayırırım:
+
+Geçmiş verisi: Ne olduğunu gösterir. Ciro, churn, maliyet ve geçmiş büyüme gibi.
+
+Deney verisi: Ne olabileceğini test eder. Fiyat testi, reklam deneyi, prototip kullanımı ve ön satış gibi.
+
+Yapısal veri: Fırsatın koşullarını gösterir. Teknoloji maliyetindeki düşüş, mevzuat değişimi, demografi veya dağıtım kanalındaki kırılma gibi.
+
+Verinin olmadığı yerde kör uçuş yapmak zorunda değiliz. Küçük ve ucuz deneylerle veri üretebiliriz. Fakat her yeni fikir geçmiş istatistikte doğrulanmak zorunda da değildir.
+
+Benim bakış açıma göre: Veri dikiz aynasıdır; arkamızda ne olduğunu çok iyi gösterir. Direksiyon değildir. Gideceğimiz yolu strateji, hayal gücü ve muhakeme seçer. Fakat direksiyonu çevirdikten sonra yoldan çıkıp çıkmadığımızı yine veriyle kontrol ederiz.
+
+Bu yaklaşım değerlemeye de yansır. Geçmiş verisi olmayan pre-seed girişime “değersiz” demem; fakat kanıt olmayan iddiaya da veri muamelesi yapmam. Yeni pazar iddiası, deney üretme sorumluluğunu ortadan kaldırmaz.
+
+6. Pre-seed’de kullanılabilecek değerleme yöntemleri
+
+6.1. Karşılaştırılabilir yatırım turları yöntemi
+
+Aynı dönemde, benzer coğrafyada, benzer sektörde ve benzer traction seviyesinde şirketlerin pre-money değerlemelerine bakarım.
+
+Karşılaştırma yaparken yalnızca “AI şirketi” veya “SaaS şirketi” demek yetmez. Şunları eşleştirmek gerekir:
+
+B2B/B2C,
+
+Gelir öncesi/gelirli,
+
+Donanım/yazılım,
+
+Regüle/regüle olmayan,
+
+Yerel/global hedef,
+
+Kurucu geçmişi,
+
+MRR/ARR ve büyüme,
+
+Brüt marj,
+
+Tur büyüklüğü,
+
+Yatırımcı kalitesi,
+
+Pay imtiyazları.
+
+Avantajı: Gerçek piyasa fiyatını gösterir.
+
+Zayıflığı: Özel şirket işlemlerinin şartları açıklanmaz; medyada görülen değer çoğu zaman yalnızca manşet değeridir.
+
+Ben medyan bir referans bulduktan sonra kanıt seviyesine göre yukarı-aşağı düzeltme yaparım. Ancak bu düzeltme “biz daha iyiyiz, yüzde 50 ekleyelim” şeklinde keyfî olmamalıdır.
+
+6.2. Scorecard yöntemi
+
+Bu yöntemde şirketi bölgedeki ve aşamadaki ortalama pre-seed değerlemeyle karşılaştırırım. Önce kriterlere ağırlık veririm, sonra girişimin ortalamaya göre performans katsayısını belirlerim.
+
+Örnek model:
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGKC0ZFVkPvTA/article-inline_image-shrink_1500_2232/B4DZ_RYEWMI4AQ-/0/1785924175483?e=2147483647&v=beta&t=KGg1FNWqJ6YVk6eC9It1-r-W-b2dFK6026eJRk0IXW0)
+
+Eğer karşılaştırılabilir pre-seed medyanı 3.000.000 dolar ise:
+
+Gösterge değer = 3.000.000 × 1,025 = 3.075.000 $ pre-money
+
+Bu yöntem nesnel görünse de skorlar öznel olabilir. Ben bu yüzden puanı tek başına sonuç değil, varsayımları görünür kılan tartışma aracı olarak kullanırım.
+
+6.3. Berkus yöntemi
+
+Berkus yaklaşımı, gelir öncesi girişimlerde değeri belli risk azaltıcı başarı bloklarına dağıtır. Tipik başlıklar:
+
+Sağlam fikir/temel değer,
+
+Prototip veya teknoloji,
+
+Güçlü yönetim ekibi,
+
+Stratejik ilişkiler/pazara erişim,
+
+Ürün lansmanı veya ilk satış yeteneği.
+
+Her başlığa yerel piyasa ve dönem için belirlenen azami bir değer eklenir. Örneğin her kategori için azami 500.000 dolar seçilirse teorik üst sınır 2,5 milyon dolar olur. Şirket prototipte güçlü, ekipte orta, satış kanıtında zayıfsa her kategori farklı tutar alır.
+
+Bu rakamlar evrensel değildir. Yöntemin değeri, “fikrim 5 milyon eder” demek yerine hangi riskin ne kadar azaltıldığını ayrı ayrı tartıştırmasıdır.
+
+6.4. Risk faktörü toplama yöntemi
+
+Önce benzer girişimlerin ortalama değerini alırım. Sonra belirli risk alanlarına göre değer ekler veya çıkarırım:
+
+Yönetim riski,
+
+Aşama riski,
+
+Mevzuat/politik risk,
+
+Üretim riski,
+
+Satış ve pazarlama riski,
+
+Finansman ve sermaye riski,
+
+Rekabet riski,
+
+Teknoloji riski,
+
+Dava/hukuk riski,
+
+Uluslararasılaşma riski,
+
+İtibar riski,
+
+Potansiyel çıkış riski.
+
+Örneğin 3 milyon dolar taban değerde güçlü ekip +250 bin, patent +250 bin; gelir kanıtı yok -250 bin, regülasyon riski -500 bin ise gösterge değer 2,75 milyon dolar olur.
+
+Bu yöntem de sahte kesinlik yaratabilir. “250 bin” doğa kanunu değildir; piyasa bağlamında kabul edilen bir ayarlama birimidir.
+
+6.5. Maliyet/yeniden oluşturma yöntemi
+
+Şirketin bugüne kadar yarattığı teknolojiyi, tasarımı, veriyi ve operasyonu yeniden oluşturmanın maliyetini hesaplarım.
+
+Örnek:
+
+Yazılım geliştirme: 220.000 $
+
+Veri toplama/temizleme: 90.000 $
+
+Tasarım ve araştırma: 40.000 $
+
+Regülasyon ve test: 80.000 $
+
+Kurulum ve diğer: 20.000 $
+
+Toplam yeniden oluşturma maliyeti: 450.000 $
+
+Bu yöntem bir taban kontrolü sağlayabilir; fakat fırsatı, ekip kalitesini, traction’ı ve gelecekteki ölçeklenmeyi yeterince fiyatlamaz. Kötü yazılıma 1 milyon dolar harcanmış olması şirketi 1 milyon dolar değerli yapmaz. Aynı şekilde olağanüstü bir ekip 100 bin dolara çok güçlü ürün geliştirmişse değerin yalnızca 100 bin dolar olması gerekmez.
+
+6.6. İndirgenmiş nakit akımı (DCF)
+
+DCF , İngilizce “Discounted Cash Flow” ifadesinin kısaltmasıdır. Türkçesi indirgenmiş nakit akımı dır. İsmi ürkütücü, mantığı basittir:
+
+Bir şirket gelecekte cebimize ne kadar gerçek para bırakabilir ve gelecekteki o paranın bugünkü karşılığı nedir?
+
+Önce dört parçayı anlayalım
+
+15. Nakit akımı: Kasaya gerçekten giren ve kasadan gerçekten çıkan para.
+
+16. Serbest nakit akımı — FCF: İşletme giderleri, vergiler ve işi sürdürmek için gereken yatırımlardan sonra finansman sağlayanlara kalabilen para.
+
+17. İskonto oranı: Beklemenin ve riskin bedeli. Gelecekteki parayı bugünkü değere çevirirken kullandığımız oran.
+
+18. Terminal değer: Ayrıntılı tahmin yaptığımız yıllardan sonra şirketin kalan bütün ömrüne biçtiğimiz devam değeri.
+
+Çocukça basit örnek
+
+Bir oyuncak makinesi gelecek yıl kesin olarak 110 TL verecek olsun. Paranızı başka yerde değerlendirerek bir yılda yüzde 10 kazanabiliyorsanız, gelecek yıl alınacak 110 TL’nin bugünkü değeri 100 TL’dir:
+
+Bugünkü değer = 110 / (1 + 0,10) = 100 TL
+
+Para iki yıl sonra gelecekse iki kez indirgeriz:
+
+Bugünkü değer = Gelecekteki para / (1 + iskonto oranı)^yıl
+
+Risk yükseldikçe iskonto oranı yükselir; gelecekteki aynı para bugün daha az eder. Çünkü gelmeme ihtimali veya beklemenin maliyeti büyür.
+
+Basitleştirilmiş şirket örneği
+
+Bir şirketin önümüzdeki üç yıl sırasıyla 100 bin, 150 bin ve 220 bin TL serbest nakit akımı üreteceğini; üçüncü yıl sonunda devam eden işletmenin bugüne indirgenmeden önce 1,5 milyon TL değer taşıyacağını ve iskonto oranının yüzde 25 olduğunu varsayalım.
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGbWqEAleYENw/article-inline_image-shrink_1500_2232/B4DZ_RYQ04IcAQ-/0/1785924226581?e=2147483647&v=beta&t=lEf2JYXf6XYtw8S9LXdPG5s35EFfd0KC_F3xU6I8SoM)
+
+Bu örnekte görülen 1.056.640 TL “kesin şirket fiyatı” değildir. Tahminlerin ve yüzde 25 iskonto oranının ürettiği teorik değerdir. İlk yıl nakit akımı 100 bin değil 40 bin çıkarsa, iskonto oranı yükselirse veya şirket üçüncü yıldan sonra büyüyemezse sonuç değişir.
+
+Temel formül:
+
+Şirket değeri = Σ [FCF_t / (1 + iskonto oranı)^t] + terminal değerin bugünkü değeri
+
+Olgun şirketlerde güçlüdür. Pre-seed’de ise:
+
+Gelir tahminleri çok belirsizdir,
+
+Marj yapısı oturmamıştır,
+
+Gelecek sermaye ihtiyacı bilinmez,
+
+Uygun iskonto oranı tartışmalıdır,
+
+Terminal değer toplam sonucun büyük bölümünü oluşturabilir.
+
+Bu nedenle ben pre-seed’de tek noktalı DCF yerine senaryo DCF kullanmayı tercih ederim. McKinsey yüksek büyüme şirketlerinde DCF’nin zor olduğunu ama şirketin özgün ekonomik sürücülerini görmek bakımından hâlâ en açıklayıcı yöntem olduğunu savunur. Aynı bölüm, sonuçların senaryo olasılıklarına çok duyarlı olduğunu da açıkça belirtir. [Koller, Goedhart ve Wessels, 2005, ss. 655-670]
+
+Tek noktalı DCF , yalnızca tek gelecek tahmini kullanır. Senaryo DCF ise örneğin kötü, normal ve iyi olmak üzere farklı gelecekler kurar; her birine olasılık verir. Pre-seed’de ben ikinci yaklaşımı daha dürüst bulurum.
+
+Benim bakış açıma göre: Pre-seed’de 12 yıllık gelir tablosunu kuruşuna kadar yazmak finansal ciddiyet değildir. Bilmediğimiz geleceğe ondalık hane eklemektir. DCF’yi “şirketim tam olarak 7.438.216 dolar eder” demek için değil, değerimizi hangi varsayımların taşıdığını görmek için kullanırım.
+
+DCF bize hangi soruları sordurur?
+
+Gelir ne zaman başlayacak ve hangi motorla büyüyecek?
+
+Brüt marj ölçekle artacak mı azalacak mı?
+
+Şirket büyümek için ne kadar yeni sermaye harcayacak?
+
+Bir gün gerçekten nakit üretecek mi?
+
+Değerin ne kadarı ilk yıllardan, ne kadarı çok uzak gelecekteki terminal değerden geliyor?
+
+Sonuç hangi varsayım değişince çöküyor?
+
+Eğer değerin yüzde 90’ı terminal değerden geliyorsa yatırımcı aslında bugünkü işletmeden çok uzak gelecek hikâyesine para biçmektedir. Bu mutlaka yanlış değildir; fakat belirsizlik açıkça görülmelidir.
+
+6.7. Venture Capital Method - çıkıştan geriye değerleme
+
+Bu, yatırımcı mantığını anlamak için en önemli yöntemlerden biridir.
+
+Adım 1: Muhtemel çıkış yılını belirle
+
+Örneğin beşinci yıl.
+
+Adım 2: Çıkış anındaki operasyonel metriği tahmin et
+
+Beşinci yıl gelirinin 10 milyon dolar olacağını varsayalım.
+
+Adım 3: Uygun çıkış çarpanını uygula
+
+Benzer şirketler 5× gelir üzerinden satılıyorsa:
+
+Tahmini çıkış şirket değeri = 10 milyon × 5 = 50 milyon $
+
+Borç ve nakit varsa şirket değerinden özsermaye değerine geçiş yapılmalıdır:
+
+Çıkış özsermaye değeri = Firma değeri + nakit - borç - diğer finansal talepler
+
+Adım 4: Yatırımcının hedef getirisini belirle
+
+Yatırım 500.000 dolar, hedef brüt getiri 10× olsun.
+
+Gerekli çıkış geliri = 500.000 × 10 = 5.000.000 $
+
+MOIC ile IRR aynı şey değildir. MOIC toplam para çarpanını, IRR ise süreyi dikkate alan yıllıklandırılmış getiriyi gösterir.
+
+MOIC = (1 + IRR)^yıl
+
+IRR = MOIC^(1/yıl) - 1
+
+Beş yılda 8× brüt getiri yaklaşık %51,6 yıllık IRR; beş yılda 10× yaklaşık %58,5 yıllık IRR anlamına gelir. Aynı 10× getiri üç yılda gerçekleşirse IRR yaklaşık %115,4 olur. Bu nedenle yatırımcı için yalnızca kaç kat kazandığı değil, bunu kaç yılda kazandığı da önemlidir.
+
+Adım 5: Çıkışta gereken payı hesapla
+
+Çıkışta gereken pay = 5.000.000 / 50.000.000 = %10
+
+Adım 6: Gelecekteki seyrelmeyi geri ekle
+
+Yatırımcının sonraki turlarda toplam %35 seyrelme yaşayacağını varsayalım. Elde tutma katsayısı %65’tir.
+
+Bugün gereken pay = %10 / %65 = %15,38
+
+Adım 7: Bugünkü post-money ve pre-money değeri hesapla
+
+Post-money = 500.000 / 0,1538 = yaklaşık 3.250.000 $
+
+Pre-money = 3.250.000 - 500.000 = yaklaşık 2.750.000 $
+
+Bu yöntem yatırımcının neden yüzde istediğini açıklar. İstenen oran yalnızca “risk yüksek” cümlesinden değil; çıkış büyüklüğü, hedef getiri ve gelecekteki seyrelme beklentisinden türeyebilir.
+
+VC yöntemi duyarlılık tablosu
+
+Aşağıdaki tabloda yatırım 600.000 dolar, yatırım sonrası gelecek seyrelme %35 kabul edilmiştir. Çıkış varsayımı ve hedef MOIC değiştiğinde bugünkü değerlemenin ne kadar oynadığı görülür.
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQExu40TVJImOg/article-inline_image-shrink_1500_2232/B4DZ_RYm4hIoAQ-/0/1785924317054?e=2147483647&v=beta&t=okJciJE0O2Y-GtQWHHRMIf01Z7avEqmqU4JgUffFHkc)
+
+Bu tablo pre-seed değerlemenin neden tek sayı olmadığını gösterir. Çıkış çarpanı, exit büyüklüğü, süre, yatırımcının hedef getirisi veya takip turlarındaki seyrelme varsayımında küçük görünen değişiklikler bugünkü fiyatı ciddi biçimde değiştirir.
+
+6.8. Senaryo ağırlıklı beklenen değer
+
+Tek bir iyimser senaryoya güvenmek yerine farklı sonuçlar kurarım:
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQHnDeET8bVZ7A/article-inline_image-shrink_1500_2232/B4DZ_RYzpWKgAU-/0/1785924369419?e=2147483647&v=beta&t=m8-UYWe9j4UfaTbCOgEKEzGRCqFEPW-aa69__eoWgbw)
+
+Bu 22 milyon dolar bugünkü değer değildir. Zaman, takip yatırımları, likidite riski ve yatırımcının hedef getirisi ayrıca hesaba katılmalıdır. Örneğin yatırımcı 5 yılda portföy düzeyinde 10× brüt çarpan hedefliyorsa kaba post-money kontrol değeri 2,2 milyon dolar olur.
+
+Bu hesap bize başka bir gerçeği gösterir: beklenen değerin büyük kısmı yüzde 5 olasılıklı aykırı başarıdan gelebilir. VC ekonomisinin neden “çok büyük sonuç” aradığını burada görürüz.
+
+6.9. Reel opsiyon mantığı
+
+Pre-seed yatırımı bazen şirketin bütün geleceğini satın almak değil, bir sonraki bilgi noktasına ulaşma hakkını finanse etmektir. 500 bin dolarlık yatırım, teknik prototipin çalışıp çalışmadığını gösterecekse yatırımcı aslında belirsizlik çözüldüğünde daha büyük yatırım yapma opsiyonu kazanır.
+
+Bu yaklaşım özellikle biyoteknoloji, deep-tech, enerji ve regülasyon yoğun alanlarda anlamlıdır. Her kilometre taşı başarısız projeyi durdurma, başarılı projeye devam etme hakkı yaratır. Fakat teorik reel opsiyon modelleri pre-seed için hassas veri gerektirir; ben bunu kesin fiyat makinesi değil, aşamalı finansman mantığı olarak kullanırım.
+
+7. Benim kullandığım pre-seed değerleme sistemi
+
+Ben tek bir yönteme teslim olmam. Aşağıdaki beş katmanlı sistemi kullanırım.
+
+Katman 1: Yatırım yapılabilirlik kapısı
+
+Önce şirketin değerini değil, yatırım yapılabilir olup olmadığını test ederim:
+
+Problem gerçek mi?
+
+Kurucu ekip bu problemi çözebilir mi?
+
+Pazar girişim sermayesi ölçeğinde sonuç üretebilir mi?
+
+Ürün teknik olarak yapılabilir mi?
+
+İlk müşteri sinyali var mı?
+
+Hukuki ve ortaklık yapısı yatırım almaya uygun mu?
+
+Bu kapı geçilmemişse değerleme tartışması erken olabilir.
+
+Katman 2: Piyasa çıpası
+
+Benzer aşama, coğrafya, sektör ve tur büyüklüğünde işlemlerden bir değerleme aralığı çıkarırım. Tek işlem yerine medyan ve dağılım kullanırım.
+
+Örnek piyasa bandı: 2,5-4 milyon dolar pre-money.
+
+Katman 3: 100 puanlık kanıt skoru
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGM9GN6Gq1B7Q/article-inline_image-shrink_1500_2232/B4DZ_RZCifGwAU-/0/1785924430401?e=2147483647&v=beta&t=dHwV83a94S8MrZuqL7FIfxjrACunoa_hXoWpwr02Gf4)
+
+0-39: Henüz yatırım fiyatı konuşmak için çok erken.
+
+40-54: Fikir/doğrulama; alt banda yakın.
+
+55-69: Güçlü pre-seed adayı; orta bant.
+
+70-84: Kanıtlı pre-seed; üst banda yaklaşabilir.
+
+85-100: Olağanüstü profil; piyasa üstü fiyat yalnızca güçlü rekabetle savunulur.
+
+Bu eşikler evrensel standart değildir. Benim kullandığım karar disiplinidir.
+
+Katman 4: Finansal geriye çözüm
+
+Piyasa ve skor bana 3,2 milyon dolar pre-money gösteriyor olsun. Şimdi bunu VC yöntemiyle kontrol ederim:
+
+5. yıl olası çıkış: 60 milyon $
+
+Yatırım: 600 bin $
+
+Hedef brüt çarpan: 8×
+
+Gelecek seyrelme: %30
+
+Gerekli çıkış geliri: 4,8 milyon $
+
+Çıkış payı: 4,8 / 60 = %8
+
+Bugünkü gerekli pay: %8 / %70 = %11,43
+
+İma edilen post-money: 600 bin / %11,43 = 5,25 milyon $
+
+İma edilen pre-money: 4,65 milyon $
+
+Piyasa yaklaşımı 3,2 milyon, VC yaklaşımı 4,65 milyon gösteriyorsa tek rakam seçmem. Varsayımları stres testine sokarım. Çıkış 60 değil 30 milyon olursa veya hedef 8× değil 12× olursa değer dramatik biçimde düşer.
+
+Katman 5: Tur uygulanabilirliği ve pazarlık bandı
+
+Son olarak:
+
+İstenen para gerçekten yeterli mi?
+
+Bu değerlemede satılacak pay sonraki turlara alan bırakıyor mu?
+
+Yatırımcı için anlamlı sahiplik oluşuyor mu?
+
+Kurucuların tur sonrası motivasyonu korunuyor mu?
+
+Bir sonraki tur için gerçekçi değer artışı mümkün mü?
+
+Sonuçta tek sayı değil üçlü bant üretirim:
+
+Savunma tabanı: Bunun altına düşersem gereksiz pahalı sermaye alıyorum.
+
+Hedef değer: Kanıtlarımın makul biçimde desteklediği rakam.
+
+İddialı üst sınır: Yalnızca yatırımcı rekabeti ve güçlü stratejik katkıyla mümkün rakam.
+
+8. Yatırımcı neye göre yatırım yapar?
+
+8.1. Melek yatırımcı ile VC aynı gözle bakmaz
+
+Melek yatırımcı çoğunlukla kendi parasını yatırır. Sektörel ilgisi, kurucuyla kişisel güveni, mentorluk isteği veya toplumsal etki motivasyonu olabilir. VC ise başkalarının sermayesini yöneten bir fon olarak portföy, fon ömrü, rezerv, hedef getiri ve yatırım komitesi disipliniyle hareket eder.
+
+David S. Rose erken aşama yatırımını bir “hits business” olarak açıklar: yatırımların çoğu başarısız olabilir; az sayıdaki güçlü sonuç kayıpları telafi eder. Aynı nedenle ciddi melek yatırımcının tek şirkete bütün sermayesini koymak yerine portföy oluşturması beklenir. [Rose, 2014, ss. 3-8]
+
+Nielsen’in risk/getiri matrisi de doğru yatırımcı eşleşmesinin önemini gösterir. Düşük risk-düşük ödül işi kötü iş değildir; sadece milyar dolarlık çıkış arayan VC için yanlış ürün olabilir. [Nielsen, 2017, ss. 23-41]
+
+8.2. VC’nin fon matematiği
+
+100 milyon dolarlık bir fonun bütün şirketlere eşit yatırım yapmadığını düşünelim. Fon yönetim ücretleri, takip yatırımları ve başarısızlıklar nedeniyle ilk çeklerin tamamı çıkışta değer üretmez.
+
+Fon bir girişime 1 milyon dolar yatırıp yüzde 10 alıyorsa ve sonraki turlarda yüzde 40 seyrelirse çıkış payı yaklaşık yüzde 6 olur.
+
+Şirket 20 milyon dolara satılır: fonun brüt geliri 1,2 milyon dolar.
+
+Şirket 100 milyon dolara satılır: fonun brüt geliri 6 milyon dolar.
+
+Şirket 500 milyon dolara satılır: fonun brüt geliri 30 milyon dolar.
+
+İlk sonuç iyi bir KOBİ exit’i olabilir ama fon ekonomisini taşımaz. Bu nedenle VC şu soruyu sorar:
+
+“Bu şirket başarılı olursa fonum açısından anlamlı büyüklükte bir sonuç üretebilir mi?”
+
+8.3. Yatırımcının karar ağacı
+
+Ben yatırımcı bakışını şu sırada kurarım:
+
+19. Tez uyumu: Sektör, aşama, coğrafya ve çek büyüklüğü uygun mu?
+
+20. Yeterince büyük sonuç: Pazar ve çıkış ihtimali fon için anlamlı mı?
+
+21. Ekip: Bu kurucular öğrenebilir, işe alabilir ve uygulayabilir mi?
+
+22. Kanıt: Hangi temel riskler azaltılmış?
+
+23. Anlaşma: Fiyat, sahiplik ve haklar hedef getiriyi destekliyor mu?
+
+24. Takip sermayesi: Şirket daha kaç tur ister ve pay ne kadar seyrelir?
+
+25. Çıkış: Kim, neden ve ne zaman satın alabilir?
+
+26. Alternatif maliyet: Aynı fon sermayesi başka hangi fırsata gidebilir?
+
+8.4. Yatırımcı aylık kazançtan pay alır mı?
+
+Klasik özsermaye yatırımında hayır. Yatırımcı:
+
+Aylık cironun otomatik yüzdesini alamaz,
+
+Şirket hesabından istediği gibi para çekemez,
+
+Kurucunun maaşından pay alamaz,
+
+Kâr dağıtılmadıkça otomatik nakit alamaz.
+
+Yatırımcı genellikle exit, ikincil hisse satışı veya temettü ile kazanır. Aylık ciro payı, faiz, danışmanlık ücreti ya da zorunlu geri ödeme varsa artık özsermaye yatırımına başka ekonomik araçlar eklenmiş demektir.
+
+9. Ne kadar yatırım istemeliyim?
+
+Ben “ne kadar bulabilirsem o kadar” yaklaşımını yanlış buluyorum. Yatırım miktarı bir sonraki değer artırıcı kilometre taşına göre hesaplanmalıdır.
+
+9.1. Runway hesabı
+
+Burn / nakit yakımı , şirketin bir ayda kasasından net olarak eksilttiği paradır. “Yakmak” kelimesi paranın boşa harcandığı anlamına gelmez; şirketin henüz kendi gelirleriyle karşılayamadığı net nakit tüketimini anlatır.
+
+Runway / nakit ömrü , mevcut parayla kaç ay daha yaşayabileceğinizi gösterir. Bir uçağın kalkış pistine benzetilir: Pistin sonuna gelmeden şirketin gelir üretmesi veya yeni finansman bulması gerekir.
+
+Aylık net burn = Aylık nakit gider - aylık nakit gelir
+
+Temel yatırım ihtiyacı = Aylık net burn × hedef runway
+
+Toplam tur = Temel ihtiyaç + tek seferlik yatırımlar + güvenlik tamponu
+
+Örnek
+
+Aylık gider: 90.000 $
+
+Aylık nakit gelir: 25.000 $
+
+Net burn: 65.000 $
+
+Hedef runway: 18 ay
+
+Operasyon ihtiyacı: 1.170.000 $
+
+Tek seferlik regülasyon/altyapı: 130.000 $
+
+Tampon: 200.000 $
+
+Tur hedefi: 1.500.000 $
+
+Bu paranın karşılığında yalnızca “18 ay yaşamak” değil, örneğin şu sonuçlar hedeflenmelidir:
+
+80 ücretli kurumsal müşteri,
+
+150.000 dolar MRR,
+
+%85 brüt retention,
+
+12 aydan kısa CAC geri ödemesi,
+
+İki ülkede tekrarlanabilir satış,
+
+Teknik ölçek testinin tamamlanması.
+
+9.2. Fazla para neden sorun olabilir?
+
+Gereksiz seyrelme yaratır.
+
+Harcama disiplini bozulabilir.
+
+Gerçek kanıt oluşmadan ekip şişebilir.
+
+Bir sonraki turda daha yüksek değerleme zorunluluğu doğar.
+
+Yüksek burn şirketi yeni yatırıma bağımlı kılar.
+
+9.3. Çok az para neden sorun olabilir?
+
+Şirket kilometre taşına ulaşmadan tekrar tura çıkar.
+
+Kurucu sürekli fon toplar, ürün ve satışa odaklanamaz.
+
+Köprü turu pazarlık gücünü düşürür.
+
+Nakit biterken yapılan tur değerlemeyi aşağı çeker.
+
+10. Seyrelme ve cap table matematiği
+
+Seyrelme , yeni hisseler çıktığında mevcut ortakların şirket içindeki yüzde oranının küçülmesidir. Bir sürahi meyve suyuna su eklediğinizi düşünün: Sürahinin toplamı büyür ama ilk karışımın toplam içindeki oranı azalır. Şirkette de yatırım parası kasayı büyütürken yeni hisseler kurucunun yüzdesini azaltabilir.
+
+Seyrelmek her zaman kötü değildir. Yüzdeniz azalırken şirketin toplam değeri daha fazla büyüyorsa elinizde kalan pay ekonomik olarak daha değerli olabilir. Fakat şirket büyümezse yalnızca yüzde kaybetmiş olursunuz.
+
+Cap table , İngilizce “capitalization table” ifadesinin kısaltmasıdır. Türkçede ortaklık ve haklar tablosu diyebiliriz. Kimde kaç hisse bulunduğunu; opsiyonları, SAFE’leri ve dönüşebilir araçları gösterir. Bu tablo şirketin nüfus cüzdanı gibidir: kimin gerçekten neye sahip olduğunu söyler.
+
+Benim bakış açıma göre: “Yüzde 10 verdim” tek başına eksik cümledir. Hangi değerlemede, hangi imtiyazlarla, opsiyon havuzundan önce mi sonra mı, SAFE’ler dönüşünce mi önce mi? Yüzdeyi bilip paydayı bilmeyen kurucu, aslında ne verdiğini bilmiyordur.
+
+10.1. Birden fazla turda seyrelme
+
+Kurucular başlangıçta yüzde 100’e sahip olsun.
+
+Pre-seed’de yeni yatırımcı yüzde 15 alır: kurucular %85.
+
+Seed’de yeni yatırımcı yüzde 20 alır: kurucular %85 × %80 = %68; pre-seed yatırımcı %12; seed yatırımcı %20.
+
+Series A’da yüzde 20 yeni pay satılır: kurucular %68 × %80 = %54,4.
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGroCxiB-D6nw/article-inline_image-shrink_1500_2232/B4DZ_RZTxtHEAU-/0/1785924500824?e=2147483647&v=beta&t=BsKg4wf8PtbqQikhi68SkQ_mUUpSOhDB2kthV_1e97s)
+
+Seyrelme yüzdeleri toplanmaz; kalan sahiplik oranları çarpılır.
+
+10.2. Opsiyon havuzu etkisi
+
+Yatırımcı turdan önce yüzde 10 opsiyon havuzu kurulmasını isterse maliyet çoğunlukla mevcut ortaklara biner.
+
+Basit örnek:
+
+Eski hisseler: 1.000.000
+
+Yatırımcıya tur sonrası %20
+
+Havuzun tur sonrası %10 olması isteniyor
+
+Havuz yatırım öncesinde kuruluyorsa havuzun pre-money hisselerin %12,5’i olması gerekir; çünkü yatırım sonrasında eski hissedarlar ve havuz birlikte şirketin %80’ini tutacaktır: %10 / %80 = %12,5.
+
+1.000.000 kurucu hissesine eklenecek havuz hissesi:
+
+Havuz hissesi / (1.000.000 + havuz hissesi) = %12,5
+
+Buradan havuz yaklaşık 142.857 hisse çıkar. Yatırımcıya da tur sonrası %20 için yaklaşık 285.714 yeni hisse verilir.
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQHR_bpkjtdNnA/article-inline_image-shrink_1500_2232/B4DZ_RZdxFGYAQ-/0/1785924541866?e=2147483647&v=beta&t=zhqOdef-bzNjR3zPy6laAhSuSVG4_mum7OYBpXtExZo)
+
+Yatırımcının “yüzde 20”si sabit kalırken kurucular yalnızca yatırım nedeniyle %80’e değil, yatırım öncesi havuz nedeniyle %70’e düşer. Opsiyon havuzu yatırım sonrasında oluşturulsaydı havuzun maliyeti yatırımcı dâhil bütün mevcut ortaklara oransal dağılırdı.
+
+Ben term sheet’te şu soruyu açıkça yazarım:
+
+Opsiyon havuzu yüzde kaç olacak, tamamen seyreltilmiş hesabın içinde mi ve yatırım öncesi mi yatırım sonrası mı oluşturulacak?
+
+10.3. İkincil satış ile birincil yatırım
+
+Birincil yatırım: Yeni hisse çıkar; para şirket kasasına girer.
+
+İkincil satış: Mevcut ortak hisse satar; para o ortağa gider.
+
+Erken aşamada yatırımcı genellikle sermayenin şirkette büyüme yaratmasını ister. Sınırlı bir founder liquidity bazı koşullarda anlaşılabilir; fakat şirket henüz kırılganken kurucunun büyük nakit çıkışı yatırımcı güvenini azaltabilir.
+
+11. SAFE ve dönüştürülebilir araçların matematiği
+
+SAFE , “Simple Agreement for Future Equity” sözlerinin kısaltmasıdır. Türkçeye kabaca gelecekte hisseye dönüşecek basit yatırım sözleşmesi diye çevrilebilir.
+
+Beş yaşındaki bir çocuğa anlatır gibi: Yatırımcı bugün size para verir. Siz bugün ona kesin sayıda hisse vermek yerine, “Bir sonraki ciddi yatırım turunda hangi fiyat oluşursa, önceden anlaştığımız avantaja göre sana hisse vereceğim” dersiniz. SAFE bu sözün kurallı belgesidir.
+
+SAFE çoğu yaygın şablonda klasik banka kredisi gibi faizli ve vadeli borç değildir; fakat bedava para hiç değildir . Gelecekte şirketinizin bir bölümü olacaktır. Bugün yüzde görünmediği için yok sayılan SAFE, yarın cap table açıldığında gerçek paya dönüşür.
+
+Fiyatlanmış tur , yatırım sırasında şirketin pre-money değerinin ve hisse fiyatının açıkça belirlendiği turdur. SAFE ise çoğu zaman bu fiyatı sonraki tura bırakır.
+
+11.1. Valuation cap
+
+SAFE yatırımcısının dönüşüm fiyatını sınırlayan değerleme tavanıdır. Şirket bir sonraki turu daha yüksek değerlemeyle yapsa bile SAFE daha avantajlı fiyattan dönüşebilir.
+
+Valuation cap / değerleme tavanı , “SAFE şu değerden daha pahalıya dönüşmeyecek” sınırıdır. Şirket sonraki turda çok yüksek değere ulaşırsa erken risk alan yatırımcı bu tavan sayesinde daha düşük hisse fiyatından dönüşür ve daha fazla hisse alır.
+
+Basitleştirilmiş örnek:
+
+SAFE yatırımı: 500.000 $
+
+Post-money cap: 5.000.000 $
+
+Post-money SAFE mantığında, başka karmaşık araçlar yoksa SAFE’in ima ettiği sahiplik yaklaşık:
+
+500.000 / 5.000.000 = %10
+
+Birden fazla post-money SAFE varsa her biri kurucuları seyreltir. Üç SAFE’in ayrı ayrı yüzde 5, yüzde 7 ve yüzde 8 ima etmesi, dönüşümde toplam yüzde 20’ye yakın pay anlamına gelebilir.
+
+11.2. İndirim
+
+Discount / indirim , SAFE yatırımcısının sonraki tur yatırımcısına göre hisseyi daha ucuz fiyattan almasıdır. Erken para koyduğu ve daha fazla risk aldığı için ödüllendirilir.
+
+Bir sonraki fiyatlı turda yeni yatırımcı hisse başına 10 dolar ödüyor ve SAFE yüzde 20 indirim taşıyorsa:
+
+İndirimli dönüşüm fiyatı = 10 × (1 - 0,20) = 8 $
+
+SAFE hem cap hem indirim içeriyorsa yatırımcı için daha avantajlı olan dönüşüm fiyatı uygulanabilir; belgenin hükümleri belirleyicidir.
+
+11.3. SAFE neden bedava para değildir?
+
+Faiz ve vade olmayabilir; ama ekonomik olarak gelecekte hisse verir.
+
+Cap table’da görünmez sanılırsa kurucu beklenmedik ölçüde seyrelir.
+
+Pro rata hakları ek seyrelme yaratabilir.
+
+MFN maddesi sonraki daha avantajlı şartları eski yatırımcıya taşıyabilir.
+
+Türkiye’de yabancı şablonun doğrudan kullanılması şirketler ve vergi hukuku açısından sorun çıkarabilir.
+
+Ben her SAFE için “as-converted” cap table hazırlarım: bugün dönüşse kim yüzde kaç alır?
+
+Bu cümledeki iki terim:
+
+Pro rata hakkı: Yatırımcının sonraki turlarda yeniden para koyarak yüzdesini koruyabilme hakkı.
+
+MFN — Most Favoured Nation / en avantajlı koşul hakkı: Sonraki bir yatırımcıya daha iyi SAFE şartı verirseniz, önceki yatırımcının da o şarttan yararlanabilmesi.
+
+As-converted / dönüşmüş varsayımıyla: SAFE ve dönüştürülebilir belgelerin bugün hisseye dönüşmüş olduğunu varsayarak hazırlanan ortaklık görünümü.
+
+Sert gerçek: SAFE’in adında “simple”, yani basit yazması cap table etkisinin basit olduğu anlamına gelmez. Beş ayrı SAFE imzalayıp toplam seyrelmeyi hesaplamamak, kredi kartı ekstrelerine bakmadan harcama yapmaya benzer. Borcu değil belki ama gelecekte vereceğiniz şirket yüzdesini biriktirirsiniz.
+
+12. Değerleme kadar önemli sözleşme ekonomisi
+
+Yüksek değerleme kötü hükümleri telafi etmeyebilir. Aynı 5 milyon dolar post-money değerlemede iki yatırım farklı ekonomik sonuç doğurabilir.
+
+Term sheet , yatırımın ana şartlarını özetleyen ön koşullar belgesidir. Çoğu maddesi nihai yatırım sözleşmesine zemin hazırlar. “Henüz sözleşme değil” diyerek önemsiz görülmemelidir; pazarlığın ekonomik çerçevesi burada kurulur.
+
+Bir yatırım teklifini ev satın almaya benzetelim. Yalnızca evin fiyatına bakmazsınız; tapu kimin olacak, borç var mı, kullanım hakkı kimde, çıkarken nasıl satılacak diye de bakarsınız. Yatırımda değerleme evin fiyatıdır; aşağıdaki hükümler tapu ve kullanım şartlarıdır.
+
+12.1. Tasfiye imtiyazı
+
+Tasfiye imtiyazı / liquidation preference , şirket satıldığında veya tasfiye olduğunda paranın hangi sırayla dağıtılacağını belirleyen öncelik hakkıdır. “Yatırımcı yüzde 20 aldıysa satış bedelinin her durumda yüzde 20’sini alır” düşüncesi bu nedenle yanlıştır.
+
+Yatırımcı 1 milyon dolar yatırıp yüzde 20 almış olsun.
+
+1× non-participating
+
+1× , yatırımcının yatırdığı tutarın bir katını öncelikle geri alma hakkını; non-participating , yatırımcının hem öncelikli parayı hem de ayrıca normal hisse payını birlikte alamamasını anlatır. Yatırımcı iki seçenekten avantajlı olanı seçer.
+
+Şirket 3 milyon dolara satılırsa yatırımcı genellikle ya 1 milyon dolarını almayı ya da yüzde 20 ile 600 bin dolar almayı seçer; 1 milyon doları seçer.
+
+Şirket 10 milyon dolara satılırsa yüzde 20 pay 2 milyon dolar ettiği için dönüşüp 2 milyon almayı seçer.
+
+1× participating
+
+Participating , yatırımcının önce imtiyazlı ödemesini alıp sonra kalan paraya hissesi oranında yeniden katılmasıdır. Günlük dille “önce parasını alır, sonra kalan pastadan bir dilim daha alır.”
+
+Yatırımcı önce 1 milyon dolarını alır, sonra kalan 9 milyon doların yüzde 20’sini de alır: toplam 2,8 milyon dolar. Bu, kurucular açısından daha pahalıdır.
+
+2× preference
+
+Yatırımcı düşük exit’te 2 milyon doları önce alabilir. Kâğıt üzerindeki yüzde aynı olsa da ekonomik dağılım tamamen değişir.
+
+12.2. Anti-dilution
+
+Şirket sonraki turu daha düşük fiyattan yaparsa eski yatırımcıyı korur.
+
+Anti-dilution / seyrelme karşıtı koruma , şirket gelecekte daha düşük hisse fiyatından yatırım alırsa eski yatırımcının ekonomik zararını azaltan düzeltmedir. Her seyrelmeyi engellemez; özellikle down round , yani önceki turdan daha düşük fiyatlı tur durumuna odaklanır.
+
+Broad-based weighted average: Daha dengeli düzeltme.
+
+Full ratchet: Eski yatırımcının fiyatını yeni düşük fiyata çekebilir; kurucu ve çalışanları ağır seyreltebilir.
+
+Ağırlıklı ortalama yöntem , yeni turun büyüklüğünü ve eski/yeni hisse sayılarını hesaba katarak daha sınırlı bir düzeltme yapar. Full ratchet / tam mandal ise çok küçük miktarda ucuz hisse çıkarılmış olsa bile eski yatırımcının dönüşüm fiyatını yeni düşük fiyata kadar çekebilir. Bu nedenle kurucu açısından çok daha serttir.
+
+12.3. Yönetim ve veto hakları
+
+Yüzde 15 pay sahibi yatırımcı şu haklarla fiilî kontrol kazanabilir:
+
+Bütçe onayı,
+
+Büyük işe alım/işten çıkarma vetosu,
+
+Borçlanma onayı,
+
+Yeni hisse ihracı vetosu,
+
+Şirket satışı onayı,
+
+İş modelinin değiştirilmesini engelleme,
+
+Yönetim kurulunda belirleyici koltuk.
+
+Koruyucu haklar ile günlük operasyon kontrolünü ayırmak gerekir.
+
+12.4. Kurucu vesting’i ve leaver hükümleri
+
+Kurucu erken ayrılırsa hak etmediği payların şirkete dönmesi makul olabilir. Ancak geçmiş emek yok sayılarak bütün kurucu payının sıfırdan dört yıla bağlanması adaletsiz olabilir.
+
+Vesting / hakediş , hissenin belirli süre çalışma veya hedef gerçekleşmesiyle parça parça kesinleşmesidir. Dört yıllık hakediş ve bir yıllık cliff varsa kurucu ilk yıl dolmadan ayrıldığında çoğu zaman hiçbir pay hak etmez; ilk yıl sonunda toplu bir bölüm, sonra aylık veya üç aylık parçalar hak eder.
+
+Good leaver / iyi ayrılan , sağlık, karşılıklı anlaşma veya haklı neden gibi kabul edilebilir sebeple ayrılan kişidir. Bad leaver / kötü ayrılan , ağır ihlal, rekabet veya kusur gibi sözleşmede olumsuz sayılan nedenle ayrılan kişidir. Etiketin sonucu, hisselerin hangi fiyattan geri alınacağını değiştirebilir.
+
+Good leaver/bad leaver tanımları, geri alım fiyatı ve hangi olayın kötü ayrılma sayıldığı dikkatle yazılmalıdır.
+
+Benim bakış açıma göre: Kurucuyu şirkette tutmak için vesting mantıklıdır; kurucuyu yıllarca korkuyla çalıştırmak için belirsiz “bad leaver” maddeleri yazmak mantıklı değildir. Yatırımcı korunmalı, fakat kurucu da kendi kurduğu şirkette rehin hâline gelmemelidir.
+
+12.5. Kişisel kefalet ve zorunlu geri alım
+
+Klasik özsermaye yatırımında yatırımcı şirket riskine katlanır. “Şirket başarısız olursa yatırımı şahsen geri ödersin” hükmü ekonomik olarak yatırımı borca yaklaştırır. Kurucu için çok ağırdır.
+
+13. Yüksek değerleme neden her zaman iyi değildir?
+
+Nielsen, arkadaş-aile yatırımında gereğinden yüksek değerlemenin sonraki turda sorun yaratabileceğini anlatır: Şirket ilerlemiş olsa bile yeni turun hisse fiyatı önceki turdan düşük kalırsa ilk yatırımcı kendini aldatılmış hissedebilir. [Nielsen, 2017, ss. 76-81]
+
+Benim için yüksek değerlemenin riskleri şunlardır:
+
+Bir sonraki turda çok daha yüksek değer zorunluluğu,
+
+Hedefler tutmazsa down round,
+
+Ağır anti-dilution etkisi,
+
+Çalışan opsiyonlarının motivasyon kaybı,
+
+Kurucunun gerçeklikten kopması,
+
+Exit olsa bile yatırımcının beklediği getiriye ulaşamaması,
+
+Yeni yatırımcıların masadan kalkması.
+
+Basit örnek
+
+Şirket pre-seed’de 10 milyon dolar pre-money ile 2 milyon dolar alıyor; post-money 12 milyon dolar. Yatırımcı %16,67 alıyor.
+
+18 ay sonra şirketin kanıtı 15 milyon dolar pre-money’yi ancak destekliyor. Bu yalnızca %50 artış demektir. Yeni yatırımcı daha yüksek risk ve büyük çek için yeterli getiri alanı görmeyebilir.
+
+Aynı şirket ilk turu 4 milyon dolar pre-money ile kapatsaydı 18 ay sonra 15 milyon dolar değerleme güçlü bir step-up olurdu. Elbette ilk turda daha çok seyrelirdi; fakat sonraki tur uygulanabilirliği daha yüksek olabilirdi.
+
+Ben en yüksek değeri değil, bir sonraki kaliteli turu ve sağlıklı exit’i mümkün kılan en yüksek savunulabilir değeri hedeflerim.
+
+14. Değerlemeyi artırmak için uygulanabilir yol haritası
+
+İlk 90 gün: Varsayımı kanıta çevirme
+
+En acil müşteri problemini daraltırım.
+
+30-50 nitelikli müşteri görüşmesi yaparım.
+
+Görüşme değil davranış kanıtı toplarım: ön sipariş, LOI, pilot, depozito.
+
+Tek temel kullanım senaryolu prototip çıkarırım.
+
+Kurucu rollerini ve fikri mülkiyet devrini netleştiririm.
+
+İlk cap table’ı ve veri odasını kurarım.
+
+Bu dönemde 50 kişiye “Fikri beğendiniz mi?” diye sormam. Çünkü insanlar nazik davranır. Şu soruları sorarım: Bu problemi en son ne zaman yaşadın? Nasıl çözdün? Ne kadar para ve zaman kaybettin? Bugün çözmek için bütçen var mı? Pilot için hangi kararı kim verir?
+
+Benim bakış açıma göre: Müşteri görüşmesi, girişimcinin kendi fikrini anlattığı satış konuşması değildir. Kurucunun susup gerçeği dinlediği araştırmadır. Görüşmenin yüzde 80’inde siz konuşuyorsanız müşteri doğrulaması yapmıyorsunuz; fikrinizi savunuyorsunuz.
+
+90-180 gün: Ürün ve ödeme kanıtı
+
+MVP’yi gerçek kullanıcıya açarım.
+
+Aktivasyon ve retention kohortlarını ölçerim.
+
+En az bir fiyat testi yaparım.
+
+MVP’yi “kötü yapılmış tam ürün” olarak görmem. MVP — Minimum Viable Product / uygulanabilir en küçük ürün , en kritik varsayımı test etmeye yetecek en küçük çalışan çözümdür. Minimum kelimesi kalitesiz; viable kelimesi de bütün özellikler tamam demek değildir. Kullanıcıya gerçek değer verecek kadar işlevli, yanlış varsayımı hızla ortaya çıkaracak kadar küçüktür.
+
+No-code veya düşük kod araçları bir seçenek olabilir; bugün yapay zekâ destekli geliştirme de çok daha hızlı MVP üretmeyi mümkün kılıyor. Benim için araç değil, öğrenme hızı önemlidir. Ancak hızlı yapılmış ürünün güvenlik, veri koruma veya sağlık gibi kritik riskleri görmezden gelmesine izin vermem.
+
+Ücretsiz ilgi yerine ödeme isteğini ölçerim.
+
+En iyi müşteri segmentini belirlerim.
+
+Hangi kanalın tekrarlanabilir olabileceğini test ederim.
+
+180-365 gün: Tekrarlanabilirlik ve yatırım tezi
+
+Bu aşamada “satış yaptık” demek yetmez. Aynı müşteri tipine, benzer satış süresi ve maliyetle tekrar satış yapıp yapamadığımı ararım. Bir kurucunun kişisel çevresiyle kapattığı ilk beş satış değerlidir; fakat tek başına ölçeklenebilir kanal kanıtı değildir.
+
+Product-market fit / ürün-pazar uyumu , belirli bir müşteri grubunun ürünü güçlü biçimde istediği, kullandığı, bedel ödediği ve ürün ortadan kalkarsa eksikliğini hissedeceği noktadır. Tek bir sihirli sayı değildir; retention, organik talep, yenileme, tavsiye ve satış kolaylığı birlikte okunur.
+
+Benim büyüme yaklaşımım: Growth hacking, rastgele viral numara veya yalnızca reklam optimizasyonu değildir. Ürün, teklif, fiyat, satış, dağıtım, müşteri deneyimi, veri ve otomasyonu aynı büyüme sisteminde birleştirmektir. Kötü ürüne daha çok trafik göndermek büyüme değildir; problemin daha hızlı görünmesini sağlamaktır.
+
+Satış sürecini adımlara ve dönüşüm oranlarına bölerim.
+
+Birim ekonomiyi kohort bazında hesaplarım.
+
+Kullanım ve gelir büyümesini düzenli raporlarım.
+
+18 aylık kilometre taşı bütçesi çıkarırım.
+
+Aşağıdan yukarı pazar hesabı yaparım.
+
+İki-üç çıkış senaryosu ve potansiyel alıcı haritası hazırlarım.
+
+Değerleme bandını en az üç yöntemle kontrol ederim.
+
+15. Sektöre göre değer sürücüleri değişir
+
+Aynı metriği her şirkete uygulamak yanlıştır. Pazar yerinde işlem hacmi, SaaS’ta tekrar eden gelir, e-ticarette katkı marjı, sağlıkta klinik ve düzenleyici kanıt, donanımda üretilebilirlik öne çıkar. Aşağıdaki İngilizce terimlerin sade karşılıkları şöyledir:
+
+Net revenue retention / net gelir tutma oranı: Mevcut müşterilerden gelen gelirin iptal, küçülme ve ek satışlar sonrasında ne kadar kaldığını gösterir. Yüzde 100’ün üzeri, yeni müşteri almadan mevcut müşteri gelirinin büyüdüğünü gösterebilir.
+
+Logo churn / müşteri kayıp oranı: Kaç TL gelir değil, kaç müşteri hesabı kaybedildiğini ölçer. Buradaki “logo”, şirket müşterisini temsil eder.
+
+GMV / toplam işlem hacmi: Pazar yerinden geçen satışların toplamı. Platformun kendi geliri değildir.
+
+Take rate / komisyon oranı: Pazar yerinin toplam işlem hacminden gelir olarak aldığı oran.
+
+Contribution margin / katkı marjı: Bir satıştan değişken maliyetler çıktıktan sonra sabit giderlere ve kâra katkı sağlayan tutar.
+
+D2C / doğrudan tüketiciye: Markanın aracı perakendeci olmadan son müşteriye sattığı model.
+
+Feedback loop / geri besleme döngüsü: Ürün kullanıldıkça veri ve öğrenmenin artması, bunun da ürünü daha iyi hâle getirip daha fazla kullanımı tetiklemesi.
+
+SaaS
+
+ARR/MRR büyümesi,
+
+Net revenue retention,
+
+Logo churn,
+
+Brüt marj,
+
+CAC payback,
+
+Satış verimliliği,
+
+Ürünün iş akışındaki kritikliği.
+
+Marketplace
+
+GMV tek başına yeterli değildir,
+
+Take rate,
+
+Katkı marjı,
+
+Alıcı/satıcı likiditesi,
+
+Tekrar işlem,
+
+Coğrafi yoğunluk,
+
+Teşviksiz büyüme.
+
+E-ticaret/D2C
+
+Brüt ve katkı marjı,
+
+Tekrar satın alma,
+
+İade oranı,
+
+Stok dönüşü,
+
+CAC ve kanal bağımlılığı,
+
+Marka gücü,
+
+Çalışma sermayesi.
+
+Yapay zekâ ürünü
+
+Model kullanım maliyeti ve brüt marj,
+
+Üçüncü taraf modele bağımlılık,
+
+Özel veri ve feedback loop,
+
+Doğruluk/halüsinasyon kontrolü,
+
+İnsan operasyonu ihtiyacı,
+
+Entegrasyon derinliği,
+
+Model değişse bile kalan ürün savunması.
+
+Sağlık/medtech
+
+Klinik kanıt,
+
+Regülasyon yolu,
+
+Geri ödeme mekanizması,
+
+Hekim/hastane benimsemesi,
+
+Üretim ve kalite sistemi,
+
+Zaman ve sermaye ihtiyacı,
+
+Patent ve bilimsel savunma.
+
+Deep-tech/donanım
+
+Teknik performans kanıtı,
+
+Üretilebilirlik,
+
+Birim maliyet eğrisi,
+
+Tedarik zinciri,
+
+Sertifikasyon,
+
+Pilot müşteri,
+
+Sonraki sermaye ihtiyacı.
+
+16. Değerleme sunumunda bulunması gereken finansal dosyalar
+
+Ben yatırımcıya yalnızca pitch deck göndermem. Aşağıdaki paketi hazırlarım:
+
+27. Aylık gelir-gider ve nakit akışı modeli,
+
+28. 18-24 aylık işe alım planı,
+
+29. Runway ve burn tablosu,
+
+30. Fiyatlama ve birim ekonomi analizi,
+
+31. Kohort/retention verisi,
+
+32. Pipeline ve satış dönüşüm raporu,
+
+33. Mevcut ve pro forma cap table,
+
+34. SAFE/dönüştürülebilir araçların dönüşüm senaryosu,
+
+35. Kullanım-of-funds ve kilometre taşı planı,
+
+36. Üç senaryolu finansal projeksiyon,
+
+37. Karşılaştırılabilir şirket/tur analizi,
+
+38. VC yöntemiyle geriye değerleme,
+
+39. IP, sözleşme ve şirket belgeleri,
+
+40. Risk kayıt tablosu ve azaltma planı.
+
+17. Örnek tam pre-seed değerleme vakası
+
+Bir B2B yapay zekâ müşteri hizmetleri girişimi düşünelim.
+
+17.1. Mevcut durum
+
+İki kurucu: biri sektör/satış, biri teknik.
+
+Çalışan MVP.
+
+8 ücretli müşteri.
+
+18.000 $ MRR.
+
+Son üç ay aylık ortalama %12 büyüme.
+
+Brüt marj %62; model maliyetleri optimize ediliyor.
+
+Aylık logo churn %2,5; veri kısa dönemli.
+
+600.000 $ yatırım ihtiyacı.
+
+Hedef runway 18 ay.
+
+Hedef: 100.000 $ MRR ve iki yabancı pazarda 20 müşteri.
+
+17.2. Piyasa çıpası
+
+Benzer aşama işlemlerinden varsayımsal bandın 3-5 milyon dolar pre-money olduğunu kabul edelim.
+
+17.3. Kanıt skoru
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQErFz6Wz2kfYQ/article-inline_image-shrink_1500_2232/B4DZ_RZugEKgAQ-/0/1785924610302?e=2147483647&v=beta&t=U04OsFL9J-mmKhGnYuZ0Apy6ppRE57sotNTfeGwqBls)
+
+Bu skor şirketi varsayımsal piyasa bandının orta-üst bölümüne taşır; fakat savunulabilirlik ve veri süresi üst sınırı kısıtlar.
+
+17.4. Seyrelme kontrolü
+
+600.000 $ yatırım, 4 milyon $ pre-money: post-money 4,6 milyon; yatırımcı %13,04.
+
+600.000 $ yatırım, 4,5 milyon $ pre-money: post-money 5,1 milyon; yatırımcı %11,76.
+
+600.000 $ yatırım, 5 milyon $ pre-money: post-money 5,6 milyon; yatırımcı %10,71.
+
+17.5. VC yöntemi kontrolü
+
+Beşinci yıl için:
+
+ARR: 12 milyon $
+
+Çıkış gelir çarpanı: 5×
+
+Çıkış firma değeri: 60 milyon $
+
+Net borç: 0
+
+Yatırımcı hedefi: 8×
+
+Gerekli çıkış geliri: 4,8 milyon $
+
+Çıkış payı: %8
+
+Beklenen gelecek seyrelme: %35
+
+Bugün gereken pay: %8 / %65 = %12,31
+
+İma edilen post-money: 600.000 / %12,31 = 4,875 milyon $
+
+İma edilen pre-money: 4,275 milyon $
+
+17.6. Sonuç bandım
+
+Savunma tabanı: 3,8 milyon $ pre-money
+
+Hedef: 4,25-4,5 milyon $ pre-money
+
+İddialı üst sınır: 5 milyon $ pre-money
+
+Ben bu şirkete “kesin değeri 4,35 milyon dolar” demem. Şunu derim:
+
+Mevcut kanıtlar, varsayımsal piyasa karşılaştırmaları ve yatırımcı getirisi geriye çözümü birlikte değerlendirildiğinde 4,25-4,5 milyon dolar pre-money savunulabilir bir pazarlık bandıdır. Üst sınır ancak rekabetçi tur veya stratejik yatırımcı katkısıyla anlamlıdır.
+
+17.7. Değeri altı ayda ne yükseltir?
+
+MRR’nin 18 binden 40 bin dolara çıkması,
+
+Churn verisinin altı aylık kohortla doğrulanması,
+
+Brüt marjın %62’den %75’e yükselmesi,
+
+Model maliyetinin müşteri başına düşmesi,
+
+İki kurumsal referans müşteri,
+
+Satış kanalının tekrar edilebilirliğinin kanıtlanması,
+
+Üçüncü taraf modele rağmen özel veri/iş akışı savunmasının oluşması.
+
+18. Girişimcilerin yaptığı değerleme hataları
+
+Bu hataların çoğu matematik bilmemekten değil, kurucunun kendi hikâyesine âşık olup karşı kanıtı duymak istememesinden doğar. Özgüven girişimcilikte gereklidir; kanıtın yerine geçtiği anda tehlikelidir.
+
+Sert gerçek: “Ben bu projeye rahat 2 milyon dolar yatırım alırım” cümlesindeki “rahat” kelimesi çoğu zaman hazırlıksızlığın üzerini örter. Kimden, hangi değerlemede, hangi yüzdeyle, hangi kilometre taşı için, hangi yatırımcı tezine uyarak? Bu soruların cevabı yoksa ortada yatırım planı değil, temenni vardır.
+
+18.1. Yalnızca fikrin büyüklüğünden değer çıkarmak
+
+“Bu fikir dünyada yok” veya “herkes kullanır” değerleme değildir.
+
+18.2. TAM’in yüzde birini almak
+
+Pazara erişim maliyeti, zaman ve rekabet yok sayılır.
+
+18.3. Gelecek ciroyu bugünkü değer sanmak
+
+Beşinci yıl 10 milyon dolar ciro hedeflemek, bugünkü değerin 10 milyon dolar olduğu anlamına gelmez.
+
+18.4. Pre-money/post-money karıştırmak
+
+Yatırım oranı yanlış hesaplanır.
+
+18.5. Gelecek seyrelmeyi unutmak
+
+Yatırımcı çıkışta bugünkü payını koruyamayabilir; kurucu da kendi payını fazla tahmin eder.
+
+18.6. Opsiyon havuzunu görmezden gelmek
+
+Term sheet’teki yüzde doğru görünür, kurucunun gerçek seyrelmesi daha yüksek çıkar.
+
+18.7. Geliri kalite ayrımı yapmadan kullanmak
+
+Tek seferlik hizmet geliri ile yüksek marjlı tekrarlayan ürün geliri aynı değildir.
+
+18.8. Yatırımcı değerini ücretsiz saymak
+
+“Network getirir” sözü ölçülmezse yüksek payı haklı çıkarmaz.
+
+18.9. Yüzdeye bakıp sözleşme haklarını görmemek
+
+Küçük payla ağır veto, preference ve geri alım hakkı verilebilir.
+
+18.10. En yüksek değerlemeyi başarı sanmak
+
+Değerleme ödül değil, gelecekte ispatlanması gereken fiyat beklentisidir.
+
+19. Yatırımcıya sormam gereken sorular
+
+41. Bu yatırım kendi paranızdan mı, fondan mı yapılacak?
+
+42. Fonun yatırım dönemi ve kalan ömrü ne kadar?
+
+43. İlk çek ve takip yatırımı politikanız nedir?
+
+44. Hedeflediğiniz sahiplik oranı nedir?
+
+45. Hangi çıkış büyüklüğü sizin için anlamlıdır?
+
+46. Pro rata hakkı istiyor musunuz?
+
+47. Yönetim kurulu koltuğu veya gözlemci hakkı istiyor musunuz?
+
+48. Hangi kararlarda veto talep ediyorsunuz?
+
+49. Tasfiye imtiyazı kaç kat ve participating mi?
+
+50. Anti-dilution türü nedir?
+
+51. Opsiyon havuzu ne zaman ve kimin üzerinden kurulacak?
+
+52. Kurucu vesting’i nasıl düzenlenecek?
+
+53. Kişisel kefalet veya geri alım yükümlülüğü var mı?
+
+54. Danışmanlık/yönetim ücreti alınacak mı?
+
+55. Daha önce yatırım yaptığınız kurucularla konuşabilir miyim?
+
+56. Zor durumda kalan portföy şirketlerine nasıl yaklaşıyorsunuz?
+
+57. Rakip şirketlerde yatırımınız var mı?
+
+58. Yatırım dışında hangi somut katkıyı, hangi zaman içinde verebilirsiniz?
+
+20. Benim yatırım turu karar çerçevem
+
+Bir teklif geldiğinde yalnızca “kaç para, yüzde kaç?” diye bakmam.
+
+Ekonomik taraf
+
+Pre-money ve post-money,
+
+Tamamen seyreltilmiş pay,
+
+Opsiyon havuzu,
+
+SAFE dönüşümleri,
+
+Tasfiye imtiyazı,
+
+Anti-dilution,
+
+Pro rata ve follow-on etkisi,
+
+Exit dağılımı.
+
+Kontrol tarafı
+
+Yönetim kurulu,
+
+Veto hakları,
+
+Bilgi ve denetim hakları,
+
+Kurucu görevden alma,
+
+Vesting ve leaver,
+
+Hisse devri sınırlamaları,
+
+Drag/tag hükümleri.
+
+Stratejik taraf
+
+Yatırımcının sektör bilgisi,
+
+Müşteri ve yetenek erişimi,
+
+Sonraki tur kapasitesi,
+
+İtibar etkisi,
+
+Kurucuyla çalışma uyumu,
+
+Çıkış zaman ufku.
+
+Benim için ucuz para yalnızca yüksek değerlemeli para değildir. Şirketin önünü açan, bir sonraki kilometre taşını finanse eden, cap table’ı bozmayıp kaliteli takip sermayesini kolaylaştıran para ucuzdur.
+
+21. Sonuç: Değerleme bir iddia değil, kanıtlanmış risk azalmasıdır
+
+Ben girişimin değerini, kurucunun heyecanının parasal karşılığı olarak görmüyorum. Değer; gelecekte üretilebilecek nakit akımının, büyümenin, ekonomik getirinin ve çıkış ihtimalinin bugünden taşıdığı olasılık değeridir.
+
+Pre-seed’de bu olasılığı kesin hesaplayamam. Fakat keyfî davranmak zorunda da değilim. Şu disiplinle savunulabilir bir bant oluşturabilirim:
+
+59. Benzer turlarla piyasa çıpası kurarım.
+
+60. Ekip, pazar, ürün ve traction ile azaltılmış riskleri puanlarım.
+
+61. İhtiyaç duyulan sermaye ile kabul edilebilir seyrelmeyi çözerim.
+
+62. Çıkış değerinden ve yatırımcı hedef getirisinden bugüne geri gelirim.
+
+63. Gelecek turlardaki seyrelmeyi hesaba katarım.
+
+64. Senaryoları iyimser, temel ve kötü durumlarla stres testine sokarım.
+
+65. Değerlemeyi sözleşme haklarından ayrı değerlendirmem.
+
+Fikir, başlangıç noktasıdır. Şirket değeri; o fikrin etrafında kurulan ekip, geliştirilen ürün, kazanılan müşteri, üretilen veri, doğrulanan ekonomi ve azaltılan risklerle oluşur.
+
+Yatırım öncesi benim 12 kuralım
+
+66. Anlamadığım hiçbir belgeyi “standartmış” diye imzalamam.
+
+67. Yatırım tutarını hayalime göre değil, bir sonraki değer artırıcı kilometre taşına göre isterim.
+
+68. Tek bir değerleme rakamına âşık olmam; taban, hedef ve üst bant oluştururum.
+
+69. Yüzdeyi hesaplamadan önce pre-money mi post-money mi konuşulduğunu netleştiririm.
+
+70. Yalnızca bugünkü seyrelmeyi değil, opsiyon havuzunu, SAFE’leri ve sonraki turları birlikte görürüm.
+
+71. Yatırımcının parasına değil, parasının şirketimde yaratacağı sonuca bakarım.
+
+72. “Network sağlarım” sözünü katkı saymam; geçmiş örnek, isim, erişim ve davranış sorarım.
+
+73. Ciroyu nakitle, kullanıcıyı aktif kullanıcıyla, ilgiyi ödeme isteğiyle karıştırmam.
+
+74. Yüksek değerlemeyi zafer saymam; bir sonraki turu ve çıkışı taşıyıp taşımadığını sorgularım.
+
+75. Kontrolü yalnızca hisse yüzdesinde aramam; veto, yönetim kurulu ve imtiyazları birlikte okurum.
+
+76. Yatırımı şirketin başarısı gibi pazarlamam. Yatırım, daha büyük bir sonuç üretmek için alınan pahalı yakıttır.
+
+77. Masadan kalkabilme gücümü korurum. Nakit bitmişken yapılan pazarlık, pazarlık değildir.
+
+Bu kurallar yatırımcıya karşı düşmanlık değildir. İyi yatırımcı da ne aldığını bilen, sözünü tutan, finansal disipline sahip ve şirketini kişisel kasası gibi kullanmayan kurucu ister. Sağlıklı yatırım ilişkisi, iki tarafın da birbirini romantikleştirmeden risk ve sorumluluk paylaşmasıdır.
+
+Benim son hükmüm: Bir girişimin değerini artırmanın en güvenilir yolu daha iddialı sunum hazırlamak değil, yatırımcının taşıdığı belirsizliği daha hızlı ve daha ucuza azaltmaktır.
+
+Ek A - Hızlı formül kartı
+
+![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQH7FB1El40VIg/article-inline_image-shrink_1000_1488/B4DZ_RZ_B0KgAI-/0/1785924677982?e=2147483647&v=beta&t=Gm95Mb05NgWDL-iazOrtGLHpKRnWRmvt83AU4BLDl3E)
+
+Ek B - Değerleme çalışma kâğıdı
+
+Şirket ve tur
+
+Aşama:
+
+Sektör/coğrafya:
+
+Mevcut gelir/traction:
+
+İstenen yatırım:
+
+Hedef runway:
+
+Ulaşılacak kilometre taşı:
+
+Kabul edilebilir seyrelme bandı:
+
+Piyasa çıpası
+
+Karşılaştırılabilir 1:
+
+Karşılaştırılabilir 2:
+
+Karşılaştırılabilir 3:
+
+Medyan değerleme:
+
+Benzerlik/fark düzeltmeleri:
+
+VC yöntemi
+
+Çıkış yılı:
+
+Çıkış metriği:
+
+Çıkış çarpanı:
+
+Çıkış firma değeri:
+
+Net borç/nakit:
+
+Çıkış özsermaye değeri:
+
+Yatırımcı hedef MOIC:
+
+Gelecek seyrelme:
+
+Bugün gereken pay:
+
+İma edilen pre-money:
+
+Son karar
+
+Savunma tabanı:
+
+Hedef değer:
+
+İddialı üst sınır:
+
+Bu bandı yükseltecek üç kanıt:
+
+Teklifte kabul edilmeyecek üç hüküm:
+
+Ek C - Kavramlar sözlüğü
+
+Bu sözlük, toplantıda duyulan kelimeyi hızla bulmak içindir. Tanımlar hukuki metin yerine geçmez; kavramın özünü sade biçimde verir.
+
+Angel investor / melek yatırımcı: Genellikle kendi parasını erken aşamadaki şirkete yatıran birey. Yalnızca para değil deneyim ve bağlantı da sunabilir; fakat “melek” kelimesi yatırımın iyilik olduğu anlamına gelmez.
+
+Anti-dilution / seyrelme karşıtı koruma: Sonraki yatırım daha düşük hisse fiyatından yapılırsa eski yatırımcının ekonomik kaybını azaltan sözleşme koruması.
+
+ARR — Annual Recurring Revenue / yıllık tekrar eden gelir: Abonelik gibi düzenli gelirlerin yıllıklaştırılmış tutarı. Tek seferlik proje geliri normalde ARR sayılmaz.
+
+As-converted / dönüşmüş varsayımıyla: SAFE, dönüştürülebilir borç ve benzeri hakların hisseye dönüştüğü varsayılarak yapılan ortaklık hesabı.
+
+B2B — Business to Business: Bir şirketin başka şirketlere satış yaptığı model.
+
+B2C — Business to Consumer: Bir şirketin doğrudan bireysel tüketiciye satış yaptığı model.
+
+Berkus yöntemi: Gelir öncesi girişimde ekip, prototip, pazar erişimi gibi risk azaltıcı başarı parçalarına ayrı değer veren erken aşama yöntemi.
+
+Bootstrapping / öz kaynakla büyüme: Şirketi dış yatırım yerine kurucu parası ve müşteri gelirleriyle kurup büyütme.
+
+Broad-based weighted average / geniş tabanlı ağırlıklı ortalama: Down round durumunda eski yatırımcıyı korurken yeni turun büyüklüğünü de hesaba katan daha dengeli anti-dilution yöntemi.
+
+Burn / nakit yakımı: Şirketin belirli dönemde tükettiği net nakit. Aylık gider 1 milyon, nakit gelir 400 bin TL ise net burn 600 bin TL’dir.
+
+CAC — Customer Acquisition Cost / müşteri edinme maliyeti: Bir yeni müşteri kazanmak için harcanan satış ve pazarlama maliyeti.
+
+Cap table / ortaklık tablosu: Şirkette kimlerin hangi hisse, opsiyon ve dönüşebilir haklara sahip olduğunu gösteren tablo.
+
+Churn / kayıp oranı: Belirli dönemde ayrılan müşterilerin veya kaybedilen tekrar eden gelirin oranı.
+
+Cliff / eşik süresi: Vesting’de ilk payın hak edilmesi için kesintisiz tamamlanması gereken başlangıç süresi; sık görülen örnek bir yıldır.
+
+Cohort / kohort: Aynı ay kaydolanlar gibi ortak başlangıca sahip kullanıcı grubu. Kullanıcı davranışının zaman içinde bozulup bozulmadığını görmeyi sağlar.
+
+Conversion / dönüşüm oranı: Bir aşamadan hedeflenen sonraki aşamaya geçenlerin yüzdesi. 100 denemeden 12 satın alma çıkması yüzde 12 dönüşümdür.
+
+Convertible note / dönüştürülebilir borç: Başlangıçta borç olan; belirli koşullarda hisseye dönüşebilen finansman aracı. Faiz ve vade içerebilir.
+
+Contribution margin / katkı marjı: Bir satıştan o satışla değişen maliyetler çıktıktan sonra sabit giderlere ve kâra kalan katkı.
+
+DCF — Discounted Cash Flow / indirgenmiş nakit akımı: Gelecekte beklenen serbest nakitleri risk ve bekleme süresi nedeniyle bugünkü daha düşük değerlerine çevirip toplayan yöntem.
+
+Data room / veri odası: Yatırımcının incelemesi için şirketin finansal, hukuki, ticari ve teknik belgelerinin düzenli biçimde toplandığı güvenli dijital klasör.
+
+Deep-tech / derin teknoloji: Güçlü bilimsel veya mühendislik yeniliğine dayanan; geliştirmesi uzun, sermaye ve teknik doğrulama ihtiyacı yüksek teknoloji alanı.
+
+D2C — Direct to Consumer / doğrudan tüketiciye: Markanın ürünü aracı olmadan son kullanıcıya sattığı model.
+
+Discount / SAFE indirimi: Erken yatırımcının sonraki tur fiyatından belirli oranda daha ucuz hisseye dönüşmesini sağlayan hak.
+
+Drag-along / birlikte sürükleme hakkı: Belirli çoğunluk şirketi satmaya karar verdiğinde azınlık hissedarların da aynı şartlarla satışa katılmasını zorunlu kılabilen hak.
+
+Down round / aşağı tur: Yeni yatırım turunun önceki tura göre daha düşük şirket değeri veya hisse fiyatıyla yapılması.
+
+Due diligence / ayrıntılı inceleme: Yatırım öncesinde şirketin finans, hukuk, teknoloji, müşteri, ekip ve risklerinin doğrulanması.
+
+Enterprise value / firma değeri: Şirket operasyonlarının borç ve özsermaye sağlayıcıları açısından toplam değeri. Basit geçiş: özsermaye değeri + borç - nakit.
+
+Equity / özsermaye-hisse: Şirketin sahipliğini temsil eden ekonomik hak.
+
+Equity value / özsermaye değeri: Borç, nakit ve diğer finansal talepler dikkate alındıktan sonra hissedarlara ait değer.
+
+Exit / çıkış: Yatırımcının veya kurucunun payını şirket satışı, ikincil satış ya da halka arz gibi yollarla nakde çevirmesi.
+
+FCF — Free Cash Flow / serbest nakit akımı: Şirket operasyonu ve gerekli yatırımlardan sonra sermaye sağlayanlara kalabilen gerçek nakit.
+
+Follow-on / takip yatırımı: Mevcut yatırımcının şirketin sonraki finansman turlarına yeniden para koyması.
+
+Founder-market fit / kurucu-pazar uyumu: Kurucunun seçtiği problemi çözmek için deneyim, içgörü, erişim veya özel yetkinliğe sahip olması.
+
+Founder liquidity / kurucu likiditesi: Kurucunun hisselerinin bir bölümünü ikincil satışla nakde çevirmesi.
+
+Fully diluted / tamamen seyreltilmiş: Opsiyonlar, warrant’lar, SAFE ve dönüşebilir araçlar hisse olmuş gibi toplam pay hesabı.
+
+Full ratchet / tam mandal: Down round’da eski yatırımcının dönüşüm fiyatını yeni düşük fiyata kadar çekebilen sert anti-dilution yöntemi.
+
+GMV — Gross Merchandise Value / toplam işlem hacmi: Pazar yerinden geçen bütün işlemlerin toplam tutarı; platformun kendi cirosu değildir.
+
+Gross margin / brüt marj: Satıştan doğrudan üretim veya hizmet maliyetleri çıktıktan sonra kalan brüt kârın satışa oranı.
+
+IRR — Internal Rate of Return / iç getiri oranı: Yatırımın kaç yılda gerçekleştiğini dikkate alan yıllıklandırılmış getiri oranı.
+
+İskonto oranı: Gelecekteki parayı bugüne çevirirken kullanılan risk ve bekleme bedeli. Oran yükseldikçe bugünkü değer düşer.
+
+Lead investor / lider yatırımcı: Turun ana şartlarını şekillendiren, çoğu zaman en büyük veya yönlendirici yatırımı yapan yatırımcı.
+
+Liquidation preference / tasfiye imtiyazı: Şirket satıldığında veya tasfiye edildiğinde belirli yatırımcının parasını önce ya da özel kuralla almasını sağlayan hak.
+
+LOI — Letter of Intent / niyet mektubu: Bir müşterinin veya tarafın belirli bir işlem yönünde niyetini gösteren belge. Bağlayıcılığı metnine göre değişir; kesin satışla aynı değildir.
+
+LTV — Lifetime Value / müşteri yaşam boyu değeri: Bir müşterinin şirkette kaldığı süre boyunca bırakması beklenen toplam ekonomik katkı; tercihen brüt kâr bazında ölçülür.
+
+Marketplace / pazar yeri: Alıcı ve satıcı gibi iki veya daha fazla tarafı buluşturan iş modeli.
+
+Melek turu: Genellikle bireysel yatırımcıların katıldığı erken aşama turu; resmî olarak tek tip şartı yoktur.
+
+MFN — Most Favoured Nation / en avantajlı koşul: Sonraki yatırımcıya daha iyi koşul verilirse önceki yatırımcının da o koşulu seçebilmesini sağlayan hak.
+
+MOIC — Multiple on Invested Capital / yatırılan sermaye çarpanı: Yatırımın toplamda kaç katına çıktığını gösterir. 1 milyon yatırıp 5 milyon değer almak 5× MOIC’tir; süreyi göstermez.
+
+MRR — Monthly Recurring Revenue / aylık tekrar eden gelir: Her ay devam etmesi beklenen abonelik veya sözleşme geliri.
+
+MVP — Minimum Viable Product / uygulanabilir en küçük ürün: En kritik müşteri ve çözüm varsayımını gerçek kullanımda test etmeye yetecek en küçük çalışan ürün.
+
+NRR — Net Revenue Retention / net gelir tutma oranı: Mevcut müşteri gelirinin iptal, küçülme ve ek satışlardan sonra ne kadar kaldığını gösteren oran.
+
+Network effect / ağ etkisi: Ürünü kullanan kişi sayısı arttıkça ürünün diğer kullanıcılar için daha değerli hâle gelmesi.
+
+Non-participating preference: Yatırımcının ya öncelikli parasını ya da normal hisse payını seçtiği; ikisini birlikte alamadığı tasfiye imtiyazı.
+
+Option pool / çalışan opsiyon havuzu: Gelecekte çalışanlara pay hakkı vermek için ayrılan hisse alanı.
+
+Participating preference: Yatırımcının önce imtiyazlı tutarı alıp kalan bedelin paylaşımına tekrar katılabildiği hüküm.
+
+Pipeline / satış havuzu: Satış sürecinde bulunan potansiyel müşteriler ve fırsatlar. Kesinleşmiş gelir değildir.
+
+Pitch deck / yatırımcı sunumu: Problemi, çözümü, pazarı, ekibi, kanıtları, iş modelini ve yatırım talebini kısa bir hikâye içinde anlatan sunum.
+
+Primary investment / birincil yatırım: Yeni hisselerin çıkarıldığı ve yatırım parasının şirket kasasına girdiği işlem.
+
+Post-money değerleme / yatırım sonrası değer: Yeni yatırım dâhil şirketin kabul edilen değeri.
+
+Pre-money değerleme / yatırım öncesi değer: Yeni yatırım şirkete girmeden hemen önce kabul edilen değer.
+
+Pre-seed: İlk ürün, ekip ve pazar kanıtını oluşturmak için alınan çok erken aşama finansman dönemi.
+
+Pro rata hakkı: Yatırımcının sonraki turlara katılarak sahiplik oranını koruyabilmesi.
+
+Product-market fit / ürün-pazar uyumu: Belirli bir pazarın ürünü güçlü biçimde istediğini; kullanım, ödeme, kalıcılık ve organik talep gibi sinyallerle gösteren durum.
+
+Retention / elde tutma: Kullanıcıların veya gelirin zaman içinde şirkette kalma oranı.
+
+ROIC — Return on Invested Capital / yatırılan sermaye getirisi: Şirketin işine bağlanan sermayeden ne ölçüde operasyonel getiri ürettiğini gösteren oran.
+
+Runway / nakit ömrü: Mevcut nakdin bugünkü net yakım hızıyla şirkete kaç ay yeteceği.
+
+SaaS — Software as a Service / hizmet olarak yazılım: Yazılımın çoğunlukla abonelikle internet üzerinden sunulduğu model.
+
+SAFE: Bugün verilen paranın gelecekte belirli şartlarla hisseye dönüşmesini düzenleyen erken aşama yatırım sözleşmesi.
+
+Scorecard yöntemi / puan kartı yöntemi: Girişimi benzer aşamadaki şirketlerin ortalamasına göre ekip, pazar ve kanıt başlıklarında puanlayarak değerleme referansı üreten yöntem.
+
+Secondary sale / ikincil satış: Yeni para şirkete girmek yerine mevcut ortağın hissesini satması ve parayı kendisinin alması.
+
+Seed: Ürünün ve ilk talebin bulunduğu; ürün-pazar uyumu ile tekrar edilebilir iş modelinin arandığı tohum yatırım aşaması.
+
+Series A / A Serisi: Çalışan ürün ve büyüme motorunun daha kurumsal sermayeyle ölçeklenmeye başladığı fiyatlanmış yatırım aşaması.
+
+Step-up: Yeni turun değerlemesinin önceki tura göre yükselmesi. Yükselişin büyüklüğü şirketin arada ürettiği kanıtla birlikte değerlendirilir.
+
+Switching cost / değiştirme maliyeti: Müşterinin başka ürüne geçerken katlanacağı para, zaman, veri taşıma, eğitim veya operasyon riski.
+
+Tag-along / birlikte satış hakkı: Çoğunluk ortak hissesini satarken azınlık ortağın da aynı şartlarla satışa katılabilmesini sağlayan koruma.
+
+TAM — Total Addressable Market / toplam adreslenebilir pazar: Teorik olarak bütün uygun müşteriler alınsa oluşabilecek toplam pazar.
+
+Take rate / komisyon oranı: Pazar yerinin işlem hacminden kendi geliri olarak aldığı pay.
+
+SAM — Serviceable Available Market / hizmet verilebilir pazar: Ürün, coğrafya ve iş modeliyle gerçekten hizmet verilebilecek TAM bölümü.
+
+SOM — Serviceable Obtainable Market / ulaşılabilir pazar: Mevcut ekip, sermaye ve dağıtımla makul sürede alınabilecek pazar bölümü.
+
+Term sheet / yatırım şartları belgesi: Değerleme, yatırım tutarı, imtiyazlar, kontrol hakları ve kapanış koşulları gibi temel yatırım şartlarının özeti.
+
+Terminal value / devam değeri: DCF’de ayrıntılı tahmin döneminden sonraki bütün yılların tek tutarla ifade edilen değeri.
+
+Traction / pazar kanıtı: Ürünün gerçek insanlar tarafından kullanıldığını, satın alındığını ve ilerlediğini gösteren ölçülebilir sonuç.
+
+Unit economics / birim ekonomi: Tek bir müşteri, sipariş veya işlem düzeyinde gelirin ve doğrudan maliyetin ekonomik ilişkisi.
+
+Use of funds / fon kullanım planı: Yatırım parasının hangi ekip, ürün, satış, teknoloji veya regülasyon kalemlerine harcanacağını ve hangi sonucu üreteceğini gösteren plan.
+
+Valuation cap / değerleme tavanı: SAFE’in hisseye dönüşürken kullanacağı şirket değerine konan üst sınır.
+
+VC — Venture Capital / girişim sermayesi: Yüksek büyüme potansiyelli şirketlere fon sermayesiyle yatırım yapan profesyonel yatırım yapısı.
+
+Vesting / hakediş: Kurucu veya çalışanın hisseleri zaman ya da performansla parça parça kesin olarak kazanması.
+
+Warrant / pay alma hakkı: Belirli koşullarda ve fiyatta gelecekte hisse satın alma hakkı veren araç.
+
+Kaynaklar ve yararlanılan kitaplar
+
+Ana kaynaklar
+
+78. Koller, Tim; Goedhart, Marc; Wessels, David. Valuation: Measuring and Managing the Value of Companies , 4. baskı. John Wiley & Sons, 2005.
+
+Bu dosyada özellikle temel değer yaratma mantığı (beklenen nakit akımı, büyüme, ROIC ve sermaye maliyeti), DCF/çarpan ilişkisi ve yüksek büyüme şirketlerinin senaryo temelli değerlendirilmesi için kullanıldı. Başlıca başvurulan bölümler: Bölüm 3, 5, 6, 11, 12 ve 23; özellikle ss. 55-68, 103-134, 655-670.
+
+79. Nielsen, Nicolaj Højer. The Startup Funding Book , Beta Version, Ocak 2017.
+
+Risk/getiri matrisi; pazar, iş modeli, ekip ve traction’ın yatırımcı algısına etkisi; fikir ile uygulama ayrımı; seyrelme; erken para almanın maliyeti; melek ve VC davranışı için kullanıldı. Başlıca başvurulan sayfalar: ss. 23-52, 39-41, 76-81, 102-145 ve 187-226. PDF’nin beta sürüm olduğu ve bazı şekillerde taslak yer tutucular bulunduğu dikkate alındı.
+
+80. Rose, David S. Angel Investing: The Gust Guide to Making Money and Having Fun Investing in Startups . John Wiley & Sons, 2014.
+
+Sağlanan PDF 30 sayfalık bir örnektir. Melek yatırımcının tanımı, portföy/hits-business mantığı, erken aşama yatırım riski ve fikir-uygulama ayrımı için erişilebilir kısımlar kullanıldı; özellikle ss. 3-8. Kitabın değerleme bölümü içindekilerde görünse de sağlanan örnekte tam metin olarak bulunmadığından o bölümden doğrudan sonuç aktarılmadı.
+
+Yapısal ve tamamlayıcı olarak incelenen kaynaklar
+
+81. Metrick, Andrew; Yasuda, Ayako. Venture Capital & the Finance of Innovation , 3. baskı. John Wiley & Sons, 2021.
+
+Sağlanan PDF 55 sayfalık ön bölüm/örnektir. Kitabın toplam değerleme, VC method, işlem yapısı, preferred payların kısmi değerlemesi, post-money değerleme eleştirisi ve belirsizlik araçlarını nasıl sınıflandırdığı incelendi. İlgili tam teknik bölümler örnek dosyada yer almadığı için formüller bu dosyadan doğrudan alıntılanmadı.
+
+82. Ramsinghani, Mahendra. The Business of Venture Capital: Insights from Leading Practitioners on the Art of Raising a Fund, Deal Structuring, Value Creation, and Exit Strategies , 2. baskı. John Wiley & Sons, 2014.
+
+Sağlanan PDF 30 sayfalık bir örnektir. Özellikle fon yaşam döngüsü, yatırım dönemi ve kitabın işlem yapılandırması/değerleme/exit çerçevesi incelendi. Değerleme yöntemlerini içeren 19. bölümün başlıkları örnekte görünmekle birlikte bölümün tam metni mevcut olmadığından teknik hesaplar bu kitaba atfedilmedi.
+
+Kaynak kullanım notu
+
+Bu rehberde kitapların görüşleri çoğunlukla Türkçe olarak özetlenmiş ve yorumlanmıştır. Kısa doğrudan ifadeler ayrıca tırnak içinde gösterilmiştir. Örnek hesaplar, tablolar, “100 puanlık kanıt skoru”, beş katmanlı pre-seed sistemi ve uygulama çerçevesi bu dosya için tarafımdan oluşturulmuş sentezlerdir; evrensel muhasebe standardı veya hukuki değerleme raporu değildir.
+
+Önemli uyarı
+
+Bu çalışma eğitim ve strateji amaçlıdır. Somut yatırım işleminde şirketler hukuku, vergi, sermaye artırımı, pay sınıfları, SAFE/dönüştürülebilir araçlar ve yatırım sözleşmeleri Türkiye’de yetkin avukat ve mali müşavir tarafından değerlendirilmelidir. Değerleme sonucu garanti edilmiş satış fiyatı veya yatırım vaadi değildir.

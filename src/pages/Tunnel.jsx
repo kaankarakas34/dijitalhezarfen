@@ -96,27 +96,28 @@ export default function Tunnel({ onOpenApplyModal }) {
     {
       title: 'Modül 7: Finans, Muhasebe & Hukuk',
       items: [
-        'Finansal okuryazarlık, gelir tablosu, bilanço ve nakit akışı.',
-        'Bütçe, runway, senaryo ve finansal modelleme.',
-        'Şirket kuruluşu, ortaklık yapısı ve temel ticari sözleşmeler.',
-        'Fikrî mülkiyet, veri koruma, KVKK/GDPR ve regülasyon farkındalığı.',
-        'Muhasebe, vergi takvimi, mali müşavirle çalışma ve yönetim raporlaması.'
+        'Finans eğitimi: bütçe, runway, nakit yönetimi, senaryo ve finansal modelleme.',
+        'Finansal tablolar: gelir tablosu, bilanço, nakit akış tablosu ve temel rasyo okuma.',
+        'Muhasebe, vergi takvimi, mali müşavirle çalışma ve yönetim raporlaması.',
+        'Hukuk eğitimi: şirket kuruluşu, ortaklık yapısı, pay sahipliği ve temel ticari sözleşmeler.',
+        'Fikrî mülkiyet, veri koruma, KVKK/GDPR, regülasyon ve hukuki risk farkındalığı.'
       ]
     },
     {
       title: 'Modül 8: İnsan, Liderlik & Organizasyon',
       items: [
         'Kurucu rolleri, sorumluluklar ve karar mekanizmaları.',
-        'İşe alım, değerlendirme, onboarding ve performans.',
+        'İşletme yönetimi: operasyon, departmanlaşma, hedef, süreç ve karar sistemleri.',
+        'HR / İnsan kaynakları: işe alım, değerlendirme, onboarding, performans ve kültür.',
         'Liderlik, delegasyon, geri bildirim ve çatışma yönetimi.',
         'Organizasyon ve örgütlenme tasarımları.',
-        'Topluluk önünde konuşma, sunum, hikâye anlatımı ve iletişim.'
+        'Konuşma eğitimi: topluluk önünde konuşma, sunum, hikâye anlatımı ve ikna.'
       ]
     },
     {
       title: 'Modül 9: İstatistik, Veri & Growth',
       items: [
-        'Veri okuryazarlığı, temel istatistik ve ölçüm hataları.',
+        'İstatistik eğitimi: veri okuryazarlığı, temel istatistik ve ölçüm hataları.',
         'Korelasyon, nedensellik, deney tasarımı ve A/B testleri.',
         'North Star Metric, metrik ağacı ve büyüme denklemi.',
         'Acquisition, activation, retention, revenue ve referral.',
@@ -126,7 +127,8 @@ export default function Tunnel({ onOpenApplyModal }) {
     {
       title: 'Modül 10: Yatırım & Uluslararasılaşma',
       items: [
-        'Pitch deck, yatırım hikâyesi ve kurucu sunumu.',
+        'Pitch deck hazırlama: yatırım hikâyesi, slayt akışı, metrik anlatımı ve kurucu sunumu.',
+        'Pitch konuşması: sahne pratiği, yatırımcı soruları, kısa anlatım ve ikna dili.',
         'Finansal model, değerleme, cap table ve data room.',
         'Yatırımcı türleri, görüşme süreci ve due diligence.',
         'Ülke seçimi, lokalizasyon, pazara giriş ve kanal ortaklıkları.',

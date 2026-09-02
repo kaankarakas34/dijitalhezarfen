@@ -30,6 +30,7 @@ import Globallesme from './pages/Globallesme';
 import Kurumsal from './pages/Kurumsal';
 import Medya from './pages/Medya';
 import Yayinlar from './pages/Yayinlar';
+import YayinDetay from './pages/YayinDetay';
 import Basvur from './pages/Basvur';
 import Iletisim from './pages/Iletisim';
 import Sss from './pages/Sss';
@@ -176,6 +177,8 @@ function App() {
         return <Medya lang={lang} onNavigate={handleNavigate} />;
       case '/yayinlar':
         return <Yayinlar lang={lang} />;
+      case '/yayinlar/tim-cook-apple-miras':
+        return <YayinDetay lang={lang} onNavigate={handleNavigate} />;
       case '/etkinlikler':
         return <Yayinlar lang={lang} />;
       case '/icerikler':

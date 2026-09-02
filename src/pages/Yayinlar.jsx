@@ -19,7 +19,7 @@ export default function Yayinlar({ lang }) {
     read: isTr ? 'İncele' : 'Read',
     featured: isTr ? 'Öne Çıkan Yayın' : 'Featured Publication',
     noResults: isTr ? 'Bu kritere uygun yayın bulunamadı.' : 'No publications match this criteria.',
-    author: 'Dijital Hezarfen'
+    author: 'Kaan Karakaş'
   };
 
   const categories = [
@@ -39,15 +39,17 @@ export default function Yayinlar({ lang }) {
 
   const publications = [
     {
-      category: 'haber',
-      title: isTr ? 'Dijital Hezarfen hibrit girişim geliştirme modelini genişletiyor' : 'Dijital Hezarfen expands its hybrid venture building model',
+      category: 'rapor',
+      title: isTr ? 'Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine' : 'Tim Cook’s real Apple legacy: a machine bigger than products',
       desc: isTr
-        ? 'Akademi, uygulama hizmetleri ve büyüme desteğini birleştiren model; erken aşama ekiplerin daha hızlı doğrulama yapmasına odaklanıyor.'
-        : 'The model combines academy, execution services, and growth support to help early-stage teams validate faster.',
-      date: isTr ? '02 Ağustos 2026' : 'August 02, 2026',
-      readTime: isTr ? '4 dk' : '4 min',
-      color: 'from-cyan-500/20 to-blue-500/10',
-      accent: 'text-cyber-cyan'
+        ? 'Tim Cook dönemini yalnızca ürünler veya piyasa değeriyle değil; Apple’ın tedarik zinciri, sermaye kullanımı ve operasyonel mimarisi üzerinden okuyan kapsamlı analiz.'
+        : 'A deep analysis of Tim Cook’s Apple era through supply chain, capital allocation, and operational architecture rather than products alone.',
+      date: isTr ? '31 Ağustos 2026' : 'August 31, 2026',
+      readTime: isTr ? '18 dk' : '18 min',
+      color: 'from-slate-500/25 to-cyan-500/10',
+      accent: 'text-cyber-cyan',
+      image: '/images/tim-cook-apple-miras.png',
+      path: '/yayinlar/tim-cook-apple-miras'
     },
     {
       category: 'rehber',
@@ -58,7 +60,8 @@ export default function Yayinlar({ lang }) {
       date: isTr ? '28 Temmuz 2026' : 'July 28, 2026',
       readTime: isTr ? '6 dk' : '6 min',
       color: 'from-violet-500/20 to-fuchsia-500/10',
-      accent: 'text-violet-300'
+      accent: 'text-violet-300',
+      path: '/yayinlar'
     },
     {
       category: 'rapor',
@@ -69,7 +72,8 @@ export default function Yayinlar({ lang }) {
       date: isTr ? '15 Temmuz 2026' : 'July 15, 2026',
       readTime: isTr ? '8 dk' : '8 min',
       color: 'from-emerald-500/20 to-cyan-500/10',
-      accent: 'text-emerald-300'
+      accent: 'text-emerald-300',
+      path: '/yayinlar'
     },
     {
       category: 'medya',
@@ -80,7 +84,8 @@ export default function Yayinlar({ lang }) {
       date: isTr ? '09 Temmuz 2026' : 'July 09, 2026',
       readTime: isTr ? '22 dk' : '22 min',
       color: 'from-rose-500/20 to-orange-500/10',
-      accent: 'text-rose-300'
+      accent: 'text-rose-300',
+      path: '/yayinlar'
     },
     {
       category: 'rehber',
@@ -91,7 +96,8 @@ export default function Yayinlar({ lang }) {
       date: isTr ? '01 Temmuz 2026' : 'July 01, 2026',
       readTime: isTr ? '7 dk' : '7 min',
       color: 'from-sky-500/20 to-indigo-500/10',
-      accent: 'text-sky-300'
+      accent: 'text-sky-300',
+      path: '/yayinlar'
     },
     {
       category: 'haber',
@@ -102,7 +108,8 @@ export default function Yayinlar({ lang }) {
       date: isTr ? '24 Haziran 2026' : 'June 24, 2026',
       readTime: isTr ? '3 dk' : '3 min',
       color: 'from-amber-500/20 to-cyan-500/10',
-      accent: 'text-amber-300'
+      accent: 'text-amber-300',
+      path: '/yayinlar'
     }
   ];
 
@@ -145,13 +152,19 @@ export default function Yayinlar({ lang }) {
       <section id="yayin-listesi" className="py-16 bg-[#0A0D17]">
         <div className="max-w-6xl mx-auto px-4">
           <article className="grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden rounded-2xl border border-white/10 bg-white/3 mb-10">
-            <div className={`lg:col-span-5 min-h-[260px] bg-gradient-to-br ${featured.color} p-8 flex flex-col justify-between`}>
-              <div className="inline-flex w-12 h-12 items-center justify-center rounded-xl bg-black/20 border border-white/10">
-                <Sparkles className="w-6 h-6 text-cyber-cyan" />
-              </div>
+            <div className={`lg:col-span-5 min-h-[300px] bg-gradient-to-br ${featured.color} relative overflow-hidden`}>
+              {featured.image ? (
+                <img src={featured.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-80" />
+              ) : null}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/35 to-transparent"></div>
+              <div className="relative z-10 h-full p-8 flex flex-col justify-between">
+                <div className="inline-flex w-12 h-12 items-center justify-center rounded-xl bg-black/25 border border-white/10">
+                  <Sparkles className="w-6 h-6 text-cyber-cyan" />
+                </div>
               <div>
                 <span className="text-[10px] font-bold uppercase text-cyber-cyan">{t.featured}</span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-3 leading-tight">{featured.title}</h2>
+              </div>
               </div>
             </div>
             <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
@@ -166,7 +179,7 @@ export default function Yayinlar({ lang }) {
                 </div>
                 <p className="text-sm sm:text-base text-gray-300 leading-relaxed">{featured.desc}</p>
               </div>
-              <a href="#" className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white hover:text-cyber-cyan transition-colors">
+              <a href={`#${featured.path}`} className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white hover:text-cyber-cyan transition-colors">
                 {t.read}
                 <ArrowUpRight className="w-4 h-4" />
               </a>
@@ -210,11 +223,15 @@ export default function Yayinlar({ lang }) {
                   id={publication.category === 'medya' ? 'medya-yayinlari' : undefined}
                   className="group rounded-2xl border border-white/5 bg-white/3 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/20"
                 >
-                  <div className={`h-36 bg-gradient-to-br ${publication.color} p-5 flex items-start justify-between`}>
-                    <div className="w-11 h-11 rounded-xl bg-black/20 border border-white/10 flex items-center justify-center">
+                  <div className={`h-36 bg-gradient-to-br ${publication.color} p-5 flex items-start justify-between relative overflow-hidden`}>
+                    {publication.image ? (
+                      <img src={publication.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
+                    ) : null}
+                    <div className="absolute inset-0 bg-[#0B0F19]/20"></div>
+                    <div className="relative z-10 w-11 h-11 rounded-xl bg-black/25 border border-white/10 flex items-center justify-center">
                       <Icon className={`w-5 h-5 ${publication.accent}`} />
                     </div>
-                    <span className="rounded-lg bg-black/20 border border-white/10 px-2.5 py-1 text-[10px] font-bold text-white">
+                    <span className="relative z-10 rounded-lg bg-black/25 border border-white/10 px-2.5 py-1 text-[10px] font-bold text-white">
                       {categories.find((category) => category.id === publication.category)?.label}
                     </span>
                   </div>
@@ -234,7 +251,7 @@ export default function Yayinlar({ lang }) {
                     </p>
                     <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
                       <span className="text-[11px] text-gray-500">{t.author}</span>
-                      <a href="#" className="inline-flex items-center gap-1.5 text-xs font-bold text-cyber-cyan">
+                      <a href={`#${publication.path}`} className="inline-flex items-center gap-1.5 text-xs font-bold text-cyber-cyan">
                         {t.read}
                         <ArrowUpRight className="w-3.5 h-3.5" />
                       </a>

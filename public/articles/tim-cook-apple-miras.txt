@@ -1,0 +1,831 @@
+Bugün Apple’da yalnızca bir CEO değişmiyor, şirket tarihindeki en önemli dönemlerden biri kapanıyor
+
+Tim Cook 1 Eylül itibarıyla CEO koltuğunu John Ternus’a bırakıyor ve Apple’da Executive Chairman olarak kalmaya devam ediyor. Cook’un 2011’de Steve Jobs’tan devraldığı Apple yaklaşık 350 milyar dolar piyasa değerine ve 108 milyar dolar yıllık gelire sahipti. Apple’ın nisan ayında açıkladığı rakamlara göre Cook döneminde şirketin değeri yaklaşık 4 trilyon dolara, yıllık geliri ise 416 milyar doların üzerine çıktı. Aktif Apple cihazlarının sayısı 2,5 milyarı geçti, Services tek başına yıllık 100 milyar doların üzerinde büyüklüğe ulaştı.
+
+Financial Times’ın Cook’un son günü için hazırladığı değerlendirme daha da çarpıcı bir tablo çiziyor. Cook döneminde Apple’ın piyasa değeri yüzde 2.000’in üzerinde arttı, şirket hissedarlara 1 trilyon doların üzerinde sermaye döndürdü, yaklaşık 3,1 milyar iPhone sevk etti ve ücretli servis abonelikleri 1,5 milyara ulaştı.
+
+Bunlar olağanüstü rakamlar
+
+Fakat bana göre Cook’un mirasını yalnızca Apple’ın piyasa değeriyle anlatmak büyük bir hata olur
+
+Çünkü Tim Cook’un Apple’a yaptığı en büyük katkı belki de iPhone’dan, Apple Watch’tan, AirPods’tan hatta Apple Silicon’dan bile daha az görünür bir yerde
+
+Üretim sisteminde
+
+Tedarik zincirinde
+
+Stok yönetiminde
+
+Satın almada
+
+Sermayenin kullanımında
+
+Ve daha genel ifadeyle Apple’ın arka plandaki ekonomik mimarisinde
+
+Steve Jobs insanların sahip olmak isteyeceği ürünleri yaratmak konusunda tarihin gördüğü en özel insanlardan biriydi
+
+Tim Cook ise o ürünlerin yüz milyonlarca adet üretilebilmesini, dünyanın her yerine ulaştırılabilmesini ve bunu yaparken Apple’ın olağanüstü marjlar üretmesini sağlayan makineyi kurdu
+
+Bence Cook’un gerçek mirası tam olarak burada başlıyor
+
+Jobs Apple’a ruhunu verdi, Cook ise metabolizmasını kurdu
+Steve Jobs ve Tim Cook’u aynı liderlik kriterleriyle değerlendirmek çok doğru değil
+
+Jobs bir ürün insanıydı
+
+Hatta bundan da öte bir şeydi
+
+Teknoloji, tasarım, insan davranışı ve estetik arasındaki bağlantıları sezebilen inanılmaz bir ürün vizyonuna sahipti
+
+Macintosh, iPod, iTunes, iPhone, App Store ve iPad gibi ürünlere baktığınızda yalnızca başarılı ürünler görmüyorsunuz
+
+Yeni davranış biçimleri görüyorsunuz
+
+Yeni pazarlar görüyorsunuz
+
+Bazı durumlarda tamamen yeni endüstriler görüyorsunuz
+
+Cook döneminde Apple Watch ve AirPods gibi son derece başarılı yeni kategoriler ortaya çıktı, Apple Pay büyüdü, Services devasa bir iş koluna dönüştü, Apple kendi işlemci mimarisine geçerek Mac tarafında olağanüstü başarılı bir dönüşüm gerçekleştirdi. Apple Silicon özellikle Cook dönemini küçümseyenlerin gözden kaçırmaması gereken çok büyük bir teknolojik başarı. Apple da Cook’un mirasını anlatırken Apple tasarımı çiplere geçişi onun dönemindeki temel atılımlardan biri olarak özellikle vurguluyor.
+
+Ama buna rağmen Jobs dönemindeki ürün devrimlerinin yoğunluğunu Cook döneminde gördüğümüzü söylemek zor
+
+Reuters bugün Apple’ın yapay zekâ alanında rakiplerinin gerisinde kaldığını açık biçimde yazarken Wall Street Journal yeni CEO John Ternus’un önündeki temel soruyu neredeyse “Steve Jobs’un innovation engine’ini yeniden çalıştırabilir mi?” şeklinde koyuyor.
+
+iPhone tarafında da yıllar içerisinde radikal sıçramalardan çok optimizasyonların konuşulduğu dönemler gördük
+
+Biraz daha iyi kamera
+
+Biraz daha iyi işlemci
+
+Biraz daha uzun pil
+
+Yeni ekran teknolojileri
+
+Yeni sensörler
+
+Yeni malzemeler
+
+Bunların hiçbiri önemsiz değil. Fakat ilk iPhone’un yarattığı paradigma değişimiyle aynı şey de değil
+
+Apple bir noktadan sonra yalnızca teknolojik üstünlük üzerinden yaşamayan bir marka haline geldi
+
+Ekosistem
+
+Marka
+
+Prestij
+
+Alışkanlık
+
+Güven
+
+Kullanıcı deneyimi
+
+Switching cost
+
+ve milyarlarca cihazdan oluşan installed base Apple’ın çok güçlü başka savunma hatlarına dönüştü
+
+Apple artık her yıl dünyayı yeniden icat etmek zorunda kalmadan da yüz milyonlarca cihaz satabilecek bir şirket haline gelmişti
+
+Ve belki de Cook’un başarısı tam burada anlaşılmalı
+
+Jobs sürekli yeni talep alanları yaratıyordu
+
+Cook ise mevcut talebin etrafındaki ekonomiyi mükemmelleştirdi
+
+Asıl hikâye 2011’de değil 1998’de başladı
+Tim Cook’un Apple üzerindeki etkisini anlamak için CEO olduğu 2011’e değil, Apple’a katıldığı 1998 yılına gitmek gerekiyor
+
+O dönemde Apple bugün bildiğimiz Apple değildi
+
+1996 ve 1997 döneminde şirket yaklaşık 1,9 milyar dolar kaybetmişti. Apple 1996’yı yaklaşık 700 milyon dolarlık stokla kapatmıştı ve teknoloji sektörünün doğası gereği elindeki parçalar ve bitmiş ürünler hızla değer kaybediyordu. Şirket popüler ürünlerde stok bulamazken satılmayan modellerden depolar doluyordu. Wiley tarafından yayımlanan The Power of Value Nets Apple’ın o dönemki temel problemlerinden birini doğrudan tedarik zinciri problemi olarak tanımlıyor.
+
+Steve Jobs Apple’a geri döndüğünde yaptığı en önemli hamlelerden biri Compaq’tan Tim Cook’u transfer etmek oldu
+
+Cook’un görevi seksi değildi
+
+Yeni bilgisayar tasarlamayacaktı
+
+Keynote yapmayacaktı
+
+Reklam kampanyası hazırlamayacaktı
+
+Apple’ın arkasındaki dağınıklığı temizleyecekti
+
+Ve yaptığı şey tam anlamıyla bir operasyon devrimiydi
+
+Apple’ın ürün gamı sadeleştirildi
+
+Tedarikçi sayısı dramatik biçimde azaltıldı
+
+Ülke bazlı dağıtım merkezleri ve depolar kapatıldı
+
+Üretim giderek outsource edildi
+
+Tedarikçilere çok daha sık talep tahmini gönderilmeye başlandı
+
+Tedarikçilerin Apple’a yakın hub’larda mal bulundurması sağlandı
+
+SAP tabanlı ERP altyapısı devreye alındı
+
+Ürünlerin fabrikadan müşteriye mümkün olduğunca doğrudan hareket ettiği bir yapı tasarlandı
+
+Asya’da üretilen parçaların İrlanda’ya gönderilip orada monte edildikten sonra tekrar Asya’ya gönderilmesi gibi anlamsız lojistik rotaları ortadan kaldırıldı.
+
+Sonuç inanılmazdı
+
+1996’da Apple’ın yaklaşık 27 günlük inventory’si vardı
+
+Eylül 1998’de
+
+6 gün
+
+Eylül 1999’da ise
+
+2 günden az
+
+Cook’un işe alınmasından sonraki yaklaşık bir yıl içerisinde Apple’ın stok seviyesi önceki zirvesine göre yüzde 82 azalmıştı.
+
+Cook’un yaklaşımını özetleyen cümlelerden biri de bu dönemde ortaya çıktı
+
+“I consider any internal inventory to be a defect.”
+Cook için stok güvence değildi
+
+Problem işaretiydi
+
+Çünkü teknoloji dünyasında stok süt gibidir
+
+Bugün 100 dolar değerindeki bir komponent birkaç ay içerisinde daha ucuz ve daha eski hale gelir
+
+Yeni işlemci çıktığında eski işlemcinin değeri düşer
+
+Yeni ekran teknolojisi çıktığında eski panel değer kaybeder
+
+Yeni model geldiğinde depodaki eski model için indirim yapmak zorunda kalırsınız
+
+Yani stok yalnızca depoda duran mal değildir
+
+Bağlanmış sermayedir
+
+Teknolojik eskime riskidir
+
+İndirim riskidir
+
+Tahmin hatasıdır
+
+Cook’un deyimiyle sistemdeki bir kusurdur
+
+IndustryWeek’in 1999’da Cook ile yaptığı görüşmede onun “asset velocity” kavramına ne kadar önem verdiği çok net görülüyor. Cook Apple’ın beş haftalık stoktan iki günlük seviyelere inmesini anlatıyor ve hedefinin envanteri günlerle değil saatlerle konuşabilecek seviyeye getirmek olduğunu söylüyordu.
+
+Bu yalnızca maliyet düşürme değildi
+
+Apple’ın metabolizmasını hızlandırmaktı
+
+Bir growth hacker gözüyle Tim Cook
+Benim Cook hikâyesinde en sevdiğim bölüm burası
+
+Çünkü growth hacking yıllardır gereğinden fazla pazarlamaya indirgendi
+
+Growth denildiğinde akla Meta Ads geliyor
+
+Google Ads geliyor
+
+Landing page geliyor
+
+Conversion rate geliyor
+
+Viral loop geliyor
+
+CAC geliyor
+
+Bunların hepsi growth’un parçaları olabilir
+
+Ama growth’un özü bunlar değildir
+
+Growth’un özü sistemdeki darboğazı bulmak ve ona kaldıraç uygulamaktır
+
+Eğer şirketinizin büyümesini engelleyen şey müşteri edinme maliyetiyse marketing tarafına gidersiniz
+
+Ama darboğaz stoksa?
+
+Tedarikse?
+
+Working capital ise?
+
+Üretim kapasitesiyse?
+
+Lead time ise?
+
+Satın alma fiyatıysa?
+
+Fire oranıysa?
+
+Lojistikse?
+
+Forecasting ise?
+
+O zaman dünyanın en iyi reklam kampanyası bile yanlış probleme çözüm üretir
+
+Cook’un Apple’da yaptığı şey tam anlamıyla sistemik growth hacking’di
+
+COGS’yi düşürmek growth’tur
+
+Inventory turnover’ı artırmak growth’tur
+
+Cash conversion cycle’ı iyileştirmek growth’tur
+
+Bir komponenti rakibinizden yüzde 5 daha ucuza almak growth’tur
+
+Üretim kapasitesini rakibinizden önce rezerve etmek growth’tur
+
+Ürünün fabrikadan müşteriye ulaşma süresinden iki gün kesmek growth’tur
+
+Çünkü sonunda growth yalnızca revenue değildir
+
+Growth aynı zamanda birim ekonomidir
+
+Örneğin yılda 200 milyon adet sattığınız bir cihazda maliyetten yalnızca 5 dolar tasarruf ettiğinizi düşünün
+
+Bu kulağa inanılmaz küçük geliyor
+
+Ama
+
+200 milyon × 5 dolar
+
+1 milyar dolar
+
+Growth hacker’ın baktığı yer tam olarak burasıdır
+
+Milyar dolarlık growth bazen yeni müşteri bulmaktan değil ürünün içerisindeki birkaç dolardan çıkar
+
+Tim Cook bunu şirket çapında yaptı
+
+Apple’ın büyük sihri: Asset-light değil, “factory-light but control-heavy”
+Apple’ın üretim modeliyle ilgili en ilginç noktalardan biri burada
+
+Klasik outsourcing modelini düşünelim
+
+Şirket ürünü tasarlar
+
+Üreticiye sipariş verir
+
+Üretici kendi fabrikasında üretir
+
+Ürün şirkete gelir
+
+Vertical integration modelinde ise şirket fabrikaya, makineye, çalışanlara ve üretimin kendisine sahip olur
+
+Apple ikisinin arasında çok daha sofistike bir model oluşturdu
+
+Foxconn fabrikaya sahip olabilir
+
+Foxconn çalışanları istihdam edebilir
+
+Ama Apple üretimin nasıl yapılacağı konusunda olağanüstü derecede derine inebilir
+
+Hatta bazı kritik üretim ekipmanlarının sahibi Apple olabilir
+
+Apple’ın SEC’e yansıyan tarihsel tedarikçi anlaşmalarında bunun hukuki mimarisini açık biçimde görebiliyoruz
+
+Bazı anlaşmalarda tedarikçi Apple adına ekipman satın alabiliyor ancak ekipmanın miktarı, spesifikasyonu ve fiyatı Apple’ın onayına bağlı. Ödeme yapıldığında ekipmanın mülkiyeti Apple’a geçebiliyor. Tedarikçi ekipmanı Apple’ın izni olmadan başka yere taşıyamıyor ve Apple’a ait ekipman yalnızca Apple’ın yararına kullanılabiliyor. Buna karşılık kurulum, test, bakım ve operasyonel risk tedarikçinin üzerinde kalabiliyor.
+
+Apple’ın kendi SEC raporlarında da şirketin üretim süreci ekipmanlarına yatırım yaptığı ve bu ekipmanların önemli bölümünün outsourcing partnerlarının tesislerinde tutulduğu açıkça belirtiliyor.
+
+Bu nedenle Apple için yalnızca “asset-light” demek bana yetersiz geliyor
+
+Daha doğru ifade şu olabilir
+
+Factory-light, control-heavy
+Fabrikaya sahip olmak zorunda değilsiniz
+
+Ama üretim kabiliyetinin kritik bölümünü kontrol ediyorsunuz
+
+Ben bunu growth perspektifinden tek bir prensiple anlatırdım
+
+Own the bottleneck, not necessarily the factory
+Darboğaza sahip olun
+
+Fabrikaya sahip olmak zorunda değilsiniz
+
+Bu inanılmaz güçlü bir iş modeli
+
+Çünkü Apple fabrikaya sahip olmanın birçok sabit maliyetini ve operasyonel yükünü taşımıyor
+
+Ama kritik üretim kapasitesi üzerinde sıradan bir müşteriden çok daha fazla kontrol sağlayabiliyor
+
+Bu model sermaye verimliliği ile vertical integration’ın bazı avantajlarını aynı yapıda birleştiriyor
+
+Cook’un diğer silahı: Apple’ın bilançosunu satın alma gücüne çevirmek
+Cook’un supply chain sisteminin diğer önemli tarafı devasa sipariş hacmini stratejik silaha çevirmesiydi
+
+Apple bir komponentten birkaç bin adet almıyor
+
+On milyonlarca
+
+Bazen yüz milyonlarca adet alıyor
+
+Böyle bir müşteri olduğunuz zaman tedarikçiyle ilişkiniz klasik müşteri–satıcı ilişkisinden çıkmaya başlıyor
+
+Apple bunu erken dönemden itibaren kullanmaya başladı
+
+2005’te iPod Nano piyasaya çıkarken Cook’un ekibi Samsung ve Hynix gibi şirketlere yaklaşık 1,25 milyar dolar ön ödeme yaparak flash memory kapasitesini uzun dönem için güvence altına aldı. Fortune’un o dönemki değerlendirmesine göre bu hamle Apple’ın yalnızca tedariğini güvence altına almıyor, aynı zamanda rakiplerin aynı kapasiteye ulaşmasını zorlaştırıyordu.
+
+2011’de benzer yaklaşım ekran tarafında görülüyordu. Apple milyarlarca dolarlık component prepayment yaparak kritik display teknolojilerinde fiyatı ve üretim kapasitesini önceden güvence altına alıyordu.
+
+Wired bunu oldukça iyi özetlemişti
+
+Apple büyük hacimli ön ödemelerle flash memory ve ekran gibi kritik komponentlerde hem fiyatı hem üretimi garanti altına alıyor, bunun sonucunda rakiplerin aynı parçaları aynı miktarda bulması zorlaşabiliyordu.
+
+Burada çok önemli bir ayrım var
+
+Apple yalnızca
+
+“Bana daha ucuz sat”
+
+demiyor
+
+Sermayesini kullanarak tedarikçinin ekonomisini değiştiriyor
+
+Ben sana milyarlarca dolarlık talep garantisi verebilirim
+
+Sen bana kapasite garantisi ver
+
+Ben sana ön ödeme yapabilirim
+
+Sen bana fiyat avantajı ver
+
+Ben senin fabrikan için özel ekipmanı finanse edebilirim
+
+Ama o ekipman benim ürünümü üretsin
+
+Bu noktada satın alma departmanı artık back-office değildir
+
+Rekabet stratejisinin kendisidir
+
+Ve Cook bunu çok erken anlamıştı
+
+Apple tedarik zincirini yalnızca optimize etmedi, üzerinde güç kurdu
+Burada paylaştığın 2025 tarihli Journal of Business Research çalışması bence Cook modelinin bugünkü halini anlamak açısından çok değerli
+
+Makale Apple tedarikçisi Goertek üzerinden Apple’ın global value chain içerisindeki gücünü inceliyor
+
+Araştırmacılar Apple–Goertek ilişkisini “captive governance” modeline yakın tanımlıyor
+
+Yani lead firm olan Apple’ın tedarikçi üzerinde yüksek seviyede monitoring ve control uyguladığı bir yapı
+
+Makalenin bulgularına göre Apple tedarikçilerine kapsamlı eğitimler ve katı üretim standartları uyguluyor, specialized equipment yatırımlarından spare-part standartlarına kadar taleplerde bulunabiliyor ve üretim sürecinin tamamı üzerinde yüksek seviyede kontrol kurabiliyor.
+
+Bu önemli
+
+Çünkü Apple’ın rekabet avantajını yalnızca tasarım patentlerinde ya da iOS içerisinde aradığımızda sistemin yarısını kaçırıyoruz
+
+Apple’ın görünmeyen moat’larından biri
+
+supplier governance
+
+Goertek örneği bunun ne kadar güçlü olabileceğini gösteriyor
+
+Araştırmada Apple’ın tedarikçiler arasında rekabet yarattığı, örneğin Goertek’in siparişlerini azaltırken Luxshare tarafındaki siparişleri artırabildiği belirtiliyor. Apple ayrıca tedarikçilerinden asset specificity, ürün standartları ve yüksek seviyede bilgi şeffaflığı talep ediyor.
+
+Bir tedarikçi Apple için özel fabrika
+
+özel makine
+
+özel süreç
+
+özel çalışan eğitimi
+
+ve özel teknoloji yatırımı yaptıkça Apple’a bağımlılığı artıyor
+
+Apple ise alternatif tedarikçiler oluşturarak kendi bağımlılığını azaltmaya çalışıyor
+
+İlişkinin asimetrisi burada ortaya çıkıyor
+
+Ve bu Apple açısından inanılmaz güçlü bir purchasing moat oluşturuyor
+
+Daha da ilginci: Apple kendi jeopolitik riskinin bir bölümünü tedarik zincirine taşıyabiliyor
+Goertek araştırmasının bence en çarpıcı taraflarından biri de friendshoring bölümü
+
+ABD–Çin gerilimi yükseldikçe Apple üretimin bir bölümünü Çin dışına taşımaya başladı
+
+Hindistan
+
+Vietnam
+
+ve diğer Asya ülkeleri giderek daha fazla önem kazandı
+
+Fakat fabrika Apple’ın olmadığı için taşınan her zaman Apple olmuyor
+
+Tedarikçisi taşınıyor
+
+Araştırmaya göre lead firm’ler tedarikçilerinden üretim kapasitelerinin tamamını veya bir bölümünü yeni ülkelere taşımalarını talep edebiliyor ve bu taşınmanın yarattığı maliyet artışını tedarikçiler üstlenebiliyor.
+
+Goertek örneğinde Apple’ın Çin dışına üretim taşıma baskısı şirketin Vietnam kapasitesini artırmasına yol açıyor
+
+Yeni fabrika
+
+yeni çalışanlar
+
+eğitim
+
+lojistik
+
+yeni ekipman
+
+yeni altyapı
+
+Bunların maliyetini Goertek üstleniyor
+
+Makaledeki değerlendirmeye göre Apple bu şekilde kendi tedarik zincirindeki jeopolitik riskten kaçınma maliyetinin bir bölümünü Goertek’e aktarabilmiş durumda.
+
+Growth hacker açısından baktığınızda bu çok sofistike bir yapı
+
+Apple’ın hedef fonksiyonu artık yalnızca
+
+minimum cost
+
+değil
+
+cost + resilience + control + optionality
+
+haline geliyor
+
+Ama Cook’un kurduğu mükemmel makinenin bir paradoksu var
+Apple’ın Çin’de kurduğu üretim sistemi o kadar iyi optimize edildi ki aynı sistemi başka bir ülkeye taşımak son derece zor
+
+Bu Cook mirasının hem gücü hem zayıflığı
+
+Goertek çalışması Vietnam’a taşınmanın bunu çok güzel gösterdiğini söylüyor
+
+Vietnam’daki ücretler Çin’den daha düşük olmasına rağmen işçilik toplam maliyet içerisindeki ana unsur değil
+
+Asıl büyük maliyet kalemleri malzeme ve üretim altyapısı
+
+Vietnam’daki fabrikaların ihtiyaç duyduğu hammaddelerin ve ekipmanların önemli bölümünün hâlâ Çin’den getirilmesi gerekiyor
+
+Araştırmada Vietnam’da fabrika kurmanın bazı tahminlere göre Çin’den yüzde 20–30 daha pahalı olabileceği aktarılıyor.
+
+Çalışmanın daha geniş sonucu şu
+
+Friendshoring güvenliği artırıyor
+
+Ama kısa vadede productive efficiency’den fedakârlık gerektirebiliyor.
+
+İşte Cook’un halefine bıraktığı en büyük stratejik problemlerden biri burada
+
+Dünyanın en iyi optimize edilmiş tedarik zincirlerinden birini, optimizasyonu bozmadan coğrafi olarak dağıtmak
+
+Bu hiç kolay değil
+
+Reuters da Cook’un Apple’ın Çin merkezli üretim sistemini oluşturmadaki rolünü özellikle vurguluyor ve bu yapının Corporate America’nın gıpta ettiği bir model haline geldiğini belirtiyor. Fakat aynı haber Apple’ın yıllardır Hindistan ve Vietnam’a açılmasına rağmen birçok kritik komponent ve alt sistem konusunda Çin’e bağımlılığının hâlâ yüksek olduğunu söylüyor.
+
+Bu yüzden Cook’un en büyük başarısı aynı zamanda Ternus’un çözmek zorunda kalacağı en büyük problemlerden birine dönüşebilir
+
+Belki de Apple’ın gerçek inovasyonu yalnızca iPhone değildi
+Bana göre Apple konuşulurken inovasyon kavramını gereğinden fazla ürün tarafına sıkıştırıyoruz
+
+İnovasyon denildiğinde
+
+kamera
+
+işlemci
+
+ekran
+
+işletim sistemi
+
+tasarım
+
+gibi şeyleri konuşuyoruz
+
+Ama şirket tasarımı da inovasyondur
+
+Tedarik zinciri tasarımı da inovasyondur
+
+Sermaye tahsisi de inovasyondur
+
+Üretim modeli de inovasyondur
+
+Supplier governance da inovasyondur
+
+Apple’ın bugün 60’tan fazla ülkede binlerce supplier facility’den oluşan bir ağı var.
+
+Haziran 2026 itibarıyla şirketin yalnızca manufacturing purchase obligations tutarı 57 milyar dolar seviyesinde ve bunun 56,2 milyar doları 12 ay içerisinde ödenecek yükümlülüklerden oluşuyor.
+
+Böyle bir sistemi orkestre etmek bana göre başlı başına bir teknoloji
+
+Sadece yazılım teknolojisi değil
+
+organizasyon teknolojisi
+
+Cook döneminin finansal dehası burada yatıyor
+Bir şirketin brüt kârını artırmanın çok basit iki yolu vardır
+
+Daha pahalı satarsınız
+
+veya
+
+daha ucuza üretirsiniz
+
+Apple ikisini aynı anda yapmayı başardı
+
+Jobs döneminden miras kalan tasarım, marka ve kullanıcı deneyimi premium pricing yarattı
+
+Cook’un operasyon sistemi ise ürünün arkasındaki maliyet yapısını optimize etti
+
+Sonrasında üçüncü katman geldi
+
+Services
+
+Yani Apple bir kez sattığı donanımdan yıllar boyunca tekrar gelir üretmeye başladı
+
+App Store
+
+iCloud
+
+Apple Music
+
+Apple TV
+
+AppleCare
+
+Apple Pay ve ekosistemin diğer parçaları
+
+Bugün Services tek başına yıllık 100 milyar doların üzerinde bir iş kolu.
+
+Financial Times Cook döneminde Apple’ın brüt marjının yaklaşık yüzde 40 seviyesinden yüzde 50’ye yaklaşmasına dikkat çekiyor.
+
+Bu bana göre Apple’ın gerçek finansal mimarisini anlatıyor
+
+Premium pricing
+
+ 
+
+Supply-chain efficiency
+
+ 
+
+Scale
+
+ 
+
+Ecosystem
+
+ 
+
+Recurring services revenue
+
+Bu beş yapı üst üste geldiğinde artık telefon satan bir şirketiniz yok
+
+Ekonomik bir makineniz var
+
+Peki bunun bedeli inovasyon muydu?
+Burası tartışmanın en zor bölümü
+
+Çünkü Cook hakkında “Apple’ı inovasyondan uzaklaştırdı” demek fazla kolaycı
+
+Apple Silicon bunun yanlış olduğunu tek başına kanıtlayabilir
+
+AirPods dünya çapında dev bir kategori oldu
+
+Apple Watch dev bir kategori oldu
+
+Apple’ın servis işi baştan aşağı değişti
+
+Şirket kendi işlemcilerini, Neural Engine’lerini ve çok daha fazla temel teknolojisini geliştirmeye başladı
+
+Ama başka taraftan bakınca eleştirinin bir bölümü haklı
+
+Apple Car için yaklaşık on yıl çalışıldı ve proje 2024’te iptal edildi.
+
+Vision Pro teknolojik anlamda inanılmaz bir mühendislik ürünü olmasına rağmen 3.500 dolar üzerindeki fiyatıyla henüz iPhone veya Apple Watch ölçeğinde bir tüketici kategorisi yaratamadı.
+
+Ve en önemlisi yapay zekâ
+
+Reuters’ın nisan ayındaki Cook–Ternus geçişi haberinin daha ilk cümlelerinde Apple’ın AI konusunda geriden geldiğine vurgu yapması tesadüf değil
+
+Siri 2011’de tüketicinin AI ile ilk yaygın temaslarından birini oluşturmasına rağmen ChatGPT ve Gemini çağında Apple trendi belirleyen şirket olmadı
+
+Hatta Apple yeni Siri altyapısında Google Gemini gibi dış teknolojilerden yararlanmak zorunda kaldı.
+
+Bu Cook döneminin en ciddi soru işaretlerinden biri olarak kalacak
+
+Jobs yaşasaydı ne olurdu?
+Bunu bilmiyoruz
+
+Ve hiçbir zaman bilemeyeceğiz
+
+“Jobs yaşasaydı Apple kesin şunu yapardı” gibi cümleleri çok iddialı buluyorum
+
+Ama şu soruyu sormak gayet meşru
+
+Jobs’un ürün zihniyeti aynı yoğunlukta devam etseydi bugün farklı teknoloji kategorileri konuşuyor olabilir miydik?
+
+Bence olabilir
+
+Çünkü Jobs’un dehası optimizasyon değildi
+
+Jobs’un en sıra dışı yeteneği mevcut ürünü yüzde 10 daha iyi yapmak değil, insanların bilgisayarla ilişkisinin nasıl olması gerektiğini yeniden düşünmekti
+
+Tim Cook ise doğası gereği başka türlü bir yönetici
+
+Cook’un dünyasında mükemmellik
+
+doğru forecast
+
+düşük inventory
+
+mükemmel execution
+
+yüksek margin
+
+doğru supplier
+
+yüksek kalite
+
+ölçek
+
+ve sermaye disipliniyle ilişkili
+
+Jobs’un dünyasında mükemmellik bazen
+
+“Bu ürün neden böyle olmak zorunda?”
+
+sorusuyla başlıyordu
+
+Bu iki zihniyet birbirinin alternatifi olmak zorunda değil
+
+Aslında Apple’ın tarihindeki büyük başarı tam tersine bu ikisinin aynı şirkette buluşmasıydı
+
+Jobs’ın hayali
+
+Jony Ive’ın tasarımı
+
+mühendislerin teknolojisi
+
+ve Cook’un operasyon sistemi
+
+Cook’un en büyük başarısı belki de Apple’ı “öngörülebilir” hale getirmekti
+Bu kelime teknoloji dünyasında bazen negatif algılanıyor
+
+Ama yatırımcı açısından olağanüstü değerli
+
+Jobs dönemindeki Apple bir sonraki büyük şeyi bulabilecek bir şirketti
+
+Cook dönemindeki Apple ise
+
+bir sonraki çeyrekte milyarlarca dolar nakit üreteceğini bildiğiniz bir şirkete dönüştü
+
+Cook Apple’ın yaratıcılığını finansal tekrarlanabilirliğe çevirdi
+
+Bu kolay bir iş değil
+
+Belki Apple bazı dönemlerde daha az şaşırttı
+
+Ama çok daha fazla kazandı
+
+Belki iPhone’un her yeni modeli ilk iPhone kadar heyecan yaratmadı
+
+Ama yüz milyonlarca insan Apple ekosisteminin içinde kalmaya devam etti
+
+Belki Apple her yeni teknoloji trendini ilk başlatan şirket olmadı
+
+Ama dünyanın en güçlü bilançolarından birini oluşturdu
+
+Ve bütün bunların temelinde görünmeyen bir şey vardı
+
+operational excellence
+
+MarketWatch’ın Cook’un son günü için kullandığı başlık bunu çok güzel özetliyor
+
+Cook bir “product guy” değildi
+
+Bu yüzden Apple’ı yeniden mühendislik etti
+
+
+
+Şimdi John Ternus’un önündeki soru
+John Ternus kötü durumda bir Apple devralmıyor
+
+Tam tersine
+
+2,5 milyardan fazla aktif cihazı olan
+
+100 milyar doların üzerinde Services işi bulunan
+
+kendi işlemcilerini tasarlayan
+
+dünyanın en güçlü markalarından birine sahip
+
+inanılmaz miktarda nakit üreten
+
+ve dünyanın en gelişmiş tedarik zincirlerinden birini yöneten bir Apple devralıyor.
+
+Bazen devralınabilecek en zor şirket de budur
+
+Çünkü batmakta olan şirkette ne yapmanız gerektiği açıktır
+
+Düzeltirsiniz
+
+Ama mükemmele yakın çalışan 4–5 trilyon dolarlık bir makineyi devraldığınızda soru değişir
+
+Neyi bozmayı göze alacaksınız?
+
+Apple önümüzdeki dönemde AI çağını yakalamak zorunda
+
+Yeni cihaz kategorileri yaratmak zorunda
+
+iPhone sonrası dünyaya hazırlanmak zorunda
+
+Çin bağımlılığını azaltırken Cook’un oluşturduğu supply-chain verimliliğini korumak zorunda
+
+Ve bütün bunları yaparken dünyanın en kârlı iş modellerinden birini bozmamak zorunda
+
+Ternus’un bir hardware engineer olması bu nedenle ilginç
+
+Reuters da onun seçilmesini Apple’ın yeniden donanım ve yeni cihaz kategorilerine ağırlık verebileceğinin işareti olarak yorumlayan analistlere yer veriyor.
+
+Belki Apple’ın önündeki dönem yeniden ürün odaklı bir dönem olacak
+
+Bunu zaman gösterecek
+
+Tim Cook’un bana bıraktığı growth dersi
+Ben Cook’un Apple tarihindeki yerini tek cümlede anlatmak zorunda olsaydım şöyle söylerdim
+
+Steve Jobs Apple’ın insanların neden isteyeceği ürünler yapacağını çözdü, Tim Cook ise o isteği dünyanın en verimli ekonomik makinelerinden birine çevirdi
+
+Growth açısından bundan çıkarılacak çok büyük bir ders var
+
+Şirket büyütmek yalnızca daha fazla satmak değildir
+
+Bazen growth marketing departmanında değildir
+
+Satın almadadır
+
+Bazen fabrikadadır
+
+Bazen stok rafındadır
+
+Bazen tedarikçinin kontratındadır
+
+Bazen ödeme vadesindedir
+
+Bazen lojistik rotasındadır
+
+Bazen insanların önemsiz gördüğü 3 dolarlık bir komponenttedir
+
+Gerçek growth hacker şirketin tamamına bakar
+
+Para nerede kayboluyor?
+
+Zaman nerede kayboluyor?
+
+Sermaye nerede kilitleniyor?
+
+Hangi kaynak darboğaz oluşturuyor?
+
+Hangi süreç ölçeklenmiyor?
+
+Hangi tedarikçi şirket üzerinde fazla güç sahibi?
+
+Hangi noktada şirket kendi gücünü kullanmıyor?
+
+Cook Apple’a tam olarak bu gözle baktı
+
+Ve belki Apple tarihindeki en büyük başarılardan biri tam da bu yüzden hiçbir Apple Store’un vitrininde sergilenmedi
+
+Bir iPhone değildi
+
+Bir Mac değildi
+
+Bir Watch değildi
+
+Bir sistemdi
+
+Steve Jobs’ın dehası tartışmasız bambaşka bir yerdeydi
+
+Jobs geleceği gören ve bazen o geleceği bizzat şekillendiren adamdı
+
+Cook ise o geleceğin üretim hattını kuran adam oldu
+
+Bugün Apple’ın önünde belki yeniden Jobsvari bir soruya ihtiyaç var
+
+Sıradaki büyük şey ne?
+
+Ama John Ternus bu sorunun cevabını ararken arkasında Cook’un bıraktığı olağanüstü bir avantaj olacak
+
+Dünyanın en iyi optimize edilmiş üretim ve tedarik sistemlerinden biri
+
+Belki de yeni dönemin formülü bu olacak
+
+Jobs’un ürün cesareti
+
+ 
+
+Cook’un operasyon disiplini
+
+Çünkü Apple’ın bundan sonraki büyük sıçraması için yalnızca yeni bir ürün yetmeyecek
+
+O ürünü milyarlarca insana ulaştırabilecek makinenin de çalışmaya devam etmesi gerekecek
+
+Ve Tim Cook’un Apple’a bıraktığı asıl miras tam olarak bu.

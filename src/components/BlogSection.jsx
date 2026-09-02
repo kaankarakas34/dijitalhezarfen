@@ -14,13 +14,13 @@ export default function BlogSection({ lang, onNavigate }) {
     btnAll: isTr ? 'Tüm Yayınları Gör' : 'View All Publications',
     
     // Post 1
-    t1: isTr ? 'Yapay Zekâ Destekli MVP Geliştirme Rehberi' : 'AI-Assisted MVP Development Guide',
+    t1: isTr ? 'Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine' : 'Tim Cook’s real Apple legacy: a machine bigger than products',
     s1: isTr
-      ? 'Geleneksel yazılım süreçlerini geride bırakın. No-code ve AI araçları kullanarak 48 saatte çalışan bir ürünü nasıl yayına alırsınız?'
-      : 'Move beyond legacy software dev cycles. How to build and deploy a working MVP in 48 hours using AI and no-code tools.',
-    cat1: isTr ? 'Teknoloji & AI' : 'Tech & AI',
-    time1: isTr ? '5 dk okuma' : '5 min read',
-    date1: isTr ? '02 Ağustos 2026' : 'August 02, 2026',
+      ? 'Tim Cook dönemini ürünlerden çok Apple’ın tedarik zinciri, sermaye disiplini ve operasyonel mimarisi üzerinden okuyan kapsamlı analiz.'
+      : 'A deep analysis of Tim Cook’s Apple era through supply chain, capital discipline, and operational architecture.',
+    cat1: isTr ? 'Analiz' : 'Analysis',
+    time1: isTr ? '18 dk okuma' : '18 min read',
+    date1: isTr ? '31 Ağustos 2026' : 'August 31, 2026',
 
     // Post 2
     t2: isTr ? 'Dijital Hezarfen hibrit girişim geliştirme modelini genişletiyor' : 'Dijital Hezarfen expands its hybrid venture building model',
@@ -50,7 +50,9 @@ export default function BlogSection({ lang, onNavigate }) {
       readTime: t.time1,
       date: t.date1,
       imageGradient: 'from-cyan-500 to-blue-600',
-      icon: BookOpen
+      icon: BookOpen,
+      image: '/images/tim-cook-apple-miras.png',
+      path: '/yayinlar/tim-cook-apple-miras'
     },
     {
       id: 2,
@@ -60,7 +62,8 @@ export default function BlogSection({ lang, onNavigate }) {
       readTime: t.time2,
       date: t.date2,
       imageGradient: 'from-violet-600 to-fuchsia-600',
-      icon: Newspaper
+      icon: Newspaper,
+      path: '/yayinlar'
     },
     {
       id: 3,
@@ -70,7 +73,8 @@ export default function BlogSection({ lang, onNavigate }) {
       readTime: t.time3,
       date: t.date3,
       imageGradient: 'from-emerald-500 to-cyan-600',
-      icon: Video
+      icon: Video,
+      path: '/yayinlar'
     }
   ];
 
@@ -125,6 +129,9 @@ export default function BlogSection({ lang, onNavigate }) {
               <div>
                 {/* Visual Image Banner with Gradients */}
                 <div className={`h-48 bg-gradient-to-tr ${post.imageGradient} relative flex items-center justify-center p-6 text-white overflow-hidden`}>
+                  {post.image ? (
+                    <img src={post.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-75" />
+                  ) : null}
                   <div className="absolute inset-0 bg-[#0B0F19]/20 backdrop-blur-[1px]"></div>
 
                   <Icon className="w-12 h-12 text-white relative z-10 opacity-80 group-hover:scale-110 transition-transform duration-300" />
@@ -161,7 +168,7 @@ export default function BlogSection({ lang, onNavigate }) {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    onNavigate?.('/yayinlar');
+                    onNavigate?.(post.path);
                   }}
                   className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1 group/link font-sans"
                 >

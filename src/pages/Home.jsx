@@ -4,14 +4,10 @@ import AboutPillars from '../components/AboutPillars';
 import Audiences from '../components/Audiences';
 import Ecosystem from '../components/Ecosystem';
 import EntrepreneurTunnel from '../components/EntrepreneurTunnel';
-import LearningVsApp from '../components/LearningVsApp';
 import AppServices from '../components/AppServices';
 import OtherPrograms from '../components/OtherPrograms';
 import StartupStages from '../components/StartupStages';
-import GrowthInvestment from '../components/GrowthInvestment';
-import MediaSection from '../components/MediaSection';
 import BlogSection from '../components/BlogSection';
-import PortfolioReferences from '../components/PortfolioReferences';
 
 export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lang }) {
   return (
@@ -34,9 +30,6 @@ export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lan
       {/* Section 4: Entrepreneur Tunnel */}
       <EntrepreneurTunnel lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
-      {/* Section 6: Learning vs Application */}
-      <LearningVsApp lang={lang} />
-
       {/* Section 7: Application Services */}
       <AppServices lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
@@ -46,14 +39,6 @@ export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lan
       {/* Section 8: Startup Stages progress */}
       <StartupStages lang={lang} onOpenApplyModal={onOpenApplyModal} />
 
-      {/* Section 9: Growth & Venture */}
-      <GrowthInvestment lang={lang} onOpenApplyModal={onOpenApplyModal} />
-
-      {/* Section 10: Media */}
-      <MediaSection lang={lang} />
-
-      {/* Section 12: Team & Portfolio Results */}
-      <PortfolioReferences lang={lang} />
     </div>
   );
 }

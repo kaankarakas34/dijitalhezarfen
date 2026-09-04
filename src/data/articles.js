@@ -1,12 +1,148 @@
 export const articleCategories = [
   { id: 'hepsi', label: { tr: 'Tümü', en: 'All' } },
-  { id: 'haber', label: { tr: 'Haberler', en: 'News' } },
+  { id: 'rapor', label: { tr: 'Analizler', en: 'Analyses' } },
   { id: 'rehber', label: { tr: 'Rehberler', en: 'Guides' } },
-  { id: 'rapor', label: { tr: 'Raporlar', en: 'Reports' } },
+  { id: 'haber', label: { tr: 'Haberler', en: 'News' } },
   { id: 'medya', label: { tr: 'Medya', en: 'Media' } }
 ];
 
 export const articles = [
+  {
+    slug: 'gpt-6-astra-ve-agi-cagi',
+    category: 'rapor',
+    title: {
+      tr: 'GPT-6 Astra ve AGI Çağı: İnsanların Yerini AI mı Alacak?',
+      en: 'GPT-6 Astra and the AGI Era: Will AI Replace Humans?'
+    },
+    desc: {
+      tr: 'OpenAI’ın GPT-6 Astra modeli, ARC-AGI-3 sonuçları, Meta’nın Project OT deneyi ve iş gücü dönüşümü ışığında AGI çağını ve yapay zekânın ekonomik üretim kapasitesini inceleyen derinlemesine analiz.',
+      en: 'An in-depth analysis of the AGI era, economic workforce transformation, ARC-AGI-3 benchmarks, and Meta’s Project OT in light of OpenAI’s GPT-6 Astra release.'
+    },
+    date: {
+      tr: '04 Eylül 2026',
+      en: 'September 04, 2026'
+    },
+    readTime: {
+      tr: '18 dk okuma',
+      en: '18 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/gpt-6-astra-agi-cagi.png',
+    imageAlt: 'GPT-6 Astra ve AGI Çağı analiz yazısı için otonom yapay zekâ ağları ve dijital iş gücü mimarisi',
+    source: '/articles/gpt-6-astra-ve-agi-cagi.txt',
+    publishedAt: '2026-09-04T09:00:00+03:00',
+    modifiedAt: '2026-09-04T23:20:00+03:00',
+    keywords: [
+      'GPT-6 Astra',
+      'AGI çağı',
+      'yapay genel zeka',
+      'AI insanların yerini alacak mı',
+      'ARC-AGI-3',
+      'OpenAI Astra',
+      'agentic AI',
+      'dijital iş gücü',
+      'Meta Project OT',
+      'GDPval',
+      'cost per completed task',
+      'yapay zeka otomasyonu',
+      'yapay zeka ekonomisi',
+      'autonomous agents',
+      'teknik analiz'
+    ],
+    color: 'from-cyan-500/25 to-violet-500/15',
+    accent: 'text-cyber-cyan',
+    featured: true,
+    sources: [
+      {
+        label: 'OpenAI — GPT-6 Astra',
+        url: 'https://openai.com/index/gpt-6-astra/'
+      },
+      {
+        label: 'OpenAI — Safety Overview: GPT-6 Astra',
+        url: 'https://openai.com/index/safety-overview-gpt-6-astra/'
+      },
+      {
+        label: 'OpenAI — Path to Astra',
+        url: 'https://openai.com/index/path-to-astra/'
+      },
+      {
+        label: 'OpenAI — Charter / AGI definition',
+        url: 'https://openai.com/charter/'
+      },
+      {
+        label: 'ARC Prize — GPT-6 Astra on ARC-AGI-3',
+        url: 'https://arcprize.org/blog/astra'
+      },
+      {
+        label: 'Reuters — OpenAI launches Astra amid scrutiny over agent safety',
+        url: 'https://www.reuters.com/legal/litigation/openai-launches-new-astra-model-amid-growing-scrutiny-over-agents-safety-2026-09-03/'
+      },
+      {
+        label: 'Reuters — Meta Project OT investigation',
+        url: 'https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/'
+      },
+      {
+        label: 'Stanford Digital Economy Lab — Employment effects of AI',
+        url: 'https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/'
+      },
+      {
+        label: 'Stanford HAI — 2026 AI Index: Economy',
+        url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report/economy'
+      },
+      {
+        label: 'Artificial Analysis — Benchmarking GPT-6 Astra',
+        url: 'https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra'
+      },
+      {
+        label: 'Artificial Analysis — Claude Fable 5.1',
+        url: 'https://artificialanalysis.ai/articles/claude-fable-5-1'
+      },
+      {
+        label: 'AlphaCorp AI — GPT-6 Astra launch, benchmarks and pricing',
+        url: 'https://alphacorp.ai/blog/gpt-6-astra-launch-benchmarks-pricing-and-everything-you-need-to-know'
+      },
+      {
+        label: 'OpenAI — GDPval',
+        url: 'https://openai.com/index/gdpval/'
+      },
+      {
+        label: 'VentureBeat — “Welcome to the AGI era”',
+        url: 'https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra'
+      },
+      {
+        label: 'Epoch AI — GPT-6 Astra',
+        url: 'https://epoch.ai/models/gpt-6-astra'
+      },
+      {
+        label: 'Gary Marcus — Pause OpenAI, now',
+        url: 'https://garymarcus.substack.com/p/pause-openai-now'
+      },
+      {
+        label: 'Ethan Mollick — Agency and Agents',
+        url: 'https://www.oneusefulthing.org/p/agency-and-agents'
+      },
+      {
+        label: 'Ethan Mollick — Guide to AI in the agentic era',
+        url: 'https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the'
+      },
+      {
+        label: 'Ethan Mollick — Astra early-use post',
+        url: 'https://bsky.app/profile/emollick.bsky.social/post/3munqaqt7kc2i'
+      },
+      {
+        label: 'WIRED — GPT-6 Astra and the AGI era',
+        url: 'https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human'
+      },
+      {
+        label: 'Axios — AI models are becoming unknowable',
+        url: 'https://www.axios.com/2026/09/04/astra-openai-how-ai-models-think'
+      },
+      {
+        label: 'The Verge — GPT-6 Astra release / AGI era',
+        url: 'https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release'
+      }
+    ]
+  },
   {
     slug: 'ben-bu-fikire-2-milyon-dolar-yatirim-alirim',
     category: 'rehber',
@@ -46,7 +182,7 @@ export const articles = [
     ],
     color: 'from-emerald-500/20 to-cyan-500/10',
     accent: 'text-emerald-300',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'LinkedIn - Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım',

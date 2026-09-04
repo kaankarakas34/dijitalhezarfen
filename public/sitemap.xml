@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dijitalhezarfen.com/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar/gpt-6-astra-ve-agi-cagi</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dijitalhezarfen.com/images/gpt-6-astra-agi-cagi.png</image:loc>
+      <image:title>GPT-6 Astra ve AGI Çağı: İnsanların Yerini AI mı Alacak?</image:title>
+      <image:caption>GPT-6 Astra ve AGI Çağı analiz yazısı için otonom yapay zekâ ağları ve dijital iş gücü mimarisi</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar/yapay-zeka-calisanlar-meta-project-ot</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dijitalhezarfen.com/images/yapay-zeka-calisanlar-meta-project-ot.png</image:loc>
+      <image:title>Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar/ben-bu-fikire-2-milyon-dolar-yatirim-alirim</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dijitalhezarfen.com/images/ben-bu-fikire-2-milyon-dolar.png</image:loc>
+      <image:title>Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar/tim-cook-apple-miras</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dijitalhezarfen.com/images/tim-cook-apple-miras.png</image:loc>
+      <image:title>Tim Cook’un Apple’a bıraktığı asıl miras</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/girisimler</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/akademi</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/uygulama</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/buyume-yatirim</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/medya</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/kurumsal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/iletisim</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/sik-sorulan-sorular</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

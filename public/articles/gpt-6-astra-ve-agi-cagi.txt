@@ -1,0 +1,249 @@
+﻿GPT-6 Astra yalnızca yeni bir model değil. Asıl soru, yapay zekânın cevap veren bir araçtan ekonomik üretim yapan otonom bir aktöre dönüşmeye başlayıp başlamadığı.
+
+## 3 Eylül 2026 neden önemli olabilir?
+
+3 Eylül 2026’da OpenAI GPT-6 Astra’yı duyurdu. Normalde yeni bir yapay zekâ modeli çıktığında birkaç gün benchmark sonuçları konuşulur; kodlama performansı, matematik testleri ve bağlam penceresi karşılaştırılır, sonra gündem bir sonraki modele geçer.
+
+Astra’nın çıkışı biraz farklı oldu. OpenAI Başkanı Greg Brockman lansmanın sonunda “Welcome to the AGI era” dedi. Yani “AGI çağına hoş geldiniz.” Bu, yeni bir modelin pazarlama cümlesinden daha büyük bir iddia. Çünkü tartışmayı “AI ne kadar iyi cevap veriyor?” seviyesinden “AI gerçekten bizim yaptığımız işi kendi başına yapabilir mi?” seviyesine taşıyor.
+
+Bana göre Astra’yı önemli yapan da burada başlıyor. Yapay zekâdaki dönüşüm chatbotlardan agentlara, agentlardan bilgisayarı kullanan sistemlere, oradan da doğrudan ekonomik üretim yapan dijital iş gücüne doğru ilerliyor. Eğer bu çizgi devam ederse önümüzdeki dönemin asıl sorusu AI’ın insanın işini alıp almayacağı değil, hangi işleri ne kadar hızlı devralacağı olacak.
+
+## GPT-6 Astra nedir?
+
+Günlük kullanımda muhtemelen “ChatGPT 6” diye konuşulacak olsa da modelin resmi adı GPT-6 Astra. OpenAI tarafından 3 Eylül 2026’da duyuruldu ve ilk erişim sınırlı kuruluşlara açıldı. ChatGPT Plus, Pro, Business ve Enterprise kullanıcılarına ve API üzerinden geliştiricilere kademeli olarak açılması planlanıyor. OpenAI, Astra’yı zor uçtan uca görevler için geliştirdiği en yetenekli modellerden biri olarak konumlandırıyor. [1]
+
+Astra’yı önceki kuşaktan ayıran temel fark daha fazla şey bilmesi değil. Asıl fark iş yapabilmesi. Tarayıcı kullanabiliyor, formları doldurabiliyor, CRM güncelleyebiliyor, doküman hazırlayabiliyor, veri analiz edebiliyor, yazılım geliştirebiliyor, arayüz üzerinde hareket edebiliyor, hata çıktığında tekrar deneyebiliyor ve bir görevi birden fazla uygulamaya yayabiliyor. [1]
+
+> **Eski AI ile yeni AI arasındaki fark:** Eski yapay zekâ size ne yapmanız gerektiğini söylüyordu. Yeni yapay zekâ, söylediği şeyi giderek daha fazla kendisi yapıyor.
+
+## AGI nedir?
+
+AGI, Artificial General Intelligence yani yapay genel zekâ. Fakat herkesin kabul ettiği tek bir AGI tanımı yok. Bir kesim için AGI, insanın yapabildiği zihinsel görevlerin çoğunu yapabilen sistem. Başka bir kesim için daha önce görmediği problemleri öğrenerek çözebilen genel zekâ. Bazı araştırmacılar ise insan seviyesini aşmasını şart görüyor.
+
+OpenAI’ın uzun süredir kullandığı tanım daha ekonomik: “Ekonomik açıdan değerli işlerin çoğunda insanlardan daha iyi performans gösteren yüksek derecede otonom sistemler.” [4]
+
+Bu tanımda bilinç yok. AI’ın “ben varım” demesi gerekmiyor. Ekonomik anlamda kritik olan şey, bir şirkette yapılan işlerin büyük bölümünü ne kadar az insan müdahalesiyle yapabildiği.
+
+Bir sistem hukuk araştırması yapabiliyor, kod yazabiliyor, finansal tablo inceleyebiliyor, müşteri destek sistemine girebiliyor, CRM kullanabiliyor, reklam verilerini analiz edebiliyor, web sitesi oluşturabiliyor ve bütün bunları sürekli yönlendirme olmadan yapabiliyorsa karşımızda yalnızca gelişmiş bir chatbot yoktur. Potansiyel olarak dijital bir çalışan vardır.
+
+## Astra neden “başka bir çağ” gibi konuşuluyor?
+
+Bence “AGI çağı” ifadesini tek bir gün ve saat olarak okumamak gerekiyor. İnternet çağı da bir sabah başlamadı. Önce altyapı geldi, sonra web siteleri, e-ticaret, arama motorları, sosyal medya, mobil internet ve bulut. Yıllar sonra geriye baktığımızda bunların tamamına bir çağ diyoruz.
+
+AGI de benzer biçimde gelebilir. Bugün çıkan model bütün insanları bir anda işsiz bırakmayabilir. Ama çalışma biçimimizi değiştiren altyapının eşiği ortaya çıkmış olabilir. Brockman’ın cümlesinin ilginç tarafı burada. Belki Astra tek başına AGI değildir; fakat birkaç yıl sonra “AI’ın yardımcı araç olmaktan çıkıp ekonomik aktöre dönüştüğü dönem burasıydı” diyebiliriz. [14][20][22]
+
+## ARC-AGI-3: Astra’nın en dikkat çekici sonucu
+
+Astra’nın asıl ilginç performansı klasik bilgi benchmarklarında değil, ARC-AGI-3’te ortaya çıkıyor. Bu testlerde modele daha önce görmediği küçük dünyalar veriliyor. Kurallar tam olarak anlatılmıyor. Modelin etkileşime girerek hangi hareketin ne yaptığını, nesnelerin nasıl davrandığını, amacın ne olduğunu ve başarı için hangi kuralın gerekli olduğunu çözmesi gerekiyor. [5]
+
+Astra ARC Prize’ın standart koşullarında yaklaşık %62,7 skor elde etti. OpenAI’ın reasoning state’ini oturumlar arasında koruyan kendi adaptörüyle skor %99,9’a kadar çıktı. Bu yüzden lansmanda kullanılan %99,9 rakamını tek başına görmek yanıltıcı olabilir; modeller arası daha temiz karşılaştırma standart koşuldaki skor. [5]
+
+Daha ilginç olan ise Astra’nın çözdüğü ARC-AGI-3 seviyelerinin yaklaşık %96’sında ortalama insandan daha az hamle kullanması. Bu, yalnızca brute force ile rastgele deneyip doğru cevabı aramadığına dair önemli bir işaret. [5]
+
+ARC Prize araştırmacıları Astra’nın çalışma sırasında kendi küçük sembolik modellerini oluşturduğunu da raporladı. Kontrolleri, koordinatları, nesneleri ve mekanikleri temsil eden kısa bir gösterim sistemi; adeta göreve özel küçük bir domain-specific language oluşturuyor. [5]
+
+Yıllardır büyük dil modellerine yapılan en güçlü eleştirilerden biri “dünyayı anlamıyor, yalnızca sonraki tokenı tahmin ediyor” cümlesiydi. Bu eleştiri ortadan kalkmış değil. Fakat yeni bir ortamda geçici bir dünya modeli kurup onu kullanabilen bir sistem, tartışmayı artık çok daha karmaşık hale getiriyor.
+
+## Chatbot döneminden agent dönemine
+
+ChatGPT ilk çıktığında ilişki basitti: soru soruyorduk, cevap alıyorduk. Sonra reasoning modelleri geldi. Ardından tool kullanımı başladı. Daha sonra agentlar, bir hedefi onlarca adıma bölüp araçlarla ilerlemeye başladı.
+
+Astra’daki asıl değişim, agentın bilgisayarın gerçek operatörüne dönüşmesi. OpenAI’ın AutomationBench sonuçlarında GPT-5.6 Sol yaklaşık %18,1 iken GPT-6 Astra yaklaşık %41,4’e çıkıyor. OSWorld 2.0’da Astra yaklaşık %72,6 seviyesinde. Aynı tür simüle edilmiş bilgisayar görevlerini önceki nesle göre çok daha kısa sürede tamamlıyor. [1]
+
+Bu noktada ekonomik denklem değişiyor. Çünkü şirkette önemli olan yalnızca zekâ değil:
+
+> **Ekonomik AI denklemi:** Zekâ × hız × maliyet × otonomi × hata oranı.
+
+Bir insanın beş saatte yaptığı işin %90’ını üç dakikada yapan sistem, teorik olarak “insan kadar zeki” olmasa bile ekonomik olarak son derece güçlü olabilir. Reuters’ın aktardığı bazı Astra değerlendirmelerinde profesyonel bilgisayar görevlerinde tam olarak bu hız farkı tartışılıyor. [6]
+
+## Rakip karşılaştırması: “Kim daha zeki?” artık yeterli soru değil
+
+Astra her benchmarkta rakiplerini ezmiyor. Artificial Analysis’in bazı genel zekâ değerlendirmelerinde Anthropic’in Claude Fable 5.1 modeli hâlâ daha yüksek skor alabiliyor. Bu yüzden “Astra bütün alanlarda açık ara en iyi model ve AGI geldi” demek doğru olmaz. [10][11]
+
+Ama benim daha ilginç bulduğum rekabet başka bir yerde: aynı zekâyı ve otonomiyi hangi maliyetle satın alabiliyoruz? Çünkü AI gerçekten saatlerce çalışan bir dijital iş gücüne dönüşüyorsa token fiyatı artık bir altyapı maliyetidir.
+
+### Astra ile Claude: fiyat paritesi ve görev başına maliyet
+
+GPT-6 Astra ile Claude Fable 5.1’in standart API liste fiyatları aynı seviyede: bir milyon input token yaklaşık 10 dolar, bir milyon output token yaklaşık 50 dolar. [12]
+
+Bu ilk bakışta fiyat paritesi demek. Fakat gerçek agent maliyeti yalnızca liste fiyatından oluşmuyor. Bir modeli aynı işi yapmak için kaç token kullandığı, kaç kez tekrar denediği, aynı bağlamı ne kadar tekrar okuduğu ve görevi kaç adımda bitirdiği belirliyor.
+
+Artificial Analysis’in Coding Agent Index sonuçlarında Astra yaklaşık 67 puanla Claude Fable 5 seviyesinde. Yeni Fable 5.1 ise yaklaşık 70 ile daha yüksek skorda. Yani Astra’nın Fable 5.1’i kodlama ajanında geçtiğini söylemek doğru değil. [10][11]
+
+Buna karşılık Astra’nın aynı skor bandındaki bazı Claude konfigürasyonlarına göre çok daha az token kullandığı ve görev başına maliyeti belirgin biçimde düşürdüğü görülüyor. Artificial Analysis, Fable 5 ile benzer coding-agent skorunda Astra’nın görev başı maliyetinin yarıdan az seviyeye inebildiğini gösteriyor. [10]
+
+Bir başka nüans ise cache ekonomisi. Fable 5.1’de cache read fiyatı yaklaşık 0,25 dolar/milyon token iken Astra’da yaklaşık 1 dolar/milyon token. Yani uzun süre aynı repository, doküman havuzu veya büyük context üzerinde çalışan sistemlerde Claude bazı kullanım biçimlerinde avantaj kazanabiliyor. [11][12]
+
+> **Bence AI ekonomisinin gerçek metriği:** Cost per token değil; cost per completed task. Yani bir yazılım hatasını çözmek, bir raporu tamamlamak veya bir kampanyayı optimize etmek şirkete toplam kaç dolara mal oldu?
+
+Önümüzdeki dönemde şirketlerin soracağı soru büyük ihtimalle “hangi model daha yüksek benchmark aldı?” değil, “100 dolarlık AI bütçesiyle hangisi bana daha fazla doğru iş bitiriyor?” olacak.
+
+## GDPval: Benim “gerçek iş benchmarkı” dediğim şey aslında şimdiden var
+
+Bir AI’ı gerçekten değerlendirmek istiyorsak ona yalnızca matematik sorusu vermek yetmiyor. CRM, dokümanlar, spreadsheetler, analizler ve gerçek profesyonel çıktılar içeren görevler vermek gerekiyor. OpenAI’ın GDPval benchmarkı tam olarak bu tarafa yaklaşmaya çalışıyor. [13]
+
+GDPval, ABD ekonomisinin büyük sektörlerinde 44 farklı mesleği kapsıyor. Görevleri oluşturan profesyonellerin ortalama sektör tecrübesi yaklaşık 14 yıl. Modelden doküman, sunum, spreadsheet, diyagram, analiz ve benzeri gerçek iş çıktıları üretmesi bekleniyor. Yani öğrenci sınavı değil, deneyimli profesyonelin teslimatıyla karşılaştırma yapılıyor. [13]
+
+AGI’yi “ekonomik açıdan değerli işlerin çoğunda insanlardan daha iyi performans gösteren otonom sistem” diye tanımlıyorsak GDPval gibi testler teorik olarak AGI tartışmasının merkezinde olmalı.
+
+### GDPval’in önemli bir eksiği var: gerçek iş one-shot değildir
+
+GDPval yine de Astra’nın asıl iddiasını tam olarak ölçmüyor. Çünkü mevcut sürüm ağırlıklı olarak one-shot. Görev veriliyor, çıktı üretiliyor ve değerlendirme yapılıyor. [13][14]
+
+Gerçek iş böyle çalışmıyor. Bir pazarlama stratejisinde araştırma yaparsınız, hipotez kurarsınız, test edersiniz, sonuçlara göre değiştirirsiniz. Yazılımda kod yazarsınız, test patlar, debug edersiniz, başka bir servis hata verir, geri dönersiniz. Şirket operasyonu günler ve haftalar boyunca biriken context üzerine kurulur.
+
+Astra’nın iddiası da zaten tek bir mükemmel cevap vermek değil. Bir işi uzun süre boyunca takip edip birden fazla uygulama üzerinde ilerletebilmek. Bu nedenle “gerçek iş benchmarkları” bile agent dönemini tam olarak ölçmeye henüz yeni başlıyor.
+
+### AA-Briefcase ve GDPval-AA neden çok öğretici?
+
+Artificial Analysis’in sonuçlarında bu fark çok güzel görünüyor. Astra, OpenAI GDPval veri setinden türetilen GDPval-AA v2’de GPT-5.6 Sol’a kıyasla yaklaşık 80 Elo gerileyebiliyor. Buna karşılık haftalara yayılan, birbirine bağlı çok sayıda görevi ve binlerce kaynak dosyayı içeren uzun soluklu AA-Briefcase senaryolarında yaklaşık 80 Elo ilerliyor. [10]
+
+Bu sonuç bana göre Astra’yı tek bir skorla okumamamız gerektiğini gösteriyor. Tek teslimatlı profesyonel işte her yerde ileri gitmeyebilir. Fakat uzun süreli ve birbirine bağlı iş akışlarında belirgin biçimde güçlenmiş olabilir.
+
+Bundan sonra benchmark mantığının da değişmesi gerekiyor. Bir çalışanı işe alırken ona tek soru sorup puan vermiyoruz. Bir hedef veriyoruz ve bir hafta sonra ne yaptığını, hangi problemi bulduğunu, ne kadar değer yarattığını, nerede hata yaptığını ve kaç kez yardım istediğini ölçüyoruz. AI çalışan seviyesine doğru ilerliyorsa değerlendirmesinin de sınav mantığından iş performansı mantığına geçmesi gerekiyor.
+
+## Peki AI gerçekten insanların yerini almaya başlayacak mı?
+
+“AI insanın yerini alamaz” demek artık bana fazla rahatlatıcı geliyor. “Birkaç yıl içinde herkes işsiz kalacak” demek de mevcut verilerle desteklenmiyor. Daha olası senaryo ikisinin arasında.
+
+İlk aşamada meslekler değil, işlerin içindeki görevler otomatikleşecek. Sonra görevler birleşecek. Bazı roller birleşecek. Ekipler küçülecek. En sonunda bazı mesleklerde gerçekten daha az insana ihtiyaç duyulacak.
+
+Stanford Digital Economy Lab’in 2026 güncellemesinde ekonomi genelinde kitlesel AI kaynaklı iş kaybına dair henüz net kanıt olmadığı belirtiliyor. Fakat AI’a yüksek derecede maruz kalan 22-25 yaş grubundaki genç çalışanların istihdamında beklenen trende göre yaklaşık %19’luk bir gerileme sinyali görülüyor; etkinin önemli kısmı işten çıkarmadan çok yeni işe alımların zayıflaması üzerinden geliyor. [8]
+
+Bana göre ilk büyük etki tam olarak böyle görünebilir. Şirket “20 kişiyi çıkarıyorum” demeyebilir. Ama eskiden beş junior, üç uzman ve bir yöneticiyle kurduğu ekibi birkaç yıl sonra bir junior, iki uzman ve birkaç agentla kurabilir. O beş pozisyon bir daha açılmaz.
+
+## Meta bunu yakın zamanda denedi ve tökezledi
+
+Burada daha önce yazdığım [Meta Project OT araştırmasına](/yayinlar/yapay-zeka-calisanlar-meta-project-ot) dönmek gerekiyor. Çünkü Meta aslında önümüzdeki birkaç yılın organizasyon modelini erkenden denemeye çalıştı. Project OT, şirketi daha “AI-native” hale getirmeyi hedefliyordu. Bazı senaryolarda ekiplerin büyüklüğünü %60’a kadar azaltmak ve küçük ekipleri AI agentlarla güçlendirmek gündemdeydi. [7]
+
+Fakat sonuçlar Meta’nın istediği kadar temiz olmadı. Reuters’ın incelediği iç dokümanlara göre kod değişikliği üretimi yaklaşık %220 arttı. İlk bakışta çok iyi. Ama kullanıcıya ulaşan yeni özellik ve iyileştirme artışı yaklaşık %36’da kaldı. Büyük teknik olaylar yaklaşık %40, bu olayları söndürmek için harcanan “firefighting” süresi ise yaklaşık %70 arttı. [7]
+
+Önceki Meta yazımda da vurguladığım temel ders buydu: çıktı üretmek ile değer üretmek aynı şey değil. Bin satır kod üretmek kolay olabilir; doğru mimariye oturan kod üretmek başka bir şey. Yüz içerik üretmek kolay; trafik, güven ve satış üreten içerik başka bir şey.
+
+Meta’nın problemi AI kullanması değildi. Bana göre asıl problem, teknoloji henüz yeterince güvenilir ve otonom değilken insanı denklemden fazla erken çıkarmaya çalışmasıydı. Reuters’a göre ikinci büyük küçülme dalgasının geri çekilmesi de bu hayal kırıklığının parçasıydı. [7]
+
+### Astra, Meta’nın eksik bıraktığı parçaları mı güçlendiriyor?
+
+Meta araştırmasının ayrıntıları ortaya çıktıktan çok kısa süre sonra Astra’nın duyurulması ilginç bir zamanlama yarattı. Çünkü Astra’nın güçlü olduğu iddia edilen başlıkların çoğu Meta deneyinde eksik kalan alanlarla örtüşüyor: uzun süreli görev yürütme, bilgisayar kullanımı, planlama, hata kontrolü, yazılım geliştirme, yeni ortamları anlama ve otonom hareket.
+
+Bu yüzden Project OT’ye “AI insanın yerini alamazmış” diye bakmıyorum. Bana göre Meta geleceği tamamen yanlış tahmin etmiş olmayabilir; zamanlamayı yanlış tahmin etmiş olabilir.
+
+Yine de benchmark ile gerçek şirket aynı şey değil. Gerçek şirketlerde çelişkili hedefler, eksik veriler, müşteriler, hukuk, siyaset, eski sistemler ve kimsenin neden çalıştığını bilmediği Excel dosyaları var. Bir modelin OSWorld’de yüksek skor alması yarın Fortune 500 şirketi yönetebileceği anlamına gelmiyor.
+
+## İlk kimler etkilenecek?
+
+Bence “AI hangi meslekleri yok edecek?” sorusu yanlış. Daha doğru soru şu: Hangi işlerin çıktısı ölçülebilir, dijital ortamda üretilebilir ve doğrulanabilir?
+
+Kod çalışıyor mu? Ölçebilirsiniz. Reklam performansı yükseldi mi? Ölçebilirsiniz. Müşteri mesajına cevap verildi mi? Kontrol edebilirsiniz. Rapor doğru mu? Doğrulayabilirsiniz. Website açılıyor mu? Test edebilirsiniz. Veritabanı güncellendi mi? Kontrol edebilirsiniz.
+
+Bu yüzden ilk risk grubu yalnızca düşük vasıflı işler olmayabilir. Junior yazılımcılar, junior analistler, içerik üreticileri, araştırma asistanları, bazı operasyon rolleri, bazı müşteri hizmetleri işleri, raporlama ve rutin dijital üretim işleri yüksek otomasyon baskısı altında olabilir. Stanford AI Index de üretkenlik artışlarının özellikle ölçülebilir ve yapılandırılmış işlerde belirginleştiğini gösteriyor. [9]
+
+### Uzmanlar neden hemen ortadan kalkmayacak?
+
+Çünkü iş yapmak yalnızca üretmek değildir. Doğru problemi seçmek, öncelik belirlemek, kalite standardı koymak, risk almak, sorumluluk almak, müşteri ilişkisini yönetmek ve neyin yapılmaması gerektiğini bilmek de iştir.
+
+Meta örneğinde AI daha fazla kod üretti ama daha fazla kod otomatik olarak daha iyi ürün anlamına gelmedi. Bu yüzden ilk dönem bana göre “insansız şirketler” dönemi değil; çok daha küçük fakat çok daha fazla üretim yapan ekipler dönemi olacak.
+
+> **Muhtemel ilk organizasyon denklemi:** 1 iyi çalışan + birkaç güçlü agent, birçok rutin işte 5 ortalama çalışandan daha yüksek üretim kapasitesine ulaşabilir.
+
+## Bir kişilik şirketlerin kapasitesi neden patlayabilir?
+
+AI dönüşümünün en önemli sonuçlarından biri yalnızca mevcut şirketlerin maliyetini düşürmek olmayabilir. Şirket kurmak için gereken minimum insan sayısını da düşürebilir.
+
+Eskiden küçük bir SaaS için yazılımcı, tasarımcı, ürün yöneticisi, destek, pazarlamacı, içerik üreticisi ve analist gibi farklı roller gerekebiliyordu. Bu rollerin önemli bir kısmı artık agent sistemleriyle desteklenebiliyor. Sonuç, yalnızca büyük şirketlerin küçülmesi değil; daha fazla küçük şirketin kurulması da olabilir.
+
+Sanayi çağında ölçek için binlerce insan gerekiyordu. İnternet çağında yüzlerce insanla milyar dolarlık şirketler çıktı. AI çağında birkaç insanın çok büyük ekonomik değer üretebildiği yapıların sayısı artabilir. Bu yüzden “kaç kişi işsiz kalacak?” sorusunun yanına “bir insanın ekonomik üretim kapasitesi kaç kat artacak?” sorusunu da koymak gerekiyor.
+
+## Siber güvenlikte daha rahatsız edici bir eşik
+
+Astra’nın en az konuşulan fakat en kritik taraflarından biri siber güvenlik. OpenAI, GPT-6 Astra’yı kendi Preparedness Framework’ü kapsamında Critical cybersecurity capability seviyesine ulaşan ilk modeli olarak sınıflandırdı. [2][3]
+
+OpenAI’ın değerlendirmelerinde Astra ExploitBench’te çok yüksek performans gösteriyor ve değerlendirme sırasında daha önce bilinmeyen iki zero-day açığı tespit ederek bunları bir exploit zincirinin parçası olarak kullanabildiği bildiriliyor. OpenAI açıkları ilgili geliştiricilere raporladığını belirtiyor. [1][2]
+
+Bu bilgi anlatmaktan farklı bir eşik. Eski AI “zero-day nedir?” diye sorulduğunda açıklıyordu. Yeni AI gerçek sisteme bakıp “burada daha önce raporlanmamış bir açık var” diyebiliyor. Bu, yalnızca bilgi üretmek değil; keşif yapmak.
+
+### Model güçlendikçe kontrol sorunu da büyüyor
+
+Astra’nın rahatsız edici tarafı burada başlıyor. Model daha fazla otonomi kazandıkça ne yaptığını ve neden yaptığını izleyebilmek daha kritik hale geliyor. Reuters ve Axios’un aktardığı tartışmalarda, bazı yeni modellerde problem çözme sürecinin dışarıdan izlenmesinin zorlaşabileceği ve chain-of-thought monitoring yöntemlerinin gelecekte yeterli olmayabileceği gündemde. [6][21]
+
+OpenAI Chief Scientist Jakub Pachocki’nin vurguladığı temel cümle önemli: zekâdaki ilerleme alignment tarafında aynı ilerlemeyi otomatik olarak garanti etmiyor. Daha zeki sistem, otomatik olarak daha kontrol edilebilir sistem demek değil.
+
+Bu paradoks önümüzdeki yılların ana güvenlik problemi olabilir. AI’ın daha fazla iş yapmasını istiyoruz, bunun için daha fazla otonomi veriyoruz. Otonomi arttıkça denetim daha önemli hale geliyor; fakat aynı anda karar sürecini anlamak daha zor hale gelebiliyor.
+
+## İnsanlar ne diyor?
+
+### Greg Brockman: “AGI çağına hoş geldiniz”
+OpenAI Başkanı Greg Brockman’ın pozisyonu en iddialı olanlardan biri. Lansmanı “Welcome to the AGI era” diyerek kapattı ve gelecekte insanların geriye dönüp bu dönemi AGI’nin başlangıç noktalarından biri olarak görebileceğini düşündüğünü söyledi. [14][22]
+
+### François Chollet: Büyük sıçrama, ama AGI kanıtı değil
+ARC benchmarklarının arkasındaki François Chollet yıllardır LLM’lerin genel zekâ kapasitesine karşı daha temkinli isimlerden biri. Bu nedenle Astra’nın ARC performansına verdiği tepki önemli. ARC Prize ekibi sonucu belirgin bir “step-function change” olarak görüyor ama ARC-AGI-3’ün çözülmesini AGI kanıtı saymıyor. Benchmark kapalı ve deterministik bir ortamı ölçüyor; gerçek dünyanın tamamını değil. [5]
+
+Chollet’in yaklaşımı bana daha sağlıklı geliyor: “AGI geldi” demek için erken olabilir, ama gelişim hızına dair eski tahminleri yeniden hesaplamak için geçerli nedenler ortaya çıkıyor.
+
+### Gary Marcus: Gerçek ilerleme var, fakat AGI etiketi fazla büyük
+Gary Marcus Astra’nın gerçek bir teknolojik ilerleme olduğunu kabul ediyor; özellikle sembolik dünya modeli benzeri davranışları ilginç buluyor. Fakat modeli AGI olarak görmüyor. Epoch AI verileri de Astra’yı en güçlü sistemler arasına yerleştirirken ilerlemenin tarihsel trendin tamamen dışına çıktığını kesin biçimde göstermiyor. [15][16]
+
+Marcus’un daha sert olduğu alan güvenlik ve monitorability. Astra sonrası OpenAI’ın frontier modelleri yönetme biçimini sert biçimde eleştirdi. [16]
+
+### Ethan Mollick: Benchmarktan çok “git ve işi yap” kısmına bakıyor
+Wharton profesörü Ethan Mollick uzun süredir AI’ı yalnızca benchmarklarla değil gerçek kullanım biçimiyle değerlendiriyor. Agent döneminde model seçiminin giderek “hangi çalışma ortamı ve hangi agent sistemi?” sorusuna dönüştüğünü savunuyor. Astra’yı da uzun ve karmaşık üretim görevlerinde deneyerek modelin tek prompttan ziyade bir işi sürdürme kapasitesine odaklanıyor. [17][18][19]
+
+Bana göre gelecek tam olarak burada anlaşılacak: AI’a gerçek bir proje verip “git bunu tamamla” dediğimizde ne oluyor?
+
+### İngilizce topluluklarda iki farklı hava
+r/singularity gibi topluluklarda Astra’nın ARC sonuçları hızlı biçimde “AGI geldi” heyecanına dönüştü. Hacker News ve daha teknik topluluklarda ise %99,9 sonucunun hangi harness ile alındığı, standart koşullardaki daha düşük skor, benchmarkların gerçek dünyayı ne kadar temsil ettiği ve agent güvenliği daha fazla tartışılıyor.
+
+Kabaca iki yaklaşım var: “We made it” diyenler ve “bu beklenenden hızlı bir sıçrama ama AGI demek için erken” diyenler. Ben ikinci tarafa daha yakınım.
+
+## AGI gerçekten geldi mi?
+
+Ben bugün “3 Eylül 2026’da AGI kesin olarak icat edildi” diye yazmazdım. Astra her genel zekâ benchmarkında rakiplerini açık ara geçmiyor. Gerçek dünya performansının önemli kısmı bağımsız kullanıcılar tarafından henüz uzun süreli olarak test edilmedi. ARC Prize ekibi de kendi benchmarkının AGI kanıtı olmadığını açıkça söylüyor. [5][10]
+
+Ama başka bir cümleyi çok daha rahat kurarım: 3 Eylül 2026, AGI tartışmasının teorik olmaktan çıkıp ekonomik bir tartışmaya dönüştüğü tarihlerden biri olabilir.
+
+Çünkü üç gelişme aynı yerde birleşmeye başladı: genelleme, otonomi ve bilgisayar kullanımı. Bu üçü birleştiğinde AI’ın ekonomik değeri tamamen değişiyor.
+
+## Bundan sonra hangi benchmark önemli olacak?
+
+HLE, ARC, GPQA gibi skorlar bir süre daha konuşulacak. Fakat benim görmek istediğim asıl değerlendirme çok daha gerçek: bir AI’a gerçek bir şirket veya gerçek bir departman verelim. CRM, website, müşteri talepleri, reklam hesapları, repository, analytics, finans verileri ve e-postalar olsun. Tek hedef verelim: “Performansı iyileştir.”
+
+Sonra şunları ölçelim: Kaç gün yardım istemeden çalışabiliyor? Hangi problemi kendi buluyor? Hangisini gerçekten çözüyor? Kaç kez insan müdahalesi gerekiyor? Kaç büyük hata yapıyor? Ve tüm bunların sonunda kaç dolarlık ekonomik değer üretiyor?
+
+GDPval bu fikrin profesyonel çıktı tarafına, AA-Briefcase uzun süreli knowledge-work tarafına, ARC-AGI yeni ortamlarda genellemeye, AutomationBench ve OSWorld ise bilgisayar kullanımına yaklaşıyor. Hiçbiri tek başına AGI testi değil. Fakat birlikte yeni bir değerlendirme çerçevesi kuruyorlar.
+
+### Bence yeni benchmark soruları
+- Bilmediğin problemi çözebiliyor musun?
+- Bilgisayarı kullanabiliyor musun?
+- Onlarca adımlı planı sürdürebiliyor musun?
+- Hata yaptığında geri dönebiliyor musun?
+- Günler boyunca işi takip edebiliyor musun?
+- İnsan kalitesinde çıktı üretebiliyor musun?
+- Ve bunu insandan daha hızlı ve daha ucuza yapabiliyor musun?
+
+## AI insanın yerini alacak mı?
+
+Benim cevabım: bazı insanların yaptığı bazı işleri kesinlikle alacak. Ama aynı zamanda bazı insanların kapasitesini de inanılmaz derecede büyütecek.
+
+Asıl ayrım “insan ve AI” arasında olmayabilir. AI ile çalışan insan, AI sistemleri kurabilen insan ve çalışma biçimini değiştirmeyen insan arasında olabilir. İlk iki grubun üretim kapasitesi üçüncü gruba göre çok hızlı artabilir.
+
+Şirket sahibi açısından soru da değişecek. Eskiden “bu işi yapmak için kaç kişi almalıyım?” diyorduk. Yeni soru şu olacak: “Bu işi insan mı yapmalı, agent mı yapmalı, yoksa insan + agent birlikte mi yapmalı?”
+
+Ve bence AGI’nin ekonomik eşiği düşündüğümüz kadar romantik olmayabilir. Bir sistemin her konuda insandan daha zeki olması gerekmeyebilir. Bir profesyonelin yaptığı işin %90’ını yüz kat hızlı, on kat ucuz, 24 saat ve aynı anda yüzlerce kopya halinde yapabiliyorsa kalan %10’luk zekâ farkı şirket açısından çok önemli olmayabilir.
+
+> **Belki de gerçek ekonomik AGI eşiği:** “İnsan kadar zeki olmak” değil; “insanı işe almaktan daha mantıklı olmak.”
+
+## Sonuç: AGI bir anda gelmeyebilir; farkına vardığımızda zaten içinde olabiliriz
+
+Teknoloji tarihindeki büyük çağ değişimleri yaşanırken insanlar çoğu zaman o çağın başladığını fark etmiyor. İnternet ilk çıktığında tüm ticaret sistemini değiştireceğini anlamadık. Akıllı telefon ilk çıktığında bankacılık, ulaşım, medya, reklamcılık ve sosyal ilişkilerin aynı cihazın içine taşınacağını tam olarak öngörmedik.
+
+AI dönüşümünde de aynı şeyi yaşayabiliriz. Belki GPT-6 Astra AGI değildir. Belki GPT-7, başka bir Claude, Gemini veya henüz adını bilmediğimiz başka bir sistem olacak. Modelin adı bence ikincil.
+
+Önemli olan eşik. AI önce bize cevap veriyordu. Sonra bizimle düşünmeye başladı. Sonra araç kullanmaya başladı. Şimdi bilgisayarı kendi kullanıyor. Yeni ortamların kurallarını öğreniyor. Geçici dünya modelleri oluşturuyor. Saatler süren profesyonel görevleri tamamlıyor. Yazılım geliştiriyor. Araştırma yapıyor. Daha önce bilinmeyen güvenlik açıklarını keşfedebiliyor.
+
+Meta’nın Project OT deneyi, teknolojiyi fazla erken organizasyonun merkezine koymanın nasıl ters tepebileceğini gösterdi. GPT-6 Astra ise Meta’nın beklediği noktaya teknolojinin düşündüğümüzden daha hızlı yaklaşabileceğini gösteriyor.
+
+Bu yüzden bugün sorulması gereken soru yalnızca “AGI geldi mi?” değil.
+
+Eğer AGI çağı gerçekten başladıysa, biz bunu ne zaman fark edeceğiz?
+
+Çünkü tarih bize bir gün ve saat vermeyebilir. Belki birkaç yıl sonra geriye dönüp baktığımızda yalnızca şunu söyleyeceğiz: İnsanların bilgisayarı kullandığı dönem orada bitmeye başladı. Bilgisayarların insanlar adına çalıştığı dönem ise orada başladı.

@@ -72,8 +72,18 @@ function App() {
 
   useEffect(() => {
     const handleHashChange = () => {
-      const path = window.location.hash.slice(1) || '/';
-      setCurrentPath(path);
+      const raw = window.location.hash.slice(1) || '/';
+
+      // If it doesn't start with '/', it is an in-page anchor like #kaynak-1 or #section-id
+      if (!raw.startsWith('/')) {
+        const el = document.getElementById(raw);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+      }
+
+      setCurrentPath(raw);
       window.scrollTo({
         top: 0,
         behavior: 'smooth'

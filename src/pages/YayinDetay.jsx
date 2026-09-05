@@ -231,7 +231,7 @@ function parseMarkdownImage(line) {
 }
 
 // Helper to parse inline markdown: bold, markdown links, citations
-function renderFormattedContent(text, onNavigate) {
+function renderFormattedContent(text, onNavigate, sources = []) {
   const regex = /(\[([^\]]+)\]\(([^)]+)\)|\[\d+\]|\*\*([^*]+)\*\*)/g;
   const parts = [];
   let lastIndex = 0;
@@ -273,15 +273,36 @@ function renderFormattedContent(text, onNavigate) {
         </a>
       );
     } else if (/^\[\d+\]$/.test(fullMatch)) {
-      const citationNum = fullMatch.replace(/[^\d]/g, '');
+      const citationNum = parseInt(fullMatch.replace(/[^\d]/g, ''), 10);
+      const sourceObj = sources?.[citationNum - 1];
+      const targetUrl = sourceObj?.url;
+
       parts.push(
         <a
           key={`c-${match.index}`}
-          href={`#kaynak-${citationNum}`}
-          className="text-cyber-cyan/90 hover:text-white font-mono text-xs font-semibold px-1 py-0.5 rounded bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/20 transition-colors mx-0.5 align-baseline"
-          title={`Kaynak [${citationNum}]`}
+          href={targetUrl || '#kaynaklar'}
+          target={targetUrl ? '_blank' : undefined}
+          rel={targetUrl ? 'noreferrer noopener' : undefined}
+          onClick={(e) => {
+            if (!targetUrl) {
+              e.preventDefault();
+              const el = document.getElementById(`kaynak-${citationNum}`);
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                el.classList.add('ring-2', 'ring-cyan-400', 'bg-cyan-500/25');
+                setTimeout(() => {
+                  el.classList.remove('ring-2', 'ring-cyan-400', 'bg-cyan-500/25');
+                }, 2500);
+              }
+            }
+          }}
+          className="inline-flex items-center gap-0.5 text-cyber-cyan hover:text-white font-mono text-xs font-bold px-1.5 py-0.5 rounded bg-cyan-500/15 hover:bg-cyan-500/30 border border-cyan-500/30 transition-all mx-0.5 align-baseline hover:scale-105 shadow-sm shadow-cyan-500/20 cursor-pointer group/cite"
+          title={sourceObj ? `[${citationNum}] ${sourceObj.label}\nKaynağı yeni sekmede açmak için tıklayın` : `Kaynak [${citationNum}]`}
         >
-          [{citationNum}]
+          <span>[{citationNum}]</span>
+          {targetUrl ? (
+            <ExternalLink className="w-2.5 h-2.5 opacity-60 group-hover/cite:opacity-100 transition-opacity shrink-0" />
+          ) : null}
         </a>
       );
     }
@@ -488,6 +509,19 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 <UserRound className="w-3.5 h-3.5 text-cyan-400" />
                 Yazar: <span className="font-semibold text-white">{articleMeta.author}</span>
               </span>
+              {articleMeta.sources?.length ? (
+                <button
+                  type="button"
+                  onClick={() => document.getElementById('kaynaklar')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  className="inline-flex items-center gap-1.5 text-gray-400 hover:text-cyber-cyan transition-colors cursor-pointer"
+                  title="Kaynaklar bölümüne git"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-cyan-400" />
+                  <span className="underline underline-offset-2 decoration-cyan-500/30 hover:decoration-cyan-400 font-semibold text-gray-300 hover:text-white">
+                    {articleMeta.sources.length} Kaynak
+                  </span>
+                </button>
+              ) : null}
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white leading-tight max-w-4xl tracking-tight">
@@ -579,13 +613,19 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 <ul className="space-y-2 text-xs sm:text-sm text-gray-400 font-light grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
                   {tocHeadings.map((h, i) => (
                     <li key={`${h.slug}-${i}`} className={h.level === 3 ? 'pl-4 text-gray-500' : ''}>
-                      <a
-                        href={`#${h.slug}`}
-                        className="hover:text-cyber-cyan transition-colors line-clamp-1 inline-flex items-center gap-1.5"
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const el = document.getElementById(h.slug);
+                          if (el) {
+                            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                          }
+                        }}
+                        className="text-left hover:text-cyber-cyan transition-colors line-clamp-1 inline-flex items-center gap-1.5 cursor-pointer w-full group/toc"
                       >
-                        <span className="text-[10px] text-cyan-500/60 font-mono">{(i + 1).toString().padStart(2, '0')}.</span>
-                        <span>{h.title}</span>
-                      </a>
+                        <span className="text-[10px] text-cyan-500/60 font-mono group-hover/toc:text-cyber-cyan transition-colors">{(i + 1).toString().padStart(2, '0')}.</span>
+                        <span className="truncate">{h.title}</span>
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -662,7 +702,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                     className="my-8 rounded-2xl border border-cyan-500/30 bg-gradient-to-r from-cyan-950/30 via-cyan-900/10 to-transparent p-5 sm:p-6 text-sm sm:text-base text-cyan-200/90 leading-relaxed font-normal shadow-lg shadow-cyan-950/20 relative"
                   >
                     <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-cyber rounded-l-2xl" />
-                    <p className="pl-3">{renderFormattedContent(quoteContent, onNavigate)}</p>
+                    <p className="pl-3">{renderFormattedContent(quoteContent, onNavigate, articleMeta.sources)}</p>
                   </aside>
                 );
               }
@@ -673,7 +713,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 return (
                   <div key={`li-${index}`} className="flex items-start gap-3 pl-2 sm:pl-4 text-sm sm:text-base text-gray-300 font-light leading-relaxed">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyber-cyan mt-2.5 shrink-0" />
-                    <p>{renderFormattedContent(itemContent, onNavigate)}</p>
+                    <p>{renderFormattedContent(itemContent, onNavigate, articleMeta.sources)}</p>
                   </div>
                 );
               }
@@ -681,7 +721,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
               // Standard Paragraph
               return (
                 <p key={`${line.slice(0, 30)}-${index}`} className="text-sm sm:text-base text-gray-300 leading-8 font-light">
-                  {renderFormattedContent(line, onNavigate)}
+                  {renderFormattedContent(line, onNavigate, articleMeta.sources)}
                 </p>
               );
             })}
@@ -695,27 +735,40 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 <h2 className="text-xl sm:text-2xl font-extrabold text-white">Kaynaklar & Referanslar</h2>
               </div>
               <p className="text-xs text-gray-400 mb-6 font-light">
-                Bu analizdeki teknik veriler, benchmarklar, kurumsal dokümanlar ve uzman görüşleri için başvurulan kaynaklar aşağıda listelenmiştir.
+                Bu analizdeki teknik veriler, benchmarklar, kurumsal dokümanlar ve uzman görüşleri için başvurulan kaynaklar aşağıda listelenmiştir. Bağlantılara tıklayarak orijinal kaynakları inceleyebilirsiniz.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {articleMeta.sources.map((source, sIndex) => (
-                  <a
-                    key={source.url}
-                    id={`kaynak-${sIndex + 1}`}
-                    href={source.url}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="flex items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/3 p-3.5 text-xs text-gray-300 hover:text-white hover:border-cyan-500/30 hover:bg-white/5 transition-all group"
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <span className="w-6 h-6 rounded-md bg-white/5 flex items-center justify-center font-mono text-[11px] text-cyber-cyan shrink-0 font-bold">
-                        {sIndex + 1}
-                      </span>
-                      <span className="truncate font-medium">{source.label}</span>
-                    </div>
-                    <ExternalLink className="w-3.5 h-3.5 text-gray-500 group-hover:text-cyber-cyan shrink-0 transition-colors" />
-                  </a>
-                ))}
+                {articleMeta.sources.map((source, sIndex) => {
+                  let cleanUrl = '';
+                  try {
+                    const parsed = new URL(source.url);
+                    cleanUrl = parsed.hostname + (parsed.pathname.length > 1 ? parsed.pathname.slice(0, 24) + '...' : '');
+                  } catch {
+                    cleanUrl = source.url.replace(/^https?:\/\//, '');
+                  }
+
+                  return (
+                    <a
+                      key={source.url}
+                      id={`kaynak-${sIndex + 1}`}
+                      href={source.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="flex items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/3 p-3.5 text-xs text-gray-300 hover:text-white hover:border-cyan-500/30 hover:bg-white/5 transition-all group cursor-pointer"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="w-6 h-6 rounded-md bg-white/5 flex items-center justify-center font-mono text-[11px] text-cyber-cyan shrink-0 font-bold group-hover:bg-cyan-500/20 transition-colors">
+                          {sIndex + 1}
+                        </span>
+                        <div className="min-w-0">
+                          <div className="truncate font-medium text-white group-hover:text-cyber-cyan transition-colors">{source.label}</div>
+                          <div className="text-[10px] text-gray-500 truncate font-mono mt-0.5">{cleanUrl}</div>
+                        </div>
+                      </div>
+                      <ExternalLink className="w-3.5 h-3.5 text-gray-500 group-hover:text-cyber-cyan shrink-0 transition-colors" />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           ) : null}

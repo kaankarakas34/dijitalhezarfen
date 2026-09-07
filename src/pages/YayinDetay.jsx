@@ -322,11 +322,16 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
   const [copied, setCopied] = useState(false);
   const [readingProgress, setReadingProgress] = useState(0);
 
-  const rawArticle = getArticleBySlug(slug);
-  const articleMeta = rawArticle ? localizedArticle(rawArticle, lang) : null;
-  const categoryLabel = articleMeta
-    ? articleCategories.find((category) => category.id === articleMeta.category)?.label[lang === 'en' ? 'en' : 'tr']
-    : '';
+  const articleMeta = useMemo(() => {
+    const rawArticle = getArticleBySlug(slug);
+    return rawArticle ? localizedArticle(rawArticle, lang) : null;
+  }, [slug, lang]);
+
+  const categoryLabel = useMemo(() => {
+    if (!articleMeta) return '';
+    return articleCategories.find((category) => category.id === articleMeta.category)?.label[lang === 'en' ? 'en' : 'tr'] || '';
+  }, [articleMeta, lang]);
+
   const firstParagraph = useMemo(() => articleMeta?.desc || articleLines[0] || '', [articleLines, articleMeta?.desc]);
   const bodyLines = useMemo(() => articleLines, [articleLines]);
 
@@ -409,13 +414,29 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
   }, [articleMeta, categoryLabel]);
 
   useEffect(() => {
-    if (!articleMeta?.source) return;
+    if (!articleMeta?.source) {
+      setArticleLines([]);
+      return;
+    }
 
+    let isMounted = true;
     fetch(articleMeta.source)
       .then((response) => response.text())
-      .then((text) => setArticleLines(normalizeArticle(text, articleMeta)))
-      .catch(() => setArticleLines([]));
-  }, [articleMeta]);
+      .then((text) => {
+        if (isMounted) {
+          setArticleLines(normalizeArticle(text, articleMeta));
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          setArticleLines([]);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [articleMeta?.source]);
 
   const handleCopyLink = () => {
     const url = window.location.href;

@@ -1,5 +1,6 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
+Disallow: /articles/
 
 # Sitemaps
 Sitemap: https://dijitalhezarfen.com/sitemap.xml

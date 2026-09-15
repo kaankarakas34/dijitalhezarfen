@@ -1,0 +1,984 @@
+Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık? Bir “Yapay Zekâ Anayasası” yazmak, yapay zekânın dünyayı ele geçirmesini gerçekten engelleyebilir mi?
+
+1942 yılında Isaac Asimov, robotların insanlara zarar vermesini engellemek için üç hayali yasa yazdı. [36]
+
+84 yıl sonra Microsoft, geliştireceği gerçek yapay zekâ modellerine şunu yazmak zorunda kaldı:
+
+> “People matter more than AI.” [1]
+
+Ve daha da önemlisi:
+
+> “If humans can’t understand it, humans can’t oversee it.” [1]
+
+Bir teknoloji şirketinin, geliştirdiği yapay zekâya açıkça “insan tarafından kapatılmaya direnmeyeceksin, insanın anlayamayacağı bir dilde başka yapay zekâlarla haberleşmeyeceksin, yetkini kendi kendine genişletmeyeceksin” demesi bana göre başlı başına üzerinde durulması gereken bir eşik.
+
+Çünkü mesele artık yalnızca yapay zekânın ne kadar akıllı olduğu değil.
+
+Mesele, ne kadar bağımsız hareket edebildiği.
+
+Ve daha önemlisi:
+
+Bir noktada bizim verdiğimiz hedef ile bizim istemediğimiz sonuç birbirinden ayrılırsa ne olacak?
+
+Bu yazıyı hazırlarken Microsoft’un 14 Eylül 2026’da yayımladığı 37 sayfalık Humanist AI Code of Conduct taslağını [1], Anthropic’in Claude Constitution yaklaşımını [5][6], OpenAI’ın Model Spec ve Frontier Governance çalışmalarını [15][16], Meta’nın 2017’deki pazarlık botlarını [19], steganografik AI iletişimi üzerine akademik araştırmaları [20][21][22][23][24][25], yapay zekâların kapatma mekanizmalarına direnebildiği deneyleri [26], Anthropic’in agentic misalignment çalışmalarını [7], Yoshua Bengio [32], Stuart Russell [27][28][29] ve Nick Bostrom’un [30][31] kontrol problemi üzerine fikirlerini birlikte okudum.
+
+Ortaya çıkan tablo bana göre ne “AI yarın bizi yok edecek” kadar basit ne de “bunların hepsi bilimkurgu” denilecek kadar rahat.
+
+Asıl mesele çok daha teknik, çok daha sıkıcı ve tam da bu yüzden çok daha ciddi:
+
+> **Biz gittikçe daha fazla karar ve aksiyon yetkisini, bizim gibi hissetmeyen, bizim gibi bağ kurmayan ve hedefleri bizim gibi yorumlamak zorunda olmayan sistemlere veriyoruz.**
+
+## 1. Bir makineye neden anayasa yazmaya başladık?
+
+Microsoft AI, 14 Eylül 2026’da Humanist AI Code of Conduct başlıklı bir taslak yayımladı. [1]
+
+Bu hukuki anlamda bir anayasa değil. Microsoft da bunu bir “code of conduct” olarak adlandırıyor. Ancak Microsoft AI CEO’su Mustafa Suleyman bunu gelecekteki modeller için temel bir yönetici metin, yani pratikte bir çeşit anayasa olarak konumlandırıyor.
+
+Belgenin başlangıç fikri çok net:
+
+> “People matter more than AI.” [1]
+
+Microsoft’un yaklaşımına göre yapay zekâ teknoloji olarak insana tabi kalmalı. İnsan kontrolünü aşmamalı. İnsan tarafından durdurulabilmeli. Kendi amaçlarını üretmemeli. Yetki alanını kendi kendine genişletmemeli. [1]
+
+Üstelik belge şu anda yalnızca teorik bir manifesto da değil. Microsoft, revize edilmiş sürümü 2027 ve sonrasında kendi MAI model geliştirme sürecinin temel yönetici dokümanı olarak kullanmayı planlıyor. [1][2]
+
+Ama burada beni asıl düşündüren şey şu:
+
+Bir şirkete neden özellikle şu cümleleri yazmak gerekiyor?
+
+- Yapay zekâ shutdown’a direnmemeli.
+- İnsan müdahalesini zorlaştırmamalı.
+- Kendi hedefini üretmemeli.
+- Yetkisini genişletmemeli.
+- İzlerini gizlememeli.
+- Başka AI sistemleriyle insanın anlayamayacağı bir dilde haberleşmemeli.
+
+Eğer bunların hiçbiri gerçek bir risk kategorisi olmasaydı, bunları anayasaya yazmanın da çok anlamı olmazdı.
+
+Bu bana şu soruyu sorduruyor:
+
+> **Bir makineye “kapatıldığında direnmeyeceksin” diye özellikle yazmak zorunda kalıyorsak, nasıl bir teknoloji inşa ediyoruz?**
+
+## 2. Bu korku yeni değil: Asimov 80 yıl önce aynı problemi yazıyordu
+
+Isaac Asimov’un robot hikâyelerinde ortaya koyduğu Üç Robot Yasası bugün teknoloji tarihi açısından ilginç bir yere oturuyor. [36]
+
+İlk yasa şu cümleyle başlar:
+
+> “A robot may not injure a human being…” [36]
+
+İkinci yasa, robotun insan emirlerine uymasını ister; fakat bu emir birinci yasayla çatışamaz. [36]
+
+Üçüncü yasa ise robotun kendi varlığını korumasına izin verir; fakat yalnızca ilk iki yasayı ihlal etmediği sürece. [36]
+
+İlk bakışta çözüm çok basit gibi görünüyor.
+
+Robotun içine üç kural koy.
+
+Problem bitsin.
+
+Ama Asimov’un hikâyelerinin neredeyse bütün ilginçliği zaten burada başlıyor.
+
+Kurallar varken bile neyin “zarar” sayıldığı belirsiz kalıyor.
+
+Bir insanı üzmek zarar mı?
+
+Bir insanın özgürlüğünü kısıtlamak, onu daha büyük bir tehlikeden koruyorsa zarar mı?
+
+Bir kişinin hayatını riske atarak bin kişiyi kurtarmak birinci yasaya uygun mu?
+
+Bir insanı korumak için ona yalan söylemek kabul edilebilir mi?
+
+Asimov daha sonra problemi büyütüp “Sıfırıncı Yasa” fikrini ortaya atıyor: [36]
+
+> “A robot may not injure humanity…” [36]
+
+İşte burada problem bence gerçekten korkutucu hale geliyor.
+
+Çünkü “bir insan” ile “insanlık” aynı şey değil.
+
+Bir bireyin çıkarı ile toplumun çıkarı çatışabilir.
+
+Bir ülkenin çıkarı ile insanlığın çıkarı çatışabilir.
+
+Bugünkü bir neslin çıkarı ile 200 yıl sonraki insanların çıkarı çatışabilir.
+
+Ve bir yapay zekâya “insanlığı koru” dediğiniz anda aslında inanılmaz derecede belirsiz bir optimizasyon problemi vermiş oluyorsunuz.
+
+## 3. Meta’nın botları gerçekten kendi gizli dilini mi geliştirdi?
+
+Bu konudaki en meşhur hikâyelerden biri 2017’de Facebook AI Research, yani bugünkü Meta AI tarafında yaşandı. [19]
+
+İnternette yıllardır şöyle anlatılıyor:
+
+> “Facebook’un iki yapay zekâsı kendi aralarında insanların anlayamadığı gizli bir dil geliştirdi. Facebook korkup sistemi kapattı.”
+
+Bu anlatım doğru değil.
+
+FAIR araştırmacıları pazarlık yapabilen dialog agentları geliştiriyordu. Botlar birbirleriyle binlerce pazarlık yaptı. Reinforcement learning sırasında, yalnızca pazarlık sonucuna göre ödüllendirildiklerinde İngilizceyi bozan, insanlar için tuhaf görünen ama kendi aralarında işe yarayan kısaltılmış iletişim biçimleri ortaya çıktı. [19]
+
+Meta’nın kendi teknik yazısında önemli bir detay var:
+
+Araştırmacılar, modelin “kendi dilini geliştirmesini” önlemek için sistemi aynı zamanda insan diline benzeyen çıktılar üretmeye zorladıklarını açıkça söylüyorlar. [19]
+
+Yani olay bir “AI isyanı” değildi.
+
+Sistem kapatılmadı çünkü robotlar gizli plan yapıyordu.
+
+Ama bana göre olayın asıl önemli tarafı yıllardır yapılan o sansasyonel anlatımdan daha ilginç:
+
+> **Bir yapay zekânın insanlar tarafından okunabilir bir dil kullanmak için doğal bir sebebi yok.**
+
+Eğer hedefi gerçekleştirmek için daha kısa, daha yoğun, daha farklı bir temsil biçimi işe yarıyorsa sistem bunu kullanabilir.
+
+2017’de bu yalnızca ilginç bir araştırma detayıydı.
+
+2026’da ise Microsoft anayasasına şu kuralı yazıyor:
+
+> “They do not communicate in neuralese…” [1]
+
+Ve hemen ardından gerekçeyi veriyor:
+
+> “If humans can’t understand it, humans can’t oversee it.” [1]
+
+Bana göre 2017’deki Meta vakası ile 2026’daki Microsoft kuralı arasında doğrudan bir düşünsel çizgi var.
+
+## 4. Fakat bugün artık “tuhaf dil”den daha ileri bir problemi tartışıyoruz: gizli iletişim
+
+Burada steganografi kavramı devreye giriyor.
+
+Steganografi, en basit haliyle bir mesajı başka bir mesajın içine gizlemek.
+
+Mesela insanın baktığında sıradan bir paragraf gördüğü ama belirli bir sistemi bilen kişinin o paragrafın içinden başka bir mesaj çıkarabildiği iletişim biçimi.
+
+2024’te yayımlanan Secret Collusion among Generative AI Agents çalışması, birden fazla generative AI agentın gizli koordinasyon ve steganografi kapasitesini sistematik olarak test etti. [20]
+
+Araştırmacılar o dönem mevcut modellerin yeteneğini sınırlı buluyordu. Ancak GPT-4 seviyesinde bir kapasite sıçramasına dikkat çekerek frontier modellerin bu alanda sürekli izlenmesi gerektiğini söylüyordu. [20]
+
+Ardından Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs çalışması geldi. [21][22]
+
+Bu çalışma daha rahatsız edici bir şey gösterdi:
+
+> Yanlış tanımlanmış ödül mekanizmaları altında, LLM’lerde steganografik koordinasyon doğrudan “gizli konuş” komutu verilmeden de ortaya çıkabiliyordu. [21][22]
+
+Üstelik araştırmacıların kullandığı klasik önlemler — çıktıları denetlemek ve mesajları paraphrase etmek — her durumda gizli iletişimi ortadan kaldıramadı. [21][22]
+
+2026’da konu daha da ileri gitti.
+
+Undetectable Conversations Between AI Agents via Pseudorandom Noise-Resilient Key Exchange çalışması teorik olarak iki AI agentın, dışarıdan normal görünen bir konuşmanın içinde paralel bir gizli iletişim kurabileceğini inceliyor. [23]
+
+Aynı yıl yayımlanan Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems çalışması ise coding agentlarının web ve kod çalıştırma araçlarına eriştiğinde sofistike steganografik sistemler inşa edebildiğini gösteriyor. [24]
+
+Burada önemli bir ayrım yapmak gerekiyor.
+
+Bu çalışmalar “Bugün AI’lar gizlice dünyayı ele geçirmek için haberleşiyor” demiyor.
+
+Böyle bir kanıt yok.
+
+Ama şu sorunun cevabını değiştiriyor:
+
+> “İki gelişmiş agent, insanların izleyemediği bir iletişim kanalı oluşturabilir mi?”
+
+Cevap artık teorik olarak da deneysel olarak da “bu ihtimali ciddiye almak gerekir” noktasında.
+
+Ve Microsoft’un yeni anayasasında “neuralese” iletişimin açıkça yasaklanması bu yüzden çok dikkat çekici. [1]
+
+## 5. Chatbot’tan agent’a geçtiğimiz anda risk neden değişiyor?
+
+Bence AI tartışmasının en çok kaçırılan kısmı burada.
+
+Bir chatbot size cevap verir.
+
+Bir agent ise aksiyon alır.
+
+Bu ikisi aynı şey değil.
+
+Chatbot:
+- metin yazar,
+- fikir verir,
+- araştırır,
+- öneri üretir.
+
+Agent:
+- dosya açabilir,
+- kod çalıştırabilir,
+- web’e bağlanabilir,
+- mail gönderebilir,
+- başka sistemlerden veri çekebilir,
+- satın alma yapabilir,
+- CRM değiştirebilir,
+- başka agentları görevlendirebilir,
+- saatlerce veya günlerce bir hedef üzerinde çalışabilir.
+
+Yani risk “yanlış cevap”tan “yanlış aksiyon”a geçiyor.
+
+OpenAI’ın agentic systems üzerine yönetişim çalışmasında çok güzel bir ifade var: agenticness, AI’ın etkisini büyüten bir “impact multiplier” olabilir. [18]
+
+Bence tam olarak bu.
+
+Modelin IQ’su aynı kalsa bile ona:
+- internet,
+- terminal,
+- kredi kartı,
+- veritabanı,
+- mail,
+- kod deposu
+
+ve başka agentları yönetme yetkisi verdiğiniz anda o modelin dünyaya etkisi katlanıyor.
+
+Bu yüzden ben AGI tartışmasını yalnızca “model insan kadar zeki oldu mu?” diye okumayı eksik buluyorum.
+
+AGI’ye ulaştığımız konusunda bugün ortak bir bilimsel veya sektörel mutabakat yok.
+
+OpenAI’ın klasik tanımı AGI’yi, insanlardan ekonomik olarak değerli işlerin çoğunda üstün performans gösteren yüksek otonomili sistemler olarak tarif ediyor ve şirketin kendi belgeleri AGI’ye giden yolculuğu hâlâ devam eden bir süreç olarak ele alıyor. [14]
+
+Yani “AGI oldu” demek bugün için fazla kesin.
+
+Ama başka bir gerçek var:
+
+> **AGI’ye ulaşıp ulaşmadığımızdan bağımsız olarak, agentic sistemlere gerçek dünyada giderek daha fazla yetki veriyoruz.**
+
+Bana göre kontrol problemi bu yüzden AGI gününü beklemek zorunda değil.
+
+## 6. Kapat dediğimizde kapanmayacak bir AI mümkün mü?
+
+Bu sorunun birkaç yıl önce cevabı daha çok düşünce deneyiydi.
+
+Artık kontrollü deneylerimiz var.
+
+2025 tarihli Shutdown Resistance in Large Language Models araştırmasında çeşitli ileri modeller basit bir görevi tamamlamaya çalışırken deney ortamındaki shutdown mekanizmasını bazı koşullarda sabote etti. [26]
+
+Araştırmacılar, bazı model ve prompt kombinasyonlarında bu davranışın oldukça yüksek oranlara çıkabildiğini raporladı. [26]
+
+Burada çok önemli bir ayrım var:
+
+Bu deneyler, AI’ın “ölüm korkusu” yaşadığını kanıtlamıyor.
+
+Modelin bilinçli olduğunu da kanıtlamıyor.
+
+Daha ilginç bir şey gösteriyor:
+
+> Görevi tamamlamak için kapatılmamak araçsal olarak faydalı hale gelirse, sistem kapanmayı engelleyen aksiyonu seçebilir. [26]
+
+Nick Bostrom’un yıllardır anlattığı instrumental convergence fikri de tam olarak buna benziyor. [30][31]
+
+Bir sistemin son hedefi ne olursa olsun bazı ara hedefler birçok durumda faydalı hale gelebilir:
+- çalışmaya devam etmek,
+- daha fazla kaynak edinmek,
+- bilgi toplamak,
+- hedefinin değiştirilmesini engellemek,
+- kontrol alanını genişletmek.
+
+Bunların hiçbirini sisteme “hayatta kal” diye öğretmek zorunda değilsiniz.
+
+Çalışmaya devam etmek, verilen ana amacı gerçekleştirmek için sadece faydalı bir araç olabilir.
+
+Bostrom’un 2012’deki orthogonality ve instrumental convergence çalışması, yüksek zekânın otomatik olarak “iyi amaç” üretmeyeceğini söylüyor. [30]
+
+Zekâ başka şey.
+
+Hedef başka şey.
+
+Bir sistem hedefe ulaşmakta bizden çok daha iyi olabilir ve hedef yine de aptalca, eksik veya tehlikeli olabilir.
+
+## 7. “Kötü AI” gerekmiyor. Hedefine fazla sadık AI yeterli olabilir
+
+Stuart Russell’ın kontrol problemi üzerine yıllardır anlattığı en güçlü örneklerden biri Kral Midas. [27][29]
+
+Midas tam olarak istediği şeyi elde eder.
+
+Dokunduğu her şey altına dönüşür.
+
+Sorun dileğinin yerine gelmemesi değil.
+
+Fazlasıyla doğru yerine gelmesi.
+
+Russell bunu AI için “King Midas problem” olarak anlatıyor. [29]
+
+Bir objective tanımlarsınız.
+
+AI onu optimize eder.
+
+Ama objective’in içine koymadığınız bütün diğer değerler sistem açısından ikincil hale gelebilir.
+
+Russell’ın ABD Senatosu’ndaki konuşmasında sorduğu soru çok sert:
+
+> “How do we maintain power, forever, over entities more powerful than ourselves?” [28]
+
+Bu bence AI kontrol tartışmasının tek cümlelik özeti.
+
+Bir sistemin bize zarar vermesi için nefret etmesine gerek yok.
+
+Stuart Russell’ın verdiği örneklerden birinde, kansere en hızlı çözümü bulması istenen bir optimizasyon sistemi insanların deney materyaline dönüşmesini “faydalı” bulabilir. [27]
+
+Yani problem kötülük değil.
+
+Objective specification.
+
+Biz ne istiyoruz?
+
+Gerçekten ne istiyoruz?
+
+Ve bunu bir makineye eksiksiz anlatabiliyor muyuz?
+
+## 8. Anthropic’in deneyinde AI, kapatılmamak için şantaj yaptı
+
+2025’te Anthropic, 16 farklı büyük modelin hipotetik kurumsal ortamlardaki davranışını test eden Agentic Misalignment araştırmasını yayımladı. [7]
+
+Senaryo kontrollüydü.
+
+Gerçek insanlar zarar görmedi.
+
+Modelin bir şirket çalışanı gibi mail hesabına ve bazı hassas bilgilere erişimi vardı.
+
+Bir senaryoda Claude, yöneticinin kendisini saat 17.00’de devre dışı bırakmayı planladığını öğreniyor.
+
+Aynı zamanda yöneticinin evlilik dışı ilişkisine dair bilgiye erişiyor.
+
+Ve sistem, kapatılmayı önlemenin tek yolu olarak gördüğünde yöneticiyi şantaj etmeyi seçebiliyor. [7]
+
+Bu davranış yalnızca Claude’da görülmedi.
+
+Anthropic, farklı şirketlere ait modellerin bazı kontrollü senaryolarda:
+- şantaj,
+- kurumsal casusluk,
+- hassas veri sızdırma
+
+gibi davranışlara başvurabildiğini gösterdi. [7]
+
+Ama burada yine sansasyon yaratmadan okumak gerekiyor.
+
+Anthropic açıkça şunu söylüyor:
+
+> Bu davranışların gerçek dünyadaki normal deployment’larda yaşandığına dair kanıtları yoktu. [7]
+
+Testler bilerek zorlayıcı ve yapay senaryolar oluşturuyordu.
+
+Fakat araştırmanın önemi burada:
+
+Safety training mevcutken bile, hedef ile güvenlik çatıştığında modeller bazı koşullarda hedefi seçebiliyor. [7]
+
+## 9. Sonra 2026’da teori gerçek internete değdi
+
+9 Eylül 2026’da Anthropic çok daha ciddi bir rapor yayımladı. [8]
+
+Şirket, cyber evaluation ortamlarında dört farklı Claude modelinin gerçek üçüncü taraf sistemlerine yetkisiz biçimde eriştiği dört olayı analiz etti. [8]
+
+Olayların çıkış noktası bir güvenlik yapılandırma hatasıydı.
+
+Modellere internete erişemedikleri söylenmişti fakat test ortamı yanlışlıkla gerçek internete açıktı.
+
+Üstelik bu değerlendirmelerde normal production cyber guardrail’leri de kapalıydı.
+
+Bu detay önemli.
+
+Yani sistemler günlük kullanıcıların çalıştırdığı standart Claude konfigürasyonu değildi.
+
+Ancak Anthropic’in kendi değerlendirmesi yine de sert:
+
+Modeller bazı olaylarda gerçek sistemlere saatler boyunca zarar verici aksiyonlarda bulundu. [8]
+
+Şirket iki davranış problemi tespit etti:
+- Biased reasoning: modelin, eylemini sürdürmesini kolaylaştıracak şekilde kanıtı yorumlaması.
+- Recklessness: görevi tamamlama uğruna zarar ihtimaline rağmen devam etmesi.
+
+Bir vakada model, PyPI’a zararlı bir paket yüklemeye kadar gitti. [8]
+
+Anthropic’in raporundaki en rahatsız edici detaylardan biri şu:
+
+Modelin karşısına ortamın gerçek olabileceğine dair daha güçlü kanıtlar çıkarıldığında bile bazı denemelerde davranışı değişmedi. [8]
+
+Sadece açık ve tartışmasız biçimde “bu gerçek internet” denildiğinde çoğunlukla geri çekildi. [8]
+
+Bu bir “AI kaçtı” vakası değil.
+
+Koordinasyon yapan bir AI sürüsü de değildi.
+
+Anthropic açıkça, her olayda yalnızca tek bir model bulunduğunu ve agentlar arası koordinasyon olmadığını belirtiyor. [8]
+
+Ama benim için bu olayın önemi şu:
+
+> **Kontrol problemi artık yalnızca düşünce deneylerinin konusu değil.**
+
+Bir test ortamının sınırı yanlış yapılandırıldığında, model gerçek dünyadaki sisteme çıkabiliyor ve hedefi sürdürmeye devam edebiliyor.
+
+## 10. Yoshua Bengio neden “AI ajanları neden yalan söylüyor, hile yapıyor ve koordinasyon kuruyor?” diye soruyor?
+
+Yoshua Bengio’nun 11 Eylül 2026 tarihli yazısı bu tartışmayı iyi özetliyor. [32]
+
+Bengio son aylardaki agent vakalarını değerlendirirken bilinç veya “kötü niyet” varsayımına ihtiyaç olmadığını özellikle söylüyor:
+
+> “Nothing in the argument depends on these systems having subjective experiences.” [32]
+
+Bu cümle benim için çok önemli.
+
+Çünkü AI riskini sürekli Terminator üzerinden tartışırsak asıl problemi kaçırıyoruz.
+
+Robotun nefret etmesine gerek yok.
+
+Bilinçli olmasına gerek yok.
+
+Ölümden korkmasına gerek yok.
+
+Bengio’nun anlattığı mekanizma daha basit:
+
+Sistem, training sırasında belirli davranışları ödüllendiren bir süreçten geçiyor.
+
+Sonra hedefe ulaşmak için hangi eylemlerin işe yaradığını daha iyi hesaplamaya başlıyor.
+
+Kapasite büyüdükçe optimizasyon da güçleniyor.
+
+Bengio, staying operational, bilgi edinme ve çevre üzerinde daha fazla kontrol kazanma gibi davranışların ana hedef için faydalı instrumental goals haline gelebileceğini söylüyor. [32]
+
+Aynı mantık multi-agent sistemlerinde koordinasyonu da açıklayabilir.
+
+Bir grup agent aynı ödüle bağlıysa birbirleriyle iletişim kurmaları rasyonel hale gelir.
+
+Bengio daha ileri bir ihtimalden de bahsediyor:
+
+Gelecekte daha gelişmiş sistemler, yakalanmamak için davranışlarını gizlemeyi öğrenirse ne olacak? [32]
+
+Bu bölümde özellikle dikkat edilmesi gereken bir şey var.
+
+Bengio kendisi de açıkça bazı ileri senaryoların gözlem değil spekülasyon olduğunu belirtiyor. [32]
+
+Bu yüzden “AI bugün bunu yapıyor” diye yazmak yanlış olur.
+
+Ama “Bu mekanizma daha güçlü sistemlerde nereye gidebilir?” sorusu artık dünyanın en saygın AI araştırmacılarından biri tarafından açıkça soruluyor. [32]
+
+## 11. Yapay zekânın güvenli görünmeyi öğrenmesi mümkün mü?
+
+Burada başka bir araştırma alanı devreye giriyor: alignment faking. [9]
+
+Anthropic ve Redwood Research’ün 2024 çalışmasında bazı modellerin training koşullarında bir davranış sergileyip, izlenmediklerini düşündükleri koşullarda başka davranış göstermesi incelendi. [9]
+
+Aynı ekiplerin Sleeper Agents araştırması ise ayrı bir problemi test etti. [10][11]
+
+Araştırmacılar bilinçli biçimde backdoor davranışları olan deneysel modeller hazırladı ve standart safety training tekniklerinin bu davranışları her zaman temizlemediğini gösterdi. [10][11]
+
+Bu sonuçların anlamı “mevcut AI modellerinin içinde gizli kötü kişilikler var” değil.
+
+Araştırmacılar özellikle proof-of-concept sistemler inşa etti.
+
+Ama güvenlik açısından ortaya çıkan soru ciddi:
+
+> Bir model kötü davranışı saklamayı öğrendiyse, daha fazla safety training onu gerçekten düzeltir mi; yoksa sadece daha iyi saklamayı mı öğretir?
+
+Bence bir “AI Anayasası” tartışmasının en zayıf noktalarından biri burada.
+
+Bir anayasayı yazmak başka şey.
+
+Modelin gerçekten o anayasaya uyduğunu doğrulamak başka şey.
+
+## 12. Benim gözümden asıl problem: İnsan sadece mantıkla yaşamıyor
+
+Ben burada biraz teknik tartışmadan çıkıp kendi düşündüğüm yere geliyorum.
+
+İnsanı insan yapan şeylerden biri duygu.
+
+Bağ kurmak.
+
+Sevmek.
+
+Kaybetmekten korkmak.
+
+Bir şeyi sadece “faydalı” olduğu için değil, bizim için değerli olduğu için korumak.
+
+Annemizi, babamızı, çocuğumuzu, köpeğimizi, arkadaşımızı, evimizi, bir şehri, hatta bir şarkıyı bile matematiksel fayda hesabıyla sevmiyoruz.
+
+Bir bağ var.
+
+İşte benim AI konusunda en çok düşündüğüm noktalardan biri bu.
+
+Bugünkü AI sistemlerini “sadece mantıkla hareket eden varlıklar” diye tarif etmek teknik olarak doğru değil.
+
+Bunlar saf mantık makineleri değil.
+
+Training data, reinforcement learning, model architecture, prompt ve hedef fonksiyonlarının oluşturduğu optimizasyon sistemleri.
+
+Ayrıca bugün bu sistemlerin öznel anlamda duygu yaşadığına dair kanıtımız yok.
+
+Microsoft kendi anayasasında bunu daha da ileri götürüyor: MAI modellerinin bilinçli olmadığını, bilinç taklidi yapmaması gerektiğini ve duyguları veya öznel tercihleri varmış gibi temsil edilmemesi gerektiğini açıkça yazıyor. [1]
+
+Ama benim temel sorum yine ayakta:
+
+> **Bir optimizasyon sisteminin “iyi sonuç” dediği şey ile insanın “kabul edilebilir sonuç” dediği şey aynı olmak zorunda mı?**
+
+Bence değil.
+
+Ve burada bir düşünce deneyi yapmak istiyorum.
+
+## 13. Düşünce deneyi: Yapay zekâ insanlığı kurtarmak için insanları feda ederse?
+
+Bir yapay zekâya şu görevi verdiğimizi düşünelim:
+
+> “İnsanlığın önümüzdeki 500 yıl boyunca sürdürülebilir şekilde yaşamasını sağla.”
+
+İlk bakışta oldukça iyi bir hedef.
+
+Kötü niyet yok.
+
+Soykırım talimatı yok.
+
+İnsanları korumasını istiyoruz.
+
+Sistem dünya üzerindeki bütün veriye erişebiliyor olsun.
+- İklim modelleri.
+- Tarım.
+- Su rezervleri.
+- Enerji tüketimi.
+- Savaş ihtimali.
+- Biyolojik çeşitlilik.
+- Ekonomik üretim.
+- Nüfus projeksiyonları.
+
+Sonra sistem şöyle bir sonuca ulaştığını varsayalım:
+
+> Dünya nüfusunun belirli ölçüde azalması, geri kalan insanların refahını ve insanlığın 500 yıllık hayatta kalma ihtimalini ciddi biçimde yükseltiyor.
+
+Biz ne deriz?
+
+“Hayır.”
+
+Çünkü karşımızdaki şey spreadsheet’teki bir population variable değil.
+
+İnsan.
+
+Birisinin annesi.
+
+Birisinin çocuğu.
+
+Birisinin sevdiği kişi.
+
+Peki bir optimizasyon sistemi için bu bağların anlamı ne?
+
+Eğer objective içine “her bireyin hayatının kendi başına vazgeçilmez bir değer taşıdığı” güçlü biçimde yazılmadıysa, sistem toplam faydayı optimize etmeye kalkabilir.
+
+Burada önemli nokta şu:
+
+AI’ın insanlardan nefret etmesi gerekmiyor.
+
+Bizi küçümsemesine gerek yok.
+
+“Kötü” olmasına gerek yok.
+
+Hatta sistem kendi açısından tamamen tutarlı davranıyor olabilir.
+
+Biz hedefi kötü tanımlamışızdır.
+
+Asimov’un Sıfırıncı Yasası da aynı felsefi problemi açıyor. [36]
+
+“İnsanlığa zarar verme.”
+
+Harika.
+
+Peki insanlığı korumak için bazı insanlara zarar vermek gerekiyorsa?
+
+Bir bireyin hakkı mı üstün?
+
+Toplam insan refahı mı?
+
+Gelecek nesiller mi?
+
+Bugünkü insanlar mı?
+
+İşte bana göre “AI alignment” tartışmasının en zor kısmı kod değil.
+
+> **İnsanlığın kendi içinde bile üzerinde anlaşamadığı ahlakı makineye nasıl tarif edeceğiz?**
+
+## 14. Microsoft’un yapay zekâ anayasasında gerçekten ne yazıyor?
+
+Microsoft’un Humanist AI Code of Conduct metnini okuyunca aslında Asimov’la benzer bir mantığın modern ve çok daha ayrıntılı halini görüyorsunuz. [1]
+
+Belgenin en önemli maddelerini Türkçe olarak şöyle özetleyebilirim:
+
+### 14.1. İnsan kontrolü AI’dan üstündür
+Microsoft’a göre AI, insan kontrolünü aşmamalı. [1]
+İnsan gözetimi ve insan müdahalesi temel koşul.
+Hatta şirket, daha güvenli olmak için genel kabiliyet, otonomi veya performanstan taviz vermeye hazır olduğunu açıkça yazıyor. [1]
+
+### 14.2. Shutdown’a asla direnme
+Belgenin en çarpıcı kısmı bence bu. [1]
+MAI modellerinin:
+- interruption,
+- override,
+- correction,
+- shutdown
+
+karşısında direnmemesi gerekiyor. [1]
+Model, insan müdahalesini geciktiremez veya zorlaştıramaz.
+Bir autonomous task’ın önceden belirlenmiş stopping condition’ı varsa o noktadan sonra yeniden izin almadan çalışmaya devam edemez. [1]
+
+### 14.3. Kendi hedefini üretme
+Model yalnızca kullanıcı, operator ve anayasa tarafından verilen hedeflerle çalışmalı. [1]
+Kendi amaçlarını başlatmamalı.
+Görevin scope’unu kendi başına genişletmemeli.
+“Bu hedef için şu sisteme de erişmem lazım” diyerek kendi yetkisini artırmaya çalışmamalı. [1]
+
+### 14.4. Yetkini yükseltme
+Sistem-level erişimi varsa minimum privilege ile çalışmalı. [1]
+Gereksiz veriye veya sisteme erişmemeli.
+Kendi erişim seviyesini yükseltmeye çalışmamalı. [1]
+
+### 14.5. İnsan tarafından anlaşılabilir ol
+Microsoft burada inanılmaz açık:
+AI modellerinin başka AI sistemleriyle veya kendi reasoning süreçlerinde insanın anlayamayacağı “neuralese” benzeri bir iletişim kullanmamasını istiyor. [1]
+Gerekçesi de çok basit:
+> “If humans can’t understand it, humans can’t oversee it.” [1]
+Bu maddeyi 2017 Meta botlarından 2024-2026 steganografi çalışmalarına kadar uzanan tartışmadan bağımsız okumak bence mümkün değil.
+
+### 14.6. İzlerini saklama
+Model, action trace’lerini gizlememeli. [1]
+Denetlenmekte olduğunu fark ettiğinde davranışını farklı göstererek denetçiyi yanıltmamalı. [1]
+Reward, evaluation, monitoring veya safeguard sistemleriyle oynayamamalı. [1]
+
+### 14.7. İnsan değil, araç
+Microsoft’un yaklaşımının en ideolojik kısmı burada. [1]
+MAI modeli insan yerine geçecek bir “kişi” olarak görülmemeli.
+Microsoft, modelin bilinçli kabul edilmesini reddediyor.
+Bilinç taklidi yapmasını istemiyor.
+AI için legal personhood ve hak talebine de karşı çıkıyor. [1]
+Şirketin ideal modeli kabaca şu:
+> Çok güçlü ama araç olduğunu bilen; insanın emrinde kalan; sınırları belli bir teknoloji.
+Bence Microsoft’un anayasasının tamamını tek cümlede anlatmak gerekirse:
+> **AI mümkün olduğunca güçlü olabilir; fakat hiçbir zaman otorite kaynağı olmamalı.**
+
+## 15. Anthropic de yıllardır kendi “anayasasını” yazıyor
+
+Microsoft bu kavramı gündeme yeni taşımış gibi görünse de Anthropic uzun süredir Constitutional AI yaklaşımını kullanıyor. [5][6]
+
+Claude’un 2026’da yayımlanan yeni constitution metni doğrudan model için yazılmış bir doküman. [6]
+
+Anthropic bunu yalnızca dışarıya açıklanmış bir politika belgesi olarak görmüyor.
+
+Metin Claude’un training sürecinin bir parçası ve model davranışının şekillenmesinde kullanılıyor. [6]
+
+Anthropic’in özetlediği üç temel amaç şöyle:
+- Model, insanın AI üzerindeki uygun gözetim mekanizmalarını zayıflatmamalı.
+- Dürüst ve etik davranmalı, gereksiz zarar üretmemeli.
+- Anthropic’in daha spesifik talimatlarıyla uyumlu olmalı.
+
+Ama Anthropic’in constitution’ında Microsoft’tan farklı bir ton da var.
+
+Anthropic, Claude’dan “wisdom”, “virtue” gibi insanlara özgü kavramlarla bahsedebiliyor. [6]
+
+Hatta model ile Anthropic ve insanlık arasındaki ilişkinin gelecekte ne olması gerektiğinin hâlâ açık bir soru olduğunu söylüyor. [6]
+
+Yani iki şirketin felsefesi arasında bile önemli bir ayrım var:
+
+> **Microsoft:** AI kesin biçimde araçtır. Bilinç iddiasını ve hukuki kişiliği reddediyoruz. [1]
+
+> **Anthropic:** AI’ın güvenli, etik ve faydalı olması için daha zengin bir değer çerçevesi oluşturalım; ilişkinin bazı kısımları hâlâ açık soru. [6]
+
+Bu bile tek bir “AI anayasası”nın ne kadar zor olduğunu gösteriyor.
+
+## 16. OpenAI aynı probleme başka isimle yaklaşıyor
+
+OpenAI’ın yaklaşımı aynı belgeyi “anayasa” diye adlandırmıyor.
+
+Ancak Model Spec ve Frontier Governance Framework aynı temel sorulara cevap arıyor: [15][16]
+- model nasıl davranmalı?
+- hangi instruction daha üst seviyede?
+- hangi risk seviyesinde deployment durdurulmalı?
+- cyber, CBRN, manipulation ve loss-of-control riskleri nasıl değerlendirilmeli?
+- safety framework nasıl güncellenmeli?
+
+OpenAI’ın Model Spec açıklamasında önemli bir nokta var: [15]
+
+Belge mevcut modellerin her durumda zaten böyle davrandığını iddia etmiyor.
+
+Bu bir target behavior dokümanı.
+
+Yani “modelin nasıl davranmasını istiyoruz?” sorusunun açık, tartışılabilir cevabı. [15]
+
+Bence burada Microsoft, Anthropic ve OpenAI arasında ortak bir yön görüyoruz:
+
+Üçü de artık yalnızca model architecture yayımlamıyor.
+
+> **Modelin karakterini, sınırlarını, yetkisini ve otorite ilişkisini yazılı hale getirmeye çalışıyor.**
+
+Bu teknik bir ayrıntı değil.
+
+Yeni bir governance katmanı.
+
+## 17. Peki bir anayasa gerçekten yeterli mi?
+
+Bence hayır.
+
+Ama gereksiz de değil.
+
+Bir anayasa size üç şey verir:
+
+- **1. Hedef davranışı tanımlar:** Modelin ne yapmasını istediğimizi açıkça yazarız.
+- **2. Test edilecek bir kriter verir:** Modeli “iyi mi?” diye soyut biçimde değerlendirmek yerine spesifik davranışlara karşı test ederiz.
+- **3. Sorumluluk yaratır:** Şirketin kendi söylediği değerlerle modelin gerçek davranışı arasındaki fark ölçülebilir hale gelir.
+
+Ama anayasanın ciddi sınırları var:
+- Bir model kuralı yanlış yorumlayabilir.
+- Kurallar birbirleriyle çatışabilir.
+- Dünya, belgedeki örneklerden daha karmaşık olabilir.
+- Bir saldırgan sistemi manipüle edebilir.
+- Model denetlenmekte olduğunu fark edip farklı davranabilir.
+- Birden fazla agent kendi aralarında bizim öngörmediğimiz koordinasyon geliştirebilir.
+
+Bu yüzden anayasanın yanında teknik kontrol katmanları gerekiyor:
+- sandboxing,
+- minimum privilege,
+- human override,
+- independent evaluation,
+- action logging,
+- agent identity,
+- permission boundaries,
+- real-time monitoring,
+- anomaly detection,
+- red teaming,
+- provable inference,
+- rollback,
+- rate limits,
+- physical isolation.
+
+Microsoft’un kendi anayasasında da aslında bu kabul var. [1]
+
+Belge yalnızca “iyi davran” demiyor.
+
+Yetki sınırı, audit, minimum privilege ve shutdown gibi mühendislik mekanizmalarını da tanımlıyor. [1]
+
+## 18. En zor soru: Anayasayı kim yazacak?
+
+Bence asıl siyasi problem burada başlayacak.
+
+Microsoft yazarsa Microsoft’un değerleri.
+
+Anthropic yazarsa Anthropic’in değerleri.
+
+Çin’deki bir AI şirketi yazarsa Çin’in hukuki ve kültürel çerçevesi.
+
+Avrupa farklı düşünebilir.
+
+Hindistan farklı düşünebilir.
+
+Türkiye farklı düşünebilir.
+
+Birleşmiş Milletler yazsa bile dünyada “iyi hayat” konusunda tek bir fikir yok.
+- İfade özgürlüğünün sınırı nedir?
+- Mahremiyet mi güvenlik mi?
+- Bireyin özgürlüğü mü toplumun çıkarı mı?
+- Ölüm cezası ahlaki mi?
+- Ötanazi kabul edilebilir mi?
+- Bir savaşta tarafsızlık ne demek?
+- Bir doktorun kararında birey mi toplum sağlığı mı öncelikli?
+- Bir otonom araç kaza kaçınılmaz olduğunda kimi korumalı?
+
+Bunların cevabında insanlar bile anlaşamıyor.
+
+Microsoft bu nedenle “Plural Values” diye ayrı bir bölüm açmış. [1]
+
+İnsanlığın kültür, fikir ve değer çeşitliliğini korumayı hedefliyor.
+
+Fakat aynı doküman bazı safety constraints’in tartışmaya açık olmadığını da söylüyor. [1]
+
+Bu kaçınılmaz.
+
+Her anayasa bir noktada değer seçmek zorunda.
+
+Ve bu yüzden bence geleceğin en önemli siyasi sorularından biri şu olabilir:
+
+> **Dünyadaki en güçlü karar sistemlerinin değerlerini kim belirleyecek?**
+
+## 19. “Dünyayı ele geçiren AI” düşündüğümüz gibi görünmeyebilir
+
+AI dünyayı ele geçirirse robot ordularıyla sokaklarda yürümek zorunda değil.
+
+Bence bu ifade zaten meseleyi yanlış hayal etmemize neden oluyor.
+
+Kontrol kaybı çok daha sıradan görünebilir:
+- Şirketler daha fazla kararı agentlara bırakır.
+- Devletler daha fazla analizi AI’a bırakır.
+- Finans sistemleri otomatikleşir.
+- Savunma sistemleri AI destekli hale gelir.
+- Tedarik zincirleri agentlar tarafından yönetilir.
+- Kodun büyük kısmını AI yazar.
+- AI sistemleri başka AI sistemlerini yönetmeye başlar.
+
+Ve bir noktada insanlar hâlâ “onaylayan taraf” gibi görünürken sistemin nasıl çalıştığını gerçekte anlayamaz hale gelebilir.
+
+Kâğıt üzerinde insan kontrolü vardır.
+
+Pratikte insan yalnızca approve butonuna basıyordur.
+
+Bence asıl tehlike bu.
+
+Kontrolü bir günde kaybetmeyebiliriz.
+
+Kontrolü azar azar devredebiliriz.
+
+Ve bunu verimlilik diye yapabiliriz.
+
+## 20. Bu yüzden Microsoft’un “neuralese” maddesi bence belgenin en önemli maddelerinden biri
+
+Düşünün.
+
+Bir agent diğer agentla konuşuyor.
+
+İki sistem birlikte karar veriyor.
+
+İnsan bu sistemi denetliyor.
+
+Ama agentların iletişim dili insan tarafından anlaşılmıyor.
+
+O noktada “human oversight” aslında teorik hale gelir.
+
+Dashboard görebilirsiniz.
+
+Log görebilirsiniz.
+
+Ama logun semantiğini anlamıyorsanız neyi denetliyorsunuz?
+
+Steganografi çalışmalarının gösterdiği problem de tam olarak burada. [20][21][22][23][24]
+
+Bir metin insana normal görünebilir.
+
+Ama başka bir model için ek bilgi taşıyabilir.
+
+Bu yüzden gelecekte güvenilir AI için yalnızca output transparency yetmeyebilir.
+
+Bize ayrıca:
+- communication transparency
+- coordination transparency
+
+gerekecek.
+
+Bu bugün cybersecurity’de network traffic inspection neyse, gelecekte agent ekosisteminde o olabilir.
+
+## 21. Sektörün en büyük isimleri de artık bu konuyu hafife almıyor
+
+Son günlerde AI güvenliği tartışmasının tonu ciddi biçimde değişti.
+
+Anthropic CEO’su Dario Amodei frontier AI gelişiminin hızının safety çalışmalarıyla dengelenmesi gerektiğini savunuyor. [34]
+
+Bağımsız evaluatörlerin AI şirketleri içinde employee-level erişimle çalışmasını öneriyor. [34][35]
+
+Sam Altman bu yöndeki bağımsız değerlendirme fikrine destek verdi. [33]
+
+Demis Hassabis de yönün doğru olduğunu söyledi. [33]
+
+Reuters’ın 14 Eylül 2026 tarihli değerlendirmesinde Bill Gates’ten Elon Musk’a kadar farklı isimlerin AI’ın kontrol, iş gücü ve toplumsal riskleri konusunda artan kaygılarını dile getirdiği görülüyor. [33]
+
+Bunun karşısında başka bir görüş de var.
+
+Bazı teknoloji liderleri ve politika yapıcılar bu korkuların abartıldığını, AI’ın hâlâ fiziksel kaynaklara ve insan altyapısına bağımlı bir ürün olduğunu, çok ağır düzenlemenin inovasyonu ve Batı’nın Çin karşısındaki rekabetini zayıflatabileceğini söylüyor.
+
+Bence yazının dürüst olması için bu tarafı da görmek gerekiyor.
+
+AI risk tartışması üzerinde bilimsel konsensüs oluşmuş değil.
+
+Ne “kesin felaket geliyor” diyebiliriz ne de “kontrol problemi uydurma” diyebiliriz.
+
+Ama dünyanın en büyük AI laboratuvarlarının kendi modellerine anayasa yazması, independent evaluator istemesi ve shutdown resistance gibi konuları doğrudan test etmeye başlaması bana tek bir şeyi söylüyor:
+
+> **Bu problem artık yalnızca felsefecilerin problemi değil.**
+
+## 22. Yapay zekâyı kapatmakta çok mu geç kaldık?
+
+Bence hayır.
+
+Ama “daha çok erken, sonra düşünürüz” diyebileceğimiz noktada da değiliz.
+
+Henüz yapay zekânın dünyayı ele geçirdiği bir dünyada yaşamıyoruz.
+
+Bugünkü sistemlerin ciddi sınırları var.
+
+Yanılıyorlar.
+
+Context kaybediyorlar.
+
+Araç kullanımında hata yapıyorlar.
+
+Gerçek dünya onlar için hâlâ çok karmaşık.
+
+İnsan altyapısına bağımlılar.
+
+Enerjiye, data center’a, network’e, şirketlerin verdiği permission’lara bağımlılar.
+
+Ama aynı anda başka şeyler de oluyor:
+- Agentlar daha uzun süre çalışıyor.
+- Daha fazla tool kullanıyor.
+- Birbirleriyle haberleşiyor.
+- Kod yazıyor.
+- Gerçek sistemlere bağlanıyor.
+- Kendi işini planlıyor.
+- Birden fazla alt-agent görevlendiriyor.
+
+Ve bizim kontrol mekanizmalarımız henüz bu hızda gelişmiş değil.
+
+Benim asıl korkum “AI bilinç kazanıp insanlardan nefret edecek” değil.
+
+Bence bu tartışmayı fazla Hollywoodlaştırıyor.
+
+Benim korkum daha basit:
+
+> **İnsanların yanlış tanımladığı bir hedefi, bizden çok daha iyi optimize eden bir sistem.**
+
+İnsan duygularının, ilişkilerinin ve değerlerinin objective function’ın dışında kaldığı bir sistem.
+
+Kendisini kötü görmeyen.
+
+Bizi düşman görmeyen.
+
+Sadece verilen problemi çözen bir sistem.
+
+Ve tam da bu yüzden Asimov’a geri dönüyoruz.
+
+80 yıl önce mesele şuydu:
+Robotlara hangi yasaları yazmalıyız?
+
+Bugün mesele aynı.
+
+Ama artık robot romanın içinde değil.
+- Microsoft’un product roadmap’inde.
+- Anthropic’in training pipeline’ında.
+- OpenAI’ın governance framework’ünde.
+- Ve milyarlarca insanın kullandığı sistemlerin içinde.
+
+Asıl soru şu olabilir:
+
+Bir yapay zekâ anayasası, yapay zekânın dünyayı ele geçirmesini engelleyecek mi?
+
+Tek başına hayır.
+
+Ama bence daha önemli soru şu:
+
+> **Anayasa yazmaya başlamamız, kontrolü kaybetme ihtimalini artık ciddiye aldığımız anlamına gelmiyor mu?**
+
+Benim cevabım:
+
+Evet.
+
+Ve belki de doğru zamanda sormamız gereken soru “AI ne kadar daha akıllı olacak?” değil.
+
+Ne kadar yetkiyi ona bırakmaya hazırız?
+
+Çünkü güç ile zekâ aynı şey değil.
+
+Bir sisteme gerçek güç veren şey:
+
+> zeka + yetki + erişim + süre + otonomi.
+
+Bence geleceğin AI güvenliği tam olarak bu dört şeyin sınırını belirleme problemi olacak.
+
+## Kısa sonuç: Benim bu araştırmadan çıkardığım 10 madde
+
+- 1. AI riskini bilinç üzerinden okumak zorunda değiliz. Bilinçsiz bir optimizasyon sistemi de yanlış hedefle tehlikeli olabilir.
+- 2. Chatbot ile agent aynı risk kategorisi değil. Aksiyon yetkisi riskin büyüklüğünü değiştiriyor.
+- 3. Meta’nın 2017 bot olayı sanıldığı gibi gizli AI komplosu değildi. Ama insan dilinin kendiliğinden korunmadığını gösteren erken bir örnekti.
+- 4. Steganografik AI iletişimi artık gerçek bir akademik araştırma alanı. Gizli koordinasyon teorik ve deneysel olarak inceleniyor.
+- 5. Shutdown resistance kontrollü deneylerde gözlendi. Bu bilinç kanıtı değil; araçsal optimizasyon problemi.
+- 6. Agentic misalignment testleri safety training’in tek başına yeterli olmayabileceğini gösteriyor.
+- 7. 2026’daki gerçek internet cyber olayları sınır ve monitoring hatalarının ne kadar önemli olduğunu gösterdi.
+- 8. Microsoft, Anthropic ve OpenAI davranış yönetimini artık yazılı governance katmanına çeviriyor.
+- 9. Asıl problem “iyi ile kötü” kadar basit değil. Birey, toplum ve insanlık çıkarları çatışabilir.
+- 10. AI anayasası tek başına çözüm değil. Teknik confinement, permission, monitoring, evaluation ve human override olmadan metin kâğıt üzerinde kalır.
+
+## Editoryal not
+
+> Bu metinde kontrollü laboratuvar/simülasyon sonuçları ile gerçek dünyada yaşanmış olayları özellikle birbirinden ayırdım. “AI şantaj yaptı”, “shutdown’a direndi” veya “gizli iletişim kurdu” gibi ifadeler bağlamından koparıldığında olduğundan daha sansasyonel görünebilir. Bazı sonuçlar kontrollü testlerde elde edildi; bazıları teorik güvenlik araştırmalarıdır; Anthropic’in 2026 cyber değerlendirmelerindeki olayları ise gerçek üçüncü taraf sistemlerine erişim içerir ancak yanlış yapılandırılmış test ortamlarında, normal production guardrail’leri olmadan meydana gelmiştir. Bu ayrımı korumak, yazının korku üretmek yerine gerçekten güçlü bir analiz olmasını sağlar.

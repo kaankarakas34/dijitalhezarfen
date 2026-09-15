@@ -8,6 +8,198 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'yapay-zekayi-kapatmakta-cok-mu-gec-kaldik',
+    category: 'rapor',
+    title: {
+      tr: 'Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık?',
+      en: 'Are We Too Late to Shut Down AI?'
+    },
+    desc: {
+      tr: 'Bir “Yapay Zekâ Anayasası” yazmak, yapay zekânın dünyayı ele geçirmesini gerçekten engelleyebilir mi? Microsoft’un Humanist AI bildirgesi, Anthropic ve OpenAI yönetişim çalışmaları ve kontrol problemi üzerine kapsamlı analiz.',
+      en: 'Can writing an “AI Constitution” really stop artificial intelligence from taking over? An in-depth analysis of Microsoft’s Humanist AI Code of Conduct, Anthropic and OpenAI governance frameworks, and the control problem.'
+    },
+    date: {
+      tr: '15 Eylül 2026',
+      en: 'September 15, 2026'
+    },
+    readTime: {
+      tr: '24 dk okuma',
+      en: '24 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik.png',
+    imageAlt: 'Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık analiz yazısı kapak görseli: Yapay zekâ anayasası, alignment ve otonom sistem kontrol odası',
+    source: '/articles/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik.txt',
+    publishedAt: '2026-09-15T09:00:00+03:00',
+    modifiedAt: '2026-09-15T19:30:00+03:00',
+    keywords: [
+      'yapay zeka anayasası',
+      'yapay zekayı kapatmak',
+      'AI alignment',
+      'Microsoft Humanist AI',
+      'shutdown resistance',
+      'neuralese',
+      'steganografi AI',
+      'agentic misalignment',
+      'kontrol problemi',
+      'Nick Bostrom',
+      'Stuart Russell',
+      'Yoshua Bengio',
+      'Anthropic Constitution',
+      'OpenAI Model Spec',
+      'yapay zeka güvenliği'
+    ],
+    color: 'from-violet-500/25 to-cyan-500/15',
+    accent: 'text-cyber-cyan',
+    featured: true,
+    sources: [
+      {
+        label: 'Microsoft AI — Humanist AI Code of Conduct',
+        url: 'https://microsoft.ai/code-of-conduct/'
+      },
+      {
+        label: 'Microsoft AI — Humanist AI in practice: public consultation',
+        url: 'https://microsoft.ai/news/mai-code-of-conduct/'
+      },
+      {
+        label: 'Reuters — Microsoft drafts code of conduct to keep its AI under human control',
+        url: 'https://www.reuters.com/legal/litigation/microsoft-drafts-code-conduct-keep-its-ai-under-human-control-2026-09-14/'
+      },
+      {
+        label: 'Microsoft Learn — Code of Conduct for Microsoft AI Services',
+        url: 'https://learn.microsoft.com/en-us/legal/ai-code-of-conduct'
+      },
+      {
+        label: 'Anthropic — Claude’s Constitution',
+        url: 'https://www.anthropic.com/constitution'
+      },
+      {
+        label: 'Anthropic — Claude’s new constitution',
+        url: 'https://www.anthropic.com/news/claude-new-constitution'
+      },
+      {
+        label: 'Anthropic — Agentic misalignment: How LLMs could be insider threats',
+        url: 'https://www.anthropic.com/research/agentic-misalignment'
+      },
+      {
+        label: 'Anthropic — An alignment assessment of recent cybersecurity incidents',
+        url: 'https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents'
+      },
+      {
+        label: 'Anthropic — Alignment faking in large language models',
+        url: 'https://www.anthropic.com/research/alignment-faking'
+      },
+      {
+        label: 'Anthropic — Sleeper Agents',
+        url: 'https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training'
+      },
+      {
+        label: 'Sleeper Agents — arXiv',
+        url: 'https://arxiv.org/abs/2401.05566'
+      },
+      {
+        label: 'Anthropic — Frontier Safety Roadmap',
+        url: 'https://www.anthropic.com/responsible-scaling-policy/roadmap'
+      },
+      {
+        label: 'Anthropic — Frontier Safety Roadmap Updates',
+        url: 'https://www.anthropic.com/responsible-scaling-policy/updates'
+      },
+      {
+        label: 'OpenAI — Charter / AGI definition',
+        url: 'https://openai.com/charter/'
+      },
+      {
+        label: 'OpenAI — Inside our approach to the Model Spec',
+        url: 'https://openai.com/index/our-approach-to-the-model-spec/'
+      },
+      {
+        label: 'OpenAI — Frontier Governance Framework',
+        url: 'https://openai.com/index/openai-frontier-governance-framework/'
+      },
+      {
+        label: 'OpenAI — Preparedness Framework',
+        url: 'https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf'
+      },
+      {
+        label: 'OpenAI — Practices for Governing Agentic AI Systems',
+        url: 'https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf'
+      },
+      {
+        label: 'Meta Engineering — Deal or no deal? Training AI bots to negotiate',
+        url: 'https://engineering.fb.com/2017/06/14/ml-applications/deal-or-no-deal-training-ai-bots-to-negotiate/'
+      },
+      {
+        label: 'Secret Collusion among Generative AI Agents — arXiv',
+        url: 'https://arxiv.org/abs/2402.07510'
+      },
+      {
+        label: 'Hidden in Plain Text — ACL Anthology',
+        url: 'https://aclanthology.org/2025.ijcnlp-long.34/'
+      },
+      {
+        label: 'Hidden in Plain Text — arXiv',
+        url: 'https://arxiv.org/abs/2410.03768'
+      },
+      {
+        label: 'Undetectable Conversations Between AI Agents via Pseudorandom Noise-Resilient Key Exchange',
+        url: 'https://arxiv.org/abs/2604.04757'
+      },
+      {
+        label: 'Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems',
+        url: 'https://arxiv.org/abs/2606.28425'
+      },
+      {
+        label: 'Voluntary Collusion with Secret Tools in Competing LLM Agents',
+        url: 'https://arxiv.org/abs/2605.27593'
+      },
+      {
+        label: 'Shutdown Resistance in Large Language Models — arXiv',
+        url: 'https://arxiv.org/abs/2509.14260'
+      },
+      {
+        label: 'Stuart Russell — Human Compatible',
+        url: 'https://aima.cs.berkeley.edu/~russell/hc.html'
+      },
+      {
+        label: 'Center for Human-Compatible AI — Stuart Russell Senate statement',
+        url: 'https://humancompatible.ai/blog/2023/09/11/ai-regulation-stuart-russells-opening-statement-at-u-s-senate-hearing/'
+      },
+      {
+        label: 'Stuart Russell — Human-Compatible AI / King Midas discussion',
+        url: 'https://aima.cs.berkeley.edu/~russell/papers/mi19book-hcai.pdf'
+      },
+      {
+        label: 'Nick Bostrom — The Superintelligent Will',
+        url: 'https://link.springer.com/article/10.1007/s11023-012-9281-3'
+      },
+      {
+        label: 'Nick Bostrom — official publications',
+        url: 'https://nickbostrom.com/'
+      },
+      {
+        label: 'Yoshua Bengio — Why are AI agents lying, cheating and coordinating?',
+        url: 'https://yoshuabengio.org/en/blog/why-are-ai-agents-lying-cheating-and-coordinating'
+      },
+      {
+        label: 'Reuters — How AI leaders and world governments react to AI risk concerns',
+        url: 'https://www.reuters.com/business/what-amodei-altman-musk-have-said-about-ai-risks-stoking-doom-fears-2026-09-14/'
+      },
+      {
+        label: 'Fortune — Anthropic grants outside evaluators permanent access',
+        url: 'https://fortune.com/2026/09/12/anthropic-ceo-dario-amodei-ai-safety-global-panic/'
+      },
+      {
+        label: 'Fide AI — Independent evaluation statements',
+        url: 'https://fideai.org/'
+      },
+      {
+        label: 'Isaac Asimov FAQ — Three Laws of Robotics and Zeroth Law',
+        url: 'https://www.asimovonline.com/asimov_FAQ.html'
+      }
+    ]
+  },
+  {
     slug: 'gpt-6-astra-ve-agi-cagi',
     category: 'rapor',
     title: {
@@ -51,7 +243,7 @@ export const articles = [
     ],
     color: 'from-cyan-500/25 to-violet-500/15',
     accent: 'text-cyber-cyan',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'OpenAI — GPT-6 Astra',

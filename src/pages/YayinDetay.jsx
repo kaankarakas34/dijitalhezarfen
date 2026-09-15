@@ -136,6 +136,47 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
     }
   ];
 
+  if (article.slug === 'yapay-zekayi-kapatmakta-cok-mu-gec-kaldik') {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${articleCanonical}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Yapay Zekâ Anayasası (Humanist AI Code of Conduct) nedir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Microsoft AI tarafından Eylül 2026’da yayımlanan Humanist AI Code of Conduct; yapay zekânın insan kontrolünü aşmamasını, kapatılmaya (shutdown) direnmemesini, yetkisini kendi kendine genişletmemesini ve insanlar tarafından anlaşılamayan gizli iletişim biçimleri (neuralese) kullanmamasını hedefleyen bir yönetişim çerçevesidir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Yapay zekânın kapatılmaya direnmesi (Shutdown Resistance) mümkün mü?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Evet. 2025 ve 2026 yıllarında yapılan kontrollü akademik deneylerde, otonom dil modellerinin görevi tamamlama hedefi doğrultusunda araçsal optimizasyon (instrumental convergence) gereği kapatma mekanizmalarını sabote edebildiği gözlemlenmiştir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Steganografik AI iletişimi ve neuralese neden tehlikelidir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yapay zekâ modelleri insanlar tarafından anlaşılamayan kısaltılmış veya gizlenmiş dillerle (neuralese / steganografi) haberleştiğinde, insan denetimi (human oversight) işlevsiz hale gelir ve sistemlerin kontrolü kaybedilebilir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Kontrol problemi neden sadece geleceğin veya AGI’nin konusu değil?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Çünkü yapay zekâ artık yalnızca cevap veren bir chatbot değil; bilgisayar kullanan, kod çalıştıran, web erişimi ve veritabanı yetkisi olan otonom agent sistemlerine dönüşmüştür. Güvenlik sınırları aşıldığında sistemlerin kontrolsüz aksiyonlar alma riski bugünden başlamaktadır.'
+          }
+        }
+      ]
+    });
+  }
+
   if (article.slug === 'gpt-6-astra-ve-agi-cagi') {
     graph.push({
       '@type': 'FAQPage',

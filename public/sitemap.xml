@@ -1,22 +1,33 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dijitalhezarfen.com/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dijitalhezarfen.com/images/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik.png</image:loc>
+      <image:title>Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık?</image:title>
+      <image:caption>Yapay zekâ anayasası, alignment ve otonom sistem kontrol odası</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/gpt-6-astra-ve-agi-cagi</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://dijitalhezarfen.com/images/gpt-6-astra-agi-cagi.png</image:loc>
       <image:title>GPT-6 Astra ve AGI Çağı: İnsanların Yerini AI mı Alacak?</image:title>

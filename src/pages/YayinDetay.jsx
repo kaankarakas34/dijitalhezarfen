@@ -404,12 +404,12 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
       } else if (line.startsWith('### ')) {
         const title = line.replace(/^###\s+/, '');
         list.push({ title, slug: slugify(title), level: 3 });
-      } else if (isLegacySectionHeading(line)) {
+      } else if (articleMeta?.replaceTodayWithDate && isLegacySectionHeading(line)) {
         list.push({ title: line, slug: slugify(line), level: 2 });
       }
     });
     return list;
-  }, [bodyLines]);
+  }, [bodyLines, articleMeta?.replaceTodayWithDate]);
 
   useEffect(() => {
     if (!articleMeta) {
@@ -741,8 +741,8 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 );
               }
 
-              // Legacy Heading Support
-              if (isLegacySectionHeading(line)) {
+              // Legacy Heading Support (Only for unformatted legacy articles)
+              if (articleMeta?.replaceTodayWithDate && isLegacySectionHeading(line)) {
                 const headingId = slugify(line);
                 return (
                   <h2
@@ -769,6 +769,11 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 );
               }
 
+              // Horizontal Divider (---)
+              if (line === '---' || line === '***') {
+                return <hr key={`hr-${index}`} className="my-10 border-white/10" />;
+              }
+
               // Bullet List Item (- or *)
               if (line.startsWith('- ') || line.startsWith('* ')) {
                 const itemContent = line.replace(/^[-*]\s+/, '');
@@ -776,6 +781,21 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                   <div key={`li-${index}`} className="flex items-start gap-3 pl-2 sm:pl-4 text-sm sm:text-base text-gray-300 font-light leading-relaxed">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyber-cyan mt-2.5 shrink-0" />
                     <p>{renderFormattedContent(itemContent, onNavigate, articleMeta.sources)}</p>
+                  </div>
+                );
+              }
+
+              // Ordered List Item (1. 2. etc.)
+              const orderedMatch = line.match(/^(\d+)\.\s+(.*)$/);
+              if (orderedMatch) {
+                const itemNum = orderedMatch[1];
+                const itemContent = orderedMatch[2];
+                return (
+                  <div key={`oli-${index}`} className="flex items-start gap-3 pl-2 sm:pl-4 text-sm sm:text-base text-gray-300 font-light leading-relaxed">
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyber-cyan text-[11px] font-mono font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {itemNum}
+                    </span>
+                    <div className="flex-1">{renderFormattedContent(itemContent, onNavigate, articleMeta.sources)}</div>
                   </div>
                 );
               }

@@ -218,6 +218,47 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
     });
   }
 
+  if (article.slug === 'insani-insan-yapan-sey-aslinda-zihnidir') {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${articleCanonical}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'İnsanı insan yapan şey nedir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'İnsanı insan yapan şey sabit bir veri arşivi veya dosya değil; beynin, bedenin, hafızanın, duyguların, değerlerin, biyolojik düzenin ve çevreyle etkileşimin birbirini sürekli değiştirdiği yaşayan bir süreçtir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Zihin aktarımı (mind uploading) bilimsel olarak mümkün mü?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Bugünkü teknolojik ve nörobilimsel olanaklarla dinamik beyin durumunu, sinaptik plastisiteyi ve öznel deneyimi kopyalamak mümkün değildir. BCI ve konuşma nöroprotezleri gelişmekle birlikte tam zihin transferi günümüzde spekülatif bir düşünce deneyidir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Yapay zekâ gerçekten duygu hissedebilir mi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Mevcut yapay zekâ duyguyu sınıflandırabilir ve simüle edebilir; fakat biyolojik homeostazis, interosepsiyon ve varoluşsal risk taşımadığı için öznel olarak insan gibi duygu hissedemez.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Nöroplastisite hafıza ve benliği nasıl şekillendirir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'İnsan öğrendiğinde sinaptik bağlantılar (LTP/LTD) fiziksel olarak değişir. Hatırlamak salt bir veriyi okumak değil, anıyı bugünkü değer ve bağlamla yeniden inşa etmektir (reconsolidation).'
+          }
+        }
+      ]
+    });
+  }
+
   element.textContent = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': graph
@@ -774,9 +815,9 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 return <hr key={`hr-${index}`} className="my-10 border-white/10" />;
               }
 
-              // Bullet List Item (- or *)
-              if (line.startsWith('- ') || line.startsWith('* ')) {
-                const itemContent = line.replace(/^[-*]\s+/, '');
+              // Bullet List Item (- or * or •)
+              if (line.startsWith('- ') || line.startsWith('* ') || line.startsWith('• ')) {
+                const itemContent = line.replace(/^[-*•]\s+/, '');
                 return (
                   <div key={`li-${index}`} className="flex items-start gap-3 pl-2 sm:pl-4 text-sm sm:text-base text-gray-300 font-light leading-relaxed">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyber-cyan mt-2.5 shrink-0" />

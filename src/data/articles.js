@@ -8,6 +8,143 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'insani-insan-yapan-sey-aslinda-zihnidir',
+    category: 'rapor',
+    title: {
+      tr: 'İnsanı İnsan Yapan Şey Aslında Zihnidir',
+      en: 'What Truly Makes Us Human Is the Mind: Neuroscience, Philosophy & AI'
+    },
+    desc: {
+      tr: 'Nöroplastisite, bellek, beyin kimyası, benlik felsefesi, Alzheimer, yapay zekâ duygu mimarisi ve zihin transferi: “İnsanı insan yapan şey aslında zihnidir.” Bilimsel araştırmalar ve klasik felsefi eserlerle desteklenmiş kapsamlı analiz.',
+      en: 'Neuroplasticity, memory reconsolidation, brain chemistry, the philosophy of self, Alzheimer’s, AI emotion, and mind uploading: “What truly makes a human human is the mind.” An in-depth essay backed by science and classical philosophy.'
+    },
+    date: {
+      tr: '19 Eylül 2026',
+      en: 'September 19, 2026'
+    },
+    readTime: {
+      tr: '35 dk okuma',
+      en: '35 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/insani-insan-yapan-sey-aslinda-zihnidir.png',
+    imageAlt: 'İnsanı İnsan Yapan Şey Aslında Zihnidir analiz yazısı: İnsan beyni, nöral ağlar, bilinç ve yapay zekâ felsefesi',
+    source: '/articles/insani-insan-yapan-sey-aslinda-zihnidir.txt',
+    publishedAt: '2026-09-19T10:00:00+03:00',
+    modifiedAt: '2026-09-19T12:50:00+03:00',
+    keywords: [
+      'insanı insan yapan şey nedir',
+      'zihin felsefesi',
+      'nöroplastisite',
+      'zihin aktarımı',
+      'mind uploading',
+      'yapay zeka duygu hissedebilir mi',
+      'bilinç teorileri',
+      'David Hume bundle theory',
+      'Theseus’un gemisi',
+      'Antonio Damasio somatic marker',
+      'predictive processing',
+      'active inference',
+      'Karl Friston',
+      'Derek Parfit',
+      'affective computing',
+      'otobiyografik bellek'
+    ],
+    color: 'from-purple-500/25 to-cyan-500/15',
+    accent: 'text-cyber-cyan',
+    featured: true,
+    sources: [
+      {
+        label: 'Philosophical Transactions of the Royal Society B — Bliss et al. (2020) Long-term potentiation as a memory mechanism',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/32442358/'
+      },
+      {
+        label: 'Neuron — Feldman, D. E. (2012) The spike-timing dependence of plasticity',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/22920249/'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Nader & Hardt (2009) Reconsolidation of memory',
+        url: 'https://doi.org/10.1038/nrn2590'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Ryan & Frankland (2022) Forgetting as adaptive engram plasticity',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/35027710/'
+      },
+      {
+        label: 'Nature Neuroscience — Klinzing, Niethard & Born (2019) Memory consolidation during sleep',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/31451802/'
+      },
+      {
+        label: 'Philosophical Transactions of the Royal Society B — Damasio, A. R. (1996) The somatic marker hypothesis',
+        url: 'https://doi.org/10.1098/rstb.1996.0125'
+      },
+      {
+        label: 'BioEssays — Carvalho & Damasio (2021) Interoception and the origin of feelings',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/33763881/'
+      },
+      {
+        label: 'Neuron — LeDoux, J. E. (2012) Rethinking the emotional brain',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/22365542/'
+      },
+      {
+        label: 'Social Cognitive and Affective Neuroscience — Barrett, L. F. (2017) Theory of constructed emotion',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/27798257/'
+      },
+      {
+        label: 'Molecular Psychiatry — Moncrieff et al. (2022) The serotonin theory of depression umbrella review',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/35854107/'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Schultz, W. (2016) Dopamine reward prediction-error signalling',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/26865020/'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Cunningham & Maze (2026) Early life experiences and neural epigenome',
+        url: 'https://doi.org/10.1038/s41583-026-01074-w'
+      },
+      {
+        label: 'Nature Reviews Gastroenterology & Hepatology — Aburto & Cryan (2024) Microbiota–gut–brain axis',
+        url: 'https://doi.org/10.1038/s41575-023-00890-0'
+      },
+      {
+        label: 'Memory — Addis & Tippett (2004) Memory of myself: autobiographical memory and identity in Alzheimer’s',
+        url: 'https://doi.org/10.1080/09658210244000423'
+      },
+      {
+        label: 'Nature — LeCun, Bengio & Hinton (2015) Deep learning',
+        url: 'https://doi.org/10.1038/nature14539'
+      },
+      {
+        label: 'Nature Machine Intelligence — Man & Damasio (2019) Homeostasis and soft robotics in feeling machines',
+        url: 'https://doi.org/10.1038/s42256-019-0103-7'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Friston, K. (2010) The free-energy principle: a unified brain theory?',
+        url: 'https://doi.org/10.1038/nrn2787'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Seth & Bayne (2022) Theories of consciousness',
+        url: 'https://doi.org/10.1038/s41583-022-00587-4'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Tononi, Boly, Massimini & Koch (2016) Integrated information theory',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/27225071/'
+      },
+      {
+        label: 'The Philosophical Review — Nagel, T. (1974) What Is It Like to Be a Bat?',
+        url: 'https://www.jstor.org/stable/2183914'
+      },
+      {
+        label: 'Behavioral and Brain Sciences — Searle, J. R. (1980) Minds, Brains, and Programs',
+        url: 'https://doi.org/10.1017/S0140525X00005756'
+      },
+      {
+        label: 'Analysis — Clark, A. & Chalmers, D. (1998) The Extended Mind',
+        url: 'https://doi.org/10.1093/analys/58.1.7'
+      }
+    ]
+  },
+  {
     slug: 'yapay-zekayi-kapatmakta-cok-mu-gec-kaldik',
     category: 'rapor',
     title: {
@@ -51,7 +188,7 @@ export const articles = [
     ],
     color: 'from-violet-500/25 to-cyan-500/15',
     accent: 'text-cyber-cyan',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'Microsoft AI — Humanist AI Code of Conduct',

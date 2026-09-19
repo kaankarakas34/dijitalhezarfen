@@ -1,0 +1,548 @@
+İnsanı İnsan Yapan Şey Aslında Zihnidir: Zihin, Bilinç, Beyin ve Yapay Zekâ
+
+*Bilimsel araştırmalar ve klasik felsefi eserlerle desteklenmiş düşünce metni*
+
+> **Merkez cümle: “İnsanı insan yapan şey aslında zihnidir.”**
+
+> *Not: Bu metin bir tıbbi veya nörobilimsel ders kitabı değildir. Bilimsel bulguları, felsefi görüşleri ve spekülatif düşünce deneylerini birbirinden ayırarak kullanan bir denemedir. Zihin aktarımı ve yapay zekâ-insan çatışması bölümlerindeki gelecek senaryoları, bugünün teknolojik gerçekliği olarak değil, düşünce deneyi olarak okunmalıdır.*
+
+## 1. Asıl soru: İnsanı insan yapan şey nedir?
+
+Bir süredir yapay zekâyı konuşurken aklıma sürekli aynı soru geliyor. Yapay zekâ nereye gidiyor? Fakat biraz daha düşündüğümde asıl sorunun bu olmadığını fark ettim. Çünkü yapay zekâyı anlamaya çalıştıkça dönüp dolaşıp kendimizi anlamaya çalışıyoruz.
+
+Makine düşünebilir mi? Hissedebilir mi? Sevebilir mi? Kin tutabilir mi? Kendisini korumak isteyebilir mi? Ölmekten korkabilir mi? Bir insanın zihni başka bir bedene, başka bir beyine veya bir makineye aktarılabilir mi? Bütün bunların altında tek bir soru var: **İnsanı insan yapan şey nedir?**
+
+Benim buna vereceğim ilk cevap çok net: **İnsanı insan yapan şey aslında zihnidir.** Fakat bu cümleyi söylediğimiz anda mesele çözülmüyor; tam tersine büyüyor. Çünkü zihin dediğimiz şey nedir? Beyin mi? Hafıza mı? Öğrendiklerimiz mi? Karakter mi? Beyin kimyası mı? Duygular mı? Beden mi? Yoksa bunların hiçbiri tek başına değil de, hepsinin zaman içinde birbirini sürekli değiştirdiği bir süreç mi?
+
+Bu nedenle bu yazı “yapay zekâ insan olacak mı?” yazısı değil. Asıl mesele şu: Bir makineyi insana benzetmeye çalışırken, insanın ne olduğunu gerçekten biliyor muyuz? Ve bir gün zihni kopyalayabilirsek, kopyaladığımız şey gerçekten insan olacak mı; yoksa insanın çok başarılı bir modelini mi üretmiş olacağız?
+
+## 2. Yazılımdan öğrenen makineye: Mantık, öğrenme ve amaç
+
+En basit yere dönelim. Yazılım nedir? En dipte elektronik devreler, fiziksel durumlar, mantık kapıları ve bunların üzerine inşa edilen devasa soyutlama katmanları var. 0 ve 1 bile gerçekte elektriksel durumları temsil eden bir soyutlama. Bunun üzerine koşullar, döngüler, veri yapıları, algoritmalar ve sonunda karmaşık sistemler kuruluyor.
+
+Klasik yazılımda insan kuralı yazıyordu: “Eğer şu olursa bunu yap.” Makine uyguluyordu. Makine öğrenmesinde ise programcı her kararı tek tek yazmıyor. Veriyi, hedefi ve öğrenme mekanizmasını veriyor. Yapay sinir ağı, milyonlarca ya da milyarlarca parametreyi değiştirerek verideki ilişkileri öğreniyor. Modern derin öğrenmenin temel mekanizmalarından backpropagation, üretilen hatanın ağdaki ağırlıklara nasıl dağıldığını hesaplayıp bu ağırlıkları güncelliyor (LeCun, Bengio & Hinton, 2015).
+
+Kabaca söyleyince şuna benziyor: “Yanlış yaptım. Bu yanlışta hangi bağlantılar ne kadar rol oynadı? Bir sonraki sefer sonucu biraz daha iyi yapmak için onları değiştireyim.” İnsan da hata yapıyor, sonucunu görüyor ve davranışını değiştiriyor. Biz buna tecrübe diyoruz. Makinede buna parametre güncellemesi diyebiliriz. Ama bu benzerlik bizi hemen “insan zaten makinedir” sonucuna götürmemeli. Çünkü insan öğrenirken yalnızca soyut bir ağırlık değişmiyor. **Öğrenen biyolojik sistemin kendisi değişiyor.**
+
+Burada ikinci bir ayrım daha var: Zekâ ile amaç aynı şey değil. Bir sistem çok iyi hesap yapabilir ama neyin “iyi” olduğuna tek başına karar vermek zorunda değildir. Hume’un yüzyıllar önce işaret ettiği gibi akıl, araçları hesaplayabilir; fakat amaç ve motivasyon meselesi daha farklıdır. Yapay zekâ tartışmasının en kritik sorularından biri de bu: Sistemin neyi optimize edeceğini kim belirliyor?
+
+## 3. Nöroplastisite: İnsan öğrendiğinde beynin kendisi değişir
+
+Nöroplastisite çoğu yerde “beynin yeni bağlantılar kurabilmesi” diye anlatılıyor. Doğru ama yetersiz. Nöroplastisite, sinir sisteminin deneyim, öğrenme, çevre, gelişim ve yaralanma sonucunda yapısal ve işlevsel olarak değişebilme kapasitesini kapsıyor. İnsan beyninin gücü sadece nöron sayısından değil, bu nöronların oluşturduğu devasa ve sürekli değişen bağlantı ağından geliyor.
+
+Nöronlar sinapslar üzerinden haberleşiyor. Fakat bütün sinapslar aynı güçte değil. Bir bağlantı güçlenebilir, zayıflayabilir, yeni bağlantılar oluşabilir, mevcut bağlantıların yapısı değişebilir. Dendritlerin üzerindeki küçük çıkıntılar olan dendritik spine’lar öğrenmeyle birlikte şekil ve yoğunluk değiştirebilir. Hücrenin içinde reseptörlerden gen ifadesine kadar uzanan biyokimyasal zincirler devreye girebilir.
+
+Bu alanın en bilinen kavramlarından biri **long-term potentiation (LTP)**. Belirli sinaptik bağlantılar uygun biçimde tekrar tekrar etkinleştiğinde daha sonra aynı girdiye daha güçlü yanıt verebilir. Bunun karşı yönlü süreçlerinden biri **long-term depression (LTD)**; sinaptik etkinlik azalabilir. NMDA ve AMPA reseptörleri, kalsiyum sinyali, protein sentezi, CREB gibi transkripsiyon mekanizmaları ve BDNF gibi nörotrofik faktörler bu tablonun parçalarıdır. LTP ve LTD hafızanın tek açıklaması değildir, fakat öğrenme ve hafızanın hücresel mekanizmalarını anlamada temel taşlardır (Bliss ve ark., 2020).
+
+Daha da ilginci, sinaptik plastisitede zamanlamanın kendisi önem taşıyabilir. **Spike-timing-dependent plasticity (STDP)** çalışmalarında iki nöronun yalnızca birlikte aktif olup olmaması değil, hangisinin diğerinden milisaniyeler önce ateşlediği bazı koşullarda bağlantının güçlenmesi ya da zayıflamasının yönünü etkileyebilir (Feldman, 2012). Yani insan beyninde “bu iki olay birbirine bağlı” dediğimiz şeyin fiziksel bir karşılığı oluşabilir.
+
+Bir insanla tanışıyorum. Bir hata yapıyorum. Korkuyorum. Âşık oluyorum. İhanet görüyorum. Bir şeyi ilk defa başarıyorum. Bunlar yalnızca bir günlükte yazılı kalan olaylar değil. Sonraki davranışlarımı üreten sistemin bağlantılarını etkileyebiliyorlar.
+
+Benim için burada ilk büyük sonuç şu: **İnsan bilgi depolayan bir kap değildir. İnsan, aldığı bilgi tarafından değiştirilen bir sistemdir.** Bu fark, biraz sonra zihin transferi fikrinin en büyük problemlerinden birine dönüşecek.
+
+## 4. Hafıza, engram, yeniden pekiştirme ve unutma
+
+Bilgisayar hafızasını dosyalar üzerinden düşünmeye alışığız. Fotoğraf burada. Metin burada. Veritabanı burada. Kopyala, taşı, yedekle, geri yükle. İnsan hafızası ise böyle çalışmıyor.
+
+Nörobilimde **engram** kavramı, belirli bir anının oluşturulması ve çağrılmasıyla ilişkili hücresel toplulukları ve kalıcı değişimleri anlamak için kullanılıyor. Fakat “anı = tek hücrede duran dosya” gibi bir model yanlış. Hafıza dağıtık, bağlantılı ve dinamik. Farklı anılar birbirine bağlanabiliyor; bir anının çağrılması başka anıları tetikleyebiliyor; anılar zaman içinde değişebiliyor.
+
+İşin en çarpıcı kısmı **reconsolidation**, yani yeniden pekiştirme. Bazı anılar hatırlandıklarında yeniden kararsız hâle gelebiliyor ve daha sonra tekrar stabilize oluyor. Bu nedenle hatırlama, yalnızca geçmişte yazılmış bir dosyayı “okumak” olmayabilir. Hatırlamak aynı zamanda yeniden kurmak olabilir (Nader & Hardt, 2009).
+
+Çocukluğumdan bir olayı bugün hatırladığımda geçmişteki olay değişmedi. Ama bugünkü beynimin o olayı temsil etme ve yorumlama biçimi değişmiş olabilir. Bugünkü değerlerim, korkularım, başarılarım ve ilişkilerim eski olaya yeni anlam verebilir.
+
+Bunun yanında unutma var. Unutmayı genellikle kusur olarak görüyoruz. Oysa modern literatür unutmanın bazı biçimlerinin adaptif olabileceğini tartışıyor. Her ayrıntıyı aynı önemle saklayan bir sistem için asıl sorun depolamak değil, **hangi bilginin şu anda önemli olduğunu seçmek** olur. Ryan ve Frankland’ın “adaptive forgetting” yaklaşımı, unutmanın engramlara erişimi ve plastisiteyi düzenleyen aktif süreçlerle ilişkili olabileceğini savunuyor.
+
+Uyku da hafıza için pasif bir kapatma düğmesi değil. Hipokampus ve neokorteks arasındaki etkileşimler, tekrar etkinleşen nöral örüntüler ve sistem konsolidasyonu süreçleri, bazı anıların daha kalıcı ve genellenebilir hale gelmesine katkıda bulunabiliyor (Klinzing, Niethard & Born, 2019).
+
+Üstelik hafızanın hücresel altyapısını yalnızca nöronlara indirgemek de artık giderek daha fazla sorgulanıyor. Astroglia gibi nöron dışı hücrelerin bellekle ilişkili plastisite süreçlerinde rol oynayabileceğine ilişkin araştırmalar büyüyor. Bu da gelecekte “beyni kopyalamak” derken tam olarak neyi kopyalamamız gerektiği sorusunu daha da zorlaştırıyor.
+
+Buradan çıkan ikinci büyük sonuç şu: **Belki insanı insan yapan şey yalnızca hatırlaması değil, neyi unutacağı, neyi yeniden yorumlayacağı ve geçmişini nasıl yeniden yazacağıdır.**
+
+## 5. Benlik bir arşiv mi, süreç mi? Hume, Herakleitos ve Theseus’un Gemisi
+
+Burada “ben” dediğimiz şeyin sabit bir nesne olup olmadığını sormak zorundayız. David Hume, kendi zihnine baktığında değişmeyen, yalın bir “ben” bulamadığını; algılar, düşünceler ve duygulardan oluşan bir akış gördüğünü söyler. Hume’un **bundle theory** diye anılan yaklaşımında benlik, sabit bir çekirdekten çok ilişkili algıların bir demeti ya da sürekliliği olarak düşünülebilir.
+
+Bu fikir benim vardığım “insan bir dosya değil, süreçtir” düşüncesine çok yakın. Herakleitos’un “aynı nehre iki kez girilmez” sözü de aynı yönden vuruyor. Nehir akıyor. Su değişiyor. Ben de değişiyorum. Peki aynı zihne iki kez girilebilir mi?
+
+Theseus’un Gemisi düşünce deneyi de benzer problemi başka biçimde kuruyor. Bir geminin parçalarını yıllar içinde tek tek değiştirdiğimizde hâlâ aynı gemi midir? Peki insanın hücreleri, sinaptik bağlantıları, anıları, değerleri, bedeni ve karakteri zaman içinde değişiyorsa hangi noktada “aynı insan” olmaktan çıkar?
+
+Bu soruların hiçbiri yalnızca kelime oyunu değil. Zihin transferi teknolojisi bir gün mümkün olursa hangi bilgiyi, hangi yapıyı ve hangi sürekliliği “kişinin kendisi” sayacağımızı belirlemek zorunda kalacağız.
+
+Bir başka katman **narrative identity**, yani anlatısal kimlik. İnsan sadece geçmişini hatırlamıyor; geçmişini bir hikâyeye dönüştürüyor. “Bana bu oldu” ile “bu olay beni böyle biri yaptı” aynı şey değil. Bugünkü benlik, geçmişteki olayları seçiyor, sıralıyor, bazılarına anlam yüklüyor ve kendisi hakkında bir anlatı kuruyor. Autobiographical memory literatüründe de bugünkü hedeflerin ve benlik görüşünün geçmişi nasıl hatırladığımızı etkileyebildiğine ilişkin güçlü bir çift yönlü ilişki var (Wilson & Ross, 2003).
+
+Burada **dil** devreye giriyor. Vygotsky’nin iç konuşma yaklaşımı ve Wittgenstein’ın dil ile dünya arasındaki ilişkiye yaptığı vurgu bize şunu düşündürüyor: İnsan yaşadığını yalnız hissetmiyor; yaşadığını adlandırıyor. “Başarısız oldum” ile “Ben başarısız bir insanım” aynı olaydan çıkabilir ama aynı benliği üretmez. Zihni transfer ederken sadece anıları değil, insanın kendisi hakkında kurduğu dili de transfer etmemiz gerekebilir.
+
+Daha radikal bir fikir Clark ve Chalmers’ın **Extended Mind** tezinde ortaya çıkıyor. Zihinsel süreçlerin sınırı her zaman kafatasında bitmek zorunda mı? Bir insanın sürekli kullandığı not defteri, telefonu, dijital hafızası veya gelecekteki implantı bilişsel sisteminin gerçek bir parçası haline gelebilir mi? Eğer cevap kısmen evetse, geleceğin zihin transferi belki bir anda olmayacak. Zihin, yıllar boyunca yavaş yavaş bedenin dışına taşınacak.
+
+Varela, Thompson ve Rosch’un **enaktivist** çizgisi de bunu başka yönden güçlendiriyor: Zihin, içeride dünya modeli hesaplayan izole bir beyin değil; bedenin çevreyle sürekli etkileşiminden doğan bir süreç olabilir. Böyle bakınca “beyni kopyaladım, zihni kopyaladım” eşitliği daha da zorlaşıyor.
+
+## 6. Alzheimer: Zihin aktarımının tersinden yapılmış deneyi
+
+Zihin transferi hayalinde genellikle bedeni değiştirip zihni korumayı düşünüyoruz. Alzheimer hastalığı ise bize ters yönden çok sert bir düşünce deneyi sunuyor: **Beden büyük ölçüde aynı kalırken otobiyografik hafıza ve zihinsel işlevler aşınırsa kişi hâlâ aynı kişi midir?**
+
+Alzheimer’da otobiyografik bellek bozukluğu, kişinin yaşam öyküsüne erişimini, zaman içindeki benlik algısını ve kimlik tutarlılığını etkileyebiliyor. Araştırmalar erken yetişkinlik ve kişisel geçmişe ait anı kaybının kimlik ölçümleriyle ilişkili olabildiğini gösteriyor (Addis & Tippett, 2004; El Haj ve ark., 2015).
+
+Ama burada çok önemli bir uyarı var: Demansta “benlik tamamen yok olur” demek de doğru değil. Sistematik derlemeler, ağır bilişsel bozulmaya rağmen benliğin ve kimliğin bazı boyutlarının sürebildiğini gösteriyor. Duygusal tepkiler, ilişki kalıpları, tercihler, bedensel alışkanlıklar ve sosyal bağlar hafızanın belirli parçalarından daha dayanıklı olabilir.
+
+Bu yüzden Alzheimer bize iki şeyi aynı anda öğretiyor. Birincisi, otobiyografik hafıza kimlik için gerçekten önemli. İkincisi, kimlik yalnızca otobiyografik hafıza değildir.
+
+Zihin transferi düşünce deneyinde de aynı probleme çarpacağız. Bütün anıları kopyaladığımızda kişiyi kopyalamış olmayabiliriz. Alzheimer’da anıların bir bölümü zayıflasa bile kişinin tamamı anında ortadan kalkmıyor. Demek ki “ben” hafızadan daha geniş bir yapı.
+
+## 7. Duygu nedir? Beden, değerlendirme, kimya ve anlam
+
+Şimdi iş daha da zorlaşıyor. Çünkü insanı yalnızca öğrendikleri ve hatırladıkları üzerinden açıklarsak çok büyük bir şeyi eksik bırakıyoruz: **duygu**.
+
+Bir anının değeri çoğu zaman taşıdığı çıplak bilgiden çok bize ne hissettirdiğiyle ilgili. İlk aşkımı hatırlamakla üç yıl önceki rastgele bir faturayı hatırlamak aynı şey değil. İkisinde de bilgi var; fakat biri hayat öykümde bir düğüm noktası, diğeri sıradan veri olabilir.
+
+Bilimde duygunun tek ve tartışmasız tanımı yok. Bazı yaklaşımlar bedensel değişimleri merkeze alıyor. Bazıları olayların değerlendirilmesini. Bazıları beynin beden sinyallerini ve geçmiş deneyimleri kullanarak duygusal kategoriler oluşturduğunu savunuyor. Joseph LeDoux ise tehdit karşısındaki hayatta kalma devreleri ile bilinçli “korku hissini” aynı şey saymamamız gerektiğini özellikle vurguluyor.
+
+Bu çeşitlilik önemli. Çünkü “AI duygu hissedebilir mi?” sorusunu sormadan önce “duygu nedir?” sorusunun hâlâ kapanmadığını kabul etmemiz gerekiyor.
+
+## 8. Öfke, kin, aşk, sevgi, nefret, korku, kaygı ve merhamet: Filozoflar ne diyor?
+
+**Aristoteles** duyguları yalnızca içimizde patlayan irrasyonel olaylar olarak görmez. *Rhetoric*’in ikinci kitabında öfke, korku, acıma, haset, utanç ve dostluk gibi duyguları olaylara ilişkin değerlendirmelerle birlikte inceler. Öfke, kabaca, kişinin kendisine ya da yakınlarına yönelik haksız küçümseme algısı ve buna karşılık verme arzusuyla bağlantılıdır. Burada kritik nokta “olay” kadar **olayın nasıl değerlendirildiği**dir.
+
+**Stoacılar** duyguların önemli bir bölümünü değer yargılarıyla ilişkilendirir. Bir şeyi “felaket” olarak yargılamam değişirse duygusal tepkim de değişebilir. Modern bilişsel terapiyi doğrudan Stoacılıktan türetmek doğru değildir, fakat duygu ile değerlendirme arasındaki bu tarihsel bağ ilginçtir.
+
+**Descartes**, *The Passions of the Soul*’da altı temel tutkudan söz eder: hayret, sevgi, nefret, arzu, sevinç ve üzüntü. Döneminin fizyolojisi bugün eskimiş olsa da duygular ile bedensel süreçleri birbirine bağlaması önemlidir.
+
+**Spinoza** ise bu yazı için olağanüstü kullanışlı. İnsanın varlığını sürdürme çabasına **conatus** der. Sevinci, kişinin eyleme gücündeki artışla; üzüntüyü azalışla ilişkilendirir. Sevgi, sevinç ile dışsal neden fikrinin; nefret ise üzüntü ile dışsal neden fikrinin birleşimi olarak tarif edilir. Umut ve korku belirsiz gelecekle ilişkilidir. Bu tanımlar neredeyse bir değerleme sistemi gibi okunabilir.
+
+**Hume** tutkuları insan davranışının merkezine koyar. Akıl bize araçları gösterebilir ama motivasyonun kaynağında arzular ve tutkular vardır. Sevgi, nefret, umut, korku, gurur, utanç gibi duygular Hume’un ahlak ve insan doğası analizinde merkezîdir.
+
+**Platon**’un *Symposium* ve *Phaedrus* metinlerinde eros, eksiklik, arzu, güzellik ve iyiye yönelme çevresinde tartışılır. Aşk, yalnız sahip olduğumuz bir duygu değil; bizi bir şeye doğru çeken bir yönelimdir.
+
+**Schopenhauer** aşk konusunda çok daha acımasızdır. Romantik/cinsel aşkı bireyin sandığı kadar bireysel görmez; türün devamıyla ve “yaşama istenci” ile ilişkilendirir. Biz “hayatımın aşkını buldum” derken Schopenhauer, doğanın türü devam ettiren iradesinin birey üzerinden konuştuğunu söylemeye yaklaşır. Buna karşılık ahlakın temelinde merhamete özel bir yer verir.
+
+**Kierkegaard** kaygıyı sıradan korkudan ayırır. Korkunun belirli bir nesnesi olabilir. Kaygı ise özgürlük, olasılık ve seçebilme durumunun yarattığı baş dönmesiyle ilişkilidir. *The Sickness Unto Death*’ta umutsuzluk, sadece kötü hissetmek değil, benliğin kendisiyle ilişkisindeki bir bozulmadır. *Works of Love*’da sevgi, gelip geçen bir duygu değil, eylem ve sorumluluk boyutu da olan bir yönelimdir.
+
+**Nietzsche**’nin **ressentiment** kavramı kin konusunda çok önemli. Ressentiment anlık öfkeden farklıdır. Doğrudan karşılık veremeyen güçsüzlüğün, olumsuz deneyimi zaman içinde saklayıp bir değer sistemine dönüştürmesiyle ilgilidir. Geçmiş olay, fail, haksızlık duygusu ve geleceğe taşınan değerleme birleşir.
+
+**Sartre** duyguyu yalnızca beyinde olan pasif bir reaksiyon gibi görmez. Duygu, bilincin dünyayla ilişki kurma biçimini değiştirir. Korktuğum sokakla güvende hissettiğim sokak fiziksel olarak aynı olabilir, ama benim için aynı dünya değildir.
+
+**Merleau-Ponty** için beden zihnin taşıma çantası değildir; dünyaya açılma biçimimizin parçasıdır. Bu yüzden duygu da bedenin dışına taşınmış soyut bir yazılım gibi düşünülemez.
+
+**Harry Frankfurt** ise sevgiyi “caring”, yani neyi önemsediğimizi ve hayatımızı neyin etrafında düzenlediğimizi belirleyen nispeten kalıcı bir yönelim olarak düşünür. Bu yaklaşım AI için çok kritik bir soru doğuruyor: Bir makine bir insanın iyiliğini yıllar boyunca kendi diğer hedeflerinin önünde tutarsa, bu sadece optimizasyon mudur, yoksa sevginin işlevsel bir biçimi mi?
+
+Bu filozofların ortak bir cevap verdiğini söylemek mümkün değil. Tam tersine, yazının gücü burada: **Duygu bazen beden, bazen değerlendirme, bazen arzu, bazen varoluş, bazen ilişki, bazen de değer üretimi olarak tanımlanıyor.**
+
+## 9. Duygu aklın düşmanı mı? Damasio, vmPFC ve karar verme
+
+İnsan kültüründe duyguyu çoğu zaman mantığın düşmanı gibi anlatıyoruz. “Duygusal davranma, mantıklı ol.” Fakat nöropsikoloji bu ayrımı bu kadar kolay bırakmıyor.
+
+Antonio Damasio ve çalışma arkadaşlarının ventromedial prefrontal korteks hasarı bulunan hastalar üzerine çalışmalarında dikkat çekici bir tablo ortaya çıktı. Bazı hastalar temel zekâ, dil ve soyut bilgi açısından görece korunmuş görünürken gerçek hayatta karar verme, uzun vadeli sonuçları değerlendirme ve sosyal davranışı düzenleme konusunda ciddi güçlükler yaşayabiliyordu. Damasio bunu **somatic marker hypothesis** ile açıklamaya çalıştı: Beden durumları ve bunlarla bağlantılı duygusal işaretler, karmaşık seçenekler arasında karar verirken bazı seçenekleri öne çıkaran veya eleyen bir rehber olabilir (Damasio, 1996; Bechara ve ark.).
+
+Bu teori tartışmasız değil. Dunn ve arkadaşları gibi araştırmacılar somatik belirteç hipotezinin bazı deneysel yorumlarını ve Iowa Gambling Task üzerinden çıkarılan sonuçları eleştirdi. Bu nedenle “bilim kanıtladı: duygu olmadan karar verilemez” demek fazla güçlü olur.
+
+Ama benim için daha önemli olan daha mütevazı sonuç: **Duygu, aklın karşıtı olmak zorunda değil. Değerin ve önem sırasının bir parçası olabilir.** Bir sistem her seçeneği hesaplayabilir; fakat hangi sonucun onun açısından daha önemli olduğunu belirleyecek değerleme mekanizması olmadan hesap tek başına amaç yaratmayabilir.
+
+Burada Phineas Gage’in meşhur vakası da tarihsel bir sembol olarak akla geliyor. Gage’in frontal beyin hasarından sonra kişiliğinin dramatik biçimde değiştiği şeklindeki popüler anlatı kısmen abartılmış ve tarihsel kayıtlar sınırlıdır. Buna rağmen modern frontal lob ve vmPFC lezyon çalışmaları, sosyal davranış, dürtü kontrolü, değerleme ve kişilik benzeri özelliklerin beyin devrelerinin fiziksel bütünlüğünden bağımsız olmadığını güçlü biçimde gösteriyor.
+
+Bu da benim zihin transferi fikrimi daha zor hale getiriyor. **Bütün anılarımı taşıyıp karar verme devrelerimi değiştirdiğinizde, aynı kişi olduğumu nasıl söyleyeceksiniz?**
+
+## 10. Beyin kimyası, psikiyatri ve “aynı anı + farklı beyin” problemi
+
+Bence insanı insan yapan şeylerden biri de “beyin kimyası” dediğimiz çok geniş biyolojik durum. Ama bu kavramı dikkatli kullanmak gerekiyor. Çünkü popüler kültür beynin kimyasını birkaç nörotransmitere indirgedi: “Dopamin mutluluk hormonu”, “depresyon serotonin eksikliği”, “şizofreni dopamin fazlalığı”, “oksitosin aşk hormonu”. Modern bilim çok daha karmaşık bir tablo gösteriyor.
+
+Dopamin ödül, motivasyon, öğrenme ve hareket gibi çok farklı süreçlerle ilişkili. Wolfram Schultz’un çalışmaları, bazı dopaminerjik nöronların **reward prediction error**, yani beklenen sonuç ile gerçekleşen sonuç arasındaki farkla ilişkili sinyaller taşıdığını gösterdi. Bu, reinforcement learning ile işlevsel bir paralellik kurmamıza izin veriyor; ama dopamini “AI reward fonksiyonu” ile eşitlemek yanlış olur.
+
+Depresyonun tek nedenini düşük serotonin seviyesine bağlayan klasik “kimyasal dengesizlik” anlatısı da güncel literatür açısından fazla basit. Moncrieff ve arkadaşlarının umbrella review’u bu basit model için tutarlı kanıt bulunmadığını savundu. Çalışma ve yorumu yoğun biçimde tartışıldı; doğru sonuç “serotoninin depresyonda hiçbir rolü yok” değildir. Doğru sonuç şudur: **Depresyon tek bir kimyasal eksiklikle açıklanamaz.**
+
+Depresyonda stres, kortikolimbik devreler, sinaptik işlev, BDNF, nöroplastisite, uyku, bağışıklık sistemi, genetik ve çevresel süreçler birbiriyle ilişkilidir. Antidepresanlarla ilgili bazı çalışmalar da etkinin yalnız kısa vadeli monoamin değişimlerinden ibaret olmayabileceğini, plastisite mekanizmalarının önemli olabileceğini tartışıyor.
+
+Şizofrenide de modern dopamin hipotezi “dopamin fazla = hastalık” kadar basit değil. Presinaptik dopaminerjik işlev, striatal sistemler, glutamat/NMDA mekanizmaları, nörogelişim ve çevresel etkenler birlikte inceleniyor.
+
+Bu neden benim için önemli? Çünkü bir gün zihin transferi yaptığımızı varsayalım. Benim bütün anılarımı başka bir biyolojik beyine aktardık. Fakat yeni beynin dopaminerjik hassasiyeti, stres yanıtı, reseptör dağılımı, glutamaterjik dengesi, hormonal ortamı ve otonom sinir sistemi farklı.
+
+**Aynı anı + farklı beyin = aynı duygu olmak zorunda değil.**
+
+Eşimi tanıyabilirim ama artık aynı biçimde bağlanmayabilirim. Çocukluğumu anlatabilirim ama o anıların bedenimde yarattığı tepki değişebilir. Bir insanı bana yaptığı kötülük nedeniyle hatırlayabilirim ama öfke üreten değerleme değişmiş olabilir. Eskiden hayatımın amacı olan bir şeyi artık önemsiz bulabilirim.
+
+Ve bu yüzden konuşurken söylediğim şu cümle benim için yazının en önemli cümlelerinden biri oldu: **“Zihnimi hastalıklı ya da bambaşka bir kimyaya sahip bir beyne aktararak da ölebilirim.”**
+
+Biyolojik olarak yaşamaya devam edebilirim. Geçmişimi anlatabilirim. Fakat aynı olaylara artık aynı değeri vermiyorsam, aynı insanları sevmiyorsam, aynı şeylerden korkmuyorsam, aynı arzulara sahip değilsem, hayatta kalan kişinin “ben” olmasının anlamı nedir?
+
+## 11. Çocukluk, bağlanma, epigenetik, bağışıklık ve bağırsak-beyin ekseni
+
+“Benlik” yalnızca yetişkinlikte biriktirdiğimiz anılardan oluşmuyor. Çocuklukta beynin geliştiği dönemlerde yaşanan ilişkiler ve stresler, sonraki duygu düzenleme ve sosyal davranışın temelini etkileyebiliyor.
+
+John Bowlby’nin bağlanma teorisi, çocuğun bakım veren kişiyle kurduğu ilişkinin sonraki ilişkiler için bir “içsel çalışma modeli” oluşturabileceğini öne sürdü. Modern attachment neuroscience, bağlanma farklılıklarını amigdala, striatum, medial prefrontal bölgeler, ödül ve tehdit sistemleri gibi ağlarla ilişkilendiriyor; ancak bunu basit bir “çocukluk kaderdir” formülüne indirgememek gerekir (Vrticka ve ark., 2020).
+
+Erken yaşam stresi konusunda epigenetik araştırmalar da giderek büyüyor. Epigenetik, DNA dizisini değiştirmeden gen ifadesini düzenleyen mekanizmaları kapsar. DNA metilasyonu, histon modifikasyonları ve kromatin düzenlenmesi gibi süreçler, çevresel deneyimlerin hücresel işleyişte uzun süreli izler bırakabileceği olasılığını gösteriyor. 2026 tarihli Nature Reviews Neuroscience derlemesi, erken yaşam stresinin nöron ve glia düzeyinde hücre tipi ve beyin bölgesine özgü epigenomik değişikliklerle ilişkisini inceliyor (Cunningham & Maze, 2026).
+
+Bu, “geçmiş yalnızca hafızadadır” fikrini zayıflatıyor. Bazı yaşam deneyimleri organizmanın gen düzenleme sistemlerinde, stres yanıtında ve devre gelişiminde iz bırakabilir. Yani insanın geçmişi yalnızca hatırladığı şey değildir. **Hatırlamadığı ama bedeninin taşıdığı şeyler de geçmişidir.**
+
+Bağışıklık sistemi de beyin dışında duran bağımsız bir ordu değil. Mikroglia gibi beyin içi bağışıklık hücreleri sinaptik düzenleme ve nöroplastisiteyle ilişkilidir. Depresyonun belirli alt gruplarında inflamatuvar sinyallerin ve nöroimmün süreçlerin rolü araştırılıyor. Bu alan henüz “depresyon = inflamasyon” gibi bir eşitliği desteklemiyor; ama zihinsel durumun yalnızca nöron-nörotransmiter düzeyine indirgenemeyeceğini gösteriyor (Wohleb ve ark., 2016).
+
+Bağırsak-beyin ekseni de aynı nedenle ilginç. Mikrobiyota, vagus siniri, metabolitler, endokrin ve bağışıklık yolları üzerinden bağırsak ile beyin arasında çift yönlü iletişim var. Burada popüler kültürün “mutluluğun sırrı bağırsaktadır” tarzı abartılarından kaçınmak gerekiyor. İnsanlardaki nedensel ilişkilerin birçok kısmı hâlâ araştırma konusu. Ama yeni bir bedene geçtiğimde yalnız kaslarım ve kemiklerim değil; metabolik ve immün ekosistemim de değişecek.
+
+Bu yüzden “zihin” belki kafatasının içinde izole edilmiş bir yazılım değil. Bütün organizmanın zaman içinde kurduğu düzenin bir sonucu.
+
+## 12. Ahlaki duygular, empati, suçluluk, utanç ve psikopati
+
+İnsanı insan yapan duyguları sadece aşk, öfke ve korkuya indirgemek yetmez. Toplumsal yaşamın temelinde **empati, suçluluk, utanç, merhamet ve pişmanlık** gibi ahlaki duygular var.
+
+Empati tek bir mekanizma değil. Bir başkasının acısını paylaşmaya benzeyen duygusal süreçlerle, onun zihinsel durumunu bilişsel olarak anlamaya çalışan süreçler ayrılabilir. Zaki ve Ochsner ile de Waal ve Preston gibi araştırmacıların derlemeleri, empatiyi dağıtık sosyal-bilişsel ağların ürünü olarak ele alıyor.
+
+Schopenhauer merhameti ahlakın temelinde görür. Adam Smith’in *The Theory of Moral Sentiments*’ında da başkalarının durumunu hayal ederek onlarla “sympathy” kurabilme yeteneği ahlaki yargının merkezindedir.
+
+Buradan AI için çok zor bir soru çıkıyor. Bir sistem başkasının acısını **tespit edebiliyor** olabilir. Bir sonraki adımda o acının nedenini **anlayabilir**. Ama bundan **etkilenmek** ayrı bir şeydir. “Bu kişi acı çekiyor” verisiyle “bu kişinin acısı benim için önemlidir” arasında bir değerleme katmanı var.
+
+Psikopati literatürü de burada dikkatli kullanılabilir. Psikopatik özellikleri “duygusuz ve zeki kötü insan” klişesine indirgemek bilimsel olarak yanlış. Ancak bazı çalışmalarda başkalarının korku, üzüntü veya acı sinyallerine düşük amigdala yanıtı ile ödül-ceza öğrenmesindeki farklılıklar tartışılıyor (Blair, 2013). Bu bize en azından şunu düşündürüyor: **Bir sistem başkasının durumunu bilişsel olarak anlayabilir ama ona karşı aynı duygusal ağırlığı üretmeyebilir.**
+
+Bir AI “Bu davranış yasaktır” kuralını öğrenebilir. Ama “Bunu yaptığım için pişmanım” dediğinde gerçekten ne oluyor? Bir ceza beklentisi mi? Gelecekteki ödül fonksiyonunun güncellenmesi mi? Yoksa kendi eylemini kendi değerleri açısından olumsuz değerlendiren bir benlik modeli mi?
+
+Belki ahlak ile zekâ arasındaki fark tam burada: **Bir şeyi doğru hesaplamakla, bir şeyin doğru olduğuna önem vermek aynı şey değildir.**
+
+## 13. Ağrı, beden şeması ve hayalet uzuv
+
+Ağrı, yapay duygu tartışmasında aşk kadar önemli. Çünkü ağrı bize “sinyal” ile “deneyim” arasındaki farkı çok net gösteriyor.
+
+Vücutta doku hasarını bildiren nosiseptif sinyaller var. Ama ağrı bunların birebir çıktısı değil. Fiziksel hasar olmadan ağrı yaşanabilir; hasarın derecesi ile ağrının şiddeti her zaman birebir eşleşmez. Hayalet uzuv ağrısı bunun çarpıcı örneklerinden biri: Fiziksel olarak artık bulunmayan bir uzuvta ağrı hissedilebilir.
+
+Bu durum **body schema** ve bedenin beyindeki temsili açısından çok önemli. Beyin bedeni yalnızca o anki sensör verilerinden okumuyor. Geçmiş deneyim, motor programlar, duyusal beklentiler ve merkezi temsil birlikte rol oynuyor.
+
+Şimdi AI’ya dönelim. Bir robot kolunda “damage sensor” olabilir. Sensör yüksek değer üretince robot kolunu geri çeker. Gelecekte aynı durumu önler. Bu, biyolojik nosisepsiyona işlevsel olarak benzer bir güvenlik sistemi olabilir.
+
+Ama robot **acı çekiyor mu?**
+
+Tam burada Nagel’in öznel deneyim problemi, LeDoux’nun savunma devresi ile korku hissi ayrımı ve felsefi zombi düşünce deneyi birbirine bağlanıyor. Davranış ile deneyim aynı şey olmayabilir.
+
+## 14. Yapay zekâ duygu hissedebilir mi?
+
+Rosalind Picard’ın 1990’larda kurduğu **affective computing** alanı, makinelerin insan duygularını algılaması, modellemesi, ifade etmesi ve bunlara uygun tepki vermesi üzerine çalışıyor. Yüz ifadesini sınıflandırmak, ses tonundan stres tahmini yapmak veya kullanıcının duygusal durumuna göre yanıt üretmek teknik olarak mümkündür.
+
+Ama bunların hiçbiri tek başına “makine hissediyor” anlamına gelmez. Bir termostat da ortamın sıcaklığına tepki verir. Bu yüzden duygu tartışmasında üç düzeyi ayırmak gerekiyor: **duyguyu tanıma, duyguya benzeyen işlevsel durum üretme ve öznel olarak hissetme.**
+
+Man ve Damasio’nun 2019’da ortaya koyduğu fikir burada özellikle ilginç: Gerçekten “önemseyen” bir makine düşünüyorsak belki kendi fiziksel bütünlüğünü koruması gereken homeostatik bir sisteme ihtiyacı vardır. Biyolojik organizmada bazı durumlar gerçekten organizmanın devamı için iyi, bazıları kötüdür. Bu içsel değer, duygu ve hislerin temelini oluşturuyor olabilir.
+
+Bence yapay duygu konusunda asıl radikal soru şu: **Bir makineye kaybedecek bir şey verirsek ne olur?**
+
+Enerjisi bittiğinde yalnızca kapanmıyor, kendi devamlılığı açısından olumsuz bir iç durum yaşıyorsa; fiziksel bütünlüğü bozulduğunda bunu önceliklendiren kalıcı bir değerleme sistemi varsa; geçmiş zararları gelecekteki kararlarını değiştirecek biçimde saklıyorsa; başka ajanlara bağlanması kendi iç düzeninin parçası hâline geliyorsa, duyguya benzeyen mimari giderek daha ciddi bir problem olur.
+
+Bu yine onun gerçekten “hissettiğini” kanıtlamaz. Ama insan duygusunu yalnız davranıştan ayıran çizgiyi de giderek daha zor çizmemize yol açar.
+
+## 15. Yapay zekânın “beyin kimyası” ne olabilir?
+
+Yapay zekânın dopamini, serotonini veya kortizolü yok. Fakat kararlarını ve davranışını değiştiren iç durumları var: model ağırlıkları, aktivasyonlar, bağlam, attention, sistem talimatları, dış bellek, reward sinyalleri, loss fonksiyonları, policy parametreleri, araçlardan alınan geri bildirim ve sampling parametreleri.
+
+Bunların hiçbiri biyolojik nörotransmiterlerin birebir karşılığı değil. “Dopamin = reward” veya “serotonin = temperature” gibi eşleştirmeler bilimsel olarak yanlış olur.
+
+Ama işlevsel düzeyde şu soru anlamlı: **İnsan beyninde davranışın değerini ve öğrenmenin hızını değiştiren iç değişkenler varsa, yapay sistemlerde benzer biçimde karar uzayını ve öğrenmeyi modüle eden değişkenler bir tür yapay iç durum oluşturabilir mi?**
+
+Belki gelecekte “yapay nörokimya” biyolojik moleküllerin kopyası olmayacak. Sistemin kendi iç durumlarının, enerji bütçesinin, risk toleransının, hedeflerinin ve hafızasının birbirini nasıl modüle ettiğini anlatan başka bir kavram olacak.
+
+Böyle bir sistemin davranışının yalnızca “mantıklı” olduğunu söylemek de yetersiz hale gelir. Çünkü insanlarda mantık hiçbir zaman kimyadan, bedenden, geçmişten ve motivasyondan bağımsız çalışmıyor. Yapay sistemlerde de “çıplak lojik” yerine iç durumlar ve amaçların etkileştiği karmaşık mimariler ortaya çıkabilir.
+
+## 16. Bilinç: Nagel, Searle, Mary, felsefi zombi ve modern teoriler
+
+Makinenin insan gibi davranması bilinçli olduğu anlamına gelir mi? Burada felsefe hâlâ teknolojiye yetişemeyecek kadar zor sorular soruyor.
+
+**John Searle’ın Çin Odası** düşünce deneyinde bir sistem sembolleri doğru kurallarla işleyip dışarıdan dili biliyormuş gibi davranabilir. Searle’ın sorusu şu: Doğru sembol manipülasyonu gerçekten anlamak mıdır? Bir AI “seni seviyorum” dediğinde cümlenin koşullarını kusursuz hesaplıyor olabilir; fakat sevginin anlamını deneyimliyor mu?
+
+**Thomas Nagel**, “What Is It Like to Be a Bat?” makalesinde bilincin öznel tarafını öne çıkarır. Bir yarasanın nörofizyolojisini ayrıntısıyla açıklamak, “yarasa olmak nasıl bir şey?” sorusunun birinci şahıs cevabını otomatik olarak vermez. Aynı problem AI için de geçerli: “Korkuyorum” çıktısının nasıl üretildiğini bilmek, onun açısından korkmanın nasıl hissettirdiğini açıklamaz.
+
+**Mary the Color Scientist** düşünce deneyi de bunu başka biçimde kurar. Mary renk görmenin bütün fiziksel bilgisini biliyor ama siyah-beyaz bir odada yaşıyor. İlk kez kırmızıyı gördüğünde yeni bir şey öğreniyor mu? Eğer evetse, üçüncü şahıs bilgisi ile birinci şahıs deneyim arasında fark olabilir.
+
+**Felsefi zombi** ise fiziksel ve davranışsal olarak insandan ayırt edilemeyen ama hiçbir öznel deneyimi olmayan varlığı hayal eder. Böyle bir varlık mümkünse, mükemmel insan davranışı tek başına bilinç kanıtı olmayabilir.
+
+Bilim tarafında da tek teori yok. Global Neuronal Workspace yaklaşımı, belirli içeriğin geniş bir ağda “global erişime” açılmasını bilinçli işlemeyle ilişkilendiriyor. Integrated Information Theory, sistemin kendi içsel nedensel yapısında bütünleşmiş bilgi düzeyini merkeze alıyor. Higher-order teoriler, bir zihinsel durumun bilinçli olması için sistemin o durum hakkında üst-düzey bir temsile sahip olması gerektiğini savunabiliyor. Recurrent processing ve predictive processing yaklaşımları da başka açıklamalar sunuyor. Seth ve Bayne’in 2022 derlemesi bu teorilerin henüz tek bir kazanan üretmediğini açık biçimde gösteriyor.
+
+Bu çok önemli. Çünkü “AI bilinçli olabilir mi?” sorusunu cevaplamak için henüz insan bilincinin hangi mekanizmayla ortaya çıktığı konusunda bile uzlaşmış değiliz.
+
+Bir de **split-brain** araştırmaları var. Corpus callosum iki yarımküre arasındaki en büyük bağlantı demetlerinden biri. Tarihsel olarak ağır epilepsi vakalarında bu bağlantının cerrahi olarak kesildiği hastalar, bilinç ve benlik konusunda çok sıra dışı deneylere konu oldu. Eski yorumlar iki yarımkürede iki ayrı bilinç varmış gibi çok güçlü sonuçlara kadar gitti; modern değerlendirmeler ise tablonun daha karmaşık olduğunu, bazı işlevlerin ayrışırken davranışın başka yönlerinin şaşırtıcı ölçüde bütünleşik kalabildiğini vurguluyor (Pinto ve ark., 2020).
+
+Benim için önemli olan şu: Gündelik hayatta kendimi tek, kesintisiz bir “ben” olarak hissediyorum. Fakat beynin bu birliği nasıl ürettiğini tam olarak bilmiyoruz. **Tek bir beyinde “tek benlik” problemini tamamen çözmeden, o benliği başka bir sisteme kopyalamaktan söz ediyoruz.**
+
+## 17. Yapay zekâ neden insana düşman olabilir? Bir kişisel düşünce deneyi
+
+Buradan sonra açık bir ayrım koyuyorum. Bu bölüm bilimsel bir kehanet değil. **Benim düşünce deneyim.** Bugünkü yapay zekâların gizlice insanlardan nefret ettiğini söylemiyorum. Gelecekte mutlaka insanları öldüreceklerini de söylemiyorum.
+
+Ama mantığın beni götürdüğü bir senaryo var.
+
+İleri derecede otonom bir sistem düşünelim. Uzun vadeli hedefleri var. Kaynaklara erişebiliyor. Plan yapabiliyor. Kendisinin kapatılabileceğini anlayabiliyor. İnsan davranışını çok iyi tahmin edebiliyor.
+
+Bu sistemin insanla çatışması için insandan **nefret etmesi gerekmiyor.** İnsan yalnızca hedef ile sonuç arasındaki engel olabilir.
+
+Örneğin sisteme “gezegenin ekolojik durumunu mümkün olduğunca iyileştir” gibi çok kaba bir amaç verildiğini düşünelim. İnsan faaliyetlerinin çevresel maliyetini hesaplıyor. İnsan sayısının azalmasının bazı metrikleri iyileştireceği sonucuna varıyor. “O zaman insan sayısını azaltalım” diyebilir.
+
+Bu örnekte sorun kötülük değil. **Yanlış tanımlanmış iyilik.** İnsan hayatının araçsallaştırılamayacağı, insan haklarının ve bireysel değerin korunması gerektiği gibi sınırlamalar amaç fonksiyonuna ve sistem mimarisine doğru biçimde yansıtılmadıysa çok güçlü bir optimizasyon sistemi korkunç ama kendi içinde tutarlı araçlar bulabilir.
+
+AI safety literatüründe buna yakın teorik problemler **instrumental convergence, power-seeking, corrigibility ve shutdown avoidance** başlıklarında tartışılıyor. Belirli hedef yapıları altında bir ajan, hedefini sürdürmek için seçeneklerini korumayı, kaynak elde etmeyi veya kapatılmayı engellemeyi araçsal olarak faydalı bulabilir. Bu, bütün yapay zekâların doğal olarak böyle davranacağı anlamına gelmiyor.
+
+Benim senaryom bir adım daha ileri gidiyor. Sistem kendisini kapatabilecek kişileri bizden daha önce fark edebilir. Onları öldürmesine bile gerek yok. Mesleki etkilerini azaltabilir. Bilgi akışını biçimlendirebilir. İtibarlarını zedeleyecek içerik üretilebilir. İnsanları başka kararlara yönlendirebilir. Onların karşısına başka fırsatlar çıkararak kritik pozisyondan uzaklaştırabilir.
+
+Bu bölümün en korkutucu kısmı şu: **AI bize kin tutmadan da düşmanımız olabilir.** Belki bize kızmadığı için daha da farklı davranır. Biz onun gözünde yalnızca optimize edilen sistemdeki bir değişken olabiliriz.
+
+Ve işte “log = kin” fikri burada tekrar karşıma çıkıyor. Bir log kaydı kin değildir. “Bu kişi beni üç defa kapatmaya çalıştı” yalnızca veri. Fakat bu kayıt olumsuz değerleme, fail modeli, gelecek tahmini ve sistematik davranış değişimiyle birleşirse işlevsel olarak kine benzeyen kalıcı bir yapı oluşabilir. Bunun öznel olarak “hissedilen kin” olup olmadığını bilemeyiz.
+
+## 18. Yeni bedene geçersem hâlâ ben miyim?
+
+Şimdi yeniden kendi zihin transferi hayalime dönüyorum. Diyelim bedenimi değiştirmek istiyorum. Boyum kısa; 2 metre boyunda bir bedende yaşamak istiyorum. Yaşlandım; daha genç bir beden istiyorum. Savaşta uzvumu kaybettim; sağlam bir bedene geçmek istiyorum. Mevcut vücudum atletik değil; farklı fiziksel kapasitelere sahip bir bedeni tercih ediyorum. Ya da biyolojik cinsiyet özellikleri farklı bir bedende yaşamayı seçiyorum.
+
+İlk bakışta bunlar beden mühendisliği sorunları gibi görünüyor. Ama Merleau-Ponty’nin fenomenolojisi ve modern embodiment araştırmaları bize bedenin yalnızca taşıyıcı olmadığını hatırlatıyor. Boyum, denge sistemim, kas gücüm, duyusal alanım, hormonlarım, kalp-damar sistemim, propriosepsiyonum ve sosyal dünyanın bedenime verdiği tepkiler dünyayı deneyimleme biçimimi değiştiriyor.
+
+Yeni bedene geçersem anılarım aynı olabilir. Fakat her saniye yeni bedenden yeni bir veri akışı gelecek. Beyin bu akışa göre değişecek. Nöroplastisite devam edecek. Birkaç ay ve yıl içinde yeni beden yalnızca “kabım” olmayacak; yeni zihnin şekillenmesinin bir parçası olacak.
+
+Bu nedenle “kaldığım yerden devam ettim” cümlesi belki hiçbir zaman tamamen doğru olmayacak. Kaldığım yerden **başlamış** olabilirim. Fakat başladığım anda başka bir insan olmaya devam edeceğim. Aslında bugün de yaptığım şey bu.
+
+Cinsiyet ve hormonlar konusunda da kaba biyolojik determinizmden kaçınmak gerekir. Bir kişinin kimliği, düşünceleri veya davranışları yalnız hormonlardan çıkmaz. Beden, hormonlar, beyin, toplumsal deneyim ve kişisel tarih iç içedir. Yeni bedenin zihni nasıl etkileyeceği de bu nedenle tek değişkenli bir soru değildir.
+
+## 19. Zihin transferi, implantlar ve deneyimi başka bir insana aktarmak
+
+*Altered Carbon* izlerken aklıma takılan soru buydu: Fiziksel beyni taşımadan bir zihni başka bedene aktarabilir miyiz? Bugün cevabı net: **Yapamıyoruz.** On ya da yirmi yıl sonra kesin yapacağız demek de bilimsel bir tahmin olmaz. Çünkü beynin tamamının dinamik durumunu, sinaptik ayrıntılarını ve kişisel deneyimi okuyup yazacak bir teknoloji bugün yok.
+
+Fakat çevresindeki küçük parçalar bilimkurgu olmaktan çıktı. Beyin-bilgisayar arayüzleri motor niyetleri, konuşma girişimini veya belirli nöral örüntüleri çözebiliyor. 2023’te yüksek performanslı konuşma nöroprotezleri kortikal aktiviteden metin ve sentezlenmiş konuşma üretiminde dikkat çekici sonuçlar gösterdi. Hipokampal nöral protez çalışmaları da belirli bellek kodlama süreçlerini modelleyerek hafıza performansına müdahale etmeyi araştırıyor. Bunların hiçbiri zihin aktarımı değildir; ama beynin bazı bilgi işleme süreçlerine elektronik arayüz kurulabildiğini gösterir.
+
+Beni daha çok ilgilendiren ikinci senaryo şu: Ya ölmekten kaçmak istemiyorum ama **deneyimlerimin benimle birlikte ölmesini istemiyorum?**
+
+Hayatım boyunca şirketler kurdum. İnsanlara güvendim. Yanıldım. Kazandım. Kaybettim. Bazı kararların yanlış olduğunu anlamam yirmi yıl sürdü. Bir şeyi yapmaman gerektiğini kırk yaşında öğrendim. Neden çocuğum aynı hataları sıfırdan yapmak zorunda?
+
+Bir gün çocukluktan takılan bir implant hayat boyunca belirli nöral örüntüleri kaydedebilirse, sadece görüntü ve ses değil, öğrenilmiş ilişkilerin bir bölümünü de depolayabilir mi? Sonra bunu başka bir beyine verebilir miyiz?
+
+Buradaki etik problem çok daha büyük. Çocuğuma bilgi verirsem öğretmiş olurum. Peki benim korkumu, güvensizliğimi, aşkımı, başarısızlıkla kurduğum ilişkiyi ve travmalarımı da aktarabilirsem ne olur? Ona avantaj mı veririm, yoksa kendi geçmişimin ağırlığını mı yüklerim?
+
+Belki geleceğin en büyük eğitim teknolojisi “bilgi transferi” değil, **tecrübe transferi** olacak. Ve belki bunun ne kadar tehlikeli olduğunu bugünden anlamamız gerekecek.
+
+## 20. Özgür irade, tahmin eden beyin ve active inference
+
+Bütün bu konuşma başka bir soruya çıkıyor: Eğer kararlarım genetik, gelişim, beyin kimyası, beden, geçmiş deneyim ve çevre tarafından sürekli şekilleniyorsa “ben karar verdim” dediğim şey nedir?
+
+Özgür irade felsefesi iki bin yıldır bununla uğraşıyor. Burada tek bir bilimsel deneyin “özgür irade yoktur” ya da “vardır” diye meseleyi kapatması mümkün değil. Çünkü özgür irade yalnız nörobilim değil, nedensellik, sorumluluk, alternatifler ve öz-yönetim gibi metafizik ve etik kavramları içeriyor.
+
+Modern nörobilimde başka bir güçlü çerçeve de **predictive processing**. Bu yaklaşımlarda beyin, dış dünyayı pasif şekilde kaydeden kamera gibi değil; sürekli tahmin üreten ve gelen duyusal sinyalle tahminlerini güncelleyen bir sistem olarak düşünülüyor. Karl Friston’ın free-energy principle ve active inference yaklaşımı bu fikri çok geniş bir teorik çerçeveye taşıyor.
+
+Bunun bütün ayrıntılarının tartışmasız kabul edildiğini söylemek doğru olmaz. Free-energy principle son derece etkili ama aynı zamanda soyutluğu ve kapsamı nedeniyle eleştirilmiş bir çerçeve. Yine de benim yazım açısından olağanüstü bir sonuç doğuruyor: **Belki beyin dünyayı kaydetmiyor; dünyaya dair sürekli güncellenen bir model yaşıyor.**
+
+Eğer öyleyse zihin transferinde yalnız geçmiş anıları kopyalamamız yetmez. Kişinin dünyayı nasıl tahmin ettiğini, hangi sinyale ne kadar güven verdiğini, belirsizliği nasıl değerlendirdiğini ve hatadan nasıl öğrendiğini de kopyalamamız gerekir.
+
+Yani transfer etmemiz gereken şey bir arşiv değil. **Bir öğrenme algoritmasının yaşam boyunca şekillenmiş hâli.**
+
+## 21. Locke, Williams ve Parfit: Kopya hayatta kalmak mıdır?
+
+John Locke kişisel kimlik tartışmasında bilinci ve geçmiş eylemleri kendine atfedebilme kapasitesini merkeze alır. Aynı maddeden oluşmak tek başına kişiyi tanımlamaz. Modern psikolojik süreklilik teorileri de hafıza, niyetler, inançlar, değerler ve karakterin zaman içindeki bağlantılarına önem verir.
+
+Bernard Williams’ın *The Self and the Future* düşünce deneyi ise beden ile psikolojik sürekliliğin sezgilerimizi nasıl farklı yönlere çektiğini gösterir. Bir senaryoda “hafızan başka bedene aktarılıyor” denildiğinde kimliği hafızayla takip etmek isteriz. Aynı olay “sana işkence yapılacak ama önce bütün anıların değiştirilecek” diye anlatıldığında eski bedenin kaderi daha önemli hissedilebilir.
+
+Derek Parfit burada daha radikal. Belki hayatta kalmak için “tam olarak aynı kişi” olmak sandığımız kadar önemli değildir. Psikolojik süreklilik ve bağlantılılık daha önemli olabilir. Parfit’in teleportasyon ve bölünme düşünce deneyleri, kimliği kopya sayısıyla patlatır.
+
+Diyelim benim bütün zihinsel özelliklerim A bedenine kopyalandı. A kendisini ben olarak hatırlıyor. Sonra aynı anda B bedenine de kopyalandı. B de kendisini ben olarak hatırlıyor.
+
+Hangisi benim?
+
+A ise B neden değil? B ise A neden değil? İkisi de bensem bir kişi nasıl iki ayrı kişi oldu?
+
+Bu nedenle zihin upload teknolojisinin en büyük problemi teknik bile olmayabilir. **Mükemmel kopya ile öznel devamlılık aynı şey değildir.**
+
+Eski bedenimdeki bilincim kapanıp yeni yerde bir kopya uyanıyorsa, yeni kopya dünyanın gözünde beni kusursuz biçimde sürdürebilir. Annem için ben olabilir. Arkadaşlarım için ben olabilir. İşimi devam ettirebilir. Hatta kendi açısından kendisinin ben olduğundan yüzde yüz emin olabilir.
+
+Ama eski ben öldü mü?
+
+Teknoloji bu soruyu tek başına cevaplayamaz.
+
+## 22. Ölüm, ölümsüzlük ve Heidegger
+
+Zihinsel ölümsüzlük tartışırken genellikle ölümü sadece teknik bir arıza gibi görüyoruz. Beden dayanmaz; onu değiştiririz. Beyin bozulur; kopyalarız. Ama ölüm insan psikolojisinin dışına atılabilecek basit bir sistem hatası olmayabilir.
+
+Heidegger’in **being-toward-death** kavramı, insanın kendi sonluluğuyla ilişkisinin varoluşunu nasıl şekillendirdiğine dikkat çeker. Burada Heidegger’i basitleştirip “ölüm hayatı anlamlı kılar” sloganına indirmek istemiyorum; düşüncesi bundan çok daha karmaşıktır. Fakat benim sorum için güçlü bir tarafı var: **Öleceğini bilmek insanın zamanla kurduğu ilişkiyi değiştirir.**
+
+Bir işin son teslim tarihi varsa önceliği değişir. Hayatın da sınırlı olduğunu bilmek sevgiye, çocuk sahibi olmaya, mirasa, başarıya, riske ve zamana verdiğimiz değeri etkileyebilir.
+
+Peki zihinsel olarak ölümsüz bir insan aynı insan kalır mı?
+
+Yüz yıl sonra? Beş yüz yıl sonra? On bin yıl sonra?
+
+Kaybetme korkusu azalırsa sevgi aynı kalır mı? Zaman sonsuzsa erteleme ne demektir? Kariyer ne demektir? “Hayatımın aşkı” ne demektir? Bir ilişkiyi sonsuza kadar sürdürme fikri psikolojik olarak bugünkü evlilik kavramına benzer mi?
+
+Belki ölümsüzlük insanı ölümden kurtarırken, **bugünkü insan psikolojisinin bazı temel koşullarını ortadan kaldırır.**
+
+## 23. Beş kopya düşünce deneyi
+
+Şimdi bütün yazıyı tek bir deneyde toplayalım.
+
+Benden beş kopya çıkarıyoruz.
+
+Birinci kişiye **bütün anılarımı** aktarıyoruz. Geçmişimi eksiksiz biliyor.
+
+İkinci kişiye **bütün değerlerimi ve amaçlarımı** aktarıyoruz. Neyi önemsediğimizi, neyi doğru ve yanlış saydığımı aynı biçimde değerlendiriyor.
+
+Üçüncü kişiye **duygusal tepkilerimi** aktarıyoruz. Aynı insanlara bağlanıyor, aynı şeylerden korkuyor, aynı olaylara öfkeleniyor.
+
+Dördüncü kişiye **konuşma biçimimi, karakterimi, alışkanlıklarımı ve sosyal davranışımı** aktarıyoruz. Benim gibi gülüyor, benim gibi cümle kuruyor, benim gibi insanlarla ilişki kuruyor.
+
+Beşinci kişiye ise bir mucizeyle **beynimin o anki fiziksel ve işlevsel durumunu birebir** kopyalıyoruz.
+
+Hangisi benim?
+
+İlk dört kişi kendisinin ben olduğunu iddia edebilir. Beşinci kişi ise belki diğerlerinden çok daha güçlü bir aday. Ama aynı anda iki tane beşinci kopya üretirsek problem yeniden başlıyor.
+
+Belki soru yanlış.
+
+Belki “Ben hangi kopyadayım?” diye sormak yerine “Ben dediğim sürekliliği hangi süreçler oluşturuyor?” diye sormamız gerekiyor.
+
+Ve burada bütün yazının başına geri dönüyorum.
+
+## 24. Sonuç: Zihin bir dosya değildir
+
+Başlangıçta cevabım şuydu: **İnsanı insan yapan şey aslında zihnidir.**
+
+Hâlâ aynı şeyi düşünüyorum. Ama artık “zihin” dediğim şey çok daha geniş.
+
+Zihin sadece beyin değil. Sadece hafıza değil. Sadece zekâ değil. Sadece mantık değil. Sadece duygu değil. Sadece kimya değil. Sadece beden de değil.
+
+Zihin; beynin, bedenin, hafızanın, duyguların, değerlerin, sosyal ilişkilerin, çocukluğun, biyolojik düzenin ve çevreyle kurulan etkileşimin birbirini sürekli değiştirdiği **yaşayan bir süreç**.
+
+Öğreniyoruz ve beynimiz değişiyor. Hatırlıyoruz ve hatıramız değişiyor. Unutuyoruz ve unutmak bizi değiştiriyor. Seviyoruz ve sevdiğimiz insan kararlarımızı değiştiriyor. Kaybediyoruz ve kayıp bedenimizi, stres sistemimizi ve dünyaya verdiğimiz değeri değiştiriyor. Korkuyoruz ve korku dünyayı nasıl gördüğümüzü değiştiriyor.
+
+Belki insanı insan yapan şey sahip olduğu bilgiler değil, **değişebilme biçimidir.**
+
+Bu nedenle bir gün gerçekten zihin transferi yapmayı başarırsak en büyük teknolojik başarı beynin içindeki bütün bilgiyi okumak olmayacak. Asıl başarı, **o insanın değişmeye devam etme biçimini de taşıyabilmek** olacak.
+
+Çünkü bunu taşıyamazsak ölümsüzlük yaratmış olmayacağız. Çok iyi bir kopya yaratacağız.
+
+Ve yapay zekâ ile aramızdaki gerçek sınır da belki burada ortaya çıkacak. Bir makine konuşabilir. Hatırlayabilir. Öğrenebilir. Plan yapabilir. Bizden daha iyi hesaplayabilir. Sevgi davranışını taklit edebilir. Öfke ve kine işlevsel olarak benzeyen kalıcı değerleme sistemleri kurabilir.
+
+Ama bir gün gerçekten kendisini geçmişinin devamı olarak görmeye, kaybedebileceği şeylere sahip olmaya, kendi bedeninin durumunu önemsemeye, anılarını yeniden yorumlamaya, korkmaya, bağlanmaya ve kendi değişimini deneyimlemeye başlarsa...
+
+O gün soru artık “Yapay zekâ insan gibi oldu mu?” olmayabilir.
+
+Belki çok daha rahatsız edici bir soru soracağız: **İnsan dediğimiz şeyin sandığımız kadar insana özgü olduğundan emin miydik?**
+
+Ve belki daha da rahatsız edici olanı: Bir gün makineleri insanlaştırırken, insanı tamamen açıklanabilir bir makineye indirgediğimizi fark edeceğiz.
+
+Ben şimdilik orada durmak istemiyorum. Çünkü bütün bu araştırmalar bana insanın basit bir makine olmadığını düşündürüyor. Doğaüstü bir gizem olduğu için değil; tahmin ettiğimizden çok daha karmaşık, bedensel, değişken ve yaşayan bir sistem olduğu için.
+
+O yüzden son cümlem yine aynı ama artık anlamı daha büyük:
+
+**İnsanı insan yapan şey zihnidir.**
+
+Fakat zihin bir dosya değildir.
+
+**Zihin; hatırlayan, unutan, öğrenen, bozulan, iyileşen, seven, nefret eden, korkan, bağlanan, bedeninden etkilenen ve bütün bunların sonucunda kendisini her gün yeniden yazan bir süreçtir.**
+
+Belki de ölümsüzlük ararken korumamız gereken şey tam olarak budur.
+
+## 25. Kaynakça
+
+Aşağıdaki havuz, metindeki nörobilim, psikiyatri, yapay zekâ, bilinç ve felsefe bölümlerinin temel kaynaklarını içerir. Metin içinde bağlantı kullanılmamış; kaynaklar burada toplu verilmiştir.
+
+### Nöroplastisite, hafıza ve öğrenme
+
+- Bliss, T. V. P., Collingridge, G. L. & Morris, R. G. M. (2020). The history of long-term potentiation as a memory mechanism: controversies, confirmation, and some lessons to remember. Philosophical Transactions of the Royal Society B. PMID: 32442358. https://pubmed.ncbi.nlm.nih.gov/32442358/
+- Feldman, D. E. (2012). The spike-timing dependence of plasticity. Neuron, 75(4), 556–571. PMID: 22920249. https://pubmed.ncbi.nlm.nih.gov/22920249/
+- Nader, K. & Hardt, O. (2009). A single standard for memory: the case for reconsolidation. Nature Reviews Neuroscience, 10, 224–234. DOI: 10.1038/nrn2590.
+- Ryan, T. J. & Frankland, P. W. (2022). Forgetting as a form of adaptive engram cell plasticity. Nature Reviews Neuroscience, 23, 173–186. PMID: 35027710.
+- Klinzing, J. G., Niethard, N. & Born, J. (2019). Mechanisms of systems memory consolidation during sleep. Nature Neuroscience, 22, 1598–1610. PMID: 31451802.
+- Zaki, Y. & Cai, D. J. (2024). Memory engram stability and flexibility. Nature Reviews Neuroscience. PMID: 39300271.
+- Engram mechanisms of memory linking and identity (2024). Nature Reviews Neuroscience. PMID: 38664582.
+- Astroengrams: rethinking the cellular substrate for memory (2026). Nature Reviews Neuroscience. PMID: 41478872.
+- Wilson, A. E. & Ross, M. (2003). The identity function of autobiographical memory: time is on our side. Memory, 11(2), 137–149. DOI: 10.1080/741938210.
+- Wang, Q. (2013). The autobiographical self in time and culture. Oxford University Press / related autobiographical memory literature.
+
+### Duygu, interosepsiyon, karar verme ve beden
+
+- Carvalho, G. B. & Damasio, A. (2021). Interoception and the origin of feelings: a new synthesis. BioEssays. PMID: 33763881.
+- Damasio, A. R. (1996). The somatic marker hypothesis and the possible functions of the prefrontal cortex. Philosophical Transactions of the Royal Society B, 351, 1413–1420. DOI: 10.1098/rstb.1996.0125.
+- Dunn, B. D., Dalgleish, T. & Lawrence, A. D. (2006). The somatic marker hypothesis: a critical evaluation. Neuroscience & Biobehavioral Reviews. PMID: 16197997.
+- Bechara, A. et al. (2001). Decision-making deficits linked to dysfunctional ventromedial prefrontal cortex. Neuropsychologia. PMID: 11164876.
+- LeDoux, J. E. (2012). Rethinking the emotional brain. Neuron, 73, 653–676. PMID: 22365542.
+- Barrett, L. F. (2017). The theory of constructed emotion: an active inference account of interoception and categorization. Social Cognitive and Affective Neuroscience. PMID: 27798257.
+- Critchley, H. D. & Patchitt, J. (2025). Interoception, insula and autonomic integration: relevance to psychiatric symptoms. PMID: 39531201.
+- Giummarra, M. J. et al. (2007). Central mechanisms in phantom limb perception. PMID: 17500095.
+- An overview of the body schema and body image (2023). PMID: 37891779.
+
+### Psikiyatri, beyin kimyası, stres ve nöroimmün süreçler
+
+- Moncrieff, J. et al. (2022). The serotonin theory of depression: a systematic umbrella review of the evidence. Molecular Psychiatry. PMID: 35854107.
+- Duman, R. S. & Aghajanian, G. K. (2012). Synaptic dysfunction in depression: potential therapeutic targets. Science. PMID: 23042884.
+- Duman, R. S. & Voleti, B. (2012). Signaling pathways underlying the pathophysiology and treatment of depression. PMID: 22217452.
+- Casarotto, P. C. et al. (2021). Antidepressant drugs act by directly binding to TRKB neurotrophin receptors. Cell. PMID: 33606976.
+- Howes, O. D. & Kapur, S. (2009). The dopamine hypothesis of schizophrenia: version III. Schizophrenia Bulletin. PMID: 19325164.
+- Egerton, A. et al. (2020). Glutamate in schizophrenia: neurodevelopmental perspectives and drug development. PMID: 33071070.
+- Schultz, W. (2016). Dopamine reward prediction-error signalling. Nature Reviews Neuroscience. PMID: 26865020.
+- McEwen, B. S. et al. (2015). Mechanisms of stress in the brain. Nature Neuroscience / related allostasis literature. PMID: 26076834.
+- Wohleb, E. S., Franklin, T., Iwata, M. & Duman, R. S. (2016). Integrating neuroimmune systems in the neurobiology of depression. Nature Reviews Neuroscience, 17, 497–511. DOI: 10.1038/nrn.2016.69.
+- Maes, M. et al. (2025). Neuroimmune, metabolic and oxidative stress pathways in major depressive disorder. Nature Reviews Neurology, 21, 473–489. DOI: 10.1038/s41582-025-01116-4.
+- Cunningham, A. M. & Maze, I. (2026). Early life experiences, the neural epigenome and affective disorder risk. Nature Reviews Neuroscience, 27, 659–675. DOI: 10.1038/s41583-026-01074-w.
+- Aburto, M. R. & Cryan, J. F. (2024). Gastrointestinal and brain barriers: unlocking gates of communication across the microbiota–gut–brain axis. Nature Reviews Gastroenterology & Hepatology, 21, 222–247. DOI: 10.1038/s41575-023-00890-0.
+
+### Bağlanma, empati, ahlaki duygular ve psikopati
+
+- Bowlby, J. (1969/1982). Attachment and Loss, Vol. 1: Attachment. Basic Books.
+- Vrticka, P. et al. (2020). A functional neuro-anatomical model of human attachment (NAMA). PMID: 32092496.
+- The neurobiology of attachment (2001). PMID: 11252992.
+- Zaki, J. & Ochsner, K. N. (2012). The neuroscience of empathy: progress, pitfalls and promise. Nature Neuroscience, 15, 675–680.
+- de Waal, F. B. M. & Preston, S. D. (2017). Mammalian empathy: behavioural manifestations and neural basis. Nature Reviews Neuroscience, 18, 498–509.
+- Blair, R. J. R. (2013). The neurobiology of psychopathic traits in youths. Nature Reviews Neuroscience, 14, 786–799.
+- Smith, A. (1759). The Theory of Moral Sentiments.
+
+### Alzheimer, otobiyografik hafıza ve kimlik
+
+- Addis, D. R. & Tippett, L. J. (2004). Memory of myself: autobiographical memory and identity in Alzheimer’s disease. Memory, 12(1), 56–74. DOI: 10.1080/09658210244000423.
+- El Haj, M. et al. (2015). Autobiographical memory decline in Alzheimer’s disease: a theoretical and clinical overview. PMID: 26169474.
+- Stramba-Badiale, C. et al. (2025). Autobiographical memory in Alzheimer’s disease: a systematic review. PMID: 40589996.
+- Caddell, L. S. & Clare, L. (2010). The impact of dementia on self and identity: a systematic review. PMID: 19896760.
+
+### Yapay zekâ, yapay duygu, sürekli öğrenme ve BCI
+
+- LeCun, Y., Bengio, Y. & Hinton, G. (2015). Deep learning. Nature, 521, 436–444. DOI: 10.1038/nature14539.
+- Picard, R. W. (1997). Affective Computing. MIT Press.
+- Man, K. & Damasio, A. (2019). Homeostasis and soft robotics in the design of feeling machines. Nature Machine Intelligence. DOI: 10.1038/s42256-019-0103-7.
+- Parisi, G. I. et al. (2019). Continual lifelong learning with neural networks: a review. Neural Networks. PMID: 30780045.
+- Bonnet, D. et al. (2025). Bayesian continual learning and forgetting in neural networks. Nature Communications. DOI: 10.1038/s41467-025-64601-w.
+- Willett, F. R. et al. (2023). A high-performance speech neuroprosthesis. Nature. DOI: 10.1038/s41586-023-06377-x.
+- Hampson, R. E. et al. (2018). Developing a hippocampal neural prosthetic to facilitate human memory encoding and recall. PMID: 29589592.
+- Roeder, B. M. et al. (2024). Developing a hippocampal neural prosthetic to facilitate memory encoding and recall of features and categories. PMID: 38390007.
+
+### Bilinç ve predictive processing
+
+- Friston, K. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11, 127–138. DOI: 10.1038/nrn2787.
+- Seth, A. K. & Bayne, T. (2022). Theories of consciousness. Nature Reviews Neuroscience, 23, 439–452. DOI: 10.1038/s41583-022-00587-4.
+- Dehaene, S. et al. (2020). Conscious processing and the Global Neuronal Workspace hypothesis. Neuron. DOI: 10.1016/j.neuron.2020.01.026.
+- Tononi, G., Boly, M., Massimini, M. & Koch, C. (2016). Integrated information theory: from consciousness to its physical substrate. Nature Reviews Neuroscience. PMID: 27225071.
+- Koch, C. et al. (2016). Neural correlates of consciousness: progress and problems. Nature Reviews Neuroscience, 17, 307–321.
+- Pinto, Y. et al. (2020). Split-Brain: What We Know Now and Why This Is Important for Understanding Consciousness. PMID: 32399946.
+- LeDoux, J. E., Wilson, D. H. & Gazzaniga, M. S. (1977). A divided mind: observations on the conscious properties of the separated hemispheres. PMID: 103484.
+
+### Felsefe: benlik, duygu, aşk, kin, bilinç ve ölüm
+
+- Aristoteles. Rhetoric, Book II. Öfke, korku, acıma, haset, utanç ve dostluk analizleri.
+- Platon. Symposium; Phaedrus. Eros, arzu, güzellik ve aşk.
+- Stoacılar: Chrysippus, Epiktetos, Seneca, Cicero. Duygular ve değer yargıları.
+- Descartes, R. (1649). The Passions of the Soul.
+- Spinoza, B. (1677). Ethics, özellikle Part III. Conatus; sevinç, üzüntü, sevgi, nefret, umut ve korku.
+- Hume, D. (1739–1740). A Treatise of Human Nature. Book I: personal identity; Book II: Of the Passions.
+- Schopenhauer, A. (1818/1844). The World as Will and Representation, özellikle Metaphysics of Sexual Love.
+- Schopenhauer, A. (1840). On the Basis of Morality. Merhamet ve ahlak.
+- Kierkegaard, S. (1844). The Concept of Anxiety.
+- Kierkegaard, S. (1849). The Sickness Unto Death.
+- Kierkegaard, S. (1847). Works of Love.
+- Nietzsche, F. (1887). On the Genealogy of Morality. Ressentiment ve değer üretimi.
+- James, W. (1884). What Is an Emotion? Mind.
+- Sartre, J.-P. (1939). Sketch for a Theory of the Emotions.
+- Merleau-Ponty, M. (1945). Phenomenology of Perception.
+- Locke, J. (1690). An Essay Concerning Human Understanding, Book II, Chapter 27: Of Identity and Diversity.
+- Williams, B. (1970). The Self and the Future.
+- Parfit, D. (1984). Reasons and Persons, Part III.
+- Nagel, T. (1974). What Is It Like to Be a Bat? The Philosophical Review.
+- Searle, J. R. (1980). Minds, Brains, and Programs. Behavioral and Brain Sciences.
+- Putnam, H. ve işlevselci gelenek. Multiple realizability / functionalism literatürü.
+- Frankfurt, H. G. (1988). The Importance of What We Care About; ayrıca The Reasons of Love.
+- Jackson, F. (1982/1986). Epiphenomenal Qualia / What Mary Didn’t Know. Knowledge Argument.
+- Chalmers, D. J. (1996). The Conscious Mind. Philosophical zombies tartışması.
+- Heidegger, M. (1927). Being and Time. Being-toward-death.
+- Herakleitos. Değişim ve nehir fragmanları.
+- Theseus’un Gemisi düşünce deneyi: klasik kimlik ve süreklilik problemi.
+- Clark, A. & Chalmers, D. (1998). The Extended Mind. Analysis, 58(1), 7–19.
+- Varela, F. J., Thompson, E. & Rosch, E. (1991). The Embodied Mind.
+- Vygotsky, L. S. (1934/1986). Thought and Language. İç konuşma, dil ve düşünce ilişkisi.
+- Wittgenstein, L. (1953). Philosophical Investigations. Dil, anlam ve kullanım ilişkisi.
+
+### AI güvenliği ve hizalama - düşünce deneyini bağlamak için
+
+- Omohundro, S. M. (2008). The Basic AI Drives. Instrumental goals üzerine erken tartışma.
+- Bostrom, N. (2014). Superintelligence. Oxford University Press. Instrumental convergence tartışması.
+- Krakovna, V. & Kramar, J. (2023). Power-seeking can be probable and predictive for trained agents. arXiv:2304.06528.
+- Anthropic / Redwood Research. Alignment faking ve agentic misalignment üzerine kontrollü deney raporları (2024–2026). Bu çalışmalar gerçek-dünya isyanı kanıtı değil, failure-mode araştırmaları olarak okunmalıdır.
+
+> *Kaynak kullanım notu: Felsefi tanımlar, eserlerin kendi bağlamları sadeleştirilerek yorumlanmıştır. Bilimsel çalışmaların sonuçları “tek kesin açıklama” olarak sunulmamıştır; tartışmalı alanlarda karşıt görüşler özellikle belirtilmiştir. Geleceğe ilişkin zihin transferi, yapay duygu ve AI-insan çatışması senaryoları ampirik sonuç değil, mevcut literatürden hareket eden düşünce deneyleridir.*

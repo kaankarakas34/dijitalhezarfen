@@ -1,0 +1,733 @@
+Bilgisayar Kavramı Değişiyor: Operating System’dan Intelligence System’a
+
+21 Eylül 2026'da Google, **Googlebook** adını verdiği yeni bilgisayar kategorisinin ön siparişlerini açtı.
+
+İlk cihazların fiyatı 899 dolardan başlıyor. Acer, ASUS, Dell, HP ve Lenovo gibi üreticiler Googlebook hazırlıyor. Cihazlar Android ekosistemiyle çok daha yakın çalışıyor ve Google'ın Gemini yapay zekâ sistemini bilgisayar deneyiminin merkezine yerleştiriyor.
+
+İlk bakışta bunu Google'ın MacBook ve Windows PC'lere karşı yeni bir hamlesi olarak okumak mümkün.
+
+Benim ilgimi çeken ise Googlebook'un fiyatı, işlemcisi veya ekranı değil.
+
+Google'ın kendi açıklamasında kullandığı şu ifade:
+
+> **“Operating system'dan intelligence system'a geçiyoruz.”**
+
+Google, yaklaşık 15 yıl önce Chromebook'u “cloud-first world” için geliştirdiğini söylüyor. Şimdi ise yapay zekâ çağında laptopu yeniden düşünmek istediğini açıkça ifade ediyor.
+
+Bence Googlebook haberinin asıl önemi burada.
+
+Çünkü Google yeni bir bilgisayar üretmenin ötesinde, bilgisayarın ne olması gerektiğine dair farklı bir cevap vermeye başlıyor.
+
+Googlebook'ta Gemini, sonradan yüklediğiniz bir chatbot gibi konumlandırılmıyor. Bilgisayar deneyiminin içine yerleştiriliyor. Google DeepMind ile geliştirilen **Magic Pointer** bunun küçük ama önemli örneklerinden biri. İmleci ekrandaki bir içeriğin üzerine götürdüğünüzde Gemini bağlamı anlayarak yapılabilecek işlemleri önerebiliyor. Bir e-postadaki tarihten toplantı oluşturmak veya iki görseli seçip birlikte değerlendirmek gibi işlemler sistem seviyesine yaklaşmaya başlıyor.
+
+Google'ın “Create your Widget” yaklaşımında ise kullanıcı doğal dille istediği bilgi panelini tarif edebiliyor; Gemini internetten veya Gmail ve Calendar gibi servislerden bilgi toplayarak bunu oluşturabiliyor.
+
+Bunların her biri bugün için birer özellik.
+
+Ama ben özelliklerden çok yönüne bakıyorum.
+
+Çünkü aynı anda Gartner başka bir taraftan “uygulama kullanmaktan sonuç almaya geçişten” bahsediyor. Bill Gates agentları GUI'den sonraki büyük bilgisayar platformu değişimi olarak görüyor. Microsoft Research “Desktop AgentOS” geliştiriyor. Carl Pei uygulamaların bugünkü konumunu kaybedebileceğini söylüyor. Apple ise yapay zekânın sürekli cloud'da çalışmasının ekonomik mantığına itiraz ederek güçlü local compute'a yatırım yapıyor.
+
+Bütün bu parçaları yan yana koyduğumda benim gördüğüm şey şu:
+
+**Bilgisayar küçülmüyor. Bilgisayar kavramı değişiyor.**
+
+---
+
+## Bilgisayarın tarihi aslında insan ile makine arasındaki mesafenin tarihidir
+
+Bilgisayar tarihine biraz uzaktan baktığımızda yaşadığımız dönüşümü anlamak daha kolay.
+
+İlk bilgisayarlarda insan makinenin dilini öğrenmek zorundaydı.
+
+Punch card kullandık.
+
+Sonra command line geldi.
+
+Bir işlem yapmak istiyorsanız hangi komutu yazmanız gerektiğini bilmek zorundaydınız.
+
+Daha sonra GUI geldi:
+
+Mouse. Window. Desktop. Folder. File. Trash.
+
+Bilgisayarın karmaşık dünyasını insanların anlayabileceği fiziksel metaforlara dönüştürdük.
+
+Gerçek dünyadaki masayı bilgisayarın içine koyduk. Belgeleri dosyalara koyduk. Dosyaları klasörlere koyduk. İstemediğimiz dosyaları çöpe attık. Birden fazla işi pencerelerde açtık.
+
+Sonra touch geldi.
+
+Mouse ile ekrandaki bir nesneyi temsil etmek yerine doğrudan nesneye dokunmaya başladık.
+
+Ama bütün bu dönemlerin ortak bir özelliği vardı:
+
+**Bilgisayara ne yapacağını hâlâ insan söylüyordu.**
+
+Chrome'u aç. Google'a gir. Bunu ara. Siteyi aç. Dosyayı indir. Excel'i aç. Veriyi kopyala. PDF oluştur. Gmail'i aç. Maili bul. Dosyayı ekle. Gönder.
+
+Bilgisayar inanılmaz güçlüydü ama bizim ne istediğimizi bilmiyordu.
+
+Şimdi ilk defa bu ilişki değişmeye başlıyor.
+
+Bilgisayara **hangi işlemleri yapması gerektiğini** anlatmak yerine **hangi sonuca ulaşmak istediğimizi** anlatıyoruz.
+
+Bugünün bilgisayarı:
+
+**İnsan → Interface → Application → Command → Result**
+
+mantığında çalışıyor.
+
+Geleceğin bilgisayarı ise giderek:
+
+**İnsan → Intent → Intelligence → Action → Result**
+
+haline gelebilir.
+
+Bence bilgisayar tarihindeki büyük kırılma tam olarak burada.
+
+---
+
+## Bill Gates: Agentlar GUI'den sonraki büyük değişim olabilir
+
+Bill Gates'in yıllar önce agentlar hakkında yaptığı öngörü bugün çok daha anlamlı görünüyor.
+
+Gates'in temel eleştirisi aslında çok basit:
+
+Bilgisayarlarımız güçlü ama yazılım hâlâ oldukça aptal.
+
+Bir iş teklifi hazırlamak için Word kullanıyoruz. Göndermek için Outlook. Bir toplantı ayarlamak için Calendar. Bir araştırma için browser. Veri analizi için başka bir yazılım.
+
+Her uygulamanın nasıl çalıştığını insan öğreniyor.
+
+Gates'in öngörüsüne göre bu model değişecek.
+
+İnsan farklı işler için farklı uygulamalar kullanmak yerine cihazına doğal dille **ne yapmak istediğini söyleyecek.**
+
+Gates bunu küçük bir UX değişikliği olarak görmüyor. Agentların bilgisayar kullanımını, command line'dan grafik arayüze geçiş kadar değiştirebileceğini ve Android, iOS veya Windows gibi sistemlerin üzerinde **bir sonraki platform** olabileceğini düşünüyor.
+
+Bu ayrım çok önemli.
+
+Çünkü ChatGPT'yi yeni bir uygulama olarak görmek başka bir şey; yapay zekâyı bilgisayarın temel kullanım katmanı olarak görmek tamamen başka bir şey.
+
+---
+
+## Gartner: Uygulama kullanmaktan sonuç almaya geçiyoruz
+
+Gartner'ın Ağustos 2026'da yayımladığı **“Personal Agents Define the Next Era of Agentic AI PCs”** araştırmasında kullanılan ifade benim için bu dönüşümün en iyi özetlerinden biri.
+
+Gartner, Agentic AI PC'lerin:
+
+> **“Operating applications’dan achieving outcomes through AI agents’a geçiş yarattığını”** söylüyor.
+
+Yani:
+
+**Uygulamayı kullanmak → Sonucu elde etmek.**
+
+Bu ikisi arasındaki fark küçük görünse de bilgisayar ekonomisinin tamamını değiştirebilir.
+
+Çünkü kullanıcı açısından uygulama amaç değildir. Hiçbirimiz sabah kalkıp:
+
+“Bugün biraz Salesforce kullanmak istiyorum.” demiyoruz. Müşteri kazanmak istiyoruz.
+
+Excel kullanmak istemiyoruz; bir şeyi hesaplamak istiyoruz.
+
+Booking kullanmak istemiyoruz; otel bulmak istiyoruz.
+
+Uber kullanmak istemiyoruz; bir yere gitmek istiyoruz.
+
+Uygulamalar bugüne kadar bu amaçlara ulaşmak için kullandığımız araçlardı. Agent amaç ile araç arasına girerse uygulamanın kullanıcı açısından görünürlüğü giderek azalabilir.
+
+---
+
+## No-interface bilgisayar burada başlıyor: Intent-Based Computing
+
+No-interface kavramını “ekranların ortadan kalkması” şeklinde anlamıyorum.
+
+Ekranlara uzun süre daha ihtiyacımız olacak. Video düzenlemek görsel bir iştir. Tasarım görseldir. Oyun görseldir. Bir tabloyu incelemek görseldir. Karşılaştırma yapmak çoğu zaman görseldir.
+
+Dolayısıyla gelecekte ekranların tamamen ortadan kalkacağını düşünmüyorum.
+
+Ama bilgisayarın organizasyon yapısını öğrenmek zorunda kalmayabiliriz.
+
+Bugün:
+
+Chrome'u aç. Gmail'e gir. Maili bul. PDF'yi indir. Drive'a yükle. Excel'i aç. Veriyi çıkar. Rapor hazırla. Mail gönder.
+
+Gelecekte:
+
+> **“Geçen ayki satışları analiz et. Problemli müşterileri bul. Raporu hazırla ve cuma toplantısından önce ekibe gönder.”**
+
+Bu kadar.
+
+Bu yüzden bana göre no-interface'in daha doğru karşılığı:
+
+### Intent-Based Computing
+
+Bilgisayarı kullanmıyorum. Bilgisayara niyetimi anlatıyorum.
+
+---
+
+## Carl Pei'nin kahve örneği ve Computer Use çıkmazı
+
+Nothing CEO'su Carl Pei de bu konuda oldukça radikal düşünüyor.
+
+Pei, telefonların temel kullanım modelinin yaklaşık 20 yıldır aslında çok az değiştiğini söylüyor:
+
+Lock screen → Home screen → Apps → App Store.
+
+Bir arkadaşınızla kahve içmek istediğinizi düşünün. Bu aslında tek bir niyet:
+
+**“Kaan'la kahve içmek istiyorum.”**
+
+Ama bunu gerçekleştirmek için mesajlaşma uygulamasına giriyorsunuz. Sonra Calendar. Sonra Maps. Sonra Uber. Belki ödeme uygulaması. Tek bir niyet için dört-beş farklı interface kullanıyoruz.
+
+Pei'nin öngörüsü şu: Sistem sizi yeterince iyi tanıyorsa niyetinizi anlamalı ve gerekli işlemleri sizin adınıza gerçekleştirmeli.
+
+Daha da önemlisi Pei bugünkü “computer use” yaklaşımının nihai çözüm olduğunu düşünmüyor. AI'ın insan gibi ekrana bakması, menü bulması, mouse hareket ettirmesi ve butona basması ona göre geleceğin doğru mimarisi değil.
+
+Ben de burada aynı şeyi düşünüyorum.
+
+---
+
+## AI'a mouse kullandırmak: Otomobile robot oturtup direksiyon çevirtmek
+
+Bugünkü Computer Use sistemleri çok etkileyici.
+
+AI ekran görüntüsü alıyor. Butonu görüyor. Mouse'u götürüyor. Tıklıyor. Yeni ekranı okuyor. Sonra tekrar tıklıyor.
+
+Çalışıyor. Ama mimari açıdan düşündüğümüzde tuhaf.
+
+Çünkü interface insan için tasarlanmış. AI'a insan interface'ini kullandırıyoruz. Bir anlamda otomobilin koltuğuna robot oturtup direksiyonu robotun çevirmesini sağlıyoruz.
+
+Araba hareket eder. Ama autonomous driving'in nihai mimarisi bu değildir.
+
+Microsoft Research'ün Mayıs 2026'da yayımladığı **UFO²: The Desktop AgentOS** araştırması bu problemi teknik açıdan doğrudan ele alıyor. Araştırmacılar mevcut Computer-Using Agent sistemlerinin önemli bir kısmının yüzeysel işletim sistemi entegrasyonu ve kırılgan screenshot tabanlı etkileşim nedeniyle sınırlı kaldığını söylüyor.
+
+Microsoft'un önerdiği sistemde merkezi bir HostAgent görevleri parçalıyor; uygulamalara özel AppAgent'lar native API'lerle birlikte çalışıyor.
+
+Yani:
+
+**AI → Screenshot → Mouse → Button**
+
+yerine giderek:
+
+**AI → OS / API → Action**
+
+modeline yaklaşmak mümkün. Bu bana göre çok önemli; çünkü interface'in geleceğini de baştan tanımlıyor.
+
+---
+
+## Human Web ve Agent Web birbirinden ayrılıyor
+
+Bugünkü internet insanlar için tasarlandı:
+
+HTML, CSS, Buton, Menü, Banner, Landing page, Form...
+
+Bir AI agentın bunların çoğuna ihtiyacı yok. Agent için önemli olan:
+
+- Structured data (Yapılandırılmış veri)
+- Doğrudan API'ler
+- Model Context Protocol (MCP)
+- Agent-to-Agent (A2A) protokolleri
+- Kriptografik kimlik ve yetkilendirme
+- Otonom ödeme katmanları
+
+Bu nedenle internetin zamanla iki farklı katmana ayrılması bana hiç şaşırtıcı gelmez:
+
+### Human Web ve Agent Web
+
+İnsan markanın güzel tasarlanmış web sitesini görebilir. Agent aynı şirketle tamamen farklı bir makine interface'i üzerinden iletişim kurabilir.
+
+Bu durumda gelecekte UX'in (Kullanıcı Deneyimi) yanında yepyeni bir disiplin doğabilir:
+
+### AX — Agent Experience
+
+---
+
+## Uygulamalar ölecek mi? “Software ölmez, software görünmez olur”
+
+Carl Pei uygulamaların zamanla ortadan kalkacağını düşünüyor. Bill Gates de agentların search ve e-commerce sitelerinin bugünkü rollerinin önemli bir bölümünü değiştirebileceğini söylüyor.
+
+Ben biraz daha temkinliyim. Bence uygulamalar tamamen ölmek zorunda değil.
+
+Spotify hâlâ müziği sağlayacak. Uber hâlâ ulaşım ağını sağlayacak. Booking hâlâ otel envanterini sağlayacak. Salesforce hâlâ şirket verisini yönetecek. Bankalar hâlâ finansal altyapıyı sağlayacak.
+
+Ama bunların interface'ini benim tek tek görmem gerekmeyebilir.
+
+Bu nedenle benim tezimi şöyle ifade etmek daha doğru:
+
+> **Software ölmez. Software görünmez olur.**
+
+---
+
+## Gartner bunun ekonomik büyüklüğünü bile hesaplıyor: Agentic Arbitrage
+
+Bu dönüşüm sadece teknoloji felsefesi tartışması değil.
+
+Gartner'ın Temmuz 2026 araştırmasına göre agentic AI nedeniyle **2030'a kadar 234 milyar dolarlık enterprise application software harcaması risk altında olabilir.**
+
+Bu, Gartner'ın hesabına göre enterprise SaaS harcamalarının yaklaşık yüzde 20'sine karşılık geliyor.
+
+Gartner buna **“Agentic Arbitrage”** diyor.
+
+Mantık basit: Agent birden fazla sistem üzerinde işi sizin adınıza gerçekleştirirse insanların bütün SaaS ürünleriyle ayrı ayrı etkileşmesi gerekmiyor.
+
+Gartner yöneticisi George Brocklehurst bunu oldukça net ifade ediyor: Agentic sistemler sonuçları doğrudan sağladıkça geleneksel UX ağırlıklı uygulamaları bypass edebilir ve **yazılım görünmez hale gelebilir.**
+
+Bunun SaaS ekonomisi açısından sonucu devasadır.
+
+---
+
+## Per Seat ekonomisinin sonu: Per Agent, Per Outcome
+
+Bugünkü SaaS ekonomisi büyük ölçüde **Per Seat** (kullanıcı lisansı başına) mantığında çalışıyor:
+
+50 çalışanınız varsa 50 lisans alıyorsunuz.
+
+Peki şirketiniz gelecekte:
+
+**5 insan + 40 otonom agent** ile çalışıyorsa?
+
+Agent Salesforce kullanıyor. Agent HubSpot kullanıyor. Agent Slack'e yazıyor. Agent Notion'u okuyor. Agent muhasebe yazılımına veri gönderiyor. Agent CRM güncelliyor.
+
+O zaman fiyatlandırma modeli:
+
+**Per seat** yerine; **per agent**, **per task**, **per transaction**, **per API call** ve hatta doğrudan **per outcome** (elde edilen sonuç başına) haline gelebilir.
+
+Agent devrimi yalnızca yeni yazılımlar yaratmakla kalmayacak; mevcut yazılım dünyasının iş ve gelir modelini de kökten değiştirecek.
+
+---
+
+## Donanımın dönüşümü: Dev ekran kartlarına gerçekten ihtiyacımız olacak mı?
+
+Buraya kadar bilgisayarın yazılım tarafındaki değişimini konuştuk.
+
+Bence fiziksel bilgisayar kavramında da aynı büyüklükte bir değişim gelebilir.
+
+Bugün bilgisayar satın alırken hâlâ:
+
+RTX 5070 mi? 5090 mı? 32 GB RAM mi? 64 GB mı? Intel mi? AMD mi? Apple Silicon mı? Kaç çekirdek? Kaç TOPS? diye düşünüyoruz.
+
+Çünkü bilgisayarın sahip olduğu güç, fiziksel olarak satın aldığımız cihazın içerisinde.
+
+Ama bunun böyle kalması için bir zorunluluk yok. Cloud PC bunun erken örneklerinden biri. Uzaktaki CPU, GPU ve depolama kaynaklarını internet üzerinden kullanmak zaten mümkün.
+
+Bunu birkaç adım ileri götürelim.
+
+Belki masamdaki bilgisayar bir telefon büyüklüğünde olacak. İçerisinde güvenlik çipi, verimli bir işlemci, NPU, yüksek hızlı bağlantı, yerel cache ve temel grafik sistemi yer alacak.
+
+Ama Blender'da dev bir render başlattığımda anında cloud GPU açılacak. Büyük AI modeli çalıştırdığımda AI cluster devreye girecek. Oyun açtığımda gaming GPU kullanılacak. Basit bir belge üzerinde çalıştığımda işlem lokal yapılacak.
+
+Bu durumda cihazım fiziksel olarak 20 bilgisayar gücünde olmayacak;
+
+> **Ama 20 bilgisayar gücüne dilediği an erişebilecek.**
+
+Geleceğin bilgisayarı açısından asıl büyük ayrım burası.
+
+---
+
+## Bilgisayarın gücü elastik olabilir
+
+Bugün 2.000 dolarlık bilgisayar satın aldığınızda performansı büyük ölçüde sabittir. Beş yıl sonra hâlâ aynı işlemci, aynı GPU, aynı RAM...
+
+Gelecekte bilgisayar performansı ihtiyaca göre dinamik olarak değişebilir:
+
+- Mail yazıyorum: 2 birim compute
+- 4K render: 100 birim compute
+- Büyük AI modeli çalıştırma: 500 birim compute
+- AAA Oyun: 150 birim compute
+- İş bitti: 5 birim compute
+
+Bu durumda **“Bilgisayarım ne kadar güçlü?”** sorusu yerini şu soruya bırakabilir:
+
+### “Ne kadar compute’a erişebiliyorum?”
+
+---
+
+## Bilgisayar satın almak yerine bilgisayara abone olabiliriz
+
+Bugün ChatGPT'ye aylık ödeme yapıyoruz. Netflix'e ödüyoruz. Adobe'ye ödüyoruz. Microsoft 365'e ödüyoruz. Cloud storage'a ödüyoruz.
+
+Neden gelecekte doğrudan bilgisayar gücüne aylık abone olmayalım?
+
+Varsayımsal bir gelecekte:
+
+- **Personal Compute Basic — $29** (Günlük ofis ve web işlemleri)
+- **Personal Compute Pro — $99** (Geliştirici ortamı ve yerel agentlar)
+- **Creator Compute — $199** (Yüksek rendering ve tasarım kapasitesi)
+- **AI Compute Ultra — $499** (Büyük yerel modeller ve derin otomasyon)
+
+Fiziksel olarak bu donanımların hiçbiri evinizde durmak zorunda değildir. Evdeki cihaz yalnızca ultra-güvenli bir terminaldir.
+
+Bu, donanım şirketlerinin ekonomisini bile baştan yaratabilir: Bir GPU'yu kullanıcıya bir defa satmak yerine GPU zamanını her ay servis olarak satmak:
+
+### Hardware → Compute-as-a-Service
+
+---
+
+## Googlebook burada ikinci kez ilginç hale geliyor
+
+Googlebook'a tekrar döndüğümüzde bu nedenle salt donanım özelliklerinden çok paketleme modeline odaklanıyorum.
+
+Google bugün henüz “bilgisayar gücünü tamamen kiralayın” demiyor. Ama aynı cihaz içerisinde şimdiden:
+
+**Hardware + Local AI Acceleration + Cloud + Gemini Intelligence + Android Ecosystem**
+
+bir araya geliyor.
+
+Yani bilgisayarın değeri yalnızca fiziksel parçalarının toplamından uzaklaşmaya başlıyor. Bunun birkaç nesil sonrasını düşünelim: Belki bilgisayarın fiyatını belirleyen şey içerisindeki ekran kartından çok **erişebildiği intelligence ve compute seviyesi** olacak.
+
+---
+
+## Fakat burada Apple çok önemli bir karşı tez ortaya koyuyor
+
+Her şeyin cloud'a taşınacağı varsayımı fazla kolay bir genelleme.
+
+Apple'ın bu hafta yaptığı hamle bunun nedenini çok net gösteriyor. Apple yeni Mac'lerini şirketlere güçlü AI modellerini lokal olarak çalıştırmanın en ekonomik alternatifi olarak pazarlıyor.
+
+Apple donanım şefi Johny Srouji'nin Reuters'a söylediği temel fikir şu: Cloud'da sürekli token başına ödeme yapmak yerine donanımı bir kere satın alıp tekrar tekrar sınırsızca kullanabilirsiniz.
+
+Apple dört adet Mac Studio ile **1 trilyon parametre ölçeğinde bir AI modelini** çalıştırabildiğini gösterdi.
+
+Bu yaklaşım cloud ekonomisine doğrudan bir itirazdır. Çünkü AI ölçeklendikçe başka bir problem ortaya çıkıyor:
+
+### Intelligence'ın kullanım maliyeti
+
+Cloud'da her işlem ölçülür: Her token, her GPU saniyesi, her API çağrısı, her storage işlemi... Local compute'ta ise donanımı satın aldıktan sonra kullanım marjinal maliyeti sıfıra yaklaşır.
+
+Bu nedenle geleceğin savaşı sadece **Mac vs Windows** olmayabilir. Şöyle bir paradigma savaşı yaşanabilir:
+
+### Metered Intelligence vs Unmetered Intelligence
+
+---
+
+## Geleceğin bilgisayar mimarisi: Local + Edge + Cloud
+
+Benim daha olası gördüğüm yapı tamamen cloud değil; dengeli bir hibrit modeldir:
+
+### LOCAL + EDGE + CLOUD
+
+- **Özel kişisel veriler:** Local
+- **Gerçek zamanlı ve düşük gecikmeli işlemler:** Local / Edge
+- **Devasa frontier AI modelleri:** Cloud
+- **Ağır rendering ve simülasyonlar:** Cloud
+- **Kritik kişisel memory ve zihinsel bağlam:** Local veya şifrelenmiş özel altyapı
+
+Ama asıl devrim şudur:
+
+> **Kullanıcı bunların hiçbirini manuel olarak seçmek zorunda kalmayacak.**
+
+Agent karar verecektir. Maliyet, latency (gecikme), gizlilik (privacy), pil ömrü, performans ve güvenlik parametrelerini anlık hesaplayarak her alt görevi en doğru yerde çalıştıracaktır.
+
+Bugün Netflix izlerken filmin hangi fiziksel sunucudan veya CDN düğümünden geldiğini düşünmüyoruz. Gelecekte bir görevin hangi GPU kümesi üzerinde gerçekleştiğini de düşünmeyeceğiz.
+
+---
+
+## Personal Computer değil, Personal Compute Network
+
+Bu nedenle geleceğin bilgisayarını tek bir kutu veya tek bir ekran olarak düşünmüyorum.
+
+Telefon, laptop, akıllı gözlük, kulaklık, araba, akıllı televizyon, evdeki edge cihaz ve bulut...
+
+Bunların tamamı tek bir kişisel zekanın (Personal Intelligence) farklı temas noktaları haline gelecektir:
+
+- Sabah akıllı gözlüğünüzden AI ile konuşursunuz.
+- Arabaya binersiniz, konuşma kesintisiz devam eder.
+- Ofise gelirsiniz, hazırladığı analiz büyük ekranda sizi bekler.
+- Telefonun kamerasıyla fiziksel dünyadan bir nesne gösterirsiniz.
+- Akşam televizyondan sonuçları incelersiniz.
+
+Bugünün tanımıyla beş farklı bilgisayar kullandınız. Gelecekte ise:
+
+> **Aynı bilgisayara beş farklı terminalden bağlandınız.**
+
+---
+
+## O zaman bilgisayar hangisi?
+
+Telefon mu? Laptop mu? Cloud'daki sanal makine mi? AI agent mı? Veriniz mi? Kimliğiniz mi?
+
+Belki bunların hiçbirisi tek başına değil.
+
+Geleceğin bilgisayarı:
+
+### Identity + Data + Compute + Intelligence
+
+bileşimidir. Fiziksel cihazlar yalnızca bu sistemin anlık giriş ve çıkış pencerelerine dönüşmektedir.
+
+---
+
+## Personal Computer → Personal Intelligence
+
+1980'lerin devrimi: **Personal Computer**. Bilgisayarı üniversitelerin kilitli odalarından çıkarıp insanların masasına getirdik.
+
+2000'lerde: **Personal Internet**. Bilgiyi herkesin evine ulaştırdık.
+
+2010'larda: **Smartphone**. Bilgisayarı herkesin cebine koyduk.
+
+Şimdi ise sıradaki büyük paradigma kapıda:
+
+### Personal Intelligence
+
+Sizi tanıyan, nasıl çalıştığınızı bilen, ilişkilerinizi kavrayan, dosyalarınızı ve geçmiş kararlarınızı hatırlayan, hedeflerinizi anlayan ve sizin adınıza bağımsız aksiyon alabilen bir kişisel zeka katmanı.
+
+Mark Zuckerberg'in öngörüsü de bu doğrultuda: Önümüzdeki beş yıl içerisinde milyarlarca insanın kendisini anlayan ve sürekli onun adına çalışan kişisel AI agentlarına sahip olacağını düşünüyor.
+
+Eğer bu gerçekleşirse asıl platform işletim sistemi veya telefon olmayacaktır:
+
+> **Asıl platform sizin kişisel intelligence'ınız olacaktır.**
+
+---
+
+## Dijital hafızanızı hangi şirkete vereceksiniz? AI Memory Portability
+
+Bu noktada bugün çok az konuştuğumuz hayati bir regülasyon ve mülkiyet problemi ortaya çıkıyor.
+
+Bir AI sistemi sizi 5 yıl boyunca yakından tanıdı. Projelerinizi biliyor, arkadaşlarınızı biliyor, çalışma tarzınızı biliyor, hangi kararları neden verdiğinizi biliyor.
+
+Sonra başka bir AI ekosistemine geçmek istiyorsunuz. Ne olacak?
+
+Bu geçiş, Android'den iPhone'a geçmeye benzemeyecek. **Dijital hafızanızı ve zihinsel bağlamınızı** taşımanız gerekecek.
+
+Bu nedenle gelecekte:
+
+### AI Memory Portability (Yapay Zeka Hafıza Taşınabilirliği)
+
+en kritik rekabet, veri gizliliği ve tekel karşıtı regülasyon konularından biri olacaktır. Bugün telefon numaramızı operatörler arasında nasıl serbestçe taşıyabiliyorsak, yarın dijital bağlamımızı da yapay zekâ sağlayıcıları arasında taşımak isteyeceğiz.
+
+---
+
+## Dosya sistemi bile görünmez olabilir: Folder → Context
+
+Bugün hâlâ şu klasör yapılarını manuel olarak oluşturuyoruz:
+
+`Documents / Work / Reports / 2026 / UK / Final / Final-v4-ReallyFinal.pdf`
+
+Neden? Çünkü bilgisayar dosyanın ne olduğunu bilmiyor; biz ona diskin neresinde durduğunu tarif etmek zorundayız.
+
+Ama kullanıcı:
+
+> **“Geçen sene hazırladığımız İngiltere sağlık turizmi araştırmasının son versiyonunu getir.”**
+
+dediğinde AI doğru bağlamı anlayıp dosyayı anında çıkarabiliyorsa, kullanıcının klasör hiyerarşisini bilmesine gerek kalmaz.
+
+Dosya sistemi arka planda işletim seviyesinde var olmaya devam eder; fakat kullanıcı açısından tamamen görünmez olur.
+
+### Folder → Context
+
+Bu küçük görünen dönüşüm bile bilgisayarın 40 yıllık en köklü fiziksel metaforlarından birini tarihe karıştırabilir.
+
+---
+
+## Siber güvenlikte paradigma değişimi: Antivirüsten Intent Security’ye
+
+Bilgisayar kavramı kökten değişiyorsa siber güvenliğin aynı kalması imkansızdır.
+
+Bugünün zararlı yazılımları (malware): Bilgisayara sızar, dosya çalar, şifreler (ransomware), keylogger çalıştırır.
+
+Ama bilgisayarınız fiziksel donanımdan ayrılıp bir agent ağına dönüştüğünde saldırganın en değerli hedefi bir laptop olamaz. Asıl hedef:
+
+### Identity (Kimlik) ve Agent (Vekil Ajan) olacaktır.
+
+Çünkü agentınız: Mail gönderebilir, veri silebilir, bütçe harcayabilir, müşteriyle anlaşma yapabilir, sözleşme imzalayabilir ve kritik sistemlere tam erişime sahip olabilir.
+
+Agentınızı ele geçirmek veya onu prompt injection ile manipüle etmek, bilgisayarınıza klasik bir virüs bulaştırmaktan katbekat daha tehlikelidir.
+
+Geleceğin güvenlik yazılımı:
+
+“Bu dosyada virüs imzası var mı?” sorusundan ziyade;
+
+> **“Bu agentın yapmak üzere olduğu aksiyon, gerçekten kullanıcının asıl niyetine ve güvenlik sınırlarına uygun mu?”**
+
+diye denetleyecektir.
+
+Neden gece 03.00'te 20.000 dosya okuyor? Normalde kullanmadığı bir finansal API'ye neden bağlandı? 4.000 dolarlık harcama yetkisi var mı? Bu talimat gerçekten kullanıcıdan mı geldi, yoksa ziyaret ettiği bir web sitesindeki gizli prompt enjeksiyonundan mı kaynaklandı?
+
+Böylece siber güvenlik:
+
+**Signature Security → Behavioural Security → Intent Security**
+
+yönünde evrilecektir.
+
+---
+
+## İşletim sisteminin yeni görevi: Process Scheduler’dan Agent Scheduler’a
+
+Klasik bir işletim sistemi (OS): CPU zamanını dağıtır, RAM belleğini tahsis eder, prosesleri yönetir, dosyaları okur yazar ve donanım sürücüleriyle haberleşir.
+
+Geleceğin **AgentOS**'u ise bunlara ek olarak şu kritik soruları orkestre etmek zorundadır:
+
+- Bu agent hangi şirket verisine erişebilir?
+- Hangi dış aracı veya API'yi kullanabilir?
+- Ne kadar harcama yapabilir?
+- Hangi diğer agentlarla veri takası yapabilir?
+- Hangi uzun vadeli hafıza kayıtlarını okuyabilir?
+- Hangi işlemleri insan onayı (Human-in-the-Loop) olmadan gerçekleştirebilir?
+
+Dolayısıyla geleceğin işletim sistemi yalnızca bir **process scheduler** değil;
+
+**Agent scheduler, memory manager, identity manager, permission layer, tool registry, trust layer ve audit system** olmak zorundadır.
+
+Google'ın “Operating System’dan Intelligence System’a geçiyoruz” tanımlaması bu nedenle bir pazarlama lafı değil; bilgisayar mimarisinin zorunlu evrimidir.
+
+---
+
+## Donanımdan kimliğe: Delegated Authority ve AI Sovereignty
+
+Bugün bilgisayarın kalbi CPU veya GPU'dur. Gelecekte sistemin en kritik emniyet kemeri ise **Identity** (Kimlik) olacaktır.
+
+Sistem her milisaniyede şunu doğrulamak zorundadır:
+
+- Bu talimat gerçekten bu kullanıcı adına mı üretildi?
+- Bu agent kullanıcıdan devraldığı yetki sınırları içinde mi hareket ediyor?
+- Harcama limiti aşıldı mı?
+- Bu veri hassasiyet düzeyi gereği dışarı sızdırılabilir mi?
+
+Dolayısıyla siber güvenliğin odak noktası **cihazı korumaktan**, **delegated authority'yi (devredilmiş yetkiyi) korumaya** kayacaktır.
+
+Aynı zamanda şu soru da devletlerin ve kurumların gündemine oturacaktır:
+
+İstanbul'dasınız, terminaliniz masanızda; fakat compute Frankfurt'ta, model ABD'de, yedekler Amsterdam'da, agent ise bambaşka bir bulutta çalışıyor. Bilgisayarınız nerede? Veriniz nerede? Hangi ülkenin regülasyonuna tabisiniz?
+
+Bu nedenle **Data Sovereignty** kavramının yanına çok yakında:
+
+### Compute Sovereignty ve AI Sovereignty
+
+kavramları eklenecektir.
+
+---
+
+## Dijital mülkiyet ve yeni eşitsizlik: Compute Inequality
+
+Bütün bu geleceğin en tedirgin edici tarafı dijital mülkiyet konusudur.
+
+Bugün 2.000 dolara bir bilgisayar satın aldığınızda o cihaz tamamen sizindir. İnternetiniz kesilse de, yazılım şirketleri batsa da donanımınız çalışmaya devam eder.
+
+Peki gelecekte **OS + Compute + Depolama + AI Modelleri** bütünüyle bir abonelik servisi haline gelirse?
+
+Abonelik ödemesini kestiğiniz gün ne olacak? Bilgisayarınız yavaşlayacak mı? Zihinsel hafızanıza erişiminiz bloke mi edilecek? Dosyalarınız salt okunur hale mi gelecek?
+
+Bu durum, geleceğin en büyük etik ve sosyal tartışmalarından birini tetikleyecektir:
+
+### Digital Ownership ve Compute Inequality
+
+Daha fazla compute satın alabilen birey veya şirket; daha büyük modeller çalıştırabilecek, binlerce otonom agent koşturabilecek, piyasa analizlerini saniyeler içinde tamamlayıp otomasyon kurabilecektir.
+
+Yarın üretim kapasitesi, masanızdaki donanımın markasıyla değil; her ay satın alabildiğiniz **compute ve intelligence hacmiyle** ölçülecektir.
+
+---
+
+## İnternet ekonomisinin ve e-ticaretin yeni vitrini: Agent Consideration Set
+
+Bütün bu dönüşümün tüketici alışkanlıklarına ve e-ticarete yansımasını düşünelim.
+
+Bugün klasik akış şöyledir:
+
+Sosyal medya reklamı → Google araması → Landing page → Ürün inceleme → Sepete ekleme → Checkout → Kart bilgisi → Satın alma.
+
+Gelecekte ise kullanıcı yalnızca niyetini fısıldayacaktır:
+
+> **“Hafta sonu için şehirden arabayla 2 saat mesafede, evcil hayvan kabul eden, sessiz ve yüksek puanlı bir otel bul. Bütçem 20 bin TL'yi geçmesin. Uygun olanı rezerve et.”**
+
+Agent otelleri tarar, güncel yorumları analiz eder, fiyatları kıyaslar, evcil hayvan kurallarını kontrol eder, en ideal iki seçeneği sunar ve onayınızla işlemi bitirir.
+
+Booking kullanılmış olabilir, otelin kendi sitesi kullanılmış olabilir; fakat kullanıcı arayüzü hiç görmemiştir.
+
+Bugün şirketler Google'da 1. sırada çıkmak veya Instagram'da dikkat çekmek için milyarlarca dolar harcıyor. Gelecekte ise tek bir vitrin kalabilir:
+
+### Agent Consideration Set
+
+Yapay zekâ “Senin için en uygun 3 markayı seçtim” dediğinde, 4. sıradaki marka için dijital görünürlük fiilen sona ermiş demektir.
+
+Pazarlamanın yeni sorusu şudur:
+
+> **“Google'da nasıl üst sırada çıkarım?” yerine “Yapay zekânın önerdiği o 3 markadan biri nasıl olurum?”**
+
+---
+
+## Makine tarafından tercih edilebilir olmak: AX ve Brand Equity
+
+Bugünkü reklamcılık insan zaafları ve görsel psikoloji üzerine kuruludur: Renkler, FOMO, geri sayım sayaçları, influencer tavsiyeleri...
+
+Oysa bir AI agent: “SON 2 ÜRÜN!” uyarısını gördüğünde paniğe kapılmaz. Kırmızı buton yüzünden plansız alışveriş yapmaz.
+
+Agent; gerçek fiyat geçmişine, teslimat güvenilirliğine, bağımsız incelemelere, kullanıcı tercihlerine ve kurumsal itibara bakar.
+
+Bu dünyada marka ölmez; aksine güvenilir marka her zamankinden daha değerli hale gelir. Çünkü agent kararlarını yapılandırılmış dijital güven verileri üzerinden verecektir:
+
+### Machine-Readable Reputation (Makine Tarafından Okunabilir İtibar)
+
+PR, SEO, müşteri memnuniyeti ve marka yönetiminin iç içe geçmesinin asıl sebebi de budur.
+
+---
+
+## No-interface paradoksu: Güven ve karar arayüzleri
+
+Arayüzlerin azalmasının beraberinde getirdiği kritik bir paradoks vardır:
+
+Arayüzler yalnızca bir aracı kullanmamızı sağlamaz; aynı zamanda bize **kontrol hissi** verir.
+
+AI sizin adınıza bir karar verdiğinde kullanıcı haklı olarak soracaktır:
+
+- Neden bu oteli seçti?
+- Diğerlerini hangi kriterle eledi?
+- Sponsorlu bir anlaşma veya gizli komisyon var mı?
+- Yanıltıcı bir bilgi kullandı mı?
+
+Bu nedenle arayüzler tamamen yok olmayacaktır; misyonları değişecektir:
+
+### Navigation Interface → Decision Interface
+
+Eski arayüzler bilgisayarın içinde gezinmek (navigasyon) içindi; geleceğin arayüzleri ise agentın kararlarını, gerekçelerini, harcadığı bütçeyi ve kullandığı yetkileri denetlemek (**güven ve karar arayüzü**) için var olacaktır.
+
+> **Arayüzlere olan operasyonel ihtiyacımız azaldıkça, güven ve şeffaflık arayüzlerine olan ihtiyacımız katlanarak artacaktır.**
+
+---
+
+## Bilgisayar = Çevre: Bilgisayarı kullanmayı bırakabiliriz
+
+Bilgisayar tarihinin özeti basittir:
+
+- **1940–1970:** Computer = Oda
+- **1980–2000:** Computer = Masa
+- **2000–2010:** Computer = Çanta
+- **2010–2025:** Computer = Cep
+- **2025 ve sonrası:** **Computer = Çevre (Ambient)**
+
+Bilgi işlem gücü telefonunuzda, gözlüğünüzde, arabanızda, ofisinizde ve data center'da aynı anda akar. Yapay zekâ bütün bu kaynakları görünmez bir ağ gibi birleştirir.
+
+İnsanlık ilk kez makineye uyum sağlamak zorunda kalmaktan kurtuluyor.
+
+Yıllarca komut satırlarını, fare kısayollarını, dosya ağaçlarını, karmaşık yazılımları, Excel tablolarını ve CRM panellerini biz ezberledik.
+
+Şimdi ilk defa makine bizi öğreniyor: Niyetimizi, çalışma tarzımızı, neyi nasıl istediğimizi...
+
+Ve bu nedenle geleceğin bilgisayarı daha hızlı bir laptop veya daha güçlü bir masaüstü PC olmayacaktır. **PC kavramının kendisi sessizce tarihe karışacaktır.**
+
+Yerine **Personal Intelligence + Personal Compute Network** gelecektir.
+
+Googlebook bu dönüşümün tek aktörü değildir; fakat bilgisayarı tanımlamak için seçtiği kelime dönüşümün yönünü açıkça işaret etmektedir:
+
+### “Intelligence”
+
+Kişisel bilgisayar devrimi teknolojiyi odalardan çıkarıp masamıza getirmişti. Kişisel zeka devrimi ise bilgisayarı masadan kaldırıp hayatın görünmez dokusuna yerleştiriyor.
+
+Ve birkaç yıl sonra yeni bir bilgisayar seçerken kimse işlemci frekansını sormayacak.
+
+Herkesin soracağı tek bir soru kalacak:
+
+> **“Bu sistem benim için ne yapabiliyor?”**
+
+---
+
+## Kaynaklar ve Araştırmalar
+
+1. **Google — Introducing Googlebook, designed for Gemini Intelligence** (12 Mayıs 2026). Googlebook'un ilk resmi tanıtımı; “cloud-first world”dan “operating system → intelligence system” dönüşümüne ilişkin Google'ın resmi bildirisi.
+2. **Google — Googlebook: The laptop your Android phone has been waiting for** (21 Eylül 2026). Googlebook ön siparişleri, OEM üretici ortaklıkları ve çıkış takvimi.
+3. **Google — Googlebook's built-in intelligence reinvents the way you use your laptop** (21 Eylül 2026). Magic Pointer, Gemini Intelligence ve sistem seviyesi AI entegrasyonunun detayları.
+4. **Reuters — Google opens pre-orders for $899 Googlebook laptops built around Gemini AI** (21–22 Eylül 2026). Fiyatlandırma, pazar stratejisi ve MacBook/Windows rekabeti analizi.
+5. **Gartner — Personal Agents Define the Next Era of Agentic AI PCs** (Tracy Tsai, Steve Kleynhans, Erin Pierre - 14 Ağustos 2026). Agentic AI PC'lerde uygulamadan sonuç almaya geçiş araştırması.
+6. **Gartner — $234 Billion in Enterprise Application Software Spend Is at Risk from Agentic AI** (1 Temmuz 2026). Agentic arbitrage, SaaS harcamaları ve yazılımın görünmezleşme riski raporu.
+7. **Bill Gates — AI-powered agents are the future of computing** (Gates Notes). Agentların grafik arayüzden (GUI) sonraki büyük bilgisayar platformu olacağına dair temel analiz.
+8. **Microsoft Research — UFO²: The Desktop AgentOS** (Transactions on Machine Learning Research, Mayıs 2026). Screenshot tabanlı ajanların sınırları ve derin OS/API tabanlı multi-agent mimarisi.
+9. **Carl Pei — Nothing CEO says smartphone apps will disappear as AI agents take their place** (TechCrunch, 18 Mart 2026). Intent tabanlı mobil sistemler ve insan/makine arayüzlerinin ayrışması.
+10. **Reuters — With new Macs, Apple aims to take on Microsoft, Nvidia in a rush to lower AI costs** (22 Eylül 2026). Apple'ın güçlü yerel donanımı bulut AI token maliyetlerine karşı konumlandırma stratejisi.

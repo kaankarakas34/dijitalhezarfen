@@ -259,6 +259,47 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
     });
   }
 
+  if (article.slug === 'bilgisayar-kavrami-degisiyor') {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${articleCanonical}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Googlebook nedir ve geleneksel laptoplardan farkı nedir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Googlebook, Google’ın Eylül 2026’da ön siparişlerini açtığı; Gemini yapay zekasını sonradan yüklenen bir chatbot gibi değil, sistem seviyesinde (Magic Pointer, Create your Widget) işletim sisteminin kalbine yerleştiren ve “Operating System’dan Intelligence System’a” geçişi temsil eden yeni nesil bilgisayar kategorisidir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Intent-Based Computing ve No-interface bilgisayar ne anlama gelir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Bilgisayara hangi menüleri tıklaması ve hangi uygulamaları sırayla açması gerektiğini anlatmak yerine (İnsan → Interface → Application → Result), yalnızca ulaşılmak istenen nihai sonucun ve niyetin doğal dille aktarılmasıdır (İnsan → Intent → Intelligence → Action → Result).'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Gartner’ın “Agentic Arbitrage” tezi SaaS ekonomisini nasıl etkileyecek?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Gartner’a göre otonom AI agentlar birden çok yazılımı insan adına arka planda doğrudan kullandıkça, çalışan başına lisans (Per Seat) modeli zayıflayacak ve 2030’a kadar yaklaşık 234 milyar dolarlık kurumsal SaaS harcaması etkilenecektir. Fiyatlama per agent, per task veya per outcome modeline evrilecektir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Geleceğin bilgisayarı neden tek bir fiziksel cihaz olmayacak?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Bilgisayar masa, çanta veya cepte duran tek bir donanım olmaktan çıkıp; telefon, akıllı gözlük, araç, ofis ekranı ve bulut altyapısını birbirine bağlayan Personal Compute Network ve her yerde sizi tanıyan bir Personal Intelligence katmanına dönüşmektedir.'
+          }
+        }
+      ]
+    });
+  }
+
   element.textContent = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': graph
@@ -312,9 +353,9 @@ function parseMarkdownImage(line) {
   };
 }
 
-// Helper to parse inline markdown: bold, markdown links, citations
+// Helper to parse inline markdown: bold, italic, code, markdown links, citations
 function renderFormattedContent(text, onNavigate, sources = []) {
-  const regex = /(\[([^\]]+)\]\(([^)]+)\)|\[\d+\]|\*\*([^*]+)\*\*)/g;
+  const regex = /(\[([^\]]+)\]\(([^)]+)\)|\[\d+\]|\*\*([^*]+)\*\*|`([^`]+)`|\*([^*]+)\*)/g;
   const parts = [];
   let lastIndex = 0;
   let match;
@@ -331,6 +372,18 @@ function renderFormattedContent(text, onNavigate, sources = []) {
         <strong key={`b-${match.index}`} className="text-white font-semibold">
           {match[4]}
         </strong>
+      );
+    } else if (fullMatch.startsWith('`')) {
+      parts.push(
+        <code key={`code-${match.index}`} className="px-1.5 py-0.5 rounded bg-white/10 text-cyan-300 font-mono text-xs">
+          {match[5]}
+        </code>
+      );
+    } else if (fullMatch.startsWith('*')) {
+      parts.push(
+        <em key={`i-${match.index}`} className="italic text-gray-200">
+          {match[6]}
+        </em>
       );
     } else if (fullMatch.startsWith('[') && fullMatch.includes('](')) {
       const linkText = match[2];
@@ -439,8 +492,8 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
   const tocHeadings = useMemo(() => {
     const list = [];
     bodyLines.forEach((line) => {
-      if (line.startsWith('## ')) {
-        const title = line.replace(/^##\s+/, '');
+      if (line.startsWith('## ') || line.startsWith('# ')) {
+        const title = line.replace(/^#{1,2}\s+/, '');
         list.push({ title, slug: slugify(title), level: 2 });
       } else if (line.startsWith('### ')) {
         const title = line.replace(/^###\s+/, '');
@@ -749,9 +802,9 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 );
               }
 
-              // Heading Level 2 (##)
-              if (line.startsWith('## ')) {
-                const title = line.replace(/^##\s+/, '');
+              // Heading Level 1 or 2 (# or ##)
+              if (line.startsWith('## ') || line.startsWith('# ')) {
+                const title = line.replace(/^#{1,2}\s+/, '');
                 const headingId = slugify(title);
                 return (
                   <h2

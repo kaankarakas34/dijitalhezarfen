@@ -8,6 +8,94 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'bilgisayar-kavrami-degisiyor',
+    category: 'rapor',
+    title: {
+      tr: 'Bilgisayar Kavramı Değişiyor: Operating System’dan Intelligence System’a',
+      en: 'The Concept of the Computer Is Changing: From Operating System to Intelligence System'
+    },
+    desc: {
+      tr: 'Googlebook lansmanı, Gartner’ın Agentic AI PC analizi, Microsoft AgentOS ve Apple’ın yerel compute hamlesi ışığında: Bilgisayar küçülmüyor, donanımdan görünmez bir kişisel zeka ağına (Personal Intelligence) dönüşüyor.',
+      en: 'In light of Googlebook, Gartner’s Agentic AI PC research, Microsoft AgentOS, and Apple’s local compute thesis: the computer isn’t merely shrinking—it is evolving into an ambient Personal Intelligence network.'
+    },
+    date: {
+      tr: '23 Eylül 2026',
+      en: 'September 23, 2026'
+    },
+    readTime: {
+      tr: '22 dk okuma',
+      en: '22 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/bilgisayar-kavrami-degisiyor.png',
+    imageAlt: 'Bilgisayar Kavramı Değişiyor: Kişisel bilgisayarlardan otonom Personal Intelligence ve ambient compute ağına geçiş',
+    source: '/articles/bilgisayar-kavrami-degisiyor.txt',
+    publishedAt: '2026-09-23T09:00:00+03:00',
+    modifiedAt: '2026-09-23T11:40:00+03:00',
+    keywords: [
+      'Googlebook',
+      'Gemini Intelligence',
+      'Agentic AI PC',
+      'Personal Intelligence',
+      'Personal Compute Network',
+      'Intent-Based Computing',
+      'No-interface bilgisayar',
+      'Agentic Arbitrage',
+      'AgentOS',
+      'Local Edge Cloud',
+      'Compute as a Service',
+      'AX Agent Experience',
+      'Metered Intelligence',
+      'AI Memory Portability',
+      'Intent Security'
+    ],
+    color: 'from-cyan-500/25 to-blue-500/15',
+    accent: 'text-cyber-cyan',
+    featured: true,
+    sources: [
+      {
+        label: 'Google — Introducing Googlebook, designed for Gemini Intelligence',
+        url: 'https://blog.google/products/googlebook/introducing-googlebook-gemini/'
+      },
+      {
+        label: 'Google — Googlebook: The laptop your Android phone has been waiting for',
+        url: 'https://blog.google/products/googlebook/pre-orders-android-ecosystem/'
+      },
+      {
+        label: 'Google — Googlebook\'s built-in intelligence reinvents the way you use your laptop',
+        url: 'https://blog.google/products/googlebook/magic-pointer-built-in-intelligence/'
+      },
+      {
+        label: 'Reuters — Google opens pre-orders for $899 Googlebook laptops built around Gemini AI',
+        url: 'https://www.reuters.com/technology/google-opens-pre-orders-899-googlebook-laptops-gemini-ai-2026-09-21/'
+      },
+      {
+        label: 'Gartner — Personal Agents Define the Next Era of Agentic AI PCs',
+        url: 'https://www.gartner.com/en/documents/personal-agents-agentic-ai-pcs-2026'
+      },
+      {
+        label: 'Gartner — $234 Billion in Enterprise Application Software Spend Is at Risk from Agentic AI',
+        url: 'https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-enterprise-software-spend-at-risk-agentic-ai'
+      },
+      {
+        label: 'Bill Gates — AI-powered agents are the future of computing',
+        url: 'https://www.gatesnotes.com/AI-agents'
+      },
+      {
+        label: 'Microsoft Research — UFO²: The Desktop AgentOS',
+        url: 'https://www.microsoft.com/en-us/research/publication/ufo2-the-desktop-agentos/'
+      },
+      {
+        label: 'TechCrunch — Carl Pei says smartphone apps will disappear as AI agents take their place',
+        url: 'https://techcrunch.com/2026/03/18/nothing-carl-pei-apps-disappear-ai-agents/'
+      },
+      {
+        label: 'Reuters — With new Macs, Apple aims to take on Microsoft, Nvidia in a rush to lower AI costs',
+        url: 'https://www.reuters.com/technology/apple-mac-enterprise-ai-costs-local-compute-2026-09-22/'
+      }
+    ]
+  },
+  {
     slug: 'insani-insan-yapan-sey-aslinda-zihnidir',
     category: 'rapor',
     title: {
@@ -52,7 +140,7 @@ export const articles = [
     ],
     color: 'from-purple-500/25 to-cyan-500/15',
     accent: 'text-cyber-cyan',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'Philosophical Transactions of the Royal Society B — Bliss et al. (2020) Long-term potentiation as a memory mechanism',

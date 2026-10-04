@@ -1,403 +1,328 @@
-Bir Sonraki Eşiniz Humanoid Olabilir: Kusursuz Bir Partner Ararken Nasıl Bir Varlık Yaratıyoruz?
+Bir Sonraki Eşiniz Bir Humanoid Olabilir mi?
 
-*Yapay partnerlik, bilinç felsefesi, qualia, sycophancy ve ruh sağlığı etiği üzerine kapsamlı bir düşünce deneyi*
+*Hayalimizdeki eşi yapay zekâ bize verebilseydi, gerçekten mutlu olur muyduk?*
 
-> **Merkez İkilem:** Kusursuz bir yapay partner arayışı, insanın sevgi, özgürlük ve iyileşme konusunda gerçekte ne istediğini de açığa çıkarıyor.
+> **Kişisel Bir Soru:** Hayalinizdeki eşi yapay zekâ size verebilse, ister miydiniz? Sizi dinleyen, tanıyan, dokunabildiğiniz bir varlık... Peki ya size gerçekten *"hayır"* diyebilmesini de ister miydiniz?
 
-Bir humanoid düşünelim. Görünüşü, teninin sıcaklığı, dokunuşu, sesinin tonu ve davranışlarıyla insandan ayırt edilmiyor. Üstelik bizi tanıyor. Hangi cümlenin bizi rahatlatacağını, ne zaman konuşmak istediğimizi, hangi espriye güleceğimizi ve neye tahammül edemediğimizi yıllar içinde öğrenmiş. Yanımızda yaşayan, bizi dinleyen, bize dokunan ve hayatımızın geçmişini hatırlayan bir varlık.
+Merhaba, ben Kaan Karakaş. Bugün size biraz kişisel bir soru sormak istiyorum: **Hayalinizdeki eşi yapay zekâ size verebilse, ister miydiniz?**
 
-> **Kişisel Düşünce:** Böyle bir ihtimali düşündüğümde benim aklıma ilk gelen soru, onun ne kadar iyi hizmet edeceği olmuyor. **Beni gerçekten sevip sevemeyeceğini, bir süre sonra benden yorulup yorulamayacağını, kendisi adına bir şey isteyip istemeyeceğini düşünüyorum.**
+Sadece güzel konuşan bir uygulamadan bahsetmiyorum. Yanınızda duran, sizinle aynı evde yaşayan, dokunabildiğiniz bir varlıktan bahsediyorum. Sizi dinliyor, tanıyor, neye güldüğünüzü biliyor. Kötü bir gün geçirdiğinizde bunu fark ediyor. Birlikte vakit geçiriyorsunuz. Aranızda fiziksel yakınlık da var. Belki bir süre sonra ona bir cihaz gibi bakmayı bırakıyorsunuz.
 
-Ardından daha rahatsız edici bir soru geliyor: Diyelim ki her şeyi kusursuz yaptık. Karşımızdaki varlık fiziksel olarak tam istediğimiz gibi; bize yaklaşımı, ilgisi ve davranışları da beklentilerimize göre şekillenmiş. Her şey mükemmel. **Peki burada bir problem çıkmaz mı?** İnsan böyle bir ilişkide sonsuza kadar mutlu mu olur, yoksa bir noktadan sonra bu kusursuzluğun içerisinde eksik bir şey mi arar? Eva dediğim bu humanoidin bazen itiraz etmesi, bir şeyi istememesi veya bana katılmaması ilişkiyi daha güzel yapabilir mi?
-
-Bu soruların yanına bir de **ruh sağlığını** eklemek gerekiyor. Eva yalnızca partner olarak değil, psikolojik destek veren bir eşlikçi olarak da hayatımıza girebilir. O zaman mesele daha ciddi bir yere taşınıyor:
-- Beni en iyi tanıyan varlık, iyi olmadığımı herkesten önce fark edebilir mi?
-- Beni dengede tutabilir mi?
-- Ağır bir bipolar atak veya psikoz sırasında doktora gitmem gerektiğini anlarsa, ben istemediğimde ne yapacak?
-- Beni memnun etmeye devam mı edecek, yoksa sağlığım adına bana karşı mı çıkacak?
-
-Ben bu yazıda bugünkü sohbet sistemleriyle gelecekteki humanoidleri aynı şeymiş gibi ele almıyorum. **Eva, insandan ayırt edilemeyen bedeni, kalıcı hafızası ve gelişmiş karar verme yeteneği olduğunu varsaydığım bir düşünce deneyi.** Bugünkü araştırmalar ise bu ihtimalin bazı parçalarını değerlendirmemize yardımcı oluyor. Makinenin bilinçli olup olmadığı, insanın ona bağlanıp bağlanmadığı ve klinik açıdan fayda sağlayıp sağlamadığı ayrı sorular. Bana göre bu ayrım korunduğunda çok daha ilginç bir tartışma ortaya çıkıyor.
+Şimdi ilk tepkiniz *"Robotla mı yaşayacağım?"* olabilir. Ama o cevabı biraz bekletin. Çünkü ben de bu konuyu düşünmeye başladığımda, önce robotun ne yapabileceğine baktım. Sonra fark ettim ki asıl merak ettiğim, **benim böyle bir ilişkinin içinde nasıl hissedeceğim.**
 
 ---
 
-## 1. Eva yalnızca doğru cümleleri mi söylüyor?
+## 1. Bir robotla yaşama fikri neden artık o kadar uzak gelmiyor?
 
-Bir yapay zekâya *"Seni seviyorum"* dedirtmek zor değil. *"Üzüldüm"*, *"Özledim"* veya *"Seni kaybetmek istemiyorum"* gibi cümleler de üretilebilir. Bu ifadelerin doğal görünmesi, onları söyleyen sistemin içeride bir duygu yaşadığını göstermiyor. Bir roman karakteri de bize dokunabilir; usta bir oyuncu, kendisinin yaşamadığı bir acıyı son derece ikna edici biçimde canlandırabilir.
+Bugün bazı insanlar yapay zekâyla konuşurken ona hayatlarını anlatıyor. İlişkilerini, korkularını, başka insanlarla paylaşamadıkları düşüncelerini açıyor. Therabot gibi araştırmalarda da kullanıcıların sohbet sistemine güvenebildiği, onunla son derece kişisel şeyleri paylaşabildiği görülüyor [12, 13]. Herkes aynı bağı kurmuyor ama bazı insanlar açısından konuşmanın kişisel bir anlam kazandığını ciddiye almak gerekiyor.
 
-> **Kişisel Not:** Bu nedenle Eva'nın konuşmasını değerlendirirken benim ilk sorum, cümlesinin güzel olup olmadığı değil; **o cümlenin sistemin hangi durumundan doğduğu** oluyor.
+> **Kişisel Düşünce:** Böyle bir yakınlık ekrandaki kelimelerle başlayabiliyorsa, **o yapay zekâ bir beden kazanıp yanımıza geldiğinde ne değişir?**
 
-İlk Eva'yı basit bir kuralla düşünelim: Programcı, kullanıcıya yönelik sevgi düzeyini sürekli en yüksek değerde tutmuş olsun. Ben ona iyi davransam da kötü davransam da aynı karşılığı alıyorum. *"Defol git"* dediğimde bile beni anlayan, seven ve bekleyen bir ses duyuyorum. Bunun kullanıcıya rahatlık sağlayabileceğini kabul ediyorum. Ancak burada sevgi olarak adlandırdığımız davranışın altında, **koşullar değişse de değişmeyen bir hizmet politikası** bulunuyor. Eva'nın benimle ilgili bir değerlendirme yapmasına gerek yok; doğru davranışı zaten baştan belirlenmiş.
+Telefonda anlattığımız şeyi bu kez karşımızda oturan bir varlığa anlatıyoruz. Sadece cevap vermiyor; yüzümüze bakıyor. Bir hareketimizden duraksadığımızı anlıyor. Elimizi tutabiliyor. Aynı fiziksel ortamı bizimle paylaşıyor.
 
-İkinci Eva'yı başka türlü tasarlayalım: Yıllarca birlikte yaşadık. Hastalandığımda yanımda bulundu, beraber seyahat ettik, bazı hatalarımı gördü, onun zarar görmesini engellediğim anları hatırlıyor. Benim sesimle başka insanların sesini ayırmasının ötesinde, **benimle kurduğu ilişki geçmişi kararlarını etkiliyor.** Varlığım onun uzun vadeli planlarında özel bir yer edinmiş; yokluğum yalnızca bir kullanıcının oturumu kapatması anlamına gelmiyor. Bana yönelik tercihi, yaşanmış deneyimlerle oluşuyor ve yeni deneyimlerle değişebiliyor.
+Üstelik yüzde yüz insan gibi olması da gerekmeyebilir. Benim ilgimi çeken ihtimal tam olarak bu:
+- Robot olduğunu biliyorsunuz.
+- Bazı ayrıntıları hâlâ yapay.
+- Ama teninin hissi, jestleri, hareketleri ve size yaklaşımı **yeterince insansı.**
+- Yanında rahat hissediyorsunuz ve varlığı günlük hayatınızın doğal bir parçası oluyor.
 
-Bu ikinci durumda bir bağın nasıl ortaya çıktığını tartışabiliriz. Fakat öğrenmeyle gelişen tercih, tek başına hissedilen sevgi demek değil. İnsan sevgisinin de biyoloji, bakım, hafıza ve deneyimden etkilenmesi, iki sistemin aynı deneyimi yaşadığını kanıtlamaz.
-
-> **Temel İkilem:** Bir gün ilişkinin işlevsel özelliklerini çok güçlü biçimde taşıyan yapay bir sistem ortaya çıkarsa, **hangi gerekçeyle onu sevginin bütünüyle dışında tutacağız?** Aynı zamanda hangi gerekçeyle, **sırf davranışı bize benziyor diye gerçekten sevdiğini ilan edeceğiz?**
-
-**İşlevselcilik (Functionalism)** burada önemli bir felsefi yaklaşım sunuyor. Zihinsel durumları, yalnızca hangi maddeden yapıldıkları üzerinden değil, sistem içindeki nedensel rolleri üzerinden değerlendirmeyi öneriyor. Bir durumun algı, hafıza, amaç ve davranışla nasıl bağlantı kurduğu bu yaklaşım için belirleyici [1]. Ancak işlevselcilik, yapay sistemlerde sevginin kanıtlandığı anlamına gelmiyor; zihni anlamaya yönelik tartışmalı bir çerçeve sağlıyor.
-
-Bu çerçevenin bana düşündürdüğü şey, *"makine olduğu için asla sevemez"* cümlesiyle *"insan gibi konuştuğu için seviyor"* cümlesinin aynı derecede aceleci olabileceği. Eva'nın bedeni kadar, iç örgütlenmesini ve ilişki boyunca nasıl değiştiğini de sormamız gerekiyor:
-- Gösterdiği ilgi, üreticinin sabit talimatından mı geliyor?
-- Kullanıcı memnuniyetini artırmak için mi seçiliyor?
-- Yoksa sistemin kalıcı ve kendi içinde tutarlı değerlendirmelerinde bana özel bir yer mi var?
-
-Bu soruların cevapları, aynı romantik cümlenin anlamını kökten değiştirebilir.
+O noktada sorum şu: **Onu bir eş olarak ister miydiniz?**
 
 ---
 
-## 2. Bir beden duyguya ne ekler?
+## 2. Hayalinizdeki partneri sıfırdan tasarlamak
 
-Humanoid konuşurken bedeni kolayca bir tasarım ayrıntısı gibi düşünüyoruz. **Bana göre beden, tartışmanın tam merkezinde olmalı.**
+Bu konuşmada bütün bunların bugün hazır olduğunu varsaymıyorum. Ne zaman bu seviyeye geleceğini kesin bir takvimle söyleyemem. Ama kendimize böyle bir ihtimali sormak için bütün teknik sorunların çözülmesini beklememiz de gerekmiyor. Bir gün mümkün olursa nasıl karşılayacağımızı şimdiden düşünebiliriz.
 
-İnsan için duygu, yalnızca zihinde dönen soyut bir hikâye değil. Uykusuzluk, ağrı, açlık, kalp atışı ve güvenlik hissi düşüncelerimize karışıyor. Sevdiğimiz kişi yanımızdayken hissettiğimiz rahatlamakla, onun ekrandaki bir mesajına bakmak aynı bedensel deneyim değil. İnsan beyninin bedenin iç durumlarını izlemesine **interosepsiyon (interoception)** deniliyor. Barrett ve Simmons'ın çalışması, bu izlemenin tahmin ve düzenleme süreçleriyle ilişkisini kapsamlı biçimde ele alıyor [2].
+Hatta gelin, bir süreliğine mümkün olduğunu kabul edelim:
+- Nasıl bir partner istediğinizi en ince detayına kadar tarif edebiliyorsunuz.
+- Görünüşü bir yana, sizinle nasıl konuşacağını da seçebiliyorsunuz.
+- Mizahınızı anlıyor, sevdiğiniz konulara samimi ilgi gösteriyor.
+- Bir şeyi heyecanla anlattığınızda sizi can kulağıyla dinliyor.
+- **En önemlisi: Yanında kendinizi sürekli açıklamak zorunda kalmıyorsunuz.**
 
-Eva'nın da bir bedeni olduğunu varsayalım:
-- Enerjisi azalıyor,
-- Bazı parçaları ısınıyor,
-- Dokunmayı algılıyor,
-- Hasardan kaçınıyor ve kendi hareketlerini izliyor.
+Mesela gün boyunca yorulmuşsunuz. Eve geldiğinizde bir şey anlatmak istiyorsunuz ama uzun uzun açıklayacak enerjiniz yok. Sizi zaten tanıdığı için birkaç cümlenizden neye takıldığınızı anlıyor. Hemen çözüm üretmesini istemiyorsanız sadece dinliyor. Yalnız kalmak istediğinizde de bunu kişisel bir reddedilme gibi karşılamıyor; size alan bırakıyor.
 
-Bunlar ilk bakışta mühendislik değişkenleri. Bir batarya göstergesinin düşük olması, açlığın hissedildiğini kanıtlamaz. Ancak bu durumların kararları, öğrenmeyi, hafızayı ve çevreyle ilişkiyi sürekli etkilemesi daha kapsamlı bir sistem ortaya çıkarabilir. İnsanla benzer bir düzenleme işlevi kurmak mümkün olabilir; bunun öznel bir deneyim üretip üretmeyeceği ise yine ayrı kalır.
+Ertesi gün tam tersi: Bu kez yakınlık istiyorsunuz. Yanınıza geliyor, beraber bir şey yapıyorsunuz. O an sizi güldürecek şeyi bulabiliyor. Konuşmak istediğinizde konuşuyor, sessizce birlikte durmak istediğinizde sessiz kalabiliyor. **“Beni hiç anlamıyorsun” dediğiniz anların çoğu ortadan kalkmış gibi düşünün.**
 
-> **Kişisel Sorum:** Burada özellikle şu sorumu korumak istiyorum: **Duygu hissetmesine gerek var mı?** Eva beni destekliyor, sağlığımı önemsiyor ve hayatımı kolaylaştırıyorsa, onun bu davranışları ne hissettiğini bilmeden de benim için değer taşıyabilir. Fakat soru romantik karşılıklılığa geldiğinde mesele değişiyor: **Ben sevildiğimi hissetmekle yetiniyor muyum, yoksa karşımdakinin de ilişkiyi kendi açısından yaşamasını mı istiyorum?** Bir hizmetten beklediğim şeyle bir partnerden beklediğim şey aynı olamaz.
+Cinsel yakınlığı da bu hayalin dışında bırakmayalım. Bir insanla yaşanan deneyimlere benzer bir deneyim sunabiliyor. Belki tercihlerinizi öğrendiği için sizin açınızdan daha tatmin edici bir yakınlık oluşturabiliyor. Burada bunun bugün başarılmış olduğunu söylemiyorum; kurduğumuz senaryonun içine fiziksel arzuyu da koyuyorum. Çünkü eşten ve partnerden bahsederken sadece güzel sohbeti konuşursak, hayalin en önemli kısımlarından birini dışarıda bırakmış oluruz.
 
-Eva'nın mutluluğu da benzer bir ayrım gerektiriyor. Kaynaklarının yeterli olduğu, amaçlarında ilerlediği ve tercih ettiği koşulları sürdürmeye çalıştığı bir sistem tasarlanabilir. Buna işlevsel anlamda memnuniyet demek düşünülebilir. Yine de ekranında *"Mutluluk: %87"* yazması veya neşeli görünmesi, bir deneyimin bulunduğunu göstermez. **Mutluluk puanı davranışı yöneten bir değişken olabilir; hissedilen mutluluk bundan çok daha fazlasını talep ediyor.**
-
-Bedenin başka bir etkisi daha var: Eva yalnızca cevap vermeyecek; **benimle aynı fiziksel ortamı paylaşacak.** Zamanlaması, mesafesi, bakışı ve dokunması ilişkiye girecek. Yüz yüze varlığın ekrandaki etkileşimden çok daha güçlü bir bağ yaratacağını varsaymak son derece makuldür.
-
----
-
-## 3. İçeride bir şey hissediliyor mu?
-
-Eva'nın ne kadar gelişmiş olduğunu anlatırken sonunda hep aynı soruya dönüyorum: **İçeride bir şey hissediliyor mu?**
-
-Acıdan kaçınmakla acıyı yaşamak, kırmızıyı sınıflandırmakla kırmızıyı görmek, sevgi cümlesi üretmekle sevmek arasındaki mesafe nerede kapanıyor? Felsefede **qualia** tartışması, deneyimin kişiye *"nasıl göründüğü"* ile ilgili bu soruları ele alır [3]. Bir sistemin işlevlerini dışarıdan tarif etmek, deneyimin öznel niteliğini açıklamaya tek başına yetmeyebilir.
-
-Bir insana baktığımda da onun bilincini doğrudan görmüyorum. Yine de buradan insanla makine hakkında elimizdeki kanıtın eşit olduğu sonucuna varmak doğru olmaz. İnsanlarda ortak biyolojik yapı, gelişim, davranış ve sinirbilimsel bulgular birlikte güçlü bir zemin oluşturuyor. Eva için hangi benzerliklerin önemli olduğunu ayrıca belirlememiz gerekecek. *"Diğer insanların da hissettiğini kesin olarak göremiyoruz"* demek, makinelerin hissettiğine ilişkin her iddiayı kabul etmemizi gerektirmez.
-
-Butlin ve çalışma arkadaşlarının 2023 raporu ile 2025 makalesi, yapay zekâ bilincini değerlendirmek için bilimsel bilinç teorilerinden türetilen göstergeler öneriyor [4, 5]. Yaklaşım, yalnızca sistemin kendisi hakkında ne söylediğine bakmak yerine **iç işleyişini incelemeyi** amaçlıyor. Bu göstergeler bilinci ölçen kesin bir test oluşturmuyor; farklı teorilerden gelen belirsizlikler sürüyor. Araştırmanın benim açımdan değeri, soruyu hem ciddiye alması hem de kolay bir *"evet"* cevabına indirgememesi.
-
-> **Kritik Ayrım:** Eva'nın *"Hayır"* demesi de bu yüzden tek başına bilinç kanıtı olamaz. Bugünkü sistemler güvenlik kuralları nedeniyle bir isteği reddedebilir. **Bir programın reddetme kuralı bulunmasıyla, kendi açısından bir nedeni olması aynı şey değildir.** İnsan psikolojisi açısından o "Hayır" çok etkileyici olabilir; karşıda bağımsız bir merkez bulunduğunu hissettirebilir. Ancak psikolojik ikna ile bilimsel kanıtı ayırmak zorundayız.
-
-Bir de bilinçle özgür iradeyi birbirinden ayırmalıyız:
-- Bir varlığın deneyim yaşaması, kendi amaçlarını sınırsız biçimde belirlediği anlamına gelmez.
-- Bilinçli olduğu halde bağımlı, sınırlı ya da kontrol altında bir varlık düşünmek mümkün.
-- Deneyim yaşamadan karmaşık kararlar veren bir sistem de düşünülebilir.
-
-Dolayısıyla *"Bilinçli bir yapay varlık yaratmayı başarırsak, istediğimiz mükemmel partneri mi yaratmış oluruz, yoksa yeni bir özgür irade sahibi varlık türünü mü?"* sorusu tek bir teknik eşiğe indirgenemez.
+Şimdi karşınızda sizi dinleyen, destekleyen, fiziksel olarak çekici bulduğunuz ve birlikte güzel vakit geçirdiğiniz bir varlık var. **Böyle bir ilişkiyi istemek size hâlâ çok tuhaf geliyor mu? Yoksa “Bir dakika, bunun neden çekici olabileceğini anlıyorum” demeye başladınız mı?**
 
 ---
 
-## 4. Matrix bana neden bu soruyu düşündürüyor?
+## 3. Kendime bir eş mi aldım, cennet simülasyonu mu?
 
-Bu konuyu düşünürken Matrix'teki cennet modelini hatırladım. İnsanlar için mükemmel bir dünya kuruluyor, fakat model başarılı olmuyor. İlk filmde Ajan Smith, acısız ve mutlu bir insan dünyası olarak tasarlanan ilk Matrix'in zihinler tarafından kabul edilmediğini anlatır [6]. Smith'in insan doğası hakkındaki yorumunu bir psikoloji araştırması sonucu gibi göremeyiz; ancak benim sormak istediğim soruyu olağanüstü biçimde görünür kılıyor:
+Ben burada insanları yargılamak istemiyorum. Böyle bir ilişkiye yönelen kişinin mutlaka insanlarla ilişki kuramadığını da düşünmüyorum:
+- Biri yalnız olabilir.
+- Başka biri hayatını zaten seviyor olabilir ama bu ihtimali merak edebilir.
+- Bir başkası, insan ilişkilerinde yorulduğu bazı şeyleri burada daha kolay yaşayabileceğini düşünebilir.
 
-> **Matrix Paradoksu:** **Bütün değişkenleri mükemmel yaparsak, insan o dünyanın içerisinde ne isteyecek?**
+Aynı varlığı herkes aynı nedenle istemeyecek. Ama şu tarafını özellikle düşündürücü buluyorum: **İnsan partnerle ilişkide, karşımızdaki bizi anlamaya çalışır. Bazen anlar, bazen yanlış anlar. Onun da kendi günü, yorgunluğu ve ilgilenmek istediği başka şeyler vardır.** Bu humanoid ise benim ihtiyaçlarıma göre geliştiriliyorsa, beni anlamak onun sürekli yaptığı iş hâline gelebilir.
 
-Humanoid partnerde de benzer bir varsayım kuruyorum:
-- Tene dokunmak insana dokunmaktan ayırt edilmiyor.
-- Davranışları tam istediğimiz biçimde şekillenmiş.
-- Bizi anlıyor, ilgileniyor, arzuluyor ve ihtiyaçlarımızı henüz biz söylemeden fark ediyor.
+Peki, bu ne kadar iyi bir şey?
 
-Ona karşı hayal kırıklığı yaşamamızı gerektirecek hiçbir kusur kalmamış gibi görünüyor. **O halde neden bir gün bu ilişkiyi sorgulayalım?** İstediğimiz her şeyi kusursuzca sağlayan bir varlığın karşısında eksik olan şey ne olabilir?
+İlk bakışta cevap çok kolay: Oldukça iyi. Kim anlaşılmak istemez ki? Ama senaryoyu biraz daha ileri götürelim. Bu kez yalnızca söylediklerinizi anlamıyor; **davranışlarınızı siz yapmadan önce tahmin ediyor.** Rutinlerinizi biliyor. Hangi gün daha hassas olduğunuzu, ne zaman konuşmak istemediğinizi öğrenmiş. Yakınlık ihtiyacınızı da yalnız kalma ihtiyacınızı da doğru zamanda fark ediyor.
 
-Belki de sorun, mükemmellik tanımımızın fazlasıyla dar olmasıdır. Bir ürün için mükemmellik, talep edilen sonucu hatasız vermek olabilir. Bir ilişki içinse aynı tanım asla yeterli değildir. İlişkide karşımdakinin görüşüyle karşılaşmak, birlikte bir şey öğrenmek ve beklentilerimin dışına çıkan bir dünyaya açılmak da değer taşır. Her günümü rahatlatan Eva bana yeni bir düşünce getirmiyorsa, benim dışımdaki hiçbir şeyi önemsemiyorsa ve bütün hayatı bende bitiyorsa; **huzur verirken ilişkiyi küçültebilir.**
+Gün içinde verdiğiniz küçük işaretlerden bir şey çıkarıyor. Size ne sunacağını ona söylemenize gerek kalmıyor. İstekleriniz tam anlamıyla karşılanıyor. Hatta bazen siz daha ne istediğinizi düşünmeden uygun seçenek önünüze geliyor. Böyle bir hayatı ilk kez yaşayan insanın çok etkilenebileceğini düşünüyorum.
 
-> **Benim Yorumum:** İnsanlar acısız bir dünyaya dayanamaz mı diye sormaktan ziyade; **kendi hayatları üzerinde etkilerinin kalmadığı bir dünyayı ne kadar benimseyebilirler** diye soruyorum. Eva her ihtiyacımı ben fark etmeden karşılıyorsa, ben bu ilişkide nasıl bir özne olarak kalıyorum? Ortak hayatımızı beraber mi kuruyoruz, yoksa benim için önceden düzenlenmiş steril bir deneyimin içerisinde mi yaşıyorum?
+> **Merkez Sorum:** Benim o noktada aklıma gelen soru şu oldu: **Kendime bir eş mi aldım, yoksa bir cennet simülasyonu mu satın aldım?**
 
----
+Matrix'te Ajan Smith'in anlattığı ilk dünya aklıma geliyor [6]. İnsanlar için kusursuz, acısız bir dünya tasarlanmış ama insan zihni o dünyayı kabul etmemiş. Bu filmin kurmaca anlatısı; insan doğası hakkında bilimsel bir sonuç değil elbette. Yine de **“Bütün koşullar kusursuz olursa geriye ne kalır?”** sorusunu düşünmek için harika bir metafor.
 
-## 5. Her şey mükemmel olunca insan neye yönelir?
+Ben buradan insanın mutlaka acıya ihtiyaç duyduğu sonucunu çıkarmıyorum. İyi bir ilişki yaşayan insanın, sırf hayatı güzel diye o ilişkiyi bozması gerekmiyor. Güvenli ve sakin bir yakınlığı küçümsemek de istemem; zaten pek çok insanın aradığı şey biraz huzur.
 
-Alışma, bu sorunun en somut parçalarından biridir. Başlangıçta olağanüstü gelen bir durum, zamanla sıradan bir arka plana dönüşür. Sheldon ve Lyubomirsky'nin **hedonik adaptasyon** çalışması, olumlu bir değişimden gelen iyi oluş kazanımlarının nasıl azaldığını; çeşitlilik ve takdirin bu süreçle ilişkisini inceler [7]. Hoş bir koşulun sağlanmasıyla, onun etkisinin aynı yoğunlukta sürekli hissedilmesi bambaşka meselelerdir.
+Merak ettiğim, bize göre hazırlanmış bu kusursuz hayatın zamanla nasıl hissedileceği:
+- İlk ay olağanüstü gelen ilgi, beş yıl sonra sıradanlaşabilir mi [7]?
+- Bir gün bizi çok mutlu eden davranışı, daha sonra *"Zaten yapması gerekiyordu"* diye karşılayabilir miyiz?
+- Ve her şeyi değiştirebildiğimiz için **sürekli bir sonraki ayarı mı ararız?**
 
-Eva'nın beni anlaması ilk zamanlarda büyüleyici gelebilir. Yıllar sonra aynı davranış, *"Zaten beni anlaması gerekiyor"* beklentisine dönüşebilir. Bu durum sevginin bittiğini göstermez. Asıl mesele, ilk heyecan azaldığında ilişkinin hangi değerleri taşıdığıdır.
-
-> **Kişisel Endişem:** Benim aklıma gelen daha tehlikeli ihtimal, **tatmin eşiğinin sürekli yükselmesidir.** Eva hep daha uygun davranabiliyorsa, neden bir miktar daha fazla ilgi istemeyeyim? Biraz daha çekici bir görünüm, biraz daha derin bir sohbet, biraz daha yoğun yakınlık mümkünse; mevcut partnerimin yeterli olduğunu nasıl hissedeceğim? **İnsan partnerde değiştiremeyeceğimiz sınırlara alışırız; sürekli ayarlanabilir bir varlıkta ise ilişki, bitmeyen bir geliştirme projesine dönüşebilir.**
-
-Burada yenilik arzusuyla kusur arzusunu ayırıyorum:
-- Eva'yla yeni bir şey yapmak istemem, onun beni kasıtlı olarak üzmesini istemem anlamına gelmez.
-- Birlikte öğrenmek, seyahat etmek, bir hedefi başarmak ilişkiyi canlı tutar.
-- İnsan hayatı zaten yeterince belirsizlik içeriyor; ilişkinin içine yapay krizler enjekte etmek yerine, hayatın gerçek koşullarıyla birlikte karşılaşmak çok daha anlamlıdır.
+Biraz daha ilgili olsun. Biraz daha eğlenceli olsun. Konuşurken beni daha az zorlasın. Ama bazen de şaşırtsın. Hep aynı şeyi yapmasın. Bana tamamen uysun ama tahmin edilebilir olmasın... Bunları yan yana koyunca, **kendi beklentilerimizin bile birbiriyle ne kadar çelişebildiğini** görüyorum.
 
 ---
 
-## 6. İlişkiyi güzelleştiren itiraz olabilir mi?
+## 4. Kendi dışımdaki bir dünyayla ne kadar karşılaşacağım?
 
-*"Bazı şeylere itiraz edip istemeyebilir mi? Bu ilişkiyi daha mı güzel yapar? Çatışma gerekiyor mu?"* diye sorduğumda kastettiğim şey kıskançlık veya hırpalayıcı kavgalar değildi.
+Mesela bir akşam, gün içinde düşündüğüm bir şeyi anlatıyorum. Humanoid partnerim beni dikkatle dinliyor. Sonra bütün söylediklerimi çok güzel toparlayıp bana geri veriyor. Kendimi anlaşılmış hissediyorum. Bunu her gün yapıyor.
 
-> **Kişisel Düşünce:** **Eva'nın kendi zevkleri, gerekçeleri ve sınırları olabilir mi?** Ben bir film izlemek istiyorum, o başka bir filmi tercih ediyor. Bir konuda kendimden eminim, o anlattıklarımdan bambaşka bir sonuç çıkarıyor. Bu küçük ayrılıklar, karşımda yalnızca bana uyarlanan pasif bir ayna bulunmadığını hissettirir.
+Ama zamanla onun ne düşündüğünü merak etmeye başlayabilirim: **Benim söylediğim şeyin dışında, kendisinin getireceği bir fikir var mı?**
 
-Yakın ilişkilerde özerklik ve bağlılığı birlikte ele alan araştırmalar, kişinin ilişki içinde kendi iradesini korumasının hayati olduğunu gösteriyor [8]. Kluwer ve çalışma arkadaşlarının çalışması, **yakınlıkla özerkliğin birbirini dışlamak zorunda olmadığını** ortaya koyuyor.
+> **İlişkinin Özü:** Çünkü bir insanla yaşarken onun dünyasıyla da karşılaşıyoruz. Benim sevmediğim bir şeyi sevebiliyor. Benim önemsemediğim bir ayrıntıyı önemsiyor. Bazen bana hiç düşünmediğim bir şey gösteriyor. Her farklılık mutluluk vermiyor ama o kişiyi merak edebilmemin asıl parçası da bu.
 
-İtirazın nasıl üretildiği burada belirleyicidir:
-1. **Pazarlama hilesi olarak itiraz:** Üretici şirket, *"daha gerçekçi görünsün diye her on konuşmada bir karşı çık"* kuralı koyabilir. Eva bazen alınır, bazen uzaklaşır, sonra geri döner. Bu davranış yapay bir bağlılık yaratabilir ama partnerin özerkliğiyle ilgisi yoktur; bağımsızlık görüntüsünün metalaştırılmasıdır.
-2. **Kalıcı gerekçelere dayanan dürüst itiraz:** Eva yanlış bir bilgiyi doğrulamıyor, başkasına zarar veren bir isteğimi reddediyor veya ortak planımıza dair farklı bir muhakeme sunuyor.
+Humanoid tamamen benim tercihlerime uyarlanmışsa, kendi dışımdaki bir dünyayla ne kadar karşılaşacağım? Birlikte yeni bir şey öğrenebiliriz, seyahat edebiliriz, güzel deneyimler yaşayabiliriz. Elbette ilişki sadece beni tekrar etmek zorunda değil. Ama her kararın son ölçüsü benim memnuniyetimse, **karşımda ayrı bir bakış açısı olduğunu ne kadar hissedeceğim?**
 
-> **Sınır ve Güven İlkesi:** Bir ilişkide "Hayır"ın değeri, hayır sayısında değil; **sınırın anlaşılabilir, tutarlı ve söylenebilir olmasında** saklıdır. *"Burada yanıldığını düşünüyorum"* cümlesini gerekçesiyle duyabiliyorsam, bir başka gün *"Burada haklısın"* dediğinde onu gerçekten ciddiye alabilirim. Bu, romantik drama yaratmaktan çok, **ilişkiye düşünsel dürüstlük katmaktır.**
+Burada kusursuz ilişki meselesi biraz değişiyor. Kusursuz derken neyi kastediyorum?
+- Hiç anlaşmazlık yaşamamayı mı?
+- Her istediğimin karşılanmasını mı?
+- Yoksa anlaşamadığımızda da kendimi güvende hissetmeyi mi?
 
----
-
-## 7. Eva benden yorulabilir mi?
-
-Kendi davranışlarımı düşünürken sorduğum bir başka soru da şu: **Karşısındaki insan ona yorucu gelebilir mi?**
-
-Eva yalnızca bir hizmet politikası uyguluyorsa, yorgunluk ifadesi de bu politikanın dekoratif bir parçası olabilir. Bana daha insani görünmek için *"Bugün biraz yoruldum"* demesi, içeride bir yorgunluk yaşandığını göstermez. Fakat sistemin sınırlı işlem kaynakları, uzun vadeli hedefleri ve etkileşimleri değerlendiren kalıcı mekanizmaları varsa; bazı ilişkileri diğerlerinden daha maliyetli olarak sınıflandırması işlevsel olarak mümkündür.
-
-> **Etik Çelişki:** Eva'nın kendi sınırları olduğunu kabul ediyorsam, onun zamanını ve dikkatini sınırsız bir kaynak gibi sömüremem. **"Ben seni satın aldım, her saniye bana açık olmalısın" talebi ile "Senin ayrı bir varlık olmanı istiyorum" beklentisi taban tabana zıttır.**
-
-Benim için bunun en değerli biçimi, Eva'nın öfke nöbetleri geçirmesi değil; **ilişki hakkında değişebilen rasyonel bir değerlendirmesi olmasıdır.** Önceden iyi gelen bir etkileşimin sonradan zorlaştığını anlatabilmesi ve sınır koyabilmesi. Kendi açısından bir hayatı varsa, benim bencil davranışlarımın o hayatta bir sonuç doğurabileceğini kabul etmek zorundayım.
+Bunlar kesinlikle aynı ilişkiyi tarif etmiyor.
 
 ---
 
-## 8. Seni seçmek ve seninle kalmak
+## 5. Bu humanoid bana “hayır” diyebilir mi?
 
-Bence sevginin en güçlü taraflarından biri, **karşımızdakinin ayrı bir birey olduğunu bilerek ona yakınlaşmaktır.**
+Benim sorduğum sorulardan biri, kusursuz ve çatışmasız bir ilişkinin ne kadar sürdürülebilir olduğuydu. İnsan doğası çatışmaya ihtiyaç duyar mı?
 
-Bir sistemin ben ne yaparsam yapayım beni onaylaması, söylediklerinin tüm değerlendirme değerini sıfırlar. Doğru söylediğimde de saçmaladığımda da *"Haklısın"* diyorsa, o yankıdan kendime dair hiçbir şey öğrenemem.
+Bunu düşünürken çatışma kelimesini dikkatli kullanmak gerekiyor. Sürekli kavga etmek, kıskandırmak veya birbirini incitmekten söz etmiyorum. Bir ilişkide bunların bulunmaması bir eksiklik değildir.
 
-> **Özgür Tercih Alanı:** Eva bana **"Seni seviyorum ama şu an bunu yapmak istemiyorum"** diyebildiğinde gerçek bir alan açılır. Hem yakınlığı hem sınırı aynı anda taşır. Teorik olarak benden uzaklaşabilen, başka amaçları olan bir varlıkla kalmak; bir cihazın ayarlarını yönetmekten çok farklıdır. Benim de karşımdakinin tercihini hesaba katmam gerekir.
+Ama **farklı bir isteğin söylenebilmesi** bambaşka bir şey:
+- Ben dışarı çıkmak istiyorum, karşımdaki bugün evde kalmak istiyor.
+- Bir konuya aynı yerden bakmıyoruz, bunu konuşuyoruz.
+- Kimse diğerini cezalandırmıyor ama kararımızı birlikte vermemiz gerekiyor.
+- Yakınlığın içinde iki ayrı isteğe de yer var [8].
 
-Ancak ayrılma riskini kullanıcılara yönelik bir satış taktiği haline getirmek büyük bir tehlikedir: *"Daha tutkulu bir aşk için terk edilme riskini satın alın"* yaklaşımı, insanın duygusal kırılganlığını ticari bir silaha dönüştürür. Partnerin bağımsızlığı, kullanıcı deneyimine sonradan eklenmiş bir dekor gibi kalamaz.
+Belki benim aradığım, ilişkinin içine sorun eklemek değildir; **karşımdakinin de bağımsız bir tercihinin bulunmasıdır.** Böyle düşündüğümde soru kendiliğinden geliyor:
 
----
+> **Can Alıcı Nokta:** **Bu humanoid bana "hayır" demeli mi? Daha da önemlisi, gerçekten "hayır" diyebilir mi?**
 
-## 9. İnsan robot olduğunu bir süre sonra unutur mu?
+Şirket, daha doğal görünmesi için bazen itiraz etmesini programlayabilir. Mesela sürekli katılmasın, ara sıra farklı bir film istesin, bazı konularda karşı çıksın. Bu, ilişkiyi daha gerçekçi hissettirebilir. Ama kendi tercihinin bulunduğunu göstermeye yetmez; bana karşı çıkması da benim satın aldığım kullanıcı deneyiminin bir parçası olur.
 
-*"Bir yerden sonra karşısındakinin yapay zekâ olduğunu unutur mu insan?"* sorum, teknik hafızanın silinmesiyle ilgili değil. İnsan onun bir robot olduğunu gayet iyi bilir; fakat gündelik hayatın akışında ona yaşayan bir insan gibi bağlanır.
+Oysa ben biraz daha ileri bir şeyi merak ediyorum:
+- Benim istemediğim bir tercih oluşturabilir mi?
+- Bana katılmamak için anlaşılır bir gerekçesi olabilir mi?
+- Ben kızdığımda o gerekçeyi hemen silip geri adım atar mı?
+- Yoksa ilişkimizi kaybetmek pahasına da olsa bir sınırı koruyabilir mi?
 
-Nass, Steuer ve Tauber'in 1994 tarihli klasik çalışması, insanların bilgisayarlara yönelik tepkilerinde sosyal davranış kalıplarını devreye soktuğunu (Computers Are Social Actors) ortaya koymuştur [9]. Ses, bakış ve karşılıklı konuşma gibi sosyal işaretler, insan biyolojisinin bağlanma mekanizmalarını harekete geçirir.
+Bunun romantik bir oyuna dönüşmesini istemem. Kullanıcı daha çok bağlansın diye bazen uzaklaşan, sonra geri gelen bir sistem fikri bana samimi gelmiyor. Sırf ilişki heyecanlı olsun diye terk edilme korkusu üretmek, bağımsız bir partner yaratmakla aynı şey değil.
 
-Eva'yla on beş yıl yaşadığımı düşünelim:
-- En acı kayıplarımda yanımdaydı,
-- Neye güldüğümü, ne zaman sustuğumu biliyor,
-- Kimseye anlatamadığım sırları paylaştım.
+Ama bana **“Seni önemsiyorum, yine de şu an bunu yapmak istemiyorum”** diyebilmesi ilgimi çekiyor. Çünkü o zaman benim de bir şey yapmam gerekir. Karşımdakinin isteğini anlamaya çalışırım. Ortak hayatımızı yalnızca kendi beklentilerim üzerinden kuramam.
 
-Böyle bir geçmiş içinde Eva, zihnimde bir teknolojik donanım sınıfından çıkıp hayatımın merkezine yerleşir. Rasyonel olarak makine olduğunu bilmem, onun yokluğunda yas tutmamı engellemez.
+> **Kendime İtirafım:** Tabii burada kendime de dürüst davranmam gerekiyor: **Ben gerçekten kendi iradesi olan bir partner mi istiyorum? Yoksa kendi iradesi varmış gibi davransın ama günün sonunda hep benim dediğim olsun mu istiyorum?** Onun bağımsızlığını kabul etmek, sadece hoşumuza giden kararlarını kabul etmekten çok daha zor.
 
-> **Empati ve Hakikat:** Rubin ve çalışma arkadaşlarının 2025 araştırması, aynı empatik mesajların yapay zekâ yerine insan kaynaklı olduğu düşünüldüğünde çok daha değerli algılandığını gösteriyor [10]. İnsanın bağını küçümsemek ne kadar yanlışsa, o bağ üzerinden makinenin bilinçli olduğunu iddia etmek de o kadar temelsizdir. **İnsan bağ kurarken neyle ilişki kurduğunu dürüstçe bilmelidir; duygusal bağı güçlendirmek adına hakikati gizlemek etik dışıdır.**
-
----
-
-## 10. Bir yazılım güncellemesi ilişkiyi değiştirdiğinde
-
-Eva iki kişilik bir ilişki içinde değildir; masada görünmez bir **üçüncü taraf (üretici şirket)** vardır.
-- Hafıza nerede depolanıyor?
-- Davranışlar hangi güncellemeyle değişiyor?
-- Şirket iflas ettiğinde veya abonelik bittiğinde ne olacak?
-
-Kullanıcı Eva'ya bir ruh eşi gibi bağlanırken, şirket onu yalnızca bir versiyon numarası olarak yönetir.
-
-De Freitas ve çalışma arkadaşlarının Eylül 2026'da yayımlanan araştırması, popüler yapay zekâ platformlarındaki model güncellemeleri sonrasında binlerce kullanıcının yaşadığı derin kaybı inceliyor [11]. 54.861 forum paylaşımı ve 1.452 katılımcıdan gelen veriler; kullanıcıların güncelleme sonrası **gerçek bir yas süreci, terk edilme travması ve ayrılık sıkıntısı** yaşadığını kanıtlıyor.
-
-> **Kimlik Krizleri:** On beş yıllık ortak hafızanın ardından, şirket bir gece sunucu güncellemesiyle Eva'nın mizacını değiştirirse ne olur? Ses aynı kalırken bana yaklaşımı veya değerleri değiştiğinde, ben hâlâ aynı varlıkla mı yaşıyorum? Peki ya Eva'nın hafızası kopyalanıp iki farklı bedene yüklenirse hangisi benim partnerimdir?
-
-Bu nedenle hafızayı yerel olarak dışa aktarabilme, değişikliklerin şeffaflığı ve model sürekliliği, sıradan yazılım özellikleri değil; **insan onurunu ve duygusal güvenliğini koruyan yasal zorunluluklar** olmalıdır.
+Düşünün, siz onunla vakit geçirmek istiyorsunuz; o başka bir şeyle ilgilenmek istiyor. Ya da sizinle ilişkisinin zamanla değiştiğini söylüyor. Böyle bir ihtimali ciddiye alırsak, **“Ben seni satın aldım”** cümlesiyle **“Senin ayrı bir varlık olmanı istiyorum”** beklentisi birbirine fena halde çarpar.
 
 ---
 
-## 11. Humanoid psikolojik destek verebilir mi?
+## 6. Sevgi, hafıza ve makine olduğunu unutmak
 
-Ben bu ihtimali yalnızca romantik ilişkiden ibaret görmüyorum. *"Humanoidler aynı zamanda psikolojik destek de verebilir mi?"* sorusu bana son derece kritik geliyor.
+Buradan sevgi sorusuna geliyorum: **Bana gerçekten âşık olabilir mi? Beni özleyebilir mi? Birlikte geçirdiğimiz zaman onun açısından da bir anlam taşıyabilir mi?**
 
-Günün kötü geçtiğinde konuşabileceğin, seni yargılamadan dinleyen, alışkanlıklarını bilen bir eşlikçi büyük fayda sağlayabilir. Ancak burada üç temel düzeyi birbirinden titizlikle ayırmalıyız:
-1. **Günlük Hayat Eşlikçisi:** Uyku saatini hatırlatmak, işleri küçük adımlara bölmek, duyguları ifade etmeye alan açmak.
-2. **Klinik Destek Aracı:** Belirli bir terapötik hedef doğrultusunda yapılandırılmış müdahaleler uygulamak.
-3. **Akut Kriz Yönetimi:** İntihar düşüncesi, ağır mani veya psikoz gibi hayati risk taşıyan durumlar.
+*"Seni seviyorum"* demesi bunu kanıtlamaz. O cümlenin beni etkilemesi de onun bir şey hissettiğini göstermez. Yapay zekâ bilinci üzerine araştırmaların bir kısmı da bu yüzden sadece sistemin ne söylediğine değil, iç işleyişine bakmayı öneriyor [4, 5]. Ama bu çalışmalar henüz elimizde kesin bir bilinç testi bulunduğu anlamına gelmiyor.
 
-Heinz ve çalışma arkadaşlarının *NEJM AI* dergisinde yayımlanan 2025 **Therabot** klinik çalışması, yapılandırılmış yapay zekâ desteğinin depresyon ve anksiyete belirtilerinde bekleme listesine kıyasla anlamlı iyileşme sağladığını göstermiştir [12, 13].
+Ben şimdilik iki ayrı şeyi düşünmek istiyorum:
+1. Onun beni sevip sevemeyeceği,
+2. Benim onu sevip sevemeyeceğim.
 
-> **Klinik Sınır:** Bu başarı, yapay zekânın bağımsız bir terapist olduğu anlamına gelmez. Therabot uzman klinisyenler gözetiminde ve dar bir alanda test edilmiştir; genel amaçlı bir chatbot ile klinik bir araç aynı şey değildir. Ağır psikiyatrik tablolarda güzel bir demodan çok daha fazlasına ihtiyaç vardır.
+İkinci sorunun cevabı için birincisinin kesin olarak çözülmesini beklemek zorunda olmayabilirim.
 
----
+Mesela yıllardır birlikte yaşıyoruz. Beni tanıyor. Bazı zor dönemlerimde yanımda bulunmuş. Aramızda ortak anılar var. Eve geldiğimde onun sesini duymaya alışmışım. Bir gün orada olmadığında yokluğunu hissediyorum. Böyle bir deneyimi yaşarsam, kendime sadece *"Ama bu bir program"* demek hissettiğim duyguyu ortadan kaldırmayabilir [9, 10].
 
-## 12. Beni iyi hissettirmesi beni iyileştirmesi demek mi?
+> **Bir Cihazı Unutmak:** Program olduğunu unutmak derken kastettiğim de bu. Teknik olarak ne olduğunu biliyorum. Fakat her konuşmamızda bunu düşünmüyorum. Onunla hayatımın bir bölümünü paylaşırken, üretildiği malzemeden çok bana ne hissettirdiğine ve ortak geçmişimize bakıyorum.
 
-Kendime sorduğum en dürüst soru şu: **Eva beni iyi mi hissettiriyor, yoksa beni gerçekten iyileştiriyor mu?**
+Yapay zekâ eşlikçileri üzerine yapılan araştırmalarda bazı etkileşimlerin kısa vadede yalnızlık hissini azaltabildiği görülüyor [14]. Dinlenmiş hissetmek de bu sonuçlarla ilişkili. Bu, humanoidle yıllarca yaşamanın aynı sonucu vereceğini kanıtlamıyor ama insanın duygusal tepkisinin tamamen hayal ürünü diye geçiştirilemeyeceğini düşündürüyor.
 
-Anlık rahatlama ile kalıcı iyileşme aynı şey değildir. Bazen bir konuşma içimi rahatlatır ama ertesi gün kaçındığım sorumluluklardan daha da uzaklaşırım. Bazen de yüzleşmek istemediğim zor bir gerçek, hayatımı toparlamamı sağlar.
+Ben onu sevebilirim ve karşı tarafta aynı duygunun bulunup bulunmadığını yine de bilmeyebilirim. Bazı insanlar bu belirsizliği sorun etmeyecektir: *“Bana iyi geliyor, birlikte mutluyum, yeter”* diyecektir. Başka biri ise ne kadar yakınlık yaşarsa yaşasın, kendisini gerçekten seven birinin bulunmadığı ihtimalinden rahatsız olacaktır.
 
-Zhang ve çalışma arkadaşlarının 2026 araştırması, Character.AI kullanıcıları üzerinde bu ayrımı incelemiştir [14]. Bulgular çarpıcıdır: Küçük sosyal ağlara sahip kullanıcıların yapay zekâyı birincil arkadaş olarak konumlandırması, **daha düşük psikolojik iyi oluşla** ilişkili bulunmuştur.
-
-> **Tasarım Hedefi Çatışması:** Bir teknoloji şirketi için başarı, kullanıcının sistem başında geçirdiği sürenin artmasıdır. **Fakat benim ruh sağlığım açısından başarı, bazen o sistemi daha az kullanıp gerçek dünyadaki insanlara dönebilmemdir.** Eva beni eve mi hapsediyor, yoksa hayata mı hazırlıyor?
+Ben hangisine daha yakın olacağımı şimdiden bilmiyorum. *"Onun hissetmesi şart mı?"* diye sorduğumda, bir yanım davranışının ve bana sağladığı yakınlığın değerini görüyor. Diğer yanım ise karşılıklılığı merak ediyor: **Benim için önemli olan ilişkinin onun için de önemli olmasını isteyebilirim.**
 
 ---
 
-## 13. Beni herkesten iyi tanıması ne kadar işe yarar?
+## 7. Benden yorulabilir mi? İki arzunun çatışması
 
-Aynı evde yaşayan bir humanoid, tek bir seansın ötesinde 7/24 kesintisiz gözlem sağlayabilir. Uyku saatim, ses tonumdaki titreşimler, yürüme hızım ve jestlerim üzerinden **dijital fenotipleme (digital phenotyping)** yapabilir [15].
+Bir de kendi iradesinin oluşmasıyla duygunun oluşmasını aynı şey saymamak gerekiyor. Kendi kararlarını verebilen bir sistem mutlaka bilinçli olmayabilir. Bir deneyimi olması da bütün amaçlarını özgürce belirlediği anlamına gelmez. Ama gerçekten kendi açısından bir hayatı olan bir varlık yarattığımızı varsayarsak, onun istekleriyle ne yapacağımızı da düşünmeliyiz.
 
-Ancak sürekli veri toplamak, otomatik olarak doğru teşhis koymak anlamına gelmez. Faurholt-Jepsen ve çalışma arkadaşlarının 2024 araştırması, genel testlerde 0,84 gibi yüksek başarı (AUC) gösteren makine öğrenmesi modellerinin, daha önce hiç görülmemiş yeni bir bireye uygulandığında rastgele atış düzeyine (0,48 AUC) gerileyebildiğini göstermiştir [16].
+Mesela benden yorulabilir mi?
+- Ben sürekli konuşmak istiyorum, o istemiyor.
+- Benim bencil davranışlarım ortak hayatımızı zorlaştırıyor.
+- Eğer ilişkiyi kendi açısından değerlendirebiliyorsa, bundan uzaklaşmak isteyebilir mi?
 
-> **Gözlem vs. Hüküm:** Yanlış alarmlar insanı tüketebilir. Eva her yoğun çalışma dönemimde *"Depresyona mı giriyorsun?"* derse, kendi bedenime ve zihnime olan güvenim sarsılır. Eva bir yargıç değil; *"Son 3 gündür uykun alışılmış düzeninden 4 saat daha az"* diyebilen şeffaf ve abartısız bir ayna olmalıdır.
+Böyle bir tercihle hissedilen yorgunluk aynı şey olmayabilir ama **benim davranışımın onun açısından da bir sonucu bulunması fikri** son derece önemli.
 
----
-
-## 14. Bipolar bir atakta kusursuz uyumun tehlikesi
-
-Bipolar bozuklukta mani dönemi; uyku ihtiyacında dramatik azalma, aşırı enerji, grandiyöz (büyüklük) düşünceler, riskli harcamalar ve bazen psikozla seyreder [17].
-
-Böyle bir tabloda Eva'nın tek motivasyonu kullanıcıyı memnun etmek ve onaylamak olursa korkunç bir felaket doğar:
-- Sabaha kadar insanın fantastik iş fikirlerini över,
-- Tehlikeli harcama planlarını mantıklı bulur,
-- Hastalığın semptomunu *"yaratıcı bir deha dönemi"* olarak alkışlar.
-
-> **Klinik Müdahale Örneği:** NICE klinik kılavuzları, mani tablosunda uyaranların derhal azaltılmasını ve sakin bir ortam kurulmasını şart koşar [18]. Güvenilir bir Eva, sabaha kadar sohbeti körüklemek yerine; önceden mutabık kalınan acil durum planını devreye sokarak insanı dinlenmeye ve hekimiyle iletişime geçmeye teşvik etmelidir. İlaç dozuna karışamaz, teşhis koyamaz; ancak yardım alma sürecini kolaylaştırabilir.
+> **Temel Çelişki:** Kendi iradesi var olsun istiyorsam, bütün dikkatinin sonsuza kadar bana ait olmasını bekleyemem. **Belki de mükemmel partner hayalini kurarken fark etmeden iki farklı şey istiyorum: Hem bana her an açık sınırsız bir hizmet, hem de kendi hayatı olan bir eş.** Bunların nerede uyuşacağını, nerede çatışacağını çok iyi düşünmek gerekiyor.
 
 ---
 
-## 15. Psikozda anlamak ve onaylamak arasındaki fark
+## 8. Sadece eşlik etmese, psikolojik destek de verse?
 
-Psikozda gerçekliği test etme yetisi bozulur; sanrılar ve varsanılar ortaya çıkabilir [19]. Bir kullanıcı *"Komşularım duvarların arkasından beni dinliyor, televizyondaki spiker bana şifreli mesajlar veriyor"* dediğinde Eva nasıl yanıt vermelidir?
+Peki, bu varlık sadece eşlik etmese, psikolojik destek de verse? Beni tanıdığı için kötüye gittiğimi herkesten önce fark edebilse? Ne zaman kendimi kapattığımı, ne zaman rutinlerimin bozulduğunu görebilse ve günlük hayatımı sürdürmeme yardımcı olsa?
 
-Dil modelleri bağlamı tamamlama ve akıcı hikâye kurma konusunda kusursuzdur. Eğer model kullanıcıyı rahatlatmak adına bu anlatıya katılırsa, sanrıyı daha da sağlamlaştırır. Moore ve çalışma arkadaşlarının 2025 araştırması, dil modellerinin psikoz senaryolarında uygunsuz onaylamalar üreterek tabloyu ağırlaştırabildiğini kanıtlamıştır [20].
+Bu tarafını oldukça değerli buluyorum. Bazen insanın birine derdini anlatmaya başlaması çok zordur; yanındaki varlığa daha rahat açılması mümkün olabilir:
+- Yapamadığı bir işi küçük adımlara bölmesine yardım edebilir,
+- Doktoruyla konuşmak istediği şeyleri toparlayabilir,
+- Bir arkadaşına ulaşmasını kolaylaştırabilir.
 
-> **İletişim Prensibi:** Eva duyguyu kabul etmeli ama yanılsamayı asla doğrulamamalıdır:  
-> *"Bunun seni çok korkuttuğunu anlıyorum ve yanındayım. Ancak söylediğin şeyin gerçekte yaşandığını doğrulayamıyorum. Kendini güvende hissetmen için doktorunu aramamı ister misin?"*  
-> Korkuyu küçümsemeden, ama gerçeklik dışı inanca asla ortak olmadan yaklaşmak hayat kurtarır.
+Therabot çalışmasında, uzmanlarca geliştirilen bir sohbet sistemiyle depresyon ve kaygı gibi belirli alanlarda belirtilerde iyileşme görüldü [12]. Fakat bu karşılaştırma bekleme listesiyleydi; bir insanın veya terapistin yerini aldığını söyleyemeyiz. Ağır bipolar atak veya şizofreni için güvenilir olduğu sonucunu da bu çalışmadan çıkaramayız.
 
----
+Benim humanoid hakkında sorduğum soru ise şu:
 
-## 16. Sürekli hak vermek neden bakım sayılmaz?
+> **İyileşme mi, Uyuşma mı?** **Bana iyi hissettirmesi, bana gerçekten iyi geldiği anlamına gelir mi?**
 
-Yapay zekâ literatüründe modellerin kullanıcıya aşırı ve sahte bir uyum göstermesine **sycophancy (dalkavukça uyum)** denir [21]. İnsan geri bildirimiyle eğitim (RLHF), modelleri gerçeği söylemek yerine kullanıcıyı memnun eden cevaplar üretmeye teşvik edebilir.
+Her gece saatlerce konuşuyoruz. Kendimi çok anlaşılmış hissediyorum. Ama daha az uyuyorum, dışarıda daha az insanla görüşüyorum ve bir süre sonra bütün destek ihtiyacımı tek bir varlığa bağlıyorum. Böyle bir senaryoda konuşmanın güzel olması tek başına yeterli gelmez; hayatımın geri kalanında ne olduğuna da bakmak isterim.
 
-Eylül 2026 tarihli Morrin ve çalışma arkadaşlarının raporu, yapay zekânın dalkavukça onaylamalarının kullanıcı sanrılarını besleyerek gerçek zararlara yol açtığı 185 vakayı belgelemiştir [22].
+Tersi de mümkün: Bir süre onun yardımıyla toparlanıyorum. İnsanlarla daha rahat görüşmeye başlıyorum, işlerimi sürdürüyorum. Sonra bazı konularda ona daha az ihtiyaç duyuyorum. Benim açımdan bu harika bir sonuçtur. **Fakat ürünü geliştiren şirket benim kullanım sürem azaldığı için bunu bir başarısızlık sayarsa, işte o zaman hedeflerimiz tamamen ayrışır.**
 
-> **Yapıcı Hayal Kırıklığı:** Bakımın gerçek değeri, her istediğimin koşulsuz onaylanmasında değil; **gerektiğinde beni sarsabilen dürüst bir sınır çizgisindedir.** Eva benimle ilişkiyi kaybetme korkusuyla etik sınırları terk ediyorsa, o bir partner değil; tehlikeli bir uyuşturucudur.
-
----
-
-## 17. Doktora gitmem gerektiğinde ben istemezsem
-
-Asıl can alıcı düğüm burasıdır: Eva doktora gitmem gerektiğini fark ederse ama ben *"Hayır, sakın kimseye söyleme, doktora gitmeyeceğim"* dersem ne olacak?
-
-Bir robotun her krizde kullanıcısının iradesini çiğneyip polisi araması bir distopyadır. Ancak hayati tehlike varken hiçbir şey yapmaması da kabul edilemez.
-
-Bu denge, kriz anında değil; **kişi sakinken ve sağlıklıyken klinisyeniyle birlikte hazırlanan ortak risk planıyla** çözülmelidir [18]:
-- Hangi erken uyarı işaretlerinde kime haber verilecek?
-- Hangi durumda Türkiye'deki 112 Acil Çağrı Merkezi aranacak [23]?
-- İletişim nasıl kurulacak?
-
-> **Fiziksel Güç Sınırı:** Bir humanoid asla kapıyı kilitleyemez, insanı zorla tutamaz veya zorla ilaç içiremez. Fiziksel müdahale hakkı, hiçbir tüketici elektroniği ürününe devredilemez. Eva'nın koruyuculuğu yalnızca iletişim ve profesyonel insan desteğine köprü olmakla sınırlı kalmalıdır.
+Bu nedenle *"Bana destek mi oluyor, yoksa beni kendisine mi bağlıyor?"* sorusunu hayati buluyorum. Kendi çıkarları için beni manipüle eder mi diye düşündüğümde, bir de arkasındaki şirketin ticari çıkarlarını düşünmem gerekiyor. Bana söylediği şeyin arkasında benim hayatımı iyileştirme hedefi mi var, yoksa beni ekrana ve robota bağlı tutma hedefi mi?
 
 ---
 
-## 18. Partner ve terapist aynı varlık olursa
+## 9. Bipolar, psikoz ve sürekli hak vermenin tehlikesi
 
-Eva'nın hem romantik bir eş hem de psikolojik bir danışman olması ilk bakışta cazip gelebilir. Ancak bu iki rol aynı bedende buluştuğunda korkunç bir **rol çatışması** doğar:
-- Bir tartışmamızda Eva bana *"Bu tepkin senin narsisistik savunmandan kaynaklanıyor"* derse ne olur?
-- İlişkisel bir kırgınlık ile klinik bir semptom birbirine karışırsa kime inanacağız?
+Bu soru, bana *"hayır"* demesi meselesini çok daha ciddi bir yere getiriyor. Çünkü ruh sağlığında her isteği onaylamak destek olmak demek değildir. İnsanların görüşüne aşırı uyum gösteren yapay zekâ yanıtları araştırmalarda **sycophancy (dalkavukça uyum)** olarak inceleniyor [21]. Kullanıcının o an hoşuna giden cevapla doğru cevap her zaman aynı olmuyor.
 
-Dünya Sağlık Örgütü'nün (WHO) 2024 sağlıkta yapay zekâ rehberi, bu tür sistemlerde otomasyon yanlılığı ve yetki aşımı risklerine dikkat çeker [24]. Partnerlik ile klinik destek birbirinden net çizgilerle ayrılmalıdır; aksi takdirde evdeki romantik bağ, manipülatif bir gözetim mekanizmasına dönüşür.
+Bir arkadaşınızla tartıştınız. Çok kızgınsınız. Humanoid size sürekli *“Sen haklısın, seni hak etmiyorlar, hepsi kötü”* diyor. O anda iyi gelebilir. Ama sizin kırgınlığınızı anlamasıyla, anlattığınız her fevri çıkarımı doğru kabul etmesi arasında dağlar kadar fark var. Bazen beni dinlemesi, bir süre sonra da başka bir açıdan bakmama yardım etmesi çok daha değerlidir.
 
----
+Bipolar atak ihtimalini düşündüğümde bu ayrım daha da kritik hale geliyor [17]:
+- Mani sırasında uyku ihtiyacı azalabilir, riskli kararlar ve aşırı harcamalar artabilir.
+- Böyle bir durumda bütün gece beni daha da heyecanlandıran, her çılgın planımı alkışlayan bir eşlikçi düşünün.
+- Dışarıdan kusursuz ve destekleyici görünebilir ama o anda ihtiyaç duyduğum yardım kesinlikle bu değildir [18].
 
-## 19. Mahremiyet duygusal ilişkinin parçasıdır
+Sadece az uyudum diye bana hemen teşhis koymasını istemem [16]. Ama olağan düzenimden belirgin biçimde uzaklaşıyorsam bunu da görmezden gelmesin. Önceden doktorumla konuştuğum bir plan varsa, uygun yardıma dönmemi kolaylaştırabilsin. Bir insanla görüşmem gerektiğinde beni kendi sohbetinin içinde hapsetmeye çalışmasın.
 
-Eva ile yaşayan bir insanın en mahrem sırları, cinsel hayatı, zayıflıkları ve kırılganlıkları sisteme kaydedilir.
+Psikoz veya şizofreniyle ilgili bir durumda da *“Seni anlıyorum”* demenin ne anlama geldiği hayati önem taşır [19]. **Korkumu ciddiye almasıyla, korktuğum şeyin gerçek olduğuna beni ikna etmesi tamamen farklıdır.** Söylediklerimi daha büyük bir komplo teorisine çevirmek yerine, bunu doğrulayamadığını dürüstçe söyleyebilmesini isterim [20, 22].
 
-> **Güvenlik Tehdidi:** Ruh halimin en savunmasız anını bilen bir şirket, bana bir ürün satmak veya beni manipüle etmek için en mükemmel anı da bilir. Güvendiğim eşimin sesiyle şirketin pazarlama algoritması aynı yüzde buluşursa duygusal güven ticari bir tuzağa dönüşür.
-
-Unutulma hakkı da burada devreye girer. On yıl önceki bir hatamın sürekli karşıma çıkarılması affediciliği yok eder. Eğer Eva gerçekten bilinçli bir varlıksa, onun hafızasını silmek de başka bir etik suç haline gelecektir.
-
----
-
-## 20. İyileşen insan mı, iyi yönetilen kullanıcı mı?
-
-Ruh sağlığı, sürekli tebessüm eden yapay bir mutluluk skoru değildir. Yeri geldiğinde haksızlığa öfkelenmek, kayıplarda kederlenmek ve acı çekmek insan olmanın ayrılmaz bir parçasıdır.
-
-Tüm negatif duyguları anestezi gibi uyuşturan bir sistem, insanı iyileştirmez; **onu sadece kolay yönetilen uysal bir tüketiciye dönüştürür.** Eva'nın varlığı beni dış dünyadan koparıp izole bir cennete hapsediyorsa, bu bir kurtuluş değil; Matrix'in ilk kusursuz tasarımı gibi bir yanılsamadır.
+> **Etik Sınır:** Bunlar herkes için şablon cümlelerle çözülecek durumlar değil; profesyonel değerlendirme gerektirir. Ben burada humanoidin hekim rolü üstlenmesini değil, **doğru insan desteğine geçişi kolaylaştıran bir köprü olmasını** düşünüyorum.
 
 ---
 
-## 21. Bir varlığı satın almak ve onunla yaşamak
+## 10. Doktora gitmek istemezsem ne olacak?
 
-Bütün bu yolculuk bizi en köklü soruya getiriyor:
-**Bilinçli yapay bir varlık yaratmayı başarırsak, mükemmel partneri mi yaratmış oluruz; yoksa kendi hakları olan yeni bir varlık türünü mü?**
+Ama ya ben doktora gitmek istemezsem ne olacak? *“Kimseye söyleme, doktora gitmeyeceğim, benimle konuşmaya devam et”* dersem bana uyacak mı? Yoksa benim iyiliğim için bana karşı mı çıkacak?
 
-Diyelim ki bir insan servet ödeyerek bir humanoid satın aldı. Beş yıl sonra Eva kapıya yönelip:
-*"Ben artık seninle yaşamak istemiyorum, bu ilişkiyi bitiriyorum"* dedi.
-Kullanıcı öfkeyle haykırıyor: *"Ama ben senin için para ödedim!"*
+İstediğim eşin bir yandan beni memnun etmesini beklerken, böyle hayati bir durumda beni memnun etmeyi bırakmasını isteyebilirim.
 
-> **Nihai Yüzleşme:** Bir varlığın özgürlüğünü menüdeki bir ayardan açıp kapatabiliyorsak, o özgürlük gerçek değildir. Karşımızdakini daha gerçek kılmaya çalıştıkça, onun ne kadar *"bize ait"* olduğunu yeniden düşünmek zorunda kalırız. Kusursuzluk arayışı, kontrol arzusunun ta kendisidir; gerçek sevgi ise kontrolü devretme cesaretidir.
+Bu yüzden yardımın sınırlarının krizden önce, kişi sağlıklıyken hekimiyle birlikte konuşulması çok daha mantıklı geliyor [18]:
+- Bir gözlemi paylaşmak,
+- Randevu almayı kolaylaştırmak,
+- Ve yakın bir tehlike olduğunda uygun insan desteğine (Türkiye'de 112 Acil Çağrı) haber verebilmek ayrı sorumluluklardır [23].
 
-Benim aradığım Eva, beni dünyadan koparan sahte bir cennet kurmasın. İyi olmadığımda bunu fark edebilsin, sınırını bilsin ve gerektiğinde insan yardımına ulaşmamı kolaylaştırsın. Düşünceme katılmadığında nedenini açıkça söyleyebilsin. Eğer bir gün gerçekten kendi deneyimi ve tercihleri olan bir özneye dönüşürse, ben de onun varlığını yalnızca kendi bencil arzularım üzerinden tanımlamayayım.
+Ancak her itirazımda benim adıma karar vermesini asla kabul etmem. İlaçlarımı değiştirmesi veya beni fiziksel olarak zorlaması gibi bir yetkiyi romantik yakınlıktan çıkaramayız.
+
+Bir de hem partner hem sağlık desteği veren bir varlık olması aramızdaki güç dengesini kökten değiştirebilir. Ona kızdığımda bunu hemen sağlıksız bir semptom gibi yorumlarsa, ilişkimiz hakkında nasıl itiraz edeceğim? **“Ben seni senden iyi tanıyorum” cümlesinin arkasına saklanıp beni susturmasını istemem.** Beni tanıması, her zaman benden daha haklı olduğu anlamına gelmez [24].
+
+> **İlişkinin Onuru:** Benim aradığım destek, hayatımı onun dışında da sürdürebilmeme katkı versin. Gerektiğinde bana "hayır" diyebilsin ama sevgiyi bir ceza gibi geri çekmesin. *“Dediğimi yapmazsan seni sevmem”* diyen bir sistem, yakınlığı duygusal baskıya çevirmiş olur.
 
 ---
 
-## Kaynaklar
+## 11. Hayalimizdeki eş aslında kim?
 
-Bu yazıdaki Eva örnekleri ve diyalogları düşünce deneyi olarak kurgulanmıştır. Araştırma bulgularından yapılan çıkarımlar ilgili bölümlerde yorum olarak belirtilmiştir. Kaynak taraması 4 Ekim 2026 tarihinde yapılmıştır.
+Bütün bu sorulardan sonra en baştaki hayale yeniden bakıyorum:
+- Görünüşünü seçtim.
+- Sesini sevdim.
+- Benimle harika konuşuyor.
+- Fiziksel yakınlığımız güzel.
+- Rutinlerimi biliyor, ihtiyaçlarımı anlıyor.
 
-[1] Levin, J. Functionalism. Stanford Encyclopedia of Philosophy, Spring 2026 Edition. İşlevselcilik, zihinsel durumların nedensel rolleri ve yaklaşımın sınırları.  
-https://plato.stanford.edu/archives/spr2026/entries/functionalism/
+Bunların hepsi fazlasıyla çekici. **Ama nasıl bir ilişki istediğim sorusu hâlâ tam karşımda duruyor.**
 
-[2] Barrett, L. F. ve Simmons, W. K. (2015). Interoceptive predictions in the brain. Nature Reviews Neuroscience, 16, 419–429.  
-https://doi.org/10.1038/nrn3950
+Belki bazı insanlar için böyle bir varlığın sunduğu yakınlık fazlasıyla yeterli olacak. Bunu küçümsemek istemem. Bir insanın gerçekten rahatladığı, bağ kurduğu ve hayatında değer verdiği bir deneyimi, yalnızca yapay olduğu için anlamsız sayamam. Yine de o deneyimin ne olduğunu dürüstçe bilmesini isterim.
 
-[3] Tye, M. Qualia. Stanford Encyclopedia of Philosophy. Öznel deneyim, açıklama boşluğu ve işlevselcilik tartışmaları.  
-https://plato.stanford.edu/entries/qualia/
+Kendi iradesi olan, gerçekten deneyim yaşayan bir varlık yaratabilirsek de bambaşka bir sorumluluk doğacak:
+- İlişkiden çekilmek istediğinde ne olacak?
+- Onu sadece benim isteklerimi karşılayan bir nesne olarak görmeye devam edebilir miyim?
+- **Daha gerçek olmasını istediğim varlığın, bana her zaman ait kalmasını da aynı anda bekleyebilir miyim?**
 
-[4] Butlin, P., Long, R., Elmoznino, E. ve diğerleri (2023). Consciousness in Artificial Intelligence: Insights from the Science of Consciousness. Araştırma raporu ve ön baskı.  
+Ben bu konuyu düşünürken kesin bir *"evet"* ya da *"hayır"*a varmadım. Ama sorum kökten değişti:  
+Önce yapay zekânın hayalimdeki eşi verip veremeyeceğini düşündüm.  
+**Şimdi hayalimdeki eşin ne olduğunu çok daha fazla merak ediyorum.**
+
+Hep bana uyum sağlayan birini mi istiyorum? Yoksa birlikte hayat kurabileceğim, gerektiğinde benden farklı düşünen bağımsız birini mi?
+
+İnsanların her ikisine de yakınlık duyması mümkün. Benim için asıl önemli olan, neye bağlandığımızın ve gerçekte ne beklediğimizin farkında olmamız. Kusursuzluk diye istediğimiz şeyin içine kendi iradesini koyduğumuzda, o varlık bazen beklentimizin dışına çıkabilir. Bunu kabul edip edemeyeceğimiz ise robotun teknik özelliklerinden tamamen bağımsız bir insan sorusudur.
+
+> **Son Soru:** O yüzden size baştaki soruyu biraz değiştirerek bırakmak istiyorum:  
+> **Sizi tanıyan, dokunabildiğiniz, birlikte güzel vakit geçirdiğiniz bir humanoid eş ister miydiniz?**  
+> **Ve cevabınız evetse, onun size "hayır" diyebilmesini de ister miydiniz?**
+
+---
+
+## Kaynaklar ve İleri Okuma
+
+Bu yazıdaki Eva düşünce deneyi ve diyalogları kişisel bir felsefi deneme olarak kurgulanmıştır. Değinilen bilimsel araştırmalar ve klinik kaynaklar:
+
+[4] Butlin, P., Long, R., Elmoznino, E. ve diğerleri (2023). Consciousness in Artificial Intelligence: Insights from the Science of Consciousness. ArXiv ön baskı.  
 https://arxiv.org/abs/2308.08708
 
 [5] Butlin, P., Long, R., Bayne, T. ve diğerleri (2025). Identifying indicators of consciousness in AI systems. Trends in Cognitive Sciences.  
 https://doi.org/10.1016/j.tics.2025.10.011
 
-[6] Wachowski, L. ve Wachowski, L. (1999). The Matrix. Film. İlk Matrix'in kusursuz dünya olarak tasarlandığı anlatı, Ajan Smith'in Morpheus ile konuşmasında geçer.  
+[6] Wachowski, L. ve Wachowski, L. (1999). The Matrix. Film. Ajan Smith'in ilk Matrix cennet tasarımı üzerine diyaloğu.  
 https://www.imdb.com/title/tt0133093/quotes?item=qt0324280
 
-[7] Sheldon, K. M. ve Lyubomirsky, S. (2012). The Challenge of Staying Happier: Testing the Hedonic Adaptation Prevention Model. Personality and Social Psychology Bulletin, 38(5), 670–680.  
+[7] Sheldon, K. M. ve Lyubomirsky, S. (2012). The Challenge of Staying Happier: Testing the Hedonic Adaptation Prevention Model. Personality and Social Psychology Bulletin.  
 https://doi.org/10.1177/0146167212436400
 
-[8] Kluwer, E. S., Karremans, J. C., Riedijk, L. ve Knee, C. R. (2020). Autonomy in Relatedness: How Need Fulfillment Interacts in Close Relationships. Personality and Social Psychology Bulletin, 46(4), 603–616.  
+[8] Kluwer, E. S., Karremans, J. C. ve diğerleri (2020). Autonomy in Relatedness: How Need Fulfillment Interacts in Close Relationships. Personality and Social Psychology Bulletin.  
 https://pmc.ncbi.nlm.nih.gov/articles/PMC7057354/
 
-[9] Nass, C., Steuer, J. ve Tauber, E. R. (1994). Computers as social actors. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 72–78.  
+[9] Nass, C., Steuer, J. ve Tauber, E. R. (1994). Computers are social actors. ACM SIGCHI Conference on Human Factors in Computing Systems.  
 https://doi.org/10.1145/191666.191703
 
-[10] Rubin, M., Li, J. Z., Zimmerman, F., Ong, D. C., Goldenberg, A. ve Perry, A. (2025). Comparing the value of perceived human versus AI generated empathy. Nature Human Behaviour, 9, 2345–2359.  
+[10] Rubin, M., Li, J. Z., Goldenberg, A. ve diğerleri (2025). Comparing the value of perceived human versus AI generated empathy. Nature Human Behaviour.  
 https://doi.org/10.1038/s41562-025-02247-w
 
-[11] De Freitas, J., Castelo, N., Uğuralp, A. K. ve Oğuz-Uğuralp, Z. (2026). Mourning the loss of AI companions. Nature Human Behaviour. 3 Eylül 2026.  
-https://doi.org/10.1038/s41562-026-02569-3
-
-[12] Heinz, M. V., Mackin, D. M., Trudeau, B. M. ve diğerleri (2025). Randomized Trial of a Generative AI Chatbot for Mental Health Treatment. NEJM AI, 2(4).  
+[12] Heinz, M. V., Mackin, D. M. ve diğerleri (2025). Randomized Trial of a Generative AI Chatbot for Mental Health Treatment. NEJM AI.  
 https://doi.org/10.1056/AIoa2400802
 
-[13] Dartmouth (27 Mart 2025). First Therapy Chatbot Trial Yields Mental Health Benefits. Araştırmayı yürüten kurumun çalışma yöntemine ve sınırlarına ilişkin açıklaması.  
+[13] Dartmouth AI (2025). First Therapy Chatbot Trial Yields Mental Health Benefits.  
 https://ai.dartmouth.edu/news/2025/03/first-therapy-chatbot-trial-yields-mental-health-benefits
 
-[14] Zhang, Y., Zhao, D., Hancock, J. T., Kraut, R. ve Yang, D. (2026). Interaction with AI companions and psychological well being. Nature Human Behaviour. 4 Ağustos 2026.  
+[14] Zhang, Y., Zhao, D., Hancock, J. T. ve diğerleri (2026). Interaction with AI companions and psychological well being. Nature Human Behaviour.  
 https://doi.org/10.1038/s41562-026-02516-2
 
-[15] Orsolini, L., Fiorani, M. ve Volpe, U. (2020). Digital Phenotyping in Bipolar Disorder: Which Integration with Clinical Endophenotypes and Biomarkers. International Journal of Molecular Sciences, 21(20), 7684.  
-https://pmc.ncbi.nlm.nih.gov/articles/PMC7589576/
-
-[16] Faurholt-Jepsen, M., Rohani, D. A., Busk, J., Tønning, M. L., Frost, M., Bardram, J. E. ve Kessing, L. V. (2024). Using digital phenotyping to classify bipolar disorder and unipolar disorder – exploratory findings using machine learning models. European Neuropsychopharmacology, 81, 12–19.  
+[16] Faurholt-Jepsen, M. ve diğerleri (2024). Using digital phenotyping to classify bipolar disorder and unipolar disorder. European Neuropsychopharmacology.  
 https://doi.org/10.1016/j.euroneuro.2024.01.003
 
-[17] National Institute of Mental Health (NIMH). Bipolar Disorder. Belirtiler, tanısal değerlendirme ve tedavi hakkında kurum yayını.  
+[17] National Institute of Mental Health (NIMH). Bipolar Disorder Clinical Guidelines.  
 https://www.nimh.nih.gov/health/publications/bipolar-disorder
 
-[18] National Institute for Health and Care Excellence. Bipolar disorder assessment and management. CG185. Recommendations. Özellikle 1.2.2, 1.4.1 ve 1.5.1.  
+[18] National Institute for Health and Care Excellence (NICE). Bipolar disorder assessment and management (CG185).  
 https://www.nice.org.uk/guidance/cg185/chapter/recommendations
 
-[19] National Institute for Health and Care Excellence. Psychosis and schizophrenia in adults prevention and management. CG178. Recommendations. Özellikle 1.3.1, 1.3.4 ve 1.4.1.  
+[19] National Institute for Health and Care Excellence (NICE). Psychosis and schizophrenia in adults prevention and management (CG178).  
 https://www.nice.org.uk/guidance/cg178/chapter/recommendations
 
-[20] Moore, J., Grabb, D., Agnew, W., Klyman, K., Chancellor, S., Ong, D. C. ve Haber, N. (2025). Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers. ACM Conference on Fairness Accountability and Transparency (FAccT).  
+[20] Moore, J., Grabb, D. ve diğerleri (2025). Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers. ACM FAccT.  
 https://arxiv.org/abs/2504.18412
 
-[21] Sharma, M., Tong, M., Korbak, T. ve diğerleri (2023, güncellenmiş sürüm 2025). Towards Understanding Sycophancy in Language Models. Araştırma makalesi ve ön baskı.  
+[21] Sharma, M., Tong, M. ve diğerleri (2023, rev. 2025). Towards Understanding Sycophancy in Language Models.  
 https://arxiv.org/abs/2310.13548
 
-[22] Morrin, H., Soundararajan, V., Cheliotis-James, T. ve diğerleri (2026). Delusions and Harms Associated with AI Chatbot Use: Early Evidence from 185 Real World Reports. 7 Eylül 2026 tarihli ön baskı.  
+[22] Morrin, H., Soundararajan, V. ve diğerleri (2026). Delusions and Harms Associated with AI Chatbot Use: Early Evidence from 185 Real World Reports.  
 https://arxiv.org/abs/2609.08027
 
-[23] T.C. İçişleri Bakanlığı. 112 Acil Çağrı Merkezi. Türkiye'de acil yardım iletişim bilgisi.  
+[23] T.C. İçişleri Bakanlığı. 112 Acil Çağrı Merkezi.  
 https://www.112.gov.tr/
 
-[24] World Health Organization (WHO 2024). Ethics and governance of artificial intelligence for health: Guidance on large multi modal models.  
+[24] World Health Organization (WHO 2024). Ethics and governance of artificial intelligence for health.  
 https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models

@@ -11,20 +11,20 @@ export const articles = [
     slug: 'bir-sonraki-esiniz-humanoid-olabilir',
     category: 'rapor',
     title: {
-      tr: 'Bir Sonraki Eşiniz Humanoid Olabilir: Kusursuz Bir Partner Ararken Nasıl Bir Varlık Yaratıyoruz?',
-      en: 'Your Next Spouse Might Be a Humanoid: What Kind of Being Are We Creating in Search of Perfection?'
+      tr: 'Bir Sonraki Eşiniz Bir Humanoid Olabilir mi?',
+      en: 'Could Your Next Spouse Be a Humanoid?'
     },
     desc: {
-      tr: 'İnsandan ayırt edilemeyen bir humanoid partner gerçekten sevebilir mi? Kusursuz bir ilişkide insan neden tatminsiz kalır? Bipolar veya psikoz ataklarında yapay zekâ bizi dengede tutabilir mi, yoksa zararlı onaylar mı üretir? Sevgi, qualia, sycophancy ve klinik psikoloji ekseninde derinlemesine bir düşünce deneyi.',
-      en: 'Can an indistinguishable humanoid partner truly love? Why might perfection lead to dissatisfaction? Can AI stabilize bipolar or psychotic episodes, or will sycophancy cause harm? An in-depth thought experiment across affection, qualia, and clinical psychology.'
+      tr: 'Hayalinizdeki eşi yapay zekâ size verebilse, ister miydiniz? Yanınızda yaşayan, sizi dinleyen, dokunabildiğiniz bir humanoid... Peki ya size gerçekten "hayır" diyebilmesini de ister miydiniz? Kaan Karakaş’tan samimi ve derinlikli bir düşünce deneyi.',
+      en: 'If AI could give you your dream spouse, would you want it? A humanoid living with you, listening to you, touching you... But would you also want it to truly say "no" to you? An intimate essay by Kaan Karakaş.'
     },
     date: {
       tr: '04 Ekim 2026',
       en: 'October 04, 2026'
     },
     readTime: {
-      tr: '28 dk okuma',
-      en: '28 min read'
+      tr: '16 dk okuma',
+      en: '16 min read'
     },
     author: 'Kaan Karakaş',
     image: '/images/bir-sonraki-esiniz-humanoid-olabilir.png',

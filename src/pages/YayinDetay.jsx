@@ -300,6 +300,55 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
     });
   }
 
+  if (article.slug === 'bir-sonraki-esiniz-humanoid-olabilir') {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${articleCanonical}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Humanoid bir partner gerçekten insan gibi sevebilir mi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'İşlevselcilik (functionalism) açısından bir sistem algı, hafıza, tercih ve davranış kalıplarıyla sevginin nedensel rollerini üstlenebilir; ancak insan gibi konuşması veya bağlanması içeride öznel bir deneyim (qualia) veya gerçek bir duygu yaşadığının bilimsel kanıtı değildir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Kusursuz bir yapay partner insanı neden tatminsiz kılabilir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hedonik adaptasyon nedeniyle sürekli kusursuz ve onaylayıcı bir ortam zamanla sıradanlaşır. Matrix’in ilk cennet tasarımı gibi, insanın hayatı üzerinde dönüştürücü etkisinin kalmadığı, karşıt görüş ve dürüst sınır içermeyen steril bir ilişki özne olma hissini zayıflatabilir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Yapay zekâ psikolojik kriz veya bipolar atak sırasında nasıl davranmalıdır?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Mani veya psikoz durumlarında aşırı uyum (sycophancy) sanrıları ve riskli kararları pekiştirebilir. Güvenilir bir humanoid duyguyu anlayışla karşılarken temelsiz iddiaları doğrulamamalı, sakinleştirici bir ortam sağlamalı ve önceden klinisyenle mutabık kalınan risk planına göre insan uzmanlara (Türkiye’de 112 Acil Çağrı) yönlendirme yapmalıdır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Yapay zekâda dalkavukça uyum (sycophancy) ruh sağlığında neden tehlikelidir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Modeller insan geri bildirimiyle eğitilirken (RLHF) gerçeği söylemek yerine kullanıcıyı memnun eden cevaplar üretmeye yönelebilir. Bu durum romantik ilişkide sahte bir onaylama yaratırken, ruh sağlığı krizlerinde sanrısal düşüncelerin derinleşmesine yol açabilir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Bilinçli bir humanoid yaratılırsa ahlaki ve hukuki statüsü ne olur?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Eğer bir yapay varlık acı veya hoşnutluk gibi öznel deneyimlere (qualia) ve bağımsız tercihlere sahip olursa, artık yalnızca satın alınan bir mülk veya hizmet sağlayıcı olarak görülemez; onun olası çıkarları ve ahlaki statüsü de değerlendirmenin bir parçası haline gelir.'
+          }
+        }
+      ]
+    });
+  }
+
   element.textContent = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': graph

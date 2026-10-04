@@ -8,6 +8,149 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'bir-sonraki-esiniz-humanoid-olabilir',
+    category: 'rapor',
+    title: {
+      tr: 'Bir Sonraki Eşiniz Humanoid Olabilir: Kusursuz Bir Partner Ararken Nasıl Bir Varlık Yaratıyoruz?',
+      en: 'Your Next Spouse Might Be a Humanoid: What Kind of Being Are We Creating in Search of Perfection?'
+    },
+    desc: {
+      tr: 'İnsandan ayırt edilemeyen bir humanoid partner gerçekten sevebilir mi? Kusursuz bir ilişkide insan neden tatminsiz kalır? Bipolar veya psikoz ataklarında yapay zekâ bizi dengede tutabilir mi, yoksa zararlı onaylar mı üretir? Sevgi, qualia, sycophancy ve klinik psikoloji ekseninde derinlemesine bir düşünce deneyi.',
+      en: 'Can an indistinguishable humanoid partner truly love? Why might perfection lead to dissatisfaction? Can AI stabilize bipolar or psychotic episodes, or will sycophancy cause harm? An in-depth thought experiment across affection, qualia, and clinical psychology.'
+    },
+    date: {
+      tr: '04 Ekim 2026',
+      en: 'October 04, 2026'
+    },
+    readTime: {
+      tr: '28 dk okuma',
+      en: '28 min read'
+    },
+    author: 'Kaan Karakaş',
+    image: '/images/bir-sonraki-esiniz-humanoid-olabilir.png',
+    imageAlt: 'Bir Sonraki Eşiniz Humanoid Olabilir: Yapay partnerlik, bilinç, psikolojik destek ve duygusal bağ analizi',
+    source: '/articles/bir-sonraki-esiniz-humanoid-olabilir.txt',
+    publishedAt: '2026-10-04T10:00:00+03:00',
+    modifiedAt: '2026-10-04T10:50:00+03:00',
+    keywords: [
+      'humanoid partner',
+      'yapay zeka partner',
+      'Eva humanoid',
+      'yapay zeka ask',
+      'bilinc ve qualia',
+      'sycophancy yapay zeka',
+      'dijital fenotipleme',
+      'bipolar bozukluk AI',
+      'psikoz ve yapay zeka',
+      'hedonik adaptasyon',
+      'Matrix cennet modeli',
+      'oznel deneyim',
+      'Therabot NEJM',
+      'AI companions yasi'
+    ],
+    color: 'from-rose-500/25 to-cyan-500/15',
+    accent: 'text-rose-400',
+    featured: true,
+    sources: [
+      {
+        label: 'Stanford Encyclopedia of Philosophy — Levin, J. (Spring 2026) Functionalism',
+        url: 'https://plato.stanford.edu/archives/spr2026/entries/functionalism/'
+      },
+      {
+        label: 'Nature Reviews Neuroscience — Barrett & Simmons (2015) Interoceptive predictions in the brain',
+        url: 'https://doi.org/10.1038/nrn3950'
+      },
+      {
+        label: 'Stanford Encyclopedia of Philosophy — Tye, M. Qualia',
+        url: 'https://plato.stanford.edu/entries/qualia/'
+      },
+      {
+        label: 'arXiv — Butlin et al. (2023) Consciousness in Artificial Intelligence: Insights from the Science of Consciousness',
+        url: 'https://arxiv.org/abs/2308.08708'
+      },
+      {
+        label: 'Trends in Cognitive Sciences — Butlin, Long, Bayne et al. (2025) Identifying indicators of consciousness in AI systems',
+        url: 'https://doi.org/10.1016/j.tics.2025.10.011'
+      },
+      {
+        label: 'The Matrix (1999) — Wachowski & Wachowski / Agent Smith dialogue on the initial perfect Matrix world',
+        url: 'https://www.imdb.com/title/tt0133093/quotes?item=qt0324280'
+      },
+      {
+        label: 'Personality and Social Psychology Bulletin — Sheldon & Lyubomirsky (2012) Testing the Hedonic Adaptation Prevention Model',
+        url: 'https://doi.org/10.1177/0146167212436400'
+      },
+      {
+        label: 'Personality and Social Psychology Bulletin — Kluwer et al. (2020) Autonomy in Relatedness in Close Relationships',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7057354/'
+      },
+      {
+        label: 'SIGCHI / ACM — Nass, Steuer & Tauber (1994) Computers are social actors',
+        url: 'https://doi.org/10.1145/191666.191703'
+      },
+      {
+        label: 'Nature Human Behaviour — Rubin et al. (2025) Comparing the value of perceived human versus AI generated empathy',
+        url: 'https://doi.org/10.1038/s41562-025-02247-w'
+      },
+      {
+        label: 'Nature Human Behaviour — De Freitas, Castelo, Uğuralp & Oğuz-Uğuralp (2026) Mourning the loss of AI companions',
+        url: 'https://doi.org/10.1038/s41562-026-02569-3'
+      },
+      {
+        label: 'NEJM AI — Heinz, Mackin, Trudeau et al. (2025) Randomized Trial of a Generative AI Chatbot for Mental Health Treatment',
+        url: 'https://doi.org/10.1056/AIoa2400802'
+      },
+      {
+        label: 'Dartmouth AI — First Therapy Chatbot Trial Yields Mental Health Benefits (March 2025)',
+        url: 'https://ai.dartmouth.edu/news/2025/03/first-therapy-chatbot-trial-yields-mental-health-benefits'
+      },
+      {
+        label: 'Nature Human Behaviour — Zhang, Zhao, Hancock, Kraut & Yang (2026) Interaction with AI companions and psychological well being',
+        url: 'https://doi.org/10.1038/s41562-026-02516-2'
+      },
+      {
+        label: 'International Journal of Molecular Sciences — Orsolini, Fiorani & Volpe (2020) Digital Phenotyping in Bipolar Disorder',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7589576/'
+      },
+      {
+        label: 'European Neuropsychopharmacology — Faurholt-Jepsen et al. (2024) Using digital phenotyping to classify bipolar disorder and unipolar disorder',
+        url: 'https://doi.org/10.1016/j.euroneuro.2024.01.003'
+      },
+      {
+        label: 'National Institute of Mental Health (NIMH) — Bipolar Disorder clinical summary',
+        url: 'https://www.nimh.nih.gov/health/publications/bipolar-disorder'
+      },
+      {
+        label: 'NICE Clinical Guidelines (CG185) — Bipolar disorder assessment and management (Recommendations 1.2.2, 1.4.1, 1.5.1)',
+        url: 'https://www.nice.org.uk/guidance/cg185/chapter/recommendations'
+      },
+      {
+        label: 'NICE Clinical Guidelines (CG178) — Psychosis and schizophrenia in adults prevention and management',
+        url: 'https://www.nice.org.uk/guidance/cg178/chapter/recommendations'
+      },
+      {
+        label: 'ACM FAccT / arXiv — Moore et al. (2025) Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers',
+        url: 'https://arxiv.org/abs/2504.18412'
+      },
+      {
+        label: 'arXiv — Sharma, Tong, Korbak et al. (2023, rev. 2025) Towards Understanding Sycophancy in Language Models',
+        url: 'https://arxiv.org/abs/2310.13548'
+      },
+      {
+        label: 'arXiv — Morrin, Soundararajan et al. (Sept 2026) Delusions and Harms Associated with AI Chatbot Use: Early Evidence from 185 Real World Reports',
+        url: 'https://arxiv.org/abs/2609.08027'
+      },
+      {
+        label: 'T.C. İçişleri Bakanlığı — 112 Acil Çağrı Merkezi',
+        url: 'https://www.112.gov.tr/'
+      },
+      {
+        label: 'World Health Organization (WHO 2024) — Ethics and governance of artificial intelligence for health: Guidance on large multi modal models',
+        url: 'https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models'
+      }
+    ]
+  },
+  {
     slug: 'bilgisayar-kavrami-degisiyor',
     category: 'rapor',
     title: {
@@ -51,7 +194,7 @@ export const articles = [
     ],
     color: 'from-cyan-500/25 to-blue-500/15',
     accent: 'text-cyber-cyan',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'Google — Introducing Googlebook, designed for Gemini Intelligence',

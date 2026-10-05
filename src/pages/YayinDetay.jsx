@@ -402,6 +402,29 @@ function parseMarkdownImage(line) {
   };
 }
 
+function parseVideoEmbed(line) {
+  const iframeMatch = line.match(/<iframe\s+[^>]*src=["']([^"']+)["'][^>]*>(?:<\/iframe>)?/i);
+  if (iframeMatch) {
+    const titleMatch = line.match(/title=["']([^"']+)["']/i);
+    return {
+      src: iframeMatch[1],
+      title: titleMatch ? titleMatch[1] : 'YouTube video player'
+    };
+  }
+
+  const ytMarkdownMatch = line.match(/^\[(?:youtube|video)\]\((https?:\/\/[^\)]+)\)$/i);
+  if (ytMarkdownMatch) {
+    let url = ytMarkdownMatch[1];
+    const ytIdMatch = url.match(/(?:youtube\.com\/(?:embed\/|watch\?v=)|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+    if (ytIdMatch) {
+      url = `https://www.youtube.com/embed/${ytIdMatch[1]}`;
+    }
+    return { src: url, title: 'YouTube video' };
+  }
+
+  return null;
+}
+
 // Helper to parse inline markdown: bold, italic, code, markdown links, citations
 function renderFormattedContent(text, onNavigate, sources = []) {
   const regex = /(\[([^\]]+)\]\(([^)]+)\)|\[\d+\]|\*\*([^*]+)\*\*|`([^`]+)`|\*([^*]+)\*)/g;
@@ -847,6 +870,24 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 return (
                   <figure key={`${markdownImage.src}-${index}`} className="my-10 overflow-hidden rounded-2xl border border-white/10 bg-white/3">
                     <img src={markdownImage.src} alt={markdownImage.alt} className="w-full h-auto object-contain bg-[#080B12]" loading="lazy" />
+                  </figure>
+                );
+              }
+
+              const videoEmbed = parseVideoEmbed(line);
+              if (videoEmbed) {
+                return (
+                  <figure key={`video-${index}`} className="my-10 overflow-hidden rounded-2xl border border-white/10 bg-[#080B12] shadow-2xl shadow-cyan-500/10">
+                    <div className="relative aspect-video w-full">
+                      <iframe
+                        src={videoEmbed.src}
+                        title={videoEmbed.title}
+                        className="absolute inset-0 w-full h-full border-0 rounded-2xl"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
                   </figure>
                 );
               }

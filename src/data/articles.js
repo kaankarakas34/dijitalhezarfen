@@ -29,6 +29,7 @@ export const articles = [
     author: 'Kaan Karakaş',
     image: '/images/bir-sonraki-esiniz-humanoid-olabilir.png',
     imageAlt: 'Bir Sonraki Eşiniz Humanoid Olabilir: Yapay partnerlik, bilinç, psikolojik destek ve duygusal bağ analizi',
+    video: 'https://www.youtube.com/embed/Xd_UwHJORg4?si=F-V7-uxz4ieo1wVE',
     source: '/articles/bir-sonraki-esiniz-humanoid-olabilir.txt',
     publishedAt: '2026-10-04T10:00:00+03:00',
     modifiedAt: '2026-10-04T10:50:00+03:00',

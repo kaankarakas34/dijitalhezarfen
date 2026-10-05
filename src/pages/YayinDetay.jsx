@@ -861,6 +861,22 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
             </div>
           ) : null}
 
+          {/* Featured Video Embed (Directly below Table of Contents / İçindekiler) */}
+          {articleMeta.video ? (
+            <figure className="mb-12 overflow-hidden rounded-2xl border border-white/10 bg-[#080B12] shadow-2xl shadow-cyan-500/10">
+              <div className="relative aspect-video w-full">
+                <iframe
+                  src={articleMeta.video}
+                  title={articleMeta.title}
+                  className="absolute inset-0 w-full h-full border-0 rounded-2xl"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </figure>
+          ) : null}
+
           {/* Body Lines */}
           <div className="space-y-6">
             {bodyLines.map((line, index) => {
@@ -876,6 +892,9 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
 
               const videoEmbed = parseVideoEmbed(line);
               if (videoEmbed) {
+                if (articleMeta?.video && (videoEmbed.src === articleMeta.video || videoEmbed.src.includes('Xd_UwHJORg4'))) {
+                  return null;
+                }
                 return (
                   <figure key={`video-${index}`} className="my-10 overflow-hidden rounded-2xl border border-white/10 bg-[#080B12] shadow-2xl shadow-cyan-500/10">
                     <div className="relative aspect-video w-full">

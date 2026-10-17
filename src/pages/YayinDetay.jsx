@@ -85,7 +85,7 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
       author: {
         '@type': 'Person',
         name: article.author,
-        jobTitle: 'Kurucu & Teknoloji Girişimcisi',
+        jobTitle: article.authorRole || (article.author === 'Haydar Karakaş' ? 'Finansal & Mali Denetçi' : 'Kurucu & Teknoloji Girişimcisi'),
         url: `${siteBaseUrl}/#/dijital-hezarfen`
       },
       publisher: {
@@ -349,6 +349,47 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
     });
   }
 
+  if (article.slug === 'enron-karin-nakdin-ve-guvenin-denetimi') {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${articleCanonical}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Enron’un çöküşünün arkasındaki temel finansal ve muhasebe manipülasyonu neydi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Enron vakası yalnızca kötü yatırımlar değil; mark-to-market muhasebesinin spekülatif gelecekteki tahminleri peşin kâr yazması, prepay emtia sözleşmeleriyle banka kredilerinin faaliyet nakdi gibi gösterilmesi ve bilanço dışı özel amaçlı ortaklıklar (SPE - Chewco, LJM, Raptor) aracılığıyla zararların ve borçların gizlenmesidir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Prepay sözleşmeleri Enron’un nakit akış tablosunu nasıl bozdu?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Enron, finansör bankalarla gerçekleştirdiği birbirini dengeleyen döngüsel swap sözleşmeleriyle temin ettiği kredileri finansman borcu yerine “fiyat riski yönetimi yükümlülüğü” ve nakit girişini “faaliyetlerden net nakit” olarak raporlamış; böylece gerçek faaliyet nakit açığını güçlü bir nakit üretimi gibi perdelemiştir.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Raptor yapıları Enron’a gerçek bir riskten korunma (hedge) sağladı mı?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hayır. Raptor yapıları Enron’un değer kaybeden yatırımlarına karşı görünürde korunma sağlamak üzere kurulmuştu; ancak karşı tarafın ödeme gücü büyük ölçüde Enron hisselerine bağlıydı. Enron hissesi düştüğünde koruma sağlayacak yapının sermayesi de buharlaştı ve risk dönüp dolaşıp yine Enron’un üzerinde kaldı.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Arthur Andersen denetiminde ne tür bir mesleki zaaf yaşandı?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Andersen iç risk değerlendirmelerinde Enron’u en yüksek risk kategorisinde sınıflandırmış olmasına rağmen, yüksek danışmanlık ve denetim ücretleri ile ticari bağımlılık nedeniyle mesleki şüphecilik prosedüre dönüşmemiş; yönetim beyanlarına aşırı güvenilmiş ve bağımsız dış denetim güvencesi işlevsiz hale gelmiştir.'
+          }
+        }
+      ]
+    });
+  }
+
   element.textContent = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': graph
@@ -564,8 +605,11 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
   const tocHeadings = useMemo(() => {
     const list = [];
     bodyLines.forEach((line) => {
-      if (line.startsWith('## ') || line.startsWith('# ')) {
-        const title = line.replace(/^#{1,2}\s+/, '');
+      if (line.startsWith('# ')) {
+        const title = line.replace(/^#\s+/, '');
+        list.push({ title, slug: slugify(title), level: 1 });
+      } else if (line.startsWith('## ')) {
+        const title = line.replace(/^##\s+/, '');
         list.push({ title, slug: slugify(title), level: 2 });
       } else if (line.startsWith('### ')) {
         const title = line.replace(/^###\s+/, '');
@@ -911,9 +955,100 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 );
               }
 
-              // Heading Level 1 or 2 (# or ##)
-              if (line.startsWith('## ') || line.startsWith('# ')) {
-                const title = line.replace(/^#{1,2}\s+/, '');
+              // Markdown Table (| ... |)
+              if (line.startsWith('|')) {
+                if (index > 0 && bodyLines[index - 1]?.startsWith('|')) {
+                  return null;
+                }
+
+                const tableLines = [];
+                for (let j = index; j < bodyLines.length && bodyLines[j]?.startsWith('|'); j++) {
+                  tableLines.push(bodyLines[j]);
+                }
+
+                if (tableLines.length >= 2) {
+                  const parseCells = (rowStr) =>
+                    rowStr
+                      .split('|')
+                      .slice(1, -1)
+                      .map((c) => c.trim());
+
+                  const headers = parseCells(tableLines[0]);
+                  const rawDataRows = tableLines.slice(1);
+                  const dataRows = rawDataRows
+                    .filter((row) => !/^\|[\s\-:]+(\|[\s\-:]+)+\|?$/.test(row))
+                    .map((row) => parseCells(row));
+
+                  return (
+                    <div
+                      key={`table-${index}`}
+                      className="my-8 overflow-hidden rounded-2xl border border-white/10 bg-[#0A0E17]/80 backdrop-blur-sm shadow-xl shadow-cyan-500/5"
+                    >
+                      <div className="overflow-x-auto">
+                        <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[500px]">
+                          <thead>
+                            <tr className="border-b border-white/10 bg-white/[0.04]">
+                              {headers.map((h, hIdx) => (
+                                <th
+                                  key={hIdx}
+                                  className="py-3.5 px-4 sm:px-5 text-cyber-cyan font-bold whitespace-nowrap tracking-wider text-[11px] sm:text-xs uppercase"
+                                >
+                                  {renderFormattedContent(h, onNavigate, articleMeta.sources)}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-white/5 text-gray-300 font-light">
+                            {dataRows.map((row, rIdx) => (
+                              <tr key={rIdx} className="hover:bg-white/[0.02] transition-colors">
+                                {row.map((cell, cIdx) => (
+                                  <td
+                                    key={cIdx}
+                                    className={`py-3 px-4 sm:px-5 leading-relaxed ${
+                                      cIdx === 0 ? 'font-medium text-white/90' : 'text-gray-300'
+                                    }`}
+                                  >
+                                    {renderFormattedContent(cell, onNavigate, articleMeta.sources)}
+                                  </td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  );
+                }
+              }
+
+              // Major Chapter Header Level 1 (# )
+              if (line.startsWith('# ')) {
+                const title = line.replace(/^#\s+/, '');
+                const headingId = slugify(title);
+                return (
+                  <div key={`${title}-${index}`} className="pt-16 pb-4 border-t-2 border-cyan-500/30">
+                    <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-cyber-cyan block mb-2">
+                      BÖLÜM
+                    </span>
+                    <h2
+                      id={headingId}
+                      className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight scroll-mt-24 flex items-center justify-between group"
+                    >
+                      <span>{title}</span>
+                      <a
+                        href={`#${headingId}`}
+                        className="text-gray-600 hover:text-cyber-cyan opacity-0 group-hover:opacity-100 transition-opacity text-sm ml-2 font-mono"
+                      >
+                        #
+                      </a>
+                    </h2>
+                  </div>
+                );
+              }
+
+              // Heading Level 2 (## )
+              if (line.startsWith('## ')) {
+                const title = line.replace(/^##\s+/, '');
                 const headingId = slugify(title);
                 return (
                   <h2
@@ -922,7 +1057,10 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                     className="text-2xl sm:text-3xl font-extrabold text-white leading-tight pt-10 pb-2 scroll-mt-24 border-t border-white/5 flex items-center justify-between group"
                   >
                     <span>{title}</span>
-                    <a href={`#${headingId}`} className="text-gray-600 hover:text-cyber-cyan opacity-0 group-hover:opacity-100 transition-opacity text-sm ml-2 font-mono">
+                    <a
+                      href={`#${headingId}`}
+                      className="text-gray-600 hover:text-cyber-cyan opacity-0 group-hover:opacity-100 transition-opacity text-sm ml-2 font-mono"
+                    >
                       #
                     </a>
                   </h2>
@@ -1062,23 +1200,33 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
           <div className="mt-16 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0C1220] to-[#080B12] p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
             <div className="w-20 h-20 rounded-2xl bg-gradient-cyber p-0.5 shrink-0 shadow-lg shadow-cyan-500/10">
               <div className="w-full h-full rounded-2xl bg-[#0B0F19] flex items-center justify-center text-cyber-cyan font-bold text-2xl font-mono">
-                KK
+                {articleMeta.author
+                  ?.split(' ')
+                  .map((n) => n[0])
+                  .join('')
+                  .toUpperCase() || 'DH'}
               </div>
             </div>
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left flex-1">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
                 <h3 className="text-lg font-extrabold text-white">{articleMeta.author}</h3>
                 <span className="text-[10px] text-cyber-cyan bg-cyan-500/10 px-2 py-0.5 rounded font-bold uppercase tracking-wider">
-                  Kurucu & Yazar
+                  {articleMeta.authorRole || (articleMeta.author === 'Haydar Karakaş' ? 'Finansal & Mali Denetçi' : 'Kurucu & Yazar')}
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-gray-400 font-light leading-relaxed mb-4">
-                Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.
+                {articleMeta.authorBio ||
+                  (articleMeta.author === 'Haydar Karakaş'
+                    ? 'Finansal raporlama, bağımsız denetim, muhasebe hileleri, bilanço ve nakit akış analizi ile kurumsal yönetişim üzerine uzmanlaşmış mali denetçi ve araştırmacı yazar.'
+                    : 'Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.')}
               </p>
               <div className="flex items-center justify-center sm:justify-start gap-3 text-xs text-cyber-cyan font-semibold">
                 <a
                   href="#/dijital-hezarfen"
-                  onClick={(e) => { e.preventDefault(); onNavigate('/dijital-hezarfen'); }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('/dijital-hezarfen');
+                  }}
                   className="hover:underline flex items-center gap-1"
                 >
                   Hakkında <ArrowUpRight className="w-3.5 h-3.5" />
@@ -1086,7 +1234,10 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 <span className="text-gray-600">•</span>
                 <a
                   href="#/yayinlar"
-                  onClick={(e) => { e.preventDefault(); onNavigate('/yayinlar'); }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('/yayinlar');
+                  }}
                   className="hover:underline flex items-center gap-1"
                 >
                   Tüm Yayınları <ArrowUpRight className="w-3.5 h-3.5" />

@@ -1,0 +1,626 @@
+ENRON: Kârın, Nakdin ve Güvenin Denetimi
+
+*Finansal ve mali denetçi bakış açısıyla kapsamlı vaka analizi*
+
+> **Mesleki Başlangıç Noktası:** Bir şirketin ne kadar büyük göründüğünden önce, kazancının nasıl oluştuğuna, nakdinin nereden geldiğine ve riskinin kimin üzerinde kaldığına bakarım. Enron, bu üç sorunun birbirinden ayrıldığı yerde finansal analizin nasıl yanılabildiğini gösteriyor.
+
+> **Hazırlık Notu:** Bu metin, Haydar Karakaş’ın mesleki bakış açısını yansıtmak üzere birinci tekil şahısla hazırlanmıştır. Enron denetimine şahsen katıldığı veya aşağıdaki değerlendirmeleri daha önce yayımladığı iddia edilmez. Tarihsel belgeler, erişilebilen önceki konuşma ayrıntıları ve paylaşılan Enron belgeleri esas alınmıştır. Varsayımsal örnekler ayrıca işaretlenmiştir.
+
+---
+
+## Enron’a hangi gözle bakıyorum?
+
+Enron’u incelerken karşıma çıkan ilk sorun, şirketin muhasebe dilinin ekonomik gerçekliği açıklamak yerine onu perdeleyebilmesidir. Gelir tablosu büyümeyi, bilanço taşınabilir bir borç yükünü, nakit akış tablosu ise güçlü bir faaliyet performansını anlatıyordu. Bu tabloların arasındaki bağlantılar sorgulandığında, görüntünün önemli bir bölümünün tahminlere, ilişkili yapılara ve finansman işlemlerinin sunumuna dayandığı anlaşıldı.
+
+Benim değerlendirmem, Enron’un yalnızca kötü yatırımlar yapmış bir enerji şirketi olmadığıdır. Ticari risk, değerleme riski, çıkar çatışması ve raporlama zaafı aynı yapı içinde birbirini besledi. Gerçeğe uygun değer muhasebesi, özel amaçlı şirket veya türev sözleşme kendi başına yanlış değildir. Sorun, bunların ekonomik amacı ve gerçek risk dağılımı doğru açıklanmadan kullanılmasıdır. Aynı nedenle, bir şirketin bütün faaliyetlerini sahte kabul etmek de doğru bir inceleme yöntemi değildir. Gerçek işlerin üzerinde kurulmuş yanıltıcı bir raporlama düzeni, bütünüyle hayalî bir şirketten daha zor teşhis edilebilir.
+
+Üç soruyu bu incelemenin merkezine koyuyorum: Kâr nereden geliyor? Bu kâr nakde dönüşüyor mu? Borçlar ve diğer yükümlülükler eksiksiz görünüyor mu? Enron vakasına dördüncü bir soruyu ekliyorum: Şirketin anlattığı risk devri gerçekten bağımsız bir karşı tarafa mı yapılmış, yoksa risk başka bir isim altında yine şirkete mi dönmüş?
+
+2000 için raporlanan 100,789 milyar dolarlık gelir ve 979 milyon dolarlık net kâr, ilk bakışta başarı göstergeleriydi. Ancak bu rakamların oluşturduğu net kâr marjı yaklaşık yüzde 0,97’dir. Raporlanan 4,779 milyar dolarlık faaliyet nakdi de kaynağı incelenmeden borç ödeme kapasitesi sayılmamalıdır. Kasım 2001’de Enron, önceki finansal tablolarına ve ilgili denetim raporlarına güvenilmemesi gerektiğini açıkladı. Dolayısıyla burada eski rakamları doğrulanmış ekonomik sonuçlar olarak değil, o dönemde piyasaya sunulmuş görünümü incelemek için kullanıyorum [1, 2].
+
+Denetçi açısından benim temel hükmüm şudur: Yüksek riskin fark edilmesi, o riskin yönetildiği anlamına gelmez. Denetim dosyasına risk yazılıp aynı zamanda yönetimin açıklamalarına aşırı güveniliyorsa, risk değerlendirmesi bir kontrol aracından bürokratik kayda dönüşür. Enron’dan çıkardığım asıl ders, karmaşık işlemleri reddetmek değil; karmaşıklığın içinden sade bir ekonomik açıklama çıkarabilecek mesleki bağımsızlığı korumaktır.
+
+| İnceleme alanı | Enron vakasının gösterdiği sorun | Benim denetim yaklaşımım |
+| :--- | :--- | :--- |
+| Kâr kalitesi | Tahmine ve işlem tasarımına bağlı sonuçlar | Tahsilat, değerleme girdileri ve gerçekleşen performansı bağlamak |
+| Nakit kalitesi | Finansmanın faaliyet nakdi gibi sunulması | Paranın kaynağını ve geri ödeme yükünü birlikte izlemek |
+| Konsolidasyon | Bağımsızlığı tartışmalı yapılar | Kontrolü, sermayeyi ve gerçek zarar taşıyıcısını belirlemek |
+| Riskten korunma | Şirket hissesiyle desteklenen karşı taraflar | Olumsuz senaryoda karşı tarafın ödeme gücünü sınamak |
+| Yönetişim | Çıkar çatışması ve etkisiz gözetim | Onaydan sonra da işleyen bağımsız izleme aramak |
+| Denetim | Tanınan riskin yeterli kanıta dönüşmemesi | Denetim görüşünü elde edilen kanıtın sınırlarıyla uyumlu tutmak |
+
+---
+
+## Okuma yöntemi ve kanıtların sınırı
+
+Bu analizi üç katmanda kuruyorum. İlk katman Enron’un kendi yayımladığı finansal tablolardır. Bunlar, piyasanın ne gördüğünü anlamamı sağlar. İkinci katman Powers özel soruşturması, SEC belgeleri, Kongre ve Senato kayıtları ile mahkeme kararıdır. Bunlar, işlemler hakkında sonradan hangi açıklama ve bulguların ortaya çıktığını gösterir. Üçüncü katman benim finansal ve denetim yorumumdur: Bu tür bir işlem bugün önüme gelse hangi kanıtı arar, hangi soruyu sorar ve hangi sonuca ne kadar güvenirdim?
+
+Bir düzenleyici kurumun dava dilekçesinde yazan iddiayı kesinleşmiş mahkeme hükmü gibi sunmuyorum. Uzlaşmanın, iddiaları kabul veya inkâr etmeme koşuluyla yapılması ayrıca önemlidir. Andersen’ın kendi savunmasını da bağımsız doğrulama olarak kabul etmiyorum. Onu, değerlendirilmesi gereken bir taraf açıklaması olarak okuyorum. Benzer biçimde Powers raporu, Andersen’ın imzaladığı bağımsız denetim görüşü değildir; yönetim kurulunun sonradan hazırlattığı belirli ilişkili işlemlere odaklanan soruşturmadır [3, 4, 5].
+
+İnceleme enerji ticareti modelinden sözleşme değerlemesine; Chewco, LJM ve Raptor’dan prepay fonlamasına; finansal oranlardan denetim ve yönetişime uzanıyor. McKinsey’nin yönetim yaklaşımı, yabancı akademik çalışmalar, üniversite ders kitapları ve doktora araştırmaları bu çerçeveyi tamamlıyor. Teknik ekteki 10 milyon TL’lik örnek, mekanizmaları birbirine bağlı tablolar üzerinden açıklıyor. Hesapların tanımı ve örneklerin varsayımları açıkça belirtilmiştir.
+
+---
+
+## 1. Boru hattından finansal aracılığa
+
+Enron’un 1985’te başlayan hikâyesi, doğal gaz boru hattı faaliyetlerinden enerji ticareti ve risk yönetimine doğru genişledi. Jeffrey Skilling döneminde şirketin anlatısı, geleneksel altyapı işletmesinden bilgiye, sözleşmeye ve piyasa kurmaya dayalı bir işletmeye yöneldi. Burada gördüğüm ekonomik fikir tek başına anlamsız değildir: Enerjiyi üretenle tüketenin farklı fiyat, vade ve risk ihtiyaçlarını karşılaştırıp aralarında piyasa kurmak gerçek bir hizmettir.
+
+Fakat boru hattı işletmeciliğini denetlemekle uzun vadeli enerji sözleşmelerinin, türevlerin ve yapılandırılmış finansmanın bir arada bulunduğu şirketi denetlemek aynı şey değildir. Fiziksel kapasite, kullanım miktarı ve düzenlenmiş tarife üzerinden açıklanabilen gelir; yerini fiyat eğrilerine, karşı tarafın kredi kalitesine, sözleşmenin opsiyonlarına ve model varsayımlarına bırakabilir. Varlıkların bir kısmı artık gözle görülebilen tesis değil, gelecekteki ekonomik faydayı temsil eden sözleşmesel haklardır.
+
+Benim ilk sorum iş modelinin hangi kısmının nakit getirdiği olurdu. Altyapı faaliyetlerinin istikrarlı nakdi, ticaret masasının değişken sonuçları ve henüz gelişme aşamasındaki yeni girişimlerin değerleme kazançları ayrı incelenmelidir. Bir bölümün faaliyet başarısını başka bir bölümdeki varlık satışlarıyla örtmek, toplam kâr doğru hesaplanmış görünse bile performansın niteliğini belirsizleştirir.
+
+İkinci sorum, şirketin gerçekten sermayeden bağımsız büyüyüp büyümediğidir. Fiziksel tesise az yatırım yapmak, ekonomik sermaye ihtiyacını ortadan kaldırmaz. Ticaret işi teminat, karşı taraf limiti, kredi hattı, likidite rezervi ve kötü senaryoda zarar taşıyabilecek özkaynak gerektirir. Ben sermaye ihtiyacını yalnızca fabrika ve boru hattı maliyetiyle ölçmem. Piyasanın güvenini kaybettiğiniz gün doğan teminat ihtiyacı da sermayenin bir işlevidir.
+
+---
+
+## 2. Büyük ciroyu doğru okumak
+
+Enron’un gelirindeki büyüklük, şirketi karşılaştırırken etkileyici bir başlangıç noktasıdır. Fakat işlem hacmi ile ekonomik katma değer arasında doğrudan eşitlik kurmam. Özellikle alım-satım ve aracılık faaliyetlerinde brüt veya net sunum tercihi, şirketlerin cirolarını karşılaştırmayı zorlaştırabilir. Dharan ve Bufkins’in çalışması, Enron’un gelirleri ve temel finansal ölçülerindeki uyarı işaretlerini bu nedenle önemli bulur [10].
+
+Varsayımsal bir ticaret işlemi düşünelim: Bir işletme 100 birimlik ürünü alıp 101 birime satıyor. Brüt sunumda gelir 101, maliyet 100 ve marj yaklaşık yüzde 0,99’dur. Aracılık niteliği gereği yalnızca 1 birimlik net kazanç sunuluyorsa görünen gelir çok daha küçüktür. Ekonomik kazanç aynı olabilir; muhasebe sunumu farklıdır. Hangisinin uygun olduğu, işletmenin sözleşmedeki gerçek rolüne ve geçerli muhasebe çerçevesine bağlıdır. Bu örnek Enron’un bütün gelirlerini nete çevirmek için bir gerekçe değildir; ciro sıralamasının tek başına değer ölçüsü olamayacağını gösterir.
+
+Bu ayrımın iki sonucu vardır. Birincisi, düşük marj otomatik olarak başarısızlık veya hile demek değildir. İkincisi, çok yüksek ciro otomatik olarak güçlü bir özkaynak ve dayanıklı nakit üretimi anlamına gelmez. Ben karşılaştırmayı aynı sunum ve aynı faaliyet mantığı üzerinden yaparım. Aksi durumda büyük işlem hacmine sahip şirketi, yüksek katma değer üreten şirketle aynı kefeye koymuş olurum.
+
+İncelemede işlem hacmi, brüt kazanç, faaliyet giderleri, risk maliyeti, kullanılan sermaye ve tahsil edilen nakit birbirine bağlanmalıdır. Benim için büyümenin kalitesi, yeni işlemlerden ne kadar gelir yazıldığından ziyade, bu işlemler tamamlandığında şirketin elinde ne kaldığıyla ölçülür. Hacim büyürken birim ekonomik kazanç ve riskin görünürlüğü kötüleşiyorsa, büyüme ödüllendirilecek bir sonuç olmaktan çıkıp araştırılacak bir olguya dönüşür.
+
+---
+
+## 3. Raporlanan finansal tabloların anatomisi
+
+Aşağıdaki tutarlar Enron’un 2000 Form 10-K’sında yayımladığı tarihsel rakamlardır. Para birimi milyon ABD dolarıdır. Kasım 2001’de bu tablolara güvenilmemesi gerektiği açıklanmıştır [1, 2].
+
+| Gösterge (Milyon ABD Doları) | 1998 | 1999 | 2000 |
+| :--- | :--- | :--- | :--- |
+| Gelir | 31.260 | 40.112 | 100.789 |
+| Faaliyet kârı | 1.378 | 802 | 1.953 |
+| Net kâr | 703 | 893 | 979 |
+| Faaliyetlerden net nakit | 1.640 | 1.228 | 4.779 |
+| Yatırım faaliyetleri net nakdi | -3.965 | -3.507 | -4.264 |
+| Finansman faaliyetleri net nakdi | 2.266 | 2.456 | 571 |
+
+| 31 Aralık 2000 Bilançosu | Milyon ABD Doları |
+| :--- | :--- |
+| Nakit ve nakit benzerleri | 1.374 |
+| Ticari alacaklar, net | 10.396 |
+| Dönen fiyat riski yönetimi varlıkları | 12.018 |
+| Toplam dönen varlıklar | 30.381 |
+| Toplam varlıklar | 65.503 |
+| Toplam kısa vadeli yükümlülükler | 28.406 |
+| Kısa vadeli finansal borç | 1.679 |
+| Uzun vadeli finansal borç | 8.550 |
+| Toplam raporlanan finansal borç | 10.229 |
+| Özkaynak | 11.470 |
+
+Bu tabloya baktığımda yalnızca büyüklükleri görmüyorum; kalemlerin karakterini de sorguluyorum. Nakit ile ticari alacak aynı likiditeye sahip değildir. Ticari alacak ile fiyat riski yönetimi varlığı da aynı doğrulama sürecinden geçmez. Bir sözleşme varlığı, modelde yüksek değer taşıdığı hâlde kısa sürede nakde çevrilemeyebilir. Karşı tarafın ödeme gücü bozulduğunda model değerinin finansal anlamı da değişir.
+
+Varlık büyüklüğünün önemli kısmı piyasa riskine bağlıysa bilanço, statik bir fotoğraftan çok piyasa koşullarının bir yansımasıdır. Fiyat, volatilite, vade, teminat şartı ve karşı taraf kredibilitesi birlikte değişebilir. Dolayısıyla ben dönem sonu bilançosunun yanında günlük limit kullanımını, dönem içindeki en yüksek teminat ihtiyacını ve yıl sonundan hemen sonraki nakit hareketlerini de görmek isterim.
+
+İşletme sermayesinde büyüyen alacaklar kadar büyüyen ticari borçlar ve müşteri depozitoları da önemlidir. Geçici olarak şirkette kalan para, kalıcı kazanılmış nakit değildir. Finansal analist bilanço kalemlerini sadece toplamaz; her kalemin hangi olumsuz koşulda şirkete geri ödeme veya ek finansman ihtiyacı doğurduğunu anlamaya çalışır.
+
+---
+
+## 4. Oranlar ne söyler, neyi söylemez?
+
+2000 verilerinden yaptığım hesaplar, finansal görünümün bazı hassasiyetlerini ortaya koyuyor. Bu oranlar tarihsel olarak raporlanan tablolardan türetilmiştir; düzeltilmiş nihai ekonomik durum değildir.
+
+| Oran | Hesap | Sonuç |
+| :--- | :--- | :--- |
+| Net kâr marjı | 979 / 100.789 | %0,97 |
+| Faaliyet kâr marjı | 1.953 / 100.789 | %1,94 |
+| Cari oran | 30.381 / 28.406 | 1,070 |
+| Nakit oranı | 1.374 / 28.406 | 0,048 |
+| Finansal borç / özkaynak | 10.229 / 11.470 | 0,892 |
+| Faaliyet nakdi / net kâr | 4.779 / 979 | 4,881 |
+| Gelir büyümesi, 1999-2000 | 100.789 / 40.112 - 1 | %151,27 |
+| Net kâr büyümesi, 1999-2000 | 979 / 893 - 1 | %9,63 |
+
+Net kârın gelire göre yavaş büyümesi, benim için bir inceleme başlangıcıdır. Buna yalnızca bakarak hile sonucu çıkarmam. Fiyat değişimleri, ticaret hacmi, faaliyet karışımı ve muhasebe sunumu sonucu etkileyebilir. Fakat yönetim büyümeyi başarı diye anlatıyorsa, ben o büyümenin neden daha yüksek ekonomik kazanca ve dayanıklılığa dönüşmediğini sorarım.
+
+Cari oranın yaklaşık 1,07 olması da tek başına iflas tahmini değildir. Fakat kısa vadeli varlıkların kalitesi tartışmalı olduğunda bu küçük tamponun güvenilirliği azalır. Raporlanan dönen varlıklar kısa vadeli yükümlülüklerden 1.975 milyon dolar fazladır. Varsayımsal olarak yalnızca dönen fiyat riski yönetimi varlıklarına yüzde 10 değer kaybı uygularsak 1.201,8 milyon dolarlık azalma oluşur; aynı yükümlülüklerle cari oran yaklaşık 1,027’ye iner. Yüzde 20 indirimde yaklaşık 0,986 olur. Bu bir değerleme sonucu veya Enron’un gerçek kaybı değildir; tek taraflı analist stresidir. Türev yükümlülükleri, netleştirme hakları ve eşleşen pozisyonlar aynı senaryoda ayrıca değerlendirilmelidir.
+
+Faaliyet nakdi/net kâr oranının yüksekliği ilk bakışta olumlu görünebilir. Burada ise sınıflandırmanın doğruluğu kritik hâle gelir. Nakit akışı tablosunda faaliyete yazılan tutar ekonomik olarak borçsa, yüksek oran güçlü kâr kalitesini kanıtlamaz. Ben oranı hesapladıktan sonra, paydaki nakdin doğru yerde bulunup bulunmadığını kontrol ederim.
+
+Finansal borç/özkaynak oranı için de aynı ilke geçerlidir. Pay yalnızca raporlanan kısa ve uzun vadeli finansal borçtan oluşur. Ticari borç, türev yükümlülüğü, garanti, teminat taahhüdü ve bilanço dışı yapıların tamamını içermeyen bu ölçüyü toplam ekonomik kaldıraç diye adlandırmam. Oranın matematiksel doğruluğu, tanımının yeterli olduğu anlamına gelmez.
+
+---
+
+## 5. Mark-to-market: Tahmin, kanıtın yerini aldığında
+
+Mark-to-market, uygun finansal araç veya ticaret sözleşmelerinin değer değişimini muhasebeye yansıtabilen bir yaklaşımdır. Enron’un açıklanan politikalarında ticaret faaliyetlerine ilişkin gerçekleşmemiş değer değişimleri sonuçlara yansıyabiliyordu. Ancak her uzun vadeli sözleşmenin gelecekteki bütün kârını peşinen satış geliri yapmak gibi genel bir kural yoktur. Teknik ayrım şudur: Muhasebe çerçevesine giren sözleşmenin gerçeğe uygun değeri ve bu değerin dönemsel değişimi, tahsilattan önce sonuçları etkileyebilir [1].
+
+Benim denetim sorunum yöntemin adı değildir; değerlemenin ne kadar gözlemlenebilir olduğudur. Aktif piyasada işlem gören fiyatla ölçülen bir pozisyon ile on yıl sonrasına ilişkin şirket içi tahminle ölçülen bir sözleşme aynı kanıt gücüne sahip değildir. Piyasa verisi zayıfladıkça model, model içinde de yönetimin yargısı ağırlık kazanır. Bu durum değerlemenin mutlaka yanlış olduğu anlamına gelmez; doğrulama yükünün arttığı anlamına gelir.
+
+Varsayımsal olarak on yıl boyunca her yıl 10 milyon dolar net nakit üretmesi beklenen bir ekonomik pozisyonun bugünkü değerini yüzde 10 iskonto oranıyla yaklaşık 61,45 milyon dolar bulurum. İskonto oranını yüzde 12’ye yükseltirsem değer yaklaşık 56,50 milyon dolara düşer. Yıllık net nakit tahmini 10 yerine 7 milyon dolar olursa, yüzde 10 oranla değer yaklaşık 43,01 milyon dolardır. Bu hesap bir finansal varlık değerleme eğitimidir; sözleşmenin başlangıçta mutlaka bu tutarda kâr yaratacağı veya Enron’un böyle kayıt yaptığı anlamına gelmez.
+
+Gördüğüm hassasiyet şudur: Kayıtta tek bir rakam, arkasında ise çok sayıda tartışmalı varsayım vardır. Tahmin edilen hacim, fiyat, maliyet, iskonto oranı ve kredi kaybı değiştiğinde ekonomik değer de değişir. Yönetim kâr hedefini tutturmak için küçük görünen birkaç varsayımı aynı yönde değiştirebiliyorsa, model bir ölçüm aracından sonuç üretme aracına dönüşebilir.
+
+Bu nedenle bağımsız fiyat doğrulaması, alternatif model, duyarlılık analizi ve geçmiş tahminlerin gerçekleşen sonuçlarla karşılaştırılması benim için temel kontrollerdir. Bir önceki yıl iyimser varsayımla yazılmış kazancın ertesi yıl nasıl gerçekleştiğini izlemeyen denetim, modelin tutarlılığını sınamış olmaz. Sadece modelin kendi içinde hesap yaptığını doğrular.
+
+---
+
+## 6. Kârın kalitesi: Üç ayrı sorgulama
+
+Ben kâr kalitesini üç açıdan değerlendiririm: Kârın tekrar üretilebilirliği, ölçümünün güvenilirliği ve nakde dönüşme ihtimali. Bir varlığın satışıyla elde edilen kazanç gerçek olabilir; fakat her yıl aynı şekilde tekrarlanamaz. Uzun vadeli sözleşmenin değer artışı muhasebe çerçevesinde kaydedilebilir; fakat nakde dönüşmesi yıllar alabilir. İlişkili tarafa yapılan satış kâr doğurabilir; fakat işlem bağımsız piyasa koşullarını yansıtmıyorsa kârın ekonomik niteliği tartışmalıdır.
+
+Bu ayrımları tek bir düzeltilmiş kâr rakamına aceleyle sıkıştırmam. Önce köprü kurarım: Faaliyet kazancı, değerleme değişimi, varlık satış kazancı, ilişkili işlem etkisi, dönem dışı kalemler ve vergi etkisi. Sonra her grubun hangi kanıtla desteklendiğine bakarım. Yönetimin kullandığı düzeltilmiş veya tekrarlayan kâr tanımını da kendi başına kabul etmem. Bir giderin etiketini değiştirmek onun ekonomik yükünü ortadan kaldırmaz.
+
+Önemli noktalardan biri, önemsiz sayılan kayıtların toplam etkisidir. Bir kalem tek başına eşik altında kalabilir; fakat aynı yöndeki çok sayıda fark yönetimin kâr hedefini karşılamasına hizmet edebilir. Bu nedenle nicel eşiğin yanında işlemin amacı ve sonucu da değerlendirilmelidir. Benim için dönem kârını pozitife çeviren, bir kredi koşulunu sağlatan veya yöneticinin primini artıran hata, küçük tutarlı olsa bile farklı mesleki ağırlık taşır.
+
+Geriye dönük inceleme ile o tarihte yapılabilecek değerlendirmeyi ayırırım. Bugün bütün sonuçları bildiğimiz için hangi işlemde sorun olduğunu daha kolay görüyoruz. O gün çalışan denetçinin görevi geleceği bilmek değildi. Ancak tespit edilen riskler karşısında yeterli kanıt elde etmek ve çözülmeyen önemli sorunu rapora taşımak onun mesleki görevinin parçasıydı.
+
+---
+
+## 7. Nakit akışını da denetlemek gerekir
+
+Kâr ile nakit arasındaki ayrışma finansal analizin temel konularından biridir. Enron’un daha öğretici tarafı, faaliyet nakdinin de yanıltıcı sunulabilmesidir. Nakit gerçekten kasaya girmiş olabilir. Sorun, o paranın müşteri faaliyetinden kazanılıp kazanılmadığı ve beraberinde hangi yükümlülüğün doğduğudur.
+
+SEC’nin Citigroup işlemlerine ilişkin 2003 kararında, 1999’daki Nahanni ve prepay yapılarının raporlanan faaliyet nakdine yaklaşık 2 milyar dolar etkisi bulunduğu; bu işlemler olmasaydı yaklaşık 1,2 milyar dolarlık pozitif görünümün yaklaşık 800 milyon dolarlık negatif nakde döneceği belirtilir. 2000’de ilgili Bacchus ve prepay etkisi yaklaşık 1 milyar dolardır. Bunlar belirli işlemlere ilişkin düzenleyici bulgulardır; bütün nakit tablosunun nihai yeniden denetimi değildir [6].
+
+| Dönem | Tarihsel Faaliyet Nakdi | Belirli İşlemlerin Yaklaşık Etkisi | Bu Etki Hariç Kısmi Görünüm |
+| :--- | :--- | :--- | :--- |
+| 1999 | 1,228 milyar $ | 2,0 milyar $ | -0,772 milyar $ |
+| 2000 | 4,779 milyar $ | 1,0 milyar $ | 3,779 milyar $ |
+
+1999 için -0,772 milyar dolar benim 10-K tutarıyla yaptığım aritmetik hesaptır; SEC’nin yuvarlanmış açıklaması yaklaşık -0,8 milyar dolardır. Fark yeni bir bulgu değildir. 2000 için 3,779 milyar dolar da yalnızca belirtilen yaklaşık etkiyi çıkardığım kısmi hesaplamadır. Başka düzeltmelerin ve vergi etkilerinin dahil edildiği tam bir düzeltilmiş faaliyet nakdi olarak kullanılmamalıdır.
+
+Benim için bu tablo, nakit analizinin neden banka mutabakatıyla bitmediğini gösterir. Banka hesabında para olması varlığı destekler. Faaliyet sınıflandırmasını desteklemez. Aynı gün giren paranın karşılığında ileride sabit ödeme taahhüdü verilmişse, işlem zinciri birlikte değerlendirilmelidir. Müşteri tahsilatı gibi görünen girişin ekonomik kaynağı bir finansör olabilir.
+
+Faaliyet nakdini analiz ederken dönem sonundaki tek seferlik girişleri, alışılmadık karşı tarafları, kısa sürede tersine dönen işlemleri ve varlık satışlarının sunumunu ayrıca izlerim. Bu prosedür her nakit girişini şüpheli saymak değildir. Yönetimin güçlü performans olarak sunduğu tutarın gerçekten sürdürülebilir işletme faaliyetiyle açıklanmasını istemektir.
+
+---
+
+## 8. Prepay: Emtia sözleşmesinin içindeki borç
+
+Bir müşterinin ileride teslim edilecek mal için ön ödeme yapması olağan bir ticari işlemdir. Ancak aynı nakit girişi, başka sözleşmelerle emtia riski ortadan kaldırılıp finansöre belirli bir getiriyle geri ödenecek hâle getiriliyorsa, ekonomik mahiyet değişir. Denetçi tek sözleşmeye bakarak karar verirse, tam da bu değişimi kaçırabilir.
+
+SEC’nin incelediği Enron-Citigroup yapılarında üçüncü taraf üzerinden birbirini tamamlayan swaplar bulunuyordu. Bütün ayaklar birlikte ele alındığında emtia fiyatına bağlı akımlar birbirini götürüyor; Enron’un başlangıçta para alıp daha sonra belirli bir tutarı geri ödeme yükümlülüğü kalıyordu. Enron girişleri faaliyet nakdi, geri ödeme yükünü ise finansal borç yerine fiyat riski yönetimi yükümlülüğü olarak raporladı [6].
+
+Varsayımsal olarak şirketin bugün 100 milyon dolar aldığı ve sözleşme zinciri sonunda bir yıl sonra 108 milyon dolar ödeyeceği bir yapı düşünelim. Arada değişken emtia fiyatına bağlı üç ödeme bulunsun; fakat bu ödemeler birbirini tam olarak dengelediği için şirketin nihai yükü sabit kalsın. Ben bu işlemi önce 100 milyon dolarlık fonlama ve 8 milyon dolarlık finansman yükü olarak analiz ederim. Sonra geçerli muhasebe kurallarına göre kayıt ve sunumunu değerlendiririm.
+
+Eğer giriş faaliyet nakdine yazılmışsa, analitik düzeltme faaliyet nakdini 100 milyon azaltıp finansman nakdini 100 milyon artırır. Dönem sonu banka bakiyesi değişmez. Fakat işletmenin faaliyet performansı hakkındaki hüküm değişir. Aynı şekilde ekonomik borç, sadece hesabın adı ticari veya türev yükümlülüğü olduğu için kaybolmaz.
+
+Bu vakada benim arayacağım kanıtlar, yalnızca imzalanmış ana sözleşmeler değildir. Eşzamanlı sözleşmeler, çapraz temerrüt şartları, garantiler, aracı şirketin bağımsızlığı, para akışının tam zinciri ve işlem tasarımını anlatan yazışmalar gerekir. Üç ayrı hukuki dosya ekonomik olarak tek fonlamayı oluşturuyorsa, denetim de bu dosyaları birleştirmelidir.
+
+Bu yaklaşımın sınırı açıktır: Her prepayment borç değildir. Gerçek teslimat, gerçek fiyat riski ve bağımsız ticari amaç varsa ön ödeme olağan faaliyet olabilir. Enron’dan aldığım ders, işlemin başlığına göre değil, bütün sözleşmeler birlikte uygulandığında ortaya çıkan net yükümlülüğe göre düşünmektir.
+
+---
+
+## 9. SPE ve konsolidasyon: Ayrı tüzel kişilik, ayrı risk midir?
+
+Özel amaçlı şirketler, belirli varlığı, projeyi veya finansmanı ayrı bir yapıda taşımak için kullanılabilir. Böyle bir yapı hukuken ayrı kurulmuştur diye finansal analiz açısından bağımsız sayılmaz. Ben kimin karar verdiğine, ilk sermayeyi kimin sağladığına, zararı kimin karşıladığına ve kazancın kime döndüğüne bakarım.
+
+Enron döneminin bazı SPE uygulamalarında dış sermaye payı ve bağımsız kontrol koşulları tartışmanın merkezindeydi. Sık anılan yüzde 3 yaklaşımı, o dönemin belirli uygulamalarına ait bir ölçüttür; bütün SPE’lere uygulanabilen evrensel bir konsolidasyon muafiyeti değildir. Bugünün kontrol ve konsolidasyon çerçevesini geriye yürütüp 1990’ların denetçisini o metinle yargılamak da doğru olmaz. Buna karşılık, o dönemde gereken sermayenin gerçekten riske maruz kalıp kalmadığı o gün de incelenmesi gereken bir soruydu [3, 7].
+
+Varsayımsal bir projede dış yatırımcı 3 milyon koyuyor, proje 100 milyon borçlanıyor olsun. Yatırımcının 3 milyonu ana şirketin bloke hesabı veya garantisiyle tamamen korunuyorsa, görünen dış sermaye ekonomik olarak bağımsız bir zarar tamponu değildir. Ben oranı tekrar hesaplamaktan önce bu teminatın neyi değiştirdiğini değerlendirmek isterim.
+
+Konsolidasyon yalnızca borcu eklemek değildir. Yapının varlıkları, gelir ve giderleri de dahil edilir; grup içi alacaklar, borçlar ve kazançlar elimine edilir. “3 milyon borç dışarı taşındı, özkaynak 3 milyon arttı” demek tek başına bir muhasebe açıklaması değildir. Bilanço eşitliği, borcun silinmesinin karşılığında ne kaydedildiği açıklanmadan anlamlı olmaz. Teknik ekteki eğitim örneğinde bu nedenle varlığın devri, finansman ve konsolidasyon etkisi birlikte gösterilmiştir.
+
+Benim temel ilkem şudur: Hukuki ayrılık ekonomik bağımsızlık için kanıt olabilir, tek başına yeterli kanıt değildir. Ana şirketin destek vermeye mecbur kaldığı veya bütün riski fiilen taşıdığı bir yapıyı finansal analizden çıkarırsam, yatırımcıya gerçekten taşıdığı riskin eksik resmini sunarım.
+
+---
+
+## 10. Chewco ve JEDI: Dış sermayenin niteliği
+
+Chewco ve JEDI, Enron’da konsolidasyon kapsamının neden önemli olduğunu gösteren ana örneklerdir. Kasım 2001 açıklamasında Enron, Chewco’nun konsolidasyon dışında kalmak için gereken koşulları sağlamadığını, bunun JEDI’nin durumunu da etkilediğini belirtti. Powers soruşturmasının özetinde de bağımsız dış sermaye ve finansman yapısı merkezi sorun olarak yer alır [2, 3].
+
+Bu işlemlerde benim odaklandığım nokta, yatırımcı sermayesi gibi görünen kaynağın gerçekten kendi riskini taşıyıp taşımadığıdır. Kaynak borçla sağlanmış, teminatı işlem grubunun içinden gelmiş veya yatırımcı zarara karşı korunmuşsa, şirket dışarıdan özkaynak almış görünse de gerçek risk dağılımı çok farklı olabilir. Bu durumun sonucu yalnızca daha yüksek borç değildir; bağlı yapı üzerinden tanınan kazançların konsolidasyonda ortadan kalkması da mümkündür.
+
+Denetim sırasında şu soruları tek tek bağlardım: Dış yatırımcının sermaye koyduğu gün para nereden geldi? Fonlama için kim teminat verdi? Sermaye ne kadar süre içeride kaldı? Yatırımcının getirisi sabit miydi? Zarar gerçekleşirse hangi kişi veya şirket ödeme yapacaktı? Yönetim ilişkisi gerçekten bağımsız mıydı?
+
+Yatırımcıdan “Sermayeyi koydum” teyidi almak, paranın nihai kaynağı ve geri dönüş güvencesi hakkında yeterli bilgi vermez. Banka teyidinin yalnızca hesap bakiyesini doğrulaması da aynı sorunu taşır. Bu nedenle fon akışını baştan sona izlemek ve garanti belgelerini ayrı toplamak gerekir. İşlem anındaki uygunluk kadar daha sonraki sermaye çekişleri de incelenmelidir.
+
+Chewco vakasının bana öğrettiği, konsolidasyonun muhasebe departmanında verilen bir sınır kararı olmadığıdır. Şirketin riskinin hangi finansal tabloda görüleceğini belirleyen temel bir yatırımcı bilgisi meselesidir. Yanlış sınır çizildiğinde, bütün oranlar matematiksel olarak doğru hesaplanmış olsa da yanlış ekonomik alanı ölçer.
+
+---
+
+## 11. LJM: CFO masanın iki tarafında olduğunda
+
+Andrew Fastow’un CFO olarak Enron’un finansman ve raporlama kararlarında bulunurken LJM yapılarında da çıkar sahibi olması, ilişkili taraf meselesini somutlaştırır. Yönetim kurulunun belirli etik istisnalara izin vermesi, çıkar çatışmasını ortadan kaldırmadı. Powers incelemesi LJM varlık satışlarını, korunma işlemlerini ve gözetim zaaflarını ele aldı [3].
+
+Benim için çatışmanın özü şudur: Enron adına daha yüksek satış fiyatı isteyen kişi, karşı tarafta daha düşük alış fiyatından veya özel getiriden yararlanıyorsa, fiyat pazarlığının bağımsızlığı zayıflar. Her anlaşmayı geçersiz saymak için yalnızca ilişkili taraf olması yeterli değildir. Ancak bağımsız bir işlemde olağan sayılabilecek yönetim açıklaması, bu ortamda daha güçlü dış kanıt gerektirir.
+
+İlişkili yapıya varlık satışı dönem sonunda kâr üretiyor, sonraki dönemde geri alım veya zarar telafisi doğuruyorsa, ben yalnızca ilk satışın faturasıyla yetinmem. Geri alım niyeti, sözlü güvence, yan mektup, fiyat koruması ve sonraki nakit hareketi ekonomik riskin gerçekten devredilip devredilmediğini değiştirebilir.
+
+Bu nedenle kontrol tasarımını ikiye ayırırım. İşlem öncesi kontrol, çatışmanın bildirimi, bağımsız fiyatlama, yetki sınırı ve karar sürecinden çekilme gibi adımları kapsar. İşlem sonrası kontrol ise şartların değişmesini, ilişkili tarafın kazancını, geri satın almaları ve istisnaların tekrarını izler. Sadece ilk onay tutanağının bulunması, ikinci kontrolün çalıştığını kanıtlamaz.
+
+Bir denetçi olarak yönetim kurulunun izin verdiği işlemi otomatik olarak uygun kabul edemem. Yönetim kurulu ticari kararı onaylamış olabilir; finansal raporlamanın doğruluğu ayrı bir sorudur. Etik çatışmaya verilen istisna da muhasebe istisnası değildir. Bu ayrımı korumadığım anda gözetim zinciri, birbirine atıf yapan fakat kimsenin bağımsız karar vermediği bir sisteme dönüşür.
+
+---
+
+## 12. Raptor: Korunmanın kendisi zayıfsa
+
+Raptor yapılarında sorun, yatırımların zararına karşı görünürde korunma sağlanırken karşı tarafın ödeme gücünün önemli ölçüde Enron hisselerine dayanmasıydı. Yatırım değerleri ve Enron hissesi birlikte zayıfladığında, koruma sağlayacak kaynağın kendisi de zayıflıyordu. SEC’nin Glisan’a ilişkin açıklaması, Raptor işlemlerinin zararların sonuçlara yansıtılmasını önleyen düzmece korunmalar olarak ileri sürüldüğünü gösterir [7].
+
+Bir riskten korunma sözleşmesi denetlediğimde iki soruyu ayrı sorarım: Sözleşme şirketin maruz kaldığı fiyat riskini dengeliyor mu? Karşı taraf sözleşme gereği ödeme yapmak zorunda kaldığında bunu gerçekten ödeyebilecek mi? İlk soruya olumlu cevap, ikincisinin yerini tutmaz. Finansal tabloda türev alacağı tanımak, alacağın ekonomik güvencesini yaratmaz.
+
+Varsayımsal olarak 100 milyon dolarlık yatırımımı 30 milyon değerindeki kendi hissemle desteklenen bir yapıya karşı koruduğumu düşünelim. Yatırımım 50 milyon kaybediyor, hisselerimin değeri 10 milyona düşüyorsa sözleşmede 50 milyon alacak yazabilir. Ama yapının 50 milyonu ödeme kaynağı yoksa koruma ekonomik olarak tamamlanmamıştır. Eksiği başka bir şirket içi transferle kapatmak, dışarıya risk devri sağlamaz.
+
+Burada ters yönlü risk ortaya çıkar: Koruma alacağının arttığı olumsuz durumda karşı tarafın ödeme kapasitesi azalır. Günlük değerlendirmede küçük görünen bu bağlantı, kriz anında belirleyici olabilir. Ben yalnızca normal piyasa günündeki teminat yeterliliğini değil, eşzamanlı fiyat düşüşünü, teminat kesintisini ve sözleşme feshi ihtimalini birlikte sınarım.
+
+Kendi hissesine dayalı yapıların bir diğer sorunu, şirketin hisse fiyatı ile bilançosunun aynı anda destek unsuru hâline gelmesidir. Hisse fiyatı düştüğünde sadece piyasa değeri azalmaz; yapıların taşıdığı kredi gücü de bozulabilir. Bu nedenle iyi görünen muhasebe koruması, şirketin genel kredi riskini artıran bir bağımlılık da yaratabilir.
+
+Ben Raptor’u sadece bir türev muhasebesi tartışması olarak okumuyorum. Şirketin kendi itibarına ve hisse fiyatına dayanan bir korunma düzeninin, o itibar sarsıldığı anda nasıl çözündüğünü gösteren karşı taraf riski vakası olarak görüyorum.
+
+---
+
+## 13. Yan anlaşmalar: Satışın biçimi, finansmanın özü
+
+Nijerya enerji mavnaları işlemi, ana sözleşmenin ekonomik mahiyeti tek başına anlatmayabileceğini gösterir. SEC’nin Merrill Lynch dava dilekçesinde, 1999 sonundaki işlemde Merrill’in altı ay içinde belirli getiriyle çıkarılmasına ilişkin güvence bulunduğu ve Enron’un işlemden 12 milyon dolar kazanç kaydettiği ileri sürülür. Bu anlatım bir dava iddiasıdır; onu tek başına bütün taraflar hakkında kesinleşmiş hüküm saymıyorum [8].
+
+Bu tür bir işlemde benim değerlendirmem, alıcının gerçekten varlık riskini alıp almadığına dayanır. Alıcının çıkış zamanı ve getirisi güvence altındaysa, varlığın değer değişiminden doğan kazanç veya kayıp ana şirkette kalıyorsa, satış görünümü altında fonlama olabilir. Ben alıcının neden satın aldığını, nasıl fiyatladığını ve zarar ihtimaline karşı ne yaptığını araştırırım.
+
+Benzer bir sorunu SEC’nin CIBC’ye ilişkin dosyası da ortaya koyar. Dava açıklamasında 1998-2001 arasındaki 34 finansmanın varlık satışı biçiminde düzenlendiği, Enron’un yaklaşık 2,66 milyar dolar fon sağladığı ve ekonomik riskin Enron’da kaldığı ileri sürülmüştür. CIBC 80 milyon dolarlık uzlaşmaya gitmiştir; hukuki kabul koşulları ilgili belgede ayrıca değerlendirilmelidir [9].
+
+Bu rakamların anlamını doğru korurum. Yaklaşık 2,66 milyar dolar, belirli bir dönem boyunca sağlanan toplam fonlamadır. Bir bilanço gününde açık kalan borçla aynı şey değildir. Aynı şekilde Citigroup’un prepay toplamını, CIBC işlemlerini ve başka yapıların borçlarını kontrol etmeden üst üste toplayarak “Enron’un gerçek borcu” hesabı yapmam. İşlem dönemleri, geri ödemeler, ortak yapılar ve çakışmalar ayrıştırılmalıdır.
+
+Denetimin burada yakalaması gereken şey, üçüncü tarafın varlığı değil; üçüncü tarafın taşıdığı gerçek risktir. Ayrı banka, ayrı şirket ve ayrı sözleşme olması bağımsız ekonomik işlem izlenimi yaratabilir. Ama bütün tarafların getirisi Enron tarafından güvence altına alınıyorsa, ekonomik yük yine Enron’dadır.
+
+---
+
+## 14. Kasım 2001 düzeltmesini nasıl okuyorum?
+
+8 Kasım 2001 Form 8-K’sında açıklanan denetlenmemiş düzeltmeler, görünümün belirli boyutlarını sayısal olarak karşılaştırmaya imkân verir. 2000 net kârı 979’dan 847 milyon dolara; borç 10.229’dan 10.857 milyon dolara; özkaynak 11.470’ten 10.306 milyon dolara değişmektedir [2].
+
+| 2000 Yılı / Yıl Sonu | İlk Raporlanan | 8 Kasım Tablosu | Değişim |
+| :--- | :--- | :--- | :--- |
+| Net kâr, milyon $ | 979 | 847 | -132 |
+| Finansal borç, milyon $ | 10.229 | 10.857 | +628 |
+| Özkaynak, milyon $ | 11.470 | 10.306 | -1.164 |
+| Finansal borç / özkaynak | 0,892 | 1,053 | +0,161 |
+
+132 milyon dolarlık kâr azalması yaklaşık yüzde 13,48’dir. 628 milyon dolarlık borç artışı ve 1.164 milyon dolarlık özkaynak azalması da önemlidir. Fakat benim için daha ağır mesele, belirli bir yanlışlığın düzeltilmesinden sonra bile diğer tabloların güvenilirliğinin yeniden sınanması gerekmesidir. Bir konsolidasyon kararının yanlış çıkması, başka yapıların aynı mantıkla kurulup kurulmadığını araştırmayı gerektirir.
+
+Bu tablo nihai iflas zararının, bütün gizlenmiş borcun veya bütün ekonomik yükümlülüğün hesabı değildir. Raptor özkaynak etkisi, konsolidasyon düzeltmeleri ve önceki denetim farkları farklı niteliktedir. Aynı işlemi bir kez kârda, bir kez özkaynakta, bir kez borçta sayıp toplam zarar üretmek yanlış olur. Finansal tabloların birbirine bağlı olması, düzeltmelerin de bağlantılı incelenmesini gerektirir.
+
+Kredi incelemesinde önceki oranı ve düzeltilmiş oranı yan yana koyarım; sonra bir duyarlılık alanı açarım. Tespit edilmemiş veya ölçülmemiş yükümlülük varsa kesin düzeltilmiş borç oranı veremem. Bu belirsizlik, iyi görünen bir rakamla kapatılmamalıdır. Karar verene bilinmeyenin nerede bulunduğu açıkça anlatılmalıdır.
+
+---
+
+## 15. Andersen’ın imzaladığı görüş ile sonraki bulgular
+
+Arthur Andersen LLP, Enron’un bağımsız dış denetçisiydi. 2000 Form 10-K içinde yer alan 23 Şubat 2001 tarihli raporda, 2000 ve 1999 bilançoları ile 1998-2000 döneminin ilgili tabloları için olumlu görüş verdi. Rapordaki 1999 muhasebe yöntemi değişikliklerine atıf, kendi başına şartlı veya olumsuz görüş değildir. Bunun ardından Kasım 2001’de eski tablolara ve ilgili denetim raporlarına güvenilmemesi gerektiği açıklandı [1, 2].
+
+Bu kronoloji, denetim görüşünün ne işe yaradığını ve neyi garanti etmediğini tartışmayı zorunlu kılar. Olumlu görüş, şirketin hiçbir zaman batmayacağına veya her yatırım kararının doğru olduğuna dair garanti değildir. Buna karşılık, önemli yanlışlık içeren tablolar karşısında “denetim iflası önlemekle görevli değildir” demek de yeterli savunma olmaz. Şirketin ticari başarısı ile finansal raporlamanın güvenilirliği birbirinden ayrılmalıdır.
+
+Ben denetim kalitesini sonuçtan başlayıp geriye doğru araştırırken, verilen görüşü denetim dosyasındaki kanıtla karşılaştırırım. Yönetimin muhasebe tercihini kabul etmek için hangi belge vardı? Teknik danışmanın itirazı nasıl çözüldü? Belirlenen yüksek riske karşı hangi ilave prosedür yapıldı? Karşı tarafın bağımsızlığı hangi dış teyitle doğrulandı? Önemli varsayımlar kim tarafından sınandı?
+
+Denetimin sorunu yalnızca bir hatanın bulunamamış olması olmayabilir. Hata bulunmuş, risk anlaşılmış veya görüş ayrılığı kayda geçmiş; fakat ticari ilişkiyi korumak adına sonuç değiştirilmemiş olabilir. Bu ihtimaller birbirinden farklıdır. İlkinde yöntem ve uzmanlık yeterliliği, ikincisinde bağımsızlık ve karar süreci daha çok önem kazanır.
+
+Benim mesleki ölçümüm, denetim şirketinin büyüklüğü veya itibarı değildir. İtibar geçmiş performansın ürünüdür; yeni işlem için kanıt oluşturmaz. Büyük bir denetim firmasının adı, önemli varsayımlar ve ilişkili yapılar hakkındaki belirsizliği kendiliğinden çözmez. Enron, dışarıdan güçlü görünen bir güvence zincirinin içinde ciddi zayıflıklar bulunabileceğini gösterir.
+
+---
+
+## 16. Andersen’ın kendi savunmasını da dinliyorum
+
+Andersen CEO’su Joseph F. Berardino’nun 12 Aralık 2001 Kongre ifadesi, şirketin kendi açıklamasını okumak için önemli bir birincil kaynaktır. Berardino, büyük SPE düzeltmesine ilişkin önemli bilgilerin ekibe açıklanmadığını; daha küçük bir konuda ise değerlendirme hatası yaptıklarını söyledi. Ücretlerin bağımsızlığı zayıflattığını kabul etmedi ve denetim dışı ücretlerin tamamını klasik yönetim danışmanlığı sayan yaklaşımı sorguladı. Bunlar Andersen tarafının savunmasıdır [4].
+
+Ben bu açıklamayı iki ayrı soruya dönüştürürüm. Birincisi, yönetim gerçekten bilgi sakladıysa denetçi bunun ortaya çıkmasını sağlayacak yeterli prosedür tasarladı mı? İkincisi, muhasebe yargısında hata varsa bu tekil bir yanlış karar mıydı, yoksa yüksek riskli ortamda sorgulama mekanizmasının yetersizliğini mi gösteriyordu?
+
+Yönetimin bilgi saklaması denetimi zorlaştırır. Fakat denetçinin görevi yalnızca yönetimin sunduğu dosyanın düzgün olup olmadığını incelemek değildir. Özellikle ilişkili taraf, dönem sonu işlem ve karmaşık finansman riskleri biliniyorsa, eksik veya yanıltıcı açıklama ihtimali prosedürün tasarımına girmelidir. Denetçi her gizli anlaşmayı kesin olarak bulamaz; ancak bilinen risk karşısında yalnızca yönetim beyanına dayanması da yeterli değildir.
+
+Denetim ücretleri tartışmasında da basit bir neden-sonuç kurmam. Yüksek ücret, tek başına belirli muhasebe kararının satın alındığını kanıtlamaz. Ancak müşteri kaybının ortak, ofis veya ekip üzerindeki etkisi bağımsızlığı tehdit edebilir. Ben ücret türünü, toplam ilişkiyi, teknik danışmanlık ile denetim rollerinin çakışmasını ve kurum içindeki karar yetkisini birlikte incelerim.
+
+Bu nedenle Andersen’ın kendi savunmasını belgeye dahil etmek, denetim başarısızlığını hafifletme amacı taşımaz. Sağlam bir mesleki değerlendirme, tarafın açıklamasını görmeli; ardından onu işlem belgeleri, dış teyitler ve sonraki bulgularla sınamalıdır. Denetimde adil olmak, eleştiriyi zayıflatmak değildir. Eleştirinin kanıta dayanmasını sağlamaktır.
+
+---
+
+## 17. Risk yazılmıştı; karşılığı nerede?
+
+SEC’nin 2008 Duncan dosyasında, Andersen’ın iç değerlendirmelerinin Enron’u en yüksek risk sınıfında gördüğü; agresif muhasebe, kâr hedeflerine aşırı vurgu, dönem sonu alışılmadık işlemler, ilişkili taraflar ve borç bağımlılığı gibi unsurların belirlendiği anlatılır. SEC, buna rağmen yeterli mesleki özen ve şüpheciliğin gösterilmediğini ileri sürdü. Duncan iddiaları kabul veya inkâr etmeksizin uzlaştı [5].
+
+Bu bulgunun benim için önemi, risk farkındalığının prosedüre dönüşmesi gerektiğidir. Hile riski yüksek dediğim müşteride olağan müşteriye uyguladığım çalışma düzeyini değiştirmiyorsam, değerlendirme raporum işe yaramıyor demektir. Denetim riski yaklaşımında önemli yanlışlık riski yükseldikçe, elde edilen kanıtın kapsamı ve gücü artırılmalıdır. Bu, daha fazla belge saymakla sınırlı değildir; daha uygun belgeyi seçmek demektir.
+
+Örneğin bağımsız olduğu söylenen bir SPE için yönetimin organizasyon şemasını almak yerine gerçek faydalanıcıyı, sermaye kaynağını ve karar yetkisini araştırırım. Varlık satışında faturayı doğrulamak yerine risk ve kontrol devrini, sonraki geri alımı ve satıcı desteğini incelerim. Türev alacağında değerleme formülünü kontrol etmekle yetinmeyip karşı tarafın ödeme gücünü sınarım.
+
+Mesleki şüphecilik, herkesin yalancı olduğunu varsaymak değildir. Kanıtlar arasındaki çelişkiyi fark etmek ve çözülene kadar kararı açık tutmaktır. Yönetim işlemde risk devrettiğini söylüyor, bankanın belgesinde garanti bulunuyorsa, iki bilgi aynı anda açıklanmalıdır. Denetçinin görevi daha rahatlatıcı olan açıklamayı seçmek değil, çelişkinin ekonomik sonucunu belirlemektir.
+
+Ben denetim ekibinin çalışma saatlerinden önce kritik karar izini görmek isterim. Kim itiraz etti? Hangi yeni kanıt itirazı çözdü? Görüş değiştiyse hangi gerekçe yazıldı? Yönetimin talebiyle değişen bir değerlendirme bağımsız teknik incelemeye gitti mi? Riskin kâğıt üzerinde görünmesi değil, bu soruların cevaplanması denetim kalitesini gösterir.
+
+---
+
+## 18. Belge imhası ve 2005 kararı
+
+Andersen’ın belge imhası, Enron vakasının ceza ve meslek boyutlarının kesiştiği bir alandır. 2002’deki engelleme mahkûmiyeti, ABD Yüksek Mahkemesinin 31 Mayıs 2005 tarihli Arthur Andersen LLP v. United States kararıyla bozuldu. Mahkeme, jüri talimatlarının ilgili suçun unsurlarını doğru aktarmadığını değerlendirdi [17].
+
+Ben bu karardan “Andersen’ın Enron denetimi doğru bulundu” sonucunu çıkarmam. İncelenen mesele, ceza sorumluluğunun belirli kanuni unsurları ve jüriye verilen talimattı. Bir ceza kararının bozulması ile denetimin mesleki yeterliliğinin olumlu değerlendirilmesi aynı şey değildir. Aynı şekilde, belge imhasının varlığından hareketle bütün muhasebe yargılarının tek tek yanlış olduğu sonucuna da gitmem. Her başlık kendi kanıtıyla ele alınmalıdır.
+
+Mesleki açıdan belge saklama, denetimin hafızasıdır. Kritik kararların gerekçesi, hangi karşı kanıtın görüldüğü ve kim tarafından onaylandığı kayıt altında değilse, sonradan denetimin nasıl yürütüldüğünü anlamak güçleşir. Çalışma kâğıdının değeri, yalnızca bir işlemin yapıldığını işaretlemek değildir. Görüşün neden savunulabilir olduğunu göstermektir.
+
+Bir saklama politikasının bulunması da tek başına uygunluk kanıtı olmaz. Politikanın ne zaman, hangi amaçla ve hangi bağlamda uygulandığı önemlidir. Soruşturma veya hukuki süreç ihtimali ortaya çıktığında belgenin korunması hakkında alınan kararlar, ayrı bir mesleki ve hukuki değerlendirme gerektirir.
+
+Andersen’ın ticari çözülüşü, mesleki itibarın ne kadar kırılgan olduğunu gösterir. Hukuki bir karar yıllar sonra değişebilir; fakat kaybedilen müşteriler, dağılan ekipler ve çöken güven aynı hızla geri dönmez. Benim için bu vaka, bağımsız denetimin temel sermayesinin yalnızca uzman insan kaynağı değil, kamuoyunun verilen görüşe duyduğu güven olduğunu hatırlatır.
+
+---
+
+## 19. Yönetim kurulu, denetim komitesi ve Watkins
+
+Yönetim kurulunun görevi her türev işlemi yeniden fiyatlamak değildir. Ancak şirketin stratejisi, risk iştahı, finansman ihtiyacı ve yöneticiler arasındaki çıkar çatışması hakkında işleyen bir gözetim düzeni kurması gerekir. Senato’nun Enron yönetim kuruluna ilişkin incelemesi, bu gözetimin yetersizliğini ayrı bir sorumluluk alanı olarak ele alır [18].
+
+Ben bir denetim komitesinin başarısını kaç toplantı yaptığıyla ölçmem. Hangi soruların açık kaldığına, denetçinin yönetim olmadan ne söylediğine ve verilen taahhütlerin sonraki toplantıda nasıl izlendiğine bakarım. CFO’nun ilişkili karşı tarafta çıkarı varsa, yönetim raporunu hazırlayan kişinin kendisi sorunlu alanın içinde olabilir. Bu durumda komitenin bağımsız bilgi kanalı daha da önemlidir.
+
+Sherron Watkins’in yönetim içindeki uyarıları da kontrol ortamının önemli bir parçasıdır. Böyle bir uyarının gelmesi, yalnızca muhasebe yorumunun incelenmesini gerektirmez. İşletmede çalışanların ciddi kaygıları hangi yollarla dile getirebildiğini, bu uyarının nasıl bağımsız değerlendirildiğini ve uyarıyı yapan kişinin korunup korunmadığını sorgulatır.
+
+Ben içeriden gelen şikâyeti otomatik doğru kabul etmem. Ama normal bir yönetim cevabıyla kapatmam. İddianın konusu ilişkili yapı veya finansal raporlamaysa, incelemeyi aynı işlemi tasarlayan kişilere teslim etmek uygun bir bağımsızlık sağlamaz. Belge, para akışı ve yetki ilişkisi üzerinden tarafsız doğrulama gerekir.
+
+Gözetim zincirindeki diğer bir tehlike, sorumluluğun sürekli başka uzmana devredilmesidir. Yönetim kurulu denetçiye, denetçi hukukçunun işlem görüşüne, hukukçu yönetimin verdiği bilgiye dayanırsa, görünürde çok uzmanlı bir süreç oluşur. Fakat kimse bütün ekonomik tabloyu üstlenmez. Ben kurulun en azından bir yerde bu ayrı görüşleri birleştirip “Bu işlem grubun riskini gerçekten azaltıyor mu?” sorusunu sormasını beklerim.
+
+---
+
+## 20. McKinsey: Yetenek, teşvik ve gerçek değer
+
+McKinsey başlığını iki düzeyde ele alıyorum: Enron’un danışmanlık ve yetenek kültürü hakkındaki tarihsel eleştiri, ardından McKinsey’nin kendi yayımladığı değer ve ücretlendirme çerçevesi. Böylece kurumun yönetim fikirlerini ekonomik sonuçları üzerinden değerlendirebiliyorum.
+
+Malcolm Gladwell’in 2002 tarihli The Talent Myth yazısı, Enron ile McKinsey’nin yetenek merkezli yönetim anlayışını eleştirir. Yazının sorusu, yıldız çalışanları yüceltmenin güçlü bir organizasyon ve hesap verebilirlik için yeterli olup olmadığıdır. Bu bir gazetecilik eleştirisidir; muhasebe hilesinin McKinsey tarafından tasarlandığını kanıtlayan bir hukuki tespit değildir [14].
+
+McKinsey’nin kendi sitesinde The War for Talent yaklaşımının 1997’de adlandırıldığı ve 2001 tarihli kitapla yaygınlaştığı belirtilir. Kitabın yazarları Ed Michaels, Helen Handfield-Jones ve Beth Axelrod’dur [11]. Ben yetenekli çalışan aramanın kendisine itiraz etmem. Sorun, kişiye duyulan güvenin işlem kontrolünün yerine geçmesi ve yüksek kazanç yaratan kişinin kurallardan fiilen muaf hâle gelmesidir.
+
+Bir şirket “çok zeki insanlar çalıştırıyoruz” dediğinde denetçi olarak bundan rahatlamam. Daha karmaşık işlem tasarlayabilme kapasitesi, daha güçlü sorgulama kapasitesi gerektirir. İşletme yalnızca sonuç üreten kişiyi ödüllendirip hangi riskle o sonucu ürettiğini ölçmüyorsa, organizasyonun becerisi aynı zamanda zayıflığı hâline gelebilir.
+
+McKinsey’nin 2003 stock option değerlendirmesi, standart hisse opsiyonlarının yönetimin gerçek katkısı ile piyasa yükselişini ayıramayabileceğini ve risk alma teşvikini değiştirebileceğini tartışır. Değer temelli yönetim yazısı ise net kâr ve hisse başına kazancın sermaye maliyetini yeterince göstermediğini vurgular [12, 13]. Bunlardan çıkardığım mesleki sonuç, performansın bir muhasebe rakamı veya hisse fiyatıyla tek başına ödüllendirilmemesidir.
+
+Benim kullanacağım varsayımsal ekonomik kâr hesabı şöyle olur: Vergi sonrası faaliyet kazancı 100, kullanılan sermaye 1.000 ve sermaye maliyeti yüzde 12 ise ekonomik kâr 100 - 120 = -20’dir. Şirket muhasebe açısından kârlı görünürken sermaye maliyetini karşılamıyor olabilir. Bu Enron’un ekonomik kâr hesabı değildir; yönetim ölçüsünün neden değişmesi gerektiğini anlatır.
+
+Ücretlendirmeyi de tahmin edilen kazancın tamamını hemen ödüllendirecek şekilde tasarlamam. Tahsilat, sonraki dönem zararları, kullanılan sermaye ve limit ihlalleri hesaba katılmalıdır. Uzun vadeli sözleşme kazancını ilk gün prim hesabına tam olarak sokmak, işlemin nihai riskini prim alan kişiden sonraki yıllara taşıyabilir. İyi teşvik düzeni yalnızca kazancı paylaşmaz; hatalı riskin sonucunu da karar sürecine geri taşır.
+
+---
+
+## 21. Piyasadaki diğer gözetmenler neden yetmedi?
+
+Enron hakkında çok sayıda uzman, denetçi, banka, analist, kredi değerlendirmesi ve yönetim kurulu vardı. Bu bolluk, etkili gözetim olduğu anlamına gelmedi. Healy ve Palepu’nun The Fall of Enron makalesi sermaye piyasası aracılarının kendi yönetişim ve teşvik problemlerini inceleyerek vakayı geniş bir sistem içinde ele alır. GAO da kurumsal yönetim, bağımsız denetim, meslek gözetimi ve raporlamanın birlikte değerlendirilmesi gerektiğini belirtir [15, 16].
+
+Ben bir aracı kurum raporunu okurken sadece son öneriye bakmam. Şirket yönetimiyle erişim ilişkisi, yatırım bankacılığı hizmeti, ücret kaynağı ve raporun varsayımları da önemlidir. Analistin şirketi anlaması için yönetime erişmesi gerekir; fakat aynı erişimi koruma kaygısı, zor soru sorma kabiliyetini zayıflatabilir.
+
+Bankanın işlemde bulunması da işlemin ekonomik sunumunu kendiliğinden doğrulamaz. Banka kendi kredi riskini teminatla güvence altına almış olabilir. Bu, yatırımcının Enron’un toplam borç ve nakit görünümünü doğru gördüğü anlamına gelmez. Finansörün risk açısından rahat olması ile şirketin yatırımcısına doğru rapor vermesi farklı meselelerdir.
+
+Kredi notu için de aynı ayrımı yaparım. Not, belirli bilgi ve varsayımlar altında verilmiş bir değerlendirmedir. Yanlış veya eksik raporlama bu değerlendirmeye girdi olarak taşınıyorsa, notun dışarıdan bağımsız görünmesi eksik bilgiyi tamamlamaz. Şirketin bütün güven zinciri aynı açıklamalardan besleniyorsa, çok sayıda görüş aynı belirsizliği tekrar edebilir.
+
+Kandemir ve Kandemir’in 2012 çalışması, Enron’u yalnızca yöneticilere ve bağımsız denetçiye indirgemeden sistemik başarısızlık içinde okur [23]. Ben bu yaklaşımı, belirli kişilerin sorumluluğunu dağıtmak için değil, gelecekte aynı sonucun oluşmasını sağlayabilecek mekanizmaları bulmak için değerli görüyorum. Mesleki sorumluluk somuttur; önleme çalışması ise birden çok kontrol alanını kapsamalıdır.
+
+Healy-Palepu makalesi, Dharan-Bufkins çalışması ve Kandemir-Kandemir makalesi birbirini tamamlayan üç okuma hattı oluşturur. İlki piyasa aracılarının teşviklerine, ikincisi finansal göstergelerin uyarı işaretlerine, üçüncüsü sistemik derslere odaklanır. Ben teknik denetimin bu üç bakışı birlikte taşıması gerektiğini düşünüyorum: Kayıtların doğruluğu, göstergelerin ekonomik anlamı ve insanların bu göstergeler karşısında nasıl davranmaya teşvik edildiği.
+
+---
+
+## 22. Güven kaybı neden hızla likidite krizine döndü?
+
+Enron’un 2001 çöküşünü yalnızca bilanço düzeltmesinin büyüklüğüyle açıklamak eksik olur. Güvene dayalı ticaret ve fonlama yapan bir şirkette güven kaybı, gelecekteki zararın tartışılması olmaktan çıkıp hemen nakit ihtiyacı doğurabilir. Karşı taraf limitleri azalır, teminat talepleri artar, kredi hatlarının kullanılabilirliği değişir ve işlemlerin çevrilmesi zorlaşır.
+
+Ben bu mekanizmayı üç bağlantı üzerinden okurum. Önce raporlamaya duyulan güven zayıflar. Sonra şirketin borç ödeme ve ticari yükümlülüklerini yerine getirme kapasitesi daha sert sorgulanır. Son olarak sorgulamanın kendisi nakit talebini artırır. Şirket, normal işleyen günlerde gerekmeyen teminatı kötü günlerde hızla bulmak zorunda kalır.
+
+Hisse fiyatının finansman ve korunma yapılarında destek olarak kullanıldığı yerde bu sarmal daha da güçlenir. Hisse düştüğünde piyasa değerinin yanında sözleşmesel güvence de zayıflar. Aynı anda varlık değeri, karşı taraf güveni ve finansman erişimi bozulabilir. Tek tek yönetilebilir görünen riskler, ortak tetikleyici nedeniyle eşzamanlı hâle gelir.
+
+2001 sonunda kredi notu ve fonlama baskısı, Dynegy işleminin başarısızlığıyla birleşti; Enron 2 Aralık 2001’de iflas korumasına başvurdu [15]. Ben bunu yalnızca “piyasa panik yaptı” diyerek açıklamam. Paniği besleyen raporlama ve ekonomik risk sorunları vardı. Fakat yeterli likidite tamponu olmayan şirketin güven kaybını hızla atlatamaması da sonucun önemli parçasıdır.
+
+Çalışanların uğradığı kayıp, vakanın bilanço dışındaki boyutunu gösterir. Aynı şirkete bağlı iş geliri ve emeklilik birikimi, tek işletme riskinde yoğunlaşabilir. Ben finansal denetimin kamu işlevini burada görüyorum: Raporun muhatabı yalnızca profesyonel yatırımcı değil; o güven zincirine emeği ve birikimiyle dahil olmuş insanlardır.
+
+| Aşama | Ekonomik Etki | Denetçi ve Analistin İzlemesi Gereken Alan |
+| :--- | :--- | :--- |
+| Açıklamalar sorgulanır | Bilgi riski yükselir | Açık kalan raporlama sorunları |
+| Limitler daralır | İşlem ve fonlama kapasitesi düşer | Gerçekte kullanılabilir kredi hatları |
+| Teminat talepleri artar | Hemen nakit gerekir | Nakit, likit teminat ve sözleşme tetikleyicileri |
+| Varlık satışı zorlaşır | Normal değerle hızlı satış değeri ayrışır | Gerçekleşebilir değer ve satış süresi |
+| Kendi hissesi zayıflar | Destek yapıları bozulabilir | Ortak risk kaynağı ve korelasyon |
+| Fonlama kesilir | Süreklilik baskısı ağırlaşır | Günlük ve haftalık nakit açığı |
+
+---
+
+## 23. Sarbanes-Oxley: Düzenleme neyi değiştirdi?
+
+Enron ve aynı dönemdeki diğer skandalların ardından kabul edilen 2002 Sarbanes-Oxley Act; halka açık şirket denetiminin gözetimi, denetçi bağımsızlığı, yönetici beyanları ve iç kontrol raporlamasını yeniden şekillendirdi. PCAOB’nin kuruluşu, denetim komitesinin rolü, belirli denetim dışı hizmet sınırlamaları, 302 kapsamındaki yönetici sertifikasyonu ve 404 kapsamındaki iç kontrol değerlendirmesi bu çerçevenin önemli başlıklarıdır. Bölümlerin uygulanma şartları ve istisnaları şirketin durumuna göre ayrıca değerlendirilir [19].
+
+Ben düzenlemenin katkısını, sorumluluğun daha belirgin hâle gelmesinde görüyorum. Finansal tablo doğruluğu yalnızca muhasebe ekibine bırakılabilecek bir iş değildir. Üst yönetim, denetim komitesi ve dış denetçi kendi rolünü görünür biçimde üstlenmelidir. Aynı şekilde mesleğin gözetimi yalnızca mesleğin kendi içindeki ilişkilere dayanmamalıdır.
+
+Ancak düzenleme tek başına mesleki cesaret üretmez. Hedefi tutturamayan yöneticinin cezalandırıldığı, problem bildiren çalışanın dışlandığı ve önemli müşteriye itiraz eden denetçinin ticari bakımdan baskı gördüğü bir ortamda, daha fazla form aynı sorunu çözmeyebilir. Kontrolün gerçek başarısı, yönetimin istemediği bir sonucu da ortaya çıkarabilmesidir.
+
+Bu nedenle prosedürün varlığı ile etkinliğini ayırırım. İlişkili taraf politikası vardır; ama istisna sürekli genişliyorsa etkili değildir. Denetim komitesi vardır; ama bağımsız bilgi alamıyorsa zayıftır. Model kontrolü vardır; ama her değişikliği yönetim onaylıyorsa yeterli mesafeyi sağlamaz. Denetçi görüşü vardır; ama çözülmeyen önemli riskleri yansıtmıyorsa kullanıcıyı korumaz.
+
+Enron’un Türkiye için değeri de burada ortaya çıkar. ABD’nin düzenlemesini kopyalamaktan önce, ekonomik özün doğru okunmasını, bağımsız bilgi kanallarını ve riskin karar verene açık anlatılmasını sağlamalıyız. Bir şirketin büyük olması, sahibinin itibarı veya bankalarla çalışması bu gerekliliği azaltmaz.
+
+---
+
+## 24. Böyle bir şirketi nasıl incelerdim?
+
+Enron benzeri bir işletmenin denetiminde başlangıç noktası yalnızca hesap listesi değildir. İş modeli, şirket yapısı, sözleşme mimarisi ve teşvik düzeni birlikte haritalanmalıdır. Hangi işlem kâr doğuruyor, hangi yapı fon sağlıyor ve hangi koşul nakit ihtiyacı yaratıyor? Bu üç harita üst üste konmadan kritik bağlantılar görünmeyebilir.
+
+Önce kritik işlemlerin evrenini oluştururum: Önemli dönem sonu kayıtları, ilişkili şirketler, yöneticilerin çıkarı bulunan karşı taraflar, alışılmadık varlık satışları, model değerlemeleri ve ticaret biçimindeki fonlamalar. İnceleme yalnızca muhasebe defterindeki açıklamayla sınırlı kalmaz. Hukuk, hazine, risk yönetimi ve yönetim kurulu belgeleri aynı işlem kimliğiyle birleştirilir.
+
+Ardından kanıt stratejisini kurarım. Yönetim beyanını işlemin ekonomik açıklaması olarak alabilirim; fakat bağımsızlığı ve tamlığı kanıtlamak için dış bilgi gerekir. Karşı taraf teyidinde bakiye yanında şartları, garanti ve yan düzenlemeleri sorarım. Dönem sonrası ödemeleri, geri alımları ve sözleşme değişikliklerini izlerim. Bir işlem için verdiğim sonucu diğer işlemde kopyalamam; aynı modelin farklı taraf ve şartlarla farklı ekonomik sonuç yaratabileceğini kabul ederim.
+
+Model değerlemesinde fiyat kaynağını, likiditeyi, kredi riskini, parametre değişimini ve yetki izini ayrı incelerim. Değerleme uzmanının çalışması denetçi sorumluluğunu ortadan kaldırmaz. Uzman doğru yöntem kullanmış olabilir; ancak yönteme giren sözleşme şartları eksikse sonuç hâlâ sorunludur.
+
+Borçların tamlığı için defterde olmayan yükümlülükleri özellikle araştırırım. Borç hesabında görünmeyen finansman, garantiler, teminat tamamlama şartları, erken ödeme tetikleyicileri ve iştirak desteği bu kapsamdadır. Denetçinin yalnızca kayda giren borcu doğrulaması, kayıt dışı veya yanlış sınıflanmış ekonomik borcu bulmaz.
+
+| Risk | Arayacağım Kanıt | Sonucun Anlamı |
+| :--- | :--- | :--- |
+| Değerleme ile kâr üretimi | Bağımsız fiyat, alternatif model, gerçekleşen sonuç | Değerin makul aralıkta bulunması |
+| Gerçek risk devri olmadan satış | Ana ve yan anlaşmalar, sonraki geri alım | Satış mı, fonlama mı olduğunun anlaşılması |
+| Bağımsız görünmeyen SPE | Sermaye kaynağı, faydalanıcı, kontrol ve teminat | Konsolidasyon sınırının değerlendirilmesi |
+| Finansmanın faaliyet nakdine yazılması | Fon akış zinciri, eşzamanlı swaplar | Nakit sınıflandırmasının düzeltilmesi |
+| Yetersiz karşı taraf gücü | Teminat niteliği, stres, kredi kapasitesi | Korunma alacağının tahsil edilebilirliği |
+| Yönetimin kontrolü aşması | Manuel kayıtlar, onay izi, dönem sonu değişimler | Kontrol ortamının gerçek etkinliği |
+| Açıklanmayan bağlılıklar | Hukuk teyitleri, garanti ve fonlama belgeleri | Yükümlülük tamlığı ve açıklama ihtiyacı |
+| Süreklilik baskısı | Nakit planı, hat erişimi, tetikleyici senaryolar | Ödeme kapasitesinin şartları |
+
+Bu çerçevede olumlu görüş önceden hedeflenen sonuç değildir. Denetim sonucunun, elde edilen yeterli ve uygun kanıtla uyumlu olması gerekir. Önemli muhasebe yanlışlığı veya kanıt eksikliği çözülmüyorsa, raporun buna göre değişmesi değerlendirilir. Denetim, önce görüş belirleyip sonra dosyayı onu destekleyecek şekilde tamamlamak değildir.
+
+---
+
+## 25. Kredi komitesine nasıl bir değerlendirme yazardım?
+
+Enron’un sonradan ortaya çıkan belgeleriyle yapılan bu geriye dönük incelemede, mevcut açıklamaları güvenilir bir borç ödeme analizi için yeterli bulmam. Bu hüküm bir yatırım tavsiyesi veya Enron’un tarihsel kredi komitesinden alınmış karar değildir; mesleki karar örneğimdir.
+
+Komiteye şöyle yazardım: Raporlanan kâr, faaliyet nakdi ve borç toplamının ekonomik açıklaması yeterince doğrulanmamıştır. İlişkili yapılardaki kontrol ve risk devri, faaliyet nakdinin sınıflandırılması ve finansmanın farklı yükümlülük hesaplarında görünmesi temel belirsizliklerdir. Bağımsız doğrulama, sözleşme envanteri ve düzeltilmiş nakit-borç köprüsü tamamlanmadan olumlu kredi değerlendirmesi yapamam.
+
+Bu durumda yüksek faiz teklif edilmesi sorunu tek başına çözmez. Ölçülebilir bir risk daha yüksek getiriyle fiyatlanabilir. Fakat riskin kapsamı ve nakit ödeme sırası bilinmiyorsa, fiyatlama zemini eksiktir. Önce hangi yükümlülüğün hangi koşulda öne geçtiğini, hangi teminatın gerçekten kullanılabilir olduğunu ve hangi fonlamanın kriz anında kesilebileceğini anlamak gerekir.
+
+Kredi incelemesinde raporlanan ve analitik olarak düzeltilen göstergeleri birlikte sunarım. Borç tanımını, faaliyet nakdi düzeltmesinin kapsamını ve henüz ölçülmemiş alanları açıkça belirtirim. Tahmin edemediğim yükü sıfır saymam. Muhasebe tablosundan alınmış tek bir oranla karar verene sahte kesinlik sunmam.
+
+Likidite için günlük veya haftalık nakit planını, kullanılabilir kredi hatlarını ve birleşik stres senaryosunu isterim. Şirket bütün teminat çağrılarını karşılayabilir mi? Not düşüşünde erken ödeme yükü doğuyor mu? Ticari karşı taraflar vadeyi kısalttığında nakit açığı ne oluyor? Bir varlığın normal değerini bilmek, kötü günlerde onu o değerden satabileceğimi göstermez.
+
+Bu yaklaşımın amacı finansmanı gereksiz yere zorlaştırmak değildir. Yanlış tanımlanan riski, görünürde hesaplanmış bir fiyatla onaylamayı önlemektir. Benim için doğru kredi kararı, sağlam bilgiye dayanan ve varsayımları açıkça görülebilen karardır.
+
+---
+
+## 26. Üniversite kitapları ve doktora araştırmalarıyla düşünmek
+
+Enron’u anlamak için tarihsel işlemleri açıklayan araştırmalar ile bunları incelemeye yarayan genel finansal analiz-denetim çerçevelerini birlikte okumak gerekir. Üniversite kitapları ve doktora araştırmaları bu ikinci katmanı derinleştirir. Bir kitabı kaynakçaya yazmak, kitabın tamamının okunduğu veya bütün analizimin o eserden alındığı anlamına gelmemelidir.
+
+K. R. Subramanyam’ın Financial Statement Analysis kitabının yayınevi tarafından doğrulanan yapısı, önce muhasebe analizi sonra finansal analiz yapılmasını sağlar; finansman, yatırım, faaliyetler, nakit akışı ve kredi analizi ayrı bölümler olarak ele alınır [20]. Benim Enron’da benimsediğim sıra da budur: Önce hesapların ekonomik anlamı ve sunumunu kontrol ederim, sonra oranı hesaplarım. Yanlış sınıflandırılmış nakit veya eksik borç üzerinde kusursuz oran analizi yapmak sorunu çözmez.
+
+Arens, Elder, Beasley ve Hogan’ın Auditing and Assurance Services kitabı ise denetim kanıtı, planlama ve önemlilik, önemli yanlışlık riski, hile riski, iç kontrol ve finansal araçların denetimini bir süreç içinde düzenler [21]. Bu eseri, Enron’a ilişkin özel bir bulgunun kaynağı olarak değil, vaka üzerinde uygulanacak çalışma mantığı için okuma kaynağı olarak öneriyorum. Bu belge için kitapların yayınevi tanıtımı ve bölüm yapısı doğrulanmıştır; tam metinleri taranmış gibi sayfa referansı verilmemiştir.
+
+Eleanor Margaret Carston Dart’ın 2007 Cardiff doktora tezi, yatırımcıların denetçi bağımsızlığı algısını; ekonomik bağımlılık, denetim dışı hizmet, uzun ilişki ve eski denetçi çalışanlarının istihdamı üzerinden inceler. Kurumsal depo özeti, ekonomik bağımlılık ve denetim dışı hizmetlerin kaygı doğurabildiğini gösterir [22]. Ben buradan, bağımsızlığın yalnızca denetçinin kendini bağımsız hissetmesiyle ölçülemeyeceği sonucunu çıkarıyorum. Finansal tablo kullanıcısının güveni de mesleğin kamu işlevinin parçasıdır.
+
+Thomas Patrick Hayes Jr.’ın 2006 University of North Texas muhasebe doktora tezi, yönetim hilesi riskinde karar destek araçlarının kullanımını incelemiştir. Kurumsal depo özetine göre 132 kıdemli denetçinin katıldığı deneyde algılanan fayda, araca güven ve kullanım ilişkileri araştırılmıştır [24]. Benim bu araştırmadan aldığım soru, kontrol aracının varlığından çok uygulayıcının onu gerçekten kullanıp kullanmadığıdır. Bu tez Enron’un belirli bir işlemine ilişkin kanıt oluşturmaz; denetim davranışını düşünmek için araştırma desteği sağlar.
+
+Her iki tez için de burada kullanılan bulgular kurumsal depo özetleriyle sınırlıdır. Tam tezlerin bütün yöntem, veri ve sonuçlarını incelediğim iddiasında bulunmuyorum. Bu ayrım, kaynakçanın uzun görünmesinden daha değerlidir. Akademik kaynağın gücü, doğru kapsamla kullanılmasına bağlıdır.
+
+---
+
+## 27. Mesleki kanaatim
+
+Enron’u incelerken en fazla önem verdiğim ayrım, muhasebe rakamının bulunması ile o rakamın ekonomik açıklamasının bulunması arasındadır. Bir kayıt sisteme girilmiş, model hesap üretmiş, sözleşme imzalanmış ve denetçi görüşü verilmiş olabilir. Bunların hiçbirini tek başına sonuç saymam. Kârı doğuran kaynak, nakdi getiren taraf ve riski taşıyan kişi birbiriyle tutarlı biçimde açıklanmalıdır.
+
+Bu vakada raporlama, finansman ve teşvik aynı döngünün parçaları hâline geldi. İyi görünen sonuç daha kolay fonlama sağladı; fonlama da iyi görünen sonuçların sürmesini kolaylaştırdı. Risk dışarıya devredilmiş gibi gösterildiği yerde ekonomik yük yeniden şirkete dönebildi. Hisse fiyatı destek unsuru olarak kullanıldığında, güven kaybı birden çok yapıyı aynı anda zayıflatabildi.
+
+Ben denetimin değerini, yönetimin anlattığı başarı hikâyesine mesleki bir mühür eklemek olarak görmüyorum. Değeri, o hikâyenin doğrulanabilir tarafını belirsiz ve yanlış taraflarından ayırabilmesidir. Bunun için teknik bilgi kadar bağımsız karar verme ve rahatsız edici soruyu sürdürme iradesi gerekir.
+
+Bir şirketin ekonomik durumunu açıklayamıyorsam, bunu kendi yetersizliğim gibi görüp sorgulamayı bırakmam. Daha fazla bilgi ister, sınırı açıklar ve kanıtın izin verdiği kadar hüküm veririm. İşlemin çok karmaşık olması, ekonomik amacının açıklanmasına engel değildir. Para nereden geldi, ne zaman geri gidecek ve zarar doğarsa kim taşıyacak? Bu soruların sade cevabı olmalıdır.
+
+Haydar Karakaş’ın mesleki bakış açısından bu incelemenin ulaştığı kanaat budur: Kârı nakde, nakdi yükümlülüğe, yükümlülüğü gerçek risk taşıyıcısına bağlamadan finansal sağlamlık hakkında güvenilir hüküm verilemez. Denetim, tam da bu bağlantıları görünür kıldığı ölçüde kamunun güvenini hak eder.
+
+---
+
+## EK A / 10 MİLYON TL İLE TEKNİK EĞİTİM ÖRNEĞİ
+
+### A1. Varsayımlar ve gerçek faaliyet sonucu
+
+Bu ek, 10 milyon TL satış yapan bir şirket üzerinden mekanizmaları birbirine bağlı hesaplarla gösterir. ABC Enerji A.Ş. tamamen varsayımsaldır. Enron’un gerçek kayıtları, belirli bir muhasebe standardının uygulama rehberi veya Türkiye Tekdüzen Hesap Planı için zorunlu yevmiye reçetesi değildir. Vergi etkisi örneği sade tutmak için dışarıda bırakılmıştır. Bütün tutarlar milyon TL’dir.
+
+| Gelir tablosu | Tutar (Milyon TL) |
+| :--- | :--- |
+| Satış geliri | 10,0 |
+| Satışların maliyeti | -7,0 |
+| Brüt kâr | 3,0 |
+| Faaliyet giderleri | -2,0 |
+| Faaliyet kârı | 1,0 |
+| Finansman gideri | -0,5 |
+| Vergi öncesi kâr | 0,5 |
+
+Satışlar eğitim amaçlı olarak 600 hesabıyla ilişkilendirilebilir. Ancak geleceğe ilişkin her değerleme artışını 600 Yurtiçi Satışlar hesabına yazmak doğru bir genel yaklaşım değildir. Değerleme kaydının uygunluğu, hesabı ve sunumu ilgili varlığın niteliğine ve uygulanan muhasebe çerçevesine bağlıdır. Ben satış performansı ile tahmine dayalı değeri ayrı görünür tutarım.
+
+| Faaliyet nakit hareketleri | Tutar (Milyon TL) |
+| :--- | :--- |
+| Müşterilerden tahsilat | +7,0 |
+| Tedarikçilere ödeme | -6,0 |
+| Faaliyet gideri ödemesi | -1,5 |
+| Faiz ödemesi | -0,5 |
+| Faaliyetlerden net nakit | -1,0 |
+
+Faizin faaliyet nakdinde sınıflandığı varsayılmıştır. Alternatif muhasebe çerçevesinde sınıflandırma farklı olabilir. Satıştan 3 milyon henüz tahsil edilmemiş; maliyetin 1 milyonu ve faaliyet giderinin 0,5 milyonu henüz ödenmemiştir. Böylece kârdan faaliyet nakdine köprü tam olarak kurulabilir.
+
+| Kâr-nakit köprüsü | Tutar (Milyon TL) |
+| :--- | :--- |
+| Vergi öncesi kâr | +0,5 |
+| Tahsil edilmemiş satış artışı | -3,0 |
+| Ödenmemiş tedarikçi maliyeti artışı | +1,0 |
+| Ödenmemiş faaliyet gideri artışı | +0,5 |
+| Faaliyetlerden net nakit | -1,0 |
+
+Bu durum tek başına hile değildir. İşletme sermayesi büyüyebilir ve kârlı şirket geçici nakit açığı yaşayabilir. Ben tahsilat vadesini, alacağın niteliğini ve işletmenin bu açığı ne kadar süre finanse edebildiğini araştırırım.
+
+---
+
+### A2. Desteklenmeyen değerleme kârı eklenirse
+
+Yönetimin yeterli kanıtla desteklenmeyen 2 milyon TL’lik sözleşme değer artışını kaydettiğini varsayalım. Bu örnekte kayıt, sözleşme varlığını ve dönem kazancını 2 milyon artırır. Kasa artmaz. Kaydın desteklenmemesi varsayımı önemlidir; uygun ve kanıtlanmış gerçeğe uygun değer değişimi kendi başına hile sayılmaz.
+
+| Gösterge (Milyon TL) | Faaliyetlere dayalı temel durum | Değerleme eklendikten sonra |
+| :--- | :--- | :--- |
+| Satışlar | 10,0 | 10,0 |
+| Vergi öncesi kâr | 0,5 | 2,5 |
+| İlave sözleşme varlığı | 0,0 | 2,0 |
+| Faaliyet nakdi | -1,0 | -1,0 |
+| Vergi öncesi kâr-nakit farkı | 1,5 | 3,5 |
+
+Kâr-nakit köprüsüne 2 milyonluk nakit dışı kazancı çıkaran satır eklerim: 2,5 - 2,0 - 3,0 + 1,0 + 0,5 = -1,0. Kâr-nakit karşılaştırmasında hangi kâr ölçüsünü kullandığım açık olmalıdır; faaliyet kârı, vergi öncesi kâr ve net kâr birbirinin yerine kullanılamaz.
+
+---
+
+### A3. SPE yoluyla borcun görünümü değiştirilirse
+
+ABC’nin temel dönem sonu bilançosunu nakit 1, alacak 4, diğer varlık 5, borç 8 ve özkaynak 2 olarak varsayıyorum. Değerleme kaydı sonrası ilave sözleşme varlığı 2 olur; toplam varlık 12 ve özkaynak 4’e çıkar.
+
+Şimdi 3 milyon defter değerindeki bir varlık, ABC’nin kontrolündeki ve konsolidasyon dışında bırakılmaması gereken SPE’ye 3 milyona devredilsin. SPE bankadan 3 milyon borç alsın; ana şirket de bunu garanti etsin. SPE parayı ABC’ye ödesin, ABC ise aldığı 3 milyonla kendi borcunun 3 milyonunu kapatsın. SPE’nin bağımsız risk sermayesi olmadığı varsayılmıştır. Satış fiyatı defter değerine eşit olduğundan yeni satış kazancı yoktur.
+
+| Bilanço aşaması | Varlık | Borç | Özkaynak | Borç / Özkaynak |
+| :--- | :--- | :--- | :--- | :--- |
+| Temel ekonomik görünüm | 10 | 8 | 2 | 4,00 |
+| Desteksiz 2 milyon değerleme sonrası | 12 | 8 | 4 | 2,00 |
+| SPE dışarıda bırakılırsa ana şirket görünümü | 9 | 5 | 4 | 1,25 |
+| SPE doğru konsolide edilirse | 12 | 8 | 4 | 2,00 |
+| Desteksiz değerleme de geri alınırsa | 10 | 8 | 2 | 4,00 |
+
+Ana şirketin varlıkları 3 milyon azalır: nakit önce 3 artar, borç ödemesinde 3 azalır; devredilen varlık 3 azalır. Borcu da 3 azalır. SPE’de ise 3 milyon varlık ve 3 milyon banka borcu bulunur. Konsolidasyonda bu varlık ve borç geri gelir. Yeni banka kredisi, eski grup borcunun yerini almıştır; toplam ekonomik borç azalmamıştır.
+
+Bu örnekte sadece borcu bilançodan silip özkaynağı aynı miktarda büyütmüyorum. Her hareketin karşılığını gösteriyorum. İki ayrı yanlışın etkisi böyle anlaşılır: Desteksiz değerleme özkaynağı büyütür; yanlış konsolidasyon kapsamı varlığı ve borcu dışarıda bırakır. Sonuçları karıştırmadan düzeltmek gerekir.
+
+---
+
+### A4. Finansman nakdi faaliyete yazılırsa
+
+Son olarak, önceki SPE adımlarından bağımsız bir nakit sınıflandırma modülü kuruyorum. ABC gerçek faaliyetinde 1 milyon TL nakit tüketiyor olsun. Prepay görünümündeki bir fonlamadan 2 milyon TL alsın. Bu tutar ekonomik olarak borçtur ve bütün işlem zinciri buna göre değerlendirilmelidir.
+
+| Nakit tablosu (Milyon TL) | Yanlış sınıflandırma | Ekonomik mahiyete uygun sınıflandırma |
+| :--- | :--- | :--- |
+| Gerçek faaliyet nakdi | -1 | -1 |
+| Fonlamanın faaliyet bölümüne yazılması | +2 | 0 |
+| Sunulan faaliyet nakdi | +1 | -1 |
+| Finansman bölümündeki aynı fonlama | 0 | +2 |
+| İki bölümün toplam nakit etkisi | +1 | +1 |
+
+Banka hesabındaki toplam etki aynıdır. Değişen, nakdin kaynağı hakkında verilen bilgidir. Yanlış tabloda şirket faaliyetlerinden nakit yaratıyor görünür. Doğru tabloda faaliyet açığını borçla kapattığı anlaşılır. Bu modülde 2 milyonluk fonlamayı ayrıca nakit ve yükümlülük olarak izlemek gerekir; önceki bilanço aşamalarına eklenmeden oranlar yeniden hesaplanmamalıdır.
+
+---
+
+### A5. Elektronik tabloda hangi kontrolleri kurarım?
+
+| Kontrol | Hesap veya soru | Yorum |
+| :--- | :--- | :--- |
+| Bilanço eşitliği | Varlık - borç - özkaynak | Her aşamada sıfır olmalı |
+| Değerleme etkisi | Raporlanan kâr - nakit dışı değerleme | Faaliyet performansına köprü sağlar |
+| Kâr-nakit farkı | Tanımlanan kâr - faaliyet nakdi | Farkın sebebi ayrıca açıklanmalı |
+| Borç tanımı | Kayıtlı borç + yeniden sınıflanan fonlama | Çifte sayım kontrolü gerekir |
+| Grup kapsamı | Ana şirket + bağlı yapı - grup içi işlemler | Konsolidasyon sınırı doğru olmalı |
+| Nakdin kaynağı | Faaliyet / yatırım / finansman | Aynı banka girişi iki kez sayılmamalı |
+| Sonraki işlem | Geri alım, tahsilat veya garanti ödemesi | İlk dönemdeki açıklamayı sınar |
+
+Negatif faaliyet nakdinde kâr/nakit oranını başarı puanı gibi kullanmam. Farkın tutarını ve nedenini gösteririm. Aynı şekilde yüksek pozitif faaliyet nakdinde de önce kaynağı doğrularım. Eğitim örneğinin amacı, bir hile reçetesi değil; finansal tabloların bağlantısını denetim sorusuna dönüştürmektir.
+
+---
+
+## EK B / TARİHSEL İZ VE KAYNAK HARİTASI
+
+### B1. Vakanın kısa zaman çizelgesi
+
+| Tarih / Dönem | Gelişme | İncelemedeki Önemi |
+| :--- | :--- | :--- |
+| 1985 | Enron’un kuruluşu | Altyapı kökeni |
+| 1990’lar | Enerji ticareti ve risk yönetimi büyür | İş modelinin ve denetim riskinin değişmesi |
+| 1997-2000 | Sonradan düzeltilecek dönemler | Konsolidasyon ve geçmiş kâr etkileri |
+| 23 Şubat 2001 | Andersen’ın 2000 denetçi görüşü | Piyasaya sunulan olumlu güvence |
+| 2001 yazı | Yönetim içi uyarılar ve artan sorgulama | Kontrol ortamı ve bilgi akışı |
+| 8 Kasım 2001 | Yeniden düzenleme açıklaması | Eski tablolara ve raporlara güvenilmeme |
+| Kasım 2001 sonu | Kredi ve fonlama baskısı ağırlaşır | Likidite sarmalı |
+| 2 Aralık 2001 | İflas koruması başvurusu | Ticari çöküş |
+| 12 Aralık 2001 | Berardino Kongre ifadesi | Andersen’ın kendi açıklaması |
+| 1 Şubat 2002 | Powers raporu | Belirli ilişkili işlemlerin incelenmesi |
+| 2002 | Sarbanes-Oxley kabul edilir | Denetim ve yönetişim reformu |
+| 2003 | Bankalar hakkında SEC işlemleri | Fonlama ve yanlış sunumun araştırılması |
+| 31 Mayıs 2005 | Andersen mahkûmiyeti bozulur | Ceza kararının kapsamının ayrılması |
+| Ocak 2008 | Duncan hakkındaki SEC uzlaşması | Denetim prosedürlerine sonraki değerlendirme |
+
+---
+
+### B2. Kaynaklar ve nasıl kullanıldıkları
+
+Kaynaklar aşağıda işlevlerine göre açıklanmıştır. Metindeki köşeli numaralar bu listeye karşılık gelir. Sayısal tabloların dayanağı özellikle [1] ve [2]’dir. Eğitim örnekleri ve denetim karar çerçevesi bu çalışma için üretilmiştir. Web kaynaklarının erişim tarihi 4 Ekim 2026’dır.

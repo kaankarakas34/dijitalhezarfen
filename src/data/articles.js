@@ -8,6 +8,164 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'enron-karin-nakdin-ve-guvenin-denetimi',
+    category: 'rapor',
+    title: {
+      tr: 'ENRON: Kârın, Nakdin ve Güvenin Denetimi',
+      en: 'ENRON: Auditing Profit, Cash and Trust'
+    },
+    desc: {
+      tr: 'Bir şirketin ne kadar büyük göründüğünden önce, kazancının nasıl oluştuğuna, nakdinin nereden geldiğine ve riskinin kimin üzerinde kaldığına bakarım. Finansal ve mali denetçi Haydar Karakaş’tan kapsamlı Enron vaka analizi.',
+      en: 'Before looking at how large a company appears, I examine how profit is formed, where cash flows from, and who bears the underlying risk. A comprehensive Enron forensic audit case analysis by Haydar Karakaş.'
+    },
+    date: {
+      tr: '04 Ekim 2026',
+      en: 'October 04, 2026'
+    },
+    readTime: {
+      tr: '28 dk okuma',
+      en: '28 min read'
+    },
+    author: 'Haydar Karakaş',
+    authorRole: 'Finansal & Mali Denetçi',
+    authorBio: 'Finansal raporlama, bağımsız denetim, muhasebe hileleri, bilanço ve nakit akış analizi ile kurumsal yönetişim üzerine uzmanlaşmış mali denetçi ve araştırmacı yazar.',
+    image: '/images/enron-karin-nakdin-ve-guvenin-denetimi.png',
+    imageAlt: 'ENRON: Kârın, nakdin ve güvenin denetimi — Haydar Karakaş finansal denetim vaka analizi',
+    source: '/articles/enron-karin-nakdin-ve-guvenin-denetimi.txt',
+    publishedAt: '2026-10-04T09:00:00+03:00',
+    modifiedAt: '2026-10-04T12:00:00+03:00',
+    keywords: [
+      'Enron skandali',
+      'Haydar Karakas',
+      'finansal denetim',
+      'bagimsiz denetim',
+      'mark to market muhasebe',
+      'prepay emtia kredisi',
+      'SPE ozel amacli sirketler',
+      'Chewco JEDI LJM Raptor',
+      'Arthur Andersen denetim zaafi',
+      'Sarbanes Oxley Act',
+      'faaliyet nakit akisi analizi',
+      'kar kalitesi sorgulama',
+      'bilanco disi borclar',
+      'Sherron Watkins',
+      'adli muhasebe forensic audit'
+    ],
+    color: 'from-amber-500/25 to-cyan-500/15',
+    accent: 'text-amber-400',
+    featured: true,
+    sources: [
+      {
+        label: 'Enron Corp. 2000 Form 10-K (SEC Edgar, 2 Nisan 2001) — F-2 denetçi görüşü, F-3 gelir tablosu, F-4/F-5 bilanço, F-6 nakit akışı',
+        url: 'https://www.sec.gov/Archives/edgar/data/1024401/000102440101500010/ene10-k.txt'
+      },
+      {
+        label: 'Enron Corp. Form 8-K (8 Kasım 2001) — Denetlenmemiş yeniden düzenleme tablosu, Chewco/JEDI ve LJM1 açıklamaları',
+        url: 'https://www.sec.gov/Archives/edgar/data/1024401/000095012901503835/h91831e8-k.txt'
+      },
+      {
+        label: 'Powers, Troubh & Winokur (1 Şubat 2002) — Report of Investigation by Special Investigative Committee of Enron Corp. Board of Directors',
+        url: 'https://cdn.gmtresearch.com/public-ckfinder/hall-of-shame/Enron%20Corporation/Enron_Report%20of%20the%20Special%20Investigation_Feb1-2002.pdf'
+      },
+      {
+        label: 'U.S. House of Representatives (12 Aralık 2001) — The Enron Collapse: Impact on Investors and Financial Markets (Joseph F. Berardino ifadesi)',
+        url: 'https://www.congress.gov/107/chrg/CHRG-107hhrg76958/CHRG-107hhrg76958.pdf'
+      },
+      {
+        label: 'SEC (28 Ocak 2008) — David B. Duncan, Litigation Release No. 20441; risk değerlendirmesi ve denetim prosedürleri',
+        url: 'https://www.sec.gov/enforcement-litigation/litigation-releases/lr-20441'
+      },
+      {
+        label: 'SEC (28 Temmuz 2003) — In the Matter of Citigroup, Inc., Release No. 48230; prepay, Nahanni ve Bacchus yapıları',
+        url: 'https://www.sec.gov/enforcement-litigation/administrative-proceedings/34-48230'
+      },
+      {
+        label: 'SEC (10 Eylül 2003) — Ben F. Glisan Jr., Litigation Release No. 18335; Raptor ve düzmece riskten korunma işlemleri',
+        url: 'https://www.sec.gov/enforcement-litigation/litigation-releases/lr-18335'
+      },
+      {
+        label: 'SEC (2003) — Complaint, SEC v. Merrill Lynch and executives; Nijerya enerji mavnaları işlemi ve çıkış garantisi',
+        url: 'https://www.sec.gov/litigation/complaints/comp18038.htm'
+      },
+      {
+        label: 'SEC (22 Aralık 2003) — Canadian Imperial Bank of Commerce (CIBC), Release No. 18517; varlık satışı biçimindeki fonlamalar',
+        url: 'https://www.sec.gov/enforcement-litigation/litigation-releases/lr-18517'
+      },
+      {
+        label: 'Dharan & Bufkins (2004/2008) — Red Flags in Enron’s Reporting of Revenues and Key Financial Measures (Rice University / SSRN)',
+        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1172222'
+      },
+      {
+        label: 'McKinsey (2017) — Attracting and retaining the right talent; The War for Talent yaklaşımının tarihçesi',
+        url: 'https://www.mckinsey.com/capabilities/people-and-organization/our-insights/attracting-and-retaining-the-right-talent'
+      },
+      {
+        label: 'McKinsey (1 Şubat 2003) — Getting what you pay for with stock options; yönetici risk iştahı ve opsiyon teşvikleri',
+        url: 'https://www.mckinsey.com/featured-insights/leadership/getting-what-you-pay-for-with-stock-options'
+      },
+      {
+        label: 'McKinsey (2004) — Putting value back in value-based management; muhasebe kârı ve ekonomik değer ayrımı',
+        url: 'https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/putting-value-back-in-value-based-management'
+      },
+      {
+        label: 'The New Yorker — Gladwell, Malcolm (22 Temmuz 2002) The Talent Myth: Enron ve yetenek fetişizmi eleştirisi',
+        url: 'https://www.newyorker.com/magazine/2002/07/22/the-talent-myth'
+      },
+      {
+        label: 'Journal of Economic Perspectives — Healy & Palepu (2003) The Fall of Enron; sermaye piyasası aracıları ve teşvikler',
+        url: 'https://doi.org/10.1257/089533003765888403'
+      },
+      {
+        label: 'U.S. GAO (5 Mart 2002) — Protecting the Public Interest: Governance, Regulatory Oversight, Auditing (GAO-02-483T)',
+        url: 'https://www.gao.gov/products/gao-02-483t'
+      },
+      {
+        label: 'U.S. Supreme Court (31 Mayıs 2005) — Arthur Andersen LLP v. United States, 544 U.S. 696; jüri talimatları ve kararın bozulması',
+        url: 'https://www.law.cornell.edu/supremecourt/text/544/696'
+      },
+      {
+        label: 'U.S. Senate (7 Mayıs 2002) — The Role of the Board of Directors in Enron’s Collapse, S. Hrg. 107-511',
+        url: 'https://www.govinfo.gov/app/details/CHRG-107shrg80300'
+      },
+      {
+        label: 'U.S. Congress — Sarbanes-Oxley Act of 2002 (Public Law 107-204); PCAOB, iç kontrol ve denetçi bağımsızlığı',
+        url: 'https://www.dol.gov/agencies/oalj/PUBLIC/WHISTLEBLOWER/REFERENCES/STATUTES/SARBANES_OXLEY_ACT_OF_2002'
+      },
+      {
+        label: 'McGraw Hill — Subramanyam, K. R. Financial Statement Analysis (11. Baskı); muhasebe ve finansal analiz çerçevesi',
+        url: 'https://www.mheducation.com/highered/product/Financial-Statement-Analysis-Subramanyam.html'
+      },
+      {
+        label: 'Pearson — Arens, Elder, Beasley & Hogan (2024) Auditing and Assurance Services (18. Baskı); denetim kanıtı ve hile riski',
+        url: 'https://www.pearson.com/en-us/subject-catalog/p/auditing-and-assurance-services/P200000010148/9780138099343'
+      },
+      {
+        label: 'Cardiff University — Dart, Eleanor Margaret Carston (2007) Investigation into UK shareholders’ views of threats to auditors’ independence',
+        url: 'https://orca.cardiff.ac.uk/id/eprint/55668/'
+      },
+      {
+        label: 'Muhasebe ve Denetime Bakış — Kandemir & Kandemir (Kasım 2012) Enron Olayı’nı Doğru Okumak-II: Kıssadan Hisseler (s. 85-106)',
+        url: 'https://www.researchgate.net/search?q=Enron+Olay%C4%B1%E2%80%99n%C4%B1+Do%C4%9Fru+Okumak-II'
+      },
+      {
+        label: 'University of North Texas — Hayes, Thomas Patrick Jr. (Mayıs 2006) Decision aids in management fraud risk assessment',
+        url: 'https://digital.library.unt.edu/ark:/67531/metadc5272/'
+      },
+      {
+        label: 'Enron.docx (16 Sayfa Kullanıcı Dokümanı) — Şirket hikâyesi, SPE, Fastow, Andersen, Watkins, 10 milyon TL eğitim örneği',
+        url: 'https://dijitalhezarfen.com/#/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi#ek-a'
+      },
+      {
+        label: 'Enron neden battı.docx (5 Sayfa Kullanıcı Dokümanı) — Mark-to-market, Chewco, LJM, Raptor, prepay ve 2000 finansal göstergeleri',
+        url: 'https://dijitalhezarfen.com/#/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi#ek-b'
+      },
+      {
+        label: 'Enron Denetim Analizi (3 Ekim 2026 Mesleki Değerlendirme) — Haydar Karakaş vaka analizi, yöntem ve karar çerçevesi',
+        url: 'https://dijitalhezarfen.com/#/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi#mesleki-kanaatim'
+      }
+    ]
+  },
+  {
     slug: 'bir-sonraki-esiniz-humanoid-olabilir',
     category: 'rapor',
     title: {
@@ -51,7 +209,7 @@ export const articles = [
     ],
     color: 'from-rose-500/25 to-cyan-500/15',
     accent: 'text-rose-400',
-    featured: true,
+    featured: false,
     sources: [
       {
         label: 'Stanford Encyclopedia of Philosophy — Levin, J. (Spring 2026) Functionalism',

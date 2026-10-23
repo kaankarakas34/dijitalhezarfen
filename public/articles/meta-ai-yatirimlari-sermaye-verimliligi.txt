@@ -1,0 +1,31 @@
+Meta, 22 Ekim 2026 tarihinde yayımlanan üçüncü çeyrek finansal sonuçlarında 2026 yılı sermaye harcaması (CapEx) öngörüsünü 135–145 milyar dolar aralığına yükselttiğini açıkladı. Şirketin çeyreklik geliri 64,6 milyar dolara ulaşırken, devasa yapay zekâ altyapı yatırımları nedeniyle serbest nakit akışı negatif 2,12 milyar dolara geriledi.
+
+Bu gelişmeyi tek başına bir şirket haberi olarak okumak eksik kalır. Asıl soru, bu hamlenin sektörün ekonomik düzeninde neyi değiştireceği ve nakit yakma temposunun ne zaman kârlı bir getiriye dönüşeceği. Teknoloji dünyasında yeni bir model veya özellik duyurmakla, milyarlarca dolarlık altyapıyı sürdürülebilir bir iş modeline dönüştürmek arasında ciddi bir fark var. Burada dikkat çekici olan, şirketlerin yatırım, operasyon ve dağıtım kararlarını aynı anda yeniden tasarlaması.
+
+## Olgusal Özet: Rekor Gelire Eşlik Eden Negatif Nakit Akışı
+
+Reuters'ın 22 Ekim 2026 tarihli analizine göre Meta'nın kredi risk göstergesi bilanço sonrasında rekor seviyeye tırmandı. Şirket reklam tarafında gelir artışını sürdürse de GPU kümeleri, yeni nesil veri merkezleri ve özel silikon geliştirme harcamaları nakit akışını doğrudan baskı altına aldı.
+
+Bu tablonun ortaya koyduğu doğrulanmış temel olgular:
+- Meta'nın 2026 yılı CapEx beklentisi 135–145 milyar dolar bandına taşındı.
+- Üçüncü çeyrekte 64,6 milyar dolarlık ciroya rağmen serbest nakit akışı eksi 2,12 milyar dolar olarak kaydedildi.
+- Kredi temerrüt takası (CDS) göstergeleri, yatırımcıların devasa borçlanma temposuna dair temkinli tutumunu yansıttı.
+
+## CapEx Tırmanışı ve AI Altyapısının Finansal Baskısı
+
+Bence burada tartışılması gereken şey Meta’nın yapay zekâya inanıp inanmadığı değil; bu yatırımın ne kadar sürede geri döneceğidir. Daha önce [Meta'nın Project OT Deneyi](/yayinlar/yapay-zeka-calisanlar-meta-project-ot) analizimizde incelediğimiz gibi, şirket iç organizasyonunu AI-native hale getirmeye çalışırken altyapı tarafında da benzeri görülmemiş bir fiziksel genişleme yürütüyor.
+
+Reklam işi büyümeye devam ederken altyapı harcamalarının nakit akışını baskılaması, AI çağının en önemli finansal çelişkilerinden birini temsil ediyor. Yazılım ekonomisinin marjinal sıfır maliyet vaadi, yerini enerji, soğutma ve çip amortismanının belirlediği ağır sanayi bilanço kurallarına bırakıyor.
+
+## İş Dünyası ve Girişimciler İçin Çıkarımlar
+
+AI yatırımlarında artık yalnızca model performansı değil, sermaye verimliliği ve nakit üretimi de konuşulacak. Bu eğilimin kalıcı olup olmadığını anlamak için duyuruların ötesine geçip müşteri kullanımı, finansal sonuçlar, uygulama takvimi ve bağımsız değerlendirmelere bakmak gerekiyor:
+- **Nakit Üretim Disiplini:** Bir gelişmenin çok konuşulması, ticari olarak başarılı olduğu anlamına gelmiyor; birim ekonomi ve serbest nakit akışı her şeyin önünde.
+- **Fiziksel Kısıtlar:** GPU yatırımları [Veri Merkezlerinde Elektrik Kablosu Darboğazı](/yayinlar/ai-veri-merkezi-elektrik-kablo-darbogazi) gibi şebeke ve enerji gerçeklerine çarptıkça maliyet öngörüleri revize edilebilir.
+- **Duyuruların Ötesinde Değer:** Kurumsal yazılım alıcıları, modellerin pazarlama lansmanlarından ziyade görev başına tamamlanma maliyetine odaklanıyor.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan veya en çok para harcayan şirketlerle, onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Reuters — Meta’s credit risk indicator jumps record high after results (22 Ekim 2026). İlgili resmi finansal bülten ve SEC bildirimleri esas alınmıştır.

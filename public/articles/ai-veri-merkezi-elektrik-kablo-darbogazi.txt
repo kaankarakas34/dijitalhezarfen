@@ -1,0 +1,31 @@
+Dünyanın en büyük kablo üreticilerinden Nexans, 22 Ekim 2026 tarihinde yaptığı stratejik değerlendirmede yapay zekâ veri merkezlerinin büyümesinde alçak ve orta gerilim elektrik kablolarının kritik bir tedarik darboğazına dönüştüğünü açıkladı. Şirket, artan talep karşısında yeni üretim hatlarının devreye alınmasının yıllar sürebileceği konusunda teknoloji sektörünü uyardı.
+
+Bu gelişmeyi tek başına bir sanayi haberi olarak okumak eksik kalır. Çünkü asıl soru, bu hamlenin sektörün ekonomik düzeninde neyi değiştireceği. Teknoloji dünyasında yeni bir özellik duyurmakla yeni bir iş modeli oluşturmak arasında ciddi fark var. Burada dikkat çekici olan, şirketlerin yatırım, operasyon ve dağıtım kararlarını aynı anda yeniden tasarlaması.
+
+## Olgusal Özet: Nexans’tan Veri Merkezlerine Kritik Tedarik Uyarısı
+
+Reuters'ın 22 Ekim 2026 tarihli haberine göre Nexans CEO'su, veri merkezlerinin talep ettiği devasa güç yoğunluğunu taşımak için gereken özel bakır ve alüminyum kablo siparişlerinde teslim sürelerinin rekor seviyelere çıktığını belirtti. Çip siparişi veren bulut devleri, bu çipleri besleyecek trafo ve kablo bağlantılarını temin etmekte zorlanıyor.
+
+Öne çıkan doğrulanmış olgular:
+- Alçak ve orta gerilim kablo üretim kapasitesi global talebin gerisinde kalıyor.
+- Yeni bir kablo üretim tesisinin faaliyete geçmesi 2 ila 4 yıl yatırım süresi gerektiriyor.
+- Elektrik şebekesi bağlantı izinleri veri merkezi inşaat takvimlerini doğrudan geciktiriyor.
+
+## Dijital Sanrının Fiziksel Bedeli: Bakır, Trafo ve Gerilim Hatları
+
+Geleceğin bilgisayarlarını konuşurken hep işlemci ve FLOP sayıyoruz. Oysa işlemcinin çalışması için elektrik enerjisi, soğutma suyu, trafo merkezleri ve kalın bakır kablolar gerekiyor. Dijital görünen bu devrimin son derece ağır ve fiziksel bir sanayi maliyeti var.
+
+Daha önce [Nebius'un 3,5 Milyar Dolarlık Veri Merkezi Kredisi](/yayinlar/nebius-ai-veri-merkezi-finansmani) analizimizde ele aldığımız gibi, yapay zekâ altyapısına dökülen sermaye yalnızca silikona değil; doğrudan şebeke altyapısına akmak zorunda. Kablo ve enerji tedariki sağlanamadığı sürece satın alınan yüz binlerce GPU depolarda beklemek zorunda kalabilir.
+
+## İş Dünyası ve Enerji Yatırımcıları İçin Çıkarımlar
+
+AI altyapısında tedarik zinciri ve şebeke erişimi yeni büyüme sınırlarını oluşturuyor:
+- **Şebeke Önceliği:** Veri merkezi yatırımlarında ucuz arsa değil, hazır enerji ve yüksek gerilim hattına yakınlık birinci kriter haline geliyor.
+- **Tedarik Zinciri Fiyatlaması:** Bakır fiyatları ve kablo marjları, veri merkezi maliyet tablolarında tahminlerin üzerinde artış gösterebilir.
+- **Yatırım Takvimlerinin Uzaması:** AI projeksiyonları yapılırken yazılım hızıyla değil, ağır sanayi inşaat takvimleriyle planlama yapılmalıdır.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan şirketlerle onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bir gelişmenin çok konuşulması, ticari olarak başarılı olduğu anlamına gelmiyor. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Reuters — Cable capacity emerges as bottleneck for AI data centres, Nexans says (22 Ekim 2026). Şirket yönetici mülakatı ve sektör verileri doğrulanmıştır.

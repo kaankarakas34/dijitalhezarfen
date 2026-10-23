@@ -1,0 +1,31 @@
+Nvidia, kurumsal süreçlerde görev alan yapay zekâ ajanlarının işlem, erişim ve yetki sınırlarını donanım seviyesinde denetlemeyi amaçlayan OpenShell referans mimarisini 2026 yılı Ekim ayında resmen duyurdu. Sistem, yazılımsal güvenlik katmanlarını doğrudan GPU ve güvenli işlemci (secure enclave) donanımlarıyla entegre ederek otonom ajanların yetki aşımını engellemeyi hedefliyor.
+
+Bu gelişmeyi tek başına bir ürün tanıtımı olarak okumak eksik kalır. Çünkü asıl soru, bu hamlenin sektörün ekonomik düzeninde neyi değiştireceği. Teknoloji dünyasında yeni bir özellik duyurmakla yeni bir iş modeli oluşturmak arasında ciddi fark var. Burada dikkat çekici olan, şirketlerin yatırım, operasyon ve dağıtım kararlarını aynı anda yeniden tasarlaması.
+
+## Olgusal Özet: Ajanlar İçin Donanım Tabanlı Güvenlik Kalkanı
+
+OpenShell mimarisi; kurumsal veritabanlarına, e-posta sunucularına ve ERP sistemlerine erişen otonom ajanların gerçekleştirdiği her bir eylemi kriptografik olarak imzalar. Bir ajanın veri tabanından silme yapması, finansal transfer başlatması veya dış dünyaya e-posta göndermesi donanımsal onay halkalarından geçer.
+
+Öne çıkan mimari bileşenler:
+- Yazılımsal ajan denetimi yerine GPU düzeyinde izole edilmiş güvenlik ortamı.
+- Yapılan her kritik işlemin geri alınabilir (rollback) ve denetlenebilir (audit trail) olarak kaydedilmesi.
+- İnsan onay mekanizmasının (human-in-the-loop) hassas eşiklerde zorunlu kılınması.
+
+## E-posta Yazmak Başka, Şirket Hesabından Ödeme Yapmak Başka
+
+Bir AI ajanının e-posta yazmasıyla müşteriye bağlayıcı teklif göndermesi, şirket kartından ödeme yapması veya CRM kaydı silmesi aynı risk sınıfında değildir. Bence AI ürünlerinde bundan sonra en önemli özelliklerden biri ne yapabildiği değil, neyi yapmasının yasak olduğunun ne kadar güvenilir tanımlandığı ve bu sınırın nasıl korunduğu olacaktır.
+
+Daha önce [Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık?](/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik) analizimizde tartıştığımız alignment ve kontrol problemi, artık soyut bir yapay genel zekâ felsefesi değil; her gün şirket ağlarında kod çalıştıran otonom ajanların somut bir siber güvenlik meselesidir. Güvenlik sınırları delindiğinde zararı telafi etmek mümkün olmayabilir.
+
+## İş Dünyası ve Güvenlik Liderleri İçin Çıkarımlar
+
+Ajan güvenliği; yetkilendirme, işlem kaydı, onay mekanizması ve geri alma tasarımıyla birlikte düşünülmelidir:
+- **Yetki Sınırlarının Katılaşması:** Ajanlara geniş erişim hakları yerine görev bazlı geçici (ephemeral) tokenlar verilmelidir.
+- **Donanımsal İzolasyon:** Saldırganların prompt injection ile ajanı manipüle etmesini engellemek için yürütme katmanı ağdan fiziksel olarak izole edilmelidir.
+- **Sorumluluk ve Uyum:** Hukuki ve regülatif açıdan ajanın aldığı kararların şirketi bağladığı unutulmamalı, bağımsız denetim raporlaması hazır tutulmalıdır.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan şirketlerle onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bir gelişmenin çok konuşulması, ticari olarak başarılı olduğu anlamına gelmiyor. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Nvidia Newsroom — OpenShell Reference Architecture (Ekim 2026). Kurumsal mimari dokümanlarına dayanmaktadır.

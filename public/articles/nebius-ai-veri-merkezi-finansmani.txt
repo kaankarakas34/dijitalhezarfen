@@ -1,0 +1,31 @@
+Yapay zekâ odaklı bulut altyapı sağlayıcısı Nebius, 2026 yılı Ekim ayında Citi liderliğindeki finansman konsorsiyumuyla 3,5 milyar dolarlık teminatlı finansman imkânı sağladığını duyurdu. Sağlanan bu devasa kredi paketi, şirketin küresel GPU hesaplama kapasitesini ve yeni nesil veri merkezi genişlemesini doğrudan finanse etmek üzere kullanılacak.
+
+Bu gelişmeyi tek başına bir şirket haberi olarak okumak eksik kalır. Çünkü asıl soru, bu hamlenin sektörün ekonomik düzeninde neyi değiştireceği. Teknoloji dünyasında yeni bir özellik duyurmakla yeni bir iş modeli oluşturmak arasında ciddi fark var. Burada dikkat çekici olan, şirketlerin yatırım, operasyon ve dağıtım kararlarını aynı anda yeniden tasarlaması.
+
+## Olgusal Özet: Citi Destekli 3,5 Milyar Dolarlık Altyapı Finansmanı
+
+Nebius'un kamuoyuyla paylaştığı bilgilere göre kredi paketi, şirketin veri merkezlerinde devreye alacağı son teknoloji GPU kümeleriyle teminatlandırılmış bir yapıya sahip. Bu finansman modeli, girişimlerin hisse sulandırmadan (equity dilution) ağır sermaye harcamalarını borçlanma araçlarıyla karşılama arayışını yansıtıyor.
+
+Temel olgusal parametreler:
+- Finansman büyüklüğü 3,5 milyar dolar olarak açıklandı.
+- Kredi Citi aracılığıyla organize edildi ve GPU varlık teminatına dayandırıldı.
+- Kaynak, Avrupa ve Kuzey Amerika'daki veri merkezi kapasite genişlemesine tahsis edilecek.
+
+## Yazılım Şirketinden Ağır Sanayi Altyapısına Evrilme
+
+Yazılım şirketi kurmakla elektrik, soğutma ve GPU yatırımı yapan bir altyapı şirketi kurmak aynı şey değil. AI ekonomisinde neocloud olarak adlandırılan bazı girişimlerin finansal karakteri, geleneksel bir SaaS şirketinden ziyade enerji ve telekomünikasyon işletmelerine benzemeye başlıyor.
+
+Nitekim [Meta'nın Sermaye Verimliliği Tartışması](/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi) makalemizde de belirttiğimiz gibi, yapay zekânın arkasındaki işlem gücü talebi sermaye yapısını kökten değiştiriyor. Bir yazılım şirketinin yüksek brüt marjları, veri merkezi amortismanları ve yüksek faiz oranlarıyla birleştiğinde bambaşka bir bilanço gerçeğine dönüşüyor.
+
+## İş Dünyası ve Neocloud İş Modelleri İçin Çıkarımlar
+
+Neocloud iş modellerinde borç maliyeti, doluluk oranı ve uzun vadeli kapasite taahhütleri en az model talebi kadar kritiktir:
+- **Borç Maliyeti ve Getiri:** Faiz oranlarının yüksek seyrettiği bir ortamda milyarlarca dolarlık donanım kredisini geri ödemek, veri merkezlerinin kesintisiz tam kapasite çalışmasını gerektirir.
+- **Kapasite Taahhütleri:** Müşterilerin uzun vadeli taahhüt vermemesi durumunda donanım eskimesi (obsolescence) riski doğrudan altyapı sağlayıcısının bilançosunda kalır.
+- **Girişim Ekosistemine Etki:** AI startupları yalnızca algoritmalarıyla değil, tedarik ettikleri hesaplama gücünün maliyet yapısıyla rekabet etmek zorundadır.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan şirketlerle onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bir gelişmenin çok konuşulması, ticari olarak başarılı olduğu anlamına gelmiyor. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Nebius Newsroom — Nebius secures $3.5 billion financing facility with Citi (Ekim 2026). Şirket yatırımcı ilişkileri verilerine dayanmaktadır.

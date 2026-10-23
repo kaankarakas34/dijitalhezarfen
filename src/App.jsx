@@ -39,7 +39,15 @@ function App() {
   const [isApplyModalOpen, setIsApplyModalOpen] = useState(false);
   const [modalType, setModalType] = useState('genel');
   const [initialStageId, setInitialStageId] = useState('');
-  const [currentPath, setCurrentPath] = useState(window.location.hash.slice(1) || '/');
+  const getInitialPath = () => {
+    if (typeof window === 'undefined') return '/';
+    const hash = window.location.hash.slice(1);
+    if (hash && hash.startsWith('/')) return hash;
+    const path = window.location.pathname;
+    if (path && path !== '/') return path;
+    return '/';
+  };
+  const [currentPath, setCurrentPath] = useState(getInitialPath);
   const [lang, setLang] = useState('tr');
 
   useEffect(() => {
@@ -90,8 +98,8 @@ function App() {
       });
     };
 
-    // If no hash present, default to #/
-    if (!window.location.hash) {
+    // If no hash present, default to #/ only if on root path
+    if (!window.location.hash && (!window.location.pathname || window.location.pathname === '/')) {
       window.location.hash = '/';
     }
 

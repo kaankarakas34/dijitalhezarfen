@@ -8,6 +8,677 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'meta-ai-yatirimlari-sermaye-verimliligi',
+    category: 'haber',
+    title: {
+      tr: "Meta’nın 145 Milyar Dolarlık Bahsi: Yapay Zekâya Harcanan Para Ne Zaman Geri Dönecek?",
+      en: "Meta’s $145 Billion Bet: When Will the Capital Spent on AI Return?"
+    },
+    desc: {
+      tr: "Meta, 2026 sermaye harcamasını 145 milyar dolara taşırken serbest nakit akışı eksiye düştü. Yapay zekâ altyapısında sermaye verimliliği ve getiri süresi masada.",
+      en: "As Meta elevates its 2026 CapEx to $145 billion with negative free cash flow, capital efficiency and payback timelines for AI infrastructure face scrutiny."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '6 dk okuma',
+      en: '6 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/meta-ai-yatirimlari-sermaye-verimliligi.svg',
+    imageAlt: "Meta 145 milyar dolar yapay zeka yatırımı ve sermaye verimliliği analizi",
+    source: '/articles/meta-ai-yatirimlari-sermaye-verimliligi.txt',
+    publishedAt: '2026-10-23T09:00:00+03:00',
+    modifiedAt: '2026-10-23T09:00:00+03:00',
+    keywords: [
+          "Meta CapEx",
+          "yapay zeka yatirimlari",
+          "sermaye verimliligi",
+          "Mark Zuckerberg",
+          "serbest nakit akisi",
+          "AI altyapi maliyeti",
+          "GPU veri merkezi"
+    ],
+    color: 'from-blue-600/25 to-cyan-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    sources: [
+      {
+        label: "Reuters (22 Ekim 2026) — Meta’s credit risk indicator jumps record high after results",
+        url: 'https://www.reuters.com/business/metas-credit-risk-indicator-jumps-record-high-after-results-2026-10-22/'
+      }
+    ]
+  },
+  {
+    slug: 'lseg-octus-ozel-veri-ai',
+    category: 'haber',
+    title: {
+      tr: "LSEG Neden 3,54 Milyar Dolara Veri Satın Alıyor? Yapay Zekâ Çağında Asıl Rekabet Avantajı",
+      en: "Why LSEG Is Buying Data for $3.54 Billion: The True Moat in the AI Era"
+    },
+    desc: {
+      tr: "London Stock Exchange Group'un Octus'u 3,54 milyar dolara alması, AI çağında asıl kalıcı avantajın modellerde değil, tescilli özel veride olduğunu kanıtlıyor.",
+      en: "LSEG acquiring Octus for $3.54B proves that the lasting moat in artificial intelligence lies in proprietary, verified domain data rather than commodity models."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/lseg-octus-ozel-veri-ai.svg',
+    imageAlt: "LSEG Octus satın alması ve yapay zeka çağında özel veri rekabeti",
+    source: '/articles/lseg-octus-ozel-veri-ai.txt',
+    publishedAt: '2026-10-23T09:15:00+03:00',
+    modifiedAt: '2026-10-23T09:15:00+03:00',
+    keywords: [
+          "LSEG Octus satin alma",
+          "ozel veri yapay zeka",
+          "proprietary data",
+          "finansal veri analizi",
+          "Permira LSEG",
+          "AI rekabet avantaji",
+          "ozel kredi verisi"
+    ],
+    color: 'from-amber-500/25 to-blue-500/15',
+    accent: 'text-amber-400',
+    featured: false,
+    sources: [
+      {
+        label: "Permira Announcements (Ekim 2026) — Permira agrees sale of Octus to LSEG",
+        url: 'https://www.permira.com/news-and-insights/announcements/permira-agrees-sale-of-octus-to-lseg'
+      }
+    ]
+  },
+  {
+    slug: 'nebius-ai-veri-merkezi-finansmani',
+    category: 'haber',
+    title: {
+      tr: "Nebius’un 3,5 Milyar Dolarlık Kredisi: AI Startup’ları Neden Altyapı Şirketine Dönüşüyor?",
+      en: "Nebius’s $3.5B Facility: Why AI Startups Are Turning into Infrastructure Utilities"
+    },
+    desc: {
+      tr: "Nebius'un Citi ile 3,5 milyar dolarlık finansman anlaşması, GPU bulut girişimlerinin yazılım şirketinden çok sermaye yoğun altyapı operatörüne dönüştüğünü gösteriyor.",
+      en: "Nebius securing a $3.5 billion facility with Citi demonstrates how AI cloud startups are evolving from software entities into capital-heavy infrastructure utilities."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/nebius-ai-veri-merkezi-finansmani.svg',
+    imageAlt: "Nebius Citi 3.5 milyar dolar finansman ve AI veri merkezi altyapı dönüşümü",
+    source: '/articles/nebius-ai-veri-merkezi-finansmani.txt',
+    publishedAt: '2026-10-23T09:30:00+03:00',
+    modifiedAt: '2026-10-23T09:30:00+03:00',
+    keywords: [
+          "Nebius Citi kredi",
+          "AI veri merkezi finansmani",
+          "Neocloud GPU",
+          "hesaplama kapasitesi",
+          "borclanma maliyeti",
+          "GPU bulut altyapisi"
+    ],
+    color: 'from-cyan-500/25 to-teal-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    sources: [
+      {
+        label: "Nebius Newsroom (Ekim 2026) — Nebius secures $3.5 billion financing facility with Citi",
+        url: 'https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi'
+      }
+    ]
+  },
+  {
+    slug: 'flapping-airplanes-bir-milyar-dolar-yatirim',
+    category: 'haber',
+    title: {
+      tr: "Bir Yaşındaki AI Laboratuvarına 1 Milyar Dolar: Yatırımcılar Ne Satın Alıyor?",
+      en: "One-Year-Old AI Lab Raises $1 Billion: What Are Investors Really Buying?"
+    },
+    desc: {
+      tr: "Henüz bir yaşındaki araştırma laboratuvarı Flapping Airplanes'in 6 milyar dolar değerlemeyle aldığı 1 milyar dolar, model verimliliği arayışını zirveye taşıdı.",
+      en: "One-year-old AI research lab Flapping Airplanes raising $1B at a reported $6B valuation highlights venture capital’s aggressive pursuit of compute-efficient architectures."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/flapping-airplanes-bir-milyar-dolar-yatirim.svg',
+    imageAlt: "Flapping Airplanes 1 milyar dolar yatırım turu ve yapay zeka model verimliliği",
+    source: '/articles/flapping-airplanes-bir-milyar-dolar-yatirim.txt',
+    publishedAt: '2026-10-23T09:45:00+03:00',
+    modifiedAt: '2026-10-23T09:45:00+03:00',
+    keywords: [
+          "Flapping Airplanes yatirim",
+          "AI laboratuvari degerleme",
+          "hesaplama verimliligi",
+          "erken asama AI girisimi",
+          "venture capital AI",
+          "model egitim ekonomisi"
+    ],
+    color: 'from-violet-500/25 to-indigo-500/15',
+    accent: 'text-violet-400',
+    featured: false,
+    sources: [
+      {
+        label: "TechCrunch (21 Ekim 2026) — Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        url: 'https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/'
+      }
+    ]
+  },
+  {
+    slug: 'mach9-ai-cad-pivot',
+    category: 'haber',
+    title: {
+      tr: "Mach9’un Pivotu: Robot Yapmak Yerine Robotların Topladığı Veriyi Satmak",
+      en: "Mach9’s Pivot: Selling Data Gathered by Robots Instead of Building Hardware"
+    },
+    desc: {
+      tr: "Mach9, robotik donanımdan LiDAR verilerini AI ile CAD mühendislik çizimlerine dönüştüren yazılıma odaklanarak 34 milyon dolarlık Seri A yatırımını tamamladı.",
+      en: "By pivoting from robotics hardware to AI-powered CAD conversion of LiDAR point clouds, Mach9 secured $34 million in Series A funding to resolve engineering bottlenecks."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/mach9-ai-cad-pivot.svg',
+    imageAlt: "Mach9 LiDAR verisinden AI CAD yazılımına pivot ve 34 milyon dolar Seri A",
+    source: '/articles/mach9-ai-cad-pivot.txt',
+    publishedAt: '2026-10-23T10:00:00+03:00',
+    modifiedAt: '2026-10-23T10:00:00+03:00',
+    keywords: [
+          "Mach9 pivot",
+          "LiDAR AI CAD",
+          "dikey yapay zeka",
+          "muhendislik cizim otomasyonu",
+          "Series A yatirim",
+          "donanimdan yazilima pivot"
+    ],
+    color: 'from-emerald-500/25 to-cyan-500/15',
+    accent: 'text-emerald-400',
+    featured: false,
+    sources: [
+      {
+        label: "Mach9 Blog (Ekim 2026) — Mach9 raises $34M Series A",
+        url: 'https://mach9.ai/blog/mach9-raises-34m-series-a'
+      }
+    ]
+  },
+  {
+    slug: 'nvidia-openshell-ai-agent-guvenligi',
+    category: 'haber',
+    title: {
+      tr: "Nvidia OpenShell: AI Ajanları Şirketinize Girdiğinde Güvenlik Nasıl Değişecek?",
+      en: "Nvidia OpenShell: How Security Changes When AI Agents Enter the Enterprise"
+    },
+    desc: {
+      tr: "Nvidia'nın OpenShell mimarisi, kurumsal süreçlerde özerk hareket eden yapay zekâ ajanları için yetkilendirme, işlem denetimi ve donanım destekli güvenlik getiriyor.",
+      en: "Nvidia’s OpenShell reference architecture establishes hardware-anchored permissioning, audit trails, and execution guardrails for autonomous enterprise AI agents."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '6 dk okuma',
+      en: '6 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/nvidia-openshell-ai-agent-guvenligi.svg',
+    imageAlt: "Nvidia OpenShell kurumsal AI ajan güvenliği ve donanım denetim mimarisi",
+    source: '/articles/nvidia-openshell-ai-agent-guvenligi.txt',
+    publishedAt: '2026-10-23T10:15:00+03:00',
+    modifiedAt: '2026-10-23T10:15:00+03:00',
+    keywords: [
+          "Nvidia OpenShell",
+          "AI agent guvenligi",
+          "otonom ajan denetimi",
+          "kurumsal yapay zeka guvenlik",
+          "donanim tabanli yetkilendirme",
+          "rollback mimarisi"
+    ],
+    color: 'from-emerald-500/25 to-lime-500/15',
+    accent: 'text-emerald-400',
+    featured: false,
+    sources: [
+      {
+        label: "Nvidia Newsroom (Ekim 2026) — OpenShell Reference Architecture for Secure Agentic AI",
+        url: 'https://nvidianews.nvidia.com/news/openshell-reference-architecture'
+      }
+    ]
+  },
+  {
+    slug: 'nvidia-agile-robots-humanoid-platform',
+    category: 'haber',
+    title: {
+      tr: "Humanoid Robotlar İçin Android Benzeri Bir Platform mu Doğuyor?",
+      en: "Is an Android-Like Platform Emerging for Humanoid Robotics?"
+    },
+    desc: {
+      tr: "Nvidia'nın Isaac platformu ve Agile Robots ortaklığı, humanoid robotik alanında Android benzeri standart bir geliştirme ve simülasyon ekosistemi yaratıyor.",
+      en: "Nvidia's Isaac platform expansions and Agile Robots alignment point toward an Android-style universal development and simulation layer for humanoid robotics."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/nvidia-agile-robots-humanoid-platform.svg',
+    imageAlt: "Nvidia Isaac ve Agile Robots humanoid robot geliştirme platformu",
+    source: '/articles/nvidia-agile-robots-humanoid-platform.txt',
+    publishedAt: '2026-10-23T10:30:00+03:00',
+    modifiedAt: '2026-10-23T10:30:00+03:00',
+    keywords: [
+          "Nvidia Isaac Agile Robots",
+          "humanoid robot platformu",
+          "fiziksel yapay zeka",
+          "robot isletim sistemi",
+          "robotik simulasyon donanimi"
+    ],
+    color: 'from-green-500/25 to-cyan-500/15',
+    accent: 'text-green-400',
+    featured: false,
+    sources: [
+      {
+        label: "Nvidia Investor Relations (Ekim 2026) — Isaac Robotics & Agile Robots Announcements",
+        url: 'https://investor.nvidia.com/'
+      }
+    ]
+  },
+  {
+    slug: 'ai-veri-merkezi-elektrik-kablo-darbogazi',
+    category: 'haber',
+    title: {
+      tr: "Yapay Zekânın Önündeki Engel Çip Değil, Elektrik Kablosu Olabilir",
+      en: "The Bottleneck for AI May Not Be Chips, But Electrical Cables"
+    },
+    desc: {
+      tr: "Kablo üreticisi Nexans'ın uyarısıyla gündeme gelen altyapı krizi, AI veri merkezlerinin büyüme hızının çip tedarikinden önce elektrik şebekesine takıldığını kanıtlıyor.",
+      en: "Cable giant Nexans warns that low and medium-voltage electrical cable supply limits represent a severe physical constraint for scaling AI data centers."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/ai-veri-merkezi-elektrik-kablo-darbogazi.svg',
+    imageAlt: "Nexans elektrik kablosu darboğazı ve yapay zeka veri merkezi enerji kısıtları",
+    source: '/articles/ai-veri-merkezi-elektrik-kablo-darbogazi.txt',
+    publishedAt: '2026-10-23T10:45:00+03:00',
+    modifiedAt: '2026-10-23T10:45:00+03:00',
+    keywords: [
+          "Nexans kablo darbogazi",
+          "AI veri merkezi elektrik",
+          "enerji sebeke baglantisi",
+          "trafo orta gerilim",
+          "fiziksel altyapi kisiti"
+    ],
+    color: 'from-amber-500/25 to-red-500/15',
+    accent: 'text-amber-400',
+    featured: false,
+    sources: [
+      {
+        label: "Reuters (22 Ekim 2026) — Cable capacity emerges as bottleneck for AI data centres, Nexans says",
+        url: 'https://www.reuters.com/technology/cable-capacity-emerges-bottleneck-ai-data-centres-nexans-says-2026-10-22/'
+      }
+    ]
+  },
+  {
+    slug: 'target-ask-target-ai-alisveris',
+    category: 'haber',
+    title: {
+      tr: "Target’ın AI Alışveriş Asistanı: E-Ticarette Arama Kutusunun Sonrası",
+      en: "Target’s AI Shopping Assistant: Beyond the E-Commerce Search Box"
+    },
+    desc: {
+      tr: "Target'ın devreye aldığı Ask Target asistanı, e-ticarette anahtar kelime aramasının yerini ihtiyaç odaklı diyalog ve satın alma eşlikçiliğinin aldığını gösteriyor.",
+      en: "Target introducing its Ask Target assistant illustrates how conversational intent and contextual decision support are replacing traditional e-commerce search boxes."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/target-ask-target-ai-alisveris.svg',
+    imageAlt: "Ask Target AI alışveriş asistanı ve e-ticarette arama kutusunun dönüşümü",
+    source: '/articles/target-ask-target-ai-alisveris.txt',
+    publishedAt: '2026-10-23T11:00:00+03:00',
+    modifiedAt: '2026-10-23T11:00:00+03:00',
+    keywords: [
+          "Target Ask Target",
+          "e-ticaret yapay zeka",
+          "intent based shopping",
+          "diyalogsal ticaret",
+          "arama kutusu sonrasi",
+          "katalog veri yapilandirma"
+    ],
+    color: 'from-rose-500/25 to-pink-500/15',
+    accent: 'text-rose-400',
+    featured: false,
+    sources: [
+      {
+        label: "Target Corporate Press (Ekim 2026) — Target Unveils Next-Gen AI Shopping Companion Ask Target",
+        url: 'https://corporate.target.com/press'
+      }
+    ]
+  },
+  {
+    slug: 'walmart-connect-ajanslar-reklam-olcumleme',
+    category: 'haber',
+    title: {
+      tr: "Walmart Connect ve Ajansların Geleceği: Reklamverenle İlişki Kimin?",
+      en: "Walmart Connect and the Future of Agencies: Who Truly Owns the Advertiser?"
+    },
+    desc: {
+      tr: "Walmart Connect'in doğrudan markalara etki ölçümlemesi sunması, perakende medya ağlarında reklam ajanslarının aracılık gücünü ve katma değerini sorgulatıyor.",
+      en: "Walmart Connect pitching brand marketers directly with performance lift studies challenges traditional media agencies to redefine their strategic added value."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/walmart-connect-ajanslar-reklam-olcumleme.svg',
+    imageAlt: "Walmart Connect perakende medya ağı reklam ölçümleme ve ajans ilişkileri",
+    source: '/articles/walmart-connect-ajanslar-reklam-olcumleme.txt',
+    publishedAt: '2026-10-23T11:15:00+03:00',
+    modifiedAt: '2026-10-23T11:15:00+03:00',
+    keywords: [
+          "Walmart Connect ajanslar",
+          "retail media network",
+          "marka etki olcumlemesi",
+          "medya planlama",
+          "artimli satis analizi",
+          "reklamveren iliskisi"
+    ],
+    color: 'from-blue-500/25 to-yellow-500/15',
+    accent: 'text-blue-400',
+    featured: false,
+    sources: [
+      {
+        label: "Digiday (Ekim 2026) — Walmart Connect pitches brands directly as it pushes lift studies ahead of holiday ad deals",
+        url: 'https://digiday.com/marketing/walmart-connect-pitches-brands-directly-as-it-pushes-lift-studies-ahead-of-holiday-ad-deals/'
+      }
+    ]
+  },
+  {
+    slug: 'cnn-agentic-advertising',
+    category: 'haber',
+    title: {
+      tr: "CNN Reklam Alanını AI Ajanlarına Sattığında Medya Satın Alma Nasıl Değişecek?",
+      en: "When CNN Sells Ad Space to AI Agents: The Future of Media Buying"
+    },
+    desc: {
+      tr: "CNN International'ın 2027 başında devreye almayı planladığı ajan tabanlı reklam sistemi, teklif verme, pazarlık ve envanter satın almayı özerk botlara devrediyor.",
+      en: "CNN International’s roadmap to commercialize agent-to-agent advertising in Q1 2027 paves the way for fully automated autonomous media negotiation and inventory buying."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/cnn-agentic-advertising.svg',
+    imageAlt: "CNN International agentic advertising otonom ajan reklam pazarı",
+    source: '/articles/cnn-agentic-advertising.txt',
+    publishedAt: '2026-10-23T11:30:00+03:00',
+    modifiedAt: '2026-10-23T11:30:00+03:00',
+    keywords: [
+          "CNN agentic advertising",
+          "otonom medya satin alma",
+          "agent to agent reklam",
+          "programatik reklam devrimi",
+          "reklam envanteri otomasyonu"
+    ],
+    color: 'from-red-500/25 to-blue-500/15',
+    accent: 'text-red-400',
+    featured: false,
+    sources: [
+      {
+        label: "Digiday (Ekim 2026) — Why CNN International is building for an agentic ad market that barely exists yet",
+        url: 'https://digiday.com/media/why-cnn-international-is-building-for-agentic-ad-market-that-barely-exists-yet/'
+      }
+    ]
+  },
+  {
+    slug: 'moderna-merck-mrna-melanom-faz-3',
+    category: 'haber',
+    title: {
+      tr: "Kişiye Özel mRNA Kanser Tedavisinde %42: Rakam Gerçekte Ne Anlatıyor?",
+      en: "42% in Personalized mRNA Cancer Therapy: What Does the Number Really Mean?"
+    },
+    desc: {
+      tr: "Moderna ve Merck'in melanom Faz 3 çalışmasındaki %42'lik göreli risk azalması, kişiselleştirilmiş neoantijen onkolojisinin klinik ve ticari geleceğini açığa çıkarıyor.",
+      en: "Moderna and Merck's Phase 3 melanoma trial reporting a 42% relative risk reduction with personalized mRNA therapy clarifies the biological reality behind the headline."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '6 dk okuma',
+      en: '6 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/moderna-merck-mrna-melanom-faz-3.svg',
+    imageAlt: "Moderna Merck kişiselleştirilmiş mRNA melanom kanser Faz 3 klinik sonuçları",
+    source: '/articles/moderna-merck-mrna-melanom-faz-3.txt',
+    publishedAt: '2026-10-23T11:45:00+03:00',
+    modifiedAt: '2026-10-23T11:45:00+03:00',
+    keywords: [
+          "Moderna Merck mRNA kanser",
+          "melanom Faz 3",
+          "Keytruda kombinasyonu",
+          "goreli risk azalmasi",
+          "kisisellestirilmis onkoloji",
+          "neoantijen asisi"
+    ],
+    color: 'from-emerald-500/25 to-blue-500/15',
+    accent: 'text-emerald-400',
+    featured: false,
+    sources: [
+      {
+        label: "Associated Press (Ekim 2026) — Moderna and Merck report promising personalized mRNA melanoma Phase 3 trial data",
+        url: 'https://apnews.com/article/415ececd79c9411498751246742aafa2'
+      }
+    ]
+  },
+  {
+    slug: 'gilead-pepstar-ilac-teknoloji-satin-alma',
+    category: 'haber',
+    title: {
+      tr: "Gilead’ın 1,275 Milyar Dolarlık Erken Aşama Bahsi: İlaç mı, Teknoloji mi?",
+      en: "Gilead’s $1.275B Early-Stage Bet: Buying a Drug or Acquiring Technology?"
+    },
+    desc: {
+      tr: "Gilead'ın PepStar'ın erken klinik aşamadaki oral IL-23 programını 1,275 milyar dolara alması, ilaç devlerinin bilimsel platform satın alma stratejisini yansıtıyor.",
+      en: "Gilead acquiring PepStar’s early-stage oral IL-23 program for $1.275 billion shows big pharma valuing foundational biology platforms over immediate sales."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/gilead-pepstar-ilac-teknoloji-satin-alma.svg',
+    imageAlt: "Gilead PepStar Therapeutics satın alması oral IL-23 biyoteknoloji platformu",
+    source: '/articles/gilead-pepstar-ilac-teknoloji-satin-alma.txt',
+    publishedAt: '2026-10-23T12:00:00+03:00',
+    modifiedAt: '2026-10-23T12:00:00+03:00',
+    keywords: [
+          "Gilead PepStar satin alma",
+          "oral IL-23 inhibitoru",
+          "erken klinik asama biyoteknoloji",
+          "ilac sirketi degerlemesi",
+          "patent portfoy stratejisi"
+    ],
+    color: 'from-blue-500/25 to-indigo-500/15',
+    accent: 'text-blue-400',
+    featured: false,
+    sources: [
+      {
+        label: "Gilead Sciences Investor Relations (Ekim 2026) — Gilead Announces Acquisition of PepStar Therapeutics Oral IL-23 Program",
+        url: 'https://investors.gilead.com/'
+      }
+    ]
+  },
+  {
+    slug: 'microsoft-ai-teshis-sirali-akil-yurutme',
+    category: 'haber',
+    title: {
+      tr: "Doktor Gibi Adım Adım Düşünen AI: Tıbbi Yapay Zekâda Yeni Eşik",
+      en: "AI That Reasons Sequentially Like a Doctor: A New Frontier in Medical AI"
+    },
+    desc: {
+      tr: "Microsoft araştırmacılarının geliştirdiği sıralı akıl yürütme tanı AI'ı, sağlıkta tek seferlik tahmin yerine hekimler gibi aşamalı test ve soru sorma yöntemini getiriyor.",
+      en: "Microsoft researchers unveil sequential reasoning medical AI that investigates patient data step-by-step, mimicking clinical differential diagnosis workflows."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '6 dk okuma',
+      en: '6 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/microsoft-ai-teshis-sirali-akil-yurutme.svg',
+    imageAlt: "Microsoft tıbbi yapay zeka sıralı akıl yürütme ve tanısal klinik karar desteği",
+    source: '/articles/microsoft-ai-teshis-sirali-akil-yurutme.txt',
+    publishedAt: '2026-10-23T12:15:00+03:00',
+    modifiedAt: '2026-10-23T12:15:00+03:00',
+    keywords: [
+          "Microsoft sirali akil yurutme",
+          "tibbi yapay zeka teshis",
+          "klinik karar destek",
+          "aciklanabilir AI",
+          "hekim tanı simülasyonu"
+    ],
+    color: 'from-cyan-500/25 to-blue-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    sources: [
+      {
+        label: "Reuters (23 Ekim 2026) — Microsoft develops AI tool that can diagnose sequentially like doctor",
+        url: 'https://www.reuters.com/business/healthcare-pharmaceuticals/microsoft-develops-ai-tool-that-can-diagnose-sequentially-like-doctor-2026-10-23/'
+      }
+    ]
+  },
+  {
+    slug: 'abd-cin-teknoloji-yatirim-kisitlamalari',
+    category: 'haber',
+    title: {
+      tr: "ABD’nin Çin Teknoloji Yatırımlarına Yeni Freni: Startup Sermayesi Jeopolitiğe Bağlanıyor",
+      en: "US Clamps Down on China Tech Investments: Startup Capital Tied to Geopolitics"
+    },
+    desc: {
+      tr: "ABD Hazine Bakanlığı'nın yayımladığı dış yatırım düzenlemeleri; AI, kuantum ve yarı iletkenlerde sermaye akışlarını doğrudan ulusal güvenlik denetimine bağlıyor.",
+      en: "The US Treasury's proposed outbound investment rules explicitly bind startup venture capital in AI, semiconductors, and quantum to national security geopolitics."
+    },
+    date: {
+      tr: '23 Ekim 2026',
+      en: 'October 23, 2026'
+    },
+    readTime: {
+      tr: '5 dk okuma',
+      en: '5 min read'
+    },
+    author: 'Kaan Karakaş',
+    authorRole: 'Kurucu & Teknoloji Girişimcisi',
+    authorBio: "Dijital Hezarfen ekosisteminde girişimcilik, yapay zekâ otomasyonu, büyüme stratejileri ve teknoloji ekonomisi üzerine yayınlar hazırlamakta ve girişimcilere mentorluk yapmaktadır.",
+    image: '/images/abd-cin-teknoloji-yatirim-kisitlamalari.svg',
+    imageAlt: "ABD Hazine Bakanlığı Çin teknoloji yatırım kısıtlamaları ve startup jeopolitiği",
+    source: '/articles/abd-cin-teknoloji-yatirim-kisitlamalari.txt',
+    publishedAt: '2026-10-23T12:30:00+03:00',
+    modifiedAt: '2026-10-23T12:30:00+03:00',
+    keywords: [
+          "ABD Cin teknoloji kisitlamasi",
+          "ABD Hazine Bakanligi outbound investment",
+          "yari iletken kuantum AI ihrac",
+          "jeopolitik risk",
+          "startup sermaye jeopolitigi"
+    ],
+    color: 'from-amber-500/25 to-blue-500/15',
+    accent: 'text-amber-400',
+    featured: false,
+    sources: [
+      {
+        label: "U.S. Department of the Treasury (Ekim 2026) — Provisions Pertaining to U.S. Investments in Certain National Security Technologies and Products",
+        url: 'https://home.treasury.gov/'
+      }
+    ]
+  },
+  {
     slug: 'enron-karin-nakdin-ve-guvenin-denetimi',
     category: 'rapor',
     title: {

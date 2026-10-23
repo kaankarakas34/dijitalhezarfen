@@ -1,0 +1,31 @@
+Reuters'ın 23 Ekim 2026 tarihli haberine göre Microsoft araştırmacıları, hasta bilgilerini bir kerede değerlendirip aceleci bir teşhis koymak yerine gerçek hekimler gibi aşamalı tanısal akıl yürüten (sequential reasoning) yeni bir tıbbi yapay zekâ yaklaşımını bilimsel bir çalışmayla kamuoyuna duyurdu. Sistem; mevcut semptomlara bakarak gereksiz testleri eleyip sıradaki en kritik tahlil veya soruyu seçerek sonuca ulaşıyor.
+
+Bu gelişmeyi tek başına bir yapay zekâ makalesi olarak okumak eksik kalır. Çünkü asıl soru, bu hamlenin sektörün ekonomik ve sağlık düzeninde neyi değiştireceği. Teknoloji dünyasında yeni bir özellik duyurmakla yeni bir iş modeli oluşturmak arasında ciddi fark var. Burada dikkat çekici olan, şirketlerin yatırım, operasyon ve dağıtım kararlarını aynı anda yeniden tasarlaması.
+
+## Olgusal Özet: Kademeli Soru ve Test Seçen Tanısal AI Mimarisi
+
+Reuters'ın aktardığı araştırma sonuçlarına göre model, sentetik vaka incelemelerinde ve kontrollü test ortamlarında standart hekim karar basamaklarıyla kıyaslandı. Modelin en belirgin özelliği, eksik bilgi olduğunda doğrudan kesin teşhis uydurmak (hallucination) yerine hekim gibi "önce şu kan testini yapmalıyız" diyebilmesidir.
+
+Doğrulanmış olgusal parametreler:
+- Çalışma kontrollü benchmark testlerine dayanıyor; gerçek klinik hastane ortamlarında henüz onaylanmış bir teşhis aracı değildir.
+- Sıralı akıl yürütme (sequential reasoning), gereksiz MR ve tomografi maliyetlerini düşürmeyi hedefler.
+- Sistem bağımsız tıp kurulları tarafından prospektif klinik deneylerle incelenmeyi beklemektedir.
+
+## Doğru Cevabı Vermek Yetmez; Doğru Cevaba Hangi Sorularla Ulaşıldığı Önemlidir
+
+Sağlıkta önemli olan yalnızca tek seferde doğru cevabı tahmin etmek değil, o doğru cevaba hangi klinik hipotezlerle ve hangi sorularla ulaşıldığını adım adım gösterebilmektir. Bana göre bir doktoru taklit eden genel sohbet ekranlarından çok daha değerli olan, denetlenebilir ve açıklanabilir bir karar sürecidir.
+
+Daha önce [İnsanı İnsan Yapan Şey Aslında Zihnidir](/yayinlar/insani-insan-yapan-sey-aslinda-zihnidir) felsefi analizimizde tartıştığımız gibi, insan bilişi bilgileri statik bir dosya gibi işlemez; hipotez kurar, test eder ve eler. Microsoft'un tanısal yapay zekâyı bu dinamik sürece yaklaştırması, yapay zekâda açıklanabilirlik (explainability) açısından kritik bir adımdır.
+
+## İş Dünyası ve Sağlık Teknolojisi Kurucuları İçin Çıkarımlar
+
+Klinik karar desteğinde açıklanabilirlik, güvenlik ve prospektif doğrulama temel kriterler olmalıdır:
+- **Halüsinasyon Riskinin Azaltılması:** Modele eksik bilgiyi tamamlama zorunluluğu getirmek, yanlış tanı ihtimalini önemli ölçüde sınırlar.
+- **Sağlık Harcamalarının Optimizasyonu:** Doğru tetkik sırası oluşturmak, sigorta şirketleri ve hastaneler için devasa bir maliyet tasarrufu potansiyeli taşır.
+- **Mevzuat Engeli:** Tıbbi tanı iddiaları FDA ve EMA gibi regülatör kurumların uzun soluklu klinik onaylarına tabidir; laboratuvar başarısı klinik garanti değildir.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan şirketlerle onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bir gelişmenin çok konuşulması, ticari veya tıbbi olarak başarılı olduğu anlamına gelmiyor. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Reuters — Microsoft develops AI tool that can diagnose sequentially like doctor (23 Ekim 2026). Bilimsel araştırma yayını ve klinik vaka sonuçlarına atıfla hazırlanmıştır.

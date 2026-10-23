@@ -1,0 +1,31 @@
+Perakende devi Target, 2026 yılı Ekim ayında müşterilerinin alışveriş deneyimini dönüştürmek amacıyla Ask Target adlı yapay zekâ destekli alışveriş asistanını mağaza içi ve dijital kanallara entegre edeceğini duyurdu. Sistem; müşterilerin ürün aramak yerine doğrudan ihtiyaçlarını, bütçelerini veya etkinlik planlarını doğal dille anlatarak en uygun sepeti oluşturmasını amaçlıyor.
+
+Bu gelişmeyi tek başına bir şirket haberi olarak okumak eksik kalır. Çünkü asıl soru, bu hamlenin sektörün ekonomik düzeninde neyi değiştireceği. Teknoloji dünyasında yeni bir özellik duyurmakla yeni bir iş modeli oluşturmak arasında ciddi fark var. Burada dikkat çekici olan, şirketlerin yatırım, operasyon ve dağıtım kararlarını aynı anda yeniden tasarlaması.
+
+## Olgusal Özet: Ask Target İle Kelime Aramasından Diyaloğa Geçiş
+
+Target'ın kurumsal basın bültenine göre Ask Target, statik ürün filtrelerinin ötesine geçerek kullanıcının bağlamını çözümlüyor. Örneğin "6 kişilik glütensiz bir akşam yemeği menüsü" yazan bir müşteri; tarif malzemelerini, stok durumunu ve mağazadan teslim alma seçeneklerini tek bir diyalog penceresinde bulabiliyor.
+
+Öne çıkan doğrulanmış olgular:
+- Ask Target, Target mobil uygulamasına ve web sitesine kademeli olarak entegre ediliyor.
+- Sistem ürün kataloğunu, mağaza stoklarını ve kişiselleştirilmiş promosyonları anlık birleştiriyor.
+- Amaç, arama ve filtreleme süresini kısaltarak sepet dönüşüm oranını artırmak.
+
+## Ürün Aramak Yerine İhtiyacı Anlatmak: Niyet Odaklı Alışveriş
+
+Bence mağazaların yeni rekabeti yalnızca en iyi ürün sayfasını hazırlamak veya arama motoru optimizasyonu yapmak değil, müşterinin karar verme anında yanında olmaktır. İnsan bir ürünü aramak yerine ihtiyacını anlatıyorsa, ürün kataloğunun ve e-ticaret altyapısının da bu dile cevap vermesi gerekir.
+
+Daha önce [Bilgisayar Kavramı Değişiyor: Operating System’dan Intelligence System’a](/yayinlar/bilgisayar-kavrami-degisiyor) analizimizde vurguladığımız intent-based etkileşim, e-ticarette somut bir karşılık buluyor. Kullanıcılar menüleri ve filtre kutucuklarını tıklamak istemiyor; niyetlerini söyleyip doğrudan sonuç almak istiyor.
+
+## E-Ticaret ve Perakende Markaları İçin Çıkarımlar
+
+Ürün verisi, stok doğruluğu ve anlaşılır özellik alanları AI destekli ticarette hayati hale gelebilir:
+- **Katalog Verisinin Temizliği:** AI asistanının doğru öneri sunabilmesi, ürün açıklamalarının ve içerik etiketlerinin hatasız olmasına bağlıdır.
+- **Arama Kutusunun Rolü:** Geleneksel anahtar kelime aramaları yerini diyalog ve danışmanlık katmanına bıraktıkça e-ticaret SEO stratejileri de değişmek zorundadır.
+- **Stok Tutarlılığı:** Asistanın önerdiği ürün rafta veya depoda yoksa müşteri memnuniyeti hızla erozyona uğrar.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan şirketlerle onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bir gelişmenin çok konuşulması, ticari olarak başarılı olduğu anlamına gelmiyor. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Target Corporate Press — Ask Target AI Assistant Release (Ekim 2026). Şirket basın bültenleri doğrultusunda hazırlanmıştır.

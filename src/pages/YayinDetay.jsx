@@ -69,10 +69,11 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
   }
 
   const articleCanonical = `${siteBaseUrl}${article.path}`;
+  const schemaType = article.category === 'haber' ? 'NewsArticle' : (article.category === 'rapor' ? 'TechArticle' : 'Article');
 
   const graph = [
     {
-      '@type': 'TechArticle',
+      '@type': schemaType,
       '@id': `${articleCanonical}#article`,
       isPartOf: {
         '@type': 'WebPage',

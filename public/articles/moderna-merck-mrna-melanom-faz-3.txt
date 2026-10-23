@@ -1,0 +1,31 @@
+Associated Press'in Ekim 2026 tarihli haberine göre Moderna ve Merck, ameliyat edilmiş yüksek riskli melanom (cilt kanseri) hastalarında yürüttükleri geniş kapsamlı Faz 3 klinik çalışmasının uzun dönem verilerini paylaştı. Kişiye özel olarak tasarlanan mRNA kanser tedavisi ile Keytruda immünoterapisinin kombinasyonu, tek başına Keytruda kullanımına kıyasla hastalığın nüksetme veya ölüm riskinde göreli olarak %42 azalma sağladı.
+
+Bu gelişmeyi tek başına bir sansasyon haberi olarak okumak eksik kalır. Çünkü asıl soru, bu hamlenin sektörün ekonomik ve tıbbi düzeninde neyi değiştireceği. Teknoloji dünyasında yeni bir özellik duyurmakla yeni bir iş modeli oluşturmak arasında ciddi fark var. Burada dikkat çekici olan, biyoteknoloji şirketlerinin kişiye özel üretim hattını ölçeklendirme başarısıdır.
+
+## Olgusal Özet: Melanom Faz 3 Araştırmasında %42 Göreli Risk Azalması
+
+Klinik çalışmada kullanılan mRNA-4157 (V940), her hastanın cerrahi olarak alınan tümör dokusunun genetik dizilenmesiyle üretilir. Hastaya özgü 34 farklı neoantijen tespit edilerek bağışıklık sistemine kanser hücrelerini tanıma talimatı verilir.
+
+Doğrulanmış klinik ve olgusal veriler:
+- Araştırma yüksek riskli Evre III/IV melanom hastalarını kapsıyor.
+- Bildirilen %42, mutlak bir iyileşme oranı değil; Keytruda monoterapi kontrol grubuna kıyasla göreli risk azalmasıdır (HR ~ 0.58).
+- Tedavi henüz genel halk kullanımına tam onay almış değildir; düzenleyici kurum incelemeleri sürmektedir.
+
+## Göreli Risk İle Herkesin İyileştiğini Söylemek Aynı Şey Değil
+
+Bu tür sağlık haberlerinde tek bir yüzdeyi mucize gibi sunmak ne yazık ki çok yaygındır. Oysa göreli risk azalmasıyla her hastanın tamamen iyileştiğini söylemek aynı şey değildir. Sağlık yazılarında sonuçları klinik bağlamından koparmamak gerekir.
+
+Asıl heyecan verici taraf, tıbbın tek tip ilaç modelinden çıkarak hastanın tümörünün moleküler özelliklerine göre birkaç hafta içinde kişiselleştirilebilen bir biyoinformatik üretim hattına dönüşmesidir. Tıpkı [Gilead'ın Erken Aşama Biyoteknoloji Yatırımı](/yayinlar/gilead-pepstar-ilac-teknoloji-satin-alma) yazımızda inceleyeceğimiz gibi, biyoteknolojide geleceğin değeri platform teknolojilerinde yatmaktadır.
+
+## İş Dünyası ve Biyoteknoloji Girişimleri İçin Çıkarımlar
+
+Kişiselleştirilmiş onkoloji; biyoinformatik, bulut hesaplama ve ultra hızlı steril üretim altyapısı açısından devrimsel niteliktedir:
+- **Biyoinformatik İhtiyacı:** Genom dizileme ve neoantijen tahmin algoritmaları, yapay zekânın biyolojideki en somut değer üreticilerinden biridir.
+- **Üretim Lojistiği:** Her hasta için ayrı ilaç şişesi üretmek, tedarik zincirini ve regülasyon uyumunu baştan sona yeniden tasarlamayı zorunlu kılar.
+- **Onay ve Fiyatlama Eşiği:** Milyonlarca dolarlık tedavi maliyetlerinin sağlık sigortaları ve geri ödeme kurumları tarafından nasıl karşılanacağı henüz belirsizdir.
+
+## Editoryal Sonuç ve Değerlendirme
+
+Bence önümüzdeki dönemin kritik ayrımı, yeni teknolojiyi ilk kullanan şirketlerle onu ölçülebilir ve sürdürülebilir bir avantaja dönüştüren şirketler arasında oluşacak. Bir gelişmenin çok konuşulması, ticari veya klinik olarak tamamlanmış başarı anlamına gelmiyor. Bu haberi de tam olarak bu nedenle izlemeye değer buluyorum.
+
+> **Görünür Kaynak Notu:** Associated Press — Moderna & Merck personalized mRNA melanoma Phase 3 trial results (Ekim 2026). Klinik çalışma verileri resmî bültenler doğrultusunda sunulmuştur.

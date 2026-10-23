@@ -1,4 +1,16 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/yayinlar/:slug",
+      "destination": "/yayinlar/:slug/index.html"
+    },
+    {
+      "source": "/((?!assets/|articles/|images/|favicon.svg|icons.svg|robots.txt|sitemap.xml|yayinlar/).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/articles/(.*)",

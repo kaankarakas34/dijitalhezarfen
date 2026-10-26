@@ -8,6 +8,7 @@ import AppServices from '../components/AppServices';
 import OtherPrograms from '../components/OtherPrograms';
 import StartupStages from '../components/StartupStages';
 import BlogSection from '../components/BlogSection';
+import OpenSourceBanner from '../components/OpenSourceBanner';
 
 export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lang }) {
   return (
@@ -17,6 +18,9 @@ export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lan
       
       {/* Section 3: Pillars */}
       <AboutPillars lang={lang} />
+
+      {/* Section: Open Source Entrepreneurship Library (199 Tools) */}
+      <OpenSourceBanner lang={lang} onNavigate={onNavigate} />
 
       {/* Section 3: Featured Publications */}
       <BlogSection lang={lang} onNavigate={onNavigate} />

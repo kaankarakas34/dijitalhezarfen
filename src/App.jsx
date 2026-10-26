@@ -34,6 +34,7 @@ import YayinDetay from './pages/YayinDetay';
 import Basvur from './pages/Basvur';
 import Iletisim from './pages/Iletisim';
 import Sss from './pages/Sss';
+import AcikKaynakKutuphanesi from './pages/AcikKaynakKutuphanesi';
 
 function App() {
   const [isApplyModalOpen, setIsApplyModalOpen] = useState(false);
@@ -209,8 +210,11 @@ function App() {
         return <Iletisim lang={lang} onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
       case '/sik-sorulan-sorular':
         return <Sss lang={lang} onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
+      case '/acik-kaynak-kutuphanesi':
+      case '/acik-kaynak-araclar':
+        return <AcikKaynakKutuphanesi lang={lang} onNavigate={handleNavigate} onOpenApplyModal={handleOpenApplyModal} />;
       default:
-        return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} />;
+        return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} onNavigate={handleNavigate} />;
     }
   };
 

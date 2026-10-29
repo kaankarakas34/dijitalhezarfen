@@ -8,6 +8,872 @@ export const articleCategories = [
 
 export const articles = [
   {
+    slug: 'google-ai-mode-reklamlari-arama-ekonomisi',
+    category: 'haber',
+    topic: {
+      tr: "Dijital Pazarlama",
+      en: "Digital Marketing"
+    },
+    title: {
+      tr: "Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor",
+      en: "Google AI Mode Ads: The Search Engine Now Sells Inside the Conversation"
+    },
+    seoTitle: "Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor | Dijital Hezarfen",
+    lead: {
+      tr: "Google, AI Mode reklamlarını yeni ülkelere açarak arama ekonomisinin geleceğini konuşma tabanlı deneyimlerde arıyor.",
+      en: "Google expands AI Mode ads into new markets, seeking the future of the search economy in conversational experiences."
+    },
+    desc: {
+      tr: "Google, AI Mode reklamlarını yeni ülkelere açarak arama ekonomisinin geleceğini konuşma tabanlı deneyimlerde arıyor. Arama artık birkaç kelimelik sorgudan ibaret değil.",
+      en: "Google expands AI Mode ads into new countries, reshaping the search economy around multi-turn conversational intent and sponsored discovery."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-01.webp',
+    imageAlt: "Konuşma tabanlı aramada reklam ve kullanıcı niyetinin birleşmesini simgeleyen görsel.",
+    source: '/articles/google-ai-mode-reklamlari-arama-ekonomisi.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Google AI Mode reklamlari",
+          "arama ekonomisi",
+          "GEO",
+          "SEO",
+          "dijital pazarlama",
+          "konusma tabanli arama"
+    ],
+    color: 'from-blue-600/25 to-amber-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    relatedSlugs: ["target-ask-target-ai-alisveris","walmart-connect-ajanslar-reklam-olcumleme"],
+    sources: [
+          {
+                "label": "Google Blog — Ads in AI Mode expand to new markets (Kaynak / Doğrulama Bağlantısı)",
+                "url": "https://blog.google/intl/en-africa/products/ads-in-ai-mode-expand-to-new-markets/"
+          }
+    ]
+  },
+  {
+    slug: 'microsoft-openai-10-milyar-dolar-gelir',
+    category: 'haber',
+    topic: {
+      tr: "Yapay Zekâ Ekonomisi",
+      en: "AI Economy"
+    },
+    title: {
+      tr: "Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür?",
+      en: "The Microsoft–OpenAI Relationship: How an Investment Turns into a Massive Revenue Channel"
+    },
+    seoTitle: "Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür? | Dijital Hezarfen",
+    lead: {
+      tr: "Microsoft’un OpenAI ile ticari ilişkilerinden elde ettiği gelir, yapay zekâ ortaklıklarının ne kadar karmaşık bir ekonomiye dönüştüğünü gösteriyor.",
+      en: "Revenue generated from Microsoft’s commercial arrangements with OpenAI illustrates how complex AI partnerships have become."
+    },
+    desc: {
+      tr: "Microsoft’un OpenAI ile ticari ilişkilerinden elde ettiği gelir, yapay zekâ ortaklıklarının ne kadar karmaşık bir ekonomiye dönüştüğünü gösteriyor. Klasik yatırım ilişkisi yerini karşılıklı bağımlılığa bırakıyor.",
+      en: "Microsoft’s commercial revenue from OpenAI demonstrates how strategic AI investments blend cloud infrastructure consumption, partnership, and competition."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-02.webp',
+    imageAlt: "Bulut altyapısı ile yapay zekâ şirketi arasındaki stratejik ortaklık ve bağımlılık.",
+    source: '/articles/microsoft-openai-10-milyar-dolar-gelir.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Microsoft OpenAI gelir",
+          "yapay zeka ekonomisi",
+          "bulut altyapisi",
+          "stratejik ortaklik",
+          "musteri yogunlasmasi"
+    ],
+    color: 'from-sky-600/25 to-amber-600/15',
+    accent: 'text-sky-400',
+    featured: false,
+    relatedSlugs: ["meta-ai-yatirimlari-sermaye-verimliligi","nebius-ai-veri-merkezi-finansmani"],
+    sources: [
+          {
+                "label": "Microsoft Source (28 Ekim 2026) — Microsoft announces first-quarter results (Kaynak / Doğrulama Bağlantısı)",
+                "url": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/"
+          }
+    ]
+  },
+  {
+    slug: 'sap-model-routing-ai-maliyet-optimizasyonu',
+    category: 'haber',
+    topic: {
+      tr: "Kurumsal Yazılım",
+      en: "Enterprise Software"
+    },
+    title: {
+      tr: "SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor?",
+      en: "Why SAP Does Not Want to Use the Most Powerful AI Model for Everything"
+    },
+    seoTitle: "SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor? | Dijital Hezarfen",
+    lead: {
+      tr: "Kurumsal yapay zekâda başarı, en büyük modeli her işte çalıştırmak değil; doğru işi doğru maliyetle tamamlamak olabilir.",
+      en: "Success in enterprise AI may not mean running the largest model on every task, but completing the right job at the right cost."
+    },
+    desc: {
+      tr: "Kurumsal yapay zekâda başarı, en büyük modeli her işte çalıştırmak değil; doğru işi doğru maliyetle tamamlamak olabilir. Bir müşteri faturasının sınıflandırılması ile tedarik zinciri problemi aynı modeli gerektirmez.",
+      en: "SAP’s multi-model routing strategy highlights why enterprise software focuses on cost per completed task rather than raw model size."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-03.webp',
+    imageAlt: "Farklı yapay zekâ modelleri arasında maliyet ve performans optimizasyonu.",
+    source: '/articles/sap-model-routing-ai-maliyet-optimizasyonu.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "SAP model routing",
+          "AI maliyet optimizasyonu",
+          "kurumsal yazilim",
+          "birim ekonomi",
+          "token maliyeti"
+    ],
+    color: 'from-teal-600/25 to-amber-500/15',
+    accent: 'text-teal-400',
+    featured: false,
+    relatedSlugs: ["gpt-6-astra-ve-agi-cagi","yapay-zeka-calisanlar-meta-project-ot"],
+    sources: [
+          {
+                "label": "Reuters — Yayıncı Ana Sayfası / Doğrulama Başlangıç Noktası (Özgül haber URL’si ayrıca teyit edilmelidir)",
+                "url": "https://www.reuters.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'nvidia-hugging-face-satin-alma-rekabet',
+    category: 'haber',
+    topic: {
+      tr: "Yapay Zekâ ve Platformlar",
+      en: "AI & Platforms"
+    },
+    title: {
+      tr: "Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde?",
+      en: "Nvidia and Hugging Face: Who Holds the Gate to Open AI?"
+    },
+    seoTitle: "Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde? | Dijital Hezarfen",
+    lead: {
+      tr: "Nvidia’nın Hugging Face’i satın alma anlaşması, açık modellerin dağıtımında güç yoğunlaşması tartışmasını yeniden açtı.",
+      en: "Nvidia’s deal to acquire Hugging Face reopens the debate over power concentration in the distribution of open AI models."
+    },
+    desc: {
+      tr: "Nvidia’nın Hugging Face’i satın alma anlaşması, açık modellerin dağıtımında güç yoğunlaşması tartışmasını yeniden açtı. Hugging Face’in değeri yalnızca barındırdığı dosyalarda değil, ekosisteminde.",
+      en: "Regulatory scrutiny over Nvidia’s reported Hugging Face deal highlights concerns around platform neutrality and open model distribution."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-04.webp',
+    imageAlt: "Açık yapay zekâ modellerinin dağıtım altyapısında kontrol tartışması.",
+    source: '/articles/nvidia-hugging-face-satin-alma-rekabet.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Nvidia Hugging Face",
+          "acik kaynak yapay zeka",
+          "rekabet incelemesi",
+          "AI dagitim kanali",
+          "platform bagimliligi"
+    ],
+    color: 'from-emerald-600/25 to-slate-600/15',
+    accent: 'text-emerald-400',
+    featured: false,
+    relatedSlugs: ["nvidia-agile-robots-humanoid-platform","abd-cin-teknoloji-yatirim-kisitlamalari"],
+    sources: [
+          {
+                "label": "Reuters (28 Ekim 2026) — US DOJ inquiry on Nvidia Hugging Face deal (Kaynak / Doğrulama Başlangıç Noktası)",
+                "url": "https://www.reuters.com/world/us-doj-is-inquiring-about-nvidias-purchase-hugging-face-sources-say-2026-10-28/"
+          }
+    ]
+  },
+  {
+    slug: 'upwind-400-milyon-dolar-bulut-guvenligi',
+    category: 'haber',
+    topic: {
+      tr: "Startup ve VC",
+      en: "Startups & VC"
+    },
+    title: {
+      tr: "Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı?",
+      en: "Upwind Raises $400 Million: Why Runtime Security Is Core Infrastructure in the AI Era"
+    },
+    seoTitle: "Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı? | Dijital Hezarfen",
+    lead: {
+      tr: "Bulut güvenliğinde yeni yatırımlar, çalışan yazılımı izleme ihtiyacının büyüdüğünü gösteriyor.",
+      en: "New investments in cloud security show the growing need for real-time runtime monitoring."
+    },
+    desc: {
+      tr: "Bulut güvenliğinde yeni yatırımlar, çalışan yazılımı izleme ihtiyacının büyüdüğünü gösteriyor. Güvenlik yalnızca kod yazılırken yapılan testlerden ibaret değil.",
+      en: "Upwind’s $400M Series C round underscores why runtime cloud security and anomaly detection are critical as AI agents gain production permissions."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-05.webp',
+    imageAlt: "Bulut ortamındaki tehditleri çalışma anında tespit eden güvenlik teknolojisi.",
+    source: '/articles/upwind-400-milyon-dolar-bulut-guvenligi.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Upwind 400 milyon dolar",
+          "bulut guvenligi",
+          "Series C yatirim",
+          "runtime security",
+          "AI ajan guvenligi"
+    ],
+    color: 'from-indigo-600/25 to-rose-600/15',
+    accent: 'text-rose-400',
+    featured: false,
+    relatedSlugs: ["nvidia-openshell-ai-agent-guvenligi","yapay-zekayi-kapatmakta-cok-mu-gec-kaldik"],
+    sources: [
+          {
+                "label": "TechCrunch — Yayıncı Ana Sayfası / Doğrulama Başlangıç Noktası (Özgül haber URL’si ayrıca teyit edilmelidir)",
+                "url": "https://techcrunch.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'guidewire-hyperexponential-sigorta-yapay-zeka',
+    category: 'haber',
+    topic: {
+      tr: "InsurTech",
+      en: "InsurTech"
+    },
+    title: {
+      tr: "Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor?",
+      en: "Guidewire–Hyperexponential: Why AI in Insurance Pricing Commands Billions"
+    },
+    seoTitle: "Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor? | Dijital Hezarfen",
+    lead: {
+      tr: "Sigorta fiyatlandırma yazılımlarına yapılan büyük yatırımlar, dikey yazılımın ekonomik değerini yeniden hatırlatıyor.",
+      en: "Major acquisitions in insurance pricing software remind the market of the enduring economic value of vertical software."
+    },
+    desc: {
+      tr: "Sigorta fiyatlandırma yazılımlarına yapılan büyük yatırımlar, dikey yazılımın ekonomik değerini yeniden hatırlatıyor. Bir sigorta teklifinin arkasında onlarca değişken ve risk modeli bulunuyor.",
+      en: "Guidewire’s agreement to acquire Hyperexponential highlights why domain-specific decision and risk pricing software creates deep enterprise value."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-06.webp',
+    imageAlt: "Sigorta risk fiyatlandırmasında yapay zekâ destekli karar sistemleri.",
+    source: '/articles/guidewire-hyperexponential-sigorta-yapay-zeka.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Guidewire Hyperexponential",
+          "InsurTech",
+          "sigorta yapay zeka",
+          "dikey yazilim",
+          "risk fiyatlandirma"
+    ],
+    color: 'from-emerald-600/25 to-blue-900/20',
+    accent: 'text-emerald-400',
+    featured: false,
+    relatedSlugs: ["lseg-octus-ozel-veri-ai","mach9-ai-cad-pivot"],
+    sources: [
+          {
+                "label": "Guidewire — Kurumsal Ana Sayfa / Doğrulama Başlangıç Noktası (Özgül duyuru URL’si ayrıca teyit edilmelidir)",
+                "url": "https://www.guidewire.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'rebuild-venture-studio-ileri-uretim',
+    category: 'haber',
+    topic: {
+      tr: "Girişimcilik",
+      en: "Entrepreneurship"
+    },
+    title: {
+      tr: "Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı?",
+      en: "Re:Build and $2.1 Billion: Can the Venture Studio Model Move to the Factory Floor?"
+    },
+    seoTitle: "Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı? | Dijital Hezarfen",
+    lead: {
+      tr: "Re:Build’in yeni finansmanı, girişim kurma becerisinin üretim altyapısıyla birleşebileceğini gösteriyor.",
+      en: "Re:Build’s new financing shows how venture-building capabilities can merge with shared industrial manufacturing infrastructure."
+    },
+    desc: {
+      tr: "Re:Build’in yeni finansmanı, girişim kurma becerisinin üretim altyapısıyla birleşebileceğini gösteriyor. Yazılım girişimi kurarken bulut altyapısı kiralayabilirsiniz; fiziksel üretimde ise ortak altyapı kritik.",
+      en: "Re:Build Manufacturing’s $2.1B financing tests whether a shared industrial platform can reduce the capital burden of launching hardware ventures."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '27 Ekim 2026',
+      en: 'October 27, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-07.webp',
+    imageAlt: "Ortak üretim altyapısından yeni girişimlerin doğduğu endüstriyel model.",
+    source: '/articles/rebuild-venture-studio-ileri-uretim.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "ReBuild Manufacturing",
+          "venture studio",
+          "ileri uretim",
+          "endustriyel girisimcilik",
+          "donanim girisimi"
+    ],
+    color: 'from-orange-600/25 to-slate-600/15',
+    accent: 'text-orange-400',
+    featured: false,
+    relatedSlugs: ["tim-cook-apple-miras","ben-bu-fikire-2-milyon-dolar-yatirim-alirim"],
+    sources: [
+          {
+                "label": "Re:Build Manufacturing Newsroom (27 Ekim 2026) — $2.1B financing announcement (Kaynak / Doğrulama Bağlantısı)",
+                "url": "https://rebuildmanufacturing.com/newsroom/news/rebuild-2-1-billion-reindustrialize-america/"
+          }
+    ]
+  },
+  {
+    slug: 'jio-platforms-halka-arz-platform-ekonomisi',
+    category: 'haber',
+    topic: {
+      tr: "Global Markalar",
+      en: "Global Brands"
+    },
+    title: {
+      tr: "Jio Platforms: Önce dağıtım, sonra dijital ekosistem",
+      en: "Jio Platforms: Distribution First, Digital Ecosystem Second"
+    },
+    seoTitle: "Jio Platforms: Önce dağıtım, sonra dijital ekosistem | Dijital Hezarfen",
+    lead: {
+      tr: "Jio’nun halka arzı, altyapı ve müşteri erişiminin nasıl çok ürünlü bir platforma dönüşebildiğini tartışmaya açıyor.",
+      en: "Jio’s IPO opens a discussion on how telecom infrastructure and customer reach can evolve into a multi-product digital platform."
+    },
+    desc: {
+      tr: "Jio’nun halka arzı, altyapı ve müşteri erişiminin nasıl çok ürünlü bir platforma dönüşebildiğini tartışmaya açıyor. İnternet bağlantısı başlangıçta tek başına bir ürün gibi görünür.",
+      en: "Jio Platforms’ IPO highlights how direct customer distribution can anchor cloud, media, financial services, and AI products."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-08.webp',
+    imageAlt: "Telekom altyapısından geniş dijital hizmet ekosistemine uzanan platform modeli.",
+    source: '/articles/jio-platforms-halka-arz-platform-ekonomisi.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Jio Platforms halka arz",
+          "platform ekonomisi",
+          "dagitim agi",
+          "dijital ekosistem",
+          "musteri edinme maliyeti"
+    ],
+    color: 'from-violet-600/25 to-amber-500/15',
+    accent: 'text-violet-400',
+    featured: false,
+    relatedSlugs: ["bilgisayar-kavrami-degisiyor","target-ask-target-ai-alisveris"],
+    sources: [
+          {
+                "label": "TechCrunch — Yayıncı Ana Sayfası / Doğrulama Başlangıç Noktası (Özgül haber URL’si ayrıca teyit edilmelidir)",
+                "url": "https://techcrunch.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'ai-veri-merkezleri-nukleer-enerji',
+    category: 'haber',
+    topic: {
+      tr: "Enerji ve Teknoloji",
+      en: "Energy & Technology"
+    },
+    title: {
+      tr: "Nükleer enerji neden yapay zekâ şirketlerinin gündeminde?",
+      en: "Why Is Nuclear Energy at the Top of AI Companies’ Agendas?"
+    },
+    seoTitle: "Nükleer enerji neden yapay zekâ şirketlerinin gündeminde? | Dijital Hezarfen",
+    lead: {
+      tr: "AI veri merkezlerinin elektrik talebi, mevcut nükleer santrallerin modernizasyonunu teknoloji gündeminin merkezine taşıyor.",
+      en: "Electricity demand from AI data centers puts the modernization and uprating of existing nuclear power plants at the center of the tech agenda."
+    },
+    desc: {
+      tr: "AI veri merkezlerinin elektrik talebi, mevcut nükleer santrallerin modernizasyonunu teknoloji gündeminin merkezine taşıyor. Bir veri merkezinin ekonomik değeri yalnızca işlemci sayısıyla ölçülemez.",
+      en: "Conditional loan support for nuclear capacity uprates highlights how uninterrupted baseload power has become a strategic bottleneck for AI data centers."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-09.webp',
+    imageAlt: "Nükleer enerji üretimi ile yapay zekâ veri merkezlerinin artan elektrik ihtiyacı.",
+    source: '/articles/ai-veri-merkezleri-nukleer-enerji.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "AI veri merkezleri nukleer enerji",
+          "Constellation Energy",
+          "elektrik talebi",
+          "veri merkezi altyapisi",
+          "enerji teknolojileri"
+    ],
+    color: 'from-cyan-600/25 to-amber-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    relatedSlugs: ["ai-veri-merkezi-elektrik-kablo-darbogazi","nebius-ai-veri-merkezi-finansmani"],
+    sources: [
+          {
+                "label": "U.S. Department of Energy (energy.gov) — Kurumsal Ana Sayfa / Doğrulama Başlangıç Noktası",
+                "url": "https://www.energy.gov/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'samsung-hbm-yapay-zeka-bellek',
+    category: 'haber',
+    topic: {
+      tr: "Çipler",
+      en: "Semiconductors & Chips"
+    },
+    title: {
+      tr: "Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek",
+      en: "Samsung and the HBM Race: Memory as the Invisible Bottleneck of AI"
+    },
+    seoTitle: "Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek | Dijital Hezarfen",
+    lead: {
+      tr: "Yapay zekâ altyapısında işlemci kadar bellek teknolojileri de rekabeti belirliyor.",
+      en: "In AI infrastructure, high-bandwidth memory technologies shape competition just as much as compute processors."
+    },
+    desc: {
+      tr: "Yapay zekâ altyapısında işlemci kadar bellek teknolojileri de rekabeti belirliyor. Büyük modeller yalnızca hesaplama birimi kullanmıyor; verinin hızlı taşınmasına ve yeterli belleğe ihtiyaç duyuyor.",
+      en: "Samsung’s third-quarter semiconductor results underscore why HBM capacity and advanced packaging remain critical bottlenecks for AI servers."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-10.webp',
+    imageAlt: "Yapay zekâ işlemcileri için yüksek bant genişlikli bellek teknolojisi.",
+    source: '/articles/samsung-hbm-yapay-zeka-bellek.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Samsung HBM",
+          "yuksek bant genislikli bellek",
+          "yapay zeka cipleri",
+          "yari iletken",
+          "bellek darbogazi"
+    ],
+    color: 'from-indigo-600/25 to-cyan-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    relatedSlugs: ["meta-ai-yatirimlari-sermaye-verimliligi","flapping-airplanes-bir-milyar-dolar-yatirim"],
+    sources: [
+          {
+                "label": "Samsung Investor Relations — Yatırımcı İlişkileri Sayfası / Doğrulama Başlangıç Noktası",
+                "url": "https://www.samsung.com/global/ir/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'unitree-robotik-buyume-karlilik',
+    category: 'haber',
+    topic: {
+      tr: "Robotik",
+      en: "Robotics"
+    },
+    title: {
+      tr: "Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor?",
+      en: "Unitree: Why Profitability Gets Harder Even as Robot Sales Grow"
+    },
+    seoTitle: "Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor? | Dijital Hezarfen",
+    lead: {
+      tr: "Robotik sektörünün gerçek sınavı etkileyici gösterilerden sürdürülebilir birim ekonomiye geçmek.",
+      en: "The real test for the robotics industry is moving from impressive demos to sustainable unit economics."
+    },
+    desc: {
+      tr: "Robotik sektörünün gerçek sınavı etkileyici gösterilerden sürdürülebilir birim ekonomiye geçmek. Robot üretmek; tedarik zinciri, fiziksel güvenlik, servis ağı ve donanım geliştirme gerektirir.",
+      en: "Unitree’s quarterly performance highlights the gap between growing robot shipments and sustainable field profitability."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-11.webp',
+    imageAlt: "İnsansı ve dört ayaklı robotların gerçek üretim ortamındaki ticari kullanımı.",
+    source: '/articles/unitree-robotik-buyume-karlilik.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Unitree robotik",
+          "insansi robot",
+          "robotik birim ekonomi",
+          "donanim karliligi",
+          "endustriyel robot"
+    ],
+    color: 'from-slate-500/25 to-cyan-500/15',
+    accent: 'text-cyan-400',
+    featured: false,
+    relatedSlugs: ["nvidia-agile-robots-humanoid-platform","mach9-ai-cad-pivot"],
+    sources: [
+          {
+                "label": "Reuters — Yayıncı Ana Sayfası / Doğrulama Başlangıç Noktası (Özgül haber URL’si ayrıca teyit edilmelidir)",
+                "url": "https://www.reuters.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'nvidia-nemotron-sesli-yapay-zeka',
+    category: 'haber',
+    topic: {
+      tr: "Voice AI",
+      en: "Voice AI"
+    },
+    title: {
+      tr: "Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi",
+      en: "Nvidia Nemotron: The Rise of Open Models in Multilingual Voice AI"
+    },
+    seoTitle: "Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi | Dijital Hezarfen",
+    lead: {
+      tr: "Çok dilli konuşma teknolojileri, sesli AI ürünlerinin maliyet ve dağıtım seçeneklerini genişletiyor.",
+      en: "Multilingual speech technologies expand cost and deployment options for voice AI products."
+    },
+    desc: {
+      tr: "Çok dilli konuşma teknolojileri, sesli AI ürünlerinin maliyet ve dağıtım seçeneklerini genişletiyor. Sesli AI sistemlerinde konuşma tanıma, dil anlama, yanıt üretme ve konuşma sentezi farklı katmanlar.",
+      en: "Nvidia’s Nemotron 3.5 Transcribe release highlights how open-weight speech recognition models impact enterprise voice AI unit economics."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-12.webp',
+    imageAlt: "Çok dilli seslerin yapay zekâ ile yazıya dönüştürülmesini simgeleyen görsel.",
+    source: '/articles/nvidia-nemotron-sesli-yapay-zeka.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Nvidia Nemotron",
+          "sesli yapay zeka",
+          "Voice AI",
+          "cok dilli transkripsiyon",
+          "acik agirlikli modeller"
+    ],
+    color: 'from-violet-600/25 to-teal-500/15',
+    accent: 'text-teal-400',
+    featured: false,
+    relatedSlugs: ["yapay-zeka-calisanlar-meta-project-ot","sap-model-routing-ai-maliyet-optimizasyonu"],
+    sources: [
+          {
+                "label": "NVIDIA Developer — Geliştirici Portalı / Doğrulama Başlangıç Noktası",
+                "url": "https://developer.nvidia.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'harmonic-aristotle-formal-verification',
+    category: 'haber',
+    topic: {
+      tr: "Yazılım ve Araştırma",
+      en: "Software & Research"
+    },
+    title: {
+      tr: "Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor",
+      en: "Harmonic Aristotle: AI Moves from Generating Code to Mathematically Verifying It"
+    },
+    seoTitle: "Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor | Dijital Hezarfen",
+    lead: {
+      tr: "Kod yazan AI kadar, yazılan kodun belirli koşullarda doğru olduğunu kanıtlayan sistemler de önem kazanıyor.",
+      en: "Systems that mathematically prove generated code is correct under defined conditions are becoming just as important as code-writing AI."
+    },
+    desc: {
+      tr: "Kod yazan AI kadar, yazılan kodun belirli koşullarda doğru olduğunu kanıtlayan sistemler de önem kazanıyor. Üretken modeller çoğu zaman çalışır görünen kod üretebiliyor.",
+      en: "Harmonic’s Aristotle formal verification capabilities for C and Verilog highlight why mathematical proof is a growing layer in the AI software stack."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-13.webp',
+    imageAlt: "Yazılım ve çip tasarımlarında matematiksel doğrulama yapan yapay zekâ.",
+    source: '/articles/harmonic-aristotle-formal-verification.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Harmonic Aristotle",
+          "formal verification",
+          "bicimsel dogrulama",
+          "kod dogrulama",
+          "Verilog C dogrulama"
+    ],
+    color: 'from-slate-600/25 to-cyan-500/15',
+    accent: 'text-gray-200',
+    featured: false,
+    relatedSlugs: ["nvidia-openshell-ai-agent-guvenligi","enron-karin-nakdin-ve-guvenin-denetimi"],
+    sources: [
+          {
+                "label": "Reuters — Yayıncı Ana Sayfası / Doğrulama Başlangıç Noktası (Özgül haber URL’si ayrıca teyit edilmelidir)",
+                "url": "https://www.reuters.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
+    slug: 'gsk-onkoloji-klinik-arastirma-stratejisi',
+    category: 'haber',
+    topic: {
+      tr: "Biyoteknoloji",
+      en: "Biotechnology"
+    },
+    title: {
+      tr: "GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi?",
+      en: "GSK and the Oncology Race: Do More Clinical Programs Automatically Mean More Success?"
+    },
+    seoTitle: "GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi? | Dijital Hezarfen",
+    lead: {
+      tr: "İlaç şirketlerinin araştırma portföylerini genişletmesi, bilimsel fırsatlarla ticari riskin birlikte yönetildiğini gösteriyor.",
+      en: "Pharmaceutical companies expanding their oncology pipelines illustrate how scientific opportunity and commercial risk are managed together."
+    },
+    desc: {
+      tr: "İlaç şirketlerinin araştırma portföylerini genişletmesi, bilimsel fırsatlarla ticari riskin birlikte yönetildiğini gösteriyor. Biyoteknolojide bir programın başarılı olması yıllar sürebilir.",
+      en: "GSK’s oncology clinical development goals highlight the distinction between pipeline expansion and regulatory approval rates in biotech."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-14.webp',
+    imageAlt: "Hedefli kanser tedavilerinin klinik araştırma sürecini anlatan biyomedikal görsel.",
+    source: '/articles/gsk-onkoloji-klinik-arastirma-stratejisi.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "GSK onkoloji",
+          "klinik arastirma",
+          "biyoteknoloji yatirimlari",
+          "ilac gelistirme",
+          "kanser arastirmalari"
+    ],
+    color: 'from-rose-600/25 to-violet-600/15',
+    accent: 'text-rose-400',
+    featured: false,
+    relatedSlugs: ["moderna-merck-mrna-melanom-faz-3","gilead-pepstar-ilac-teknoloji-satin-alma"],
+    sources: [
+          {
+                "label": "GSK Innovation Pipeline — Resmi Araştırma Portföyü Sayfası (Kaynak / Doğrulama Bağlantısı)",
+                "url": "https://www.gsk.com/en-gb/innovation/pipeline/"
+          }
+    ]
+  },
+  {
+    slug: 'lush-sosyal-medya-reklamsiz-marka-stratejisi',
+    category: 'haber',
+    topic: {
+      tr: "Marka ve Tüketici",
+      en: "Brand & Consumer"
+    },
+    title: {
+      tr: "Lush sosyal medya reklamlarını bırakınca ne oldu?",
+      en: "What Happened After Lush Walked Away from Social Media Ads?"
+    },
+    seoTitle: "Lush sosyal medya reklamlarını bırakınca ne oldu? | Dijital Hezarfen",
+    lead: {
+      tr: "Lush örneği, markanın müşteriye ulaşma kanalını kimin kontrol ettiği sorusunu yeniden gündeme getiriyor.",
+      en: "The Lush case brings back a critical question: who controls the channel through which a brand reaches its customers?"
+    },
+    desc: {
+      tr: "Lush örneği, markanın müşteriye ulaşma kanalını kimin kontrol ettiği sorusunu yeniden gündeme getiriyor. Sosyal platformlar büyümeyi hızlandırabilir ama müşteri ilişkisini algoritmaya bağımlı kılabilir.",
+      en: "Lush’s investment in owned apps, email, community, and physical retail examines the balance between paid social acquisition and direct brand loyalty."
+    },
+    date: {
+      tr: '29 Ekim 2026',
+      en: 'October 29, 2026'
+    },
+    eventDate: {
+      tr: '28 Ekim 2026',
+      en: 'October 28, 2026'
+    },
+    readTime: {
+      tr: '4 dk okuma',
+      en: '4 min read'
+    },
+    author: 'Dijital Hezarfen',
+    hideAuthorBio: true,
+    image: '/images/dijital-hezarfen-kapak-15.webp',
+    imageAlt: "Markanın sosyal medya reklamları yerine kendi müşteri kanallarına yatırım yapması.",
+    source: '/articles/lush-sosyal-medya-reklamsiz-marka-stratejisi.txt',
+    publishedAt: '2026-10-29T10:15:00+03:00',
+    modifiedAt: '2026-10-29T10:15:00+03:00',
+    keywords: [
+          "Lush sosyal medya stratejisi",
+          "reklamsiz marka buyumesi",
+          "dogrudan musteri kanallari",
+          "marka sadakati",
+          "musteri edinimi"
+    ],
+    color: 'from-emerald-600/25 to-amber-500/15',
+    accent: 'text-emerald-400',
+    featured: false,
+    relatedSlugs: ["walmart-connect-ajanslar-reklam-olcumleme","google-ai-mode-reklamlari-arama-ekonomisi"],
+    sources: [
+          {
+                "label": "Digiday — Yayıncı Ana Sayfası / Doğrulama Başlangıç Noktası (Özgül haber URL’si ayrıca teyit edilmelidir)",
+                "url": "https://digiday.com/",
+                "isHomepage": true
+          }
+    ]
+  },
+  {
     slug: 'meta-ai-yatirimlari-sermaye-verimliligi',
     category: 'haber',
     title: {
@@ -1857,6 +2723,9 @@ export function localizedArticle(article, lang = 'tr') {
     ...article,
     title: article.title[locale],
     desc: article.desc[locale],
+    lead: article.lead ? article.lead[locale] : article.desc[locale],
+    topic: article.topic ? article.topic[locale] : undefined,
+    eventDate: article.eventDate ? article.eventDate[locale] : undefined,
     date: article.date[locale],
     readTime: article.readTime[locale],
     path: article.source ? `/yayinlar/${article.slug}` : '/yayinlar'

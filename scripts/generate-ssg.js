@@ -121,7 +121,9 @@ for (const art of articles) {
   const bodyHtml = parseMarkdownToHtml(rawText, art.sources || []);
   const canonicalUrl = `https://dijitalhezarfen.com/yayinlar/${art.slug}`;
   const imageUrl = art.image.startsWith('http') ? art.image : `https://dijitalhezarfen.com${art.image}`;
-  const categoryLabel = articleCategories.find(c => c.id === art.category)?.label.tr || 'Haber';
+  const categoryLabel = articleCategories.find(c => c.id === art.category)?.label.tr || 'Haberler';
+  const topicLabel = art.topic?.tr || '';
+  const leadText = art.lead?.tr || art.desc.tr;
   const schemaType = art.category === 'haber' ? 'NewsArticle' : (art.category === 'rapor' ? 'TechArticle' : 'Article');
 
   // JSON-LD Schema
@@ -139,12 +141,18 @@ for (const art of articles) {
         name: art.title.tr,
         description: art.desc.tr,
         image: [imageUrl],
-        author: {
-          '@type': 'Person',
-          name: art.author,
-          jobTitle: art.authorRole || 'Kurucu & Teknoloji Girişimcisi',
-          url: 'https://dijitalhezarfen.com/#/dijital-hezarfen'
-        },
+        author: art.author === 'Dijital Hezarfen'
+          ? {
+              '@type': 'Organization',
+              name: 'Dijital Hezarfen',
+              url: 'https://dijitalhezarfen.com'
+            }
+          : {
+              '@type': 'Person',
+              name: art.author,
+              jobTitle: art.authorRole || 'Kurucu & Teknoloji Girişimcisi',
+              url: 'https://dijitalhezarfen.com/#/dijital-hezarfen'
+            },
         publisher: {
           '@type': 'Organization',
           name: 'Dijital Hezarfen',
@@ -210,7 +218,9 @@ for (const art of articles) {
         <!-- Meta badges -->
         <div class="flex flex-wrap items-center gap-3 text-xs text-gray-400 mb-6">
           <span class="rounded-lg bg-cyan-500/10 text-cyan-400 px-3 py-1 font-bold border border-cyan-500/20">${escapeHtml(categoryLabel)}</span>
-          <span><time dateTime="${art.publishedAt}">${escapeHtml(art.date.tr)}</time></span>
+          ${topicLabel ? `<span class="rounded-lg bg-white/5 text-gray-300 px-3 py-1 font-semibold border border-white/10">${escapeHtml(topicLabel)}</span>` : ''}
+          <span>Yayın: <time dateTime="${art.publishedAt}">${escapeHtml(art.date.tr)}</time></span>
+          ${art.eventDate?.tr ? `<span>•</span><span>Olay Tarihi: ${escapeHtml(art.eventDate.tr)}</span>` : ''}
           <span>•</span>
           <span>${escapeHtml(art.readTime.tr)}</span>
           <span>•</span>
@@ -222,7 +232,7 @@ for (const art of articles) {
 
         <!-- Lead Description -->
         <div class="border-l-4 border-cyan-500/60 pl-4 py-2 my-6 bg-white/[0.02]">
-          <p class="text-lg sm:text-xl text-gray-200 font-light leading-relaxed">${escapeHtml(art.desc.tr)}</p>
+          <p class="text-lg sm:text-xl text-gray-200 font-light leading-relaxed">${escapeHtml(leadText)}</p>
         </div>
 
         <!-- Hero Image -->
@@ -239,8 +249,8 @@ for (const art of articles) {
         <!-- Sources Section -->
         ${art.sources?.length ? `
           <div id="kaynaklar" class="mt-16 pt-8 border-t border-white/10">
-            <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4">Kaynaklar ve Referanslar</h2>
-            <p class="text-xs text-gray-400 mb-4 font-light">Bu analizdeki veriler ve haber detayları aşağıdaki doğrulanmış resmî kaynaklara dayanmaktadır:</p>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4">Kaynaklar ve Doğrulama Bağlantıları</h2>
+            <p class="text-xs text-gray-400 mb-4 font-light">Bu içerikteki olgusal arka plan ve referans bağlantıları aşağıda yer almaktadır:</p>
             <ul class="space-y-2">
               ${art.sources.map(s => `
                 <li class="p-3 rounded-xl border border-white/5 bg-white/3 text-xs text-gray-300">
@@ -255,6 +265,7 @@ for (const art of articles) {
         ` : ''}
 
         <!-- Author Bio Box -->
+        ${art.author !== 'Dijital Hezarfen' && !art.hideAuthorBio ? `
         <div class="mt-16 rounded-2xl border border-white/10 bg-[#0C1220] p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
           <div class="w-16 h-16 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 font-bold text-xl font-mono shrink-0">
             KK
@@ -265,6 +276,7 @@ for (const art of articles) {
             <p class="text-xs sm:text-sm text-gray-400 mt-2 font-light leading-relaxed">${escapeHtml(art.authorBio || '')}</p>
           </div>
         </div>
+        ` : ''}
       </article>
     </div>
   `;
@@ -273,11 +285,17 @@ for (const art of articles) {
   let pageHtml = templateHtml;
 
   // Replace <title>
-  const pageTitle = `${art.title.tr} | Dijital Hezarfen`;
+  const pageTitle = art.seoTitle || `${art.title.tr} | Dijital Hezarfen`;
   pageHtml = pageHtml.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(pageTitle)}</title>`);
 
   // Replace <meta name="description">
   pageHtml = pageHtml.replace(/<meta name="description" content=".*?" \/>/i, `<meta name="description" content="${escapeHtml(art.desc.tr)}" />`);
+
+  // Remove duplicate default og:type, og:site_name, twitter:card, and robots from base template before injecting article head tags
+  pageHtml = pageHtml.replace(/<meta property="og:type" content="website" \/>\s*/i, '');
+  pageHtml = pageHtml.replace(/<meta property="og:site_name" content="Dijital Hezarfen" \/>\s*/i, '');
+  pageHtml = pageHtml.replace(/<meta name="twitter:card" content="summary_large_image" \/>\s*/i, '');
+  pageHtml = pageHtml.replace(/<meta name="robots" content=".*?" \/>\s*/i, '');
 
   // Build custom head injection
   const headInject = `
@@ -324,6 +342,11 @@ ${JSON.stringify(jsonLd, null, 2)}
 
   // Also save flat dist/yayinlar/{slug}.html for static server setups
   fs.writeFileSync(path.join(distDir, 'yayinlar', `${art.slug}.html`), pageHtml, 'utf8');
+
+  // Also save root-level dist/{slug}/index.html for direct /{slug}/ access
+  const rootSlugDir = path.join(distDir, art.slug);
+  if (!fs.existsSync(rootSlugDir)) fs.mkdirSync(rootSlugDir, { recursive: true });
+  fs.writeFileSync(path.join(rootSlugDir, 'index.html'), pageHtml, 'utf8');
 
   generatedCount++;
 }

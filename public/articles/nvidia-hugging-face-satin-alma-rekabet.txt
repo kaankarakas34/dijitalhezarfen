@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Nvidia’nın Hugging Face için açıkladığı yaklaşık 12,93 milyar dolarlık işlem ABD Adalet Bakanlığının [rekabet incelemesine](/yayinlar/abd-cin-teknoloji-yatirim-kisitlamalari) konu oldu. Reuters’ın 28 Ekim haberine göre yetkililer, bu anlaşmanın AI modellerinin dağıtıldığı önemli bir kanalı tek bir altyapı sağlayıcısının kontrolüne verip vermeyeceğini sorguluyor. İnceleme, ihlal kararı verildiği anlamına gelmiyor.
+
+### Haber bize ne anlatıyor?
+
+Hugging Face’in değeri yalnızca barındırdığı dosyalarda değil; araştırmacıların, şirketlerin ve geliştiricilerin birbirini bulduğu ekosistemde. Nvidia [işlemciler ve yazılım altyapısında](/yayinlar/nvidia-agile-robots-humanoid-platform) güçlü. Dağıtım kanalı da aynı grubun parçası olduğunda açık ekosistemin tarafsızlığı daha fazla tartışılacaktır.
+
+### İş modeline etkisi
+
+Girişimlerin bir platformun API’sine, model deposuna veya donanımına ne kadar bağımlı olduğunu haritalaması gerekiyor. Açık ağırlıklı olmak ile dağıtım altyapısının bağımsız olması aynı şey değil.
+
+### Buradan sonrası
+
+Bu dosyada takip edilmesi gereken asıl soru satın alma bedeli değil: Hugging Face üzerindeki geliştirici güveni ve rakip donanımlara eşit erişim korunabilecek mi? Açık ekosistemin ticari bir şirkete ait olması tek başına sorun değil; kuralların kimin lehine değiştiği belirleyici.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.reuters.com/world/us-doj-is-inquiring-about-nvidias-purchase-hugging-face-sources-say-2026-10-28/](https://www.reuters.com/world/us-doj-is-inquiring-about-nvidias-purchase-hugging-face-sources-say-2026-10-28/)

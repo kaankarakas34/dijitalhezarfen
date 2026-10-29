@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Guidewire, Hyperexponential’ı 1,7 milyar dolar nakit karşılığında satın almak üzere anlaşma açıkladı; hedeflere bağlı ek ödeme hükümleri de bulunuyor. Hyperexponential, ticari sigortalarda karmaşık risklerin fiyatlandırılmasına yardımcı olan yazılımlar geliştiriyor.
+
+### Haber bize ne anlatıyor?
+
+Bir sigorta teklifinin arkasında onlarca değişken, geçmiş veri, risk modeli ve denetim gerekliliği bulunuyor. Bu nedenle [sektöre özel yazılım](/yayinlar/mach9-ai-cad-pivot), genel amaçlı bir sohbet arayüzünden çok daha fazla değer yaratabiliyor. AI’ın katkısı ancak [doğru veri ve kontrol süreçleriyle](/yayinlar/lseg-octus-ozel-veri-ai) anlam kazanıyor.
+
+### İş modeline etkisi
+
+Girişimciler için iyi bir dikey AI fikri, sektörün en pahalı ve en kritik karar adımlarından birini hedeflemeli. Ürün, müşteri verisine bağlanmıyorsa ve ölçülebilir zaman ya da risk tasarrufu sağlamıyorsa yalnızca AI etiketi yeterli değil.
+
+### Buradan sonrası
+
+Sigortada fiyatlama hatası yalnızca kötü bir kullanıcı deneyimi değil, doğrudan finansal kayıp anlamına gelir. Bu yüzden burada kazanan AI, en yaratıcı yanıtı veren değil, kararını açıklayabilen ve denetlenebilir biçimde çalışan sistem olabilir.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.guidewire.com/](https://www.guidewire.com/)

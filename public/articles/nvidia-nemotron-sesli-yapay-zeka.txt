@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Nvidia, Nemotron 3.5 Transcribe model ailesini ve ilgili ses verisi kaynaklarını duyurdu. Modelin çok dilli transkripsiyon ve belirli çeviri görevlerini desteklediği belirtiliyor. Duyurulan sürümün kayıtlı ses odaklı olması, canlı telefon görüşmelerinde doğrudan uçtan uca çözüm sayılmaması gerektiği anlamına geliyor.
+
+### Haber bize ne anlatıyor?
+
+Sesli AI sistemlerinde konuşma tanıma, dil anlama, yanıt üretme ve konuşma sentezi farklı katmanlar. Bunlardan birinin açık ağırlıklı olması, tüm sistemin maliyetini ve veri kontrolünü etkileyebilir. Ancak gecikme, aksan doğruluğu ve gerçek zamanlı kullanım ayrıca test edilmelidir.
+
+### İş modeline etkisi
+
+[Müşteri hizmetleri ve satış ajanları geliştiren ekipler](/yayinlar/yapay-zeka-calisanlar-meta-project-ot), yalnızca demo kalitesini değil; dil başına hata oranını, gecikmeyi, konuşmacı ayrımını ve [görüşme başına maliyeti](/yayinlar/sap-model-routing-ai-maliyet-optimizasyonu) ölçmeli.
+
+### Buradan sonrası
+
+Çok dilli ses teknolojilerinde asıl eşik, laboratuvar doğruluğunu gerçek müşteri konuşmalarına taşıyabilmek. Gürültü, aksan, kesintiler ve gecikme bir çağrı merkezinde model kartındaki başarı oranından daha fazla şey söyleyebilir.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://developer.nvidia.com/](https://developer.nvidia.com/)

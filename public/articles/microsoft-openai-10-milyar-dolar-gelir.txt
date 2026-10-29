@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Microsoft’un 28 Ekim tarihli finansal açıklamalarının ardından yayımlanan haberlere göre şirket, eylül sonunda biten üç aylık dönemde OpenAI ile ticari düzenlemelerinden yaklaşık 10 milyar dolar gelir kaydetti. Aynı dönemde Microsoft’un toplam geliri 92,3 milyar dolardı. Ticari gelir ile [yatırımın muhasebesel etkilerini](/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi) birbirinden ayırmak gerekiyor.
+
+### Haber bize ne anlatıyor?
+
+Klasik bir yatırım ilişkisinde şirket sermaye koyar ve değer artışı bekler. Burada yatırım yapılan girişim aynı zamanda [altyapı müşterisi](/yayinlar/nebius-ai-veri-merkezi-finansmani), teknoloji ortağı ve bazı pazarlarda rakip. Bu yapı hızlı ölçeklenme sağlasa da karşılıklı bağımlılık yaratıyor. Büyümenin ne kadarının bağımsız son müşteri talebinden geldiğini anlamak önemli.
+
+### İş modeline etkisi
+
+Girişimler için güçlü platform ortaklığı dağıtımı hızlandırabilir; fakat gelir, veri ve işlem gücü tek bir ortağa bağlanıyorsa pazarlık gücü de değişir. İş modelini değerlendirirken ciro kadar müşteri yoğunlaşmasını ve sözleşme koşullarını sorgulamak gerekiyor.
+
+### Buradan sonrası
+
+Bu ilişkinin sağlığını anlamak için iki şeye bakmak gerekir: OpenAI’ın Microsoft dışındaki altyapı seçenekleri gerçekten çeşitleniyor mu ve Microsoft’un AI gelirleri birkaç büyük müşteriye mi dayanıyor? İki şirketin ortaklığı kadar ayrışma kapasitesi de önemli.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/](https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/)

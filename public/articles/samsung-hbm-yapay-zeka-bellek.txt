@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Samsung’un 29 Ekim’de yayımlanan üçüncü çeyrek finansal sonuçları, yarı iletken faaliyetlerinde güçlü büyümeye işaret etti. Şirketin yüksek bant genişlikli bellek kapasitesine ilişkin açıklamaları, [AI sunucularındaki arz baskısının](/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi) sürebileceğini gösteriyor. Finansal büyüme rakamları raporlanırken para birimi ve bölüm tanımları resmî tabloyla birebir eşleştirilmeli.
+
+### Haber bize ne anlatıyor?
+
+Büyük modeller yalnızca hesaplama birimi kullanmıyor; verinin hızlı taşınmasına ve yeterli belleğe ihtiyaç duyuyor. Bu nedenle AI donanım rekabetini yalnızca GPU sayısı üzerinden okumak eksik kalır. HBM kapasitesi ve paketleme teknolojileri de kritik darboğaz olabilir.
+
+### İş modeline etkisi
+
+Girişimlerin donanım satın alma kararında toplam sahip olma maliyeti, bellek kapasitesi, enerji tüketimi ve tedarik süresi birlikte incelenmeli.
+
+### Buradan sonrası
+
+Bellek kıtlığı, AI şirketlerinin donanım yol haritalarını yeniden yazabilir. [Model optimizasyonu ve daha verimli bellek kullanımı](/yayinlar/flapping-airplanes-bir-milyar-dolar-yatirim) bu yüzden yalnızca mühendislik başarısı değil, tedarik riskine karşı ticari bir önlem.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.samsung.com/global/ir/](https://www.samsung.com/global/ir/)

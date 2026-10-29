@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Upwind, 28 Ekim’de duyurulan Series C turunda 400 milyon dolar yatırım aldı. Haberlerde şirketin değerlemesi yaklaşık 3,8 milyar dolar olarak aktarıldı. Upwind’in odağı, bulut ortamlarında çalışan uygulamaların gerçek davranışını izleyerek riskleri tespit etmek.
+
+### Haber bize ne anlatıyor?
+
+Güvenlik yalnızca kod yazılırken yapılan testlerden ibaret değil. Bir uygulamanın üretim ortamında hangi verilere eriştiği, nasıl haberleştiği ve [beklenmedik davranış gösterip göstermediği](/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik) de önemli. [AI ajanları sisteme daha fazla işlem yetkisi kazandıkça](/yayinlar/nvidia-openshell-ai-agent-guvenligi) bu ihtiyaç büyüyor.
+
+### İş modeline etkisi
+
+B2B girişimlerin güvenliği sonradan eklenen bir özellik değil, ürünün temel tasarım koşulu olarak ele alması gerekiyor. Müşterinin hangi riski azaltmak için ödeme yaptığını net biçimde ortaya koyan dikey güvenlik ürünleri yatırımcıların ilgisini çekebiliyor.
+
+### Buradan sonrası
+
+Güvenlik yazılımında hızlı büyümenin kalıcı olup olmayacağı, müşterilerin ürünü ilk kurulumdan sonra ne kadar aktif kullandığına bağlı. Özellikle AI ajanlarının sisteme erişimi arttıkça görünürlük ve müdahale yeteneği ayrı bir bütçe kalemine dönüşebilir.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://techcrunch.com/](https://techcrunch.com/)

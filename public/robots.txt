@@ -1,64 +1,115 @@
 # Robots.txt for Dijital Hezarfen
-# Explicitly allowing modern AI search bots, crawlers, and traditional search engines
+# Sitenin içerik ve telif politikasıyla uyumlu arama motoru ve AI tarayıcı kuralları.
+# Bütün botlara koşulsuz erişim verilmez; yalnızca arama dizinleme ve kaynak atıflı AI yanıt motorlarına kamuya açık sayfalarda izin tanımlanmıştır.
 
-User-agent: *
-Allow: /
-
-# Standard Search Engines
+# Standart Arama Motorları
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: Applebot
 Allow: /
-
-User-agent: Slurp
-Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: DuckDuckBot
 Allow: /
-
-User-agent: Baiduspider
-Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: YandexBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
-# AI Crawlers, Research & Search Bots
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
+
+# Politikayla Uyumlu AI Arama ve Yanıt Motorları
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: ClaudeBot
 Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
-User-agent: Cohere-ai
-Allow: /
+# İstenmeyen Toplu Veri Kazıyıcılar ve Politikayla Uyumsuz Botlar (Koşulsuz Erişim Engeli)
+User-agent: Bytespider
+Disallow: /
 
-User-agent: meta-externalagent
-Allow: /
+User-agent: CCBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
 
 User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+# Genel Varsayılan Kural
+User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /taslak/
 
 # Sitemaps
 Sitemap: https://dijitalhezarfen.com/sitemap.xml

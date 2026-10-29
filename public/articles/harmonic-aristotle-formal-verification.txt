@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Harmonic’in Aristotle modelinin C programları ve Verilog tabanlı çip tasarımları için doğrulama yeteneklerini genişlettiği açıklandı. Biçimsel doğrulama, yazılımın belirli özellikleri sağladığını matematiksel yöntemlerle test etmeye dayanıyor. Bu, her türlü [hata ve güvenlik riskinin](/yayinlar/nvidia-openshell-ai-agent-guvenligi) ortadan kalktığı anlamına gelmiyor.
+
+### Haber bize ne anlatıyor?
+
+Üretken modeller çoğu zaman çalışır görünen kod üretebiliyor. Ancak ödeme sistemleri, tıbbi cihazlar veya işlemci tasarımı gibi alanlarda görünürde çalışması yeterli değil. Doğrulanabilirlik, yazılımın üretim sürecinde ayrı bir değer katmanı oluşturabilir.
+
+### İş modeline etkisi
+
+Girişimler için yeni ürün alanı yalnızca kod üretimi değil; test, ispat, denetim ve değişikliklerin güvenli biçimde dağıtılması. AI geliştirme hızlandıkça doğrulama araçlarına ihtiyaç da artabilir.
+
+### Buradan sonrası
+
+Yapay zekânın ürettiği kodu yine başka bir yapay zekâya kontrol ettirmek tek başına güvence sağlamaz. Biçimsel doğrulamanın değeri, [denetimin bağımsız kurallara](/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi) ve matematiksel olarak sınanabilir koşullara dayanmasında.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.reuters.com/](https://www.reuters.com/)

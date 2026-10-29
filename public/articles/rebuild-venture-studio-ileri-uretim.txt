@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Re:Build Manufacturing, 27 Ekim’de General Catalyst ve JPMorganChase öncülüğünde 2,1 milyar dolar yeni finansman sağladığını duyurdu. Kaynağın amacı ileri üretim kapasitesini büyütmek ve yeni endüstriyel girişimleri hayata geçirmek.
+
+### Haber bize ne anlatıyor?
+
+Yazılım girişimi kurarken bulut altyapısı kiralayabilirsiniz; fiziksel ürün geliştiren bir şirket için fabrika, kalite kontrol, [tedarik ve mühendislik](/yayinlar/tim-cook-apple-miras) aynı kolaylıkta erişilebilir değil. Re:Build modeli, bu yetenekleri ortak bir platformda toplama iddiası taşıyor. Venture Studio mantığı burada yalnızca fikir üretmek değil, üretim engelini de ortadan kaldırmak anlamına geliyor.
+
+### İş modeline etkisi
+
+Her kurulan işin startup olmadığı gibi her üretim tesisinin de venture studio olmadığını ayırmak gerekiyor. Değerlendirme ölçütü; yeni şirket oluşturma tekrarlanabilirliği, ortak altyapıdan doğan maliyet avantajı ve ürünlerin gerçek pazar talebi olmalı.
+
+### Buradan sonrası
+
+Re:Build örneğinde cevaplanması gereken soru şu: Ortak üretim altyapısı gerçekten [yeni şirketlerin kuruluş maliyetini](/yayinlar/ben-bu-fikire-2-milyon-dolar-yatirim-alirim) azaltıyor mu, yoksa holdingin bilançosuna yeni bir sermaye yükü mü ekliyor? Venture Studio modelinin başarısı şirket sayısıyla değil, sürdürülebilir çıkış ve nakit üretimiyle ölçülmeli.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://rebuildmanufacturing.com/newsroom/news/rebuild-2-1-billion-reindustrialize-america/](https://rebuildmanufacturing.com/newsroom/news/rebuild-2-1-billion-reindustrialize-america/)

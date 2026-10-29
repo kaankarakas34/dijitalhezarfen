@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Unitree’nin 28 Ekim’de haberleştirilen çeyrek sonuçları, satış büyümesiyle araştırma harcamalarının aynı anda artabildiğini gösteriyor. Şirket [insansı ve dört ayaklı robotlarıyla](/yayinlar/nvidia-agile-robots-humanoid-platform) biliniyor. Ancak robotik işinde ciro, teslimat, bakım ve saha kullanımı aynı şey değil.
+
+### Haber bize ne anlatıyor?
+
+Robot üretmek; tedarik zinciri, fiziksel güvenlik, servis ağı ve [donanım geliştirme gerektirir](/yayinlar/mach9-ai-cad-pivot). Yazılım ürününde bir güncellemeyi dağıtmak kolayken fiziksel cihazda hatanın maliyeti çok daha yüksek olabilir. Bu yüzden yüksek satış büyümesi tek başına kârlılığın kanıtı değildir.
+
+### İş modeline etkisi
+
+Robotik girişimleri incelerken robot başına brüt marj, servis maliyeti, gerçek kullanım saati ve müşterinin geri ödeme süresi sorulmalı. Geleceğin kazananı yalnızca yürüyen robot değil, ekonomik olarak çalıştırılabilen robot olabilir.
+
+### Buradan sonrası
+
+Robot satışlarının artması iyi haber; ama robotların kaç saat üretken çalıştığı, kaç kez arıza verdiği ve bakım masrafı bilinmeden gerçek ekonomi anlaşılamaz. Gösteri videosu ile ölçeklenebilir işletme arasında hâlâ uzun bir mesafe var.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.reuters.com/](https://www.reuters.com/)

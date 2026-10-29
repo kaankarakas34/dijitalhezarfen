@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+ABD Enerji Bakanlığı, Constellation Energy’nin bazı nükleer santrallerindeki kapasite artırımı projeleri için 5 milyar dolara kadar koşullu kredi desteği açıkladı. Hedeflenen ek üretim kapasitesi yaklaşık 1,1 gigavat. Koşullu finansman, kredinin tamamının kullanıldığı veya bütün projelerin tamamlandığı anlamına gelmiyor.
+
+### Haber bize ne anlatıyor?
+
+Bir veri merkezinin ekonomik değeri yalnızca işlemci sayısıyla ölçülemez. Kesintisiz elektrik, [şebeke bağlantısı](/yayinlar/ai-veri-merkezi-elektrik-kablo-darbogazi), soğutma ve uzun vadeli fiyat anlaşmaları da belirleyici. Mevcut santralin üretimini artırmak, bazı durumlarda sıfırdan tesis inşa etmekten daha hızlı olabilir.
+
+### İş modeline etkisi
+
+AI girişimleri [bulut maliyetini değerlendirirken](/yayinlar/nebius-ai-veri-merkezi-finansmani) enerji fiyatlarını da dolaylı olarak takip etmeli. Enerji yönetimi, depolama ve şebeke yazılımları AI ekosisteminin görünmeyen ama kritik katmanları.
+
+### Buradan sonrası
+
+Elektriği yalnızca gider kalemi olarak görmek artık yetersiz. AI veri merkezleri için enerjiye erişim, kimi bölgelerde yazılım veya çip seçimi kadar belirleyici olabilir. Fakat nükleer projelerde açıklanan kredi tutarı ile gerçekten üretilecek elektrik arasındaki uzun zaman farkını unutmamak gerekiyor.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.energy.gov/](https://www.energy.gov/)

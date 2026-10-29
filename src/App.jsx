@@ -31,6 +31,7 @@ import Kurumsal from './pages/Kurumsal';
 import Medya from './pages/Medya';
 import Yayinlar from './pages/Yayinlar';
 import YayinDetay from './pages/YayinDetay';
+import { getArticleBySlug } from './data/articles';
 import Basvur from './pages/Basvur';
 import Iletisim from './pages/Iletisim';
 import Sss from './pages/Sss';
@@ -137,11 +138,16 @@ function App() {
   };
 
   const renderPage = () => {
-    if (currentPath.startsWith('/yayinlar/')) {
-      return <YayinDetay slug={currentPath.replace('/yayinlar/', '')} lang={lang} onNavigate={handleNavigate} />;
+    const cleanPath = currentPath.replace(/\/+$/, '') || '/';
+    if (cleanPath.startsWith('/yayinlar/')) {
+      return <YayinDetay slug={cleanPath.replace('/yayinlar/', '')} lang={lang} onNavigate={handleNavigate} />;
+    }
+    const directArticle = cleanPath !== '/' ? getArticleBySlug(cleanPath.slice(1)) : null;
+    if (directArticle) {
+      return <YayinDetay slug={directArticle.slug} lang={lang} onNavigate={handleNavigate} />;
     }
 
-    switch (currentPath) {
+    switch (cleanPath) {
       case '/':
         return <Home lang={lang} onOpenApplyModal={handleOpenApplyModal} onFocusSection={handleFocusSection} onNavigate={handleNavigate} />;
       case '/dijital-hezarfen':

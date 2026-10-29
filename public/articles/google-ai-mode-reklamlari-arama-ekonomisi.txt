@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+Google 28 Ekim’de AI Mode içindeki reklamları Avustralya, Kanada, Hindistan ve başka pazarlara genişlettiğini açıkladı. ABD’de çok aşamalı konuşmalarda reklam gösterimini de test ediyor. Türkiye ilk açıklanan ülkeler arasında bulunmuyor. Alphabet’in aynı gün açıkladığı üçüncü çeyrek geliri 127,6 milyar dolara ulaştı; Google Search ve diğer arama gelirleri yıllık yüzde 12 büyüdü.
+
+### Haber bize ne anlatıyor?
+
+Arama artık birkaç kelimelik sorgudan ibaret değil. Kullanıcı bir ihtiyacını anlatıyor, [seçenekleri karşılaştırıyor ve yeni sorular soruyor](/yayinlar/target-ask-target-ai-alisveris). Reklamın da bu yolculuğun içine girmesi, arama motorunun geleneksel bağlantı listesi modelinden uzaklaşması demek. Ancak sponsorlu yerleşim ile bir yapay zekânın bağımsız kaynaklara dayanarak marka önermesi aynı şey değil.
+
+### İş modeline etkisi
+
+Pazarlamacı için mesele yalnızca yeni reklam alanı satın almak olmayacak. Ürün bilgilerinin tutarlılığı, teklifin açık biçimde anlatılması, bağımsız kaynaklarda doğrulanabilir marka bilgisi ve [dönüşüm ölçümü birlikte ele alınmalı](/yayinlar/walmart-connect-ajanslar-reklam-olcumleme). GEO’yu reklama indirgemek, SEO’yu da yalnızca trafik hesabına çevirmek aynı yanılgının iki farklı biçimi.
+
+### Buradan sonrası
+
+Önümüzdeki asıl test, AI Mode içindeki sponsorlu önerilerin kullanıcı deneyimini bozup bozmadığı olacak. Reklam gelirleri büyürken kullanıcı güveni azalırsa Google yeni bir gelir kanalı açmış ama aramanın en değerli varlığını zayıflatmış olabilir.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://blog.google/intl/en-africa/products/ads-in-ai-mode-expand-to-new-markets/](https://blog.google/intl/en-africa/products/ads-in-ai-mode-expand-to-new-markets/)

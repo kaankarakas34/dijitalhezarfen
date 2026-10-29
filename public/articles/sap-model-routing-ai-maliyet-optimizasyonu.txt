@@ -1,0 +1,17 @@
+### Haberin arka planı
+
+SAP’nin 28 Ekim’de gündeme gelen model stratejisi, farklı görevlerde farklı yapay zekâ sağlayıcılarının kullanılmasına dayanıyor. Şirket çok sayıda modeli değerlendirebiliyor ve bazı iş akışlarında daha ekonomik seçeneklere yöneliyor. Bu, kurumsal yazılımın token maliyetinden çok [tamamlanan işin değerine](/yayinlar/gpt-6-astra-ve-agi-cagi) odaklandığı bir döneme işaret ediyor.
+
+### Haber bize ne anlatıyor?
+
+Bir müşteri faturanın sınıflandırılmasını, talep tahminini veya karmaşık bir tedarik zinciri sorununu aynı zekâ seviyesiyle çözmek zorunda değil. Bütün görevleri en pahalı modele yönlendirmek, ürünün maliyet yapısını bozabilir. Üstelik yüksek model puanı, her sektörel görevde daha iyi sonuç anlamına gelmiyor.
+
+### İş modeline etkisi
+
+Bir [AI ajanı geliştirirken](/yayinlar/yapay-zeka-calisanlar-meta-project-ot) görevleri zorluk, hata maliyeti ve veri hassasiyetine göre sınıflandırmak gerekiyor. Model yönlendirme, değerlendirme setleri ve başarısız görev başına maliyet ölçümü artık ürün stratejisinin parçası. Girişimcilikte teknoloji kadar birim ekonomi de önemlidir.
+
+### Buradan sonrası
+
+Bence kurumsal AI pazarında yeni ölçü birimi modelin zekâ puanı değil, başarıyla tamamlanan işin toplam maliyeti olacak. En ucuz modeli seçmek de çözüm değil; hatalı sonuçların insan denetimi maliyeti de hesabın içinde bulunmalı.
+
+**Kaynak / doğrulama başlangıç noktası:** [https://www.reuters.com/](https://www.reuters.com/)

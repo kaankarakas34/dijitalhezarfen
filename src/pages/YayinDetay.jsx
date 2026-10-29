@@ -83,12 +83,18 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
       name: article.title,
       description: article.desc,
       image: [imageUrl],
-      author: {
-        '@type': 'Person',
-        name: article.author,
-        jobTitle: article.authorRole || (article.author === 'Haydar Karakaş' ? 'Finansal & Mali Denetçi' : 'Kurucu & Teknoloji Girişimcisi'),
-        url: `${siteBaseUrl}/#/dijital-hezarfen`
-      },
+      author: article.author === 'Dijital Hezarfen'
+        ? {
+            '@type': 'Organization',
+            name: siteName,
+            url: siteBaseUrl
+          }
+        : {
+            '@type': 'Person',
+            name: article.author,
+            jobTitle: article.authorRole || (article.author === 'Haydar Karakaş' ? 'Finansal & Mali Denetçi' : 'Kurucu & Teknoloji Girişimcisi'),
+            url: `${siteBaseUrl}/#/dijital-hezarfen`
+          },
       publisher: {
         '@type': 'Organization',
         name: siteName,
@@ -581,15 +587,22 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
     return articleCategories.find((category) => category.id === articleMeta.category)?.label[lang === 'en' ? 'en' : 'tr'] || '';
   }, [articleMeta, lang]);
 
-  const firstParagraph = useMemo(() => articleMeta?.desc || articleLines[0] || '', [articleLines, articleMeta?.desc]);
+  const firstParagraph = useMemo(() => articleMeta?.lead || articleMeta?.desc || articleLines[0] || '', [articleLines, articleMeta?.lead, articleMeta?.desc]);
   const bodyLines = useMemo(() => articleLines, [articleLines]);
 
   const relatedArticles = useMemo(() => {
+    if (articleMeta?.relatedSlugs?.length) {
+      const matched = articleMeta.relatedSlugs
+        .map((rSlug) => getArticleBySlug(rSlug))
+        .filter(Boolean)
+        .map((a) => localizedArticle(a, lang));
+      if (matched.length > 0) return matched;
+    }
     return articles
       .filter((a) => a.slug !== slug)
       .slice(0, 2)
       .map((a) => localizedArticle(a, lang));
-  }, [slug, lang]);
+  }, [slug, lang, articleMeta?.relatedSlugs]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -631,7 +644,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
 
     const canonicalUrl = `${siteBaseUrl}${articleMeta.path}`;
     const imageUrl = getAbsoluteImageUrl(articleMeta.image);
-    const seoTitle = `${articleMeta.title} | ${siteName}`;
+    const seoTitle = articleMeta.seoTitle || `${articleMeta.title} | ${siteName}`;
 
     document.title = seoTitle;
     setCanonical(canonicalUrl);
@@ -770,10 +783,21 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 <Newspaper className="w-3.5 h-3.5" />
                 {categoryLabel}
               </span>
+              {articleMeta.topic ? (
+                <span className="inline-flex items-center gap-1.5 rounded-lg bg-white/5 text-gray-300 px-2.5 py-1 font-semibold border border-white/10">
+                  {articleMeta.topic}
+                </span>
+              ) : null}
               <span className="inline-flex items-center gap-1.5">
                 <Calendar className="w-3.5 h-3.5 text-gray-500" />
-                <time dateTime={articleMeta.publishedAt}>{articleMeta.date}</time>
+                <time dateTime={articleMeta.publishedAt}>Yayın: {articleMeta.date}</time>
               </span>
+              {articleMeta.eventDate ? (
+                <span className="inline-flex items-center gap-1.5 text-gray-400">
+                  <span>•</span>
+                  <span>Olay Tarihi: {articleMeta.eventDate}</span>
+                </span>
+              ) : null}
               <span className="inline-flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 text-gray-500" />
                 {articleMeta.readTime}
@@ -1198,6 +1222,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
           ) : null}
 
           {/* Author E-E-A-T Bio Box */}
+          {articleMeta.author !== 'Dijital Hezarfen' && !articleMeta.hideAuthorBio ? (
           <div className="mt-16 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0C1220] to-[#080B12] p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
             <div className="w-20 h-20 rounded-2xl bg-gradient-cyber p-0.5 shrink-0 shadow-lg shadow-cyan-500/10">
               <div className="w-full h-full rounded-2xl bg-[#0B0F19] flex items-center justify-center text-cyber-cyan font-bold text-2xl font-mono">
@@ -1246,6 +1271,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
               </div>
             </div>
           </div>
+          ) : null}
 
           {/* Related Articles */}
           {relatedArticles.length > 0 ? (

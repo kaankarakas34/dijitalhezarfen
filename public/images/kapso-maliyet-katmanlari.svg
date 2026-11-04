@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A12" />
+      <stop offset="50%" stop-color="#0B1120" />
+      <stop offset="100%" stop-color="#05070D" />
+    </linearGradient>
+    <filter id="shadow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="1400" height="680" fill="url(#bgGrad5)" />
+
+  <!-- Header -->
+  <g transform="translate(80, 45)">
+    <rect width="180" height="28" rx="14" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1" />
+    <text x="90" y="19" fill="#22D3EE" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">FİYAT VE MALİYET ANALİZİ</text>
+    <text x="0" y="66" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800">WhatsApp Yapay Zekâ Botunun 4 Maliyet Katmanı</text>
+    <text x="0" y="94" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="15">"Ücretsiz Başlangıç" ile "Sınırsız Bedava WhatsApp Trafiği" arasındaki ayrım (4 Kasım 2026).</text>
+  </g>
+
+  <!-- 4 TIERS -->
+
+  <!-- Tier 1: Kapso Platformu -->
+  <g transform="translate(80, 160)" filter="url(#shadow5)">
+    <rect width="280" height="420" rx="16" fill="#0C1322" stroke="#06B6D4" stroke-width="1.5" />
+    <rect x="0" y="0" width="280" height="6" rx="3" fill="#06B6D4" />
+    
+    <text x="24" y="38" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">KATMAN 1</text>
+    <text x="24" y="66" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Kapso Platformu</text>
+    <text x="24" y="88" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Mesajlaşma &amp; Araç Altyapısı</text>
+
+    <!-- Pricing Box -->
+    <rect x="24" y="108" width="232" height="70" rx="10" fill="#060A14" stroke="#1E293B" />
+    <text x="38" y="134" fill="#22D3EE" font-family="monospace" font-size="18" font-weight="800">Free: $0 / ay</text>
+    <text x="38" y="156" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="12">Pro: $25 / ay (100k mesaj)</text>
+
+    <g transform="translate(24, 205)" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#94A3B8">
+      <text x="0" y="0" fill="#E2E8F0" font-weight="600">• Aylık 2.000 Mesaj Kotası:</text>
+      <text x="0" y="18">Free pakette platform kotası</text>
+      <text x="0" y="34">aylık 2.000 mesajdır.</text>
+
+      <text x="0" y="68" fill="#E2E8F0" font-weight="600">• Bağlı Numara:</text>
+      <text x="0" y="86">1 adet canlı numara ve</text>
+      <text x="0" y="102">Sandbox test alanı dahildir.</text>
+
+      <text x="0" y="136" fill="#E2E8F0" font-weight="600">• $2 Hoş Geldin Kredisi:</text>
+      <text x="0" y="154">İlk denemeler için bakiye.</text>
+    </g>
+  </g>
+
+  <!-- Tier 2: Meta / WhatsApp -->
+  <g transform="translate(390, 160)" filter="url(#shadow5)">
+    <rect width="280" height="420" rx="16" fill="#0C1322" stroke="#10B981" stroke-width="1.5" />
+    <rect x="0" y="0" width="280" height="6" rx="3" fill="#10B981" />
+
+    <text x="24" y="38" fill="#34D399" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">KATMAN 2</text>
+    <text x="24" y="66" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Meta / WhatsApp</text>
+    <text x="24" y="88" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Resmî API Kullanım Bedeli</text>
+
+    <!-- Pricing Box -->
+    <rect x="24" y="108" width="232" height="70" rx="10" fill="#060A14" stroke="#1E293B" />
+    <text x="38" y="134" fill="#34D399" font-family="monospace" font-size="16" font-weight="800">1.000 Servis Mesajı</text>
+    <text x="38" y="156" fill="#FCD34D" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">1 Ekim 2026 Meta Kuralları</text>
+
+    <g transform="translate(24, 205)" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#94A3B8">
+      <text x="0" y="0" fill="#E2E8F0" font-weight="600">• 1 Ekim 2026 Değişikliği:</text>
+      <text x="0" y="18">Üretim numaralarında servis</text>
+      <text x="0" y="34">mesajları ücretlendirilmeye</text>
+      <text x="0" y="50">başlamıştır.</text>
+
+      <text x="0" y="84" fill="#E2E8F0" font-weight="600">• Aylık 1.000 Ücretsiz Servis:</text>
+      <text x="0" y="102">Numara başına ilk 1.000</text>
+      <text x="0" y="118">teslim edilen servis mesajı $0.</text>
+
+      <text x="0" y="152" fill="#E2E8F0" font-weight="600">• Reklam İstisnası:</text>
+      <text x="0" y="170">CTWA reklamı 72 saat ücretsiz.</text>
+    </g>
+  </g>
+
+  <!-- Tier 3: Yapay Zekâ LLM Token -->
+  <g transform="translate(700, 160)" filter="url(#shadow5)">
+    <rect width="280" height="420" rx="16" fill="#0C1322" stroke="#8B5CF6" stroke-width="1.5" />
+    <rect x="0" y="0" width="280" height="6" rx="3" fill="#8B5CF6" />
+
+    <text x="24" y="38" fill="#C084FC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">KATMAN 3</text>
+    <text x="24" y="66" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Yapay Zekâ (LLM API)</text>
+    <text x="24" y="88" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Dil Modeli Token Tüketimi</text>
+
+    <!-- Pricing Box -->
+    <rect x="24" y="108" width="232" height="70" rx="10" fill="#060A14" stroke="#1E293B" />
+    <text x="38" y="134" fill="#C084FC" font-family="monospace" font-size="16" font-weight="800">Token Başına</text>
+    <text x="38" y="156" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">OpenAI / Claude / Gemini API</text>
+
+    <g transform="translate(24, 205)" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#94A3B8">
+      <text x="0" y="0" fill="#E2E8F0" font-weight="600">• Abonelikten Bağımsız:</text>
+      <text x="0" y="18">Claude Pro veya ChatGPT Plus</text>
+      <text x="0" y="34">7/24 bot API'sini karşılamaz.</text>
+
+      <text x="0" y="68" fill="#E2E8F0" font-weight="600">• Token Tüketimi:</text>
+      <text x="0" y="86">Gelen mesaj + konuşma</text>
+      <text x="0" y="102">geçmişi + sistem talimatı.</text>
+
+      <text x="0" y="136" fill="#E2E8F0" font-weight="600">• Model Seçimi:</text>
+      <text x="0" y="154">Hafif modeller (GPT-4o mini,</text>
+      <text x="0" y="170">Haiku) maliyeti düşürür.</text>
+    </g>
+  </g>
+
+  <!-- Tier 4: Barındırma & Sunucu -->
+  <g transform="translate(1010, 160)" filter="url(#shadow5)">
+    <rect width="280" height="420" rx="16" fill="#0C1322" stroke="#EC4899" stroke-width="1.5" />
+    <rect x="0" y="0" width="280" height="6" rx="3" fill="#EC4899" />
+
+    <text x="24" y="38" fill="#F472B6" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">KATMAN 4</text>
+    <text x="24" y="66" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Barındırma (Hosting)</text>
+    <text x="24" y="88" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Webhook veya Harici Sunucu</text>
+
+    <!-- Pricing Box -->
+    <rect x="24" y="108" width="232" height="70" rx="10" fill="#060A14" stroke="#1E293B" />
+    <text x="38" y="134" fill="#F472B6" font-family="monospace" font-size="16" font-weight="800">$0 - $5 / ay</text>
+    <text x="38" y="156" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="11.5">Workflow veya Cloudflare</text>
+
+    <g transform="translate(24, 205)" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" fill="#94A3B8">
+      <text x="0" y="0" fill="#E2E8F0" font-weight="600">• Kapso Workflow İse:</text>
+      <text x="0" y="18">Harici sunucu gerekmez,</text>
+      <text x="0" y="34">ek barındırma maliyeti $0.</text>
+
+      <text x="0" y="68" fill="#E2E8F0" font-weight="600">• Sunucusuz Webhook:</text>
+      <text x="0" y="86">Cloudflare Workers veya</text>
+      <text x="0" y="102">Vercel ücretsiz katmanı</text>
+      <text x="0" y="118">genellikle başlangıçta yeterli.</text>
+
+      <text x="0" y="152" fill="#E2E8F0" font-weight="600">• CRM Entegrasyonu:</text>
+      <text x="0" y="170">Veritabanı çağrıları.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Summary -->
+  <g transform="translate(80, 600)">
+    <rect width="1210" height="50" rx="10" fill="#050914" stroke="#1E293B" />
+    <text x="25" y="31" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="700">ÖZET HESAP:</text>
+    <text x="135" y="31" fill="#E2E8F0" font-family="system-ui, -apple-system, sans-serif" font-size="12.5">
+      Başlangıçta Kapso Free + Meta 1.000 ücretsiz servis mesajı ile 0 TL altyapı maliyetiyle başlayabilir; yalnızca ufak LLM token bedeliyle çalışabilirsiniz.
+    </text>
+  </g>
+</svg>

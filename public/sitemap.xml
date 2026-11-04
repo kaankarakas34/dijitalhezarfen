@@ -2,173 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dijitalhezarfen.com/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/google-ai-mode-reklamlari-arama-ekonomisi</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://dijitalhezarfen.com/yayinlar/kapso-whatsapp-chatbot-codex-claude-code-kurulum</loc>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-01.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/kapso-whatsapp-bot-kapak.webp</image:loc>
+      <image:title>WhatsApp&apos;ta Kendi Yapay Zekâ Botunu Kur: Kapso, Codex ve Claude Code Rehberi</image:title>
+      <image:caption>Kapso üzerinden WhatsApp bağlantısı; Codex ve Claude Code ile yapay zekâ botu kurulumunun şematik anlatımı</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dijitalhezarfen.com/yayinlar/google-ai-mode-reklamlari-arama-ekonomisi</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dijitalhezarfen.com/images/google-ai-mode-reklamlari-arama-ekonomisi-kapak.webp</image:loc>
       <image:title>Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor</image:title>
-      <image:caption>Konuşma tabanlı aramada reklam ve kullanıcı niyetinin birleşmesini simgeleyen görsel.</image:caption>
+      <image:caption>Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/microsoft-openai-10-milyar-dolar-gelir</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-02.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/microsoft-openai-10-milyar-dolar-gelir-kapak.webp</image:loc>
       <image:title>Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür?</image:title>
-      <image:caption>Bulut altyapısı ile yapay zekâ şirketi arasındaki stratejik ortaklık ve bağımlılık.</image:caption>
+      <image:caption>Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/sap-model-routing-ai-maliyet-optimizasyonu</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-03.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/sap-model-routing-ai-maliyet-optimizasyonu-kapak.webp</image:loc>
       <image:title>SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor?</image:title>
-      <image:caption>Farklı yapay zekâ modelleri arasında maliyet ve performans optimizasyonu.</image:caption>
+      <image:caption>SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/nvidia-hugging-face-satin-alma-rekabet</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-04.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/nvidia-hugging-face-satin-alma-rekabet-kapak.webp</image:loc>
       <image:title>Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde?</image:title>
-      <image:caption>Açık yapay zekâ modellerinin dağıtım altyapısında kontrol tartışması.</image:caption>
+      <image:caption>Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/upwind-400-milyon-dolar-bulut-guvenligi</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-05.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/upwind-400-milyon-dolar-bulut-guvenligi-kapak.webp</image:loc>
       <image:title>Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı?</image:title>
-      <image:caption>Bulut ortamındaki tehditleri çalışma anında tespit eden güvenlik teknolojisi.</image:caption>
+      <image:caption>Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/guidewire-hyperexponential-sigorta-yapay-zeka</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-06.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/guidewire-hyperexponential-sigorta-yapay-zeka-kapak.webp</image:loc>
       <image:title>Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor?</image:title>
-      <image:caption>Sigorta risk fiyatlandırmasında yapay zekâ destekli karar sistemleri.</image:caption>
+      <image:caption>Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/rebuild-venture-studio-ileri-uretim</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-07.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/rebuild-venture-studio-ileri-uretim-kapak.webp</image:loc>
       <image:title>Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı?</image:title>
-      <image:caption>Ortak üretim altyapısından yeni girişimlerin doğduğu endüstriyel model.</image:caption>
+      <image:caption>Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/jio-platforms-halka-arz-platform-ekonomisi</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-08.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/jio-platforms-halka-arz-platform-ekonomisi-kapak.webp</image:loc>
       <image:title>Jio Platforms: Önce dağıtım, sonra dijital ekosistem</image:title>
-      <image:caption>Telekom altyapısından geniş dijital hizmet ekosistemine uzanan platform modeli.</image:caption>
+      <image:caption>Jio Platforms: Önce dağıtım, sonra dijital ekosistem konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/ai-veri-merkezleri-nukleer-enerji</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-09.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/ai-veri-merkezleri-nukleer-enerji-kapak.webp</image:loc>
       <image:title>Nükleer enerji neden yapay zekâ şirketlerinin gündeminde?</image:title>
-      <image:caption>Nükleer enerji üretimi ile yapay zekâ veri merkezlerinin artan elektrik ihtiyacı.</image:caption>
+      <image:caption>Nükleer enerji neden yapay zekâ şirketlerinin gündeminde? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/samsung-hbm-yapay-zeka-bellek</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-10.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/samsung-hbm-yapay-zeka-bellek-kapak.webp</image:loc>
       <image:title>Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek</image:title>
-      <image:caption>Yapay zekâ işlemcileri için yüksek bant genişlikli bellek teknolojisi.</image:caption>
+      <image:caption>Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/unitree-robotik-buyume-karlilik</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-11.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/unitree-robotik-buyume-karlilik-kapak.webp</image:loc>
       <image:title>Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor?</image:title>
-      <image:caption>İnsansı ve dört ayaklı robotların gerçek üretim ortamındaki ticari kullanımı.</image:caption>
+      <image:caption>Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/nvidia-nemotron-sesli-yapay-zeka</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-12.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/nvidia-nemotron-sesli-yapay-zeka-kapak.webp</image:loc>
       <image:title>Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi</image:title>
-      <image:caption>Çok dilli seslerin yapay zekâ ile yazıya dönüştürülmesini simgeleyen görsel.</image:caption>
+      <image:caption>Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/harmonic-aristotle-formal-verification</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-13.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/harmonic-aristotle-formal-verification-kapak.webp</image:loc>
       <image:title>Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor</image:title>
-      <image:caption>Yazılım ve çip tasarımlarında matematiksel doğrulama yapan yapay zekâ.</image:caption>
+      <image:caption>Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/gsk-onkoloji-klinik-arastirma-stratejisi</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-14.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/gsk-onkoloji-klinik-arastirma-stratejisi-kapak.webp</image:loc>
       <image:title>GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi?</image:title>
-      <image:caption>Hedefli kanser tedavilerinin klinik araştırma sürecini anlatan biyomedikal görsel.</image:caption>
+      <image:caption>GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://dijitalhezarfen.com/yayinlar/lush-sosyal-medya-reklamsiz-marka-stratejisi</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/dijital-hezarfen-kapak-15.webp</image:loc>
+      <image:loc>https://dijitalhezarfen.com/images/lush-sosyal-medya-reklamsiz-marka-stratejisi-kapak.webp</image:loc>
       <image:title>Lush sosyal medya reklamlarını bırakınca ne oldu?</image:title>
-      <image:caption>Markanın sosyal medya reklamları yerine kendi müşteri kanallarına yatırım yapması.</image:caption>
+      <image:caption>Lush sosyal medya reklamlarını bırakınca ne oldu? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>

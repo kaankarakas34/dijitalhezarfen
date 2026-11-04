@@ -397,6 +397,63 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
     });
   }
 
+  if (article.slug === 'kapso-whatsapp-chatbot-codex-claude-code-kurulum') {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${articleCanonical}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Kapso ile WhatsApp botu kod yazmadan kurulabilir mi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Kapso’nun Workflows ve Agent arayüzü temel SSS ve kural bazlı mesajlaşmaları görsel olarak kurmayı kolaylaştırır. Codex ve Claude Code da gereken kod veya yapılandırmayı üretebilir. Ancak Meta Business doğrulaması, WhatsApp Business API izinleri ve şablon onayları gibi idari süreçler devam eder.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Codex veya Claude Code açık değilken bot çalışır mı?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Evet. Codex ve Claude Code geliştirme asistanıdır; botun 7/24 kesintisiz çalışması Kapso içinde yayınlanan bir Workflow/Agent veya bulutta barındırılan sunucusuz (serverless) webhook mimarisiyle sağlanır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Mevcut WhatsApp Business numaramla kurabilir miyim?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Evet. WhatsApp Business App Coexistence seçeneğiyle numara telefonda kalırken Kapso ile paralel kullanılabilir. Yüksek hacimli kurumsal yapılar için ise numarayı müstakil Cloud API’ye taşımak (BYOSIM) daha kararlıdır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Meta onaylı mesaj şablonları ne zaman gereklidir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'İşletmenin konuşmayı ilk başlattığı durumlarda (örneğin Meta reklam formundan gelen lead’e yazarken) veya 24 saatlik müşteri hizmeti penceresi dışındaki mesajlarda Meta onaylı şablon kullanımı zorunludur.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Ücretsiz 2.000 mesaj, 2.000 ücretsiz yapay zekâ yanıtı mı?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hayır. 2.000 mesaj Kapso platformunun aylık kotasıdır. Meta’nın 1 Ekim 2026 itibarıyla geçerli servis mesajı tarifesi (aylık numara başına 1.000 ücretsiz servis mesajı) ve seçilen yapay zekâ modelinin token API bedelleri ayrıca hesaplanır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Claude aboneliğim varsa AI model API’si de ücretsiz olur mu?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hayır. Kodlama için kullanılan Claude Code oturumu ile 7/24 canlıda çalışan botun model API tüketimi ayrı faturalandırılır; botun çağırdığı model API kredisi ayrıca gereklidir.'
+          }
+        }
+      ]
+    });
+  }
+
   element.textContent = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': graph
@@ -410,26 +467,72 @@ function getAbsoluteImageUrl(image) {
 }
 
 function normalizeArticle(rawText, article) {
-  let normalizedText = rawText
-    .replace(/^\uFEFF/, '')
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .filter((line, index) => !(index === 0 && (line === article.title || line.startsWith('Bugün Apple’da yalnızca bir CEO değişmiyor'))))
-    .filter((line) => !(article.sources?.length && line.startsWith('Kaynaklar:')));
+  const cleanText = rawText.replace(/^\uFEFF/, '');
+  const rawLines = cleanText.split(/\r?\n/);
+  const items = [];
+  let inCodeBlock = false;
+  let codeLang = '';
+  let codeLines = [];
 
-  if (article.replaceTodayWithDate) {
-    normalizedText = normalizedText.map((line) =>
-      line
-        .replace(/^Bugün Apple’da/, '31 Ağustos’ta Apple’da')
-        .replace(/^Bugün Apple’ın/, '31 Ağustos itibarıyla Apple’ın')
-        .replace(/^Reuters bugün/, 'Reuters’ın 31 Ağustos değerlendirmesinde')
-        .replace(/^Bugün\b/, '31 Ağustos itibarıyla')
-        .replace(/\bbugün\b/g, '31 Ağustos itibarıyla')
-    );
+  for (let i = 0; i < rawLines.length; i++) {
+    const rawLine = rawLines[i];
+    const trimmed = rawLine.trim();
+
+    if (trimmed.startsWith('```')) {
+      if (inCodeBlock) {
+        // closing code block
+        items.push({
+          type: 'code',
+          lang: codeLang,
+          code: codeLines.join('\n')
+        });
+        inCodeBlock = false;
+        codeLang = '';
+        codeLines = [];
+      } else {
+        // opening code block
+        inCodeBlock = true;
+        codeLang = trimmed.slice(3).trim();
+        codeLines = [];
+      }
+      continue;
+    }
+
+    if (inCodeBlock) {
+      codeLines.push(rawLine);
+      continue;
+    }
+
+    if (!trimmed) continue;
+    if (items.length === 0 && (trimmed === article.title || trimmed.startsWith('Bugün Apple’da yalnızca bir CEO değişmiyor'))) continue;
+    if (article.sources?.length && trimmed.startsWith('Kaynaklar:')) continue;
+
+    items.push(trimmed);
   }
 
-  return normalizedText;
+  if (inCodeBlock && codeLines.length > 0) {
+    items.push({
+      type: 'code',
+      lang: codeLang,
+      code: codeLines.join('\n')
+    });
+  }
+
+  if (article.replaceTodayWithDate) {
+    return items.map((item) => {
+      if (typeof item === 'string') {
+        return item
+          .replace(/^Bugün Apple’da/, '31 Ağustos’ta Apple’da')
+          .replace(/^Bugün Apple’ın/, '31 Ağustos itibarıyla Apple’ın')
+          .replace(/^Reuters bugün/, 'Reuters’ın 31 Ağustos değerlendirmesinde')
+          .replace(/^Bugün\b/, '31 Ağustos itibarıyla')
+          .replace(/\bbugün\b/g, '31 Ağustos itibarıyla');
+      }
+      return item;
+    });
+  }
+
+  return items;
 }
 
 function isLegacySectionHeading(line) {
@@ -460,7 +563,7 @@ function parseVideoEmbed(line) {
     };
   }
 
-  const ytMarkdownMatch = line.match(/^\[(?:youtube|video)\]\((https?:\/\/[^\)]+)\)$/i);
+  const ytMarkdownMatch = line.match(/^\[(?:youtube|video)\]\((https?:\/\/[^)]+)\)$/i);
   if (ytMarkdownMatch) {
     let url = ytMarkdownMatch[1];
     const ytIdMatch = url.match(/(?:youtube\.com\/(?:embed\/|watch\?v=)|youtu\.be\/)([a-zA-Z0-9_-]+)/);
@@ -572,6 +675,43 @@ function renderFormattedContent(text, onNavigate, sources = []) {
   return parts.length > 0 ? parts : text;
 }
 
+function CodeBlock({ code, lang }) {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard?.writeText(code).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  return (
+    <div className="my-6 rounded-2xl border border-cyan-500/25 bg-[#060A14] overflow-hidden shadow-xl shadow-cyan-950/20">
+      <div className="flex items-center justify-between px-4 py-2.5 bg-white/[0.03] border-b border-white/5">
+        <div className="flex items-center gap-2">
+          <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+          <span className="ml-2 font-mono text-[11px] uppercase tracking-wider text-cyan-400 font-bold">
+            {lang || 'terminal'}
+          </span>
+        </div>
+        <button
+          type="button"
+          onClick={handleCopy}
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/5 hover:bg-white/10 text-xs text-gray-300 hover:text-white transition-all cursor-pointer font-mono"
+          title="Kodu kopyala"
+        >
+          {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-gray-400" />}
+          <span>{copied ? 'Kopyalandı' : 'Kopyala'}</span>
+        </button>
+      </div>
+      <div className="p-4 sm:p-5 overflow-x-auto font-mono text-xs sm:text-sm text-cyan-200/90 leading-relaxed">
+        <pre className="whitespace-pre font-mono">{code}</pre>
+      </div>
+    </div>
+  );
+}
+
 export default function YayinDetay({ slug, lang, onNavigate }) {
   const [articleLines, setArticleLines] = useState([]);
   const [copied, setCopied] = useState(false);
@@ -587,7 +727,12 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
     return articleCategories.find((category) => category.id === articleMeta.category)?.label[lang === 'en' ? 'en' : 'tr'] || '';
   }, [articleMeta, lang]);
 
-  const firstParagraph = useMemo(() => articleMeta?.lead || articleMeta?.desc || articleLines[0] || '', [articleLines, articleMeta?.lead, articleMeta?.desc]);
+  const firstParagraph = useMemo(() => {
+    if (articleMeta?.lead) return articleMeta.lead;
+    if (articleMeta?.desc) return articleMeta.desc;
+    const firstStr = articleLines.find((l) => typeof l === 'string');
+    return firstStr || '';
+  }, [articleLines, articleMeta?.lead, articleMeta?.desc]);
   const bodyLines = useMemo(() => articleLines, [articleLines]);
 
   const relatedArticles = useMemo(() => {
@@ -619,6 +764,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
   const tocHeadings = useMemo(() => {
     const list = [];
     bodyLines.forEach((line) => {
+      if (typeof line !== 'string') return;
       if (line.startsWith('# ')) {
         const title = line.replace(/^#\s+/, '');
         list.push({ title, slug: slugify(title), level: 1 });
@@ -661,8 +807,8 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
     setMetaAttribute('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
     setMetaAttribute('meta[property="og:image"]', { property: 'og:image', content: imageUrl });
     setMetaAttribute('meta[property="og:image:alt"]', { property: 'og:image:alt', content: articleMeta.imageAlt || articleMeta.title });
-    setMetaAttribute('meta[property="og:image:width"]', { property: 'og:image:width', content: '1200' });
-    setMetaAttribute('meta[property="og:image:height"]', { property: 'og:image:height', content: '675' });
+    setMetaAttribute('meta[property="og:image:width"]', { property: 'og:image:width', content: '1600' });
+    setMetaAttribute('meta[property="og:image:height"]', { property: 'og:image:height', content: '900' });
     setMetaAttribute('meta[property="og:locale"]', { property: 'og:locale', content: 'tr_TR' });
     setMetaAttribute('meta[property="article:author"]', { property: 'article:author', content: articleMeta.author });
     setMetaAttribute('meta[property="article:section"]', { property: 'article:section', content: categoryLabel });
@@ -949,6 +1095,12 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
           {/* Body Lines */}
           <div className="space-y-6">
             {bodyLines.map((line, index) => {
+              if (line?.type === 'code') {
+                return <CodeBlock key={`code-block-${index}`} code={line.code} lang={line.lang} />;
+              }
+
+              if (typeof line !== 'string') return null;
+
               const markdownImage = parseMarkdownImage(line);
 
               if (markdownImage) {
@@ -1180,10 +1332,12 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
             <div id="kaynaklar" className="mt-20 pt-10 border-t border-white/10 scroll-mt-24">
               <div className="flex items-center gap-2 mb-6">
                 <BookOpen className="w-5 h-5 text-cyber-cyan" />
-                <h2 className="text-xl sm:text-2xl font-extrabold text-white">Kaynaklar & Referanslar</h2>
+                <h2 className="text-xl sm:text-2xl font-extrabold text-white">Kaynaklar ve Doğrulama Bağlantıları</h2>
               </div>
               <p className="text-xs text-gray-400 mb-6 font-light">
-                Bu analizdeki teknik veriler, benchmarklar, kurumsal dokümanlar ve uzman görüşleri için başvurulan kaynaklar aşağıda listelenmiştir. Bağlantılara tıklayarak orijinal kaynakları inceleyebilirsiniz.
+                {articleMeta.sources.some((s) => s.isHomepage)
+                  ? 'Bu içerikteki olgusal arka plan için başvurulan doğrulama başlangıç bağlantıları aşağıda yer almaktadır. Yayıncı ana sayfası niteliğindeki bağlantılar özgül birincil haber URL’si yerine geçmez; doğrulama başlangıç noktası olarak sunulmuştur.'
+                  : 'Bu içerikteki olgusal arka plan, resmi duyurular ve referans bağlantıları aşağıda listelenmiştir. Bağlantılara tıklayarak ilgili kaynakları inceleyebilirsiniz.'}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {articleMeta.sources.map((source, sIndex) => {

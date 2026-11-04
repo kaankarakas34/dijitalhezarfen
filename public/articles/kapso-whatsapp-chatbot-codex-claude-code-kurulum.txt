@@ -1,0 +1,257 @@
+Bir WhatsApp botu kurmak için baştan karmaşık bir mesajlaşma altyapısı yazmak zorunda değilsiniz. [Kapso](https://kapso.com/) resmî WhatsApp Business Platform'a bağlanarak mesaj iletimi, oturum yönetimi ve gelen kutusu (Inbox) altyapısını çözer; OpenAI Codex veya Claude Code ise bu bağlantının etrafındaki otomasyonu kurmanıza yardımcı olur. Doğru bir mimariyle; gelen mesajları anında karşılayan, sık sorulan soruları yanıtlayan, gerektiğinde insan operatöre devreden ve konuşma geçmişini koruyan kurumsal bir asistan inşa edebilirsiniz.
+
+Buradaki en kritik ayrım şudur: **Kapso bir mesajlaşma altyapısıdır; Codex ve Claude Code ise yazılım geliştirme asistanlarıdır.** Codex veya Claude Code'u MCP üzerinden WhatsApp'a bağlamak, tek başına 7/24 kesintisiz açık bir chatbot yaratmaz. Bilgisayarınız ve terminaliniz kapandığında da mesajlara cevap veren bir sistem için Kapso içinde çalışan bir **Workflow/Agent** veya bulutta yayınlanmış **sunucusuz (serverless) bir webhook** gerekir.
+
+![Kapso ile WhatsApp Yapay Zekâ Botu Hızlı Kurulum Adımları](/images/kapso-bes-adim.svg)
+
+## Kapso nedir, ne işe yarar?
+
+[Kapso](https://kapso.com/), Meta'nın resmî Cloud API altyapısı üzerinden mesaj gönderme, alma ve müşteri akışlarını otomatize etmeyi sağlayan modern bir WhatsApp Business çözümüdür. İçerisinde ortak ekip gelen kutusu (Shared Inbox), onaylı şablon yönetimi, webhook yönlendirmesi, Model Context Protocol (MCP) sunucusu, görsel Workflow editörü ve detaylı teslimat logları barındırır.
+
+Örneğin bir networking topluluğu veya hizmet işletmesi; WhatsApp'tan ilk kez yazan bir potansiyel müşteriyi anında karşılayabilir, etkinlik tarihini onaylı takvimden doğrulayabilir, üyelik koşullarını açıklayabilir ve satış ya da özel veri söz konusu olduğunda konuşmayı doğrudan insan temsilciye aktarabilir.
+
+**Resmî bağlantılar:** [Kapso Ana Sayfa](https://kapso.com/) · [Kapso Dashboard](https://app.kapso.ai/) · [Dokümantasyon](https://docs.kapso.ai/docs/build-with-ai) · [GitHub / Kapso Agent Skills](https://github.com/gokapso/agent-skills)
+
+## En hızlı kurulum: Beş adımda çalışma mantığı
+
+1. [Kapso'da hesap açın](https://app.kapso.ai/) ve yeni bir proje oluşturun.
+2. `Connected numbers → Connect new number` bölümünden Instant setup (hazır numara), WhatsApp Business App veya kendi SIM numaranızı seçerek Meta bağlantı adımlarını tamamlayın. Canlı numaraya dokunmadan önce **WhatsApp → Sandbox** alanını da kullanabilirsiniz.
+3. Codex veya Claude Code'u Kapso'nun resmî MCP sunucusuna bağlayın. Bu işlem terminalde tek komutla ve tarayıcı onayıyla saniyeler içinde tamamlanır.
+4. Geliştirme asistanınıza istediğiniz iş mantığını tarif edin: "Gelen mesajı karşıla, SSS havuzundan yanıtla, yetki sınırını aşan durumlarda insana devret."
+5. **7/24 çalışacak** Kapso Workflow akışını kurun veya sunucusuz webhook fonksiyonunuzu yayınlayın. Test mesajı gönderip logları inceledikten sonra canlı numaraya geçin.
+
+> **Önemli Kural:** İlk üç adım Kapso'yu geliştirme asistanınıza tanıtır. 4 ve 5. adımlar ise terminaliniz kapalıyken de botunuzun 7/24 müşterilere cevap vermesini sağlayan gerçek çalışma mimarisidir.
+
+---
+
+## 1. Kapso hesabı aç ve WhatsApp bağlantı yolunu seç
+
+[app.kapso.ai](https://app.kapso.ai/) üzerinde bir proje oluşturduktan sonra `Connected numbers → Connect new number` menüsüne gidin. Meta oturum açma penceresi, işletme portföyü (Meta Business Portfolio) ve WhatsApp Business Account (WABA) seçim adımları karşınıza çıkacaktır. İhtiyacınıza göre üç farklı bağlantı yolundan birini seçebilirsiniz:
+
+![Kapso ile WhatsApp Bağlantısında 3 Temel Yol](/images/kapso-uc-baglanti-yolu.svg)
+
+### Yol A: Kapso'nun hazır numarası (Instant Setup) — En hızlı deneme
+
+Hızlı bir kavram kanıtlama (PoC) veya prototip geliştirmek istiyorsanız **Instant setup** seçeneğini kullanın. Meta ekranında **pre-verified** olarak sunulan hazır numaralardan birini seçin; kendi telefon numaranızı girmeniz gerekmez. Meta izinlerini onayladıktan sonra Kapso numarayı saniyeler içinde projenize bağlar. Kişisel veya şirket numaranızı riske atmadan güvenli deneme yapmak için en pratik yöntemdir.
+
+**Resmî kılavuz:** [Connect WhatsApp — Instant setup](https://docs.kapso.ai/docs/how-to/whatsapp/connect-whatsapp)
+
+### Yol B: Mevcut WhatsApp Business numaranız kalsın (Coexistence)
+
+Telefonunuzda **WhatsApp Business** uygulamasını kullanmaya devam etmek istiyorsanız `WhatsApp Business App` seçeneğini belirleyin. Meta akışında numaranızı girin; Meta numaranın uygulamada aktif olduğunu tespit eder. Ardından bilgisayar ekranında beliren QR kodunu telefonunuzdaki WhatsApp Business uygulamasıyla taratın.
+
+Bu hibrit modele *coexistence* adı verilir. Gelen mesajlar hem telefonunuza hem de Kapso paneline eşzamanlı olarak düşer. Ancak Kapso'nun resmî dokümantasyonunda belirttiği gibi, yüksek mesaj trafiği ve kurumsal kararlılık gerektiren senaryolarda doğrudan Cloud API bağlantısı daha sağlamdır.
+
+**Resmî kılavuz:** [Connect WhatsApp — Business App](https://docs.kapso.ai/docs/how-to/whatsapp/connect-whatsapp) · [Coexistence Sorun Giderme](https://docs.kapso.ai/docs/how-to/whatsapp/coexistence-troubleshooting)
+
+### Yol C: Kendi SIM numaranızla müstakil Cloud API (BYOSIM)
+
+Mevcut bir kurumsal numaranızı doğrudan Meta Cloud API altyapısına bağlayacaksanız `Bring your own SIM` (BYOSIM) seçeneğini kullanın. Numaranıza gelen SMS veya sesli arama koduyla doğrulama yapılır. Bu seçenekte numara telefon uygulamasından ayrılır; tüm konuşmalar API ve Kapso gelen kutusu üzerinden yönetilir.
+
+> **Kritik Güvenlik Uyarısı:** Numaranız daha önce başka bir BSP veya WhatsApp Business sağlayıcısında kayıtlıysa, yalnızca o panelden bağlantıyı kesmek yetmeyebilir. Eski sağlayıcının WABA üzerindeki **credit line** tahsisini kaldırdığından emin olun. Sorun çözmek amacıyla Meta'da WABA hesabını veya telefondaki WhatsApp profilini aceleyle silmeyin.
+
+---
+
+## 2. Üretim numarası olmadan Sandbox ortamında test edin
+
+Canlı işletme numaranıza dokunmadan önce tüm akışları Kapso'nun yalıtılmış test alanında deneyebilirsiniz:
+
+1. Projenizde `WhatsApp → Sandbox` menüsüne gidin.
+2. `Add Test Number` düğmesine basarak test mesajı göndereceğiniz kendi telefon numaranızı kaydedin.
+3. Kapso'nun ekranda ürettiği **6 karakterli aktivasyon kodunu** alın.
+4. `Open WhatsApp` bağlantısıyla açılan sohbete bu aktivasyon kodunu mesaj olarak iletin.
+5. Sandbox oturumu aktifleştiğinde, test numarasını agent akışlarınıza bağlayarak güvenle deneyin.
+
+Aktivasyon kodunun geçerlilik süresi **15 dakikadır**. Süre dolarsa yeni bir kod oluşturabilirsiniz.
+
+![Kapso WhatsApp Sandbox Test Ortamı ve Sohbet Doğrulaması](/images/kapso_sandbox.png)
+*Kaynak: [Kapso Resmî Dokümantasyonu](https://docs.kapso.ai/docs/how-to/whatsapp/use-sandbox-for-testing). Sandbox ortamı, geliştiricilerin canlı numaraya ihtiyaç duymadan uçtan uca mesajlaşma testleri yapmasını sağlar.*
+
+---
+
+## 3. OpenAI Codex ile Kapso MCP kurulumu
+
+Buradaki amaç; Codex'e Kapso projenizin canlı durumunu, bağlı WhatsApp numaralarını, şablonlarını ve gelen mesaj akışlarını inceleme ve yapılandırma yetkisi vermektir.
+
+![OpenAI Codex ve Claude Code ile Kapso MCP Kurulumu](/images/kapso-codex-claude-kurulum.svg)
+
+### Hızlı OAuth yöntemi (Önerilen)
+
+Terminalinizde aşağıdaki iki komutu çalıştırın:
+
+```bash
+codex mcp add kapso --url https://api.kapso.ai/mcp
+codex mcp login kapso
+```
+
+İkinci komut tarayıcınızda Kapso oturum açma sayfasını açar. İlgili projeyi seçip istenen izinleri onaylayın. İlk aşamada salt-okunur (read-only) izin vermek güvenlik açısından en sağlıklı yaklaşımdır. Ardından Codex oturumunuzda `/mcp` komutuyla bağlantının `healthy` olduğunu doğrulayın.
+
+Codex'e göndereceğiniz ilk istem şu olmalıdır:
+
+```text
+Kapso projemin durumunu ve bağlı WhatsApp numaralarını listele.
+Hiçbir mesaj gönderme, şablonları veya webhook ayarlarını değiştirme.
+Bağlantıyı doğruladıktan sonra 7/24 çalışacak bir SSS asistanı mimarisi hazırla.
+```
+
+Codex'in en güncel Kapso belgelerini doğrudan okuyabilmesi için dokümantasyon MCP sunucusunu da ekleyebilirsiniz:
+
+```bash
+codex mcp add kapso-docs --url https://docs.kapso.ai/mcp
+```
+
+### Alternatif: Proje API anahtarı ile kurulum
+
+Ortamınızda tarayıcı oturumu yerine kalıcı API anahtarı kullanmak isterseniz:
+
+**macOS / Linux terminali:**
+```bash
+export KAPSO_API_KEY="ANAHTARINIZ_BURAYA"
+codex mcp add kapso --url https://api.kapso.ai/mcp --bearer-token-env-var KAPSO_API_KEY
+codex mcp get kapso
+```
+
+**Windows PowerShell:**
+```powershell
+$env:KAPSO_API_KEY = "ANAHTARINIZ_BURAYA"
+codex mcp add kapso --url https://api.kapso.ai/mcp --bearer-token-env-var KAPSO_API_KEY
+```
+
+---
+
+## 4. Claude Code ile Kapso MCP kurulumu
+
+[Claude Code](https://www.anthropic.com/claude-code) kullanıyorsanız Kapso'nun HTTP MCP uç noktasını tanıtmak yeterlidir:
+
+```bash
+claude mcp add --transport http kapso https://api.kapso.ai/mcp
+```
+
+Claude Code oturumunu açın ve içeride `/mcp` yazarak Kapso giriş ekranından yetkilendirmeyi onaylayın. Claude'un canlı teknik dokümantasyona erişebilmesi için doküman sunucusunu da ekleyebilirsiniz:
+
+```bash
+claude mcp add --transport http kapso-docs https://docs.kapso.ai/mcp
+```
+
+**Claude Code API anahtarı alternatifi:**
+```bash
+export KAPSO_API_KEY="ANAHTARINIZ_BURAYA"
+claude mcp add --transport http kapso https://api.kapso.ai/mcp --header "Authorization: Bearer $KAPSO_API_KEY"
+claude mcp get kapso
+```
+
+### Kapso Agent Skills kütüphanesini ekleyin
+
+MCP canlı projeye erişim sağlarken; **Agent Skills** geliştirme asistanınıza Kapso'ya özgü entegrasyon kalıplarını, hata ayıklama kurallarını ve WhatsApp en iyi pratiklerini öğretir:
+
+```bash
+npx skills add gokapso/agent-skills
+```
+
+Bu paket; `integrate-whatsapp`, `automate-whatsapp` ve `observe-whatsapp` gibi hazır beceri modüllerini asistanınızın bağlamına kazandırır.
+
+---
+
+## 5. WhatsApp botunun gerçekten 7/24 çalışmasını sağlama
+
+En sık düşülen yanılgı şudur: Bilgisayarda Codex veya Claude Code terminalini açık bırakmak, bir üretim botu işletme yöntemi değildir. Bilgisayar uyku moduna geçtiğinde veya terminal kapandığında botunuz susar. Kesintisiz bir sistem için otonom bir çalışma ortamı şarttır.
+
+![WhatsApp Yapay Zekâ Botu 7/24 Çalışma Mimarisi](/images/kapso-7-24-mimari.svg)
+
+### Seçenek 1: Kapso Workflows & AI Agent (Sıfır altyapı yönetimi)
+
+Harici bir sunucu barındırmak istemeyen işletmeler için en yalın yöntem Kapso'nun dahili akış editörüdür:
+
+1. **Gelen Mesaj Tetikleyicisi:** `WhatsApp message received` olayını akışın başına ekleyin.
+2. **AI Agent Düğümü:** İşletmenizin onaylı SSS dökümanını, kurumsal ses tonunu ve bilgi sınırlarını düğüme tanımlayın.
+3. **Koşul ve İnsan Devri:** Kapsam dışı sorular, fiyat pazarlığı veya özel veri talepleri için koşul düğümü ekleyerek konuşmayı Kapso Inbox üzerinden müşteri temsilcisine yönlendirin.
+4. **Yanıt Gönderimi:** Üretilen yanıtı WhatsApp mesajı olarak kullanıcıya iletin.
+5. **Sandbox ve Canlı:** Akışı önce test numarasında çalıştırıp logları kontrol edin; doğrulamadan sonra canlı numaranızda yayınlayın.
+
+### Seçenek 2: Kapso + Webhook + Sunucusuz Fonksiyon (Gelişmiş kontrol)
+
+Kendi veri tabanınızı, CRM sisteminizi (HubSpot, Salesforce) veya özel iş mantığınızı devreye sokacaksanız mimari şöyledir:
+
+**WhatsApp Mesajı → Kapso → Webhook → Cloudflare Workers / Vercel Functions → LLM API → Kapso API → WhatsApp Yanıtı.**
+
+Bu kurguda [yapay zekâ güvenlik protokollerine](/yayinlar/nvidia-openshell-ai-agent-guvenligi) dikkat edilmelidir:
+- Webhook imzasını doğrulayarak sahte çağrıları engelleyin.
+- Yinelenen mesajları önlemek için `idempotency key` kontrolü uygulayın.
+- Halüsinasyon riskini azaltmak için [insan gözetimli otonom yönetişim](/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik) sınırları belirleyin.
+- Hassas müşteri verilerini istemlere filtresiz aktarmayın.
+
+---
+
+## 6. Meta reklamından gelen potansiyel müşteriye (Lead) otomatik mesaj gönderilebilir mi?
+
+**Teknik olarak evet; fakat lead'in nereden geldiği kuralları değiştirir:**
+
+1. **Doğrudan WhatsApp Reklamı (Click-to-WhatsApp / CTWA):** Kullanıcı Instagram veya Facebook reklamına tıklayıp doğrudan WhatsApp sohbeti başlattığında, 72 saatlik ücretsiz müşteri hizmeti penceresi devreye girer. Bot anında serbest formatta yanıt verebilir.
+2. **Meta Instant Form (Lead Formu):** Kullanıcı bir form doldurup sadece telefon numarasını bıraktıysa, bu WhatsApp'tan mesaj attığı anlamına gelmez. Bu durumda:
+   - Form verisi webhook ile yakalanır.
+   - İletişim izni (opt-in) doğrulanır.
+   - Kullanıcıya ilk mesaj mutlaka **Meta onaylı WhatsApp mesaj şablonu** (Marketing veya Utility şablonu) olarak gönderilir.
+   - Kullanıcı bu şablona yanıt verirse 24 saatlik müşteri hizmeti penceresi açılır ve yapay zekâ ajanı devreye girer.
+
+---
+
+## 7. Kapso ücretsiz mi? Gerçek maliyet kalemleri nelerdir?
+
+"Ücretsiz başlangıç paketi" ile "sınırsız bedava WhatsApp trafiği" birbirine karıştırılmamalıdır. Bir WhatsApp AI botunun 4 ayrı maliyet katmanı vardır:
+
+![WhatsApp Yapay Zekâ Botu 4 Maliyet Katmanı](/images/kapso-maliyet-katmanlari.svg)
+
+| Maliyet Katmanı | Resmî Durum (4 Kasım 2026) | Kritik Detay |
+|---|---|---|
+| **1. Kapso Platformu** | **Free ($0/ay)** veya **Pro ($25/ay)** | Free pakette aylık 2.000 mesaj kotası, 1 bağlı numara ve Sandbox bulunur. $2 hoş geldin kredisi verilir. |
+| **2. Meta / WhatsApp** | **Aylık 1.000 servis mesajı ücretsiz** | **1 Ekim 2026** Meta düzenlemesiyle üretim numaralarında şablonsuz servis mesajları da ücret tarifesine girmiştir. Numara başına aylık ilk 1.000 teslim edilen servis mesajı ücretsizdir. |
+| **3. Yapay Zekâ (LLM)** | **Token başına tüketim** | Seçtiğiniz modele (OpenAI, Claude, Gemini) göre token bazlı harcanır. Claude Pro aboneliği bot API tüketimini kapsamaz. |
+| **4. Barındırma (Hosting)** | **$0 - $5 / ay** | Kapso Workflows kullanılırsa ek sunucu maliyeti $0'dır. Kendi webhook uygulamanızı barındırıyorsanız sunucusuz ücretsiz katmanlar yeterlidir. |
+
+---
+
+## 8. Kurulum videoları ve uygulamalı rehberler
+
+**1. Kapso ve Claude Code ile WhatsApp Ajanı Kurulumu (Uygulamalı):**
+
+Stiven Rosales'in hazırladığı bu videoda Kapso numara bağlantısı, Claude Code entegrasyonu, Vercel AI SDK kullanımı ve canlı dağıtım adımları gösterilmektedir.
+
+<iframe title="Kapso ve Claude Code ile WhatsApp Ajanı Kurulumu — Stiven Rosales" src="https://www.youtube-nocookie.com/embed/sHyIhRpzhos" loading="lazy" allowfullscreen></iframe>
+
+**2. Genel WhatsApp AI Ajanı Mimarisi (Claude Code — 30 Dakika):**
+
+Yashica Jain'in hazırladığı bu eğitim, WhatsApp webhook mantığını, token yönetimini ve bulutta canlıya alma adımlarını kavramak için mükemmel bir genel mimari rehberidir (Kapso'ya özgü değildir):
+
+<iframe title="30 Dakikada WhatsApp AI Ajanı Kurulumu (Genel Rehber) — Yashica Jain" src="https://www.youtube-nocookie.com/embed/_VX7jc_BhB8" loading="lazy" allowfullscreen></iframe>
+
+---
+
+## 9. Sık sorulan sorular
+
+### Kapso ile WhatsApp botu kod yazmadan kurulabilir mi?
+Kapso'nun Workflows ve Agent arayüzü temel SSS ve kural bazlı mesajlaşmaları görsel olarak kurmayı kolaylaştırır. Codex ve Claude Code da gereken kod veya yapılandırmayı üretebilir. Ancak Meta Business doğrulaması, WhatsApp Business API izinleri ve şablon onayları gibi idari süreçler devam eder.
+
+### Codex veya Claude Code açık değilken bot çalışır mı?
+Evet. Codex ve Claude Code geliştirme asistanıdır; botun 7/24 kesintisiz çalışması Kapso içinde yayınlanan bir Workflow/Agent veya bulutta barındırılan sunucusuz (serverless) webhook mimarisiyle sağlanır.
+
+### Mevcut WhatsApp Business numaramla kurabilir miyim?
+Evet. WhatsApp Business App Coexistence seçeneğiyle numara telefonda kalırken Kapso ile paralel kullanılabilir. Yüksek hacimli kurumsal yapılar için ise numarayı müstakil Cloud API'ye taşımak (BYOSIM) daha kararlıdır.
+
+### Meta onaylı mesaj şablonları ne zaman gereklidir?
+İşletmenin konuşmayı ilk başlattığı durumlarda (örneğin Meta reklam formundan gelen lead'e yazarken) veya 24 saatlik müşteri hizmeti penceresi dışındaki mesajlarda Meta onaylı şablon kullanımı zorunludur.
+
+### Ücretsiz 2.000 mesaj, 2.000 ücretsiz yapay zekâ yanıtı mı?
+Hayır. 2.000 mesaj Kapso platformunun aylık kotasıdır. Meta'nın 1 Ekim 2026 itibarıyla geçerli servis mesajı tarifesi (aylık numara başına 1.000 ücretsiz servis mesajı) ve seçilen yapay zekâ modelinin token API bedelleri ayrıca hesaplanır.
+
+### Claude aboneliğim varsa AI model API'si de ücretsiz olur mu?
+Hayır. Kodlama için kullanılan Claude Code oturumu ile 7/24 canlıda çalışan botun model API tüketimi ayrı faturalandırılır; botun çağırdığı model API kredisi ayrıca gereklidir.
+
+---
+
+## Sonuç: Başarı botu bağlamakta değil, doğru süreci kurmakta
+
+Kapso'nun sunduğu en büyük avantaj, geliştiriciyi Meta WhatsApp API'sinin karmaşık webhook ve oturum yönetimini sıfırdan inşa etme yükünden kurtarmasıdır. Codex ve Claude Code ise bu altyapıyı hızla yapılandırmanızı ve akıllı otomasyon kodlarını dakikalar içinde hazırlamanızı sağlar.
+
+Ancak kurumsal bir WhatsApp asistanının gerçek başarısı, rastgele sohbet etmesinde değil; **doğru bilgiyi vermesinde, yetki sınırını aştığında durup insan temsilciye devretmesinde ve konuşma loglarını şeffaf biçimde tutabilmesinde** yatar. İlk adımda bir Sandbox numarası ve net bir SSS havuzuyla başlayarak sistemin kararlılığını test edebilir, ardından canlı numaranıza ve kurumsal CRM entegrasyonlarınıza geçebilirsiniz.
+
+Son güncelleme: 4 Kasım 2026

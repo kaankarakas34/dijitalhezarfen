@@ -43,6 +43,7 @@ export default function BlogSection({ lang, onNavigate }) {
       imageGradient: article.color?.replace('/20', '').replace('/25', '') || 'from-cyan-500 to-blue-600',
       icon: iconMap[article.category] || BookOpen,
       image: article.image,
+      imageAlt: article.imageAlt || localized.title,
       path: localized.path
     };
   });
@@ -99,7 +100,7 @@ export default function BlogSection({ lang, onNavigate }) {
                 {/* Visual Image Banner with Gradients */}
                 <div className={`h-48 bg-gradient-to-tr ${post.imageGradient} relative flex items-center justify-center p-6 text-white overflow-hidden`}>
                   {post.image ? (
-                    <img src={post.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-75" />
+                    <img src={post.image} alt={post.imageAlt} className="absolute inset-0 w-full h-full object-cover object-center opacity-75" loading="lazy" />
                   ) : null}
                   <div className="absolute inset-0 bg-[#0B0F19]/20 backdrop-blur-[1px]"></div>
 

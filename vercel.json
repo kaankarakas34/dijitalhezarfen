@@ -7,6 +7,10 @@
       "destination": "/yayinlar/:slug/index.html"
     },
     {
+      "source": "/:slug(kapso-whatsapp-chatbot-codex-claude-code-kurulum|google-ai-mode-reklamlari-arama-ekonomisi|microsoft-openai-10-milyar-dolar-gelir|sap-model-routing-ai-maliyet-optimizasyonu|nvidia-hugging-face-satin-alma-rekabet|upwind-400-milyon-dolar-bulut-guvenligi|guidewire-hyperexponential-sigorta-yapay-zeka|rebuild-venture-studio-ileri-uretim|jio-platforms-halka-arz-platform-ekonomisi|ai-veri-merkezleri-nukleer-enerji|samsung-hbm-yapay-zeka-bellek|unitree-robotik-buyume-karlilik|nvidia-nemotron-sesli-yapay-zeka|harmonic-aristotle-formal-verification|gsk-onkoloji-klinik-arastirma-stratejisi|lush-sosyal-medya-reklamsiz-marka-stratejisi)",
+      "destination": "/yayinlar/:slug/index.html"
+    },
+    {
       "source": "/((?!assets/|articles/|images/|favicon.svg|icons.svg|robots.txt|sitemap.xml|yayinlar/).*)",
       "destination": "/index.html"
     }

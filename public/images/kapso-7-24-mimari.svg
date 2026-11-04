@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070D" />
+      <stop offset="50%" stop-color="#090F1C" />
+      <stop offset="100%" stop-color="#04060A" />
+    </linearGradient>
+    <linearGradient id="glowCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="shadow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="850" fill="url(#bgGrad4)" />
+
+  <!-- Header -->
+  <g transform="translate(80, 45)">
+    <rect width="170" height="28" rx="14" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1" />
+    <text x="85" y="19" fill="#22D3EE" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">SİSTEM MİMARİSİ</text>
+    <text x="0" y="66" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800">WhatsApp Yapay Zekâ Botu 7/24 Çalışma Mimarisi</text>
+    <text x="0" y="94" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="15">Mesajın gelişi, Kapso ağ geçidi, otonom runtime seçenekleri ve insan devri döngüsü.</text>
+  </g>
+
+  <!-- TOP-RIGHT SEPARATE BOX: DEV ENVIRONMENT (CODEX & CLAUDE) -->
+  <g transform="translate(1060, 40)" filter="url(#shadow4)">
+    <rect width="460" height="150" rx="16" fill="#0D111E" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 6" />
+    <rect x="20" y="18" width="140" height="22" rx="11" fill="#F59E0B" fill-opacity="0.2" />
+    <text x="90" y="33" fill="#FCD34D" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">GELİŞTİRME ASİSTANI</text>
+    
+    <text x="20" y="64" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">OpenAI Codex &amp; Claude Code</text>
+    <text x="20" y="85" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="12">
+      <tspan x="20" dy="0">MCP üzerinden yapılandırma, webhook kodu yazma</tspan>
+      <tspan x="20" dy="16">ve test amaçlı bağlanır. Terminal kapandığında bot</tspan>
+      <tspan x="20" dy="16">aşağıdaki runtime üzerinde 7/24 yaşamaya devam eder.</tspan>
+    </text>
+  </g>
+
+  <!-- PIPELINE STAGES -->
+
+  <!-- 1. KULLANICI / WHATSAPP -->
+  <g transform="translate(80, 240)" filter="url(#shadow4)">
+    <rect width="220" height="420" rx="18" fill="#0C1424" stroke="#10B981" stroke-width="1.5" />
+    <rect x="0" y="0" width="220" height="6" rx="3" fill="#10B981" />
+    
+    <circle cx="110" cy="50" r="28" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2" />
+    <text x="110" y="57" fill="#34D399" font-family="monospace" font-size="20" text-anchor="middle">WA</text>
+    
+    <text x="110" y="110" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">WhatsApp Kullanıcısı</text>
+    <text x="110" y="132" fill="#10B981" font-family="monospace" font-size="11.5" text-anchor="middle">Mobil / Masaüstü</text>
+
+    <g transform="translate(20, 160)" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">
+      <text x="0" y="0" fill="#E2E8F0" font-weight="600">• Gelen Mesaj İletimi:</text>
+      <text x="0" y="18">Kullanıcı soru sorar</text>
+      <text x="0" y="34">(Toplantı saati, üyelik vb.)</text>
+
+      <text x="0" y="70" fill="#E2E8F0" font-weight="600">• 24 Saat Hizmet Penceresi:</text>
+      <text x="0" y="88">Gelen mesajla birlikte</text>
+      <text x="0" y="104">serbest cevap penceresi</text>
+      <text x="0" y="120">aktif olur.</text>
+
+      <text x="0" y="156" fill="#E2E8F0" font-weight="600">• Yanıt Alma:</text>
+      <text x="0" y="174">Anında yapay zekâ</text>
+      <text x="0" y="190">cevabı veya insan devri.</text>
+    </g>
+  </g>
+
+  <!-- ARROW 1 -->
+  <g transform="translate(305, 430)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#06B6D4" stroke-width="2.5" marker-end="url(#arrow)" />
+    <text x="30" y="-12" fill="#38BDF8" font-family="monospace" font-size="11" text-anchor="middle">Cloud API</text>
+  </g>
+
+  <!-- 2. KAPSO ALTYAPISI -->
+  <g transform="translate(370, 240)" filter="url(#shadow4)">
+    <rect width="260" height="420" rx="18" fill="#0C1424" stroke="#06B6D4" stroke-width="1.5" />
+    <rect x="0" y="0" width="260" height="6" rx="3" fill="#06B6D4" />
+    
+    <circle cx="130" cy="50" r="28" fill="#06B6D4" fill-opacity="0.2" stroke="#06B6D4" stroke-width="2" />
+    <text x="130" y="57" fill="#38BDF8" font-family="monospace" font-size="18" text-anchor="middle">KAPSO</text>
+    
+    <text x="130" y="110" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Kapso Platformu</text>
+    <text x="130" y="132" fill="#38BDF8" font-family="monospace" font-size="11.5" text-anchor="middle">Mesajlaşma Ağ Geçidi</text>
+
+    <g transform="translate(20, 160)" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">
+      <text x="0" y="0" fill="#E2E8F0" font-weight="600">• Meta API Doğrulaması:</text>
+      <text x="0" y="18">WABA oturumu, token</text>
+      <text x="0" y="34">ve şablon yönetimi</text>
+
+      <text x="0" y="70" fill="#E2E8F0" font-weight="600">• Ortak Gelen Kutusu:</text>
+      <text x="0" y="88">Mesaj logları ve</text>
+      <text x="0" y="104">durum takibi (Sent, Read)</text>
+
+      <text x="0" y="140" fill="#E2E8F0" font-weight="600">• Tetikleme &amp; Yönlendirme:</text>
+      <text x="0" y="158">Workflow veya harici</text>
+      <text x="0" y="174">webhook yönlendirmesi</text>
+    </g>
+  </g>
+
+  <!-- ARROW SPLIT -->
+  <path d="M 630 380 L 710 330" stroke="#38BDF8" stroke-width="2" fill="none" />
+  <path d="M 630 520 L 710 570" stroke="#8B5CF6" stroke-width="2" fill="none" />
+
+  <!-- 3. RUNTIME OPTION A: KAPSO WORKFLOWS -->
+  <g transform="translate(710, 240)" filter="url(#shadow4)">
+    <rect width="360" height="200" rx="16" fill="#0B1322" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="20" y="16" width="150" height="22" rx="11" fill="#06B6D4" fill-opacity="0.15" />
+    <text x="95" y="31" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">SEÇENEK 1: KODSUZ / WORKFLOW</text>
+
+    <text x="20" y="62" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="700">Kapso Workflows / AI Agent</text>
+    <text x="20" y="84" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="12">
+      <tspan x="20" dy="0">Dahili görsel akış editörü.</tspan>
+      <tspan x="20" dy="16">Mesaj tetikleyicisi + SSS Agent Düğümü + Koşul.</tspan>
+      <tspan x="20" dy="16">Ayrı sunucu veya barındırma maliyeti gerektirmez.</tspan>
+    </text>
+    <rect x="20" y="145" width="320" height="34" rx="8" fill="#050912" stroke="#1E293B" />
+    <text x="180" y="167" fill="#34D399" font-family="monospace" font-size="11.5" text-anchor="middle">Kapso Bulutunda 7/24 Canlı</text>
+  </g>
+
+  <!-- 3. RUNTIME OPTION B: SERVERLESS WEBHOOK -->
+  <g transform="translate(710, 460)" filter="url(#shadow4)">
+    <rect width="360" height="200" rx="16" fill="#0B1322" stroke="#8B5CF6" stroke-width="1.5" />
+    <rect x="20" y="16" width="165" height="22" rx="11" fill="#8B5CF6" fill-opacity="0.15" />
+    <text x="102" y="31" fill="#C084FC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">SEÇENEK 2: WEBHOOK + SERVERLESS</text>
+
+    <text x="20" y="62" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="700">Cloudflare Workers / Vercel API</text>
+    <text x="20" y="84" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="12">
+      <tspan x="20" dy="0">İş mantığı, CRM ve özel veritabanı entegrasyonu.</tspan>
+      <tspan x="20" dy="16">Webhook güvenliği, idempotency ve loglama.</tspan>
+      <tspan x="20" dy="16">Kendi API anahtarlarınız ile tam denetim.</tspan>
+    </text>
+    <rect x="20" y="145" width="320" height="34" rx="8" fill="#050912" stroke="#1E293B" />
+    <text x="180" y="167" fill="#C084FC" font-family="monospace" font-size="11.5" text-anchor="middle">Sunucusuz Fonksiyonda 7/24 Canlı</text>
+  </g>
+
+  <!-- ARROW TO LLM & HANDOFF -->
+  <path d="M 1070 340 L 1150 400" stroke="#06B6D4" stroke-width="2" fill="none" />
+  <path d="M 1070 560 L 1150 500" stroke="#8B5CF6" stroke-width="2" fill="none" />
+
+  <!-- 4. LLM API & HUMAN HANDOFF -->
+  <g transform="translate(1150, 240)" filter="url(#shadow4)">
+    <rect width="370" height="420" rx="18" fill="#0C1424" stroke="#EC4899" stroke-width="1.5" />
+    <rect x="0" y="0" width="370" height="6" rx="3" fill="#EC4899" />
+
+    <circle cx="185" cy="50" r="28" fill="#EC4899" fill-opacity="0.2" stroke="#EC4899" stroke-width="2" />
+    <text x="185" y="57" fill="#F472B6" font-family="monospace" font-size="18" text-anchor="middle">AI + İNSAN</text>
+
+    <text x="185" y="110" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Karar ve Yanıt Katmanı</text>
+    <text x="185" y="132" fill="#F472B6" font-family="monospace" font-size="11.5" text-anchor="middle">OpenAI / Anthropic / Operatör</text>
+
+    <g transform="translate(25, 160)" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">
+      <rect width="320" height="85" rx="10" fill="#070D18" stroke="#1E293B" />
+      <text x="15" y="24" fill="#38BDF8" font-weight="700">1. Otomatik Yapay Zekâ Yanıtı</text>
+      <text x="15" y="44" fill="#CBD5E1">SSS havuzundan kontrol edilen,</text>
+      <text x="15" y="60" fill="#CBD5E1">halüsinasyondan arındırılmış kesin cevap.</text>
+
+      <rect y="105" width="320" height="105" rx="10" fill="#070D18" stroke="#F59E0B" stroke-opacity="0.4" />
+      <text x="15" y="129" fill="#FCD34D" font-weight="700">2. İnsan Operatöre Devir (Handoff)</text>
+      <text x="15" y="149" fill="#CBD5E1">Fiyat taahhüdü, satış kapatma veya</text>
+      <text x="15" y="165" fill="#CBD5E1">özel kişisel veri talebinde bot durur;</text>
+      <text x="15" y="181" fill="#FCA5A5">Kapso Inbox üzerinden insana devreder.</text>
+    </g>
+
+    <!-- Loopback to WhatsApp -->
+    <rect x="25" y="360" width="320" height="38" rx="8" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="1" />
+    <text x="185" y="384" fill="#34D399" font-family="monospace" font-size="11.5" font-weight="600" text-anchor="middle">Kapso API → WhatsApp Yanıtı</text>
+  </g>
+
+  <!-- Bottom Clarification Footnote -->
+  <g transform="translate(80, 700)">
+    <rect width="1440" height="60" rx="12" fill="#080F1E" stroke="#1E293B" stroke-width="1" />
+    <text x="30" y="35" fill="#22D3EE" font-family="monospace" font-size="13" font-weight="700">MİMARİ DİPNOT:</text>
+    <text x="165" y="35" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+      Codex veya Claude Code'u açık bırakmak sunucu değildir. Gerçek 7/24 çalışma Kapso Workflow veya dışarıdaki sunucusuz (serverless) webhook ile sağlanır.
+    </text>
+  </g>
+</svg>

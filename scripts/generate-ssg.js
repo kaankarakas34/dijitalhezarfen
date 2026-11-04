@@ -43,13 +43,12 @@ function escapeHtml(str) {
 }
 
 function parseMarkdownToHtml(markdown, sources = []) {
-  const lines = markdown
-    .split(/\r?\n/)
-    .map(l => l.trim())
-    .filter(Boolean);
-
+  const rawLines = markdown.split(/\r?\n/);
   let html = '';
   let inList = false;
+  let inCode = false;
+  let codeBuffer = [];
+  let codeLang = '';
 
   const renderInline = (text) => {
     return text
@@ -62,7 +61,37 @@ function parseMarkdownToHtml(markdown, sources = []) {
       });
   };
 
-  for (const line of lines) {
+  for (let i = 0; i < rawLines.length; i++) {
+    const rawLine = rawLines[i];
+    const line = rawLine.trim();
+
+    if (line.startsWith('```')) {
+      if (inCode) {
+        html += `<pre class="my-6 p-4 rounded-xl border border-cyan-500/20 bg-[#070A12] text-cyan-200 font-mono text-xs sm:text-sm overflow-x-auto"><code class="language-${codeLang}">${escapeHtml(codeBuffer.join('\n'))}</code></pre>`;
+        inCode = false;
+        codeBuffer = [];
+        codeLang = '';
+      } else {
+        inCode = true;
+        codeLang = line.slice(3).trim();
+        codeBuffer = [];
+      }
+      continue;
+    }
+
+    if (inCode) {
+      codeBuffer.push(rawLine);
+      continue;
+    }
+
+    if (!line) {
+      if (inList) {
+        html += '</ul>';
+        inList = false;
+      }
+      continue;
+    }
+
     if (line.startsWith('- ') || line.startsWith('* ') || line.startsWith('• ')) {
       if (!inList) {
         html += '<ul class="list-disc list-inside space-y-2 text-gray-300 my-4 pl-2 font-light">';
@@ -76,6 +105,33 @@ function parseMarkdownToHtml(markdown, sources = []) {
     if (inList) {
       html += '</ul>';
       inList = false;
+    }
+
+    const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (imgMatch) {
+      html += `<figure class="my-8 rounded-2xl overflow-hidden border border-white/10 bg-[#080B12]"><img src="${imgMatch[2]}" alt="${escapeHtml(imgMatch[1])}" class="w-full h-auto" loading="lazy" /></figure>`;
+      continue;
+    }
+
+    if (line.startsWith('<iframe')) {
+      html += `<figure class="my-8 rounded-2xl overflow-hidden border border-white/10 aspect-video">${line}</figure>`;
+      continue;
+    }
+
+    if (line.startsWith('|')) {
+      // Markdown table parsing
+      const tableLines = [line];
+      while (i + 1 < rawLines.length && rawLines[i + 1].trim().startsWith('|')) {
+        i++;
+        tableLines.push(rawLines[i].trim());
+      }
+      if (tableLines.length >= 2) {
+        const parseCells = (row) => row.split('|').slice(1, -1).map(c => c.trim());
+        const headers = parseCells(tableLines[0]);
+        const dataRows = tableLines.slice(1).filter(r => !/^\|[\s\-:]+(\|[\s\-:]+)+\|?$/.test(r)).map(parseCells);
+        html += `<div class="my-8 overflow-x-auto rounded-2xl border border-white/10 bg-[#0A0E17]/80"><table class="w-full text-left text-xs sm:text-sm border-collapse min-w-[500px]"><thead><tr class="border-b border-white/10 bg-white/[0.04]">${headers.map(h => `<th class="py-3 px-4 text-cyan-400 font-bold uppercase text-[11px]">${renderInline(h)}</th>`).join('')}</tr></thead><tbody class="divide-y divide-white/5">${dataRows.map(r => `<tr class="hover:bg-white/[0.02]">${r.map((c, cIdx) => `<td class="py-3 px-4 ${cIdx === 0 ? 'font-medium text-white' : 'text-gray-300'}">${renderInline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+        continue;
+      }
     }
 
     if (line.startsWith('# ')) {
@@ -99,6 +155,9 @@ function parseMarkdownToHtml(markdown, sources = []) {
 
   if (inList) {
     html += '</ul>';
+  }
+  if (inCode && codeBuffer.length > 0) {
+    html += `<pre class="my-6 p-4 rounded-xl border border-cyan-500/20 bg-[#070A12] text-cyan-200 font-mono text-xs sm:text-sm overflow-x-auto"><code>${escapeHtml(codeBuffer.join('\n'))}</code></pre>`;
   }
 
   return html;
@@ -202,6 +261,63 @@ for (const art of articles) {
     ]
   };
 
+  if (art.slug === 'kapso-whatsapp-chatbot-codex-claude-code-kurulum') {
+    jsonLd['@graph'].push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Kapso ile WhatsApp botu kod yazmadan kurulabilir mi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Kapso’nun Workflows ve Agent arayüzü temel SSS ve kural bazlı mesajlaşmaları görsel olarak kurmayı kolaylaştırır. Codex ve Claude Code da gereken kod veya yapılandırmayı üretebilir. Ancak Meta Business doğrulaması, WhatsApp Business API izinleri ve şablon onayları gibi idari süreçler devam eder.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Codex veya Claude Code açık değilken bot çalışır mı?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Evet. Codex ve Claude Code geliştirme asistanıdır; botun 7/24 kesintisiz çalışması Kapso içinde yayınlanan bir Workflow/Agent veya bulutta barındırılan sunucusuz (serverless) webhook mimarisiyle sağlanır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Mevcut WhatsApp Business numaramla kurabilir miyim?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Evet. WhatsApp Business App Coexistence seçeneğiyle numara telefonda kalırken Kapso ile paralel kullanılabilir. Yüksek hacimli kurumsal yapılar için ise numarayı müstakil Cloud API’ye taşımak (BYOSIM) daha kararlıdır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Meta onaylı mesaj şablonları ne zaman gereklidir?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'İşletmenin konuşmayı ilk başlattığı durumlarda (örneğin Meta reklam formundan gelen lead’e yazarken) veya 24 saatlik müşteri hizmeti penceresi dışındaki mesajlarda Meta onaylı şablon kullanımı zorunludur.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Ücretsiz 2.000 mesaj, 2.000 ücretsiz yapay zekâ yanıtı mı?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hayır. 2.000 mesaj Kapso platformunun aylık kotasıdır. Meta’nın 1 Ekim 2026 itibarıyla geçerli servis mesajı tarifesi (aylık numara başına 1.000 ücretsiz servis mesajı) ve seçilen yapay zekâ modelinin token API bedelleri ayrıca hesaplanır.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Claude aboneliğim varsa AI model API’si de ücretsiz olur mu?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Hayır. Kodlama için kullanılan Claude Code oturumu ile 7/24 canlıda çalışan botun model API tüketimi ayrı faturalandırılır; botun çağırdığı model API kredisi ayrıca gereklidir.'
+          }
+        }
+      ]
+    });
+  }
+
   // Build semantic article HTML to inject into #root
   const articleSemanticHtml = `
     <div class="min-h-screen bg-[#000000] text-gray-100 selection:bg-cyan-500/30 selection:text-white">
@@ -250,7 +366,11 @@ for (const art of articles) {
         ${art.sources?.length ? `
           <div id="kaynaklar" class="mt-16 pt-8 border-t border-white/10">
             <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4">Kaynaklar ve Doğrulama Bağlantıları</h2>
-            <p class="text-xs text-gray-400 mb-4 font-light">Bu içerikteki olgusal arka plan ve referans bağlantıları aşağıda yer almaktadır:</p>
+            <p class="text-xs text-gray-400 mb-4 font-light">${
+              art.sources.some(s => s.isHomepage)
+                ? 'Bu içerikteki olgusal arka plan için başvurulan doğrulama başlangıç bağlantıları aşağıda yer almaktadır. Yayıncı ana sayfası niteliğindeki bağlantılar özgül birincil haber URL’si yerine geçmez; doğrulama başlangıç noktası olarak sunulmuştur.'
+                : 'Bu içerikteki olgusal arka plan ve referans bağlantıları aşağıda yer almaktadır:'
+            }</p>
             <ul class="space-y-2">
               ${art.sources.map(s => `
                 <li class="p-3 rounded-xl border border-white/5 bg-white/3 text-xs text-gray-300">
@@ -311,6 +431,8 @@ for (const art of articles) {
     <meta property="og:description" content="${escapeHtml(art.desc.tr)}" />
     <meta property="og:url" content="${canonicalUrl}" />
     <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
     <meta property="og:image:alt" content="${escapeHtml(art.imageAlt || art.title.tr)}" />
     <meta property="article:published_time" content="${art.publishedAt}" />
     <meta property="article:modified_time" content="${art.modifiedAt || art.publishedAt}" />
@@ -322,6 +444,7 @@ for (const art of articles) {
     <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(art.desc.tr)}" />
     <meta name="twitter:image" content="${imageUrl}" />
+    <meta name="twitter:image:alt" content="${escapeHtml(art.imageAlt || art.title.tr)}" />
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json" id="article-json-ld">

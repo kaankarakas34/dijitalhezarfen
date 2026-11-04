@@ -21,16 +21,16 @@ const editorialBatch29Oct = [
       tr: 'Google, AI Mode reklamlarını yeni ülkelere açarak arama ekonomisinin geleceğini konuşma tabanlı deneyimlerde arıyor. Arama artık birkaç kelimelik sorgudan ibaret değil.',
       en: 'Google expands AI Mode ads into new countries, reshaping the search economy around multi-turn conversational intent and sponsored discovery.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-01.webp',
-    imageAlt: 'Konuşma tabanlı aramada reklam ve kullanıcı niyetinin birleşmesini simgeleyen görsel.',
+    image: '/images/google-ai-mode-reklamlari-arama-ekonomisi-kapak.webp',
+    imageAlt: 'Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/google-ai-mode-reklamlari-arama-ekonomisi.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Google AI Mode reklamlari',
       'arama ekonomisi',
@@ -84,16 +84,16 @@ Pazarlamacı için mesele yalnızca yeni reklam alanı satın almak olmayacak. �
       tr: 'Microsoft’un OpenAI ile ticari ilişkilerinden elde ettiği gelir, yapay zekâ ortaklıklarının ne kadar karmaşık bir ekonomiye dönüştüğünü gösteriyor. Klasik yatırım ilişkisi yerini karşılıklı bağımlılığa bırakıyor.',
       en: 'Microsoft’s commercial revenue from OpenAI demonstrates how strategic AI investments blend cloud infrastructure consumption, partnership, and competition.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-02.webp',
-    imageAlt: 'Bulut altyapısı ile yapay zekâ şirketi arasındaki stratejik ortaklık ve bağımlılık.',
+    image: '/images/microsoft-openai-10-milyar-dolar-gelir-kapak.webp',
+    imageAlt: 'Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/microsoft-openai-10-milyar-dolar-gelir.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Microsoft OpenAI gelir',
       'yapay zeka ekonomisi',
@@ -146,16 +146,16 @@ Bu ilişkinin sağlığını anlamak için iki şeye bakmak gerekir: OpenAI’ı
       tr: 'Kurumsal yapay zekâda başarı, en büyük modeli her işte çalıştırmak değil; doğru işi doğru maliyetle tamamlamak olabilir. Bir müşteri faturasının sınıflandırılması ile tedarik zinciri problemi aynı modeli gerektirmez.',
       en: 'SAP’s multi-model routing strategy highlights why enterprise software focuses on cost per completed task rather than raw model size.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-03.webp',
-    imageAlt: 'Farklı yapay zekâ modelleri arasında maliyet ve performans optimizasyonu.',
+    image: '/images/sap-model-routing-ai-maliyet-optimizasyonu-kapak.webp',
+    imageAlt: 'SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/sap-model-routing-ai-maliyet-optimizasyonu.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'SAP model routing',
       'AI maliyet optimizasyonu',
@@ -209,16 +209,16 @@ Bence kurumsal AI pazarında yeni ölçü birimi modelin zekâ puanı değil, ba
       tr: 'Nvidia’nın Hugging Face’i satın alma anlaşması, açık modellerin dağıtımında güç yoğunlaşması tartışmasını yeniden açtı. Hugging Face’in değeri yalnızca barındırdığı dosyalarda değil, ekosisteminde.',
       en: 'Regulatory scrutiny over Nvidia’s reported Hugging Face deal highlights concerns around platform neutrality and open model distribution.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-04.webp',
-    imageAlt: 'Açık yapay zekâ modellerinin dağıtım altyapısında kontrol tartışması.',
+    image: '/images/nvidia-hugging-face-satin-alma-rekabet-kapak.webp',
+    imageAlt: 'Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/nvidia-hugging-face-satin-alma-rekabet.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Nvidia Hugging Face',
       'acik kaynak yapay zeka',
@@ -271,16 +271,16 @@ Bu dosyada takip edilmesi gereken asıl soru satın alma bedeli değil: Hugging 
       tr: 'Bulut güvenliğinde yeni yatırımlar, çalışan yazılımı izleme ihtiyacının büyüdüğünü gösteriyor. Güvenlik yalnızca kod yazılırken yapılan testlerden ibaret değil.',
       en: 'Upwind’s $400M Series C round underscores why runtime cloud security and anomaly detection are critical as AI agents gain production permissions.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-05.webp',
-    imageAlt: 'Bulut ortamındaki tehditleri çalışma anında tespit eden güvenlik teknolojisi.',
+    image: '/images/upwind-400-milyon-dolar-bulut-guvenligi-kapak.webp',
+    imageAlt: 'Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/upwind-400-milyon-dolar-bulut-guvenligi.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Upwind 400 milyon dolar',
       'bulut guvenligi',
@@ -334,16 +334,16 @@ Güvenlik yazılımında hızlı büyümenin kalıcı olup olmayacağı, müşte
       tr: 'Sigorta fiyatlandırma yazılımlarına yapılan büyük yatırımlar, dikey yazılımın ekonomik değerini yeniden hatırlatıyor. Bir sigorta teklifinin arkasında onlarca değişken ve risk modeli bulunuyor.',
       en: 'Guidewire’s agreement to acquire Hyperexponential highlights why domain-specific decision and risk pricing software creates deep enterprise value.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-06.webp',
-    imageAlt: 'Sigorta risk fiyatlandırmasında yapay zekâ destekli karar sistemleri.',
+    image: '/images/guidewire-hyperexponential-sigorta-yapay-zeka-kapak.webp',
+    imageAlt: 'Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/guidewire-hyperexponential-sigorta-yapay-zeka.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Guidewire Hyperexponential',
       'InsurTech',
@@ -397,16 +397,16 @@ Sigortada fiyatlama hatası yalnızca kötü bir kullanıcı deneyimi değil, do
       tr: 'Re:Build’in yeni finansmanı, girişim kurma becerisinin üretim altyapısıyla birleşebileceğini gösteriyor. Yazılım girişimi kurarken bulut altyapısı kiralayabilirsiniz; fiziksel üretimde ise ortak altyapı kritik.',
       en: 'Re:Build Manufacturing’s $2.1B financing tests whether a shared industrial platform can reduce the capital burden of launching hardware ventures.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '27 Ekim 2026', en: 'October 27, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-07.webp',
-    imageAlt: 'Ortak üretim altyapısından yeni girişimlerin doğduğu endüstriyel model.',
+    image: '/images/rebuild-venture-studio-ileri-uretim-kapak.webp',
+    imageAlt: 'Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/rebuild-venture-studio-ileri-uretim.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'ReBuild Manufacturing',
       'venture studio',
@@ -459,16 +459,16 @@ Re:Build örneğinde cevaplanması gereken soru şu: Ortak üretim altyapısı g
       tr: 'Jio’nun halka arzı, altyapı ve müşteri erişiminin nasıl çok ürünlü bir platforma dönüşebildiğini tartışmaya açıyor. İnternet bağlantısı başlangıçta tek başına bir ürün gibi görünür.',
       en: 'Jio Platforms’ IPO highlights how direct customer distribution can anchor cloud, media, financial services, and AI products.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-08.webp',
-    imageAlt: 'Telekom altyapısından geniş dijital hizmet ekosistemine uzanan platform modeli.',
+    image: '/images/jio-platforms-halka-arz-platform-ekonomisi-kapak.webp',
+    imageAlt: 'Jio Platforms: Önce dağıtım, sonra dijital ekosistem konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/jio-platforms-halka-arz-platform-ekonomisi.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Jio Platforms halka arz',
       'platform ekonomisi',
@@ -522,16 +522,16 @@ Jio örneği bize dağıtımın da bir ürün olduğunu hatırlatıyor. Milyonla
       tr: 'AI veri merkezlerinin elektrik talebi, mevcut nükleer santrallerin modernizasyonunu teknoloji gündeminin merkezine taşıyor. Bir veri merkezinin ekonomik değeri yalnızca işlemci sayısıyla ölçülemez.',
       en: 'Conditional loan support for nuclear capacity uprates highlights how uninterrupted baseload power has become a strategic bottleneck for AI data centers.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-09.webp',
-    imageAlt: 'Nükleer enerji üretimi ile yapay zekâ veri merkezlerinin artan elektrik ihtiyacı.',
+    image: '/images/ai-veri-merkezleri-nukleer-enerji-kapak.webp',
+    imageAlt: 'Nükleer enerji neden yapay zekâ şirketlerinin gündeminde? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/ai-veri-merkezleri-nukleer-enerji.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'AI veri merkezleri nukleer enerji',
       'Constellation Energy',
@@ -585,16 +585,16 @@ Elektriği yalnızca gider kalemi olarak görmek artık yetersiz. AI veri merkez
       tr: 'Yapay zekâ altyapısında işlemci kadar bellek teknolojileri de rekabeti belirliyor. Büyük modeller yalnızca hesaplama birimi kullanmıyor; verinin hızlı taşınmasına ve yeterli belleğe ihtiyaç duyuyor.',
       en: 'Samsung’s third-quarter semiconductor results underscore why HBM capacity and advanced packaging remain critical bottlenecks for AI servers.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-10.webp',
-    imageAlt: 'Yapay zekâ işlemcileri için yüksek bant genişlikli bellek teknolojisi.',
+    image: '/images/samsung-hbm-yapay-zeka-bellek-kapak.webp',
+    imageAlt: 'Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/samsung-hbm-yapay-zeka-bellek.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Samsung HBM',
       'yuksek bant genislikli bellek',
@@ -648,16 +648,16 @@ Bellek kıtlığı, AI şirketlerinin donanım yol haritalarını yeniden yazabi
       tr: 'Robotik sektörünün gerçek sınavı etkileyici gösterilerden sürdürülebilir birim ekonomiye geçmek. Robot üretmek; tedarik zinciri, fiziksel güvenlik, servis ağı ve donanım geliştirme gerektirir.',
       en: 'Unitree’s quarterly performance highlights the gap between growing robot shipments and sustainable field profitability.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-11.webp',
-    imageAlt: 'İnsansı ve dört ayaklı robotların gerçek üretim ortamındaki ticari kullanımı.',
+    image: '/images/unitree-robotik-buyume-karlilik-kapak.webp',
+    imageAlt: 'Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/unitree-robotik-buyume-karlilik.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Unitree robotik',
       'insansi robot',
@@ -711,16 +711,16 @@ Robot satışlarının artması iyi haber; ama robotların kaç saat üretken ç
       tr: 'Çok dilli konuşma teknolojileri, sesli AI ürünlerinin maliyet ve dağıtım seçeneklerini genişletiyor. Sesli AI sistemlerinde konuşma tanıma, dil anlama, yanıt üretme ve konuşma sentezi farklı katmanlar.',
       en: 'Nvidia’s Nemotron 3.5 Transcribe release highlights how open-weight speech recognition models impact enterprise voice AI unit economics.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-12.webp',
-    imageAlt: 'Çok dilli seslerin yapay zekâ ile yazıya dönüştürülmesini simgeleyen görsel.',
+    image: '/images/nvidia-nemotron-sesli-yapay-zeka-kapak.webp',
+    imageAlt: 'Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/nvidia-nemotron-sesli-yapay-zeka.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Nvidia Nemotron',
       'sesli yapay zeka',
@@ -774,16 +774,16 @@ Sesli AI sistemlerinde konuşma tanıma, dil anlama, yanıt üretme ve konuşma 
       tr: 'Kod yazan AI kadar, yazılan kodun belirli koşullarda doğru olduğunu kanıtlayan sistemler de önem kazanıyor. Üretken modeller çoğu zaman çalışır görünen kod üretebiliyor.',
       en: 'Harmonic’s Aristotle formal verification capabilities for C and Verilog highlight why mathematical proof is a growing layer in the AI software stack.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-13.webp',
-    imageAlt: 'Yazılım ve çip tasarımlarında matematiksel doğrulama yapan yapay zekâ.',
+    image: '/images/harmonic-aristotle-formal-verification-kapak.webp',
+    imageAlt: 'Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/harmonic-aristotle-formal-verification.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Harmonic Aristotle',
       'formal verification',
@@ -837,16 +837,16 @@ Yapay zekânın ürettiği kodu yine başka bir yapay zekâya kontrol ettirmek t
       tr: 'İlaç şirketlerinin araştırma portföylerini genişletmesi, bilimsel fırsatlarla ticari riskin birlikte yönetildiğini gösteriyor. Biyoteknolojide bir programın başarılı olması yıllar sürebilir.',
       en: 'GSK’s oncology clinical development goals highlight the distinction between pipeline expansion and regulatory approval rates in biotech.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-14.webp',
-    imageAlt: 'Hedefli kanser tedavilerinin klinik araştırma sürecini anlatan biyomedikal görsel.',
+    image: '/images/gsk-onkoloji-klinik-arastirma-stratejisi-kapak.webp',
+    imageAlt: 'GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/gsk-onkoloji-klinik-arastirma-stratejisi.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'GSK onkoloji',
       'klinik arastirma',
@@ -899,16 +899,16 @@ Onkolojide daha geniş araştırma portföyü daha fazla olasılık yaratır; fa
       tr: 'Lush örneği, markanın müşteriye ulaşma kanalını kimin kontrol ettiği sorusunu yeniden gündeme getiriyor. Sosyal platformlar büyümeyi hızlandırabilir ama müşteri ilişkisini algoritmaya bağımlı kılabilir.',
       en: 'Lush’s investment in owned apps, email, community, and physical retail examines the balance between paid social acquisition and direct brand loyalty.'
     },
-    date: { tr: '29 Ekim 2026', en: 'October 29, 2026' },
+    date: { tr: '2 Kasım 2026', en: 'November 2, 2026' },
     eventDate: { tr: '28 Ekim 2026', en: 'October 28, 2026' },
     readTime: { tr: '4 dk okuma', en: '4 min read' },
     author: 'Dijital Hezarfen',
     hideAuthorBio: true,
-    image: '/images/dijital-hezarfen-kapak-15.webp',
-    imageAlt: 'Markanın sosyal medya reklamları yerine kendi müşteri kanallarına yatırım yapması.',
+    image: '/images/lush-sosyal-medya-reklamsiz-marka-stratejisi-kapak.webp',
+    imageAlt: 'Lush sosyal medya reklamlarını bırakınca ne oldu? konusunu kavramsal olarak anlatan editoryal kapak görseli.',
     source: '/articles/lush-sosyal-medya-reklamsiz-marka-stratejisi.txt',
-    publishedAt: '2026-10-29T10:15:00+03:00',
-    modifiedAt: '2026-10-29T10:15:00+03:00',
+    publishedAt: '2026-11-02T13:15:00+03:00',
+    modifiedAt: '2026-11-02T13:15:00+03:00',
     keywords: [
       'Lush sosyal medya stratejisi',
       'reklamsiz marka buyumesi',
@@ -1028,9 +1028,20 @@ if (!currentArticlesJs.includes('google-ai-mode-reklamlari-arama-ekonomisi')) {
     `export const articles = [\n${newArticlesJsCode},`
   );
   fs.writeFileSync(articlesJsPath, updatedArticlesJs, 'utf8');
-  console.log('Successfully updated src/data/articles.js with 15 new articles (29 Ekim 2026)!');
+  console.log('Successfully inserted 15 articles into src/data/articles.js!');
 } else {
-  console.log('articles.js already contains 29 Ekim 2026 batch, skipping insert.');
+  const startMarker = 'export const articles = [';
+  const endMarker = "  {\n    slug: 'meta-ai-yatirimlari-sermaye-verimliligi',";
+  const startIdx = currentArticlesJs.indexOf(startMarker);
+  const endIdx = currentArticlesJs.indexOf(endMarker);
+  if (startIdx !== -1 && endIdx !== -1) {
+    const updatedArticlesJs =
+      currentArticlesJs.slice(0, startIdx + startMarker.length) +
+      `\n${newArticlesJsCode},\n` +
+      currentArticlesJs.slice(endIdx);
+    fs.writeFileSync(articlesJsPath, updatedArticlesJs, 'utf8');
+    console.log('Successfully updated existing 15 articles in src/data/articles.js!');
+  }
 }
 
 console.log('\n--- 3. Updating public/sitemap.xml ---');
@@ -1039,7 +1050,7 @@ let currentSitemap = fs.readFileSync(sitemapPath, 'utf8');
 
 const newSitemapEntries = editorialBatch29Oct.map((art) => `  <url>
     <loc>https://dijitalhezarfen.com/yayinlar/${art.slug}</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -1049,15 +1060,18 @@ const newSitemapEntries = editorialBatch29Oct.map((art) => `  <url>
     </image:image>
   </url>`).join('\n');
 
-if (!currentSitemap.includes('google-ai-mode-reklamlari-arama-ekonomisi')) {
-  currentSitemap = currentSitemap.replace(
-    '  <url>\n    <loc>https://dijitalhezarfen.com/</loc>\n    <lastmod>2026-09-15</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>',
-    `  <url>\n    <loc>https://dijitalhezarfen.com/</loc>\n    <lastmod>2026-10-29</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n${newSitemapEntries}`
-  );
+const sitemapRootBlock = `  <url>\n    <loc>https://dijitalhezarfen.com/</loc>\n    <lastmod>2026-11-02</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`;
+const nextArticleMarker = '  <url>\n    <loc>https://dijitalhezarfen.com/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi</loc>';
+const smStartIdx = currentSitemap.indexOf('  <url>\n    <loc>https://dijitalhezarfen.com/</loc>');
+const smEndIdx = currentSitemap.indexOf(nextArticleMarker);
+
+if (smStartIdx !== -1 && smEndIdx !== -1) {
+  currentSitemap =
+    currentSitemap.slice(0, smStartIdx) +
+    `${sitemapRootBlock}\n${newSitemapEntries}\n` +
+    currentSitemap.slice(smEndIdx);
   fs.writeFileSync(sitemapPath, currentSitemap, 'utf8');
-  console.log('Updated public/sitemap.xml with 15 new articles!');
-} else {
-  console.log('sitemap.xml already contains 29 Ekim 2026 batch, skipping.');
+  console.log('Updated public/sitemap.xml with 15 articles!');
 }
 
 console.log('\nAll 29 Ekim 2026 setup tasks completed successfully!');

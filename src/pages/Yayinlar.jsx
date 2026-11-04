@@ -78,7 +78,7 @@ export default function Yayinlar({ lang }) {
           <article className="grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden rounded-2xl border border-white/10 bg-white/3 mb-10">
             <div className={`lg:col-span-5 min-h-[300px] bg-gradient-to-br ${featured.color} relative overflow-hidden`}>
               {featured.image ? (
-                <img src={featured.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-80" />
+                <img src={featured.image} alt={featured.imageAlt || featured.title} className="absolute inset-0 w-full h-full object-cover object-center opacity-80" loading="lazy" />
               ) : null}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/35 to-transparent"></div>
               <div className="relative z-10 h-full p-8 flex flex-col justify-between">
@@ -150,7 +150,7 @@ export default function Yayinlar({ lang }) {
                 >
                   <div className={`h-36 bg-gradient-to-br ${publication.color} p-5 flex items-start justify-between relative overflow-hidden`}>
                     {publication.image ? (
-                      <img src={publication.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
+                      <img src={publication.image} alt={publication.imageAlt || publication.title} className="absolute inset-0 w-full h-full object-cover object-center opacity-70" loading="lazy" />
                     ) : null}
                     <div className="absolute inset-0 bg-[#0B0F19]/20"></div>
                     <div className="relative z-10 w-11 h-11 rounded-xl bg-black/25 border border-white/10 flex items-center justify-center">

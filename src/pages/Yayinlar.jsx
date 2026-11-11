@@ -44,7 +44,10 @@ export default function Yayinlar({ lang }) {
     return matchesCategory && matchesSearch;
   });
 
-  const featured = publications.find((publication) => publication.featured) || publications[0];
+  const featured =
+    publications.find((publication) => publication.featured && publication.author !== 'Dijital Hezarfen') ||
+    publications.find((publication) => publication.author !== 'Dijital Hezarfen') ||
+    publications[0];
 
   return (
     <div className="animate-fade-in bg-[#000000] text-gray-100 min-h-screen">

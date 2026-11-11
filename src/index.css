@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cyber-cyan: #00F2FE;
-  --color-electric-blue: #4FACFE;
+  --color-cyber-cyan: #22D3EE;
+  --color-electric-blue: #38BDF8;
   --color-royal-violet: #7F00FF;
   --color-magenta: #E100FF;
-  --color-dark-bg: #000000;
+  --color-obsidian: #080A0F;
+  --color-obsidian-surface: #0E1219;
+  --color-obsidian-elevated: #141923;
+  --color-dark-bg: #080A0F;
   --color-dark-card: rgba(255, 255, 255, 0.02);
   --color-dark-border: rgba(255, 255, 255, 0.08);
-  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
   
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -51,9 +56,25 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #000000;
-  color: #F3F4F6;
-  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  background-color: #080A0F;
+  color: #F3F4F0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+}
+
+.font-mono-meta {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle organic surface texture to break flat digital black */
+.editorial-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
 /* Custom Scrollbar */

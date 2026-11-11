@@ -1,48 +1,23 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import AboutPillars from '../components/AboutPillars';
-import Audiences from '../components/Audiences';
-import Ecosystem from '../components/Ecosystem';
-import EntrepreneurTunnel from '../components/EntrepreneurTunnel';
-import AppServices from '../components/AppServices';
-import OtherPrograms from '../components/OtherPrograms';
-import StartupStages from '../components/StartupStages';
-import BlogSection from '../components/BlogSection';
-import OpenSourceBanner from '../components/OpenSourceBanner';
+import EditorialLeadSection from '../components/EditorialLeadSection';
+import NewsMasonrySection from '../components/NewsMasonrySection';
+import YoutubeShowcaseSection from '../components/YoutubeShowcaseSection';
+import WhatWeDoSection from '../components/WhatWeDoSection';
 
-export default function Home({ onOpenApplyModal, onFocusSection, onNavigate, lang }) {
+export default function Home({ onNavigate, lang }) {
   return (
-    <div className="space-y-4 animate-fade-in">
-      {/* Section 1: Hero */}
-      <Hero lang={lang} onOpenApplyModal={onOpenApplyModal} />
-      
-      {/* Section 3: Pillars */}
-      <AboutPillars lang={lang} />
+    <div className="bg-[#080A0F]">
+      {/* 1. Giriş: Yazarlardan (Kaan Karakaş & Haydar Karakaş) Öne Çıkan Yayınlar */}
+      <EditorialLeadSection lang={lang} onNavigate={onNavigate} />
 
-      {/* Section: Open Source Entrepreneurship Library (199 Tools) */}
-      <OpenSourceBanner lang={lang} onNavigate={onNavigate} />
+      {/* 2. Haberler, Rehberler ve Diğer Yayınlar (Masonry) */}
+      <NewsMasonrySection lang={lang} onNavigate={onNavigate} />
 
-      {/* Section 3: Featured Publications */}
-      <BlogSection lang={lang} onNavigate={onNavigate} />
+      {/* 3. YouTube Kanalından Videolar (Iframe) */}
+      <YoutubeShowcaseSection lang={lang} onNavigate={onNavigate} />
 
-      {/* Section 2: Audiences */}
-      <Audiences lang={lang} onOpenApplyModal={onOpenApplyModal} onFocusSection={onFocusSection} />
-
-      {/* Section 3 cont: Ecosystem */}
-      <Ecosystem lang={lang} />
-
-      {/* Section 4: Entrepreneur Tunnel */}
-      <EntrepreneurTunnel lang={lang} onOpenApplyModal={onOpenApplyModal} />
-
-      {/* Section 7: Application Services */}
-      <AppServices lang={lang} onOpenApplyModal={onOpenApplyModal} />
-
-      {/* Section 5: Modular Academy Programs */}
-      <OtherPrograms lang={lang} onOpenApplyModal={onOpenApplyModal} />
-
-      {/* Section 8: Startup Stages progress */}
-      <StartupStages lang={lang} onOpenApplyModal={onOpenApplyModal} />
-
+      {/* 4. Biz Ne Yapıyoruz? (Akademi · Uygulama · Büyüme & Yatırım) */}
+      <WhatWeDoSection lang={lang} onNavigate={onNavigate} />
     </div>
   );
 }

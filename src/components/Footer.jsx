@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import logoBlue from '../../logo/Dijital Hezarfen (9).png';
 
 const Github = (props) => (
@@ -34,19 +34,23 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
   const isTr = lang === 'tr';
 
   const t = {
-    ctaTitle: isTr ? 'Fikrinizin bir girişime, girişiminizin büyüyen bir şirkete dönüşmesi için ilk adımı atın.' : 'Take the first step to turn your idea into a venture, and your venture into a growing company.',
-    ctaDesc: isTr ? 'Dijital Hezarfen ekosistemi, ihtiyacınız olan eğitim, uygulama gücü ve network\'ü tek bir çatı altında sunar. Girişim tipinize göre en uygun programı seçip hemen başvurun.' : 'The Dijital Hezarfen ecosystem offers the training, execution power, and network you need under one roof. Choose the best program for your startup type and apply today.',
-    btnVenture: isTr ? 'Girişimin İçin Başvur' : 'Apply for Your Venture',
-    btnTunnel: isTr ? 'Girişimcilik Tüneli\'ne Başvur' : 'Apply to Entrepreneur Tunnel',
-    btnCourses: isTr ? 'Eğitimleri İncele' : 'Explore Programs',
-    btnCorporate: isTr ? 'Kurumsal Çözüm Talep Et' : 'Request Corporate Solution',
-    aboutText: isTr ? 'Dijital Hezarfen; girişimcileri yetiştiren, fikirleri çalışan girişimlere dönüştüren ve şirketleri sürdürülebilir büyümeye taşıyan akademi, uygulama ve büyüme ekosistemidir.' : 'Dijital Hezarfen is an academy, execution, and growth ecosystem that trains entrepreneurs, transforms ideas into working ventures, and leads companies to sustainable growth.',
-    colLinks: isTr ? 'Hızlı Bağlantılar' : 'Quick Links',
-    colResources: isTr ? 'Kaynaklar' : 'Resources',
-    colCorporate: isTr ? 'Kurumsal' : 'Corporate',
+    ctaTitle: isTr
+      ? 'Girişiminiz için doğru program veya medya iş birliğiyle ilerleyin.'
+      : 'Move forward with the right startup program or media collaboration.',
+    ctaDesc: isTr
+      ? 'Akademi, uygulama ve büyüme süreçlerinde ekibimizle doğrudan iletişime geçebilir veya başvurunuzu iletebilirsiniz.'
+      : 'Connect directly with our team across academy, execution, and growth tracks, or submit an application.',
+    btnVenture: isTr ? 'Başvuru Yap' : 'Apply Now',
+    btnCourses: isTr ? 'Programları İncele' : 'Explore Programs',
+    aboutText: isTr
+      ? 'Dijital Hezarfen; yayınları, akademi programları, uygulama ekipleri ve büyüme odağıyla girişimcilik ekosisteminde çalışan çok disiplinli bir yapıdır.'
+      : 'Dijital Hezarfen is a multidisciplinary platform uniting publications, academy programs, execution teams, and venture growth.',
+    colLinks: isTr ? 'Programlar' : 'Programs',
+    colResources: isTr ? 'Yayın & Medya' : 'Media & Content',
+    colCorporate: isTr ? 'Kurumsal' : 'Organization',
     privacy: isTr ? 'Gizlilik Politikası' : 'Privacy Policy',
     terms: isTr ? 'Kullanım Şartları' : 'Terms of Use',
-    kvkk: isTr ? 'KVKK Aydınlatma Metni' : 'Data Protection (GDPR)',
+    kvkk: isTr ? 'KVKK Aydınlatma Metni' : 'Data Protection',
     rights: isTr ? 'Tüm hakları saklıdır.' : 'All rights reserved.'
   };
 
@@ -59,20 +63,20 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
     [t.colLinks]: [
       { name: isTr ? 'Girişimler İçin' : 'For Startups', path: '/girisimler' },
       { name: isTr ? 'Girişimcilik Tüneli' : 'Entrepreneur Tunnel', path: '/akademi/girisimcilik-tuneli' },
-      { name: isTr ? 'Akademi & Eğitimler' : 'Academy & Courses', path: '/akademi' },
+      { name: isTr ? 'Akademi' : 'Academy', path: '/akademi' },
       { name: isTr ? 'Uygulama Hizmetleri' : 'Application Services', path: '/uygulama' },
       { name: isTr ? 'Büyüme & Yatırım' : 'Growth & Venture', path: '/buyume-yatirim' }
     ],
     [t.colResources]: [
-      { name: isTr ? 'YouTube & Podcast' : 'YouTube & Podcast', path: '/medya' },
       { name: isTr ? 'Yayınlarımız' : 'Publications', path: '/yayinlar' },
-      { name: isTr ? 'Makaleler & Rehberler' : 'Articles & Guides', path: '/yayinlar' },
+      { name: isTr ? 'Medya & Video' : 'Media & Video', path: '/medya' },
       { name: isTr ? 'Sık Sorulan Sorular' : 'FAQ', path: '/sik-sorulan-sorular' }
     ],
     [t.colCorporate]: [
+      { name: isTr ? 'Ekosistem & Yaklaşım' : 'Ecosystem & Approach', path: '/dijital-hezarfen' },
       { name: isTr ? 'Hakkımızda' : 'About Us', path: '/hakkimizda' },
       { name: isTr ? 'Kurumsal Çözümler' : 'Corporate Solutions', path: '/kurumsal' },
-      { name: isTr ? 'İletişim & Konum' : 'Contact & Location', path: '/iletisim' }
+      { name: isTr ? 'İletişim' : 'Contact', path: '/iletisim' }
     ]
   };
 
@@ -82,97 +86,106 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
   };
 
   return (
-    <footer className="relative bg-[#080B12] border-t border-white/5 overflow-hidden">
-      {/* Background ambient light */}
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full filter blur-[100px] pointer-events-none"></div>
-      <div className="absolute top-0 left-0 w-96 h-96 bg-violet-600/5 rounded-full filter blur-[100px] pointer-events-none"></div>
+    <footer className="relative bg-[#080A0F] border-t border-white/10">
+      {/* Closing Strip */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 border-b border-white/10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+        <div className="max-w-2xl space-y-2">
+          <h2 className="font-editorial text-2xl sm:text-3xl font-semibold text-[#F4F4F0] leading-tight">
+            {t.ctaTitle}
+          </h2>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            {t.ctaDesc}
+          </p>
+        </div>
 
-      {/* Section 13: Final CTA */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center relative z-10 border-b border-white/5">
-        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-6 font-sans max-w-3xl mx-auto leading-tight">
-          {t.ctaTitle}
-        </h2>
-        <p className="text-gray-400 max-w-xl mx-auto mb-10 text-sm sm:text-base leading-relaxed font-light">
-          {t.ctaDesc}
-        </p>
-        
-        {/* Buttons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto font-sans">
+        <div className="flex flex-wrap items-center gap-3">
           <button
+            type="button"
             onClick={() => onOpenApplyModal('girisim')}
-            className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
+            className="px-5 py-2.5 rounded-md font-semibold text-sm bg-cyan-400 text-[#080A0F] hover:bg-cyan-300 transition-colors inline-flex items-center gap-1.5 cursor-pointer whitespace-nowrap active:scale-[0.98]"
           >
             <span>{t.btnVenture}</span>
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
-          
-          <button
-            onClick={() => onOpenApplyModal('tunel')}
-            className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-violet text-white hover:shadow-lg hover:shadow-violet-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
-          >
-            <span>{t.btnTunnel}</span>
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <ArrowUpRight className="w-4 h-4" />
           </button>
 
           <button
-            onClick={() => onNavigate('/akademi/egitimler')}
-            className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
+            type="button"
+            onClick={() => onNavigate('/akademi')}
+            className="px-5 py-2.5 rounded-md font-semibold text-sm bg-[#121620] border border-white/15 hover:border-white/30 text-white transition-colors inline-flex items-center gap-1.5 cursor-pointer whitespace-nowrap active:scale-[0.98]"
           >
             <span>{t.btnCourses}</span>
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
-
-          <button
-            onClick={() => onOpenApplyModal('kurumsal')}
-            className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
-          >
-            <span>{t.btnCorporate}</span>
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <ArrowUpRight className="w-4 h-4" />
           </button>
         </div>
       </div>
 
       {/* Main Footer Info */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-          
-          {/* Logo & About */}
           <div className="lg:col-span-2 space-y-5">
-            <a href="#" className="flex items-center gap-2.5 group" onClick={handleScrollToTop}>
-              <img src={logoBlue} alt="Dijital Hezarfen" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
+            <a href="#/" className="inline-flex items-center gap-2.5 group" onClick={handleScrollToTop}>
+              <img
+                src={logoBlue}
+                alt="Dijital Hezarfen"
+                className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity"
+              />
             </a>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-sm font-light">
+            <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               {t.aboutText}
             </p>
-            
-            {/* Social Links */}
-            <div className="flex items-center space-x-3.5 pt-2">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+
+            <div className="flex items-center space-x-3 pt-1">
+              <a
+                href="https://www.youtube.com/channel/UC0xVK9RzlDyFcVMm_iGiARA"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Dijital Hezarfen YouTube"
+                className="p-2.5 rounded-md bg-[#10141C] border border-white/10 hover:border-cyan-400/50 text-gray-300 hover:text-cyan-400 transition-colors"
+              >
                 <Youtube className="w-4 h-4" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="p-2.5 rounded-md bg-[#10141C] border border-white/10 hover:border-cyan-400/50 text-gray-300 hover:text-cyan-400 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X / Twitter"
+                className="p-2.5 rounded-md bg-[#10141C] border border-white/10 hover:border-cyan-400/50 text-gray-300 hover:text-cyan-400 transition-colors"
+              >
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-white/5 border border-white/5 hover:border-cyan-500/30 text-gray-400 hover:text-cyber-cyan transition-all duration-300">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                className="p-2.5 rounded-md bg-[#10141C] border border-white/10 hover:border-cyan-400/50 text-gray-300 hover:text-cyan-400 transition-colors"
+              >
                 <Github className="w-4 h-4" />
               </a>
             </div>
           </div>
 
-          {/* Links Columns */}
           {Object.keys(footerLinks).map((columnKey) => (
             <div key={columnKey} className="space-y-4">
-              <h3 className="text-white text-xs font-bold uppercase tracking-wider">{columnKey}</h3>
+              <h3 className="font-mono-meta text-white text-[11px] font-semibold uppercase tracking-wider">
+                {columnKey}
+              </h3>
               <ul className="space-y-2.5">
                 {footerLinks[columnKey].map((link) => (
                   <li key={link.name}>
                     <a
-                      href="#"
+                      href={`#${link.path}`}
                       onClick={(e) => handleNavClick(e, link.path)}
-                      className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-200"
+                      className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors"
                     >
                       {link.name}
                     </a>
@@ -183,19 +196,25 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
           ))}
         </div>
 
-        <div className="mt-10 text-xs text-gray-400">
-          <a href="/otomasyon" className="hover:text-white transition-colors">
+        <div className="mt-10 text-xs text-gray-500">
+          <a href="/otomasyon" className="hover:text-gray-300 transition-colors">
             {isTr ? 'Dijital Hezarfen Otomasyon' : 'Dijital Hezarfen Automation'}
           </a>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>© {new Date().getFullYear()} Dijital Hezarfen. {t.rights}</p>
-          <div className="flex space-x-6">
-            <a href="#" className="hover:text-white transition-colors">{t.privacy}</a>
-            <a href="#" className="hover:text-white transition-colors">{t.terms}</a>
-            <a href="#" className="hover:text-white transition-colors">{t.kvkk}</a>
+          <div className="flex flex-wrap gap-6">
+            <a href="#/iletisim" onClick={(e) => handleNavClick(e, '/iletisim')} className="hover:text-white transition-colors">
+              {t.privacy}
+            </a>
+            <a href="#/iletisim" onClick={(e) => handleNavClick(e, '/iletisim')} className="hover:text-white transition-colors">
+              {t.terms}
+            </a>
+            <a href="#/iletisim" onClick={(e) => handleNavClick(e, '/iletisim')} className="hover:text-white transition-colors">
+              {t.kvkk}
+            </a>
           </div>
         </div>
       </div>

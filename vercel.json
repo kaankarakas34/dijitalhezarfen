@@ -3,6 +3,18 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/otomasyon",
+      "destination": "/otomasyon/index.html"
+    },
+    {
+      "source": "/otomasyon/gizlilik",
+      "destination": "/otomasyon/gizlilik.html"
+    },
+    {
+      "source": "/otomasyon/kullanim",
+      "destination": "/otomasyon/kullanim.html"
+    },
+    {
       "source": "/yayinlar/:slug",
       "destination": "/yayinlar/:slug/index.html"
     },
@@ -11,7 +23,7 @@
       "destination": "/yayinlar/:slug/index.html"
     },
     {
-      "source": "/((?!assets/|articles/|images/|favicon.svg|icons.svg|robots.txt|sitemap.xml|yayinlar/).*)",
+      "source": "/((?!otomasyon/|assets/|articles/|images/|favicon.svg|icons.svg|robots.txt|sitemap.xml|yayinlar/).*)",
       "destination": "/index.html"
     }
   ],

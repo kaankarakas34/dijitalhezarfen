@@ -5,12 +5,12 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 export default function AkademiHome({ onOpenApplyModal, onNavigate }) {
   
   const categories = [
-    { cat: 'Girişimcilik', sample: 'Fikirden girişime, iş modelleri, ürün-pazar uyumu, startup yönetimi' },
-    { cat: 'Pazarlama & Satış', sample: 'Dijital pazarlama, growth hacking, B2B satış, CRM, müşteri başarısı' },
-    { cat: 'Teknoloji & AI', sample: 'Yazılım geliştirme, AI destekli MVP, süreç otomasyonu, veri analitiği, siber güvenlik' },
-    { cat: 'Finans & Hukuk', sample: 'Finansal modelleme, muhasebe koordinasyonu, yatırım, ticari sözleşmeler, veri koruma' },
-    { cat: 'Yönetim & İnsan', sample: 'Liderlik, İK, organizasyon tasarımı, delegasyon, topluluk önünde konuşma' },
-    { cat: 'Yaratıcı Üretim', sample: 'Sosyal medya, görsel tasarım, içerik üretimi, video ve reklam prodüksiyonu' }
+    { cat: 'Girişimcilik', path: '/akademi/girisimcilik-tuneli', sample: 'Fikirden girişime, iş modelleri, ürün-pazar uyumu, startup yönetimi' },
+    { cat: 'Pazarlama & Satış', path: '/akademi/pazarlama-satis', sample: 'Dijital pazarlama, growth hacking, B2B satış, CRM, müşteri başarısı' },
+    { cat: 'Teknoloji & AI', path: '/akademi/teknoloji-yapay-zeka', sample: 'Yazılım geliştirme, AI destekli MVP, süreç otomasyonu, veri analitiği, siber güvenlik' },
+    { cat: 'Finans & Hukuk', path: '/akademi/finans-hukuk-yonetim', sample: 'Finansal modelleme, muhasebe koordinasyonu, yatırım, ticari sözleşmeler, veri koruma' },
+    { cat: 'Yönetim & İnsan', path: '/akademi/finans-hukuk-yonetim', sample: 'Liderlik, İK, organizasyon tasarımı, delegasyon, topluluk önünde konuşma' },
+    { cat: 'Kurumsal Akademi', path: '/akademi/kurumsal', sample: 'Kurum içi girişimcilik, AI adaptasyonu, inovasyon ve kapalı şirket sınıfları' }
   ];
 
   const formats = [
@@ -60,7 +60,19 @@ export default function AkademiHome({ onOpenApplyModal, onNavigate }) {
               <tbody className="divide-y divide-white/5 text-gray-400">
                 {categories.map((c, idx) => (
                   <tr key={idx} className="hover:bg-white/1 transition-colors">
-                    <td className="px-6 py-4 font-bold text-white shrink-0">{c.cat}</td>
+                    <td className="px-6 py-4 font-bold text-white shrink-0">
+                      <a
+                        href={c.path}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          onNavigate(c.path);
+                        }}
+                        className="hover:text-cyber-cyan transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <span>{c.cat}</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-cyber-cyan/70" />
+                      </a>
+                    </td>
                     <td className="px-6 py-4 leading-relaxed">{c.sample}</td>
                   </tr>
                 ))}
@@ -84,12 +96,16 @@ export default function AkademiHome({ onOpenApplyModal, onNavigate }) {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16">
-            <button
-              onClick={() => onNavigate('/akademi/egitimler')}
-              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/20 transition-all cursor-pointer"
+            <a
+              href="/akademi/egitimler"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('/akademi/egitimler');
+              }}
+              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/20 transition-all cursor-pointer text-center"
             >
               Eğitim Takvimini Gör
-            </button>
+            </a>
             <button
               onClick={() => onOpenApplyModal('kurumsal')}
               className="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:bg-white/10 text-white transition-all cursor-pointer"

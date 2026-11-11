@@ -98,37 +98,41 @@ export default function Footer({ onNavigate, lang }) {
         
         {/* Buttons Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto font-sans">
-          <button
-            onClick={() => onNavigate('/girisimler')}
+          <a
+            href="/girisimler"
+            onClick={(e) => handleNavClick(e, '/girisimler')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnVenture}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </a>
           
-          <button
-            onClick={() => onNavigate('/akademi/girisimcilik-tuneli')}
+          <a
+            href="/akademi/girisimcilik-tuneli"
+            onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-violet text-white hover:shadow-lg hover:shadow-violet-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnTunnel}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </a>
 
-          <button
-            onClick={() => onNavigate('/akademi/egitimler')}
+          <a
+            href="/akademi/egitimler"
+            onClick={(e) => handleNavClick(e, '/akademi/egitimler')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnCourses}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </a>
 
-          <button
-            onClick={() => onNavigate('/kurumsal')}
+          <a
+            href="/kurumsal"
+            onClick={(e) => handleNavClick(e, '/kurumsal')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnCorporate}</span>
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
 
@@ -183,10 +187,23 @@ export default function Footer({ onNavigate, lang }) {
           ))}
         </div>
 
-        <div className="mt-10 text-xs text-gray-400">
-          <a href="/otomasyon" className="hover:text-white transition-colors">
+        <div className="mt-10 pt-6 border-t border-white/5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] text-gray-500">
+          <a href="/otomasyon" className="text-gray-400 hover:text-white transition-colors font-medium">
             {isTr ? 'Dijital Hezarfen Otomasyon' : 'Dijital Hezarfen Automation'}
           </a>
+          <span aria-hidden="true">·</span>
+          <a href="/akademi/egitimler" onClick={(e) => handleNavClick(e, '/akademi/egitimler')} className="hover:text-gray-300 transition-colors">{isTr ? 'Eğitimler' : 'Programs'}</a>
+          <a href="/akademi/pazarlama-satis" onClick={(e) => handleNavClick(e, '/akademi/pazarlama-satis')} className="hover:text-gray-300 transition-colors">{isTr ? 'Pazarlama & Satış' : 'Marketing & Sales'}</a>
+          <a href="/akademi/teknoloji-yapay-zeka" onClick={(e) => handleNavClick(e, '/akademi/teknoloji-yapay-zeka')} className="hover:text-gray-300 transition-colors">{isTr ? 'Teknoloji & AI' : 'Tech & AI'}</a>
+          <a href="/akademi/finans-hukuk-yonetim" onClick={(e) => handleNavClick(e, '/akademi/finans-hukuk-yonetim')} className="hover:text-gray-300 transition-colors">{isTr ? 'Finans & Hukuk' : 'Finance & Legal'}</a>
+          <a href="/akademi/kurumsal" onClick={(e) => handleNavClick(e, '/akademi/kurumsal')} className="hover:text-gray-300 transition-colors">{isTr ? 'Kurumsal Akademi' : 'Corporate Academy'}</a>
+          <a href="/uygulama/yazilim-mvp" onClick={(e) => handleNavClick(e, '/uygulama/yazilim-mvp')} className="hover:text-gray-300 transition-colors">{isTr ? 'Yazılım MVP' : 'Software MVP'}</a>
+          <a href="/uygulama/yapay-zeka-otomasyon" onClick={(e) => handleNavClick(e, '/uygulama/yapay-zeka-otomasyon')} className="hover:text-gray-300 transition-colors">{isTr ? 'AI Otomasyon' : 'AI Automation'}</a>
+          <a href="/uygulama/dijital-pazarlama-growth" onClick={(e) => handleNavClick(e, '/uygulama/dijital-pazarlama-growth')} className="hover:text-gray-300 transition-colors">{isTr ? 'Growth Pazarlama' : 'Growth Marketing'}</a>
+          <a href="/uygulama/satis-crm" onClick={(e) => handleNavClick(e, '/uygulama/satis-crm')} className="hover:text-gray-300 transition-colors">{isTr ? 'Satış & CRM' : 'Sales & CRM'}</a>
+          <a href="/uygulama/finans-hukuk" onClick={(e) => handleNavClick(e, '/uygulama/finans-hukuk')} className="hover:text-gray-300 transition-colors">{isTr ? 'Finans Altyapısı' : 'Finance Ops'}</a>
+          <a href="/uygulama/yonetim-organizasyon" onClick={(e) => handleNavClick(e, '/uygulama/yonetim-organizasyon')} className="hover:text-gray-300 transition-colors">{isTr ? 'Yönetim & OKR' : 'Org & OKR'}</a>
+          <a href="/uygulama/medya-tasarim" onClick={(e) => handleNavClick(e, '/uygulama/medya-tasarim')} className="hover:text-gray-300 transition-colors">{isTr ? 'Marka & Medya' : 'Brand & Media'}</a>
         </div>
 
         {/* Bottom Bar */}

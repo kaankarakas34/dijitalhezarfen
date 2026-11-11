@@ -70,7 +70,22 @@ function toAbsoluteUrl(relOrAbs) {
   return relOrAbs.startsWith('http') ? relOrAbs : `${SITE_ORIGIN}${relOrAbs.startsWith('/') ? '' : '/'}${relOrAbs}`;
 }
 
-function toOgRasterUrl(imagePath) {
+function smartTrimMeta(text, maxLen = 158) {
+  if (!text) return '';
+  const clean = String(text).replace(/\s+/g, ' ').trim();
+  if (clean.length <= maxLen) return clean;
+  const sliced = clean.slice(0, maxLen - 1);
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${(lastSpace > 90 ? sliced.slice(0, lastSpace) : sliced).replace(/[,:;—-]+$/, '')}.`;
+}
+
+function toOgRasterUrl(imagePath, slug = '') {
+  if (slug) {
+    const generatedOgPath = path.join(publicDir, 'images', 'og', `${slug}.png`);
+    if (fs.existsSync(generatedOgPath)) {
+      return `${SITE_ORIGIN}/images/og/${slug}.png`;
+    }
+  }
   if (!imagePath || imagePath.endsWith('.svg')) {
     return DEFAULT_OG_IMAGE;
   }
@@ -78,20 +93,56 @@ function toOgRasterUrl(imagePath) {
 }
 
 function buildTrustNavFooterHtml() {
+  const linkItem = (href, label) => `<a href="${href}" class="hover:text-cyan-400">${label}</a>`;
   return `
-    <footer class="mt-16 pt-8 border-t border-white/10 text-xs text-gray-400">
-      <nav aria-label="Kurumsal ve Ekosistem Bağlantıları" class="flex flex-wrap gap-x-5 gap-y-2">
-        <a href="/" class="hover:text-cyan-400">Ana Sayfa</a>
-        <a href="/yayinlar" class="hover:text-cyan-400">Tüm Yayınlar</a>
-        <a href="/akademi" class="hover:text-cyan-400">Akademi</a>
-        <a href="/akademi/girisimcilik-tuneli" class="hover:text-cyan-400">Girişimcilik Tüneli</a>
-        <a href="/uygulama" class="hover:text-cyan-400">Uygulama Hizmetleri</a>
-        <a href="/buyume-yatirim" class="hover:text-cyan-400">Büyüme &amp; Yatırım</a>
-        <a href="/medya" class="hover:text-cyan-400">Medya &amp; YouTube</a>
-        <a href="/dijital-hezarfen" class="hover:text-cyan-400">Dijital Hezarfen Nedir?</a>
-        <a href="/hakkimizda" class="hover:text-cyan-400">Hakkımızda</a>
-        <a href="/sik-sorulan-sorular" class="hover:text-cyan-400">Sık Sorulan Sorular</a>
-        <a href="/iletisim" class="hover:text-cyan-400">İletişim</a>
+    <footer class="mt-16 pt-8 border-t border-white/10 text-xs text-gray-400 space-y-6">
+      <nav aria-label="Kurumsal ve Ekosistem Bağlantıları" class="space-y-4">
+        <div class="flex flex-wrap gap-x-5 gap-y-2">
+          <strong class="text-gray-200">Ekosistem:</strong>
+          ${linkItem('/', 'Ana Sayfa')}
+          ${linkItem('/yayinlar', 'Tüm Yayınlar')}
+          ${linkItem('/dijital-hezarfen', 'Dijital Hezarfen Nedir?')}
+          ${linkItem('/hakkimizda', 'Hakkımızda')}
+          ${linkItem('/medya', 'Medya &amp; YouTube')}
+          ${linkItem('/kurumsal', 'Kurumsal Çözümler')}
+          ${linkItem('/acik-kaynak-kutuphanesi', 'Açık Kaynak Araç Kütüphanesi')}
+          ${linkItem('/sik-sorulan-sorular', 'Sık Sorulan Sorular')}
+          ${linkItem('/basvur', 'Başvur')}
+          ${linkItem('/iletisim', 'İletişim')}
+        </div>
+        <div class="flex flex-wrap gap-x-5 gap-y-2">
+          <strong class="text-gray-200">Akademi:</strong>
+          ${linkItem('/akademi', 'Akademi Ana Sayfa')}
+          ${linkItem('/akademi/girisimcilik-tuneli', 'Girişimcilik Tüneli')}
+          ${linkItem('/akademi/egitimler', 'Modüler Eğitimler')}
+          ${linkItem('/akademi/pazarlama-satis', 'Pazarlama &amp; Satış Eğitimleri')}
+          ${linkItem('/akademi/teknoloji-yapay-zeka', 'Teknoloji &amp; Yapay Zekâ Eğitimleri')}
+          ${linkItem('/akademi/finans-hukuk-yonetim', 'Finans, Hukuk &amp; Yönetim Eğitimleri')}
+          ${linkItem('/akademi/kurumsal', 'Kurumsal Akademi')}
+        </div>
+        <div class="flex flex-wrap gap-x-5 gap-y-2">
+          <strong class="text-gray-200">Uygulama Hizmetleri:</strong>
+          ${linkItem('/uygulama', 'Uygulama Ana Sayfa')}
+          ${linkItem('/uygulama/yazilim-mvp', 'Yazılım &amp; AI MVP')}
+          ${linkItem('/uygulama/yapay-zeka-otomasyon', 'Yapay Zekâ Otomasyon')}
+          ${linkItem('/uygulama/dijital-pazarlama-growth', 'Dijital Pazarlama &amp; Growth')}
+          ${linkItem('/uygulama/satis-crm', 'B2B Satış &amp; CRM')}
+          ${linkItem('/uygulama/finans-hukuk', 'Finans &amp; Startup Hukuku')}
+          ${linkItem('/uygulama/yonetim-organizasyon', 'Yönetim &amp; Organizasyon')}
+          ${linkItem('/uygulama/medya-tasarim', 'Marka Tasarımı &amp; Medya')}
+        </div>
+        <div class="flex flex-wrap gap-x-5 gap-y-2">
+          <strong class="text-gray-200">Girişim Aşamaları &amp; Büyüme:</strong>
+          ${linkItem('/girisimler', 'Girişimler İçin')}
+          ${linkItem('/girisimler/fikir-asamasi', 'Fikir Aşaması')}
+          ${linkItem('/girisimler/pre-seed', 'Pre-Seed')}
+          ${linkItem('/girisimler/seed', 'Seed')}
+          ${linkItem('/girisimler/series-a-ve-sonrasi', 'Series A ve Sonrası')}
+          ${linkItem('/girisimler/scale-up', 'Scale-up')}
+          ${linkItem('/buyume-yatirim', 'Büyüme &amp; Yatırım')}
+          ${linkItem('/buyume-yatirim/yatirima-hazirlik', 'Yatırıma Hazırlık')}
+          ${linkItem('/buyume-yatirim/uluslararasilasma', 'Uluslararasılaşma')}
+        </div>
       </nav>
     </footer>
   `;
@@ -156,6 +207,9 @@ function injectHeadAndRoot(baseHtml, {
   jsonLd,
   semanticBodyHtml
 }) {
+  const isGeneratedOg = ogImage.includes('/images/og/');
+  const ogWidth = isGeneratedOg ? 1200 : 1600;
+  const ogHeight = isGeneratedOg ? 675 : 900;
   let html = baseHtml;
 
   html = html.replace(/<title>.*?<\/title>/is, `<title>${escapeHtml(title)}</title>`);
@@ -185,8 +239,8 @@ function injectHeadAndRoot(baseHtml, {
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
     <meta property="og:image" content="${escapeHtml(ogImage)}" />
-    <meta property="og:image:width" content="1600" />
-    <meta property="og:image:height" content="900" />
+    <meta property="og:image:width" content="${ogWidth}" />
+    <meta property="og:image:height" content="${ogHeight}" />
     <meta property="og:image:alt" content="${escapeHtml(ogImageAlt)}" />
 
     <!-- Twitter Card -->
@@ -344,7 +398,8 @@ for (const art of articles) {
   const rawText = fs.readFileSync(rawFilePath, 'utf8');
   const bodyHtml = parseMarkdownToHtml(rawText);
   const canonicalUrl = `${SITE_ORIGIN}/yayinlar/${art.slug}`;
-  const ogImageUrl = toOgRasterUrl(art.image);
+  const ogImageUrl = toOgRasterUrl(art.image, art.slug);
+  const metaDesc = smartTrimMeta(art.seoDesc || art.desc.tr, 158);
   const categoryLabel = articleCategories.find((c) => c.id === art.category)?.label.tr || 'Haberler';
   const topicLabel = art.topic?.tr || '';
   const leadText = art.lead?.tr || art.desc.tr;
@@ -510,7 +565,7 @@ for (const art of articles) {
 
   const pageHtml = injectHeadAndRoot(rawTemplateHtml, {
     title: pageTitle,
-    description: art.desc.tr,
+    description: metaDesc,
     canonicalUrl,
     ogType: 'article',
     ogImage: ogImageUrl,
@@ -634,18 +689,18 @@ const homeSemanticHtml = `
 
       <section aria-label="Biz Ne Yapıyoruz">
         <h2>Biz Ne Yapıyoruz? Akademi, Uygulama ve Büyüme &amp; Yatırım</h2>
-        <article>
+        <div class="pillar-card">
           <h3><a href="/akademi">01. Akademi — Girişimcilik Tüneli ve Modüler Eğitimler</a></h3>
-          <p>Teorik anlatımların ötesinde; kurucuların ürün, müşteri doğrulama, teknoloji ve yönetim reflekslerini gerçek vakalarla inşa ediyoruz.</p>
-        </article>
-        <article>
+          <p>Teorik anlatımların ötesinde; kurucuların ürün, müşteri doğrulama, teknoloji ve yönetim reflekslerini gerçek vakalarla inşa ediyoruz. Programlar, pazarlama, satış, yapay zekâ ve finans modüllerinden oluşur.</p>
+        </div>
+        <div class="pillar-card">
           <h3><a href="/uygulama">02. Uygulama — Fikirden Çalışan Sisteme</a></h3>
-          <p>Yazılım ve yapay zekâ destekli MVP üretiminden dijital pazarlama, B2B satış, CRM ve finans altyapısına kadar sahada birlikte kuruyoruz.</p>
-        </article>
-        <article>
+          <p>Yazılım ve yapay zekâ destekli MVP üretiminden dijital pazarlama, B2B satış, CRM ve finans altyapısına kadar sahada birlikte kuruyoruz. Stratejiyi çalışan sisteme dönüştürüyoruz.</p>
+        </div>
+        <div class="pillar-card">
           <h3><a href="/buyume-yatirim">03. Büyüme &amp; Yatırım — Ölçekten Küresel Pazara</a></h3>
-          <p>Girişimleri finansal modelleme, pitch deck kurgusu, yatırımcı görüşmeleri ve uluslararası büyüme stratejileriyle bir sonraki aşamaya hazırlıyoruz.</p>
-        </article>
+          <p>Girişimleri finansal modelleme, pitch deck kurgusu, yatırımcı görüşmeleri ve uluslararası büyüme stratejileriyle bir sonraki aşamaya hazırlıyoruz. Fikir aşamasından ölçeklenme evresine kadar eşlik ediyoruz.</p>
+        </div>
       </section>
 
       ${buildTrustNavFooterHtml()}
@@ -756,10 +811,10 @@ for (const route of CORE_SEO_ROUTES) {
       <section>
         <h2>Sık Sorulan Sorular Arşivi (${flatFaqItems.length} Soru)</h2>
         ${topFaqs.map((item) => `
-          <article>
+          <div class="faq-item">
             <h3>${escapeHtml(item.q)}</h3>
             <p>${escapeHtml(item.a)}</p>
-          </article>
+          </div>
         `).join('')}
       </section>
     `;

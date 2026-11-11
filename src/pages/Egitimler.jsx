@@ -161,10 +161,14 @@ export default function Egitimler({ onOpenApplyModal, onNavigate }) {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredPrograms.map((p, idx) => (
-              <div
+              <a
                 key={idx}
+                href={p.path}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate(p.path);
+                }}
                 className="group flex flex-col justify-between rounded-2xl glass p-6 border border-white/5 hover:border-cyan-500/20 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
-                onClick={() => onNavigate(p.path)}
               >
                 <div>
                   <div className="flex items-center justify-between text-[10px] text-gray-500 font-semibold uppercase tracking-wider mb-4 pb-2 border-b border-white/3">
@@ -195,12 +199,12 @@ export default function Egitimler({ onOpenApplyModal, onNavigate }) {
 
                 <div className="mt-8 pt-4 border-t border-white/5 flex items-center justify-between">
                   <span className="text-xs text-gray-400 font-medium">Başlangıç: {p.date}</span>
-                  <button className="flex items-center gap-1.5 text-xs font-bold text-cyber-cyan group-hover:underline cursor-pointer">
+                  <span className="flex items-center gap-1.5 text-xs font-bold text-cyber-cyan group-hover:underline">
                     <span>İncele / Başvur</span>
                     <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                  </span>
                 </div>
-              </div>
+              </a>
             ))}
 
             {filteredPrograms.length === 0 && (

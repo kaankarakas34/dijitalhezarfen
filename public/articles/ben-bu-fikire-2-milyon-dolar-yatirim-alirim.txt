@@ -6,7 +6,18 @@ Pre-seed döneminden yatırım turuna: Fikir, risk, kanıt, hisse ve yatırımc�
 
 Ağustos 2026
 
-Bu dosyayı neden hazırladım?
+## Yönetici Özeti: Pre-Seed Şirket Değerlemesi Nedir?
+
+Pre-seed aşamasında şirket değerlemesi, geçmiş finansalların değil; gelecekte yaratılabilecek ekonomik değerin, ortadan kaldırılmış risklerin, sermaye ihtiyacının ve yatırımcı hedef getirisinin bugünkü pazarlık fiyatıdır. Tek bir formül yoktur: Post-money değerleme = Pre-money değerleme + yeni yatırım; yatırımcı payı ise Yeni yatırım / Post-money değerleme formülüyle hesaplanır. Kurucular tek başına fikir büyüklüğünden değer türetmek yerine, müşteri ödeme kanıtları, birim ekonomi ve azaltılmış ürün/pazar riskleriyle savunulabilir bir değerleme bandı kurmalıdır.
+
+| Kavram | Temel Formül / Tanım | Kurucu Açısından Anlamı |
+| :--- | :--- | :--- |
+| Post-Money Değerleme | Pre-money + Yeni Yatırım | Yatırım sonrası şirketin toplam özsermaye fiyatı |
+| Yatırımcı Payı | Yeni Yatırım / Post-Money | Turda yatırımcıya devredilen sahiplik oranı |
+| VC Yöntemi (Pre-Money) | (Çıkış Değeri / Hedef MOIC) × (1 - Gelecek Seyrelme) - Yatırım | Fon matematiğine göre bugünkü tavan değer |
+| Kanıt vs. Varsayım | Ödeme / Yenileme vs. Hipotez | Değerlemeyi yükselten gerçek risk azaltma faktörü |
+
+## Bu dosyayı neden hazırladım?
 
 Girişimcilik dünyasında en fazla konuşulan ama en az anlaşılan konulardan biri şirket değerlemesidir. Bir tarafta elinde yalnızca fikir varken “Bu proje en az 2 milyon dolar eder” diyen girişimciler görüyorum. Diğer tarafta yatırımcının şirkete para koyduğunda her ay cirodan pay alacağını, şirketin yarısını ele geçireceğini veya otomatik olarak patron hâline geleceğini düşünen insanlar var.
 
@@ -34,7 +45,7 @@ Bu nedenle bu rehberde yalnızca “pre-money + yatırım = post-money” anlatm
 
 Benim temel tezim: Pre-seed değerleme, geçmiş finansalların fotoğrafı değil; gelecekteki büyük sonuca ulaşma ihtimalinin bugünkü pazarlık fiyatıdır.
 
-Bu rehberi nasıl okumalı?
+## Bu rehberi nasıl okumalı?
 
 Bu dosyayı finans eğitimi almamış bir girişimcinin de anlayabilmesini isteyerek yazdım. Bu nedenle teknik bir kavramı mümkün olduğunca dört basamakta anlatacağım:
 
@@ -50,7 +61,7 @@ Bu dosyayı finans eğitimi almamış bir girişimcinin de anlayabilmesini istey
 
 Benim bakış açıma göre: Bir girişimci finansçı olmak zorunda değildir; ama kendi şirketinin yüzdesini, parasını, kontrolünü ve geleceğini başkasının hesabına bırakamaz. “Avukat bakar”, “mali müşavir hesaplar”, “yatırımcı zaten bilir” diyerek imza atan kurucu, şirket yönetmiyordur. Şirketini emanet ediyordur.
 
-Bu rehberde sık kullanacağım dört kelime
+## Bu rehberde sık kullanacağım dört kelime
 
 Kanıt: Müşterinin söylediği değil, yaptığı şeydir. Ödeme, tekrar kullanım, sözleşme, yenileme veya ölçülebilir davranış gibi.
 
@@ -78,11 +89,11 @@ Sürdürülebilir, ölçeklenebilir ve akıllı büyüme birlikte düşünülmel
 
 Bu yüzden bazı bölümlerde sert konuşacağım. Çünkü girişimcilik ekosisteminde nazikçe tekrarlanan yanlışlar, kuruculara gerçek para ve gerçek yıllar kaybettiriyor.
 
-1. Önce kavramları ayırıyorum: Değer, fiyat ve yatırım turu aynı şey değildir
+## 1. Önce kavramları ayırıyorum: Değer, fiyat ve yatırım turu aynı şey değildir
 
 Bir girişimin “değeri” konuşulurken çoğu insan üç farklı şeyi birbirine karıştırır.
 
-1.1. İçsel veya ekonomik değer
+### 1.1. İçsel veya ekonomik değer
 
 Şirketin gelecekte üretmesi beklenen nakit akışlarının, risk dikkate alınarak bugüne indirgenmiş değeridir. Olgun şirketlerde indirgenmiş nakit akımı (DCF) gibi yöntemler bu mantığa dayanır.
 
@@ -90,11 +101,11 @@ Birisi size “Beş yıl sonra 100 lira vereceğim” derse, o söz bugün cebin
 
 Nakit akımı , şirkete giren ve şirketten çıkan gerçek paradır. Serbest nakit akımı ise şirket işini yürüttükten ve gerekli yatırımları yaptıktan sonra sermaye sağlayanlara kalabilecek paradır. Muhasebe kârıyla aynı değildir: şirket kârlı göründüğü hâlde müşteriler ödeme yapmadıysa kasası boş olabilir.
 
-1.2. Piyasa değeri veya karşılaştırmalı değer
+### 1.2. Piyasa değeri veya karşılaştırmalı değer
 
 Benzer şirketlerin, benzer yatırım turlarının veya benzer satın almaların hangi çarpanlarla fiyatlandığına göre oluşan referans değerdir. Bu, “piyasa şu anda buna benzeyen şirketlere ne ödüyor?” sorusuna cevap verir.
 
-1.3. Tur fiyatı
+### 1.3. Tur fiyatı
 
 Yatırımcı ile girişimcinin belirli bir tarihte, belirli bir yatırım miktarı ve belirli sözleşme hakları karşılığında uzlaştığı fiyattır. Pre-seed’de çoğu zaman konuştuğumuz gerçek rakam budur.
 
@@ -112,9 +123,9 @@ Bu yüzden ben hiçbir değerleme rakamını şu beş soru olmadan ciddiye almam
 
 9. SAFE, dönüştürülebilir borç veya başka dönüşebilir araçlar tamamen seyreltilmiş hesaba katıldı mı?
 
-2. En temel yatırım matematiği
+## 2. En temel yatırım matematiği
 
-2.1. Pre-money ve post-money
+### 2.1. Pre-money ve post-money
 
 Pre-money değerleme , yeni yatırım girmeden hemen önce şirket için kabul edilen değerdir.
 
@@ -144,7 +155,7 @@ Pre-money değer: 3.333.333 - 500.000 = 2.833.333 $
 
 Burada yapılan en yaygın hata şudur: “Şirketim 3 milyon dolar, 500 bin dolar karşılığında yüzde 10 veririm.” Eğer 500 bin dolar yüzde 10’a karşılık geliyorsa post-money değer 5 milyon dolar, pre-money değer 4,5 milyon dolardır. Söylenen 3 milyon dolar ile teklif edilen yüzde birbirini tutmaz.
 
-2.2. İstenen yatırımla kabul edilen seyrelmeden değer türetme
+### 2.2. İstenen yatırımla kabul edilen seyrelmeden değer türetme
 
 Pre-seed aşamasında çoğu zaman önce matematiksel bir “gerçek değer” bulamam. Bunun yerine şu iki soruyu birlikte çözerim:
 
@@ -158,7 +169,7 @@ Kurucu ekibin bu turda taşıyabileceği makul seyrelme ne kadar?
 
 Bu tablo şirketin “gerçek değeri”ni kanıtlamaz. Yalnızca yatırım ihtiyacı ile satılacak payın hangi değerlemeyi zorunlu kıldığını gösterir. Sonraki işim, bu değerlemenin ekip, pazar, ürün ve kanıtlarla savunulup savunulamayacağını test etmektir.
 
-2.3. Hisse fiyatı ve çıkarılacak yeni hisse
+### 2.3. Hisse fiyatı ve çıkarılacak yeni hisse
 
 Şirketin yatırım öncesinde 1.000.000 tamamen seyreltilmiş hissesi ve 4.000.000 dolar pre-money değeri olduğunu varsayayım.
 
@@ -174,7 +185,7 @@ Yatırım sonrasında toplam hisse 1.250.000 olur. Yatırımcının payı:
 
 Bu basit örneğin içine opsiyonlar, SAFE’ler, warrant’lar veya dönüştürülebilir borçlar girdiğinde “tamamen seyreltilmiş hisse sayısı” kritik hâle gelir.
 
-3. Bir fikir ne kadar eder?
+## 3. Bir fikir ne kadar eder?
 
 Benim kısa cevabım serttir: Çıplak bir fikir, çoğu durumda yatırım yapılabilir şirket değeri yaratmaz.
 
@@ -184,11 +195,11 @@ David S. Rose’un kitabında kullanılan kısa ifade bunu iyi özetler: “Idea
 
 Nicolaj Højer Nielsen de yatırımcıların fikri değil risk-getiri profilini değerlendirdiğini; fikrin ilk aşamada yüksek risk, düşük kanıt taşıdığını vurgular. Onun çerçevesinde pazar, iş modeli, ekip ve traction ilerledikçe risk azalır; dolayısıyla girişimci aynı sermaye için daha az pay vermeye başlayabilir. [Nielsen, 2017, ss. 23-32 ve 41-52]
 
-3.1. Fikirden ekonomik değere geçiş merdiveni
+### 3.1. Fikirden ekonomik değere geçiş merdiveni
 
 ![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQGigEZ1hvDyuQ/article-inline_image-shrink_1000_1488/B4DZ_RXNOBJsAI-/0/1785923949724?e=2147483647&v=beta&t=Zk45jfPRbrf-ODZ1yezlecGmNj-V83ygATYaYIu7wFo)
 
-3.2. Fikrin tek başına daha anlamlı olabileceği istisnalar
+### 3.2. Fikrin tek başına daha anlamlı olabileceği istisnalar
 
 Fikir ile beraber aşağıdakilerden biri varsa artık yalnızca “fikir” konuşmuyoruz:
 
@@ -212,7 +223,7 @@ Rakiplerin kolayca erişemeyeceği stratejik varlık.
 
 Bu unsurlar fikirden bağımsız varlıklardır. Değer yaratan şey fikrin parlaklığı değil, fikrin etrafında biriktirilmiş kıt kaynaklar ve azaltılmış belirsizliktir.
 
-3.3. Pre-seed, seed ve Series A ne demektir?
+### 3.3. Pre-seed, seed ve Series A ne demektir?
 
 Bu aşamalar şirketlerin yaşını gösteren resmî sınıflar değildir. Bir girişimin hangi temel soruyu cevaplamaya çalıştığını ve sermayeyi ne için kullandığını anlatan finansman evreleridir. Aynı gelir seviyesindeki iki şirket farklı sektörlerde farklı aşamada kabul edilebilir. İlaç geliştiren bir şirket ile yazılım şirketinin kanıt yolu aynı değildir.
 
@@ -268,7 +279,7 @@ Bu turlarda amaç genellikle kanıtlanmış modeli hızla genişletmek, yeni ül
 
 ![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQH_qA1vKs-N1Q/article-inline_image-shrink_1000_1488/B4DZ_RXldXKkAI-/0/1785924048963?e=2147483647&v=beta&t=de974czGtEgbvUcNF_pMYegZjxTCAH3hLBDkTTlXQPg)
 
-3.4. Startup ile iyi bir işletme aynı şey değildir
+### 3.4. Startup ile iyi bir işletme aynı şey değildir
 
 Startup , yüksek belirsizlik altında tekrar edilebilir ve hızlı ölçeklenebilir bir iş modeli arayan girişimdir. KOBİ ise küçük ve orta büyüklükteki işletmeyi anlatan ekonomik/hukuki sınıftır. Bir şirket hem startup hem KOBİ olabilir; ancak kavramların anlattığı şey farklıdır.
 
@@ -276,13 +287,13 @@ Mahallesinde çok kârlı çalışan tek şubeli restoran kötü bir işletme de
 
 Sert gerçek: Her işletmenin yatırım alması gerekmez. “Yatırımcı ilgilenmedi” demek “iş kötü” demek değildir. Bazen yatırımcı yanlıştır; bazen finansman aracı yanlıştır; bazen de kurucu şirketini startup gibi anlatmaya çalışırken aslında gayet iyi bir nakit işi kurmuştur.
 
-4. Şirketin değerini gerçekte ne artırır?
+## 4. Şirketin değerini gerçekte ne artırır?
 
 McKinsey’nin klasik değerleme yaklaşımı olgun şirketlerde değerin beklenen nakit akımlarından; nakit akımlarının da büyüme ve yatırılan sermaye getirisi gibi ekonomik sürücülerden doğduğunu söyler. Büyüme tek başına değer yaratmaz: yeni yatırılan sermayenin getirisi sermaye maliyetini aşmıyorsa büyüme değer yaratmayabilir, hatta değer yok edebilir. [Koller, Goedhart ve Wessels, 2005, ss. 55-68]
 
 Pre-seed şirketinde henüz istikrarlı ROIC veya nakit akışı olmayabilir. Yine de temel mantık değişmez. Ben erken aşama sinyallerini, gelecekteki nakit akımlarının ve rekabet üstü getirinin öncü göstergeleri olarak okurum.
 
-4.1. Kurucu ekip
+### 4.1. Kurucu ekip
 
 Pre-seed’de yatırımcı çoğu zaman üründen önce ekibi fiyatlar. Ben ekibi değerlendirirken yalnızca CV’ye bakmam:
 
@@ -306,7 +317,7 @@ Hızlı deney yapıp kanıt üretebiliyorlar mı?
 
 Tekrarlı girişimcilik ve başarılı exit güçlü sinyal olabilir; fakat otomatik başarı garantisi değildir. Benim için asıl değer, ekibin yanlış Plan A’dan doğru Plan B’ye geçme yeteneğidir.
 
-4.2. Problemin şiddeti ve müşterinin ödeme isteği
+### 4.2. Problemin şiddeti ve müşterinin ödeme isteği
 
 “İnsanlar bunu beğendi” düşük kaliteli bir sinyaldir. Aşağıdakiler daha değerlidir:
 
@@ -324,7 +335,7 @@ Müşteri yalnızca görüşmeye mi katıldı, yoksa ön sipariş/sözleşme ver
 
 Bir müşterinin ödeme yapması, yüz kişinin “güzel fikir” demesinden çoğu zaman daha değerlidir.
 
-4.3. Pazar büyüklüğü ve erişilebilir pazar
+### 4.3. Pazar büyüklüğü ve erişilebilir pazar
 
 Ben TAM-SAM-SOM sunumuna tek başına ikna olmam.
 
@@ -350,7 +361,7 @@ Dağıtım kanalları erişilebilir mi?
 
 Büyük oyuncular pazara girmeyi kolay mı görüyor?
 
-4.4. Traction ve büyümenin kalitesi
+### 4.4. Traction ve büyümenin kalitesi
 
 Traction yalnızca kullanıcı sayısı değildir. Ben şu metriklerin niteliğine bakarım:
 
@@ -406,7 +417,7 @@ ARR: Yıllık tekrar eden gelir. Basit bir durumda MRR’nin 12 ile çarpılmas�
 
 Benim bakış açıma göre: “100 bin üyemiz var” tek başına neredeyse hiçbir şey söylemez. Kaçı aktif, kaçı ödüyor, kaçı kalıyor, kaçı başkasına öneriyor? Kalabalık ile değer aynı şey değildir. Reklamla kalabalık satın alabilirsiniz; bağlılık ve ödeme isteği satın alamazsınız.
 
-4.5. İş modeli ve birim ekonomi
+### 4.5. İş modeli ve birim ekonomi
 
 Şirket büyüdükçe zarar da aynı hızda büyüyorsa ölçeklenebilirlik iddiası zayıflar. Ben şu sorulara cevap ararım:
 
@@ -450,7 +461,7 @@ Sert gerçek: LTV/CAC oranını bir sunumda süslü göstermek kolaydır. Altı 
 
 Bu basitleştirilmiş formüller her iş modeline körlemesine uygulanmaz. Churn değişken, kohortlar farklı veya gelir proje bazlıysa kohort-temelli hesap gerekir.
 
-4.6. Savunulabilir rekabet avantajı
+### 4.6. Savunulabilir rekabet avantajı
 
 “İlk biz yaptık” savunulabilir avantaj değildir. Değeri yükseltebilecek gerçek savunmalar şunlardır:
 
@@ -478,7 +489,7 @@ Topluluk ve ekosistem.
 
 Savunma, bugünkü satıştan çok gelecekteki marjın ve pazar payının korunmasına yarar.
 
-4.7. Sermaye verimliliği ve kilometre taşı üretme kapasitesi
+### 4.7. Sermaye verimliliği ve kilometre taşı üretme kapasitesi
 
 Aynı 500.000 dolarla bir ekip yalnızca ürün yazarken başka bir ekip ürün, ilk müşteriler ve tekrarlanabilir satış kanıtı çıkarabiliyorsa ikinci şirket daha değerlidir.
 
@@ -496,7 +507,7 @@ Brüt marj mı iyileşecek?
 
 Satış süreci tekrarlanabilir mi olacak?
 
-4.8. Temiz cap table ve hukuki hazırlık
+### 4.8. Temiz cap table ve hukuki hazırlık
 
 Kirli ortaklık yapısı doğrudan değer düşürür. Aşağıdakiler yatırımcıyı kaçırabilir:
 
@@ -516,7 +527,7 @@ Davalar, vergi ve regülasyon sorunları,
 
 Kişisel hesap ile şirket hesabının karışması.
 
-5. Pre-seed değerleme neden zordur?
+## 5. Pre-seed değerleme neden zordur?
 
 Olgun bir şirkette geçmiş gelir, kâr, nakit akımı, varlıklar ve karşılaştırılabilir şirketler vardır. Pre-seed’de ise çoğu veri ya yoktur ya da kısa bir dönemi kapsar. Bu nedenle klasik yöntemlerin bazıları teknik olarak uygulanabilse bile sonuç varsayımlara aşırı duyarlı olur.
 
@@ -554,9 +565,9 @@ Benim bakış açıma göre: Veri dikiz aynasıdır; arkamızda ne olduğunu ço
 
 Bu yaklaşım değerlemeye de yansır. Geçmiş verisi olmayan pre-seed girişime “değersiz” demem; fakat kanıt olmayan iddiaya da veri muamelesi yapmam. Yeni pazar iddiası, deney üretme sorumluluğunu ortadan kaldırmaz.
 
-6. Pre-seed’de kullanılabilecek değerleme yöntemleri
+## 6. Pre-seed’de kullanılabilecek değerleme yöntemleri
 
-6.1. Karşılaştırılabilir yatırım turları yöntemi
+### 6.1. Karşılaştırılabilir yatırım turları yöntemi
 
 Aynı dönemde, benzer coğrafyada, benzer sektörde ve benzer traction seviyesinde şirketlerin pre-money değerlemelerine bakarım.
 
@@ -590,7 +601,7 @@ Zayıflığı: Özel şirket işlemlerinin şartları açıklanmaz; medyada gör
 
 Ben medyan bir referans bulduktan sonra kanıt seviyesine göre yukarı-aşağı düzeltme yaparım. Ancak bu düzeltme “biz daha iyiyiz, yüzde 50 ekleyelim” şeklinde keyfî olmamalıdır.
 
-6.2. Scorecard yöntemi
+### 6.2. Scorecard yöntemi
 
 Bu yöntemde şirketi bölgedeki ve aşamadaki ortalama pre-seed değerlemeyle karşılaştırırım. Önce kriterlere ağırlık veririm, sonra girişimin ortalamaya göre performans katsayısını belirlerim.
 
@@ -604,7 +615,7 @@ Gösterge değer = 3.000.000 × 1,025 = 3.075.000 $ pre-money
 
 Bu yöntem nesnel görünse de skorlar öznel olabilir. Ben bu yüzden puanı tek başına sonuç değil, varsayımları görünür kılan tartışma aracı olarak kullanırım.
 
-6.3. Berkus yöntemi
+### 6.3. Berkus yöntemi
 
 Berkus yaklaşımı, gelir öncesi girişimlerde değeri belli risk azaltıcı başarı bloklarına dağıtır. Tipik başlıklar:
 
@@ -622,7 +633,7 @@ Her başlığa yerel piyasa ve dönem için belirlenen azami bir değer eklenir.
 
 Bu rakamlar evrensel değildir. Yöntemin değeri, “fikrim 5 milyon eder” demek yerine hangi riskin ne kadar azaltıldığını ayrı ayrı tartıştırmasıdır.
 
-6.4. Risk faktörü toplama yöntemi
+### 6.4. Risk faktörü toplama yöntemi
 
 Önce benzer girişimlerin ortalama değerini alırım. Sonra belirli risk alanlarına göre değer ekler veya çıkarırım:
 
@@ -654,7 +665,7 @@ Potansiyel çıkış riski.
 
 Bu yöntem de sahte kesinlik yaratabilir. “250 bin” doğa kanunu değildir; piyasa bağlamında kabul edilen bir ayarlama birimidir.
 
-6.5. Maliyet/yeniden oluşturma yöntemi
+### 6.5. Maliyet/yeniden oluşturma yöntemi
 
 Şirketin bugüne kadar yarattığı teknolojiyi, tasarımı, veriyi ve operasyonu yeniden oluşturmanın maliyetini hesaplarım.
 
@@ -674,7 +685,7 @@ Toplam yeniden oluşturma maliyeti: 450.000 $
 
 Bu yöntem bir taban kontrolü sağlayabilir; fakat fırsatı, ekip kalitesini, traction’ı ve gelecekteki ölçeklenmeyi yeterince fiyatlamaz. Kötü yazılıma 1 milyon dolar harcanmış olması şirketi 1 milyon dolar değerli yapmaz. Aynı şekilde olağanüstü bir ekip 100 bin dolara çok güçlü ürün geliştirmişse değerin yalnızca 100 bin dolar olması gerekmez.
 
-6.6. İndirgenmiş nakit akımı (DCF)
+### 6.6. İndirgenmiş nakit akımı (DCF)
 
 DCF , İngilizce “Discounted Cash Flow” ifadesinin kısaltmasıdır. Türkçesi indirgenmiş nakit akımı dır. İsmi ürkütücü, mantığı basittir:
 
@@ -748,7 +759,7 @@ Sonuç hangi varsayım değişince çöküyor?
 
 Eğer değerin yüzde 90’ı terminal değerden geliyorsa yatırımcı aslında bugünkü işletmeden çok uzak gelecek hikâyesine para biçmektedir. Bu mutlaka yanlış değildir; fakat belirsizlik açıkça görülmelidir.
 
-6.7. Venture Capital Method - çıkıştan geriye değerleme
+### 6.7. Venture Capital Method - çıkıştan geriye değerleme
 
 Bu, yatırımcı mantığını anlamak için en önemli yöntemlerden biridir.
 
@@ -810,7 +821,7 @@ Aşağıdaki tabloda yatırım 600.000 dolar, yatırım sonrası gelecek seyrelm
 
 Bu tablo pre-seed değerlemenin neden tek sayı olmadığını gösterir. Çıkış çarpanı, exit büyüklüğü, süre, yatırımcının hedef getirisi veya takip turlarındaki seyrelme varsayımında küçük görünen değişiklikler bugünkü fiyatı ciddi biçimde değiştirir.
 
-6.8. Senaryo ağırlıklı beklenen değer
+### 6.8. Senaryo ağırlıklı beklenen değer
 
 Tek bir iyimser senaryoya güvenmek yerine farklı sonuçlar kurarım:
 
@@ -820,13 +831,13 @@ Bu 22 milyon dolar bugünkü değer değildir. Zaman, takip yatırımları, liki
 
 Bu hesap bize başka bir gerçeği gösterir: beklenen değerin büyük kısmı yüzde 5 olasılıklı aykırı başarıdan gelebilir. VC ekonomisinin neden “çok büyük sonuç” aradığını burada görürüz.
 
-6.9. Reel opsiyon mantığı
+### 6.9. Reel opsiyon mantığı
 
 Pre-seed yatırımı bazen şirketin bütün geleceğini satın almak değil, bir sonraki bilgi noktasına ulaşma hakkını finanse etmektir. 500 bin dolarlık yatırım, teknik prototipin çalışıp çalışmadığını gösterecekse yatırımcı aslında belirsizlik çözüldüğünde daha büyük yatırım yapma opsiyonu kazanır.
 
 Bu yaklaşım özellikle biyoteknoloji, deep-tech, enerji ve regülasyon yoğun alanlarda anlamlıdır. Her kilometre taşı başarısız projeyi durdurma, başarılı projeye devam etme hakkı yaratır. Fakat teorik reel opsiyon modelleri pre-seed için hassas veri gerektirir; ben bunu kesin fiyat makinesi değil, aşamalı finansman mantığı olarak kullanırım.
 
-7. Benim kullandığım pre-seed değerleme sistemi
+## 7. Benim kullandığım pre-seed değerleme sistemi
 
 Ben tek bir yönteme teslim olmam. Aşağıdaki beş katmanlı sistemi kullanırım.
 
@@ -916,9 +927,9 @@ Hedef değer: Kanıtlarımın makul biçimde desteklediği rakam.
 
 İddialı üst sınır: Yalnızca yatırımcı rekabeti ve güçlü stratejik katkıyla mümkün rakam.
 
-8. Yatırımcı neye göre yatırım yapar?
+## 8. Yatırımcı neye göre yatırım yapar?
 
-8.1. Melek yatırımcı ile VC aynı gözle bakmaz
+### 8.1. Melek yatırımcı ile VC aynı gözle bakmaz
 
 Melek yatırımcı çoğunlukla kendi parasını yatırır. Sektörel ilgisi, kurucuyla kişisel güveni, mentorluk isteği veya toplumsal etki motivasyonu olabilir. VC ise başkalarının sermayesini yöneten bir fon olarak portföy, fon ömrü, rezerv, hedef getiri ve yatırım komitesi disipliniyle hareket eder.
 
@@ -926,7 +937,7 @@ David S. Rose erken aşama yatırımını bir “hits business” olarak açıkl
 
 Nielsen’in risk/getiri matrisi de doğru yatırımcı eşleşmesinin önemini gösterir. Düşük risk-düşük ödül işi kötü iş değildir; sadece milyar dolarlık çıkış arayan VC için yanlış ürün olabilir. [Nielsen, 2017, ss. 23-41]
 
-8.2. VC’nin fon matematiği
+### 8.2. VC’nin fon matematiği
 
 100 milyon dolarlık bir fonun bütün şirketlere eşit yatırım yapmadığını düşünelim. Fon yönetim ücretleri, takip yatırımları ve başarısızlıklar nedeniyle ilk çeklerin tamamı çıkışta değer üretmez.
 
@@ -942,7 +953,7 @@ Fon bir girişime 1 milyon dolar yatırıp yüzde 10 alıyorsa ve sonraki turlar
 
 “Bu şirket başarılı olursa fonum açısından anlamlı büyüklükte bir sonuç üretebilir mi?”
 
-8.3. Yatırımcının karar ağacı
+### 8.3. Yatırımcının karar ağacı
 
 Ben yatırımcı bakışını şu sırada kurarım:
 
@@ -962,7 +973,7 @@ Ben yatırımcı bakışını şu sırada kurarım:
 
 26. Alternatif maliyet: Aynı fon sermayesi başka hangi fırsata gidebilir?
 
-8.4. Yatırımcı aylık kazançtan pay alır mı?
+### 8.4. Yatırımcı aylık kazançtan pay alır mı?
 
 Klasik özsermaye yatırımında hayır. Yatırımcı:
 
@@ -976,11 +987,11 @@ Kâr dağıtılmadıkça otomatik nakit alamaz.
 
 Yatırımcı genellikle exit, ikincil hisse satışı veya temettü ile kazanır. Aylık ciro payı, faiz, danışmanlık ücreti ya da zorunlu geri ödeme varsa artık özsermaye yatırımına başka ekonomik araçlar eklenmiş demektir.
 
-9. Ne kadar yatırım istemeliyim?
+## 9. Ne kadar yatırım istemeliyim?
 
 Ben “ne kadar bulabilirsem o kadar” yaklaşımını yanlış buluyorum. Yatırım miktarı bir sonraki değer artırıcı kilometre taşına göre hesaplanmalıdır.
 
-9.1. Runway hesabı
+### 9.1. Runway hesabı
 
 Burn / nakit yakımı , şirketin bir ayda kasasından net olarak eksilttiği paradır. “Yakmak” kelimesi paranın boşa harcandığı anlamına gelmez; şirketin henüz kendi gelirleriyle karşılayamadığı net nakit tüketimini anlatır.
 
@@ -1024,7 +1035,7 @@ Bu paranın karşılığında yalnızca “18 ay yaşamak” değil, örneğin �
 
 Teknik ölçek testinin tamamlanması.
 
-9.2. Fazla para neden sorun olabilir?
+### 9.2. Fazla para neden sorun olabilir?
 
 Gereksiz seyrelme yaratır.
 
@@ -1036,7 +1047,7 @@ Bir sonraki turda daha yüksek değerleme zorunluluğu doğar.
 
 Yüksek burn şirketi yeni yatırıma bağımlı kılar.
 
-9.3. Çok az para neden sorun olabilir?
+### 9.3. Çok az para neden sorun olabilir?
 
 Şirket kilometre taşına ulaşmadan tekrar tura çıkar.
 
@@ -1046,7 +1057,7 @@ Köprü turu pazarlık gücünü düşürür.
 
 Nakit biterken yapılan tur değerlemeyi aşağı çeker.
 
-10. Seyrelme ve cap table matematiği
+## 10. Seyrelme ve cap table matematiği
 
 Seyrelme , yeni hisseler çıktığında mevcut ortakların şirket içindeki yüzde oranının küçülmesidir. Bir sürahi meyve suyuna su eklediğinizi düşünün: Sürahinin toplamı büyür ama ilk karışımın toplam içindeki oranı azalır. Şirkette de yatırım parası kasayı büyütürken yeni hisseler kurucunun yüzdesini azaltabilir.
 
@@ -1056,7 +1067,7 @@ Cap table , İngilizce “capitalization table” ifadesinin kısaltmasıdır. T
 
 Benim bakış açıma göre: “Yüzde 10 verdim” tek başına eksik cümledir. Hangi değerlemede, hangi imtiyazlarla, opsiyon havuzundan önce mi sonra mı, SAFE’ler dönüşünce mi önce mi? Yüzdeyi bilip paydayı bilmeyen kurucu, aslında ne verdiğini bilmiyordur.
 
-10.1. Birden fazla turda seyrelme
+### 10.1. Birden fazla turda seyrelme
 
 Kurucular başlangıçta yüzde 100’e sahip olsun.
 
@@ -1070,7 +1081,7 @@ Series A’da yüzde 20 yeni pay satılır: kurucular %68 × %80 = %54,4.
 
 Seyrelme yüzdeleri toplanmaz; kalan sahiplik oranları çarpılır.
 
-10.2. Opsiyon havuzu etkisi
+### 10.2. Opsiyon havuzu etkisi
 
 Yatırımcı turdan önce yüzde 10 opsiyon havuzu kurulmasını isterse maliyet çoğunlukla mevcut ortaklara biner.
 
@@ -1098,7 +1109,7 @@ Ben term sheet’te şu soruyu açıkça yazarım:
 
 Opsiyon havuzu yüzde kaç olacak, tamamen seyreltilmiş hesabın içinde mi ve yatırım öncesi mi yatırım sonrası mı oluşturulacak?
 
-10.3. İkincil satış ile birincil yatırım
+### 10.3. İkincil satış ile birincil yatırım
 
 Birincil yatırım: Yeni hisse çıkar; para şirket kasasına girer.
 
@@ -1106,7 +1117,7 @@ Birincil yatırım: Yeni hisse çıkar; para şirket kasasına girer.
 
 Erken aşamada yatırımcı genellikle sermayenin şirkette büyüme yaratmasını ister. Sınırlı bir founder liquidity bazı koşullarda anlaşılabilir; fakat şirket henüz kırılganken kurucunun büyük nakit çıkışı yatırımcı güvenini azaltabilir.
 
-11. SAFE ve dönüştürülebilir araçların matematiği
+## 11. SAFE ve dönüştürülebilir araçların matematiği
 
 SAFE , “Simple Agreement for Future Equity” sözlerinin kısaltmasıdır. Türkçeye kabaca gelecekte hisseye dönüşecek basit yatırım sözleşmesi diye çevrilebilir.
 
@@ -1116,7 +1127,7 @@ SAFE çoğu yaygın şablonda klasik banka kredisi gibi faizli ve vadeli borç d
 
 Fiyatlanmış tur , yatırım sırasında şirketin pre-money değerinin ve hisse fiyatının açıkça belirlendiği turdur. SAFE ise çoğu zaman bu fiyatı sonraki tura bırakır.
 
-11.1. Valuation cap
+### 11.1. Valuation cap
 
 SAFE yatırımcısının dönüşüm fiyatını sınırlayan değerleme tavanıdır. Şirket bir sonraki turu daha yüksek değerlemeyle yapsa bile SAFE daha avantajlı fiyattan dönüşebilir.
 
@@ -1134,7 +1145,7 @@ Post-money SAFE mantığında, başka karmaşık araçlar yoksa SAFE’in ima et
 
 Birden fazla post-money SAFE varsa her biri kurucuları seyreltir. Üç SAFE’in ayrı ayrı yüzde 5, yüzde 7 ve yüzde 8 ima etmesi, dönüşümde toplam yüzde 20’ye yakın pay anlamına gelebilir.
 
-11.2. İndirim
+### 11.2. İndirim
 
 Discount / indirim , SAFE yatırımcısının sonraki tur yatırımcısına göre hisseyi daha ucuz fiyattan almasıdır. Erken para koyduğu ve daha fazla risk aldığı için ödüllendirilir.
 
@@ -1144,7 +1155,7 @@ Bir sonraki fiyatlı turda yeni yatırımcı hisse başına 10 dolar ödüyor ve
 
 SAFE hem cap hem indirim içeriyorsa yatırımcı için daha avantajlı olan dönüşüm fiyatı uygulanabilir; belgenin hükümleri belirleyicidir.
 
-11.3. SAFE neden bedava para değildir?
+### 11.3. SAFE neden bedava para değildir?
 
 Faiz ve vade olmayabilir; ama ekonomik olarak gelecekte hisse verir.
 
@@ -1168,7 +1179,7 @@ As-converted / dönüşmüş varsayımıyla: SAFE ve dönüştürülebilir belge
 
 Sert gerçek: SAFE’in adında “simple”, yani basit yazması cap table etkisinin basit olduğu anlamına gelmez. Beş ayrı SAFE imzalayıp toplam seyrelmeyi hesaplamamak, kredi kartı ekstrelerine bakmadan harcama yapmaya benzer. Borcu değil belki ama gelecekte vereceğiniz şirket yüzdesini biriktirirsiniz.
 
-12. Değerleme kadar önemli sözleşme ekonomisi
+## 12. Değerleme kadar önemli sözleşme ekonomisi
 
 Yüksek değerleme kötü hükümleri telafi etmeyebilir. Aynı 5 milyon dolar post-money değerlemede iki yatırım farklı ekonomik sonuç doğurabilir.
 
@@ -1176,7 +1187,7 @@ Term sheet , yatırımın ana şartlarını özetleyen ön koşullar belgesidir.
 
 Bir yatırım teklifini ev satın almaya benzetelim. Yalnızca evin fiyatına bakmazsınız; tapu kimin olacak, borç var mı, kullanım hakkı kimde, çıkarken nasıl satılacak diye de bakarsınız. Yatırımda değerleme evin fiyatıdır; aşağıdaki hükümler tapu ve kullanım şartlarıdır.
 
-12.1. Tasfiye imtiyazı
+### 12.1. Tasfiye imtiyazı
 
 Tasfiye imtiyazı / liquidation preference , şirket satıldığında veya tasfiye olduğunda paranın hangi sırayla dağıtılacağını belirleyen öncelik hakkıdır. “Yatırımcı yüzde 20 aldıysa satış bedelinin her durumda yüzde 20’sini alır” düşüncesi bu nedenle yanlıştır.
 
@@ -1200,7 +1211,7 @@ Yatırımcı önce 1 milyon dolarını alır, sonra kalan 9 milyon doların yüz
 
 Yatırımcı düşük exit’te 2 milyon doları önce alabilir. Kâğıt üzerindeki yüzde aynı olsa da ekonomik dağılım tamamen değişir.
 
-12.2. Anti-dilution
+### 12.2. Anti-dilution
 
 Şirket sonraki turu daha düşük fiyattan yaparsa eski yatırımcıyı korur.
 
@@ -1212,7 +1223,7 @@ Full ratchet: Eski yatırımcının fiyatını yeni düşük fiyata çekebilir; 
 
 Ağırlıklı ortalama yöntem , yeni turun büyüklüğünü ve eski/yeni hisse sayılarını hesaba katarak daha sınırlı bir düzeltme yapar. Full ratchet / tam mandal ise çok küçük miktarda ucuz hisse çıkarılmış olsa bile eski yatırımcının dönüşüm fiyatını yeni düşük fiyata kadar çekebilir. Bu nedenle kurucu açısından çok daha serttir.
 
-12.3. Yönetim ve veto hakları
+### 12.3. Yönetim ve veto hakları
 
 Yüzde 15 pay sahibi yatırımcı şu haklarla fiilî kontrol kazanabilir:
 
@@ -1232,7 +1243,7 @@ Yönetim kurulunda belirleyici koltuk.
 
 Koruyucu haklar ile günlük operasyon kontrolünü ayırmak gerekir.
 
-12.4. Kurucu vesting’i ve leaver hükümleri
+### 12.4. Kurucu vesting’i ve leaver hükümleri
 
 Kurucu erken ayrılırsa hak etmediği payların şirkete dönmesi makul olabilir. Ancak geçmiş emek yok sayılarak bütün kurucu payının sıfırdan dört yıla bağlanması adaletsiz olabilir.
 
@@ -1244,11 +1255,11 @@ Good leaver/bad leaver tanımları, geri alım fiyatı ve hangi olayın kötü a
 
 Benim bakış açıma göre: Kurucuyu şirkette tutmak için vesting mantıklıdır; kurucuyu yıllarca korkuyla çalıştırmak için belirsiz “bad leaver” maddeleri yazmak mantıklı değildir. Yatırımcı korunmalı, fakat kurucu da kendi kurduğu şirkette rehin hâline gelmemelidir.
 
-12.5. Kişisel kefalet ve zorunlu geri alım
+### 12.5. Kişisel kefalet ve zorunlu geri alım
 
 Klasik özsermaye yatırımında yatırımcı şirket riskine katlanır. “Şirket başarısız olursa yatırımı şahsen geri ödersin” hükmü ekonomik olarak yatırımı borca yaklaştırır. Kurucu için çok ağırdır.
 
-13. Yüksek değerleme neden her zaman iyi değildir?
+## 13. Yüksek değerleme neden her zaman iyi değildir?
 
 Nielsen, arkadaş-aile yatırımında gereğinden yüksek değerlemenin sonraki turda sorun yaratabileceğini anlatır: Şirket ilerlemiş olsa bile yeni turun hisse fiyatı önceki turdan düşük kalırsa ilk yatırımcı kendini aldatılmış hissedebilir. [Nielsen, 2017, ss. 76-81]
 
@@ -1278,7 +1289,7 @@ Aynı şirket ilk turu 4 milyon dolar pre-money ile kapatsaydı 18 ay sonra 15 m
 
 Ben en yüksek değeri değil, bir sonraki kaliteli turu ve sağlıklı exit’i mümkün kılan en yüksek savunulabilir değeri hedeflerim.
 
-14. Değerlemeyi artırmak için uygulanabilir yol haritası
+## 14. Değerlemeyi artırmak için uygulanabilir yol haritası
 
 İlk 90 gün: Varsayımı kanıta çevirme
 
@@ -1338,7 +1349,7 @@ Aşağıdan yukarı pazar hesabı yaparım.
 
 Değerleme bandını en az üç yöntemle kontrol ederim.
 
-15. Sektöre göre değer sürücüleri değişir
+## 15. Sektöre göre değer sürücüleri değişir
 
 Aynı metriği her şirkete uygulamak yanlıştır. Pazar yerinde işlem hacmi, SaaS’ta tekrar eden gelir, e-ticarette katkı marjı, sağlıkta klinik ve düzenleyici kanıt, donanımda üretilebilirlik öne çıkar. Aşağıdaki İngilizce terimlerin sade karşılıkları şöyledir:
 
@@ -1452,7 +1463,7 @@ Pilot müşteri,
 
 Sonraki sermaye ihtiyacı.
 
-16. Değerleme sunumunda bulunması gereken finansal dosyalar
+## 16. Değerleme sunumunda bulunması gereken finansal dosyalar
 
 Ben yatırımcıya yalnızca pitch deck göndermem. Aşağıdaki paketi hazırlarım:
 
@@ -1484,11 +1495,11 @@ Ben yatırımcıya yalnızca pitch deck göndermem. Aşağıdaki paketi hazırla
 
 40. Risk kayıt tablosu ve azaltma planı.
 
-17. Örnek tam pre-seed değerleme vakası
+## 17. Örnek tam pre-seed değerleme vakası
 
 Bir B2B yapay zekâ müşteri hizmetleri girişimi düşünelim.
 
-17.1. Mevcut durum
+### 17.1. Mevcut durum
 
 İki kurucu: biri sektör/satış, biri teknik.
 
@@ -1510,17 +1521,17 @@ Hedef runway 18 ay.
 
 Hedef: 100.000 $ MRR ve iki yabancı pazarda 20 müşteri.
 
-17.2. Piyasa çıpası
+### 17.2. Piyasa çıpası
 
 Benzer aşama işlemlerinden varsayımsal bandın 3-5 milyon dolar pre-money olduğunu kabul edelim.
 
-17.3. Kanıt skoru
+### 17.3. Kanıt skoru
 
 ![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQErFz6Wz2kfYQ/article-inline_image-shrink_1500_2232/B4DZ_RZugEKgAQ-/0/1785924610302?e=2147483647&v=beta&t=U04OsFL9J-mmKhGnYuZ0Apy6ppRE57sotNTfeGwqBls)
 
 Bu skor şirketi varsayımsal piyasa bandının orta-üst bölümüne taşır; fakat savunulabilirlik ve veri süresi üst sınırı kısıtlar.
 
-17.4. Seyrelme kontrolü
+### 17.4. Seyrelme kontrolü
 
 600.000 $ yatırım, 4 milyon $ pre-money: post-money 4,6 milyon; yatırımcı %13,04.
 
@@ -1528,7 +1539,7 @@ Bu skor şirketi varsayımsal piyasa bandının orta-üst bölümüne taşır; f
 
 600.000 $ yatırım, 5 milyon $ pre-money: post-money 5,6 milyon; yatırımcı %10,71.
 
-17.5. VC yöntemi kontrolü
+### 17.5. VC yöntemi kontrolü
 
 Beşinci yıl için:
 
@@ -1554,7 +1565,7 @@ Bugün gereken pay: %8 / %65 = %12,31
 
 İma edilen pre-money: 4,275 milyon $
 
-17.6. Sonuç bandım
+### 17.6. Sonuç bandım
 
 Savunma tabanı: 3,8 milyon $ pre-money
 
@@ -1566,7 +1577,7 @@ Ben bu şirkete “kesin değeri 4,35 milyon dolar” demem. Şunu derim:
 
 Mevcut kanıtlar, varsayımsal piyasa karşılaştırmaları ve yatırımcı getirisi geriye çözümü birlikte değerlendirildiğinde 4,25-4,5 milyon dolar pre-money savunulabilir bir pazarlık bandıdır. Üst sınır ancak rekabetçi tur veya stratejik yatırımcı katkısıyla anlamlıdır.
 
-17.7. Değeri altı ayda ne yükseltir?
+### 17.7. Değeri altı ayda ne yükseltir?
 
 MRR’nin 18 binden 40 bin dolara çıkması,
 
@@ -1582,53 +1593,53 @@ Satış kanalının tekrar edilebilirliğinin kanıtlanması,
 
 Üçüncü taraf modele rağmen özel veri/iş akışı savunmasının oluşması.
 
-18. Girişimcilerin yaptığı değerleme hataları
+## 18. Girişimcilerin yaptığı değerleme hataları
 
 Bu hataların çoğu matematik bilmemekten değil, kurucunun kendi hikâyesine âşık olup karşı kanıtı duymak istememesinden doğar. Özgüven girişimcilikte gereklidir; kanıtın yerine geçtiği anda tehlikelidir.
 
 Sert gerçek: “Ben bu projeye rahat 2 milyon dolar yatırım alırım” cümlesindeki “rahat” kelimesi çoğu zaman hazırlıksızlığın üzerini örter. Kimden, hangi değerlemede, hangi yüzdeyle, hangi kilometre taşı için, hangi yatırımcı tezine uyarak? Bu soruların cevabı yoksa ortada yatırım planı değil, temenni vardır.
 
-18.1. Yalnızca fikrin büyüklüğünden değer çıkarmak
+### 18.1. Yalnızca fikrin büyüklüğünden değer çıkarmak
 
 “Bu fikir dünyada yok” veya “herkes kullanır” değerleme değildir.
 
-18.2. TAM’in yüzde birini almak
+### 18.2. TAM’in yüzde birini almak
 
 Pazara erişim maliyeti, zaman ve rekabet yok sayılır.
 
-18.3. Gelecek ciroyu bugünkü değer sanmak
+### 18.3. Gelecek ciroyu bugünkü değer sanmak
 
 Beşinci yıl 10 milyon dolar ciro hedeflemek, bugünkü değerin 10 milyon dolar olduğu anlamına gelmez.
 
-18.4. Pre-money/post-money karıştırmak
+### 18.4. Pre-money/post-money karıştırmak
 
 Yatırım oranı yanlış hesaplanır.
 
-18.5. Gelecek seyrelmeyi unutmak
+### 18.5. Gelecek seyrelmeyi unutmak
 
 Yatırımcı çıkışta bugünkü payını koruyamayabilir; kurucu da kendi payını fazla tahmin eder.
 
-18.6. Opsiyon havuzunu görmezden gelmek
+### 18.6. Opsiyon havuzunu görmezden gelmek
 
 Term sheet’teki yüzde doğru görünür, kurucunun gerçek seyrelmesi daha yüksek çıkar.
 
-18.7. Geliri kalite ayrımı yapmadan kullanmak
+### 18.7. Geliri kalite ayrımı yapmadan kullanmak
 
 Tek seferlik hizmet geliri ile yüksek marjlı tekrarlayan ürün geliri aynı değildir.
 
-18.8. Yatırımcı değerini ücretsiz saymak
+### 18.8. Yatırımcı değerini ücretsiz saymak
 
 “Network getirir” sözü ölçülmezse yüksek payı haklı çıkarmaz.
 
-18.9. Yüzdeye bakıp sözleşme haklarını görmemek
+### 18.9. Yüzdeye bakıp sözleşme haklarını görmemek
 
 Küçük payla ağır veto, preference ve geri alım hakkı verilebilir.
 
-18.10. En yüksek değerlemeyi başarı sanmak
+### 18.10. En yüksek değerlemeyi başarı sanmak
 
 Değerleme ödül değil, gelecekte ispatlanması gereken fiyat beklentisidir.
 
-19. Yatırımcıya sormam gereken sorular
+## 19. Yatırımcıya sormam gereken sorular
 
 41. Bu yatırım kendi paranızdan mı, fondan mı yapılacak?
 
@@ -1666,7 +1677,7 @@ Değerleme ödül değil, gelecekte ispatlanması gereken fiyat beklentisidir.
 
 58. Yatırım dışında hangi somut katkıyı, hangi zaman içinde verebilirsiniz?
 
-20. Benim yatırım turu karar çerçevem
+## 20. Benim yatırım turu karar çerçevem
 
 Bir teklif geldiğinde yalnızca “kaç para, yüzde kaç?” diye bakmam.
 
@@ -1720,7 +1731,7 @@ Kurucuyla çalışma uyumu,
 
 Benim için ucuz para yalnızca yüksek değerlemeli para değildir. Şirketin önünü açan, bir sonraki kilometre taşını finanse eden, cap table’ı bozmayıp kaliteli takip sermayesini kolaylaştıran para ucuzdur.
 
-21. Sonuç: Değerleme bir iddia değil, kanıtlanmış risk azalmasıdır
+## 21. Sonuç: Değerleme bir iddia değil, kanıtlanmış risk azalmasıdır
 
 Ben girişimin değerini, kurucunun heyecanının parasal karşılığı olarak görmüyorum. Değer; gelecekte üretilebilecek nakit akımının, büyümenin, ekonomik getirinin ve çıkış ihtimalinin bugünden taşıdığı olasılık değeridir.
 
@@ -1772,11 +1783,11 @@ Bu kurallar yatırımcıya karşı düşmanlık değildir. İyi yatırımcı da 
 
 Benim son hükmüm: Bir girişimin değerini artırmanın en güvenilir yolu daha iddialı sunum hazırlamak değil, yatırımcının taşıdığı belirsizliği daha hızlı ve daha ucuza azaltmaktır.
 
-Ek A - Hızlı formül kartı
+## Ek A - Hızlı formül kartı
 
 ![Makale içi görsel](https://media.licdn.com/dms/image/v2/D4D12AQH7FB1El40VIg/article-inline_image-shrink_1000_1488/B4DZ_RZ_B0KgAI-/0/1785924677982?e=2147483647&v=beta&t=Gm95Mb05NgWDL-iazOrtGLHpKRnWRmvt83AU4BLDl3E)
 
-Ek B - Değerleme çalışma kâğıdı
+## Ek B - Değerleme çalışma kâğıdı
 
 Şirket ve tur
 

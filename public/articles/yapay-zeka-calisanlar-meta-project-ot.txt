@@ -28,7 +28,18 @@ Meta'nın son dönemde yaşadığı Project OT deneyi bence önümüzdeki birka�
 
 Ve sonuç pek de planlandığı gibi olmadı.
 
-Zuckerberg'in fikri aslında mantıksız değildi
+## Özet: Meta Project OT ve Yapay Zekâ Organizasyonu
+
+Meta’nın 2026 başında başlattığı Project OT (Organization Transformation) girişimi, klasik büyük ürün ekiplerini küçültüp yapay zekâ destekli “AI-native” pod yapılarına geçmeyi amaçladı. İç ölçümlerde kod üretimi %220 artsa da organizasyon dönüşümü, onay süreleri, bağlam eksikliği ve değişim yönetimi sorunları nedeniyle beklenen hızda gerçekleşmedi. Vaka, yapay zekânın tek tek görevleri (task) otomatikleştirirken bir rolün (job) bütünü için süreç tasarımı, kurumsal bağlam, denetim ve gerçek birim ekonomisi gerektirdiğini gösteriyor.
+
+| Otomasyon Seviyesi | İnsanın Rolü | Yapay Zekânın Rolü | Uygun İş Türü |
+| :--- | :--- | :--- | :--- |
+| 1. Copilot | Karar verir ve uygular | Öneri ve taslak üretir | Strateji, karmaşık analiz, yaratıcı karar |
+| 2. Human in the loop | Kontrol ve onay sağlar | İş akışını hazırlar | Kod inceleme (PR), müşteri yanıtı taslağı |
+| 3. Human on the loop | İstisnaları yönetir, izler | Karar verir ve uygular | Standart veri ve kural bazlı operasyonlar |
+| 4. Autonomous | Sistem seviyesi gözetim | Uçtan uca uygular ve doğrular | Tam tanımlı, geri döndürülebilir mikro süreçler |
+
+## Zuckerberg'in fikri aslında mantıksız değildi
 Reuters'ın 26 Ağustos 2026 tarihinde yayımladığı kapsamlı araştırmaya göre Meta yönetimi 2026 yılının başında Project OT – Organization Transformation adında oldukça radikal bir organizasyon dönüşümü üzerinde çalışmaya başladı.
 
 Amaç Meta'yı klasik anlamda AI kullanan bir şirket olmaktan çıkarıp “AI-native” bir organizasyona dönüştürmekti.
@@ -75,7 +86,7 @@ Buraya kadar Zuckerberg'e katılmamak zor.
 
 Sorun bundan sonra başlıyor.
 
-Kod %220 arttı, peki değer?
+## Kod üretimi %220 arttı, peki iş değeri nasıl etkilendi?
 Reuters'ın gördüğü Meta iç verilerindeki en çarpıcı sayı bence şu:
 
 Meta'nın iç yazılım platformları ve altyapısındaki code changes yıllık bazda %220 artıyor.
@@ -122,7 +133,7 @@ Ama output aynı oranda outcome üretmemiş.
 
 Benim için buradaki en önemli formül şu:
 
-Output ≠ Outcome ≠ Business Value
+### Output, Outcome ve İş Değeri Farkı
 
 Kod yazmak değer üretmek değildir.
 
@@ -138,7 +149,7 @@ Sistemin bir parçasını inanılmaz hızlandırıyorsunuz ama bütün sistem ay
 
 Çünkü bottleneck başka yerde.
 
-AI üretkenliği değil, hatayı da ölçeklendiriyor
+## AI yalnızca üretkenliği değil, hatayı da ölçeklendiriyor
 İşin daha ilginç kısmı bundan sonra geliyor.
 
 Meta'nın altyapı ekipleri Mart ayında AI kaynaklı kod artışının bazı reliability warning signs oluşturduğunu raporlamaya başlamış.
@@ -187,7 +198,7 @@ olmalı.
 
 Bu klasik yazılım geliştirmeden farklı bir risk yönetimi gerektiriyor.
 
-Asıl paradoks: Meta'nın AI agentları başka yerde inanılmaz başarılı
+## Asıl paradoks: Meta'nın AI agentları başka nerede başarılı?
 Project OT haberini çok daha ilginç yapan şey ise şu:
 
 Meta'nın AI agentları başarısız değil.
@@ -252,7 +263,7 @@ denmemiş.
 
 Bence Meta'nın başarısız Project OT deneyi ile başarılı Capacity Efficiency sistemi arasındaki fark bize AI'ın bugünkü kapasitesini çok iyi anlatıyor.
 
-AI'ın problemi bazen zekâ değil, şirketi tanımaması
+## AI'ın problemi bazen zekâ değil, şirketi tanımaması
 Meta'nın başka bir mühendislik çalışması bunu daha da güzel ortaya koyuyor.
 
 Meta AI agentları büyük bir data processing pipeline üzerinde kullanmak istiyor.
@@ -347,7 +358,7 @@ Bu yüzden benim gözümden geleceğin AI dönüşümü aslında biraz da:
 
 knowledge infrastructure dönüşümü.
 
-Bir task'ı otomatikleştirmek bir job'ı otomatikleştirmek değildir
+## Bir görevi (task) otomatikleştirmek bir işi (job) otomatikleştirmek değildir
 Bence Project OT'deki temel düşünce hatalarından biri burada olabilir.
 
 Bir software engineer'ın çok fazla kod yazdığı görülüyor.
@@ -428,7 +439,7 @@ Ama araştırmanın verdiği mesaj çok açık:
 
 Tek bir görevi mükemmel yapan agent ile bütün gün çalışan dijital employee aynı şey değil.
 
-AI insanların yerini almıyor demek de kendimizi kandırmak olur
+## Yapay zekâ dönüşümü nerede verim sağlıyor?
 Burada diğer uca da düşmek istemiyorum.
 
 “Bak Meta başaramadı, demek ki AI insanların yerini alamayacak.”
@@ -479,7 +490,7 @@ Bir çalışanın yaptığı işlerin %60'ını AI yapabiliyor → çalışanlar
 
 Çünkü o çalışanın kalan %40'ı şirket için ürettiği değerin %80'i olabilir.
 
-Growth tarafından baktığımda başka bir problem daha görüyorum: gerçek Unit Economics
+## Yapay zekâ dönüşümünde gerçek Unit Economics hesabı
 Şirketlerin AI dönüşümünü değerlendirirken yalnızca:
 
 kaç kişiyi azalttık?
@@ -546,7 +557,7 @@ AI da ancak bu denklemin tamamını iyileştiriyorsa optimizasyondur.
 
 Yalnızca payroll küçülüyorsa değil.
 
-Kötü sürece AI koyunca iyi süreç oluşmuyor
+## Kötü sürece yapay zekâ eklemek iyi süreç üretmiyor
 Deloitte'un 2026 araştırmalarındaki en dikkat çekici noktalardan biri de bu.
 
 Şirketlerin %84'ü AI'a uygun olacak şekilde işleri yeniden tasarlamamış durumda.
@@ -585,7 +596,7 @@ Aynı şey AI'da da geçerli.
 
 Broken Process × AI = Faster Broken Process
 
-Peki hangi işleri bugün AI'a bırakabiliriz?
+## Hangi işleri bugün yapay zekâya bırakabiliriz?
 Ben burada işleri dört gruba ayırırım.
 
 1. Copilot
@@ -662,7 +673,7 @@ Strategy artıyor.
 
 Decision rights değişiyor.
 
-Meta'nın hatası AI'a güvenmek değildi
+## Meta'nın asıl hatası: Teknoloji hazırlık seviyesi ve değişim yönetimi
 Bence Project OT'yi sadece bir Zuckerberg başarısızlığı olarak okumak da haksızlık olur.
 
 Çünkü denedikleri şey muhtemelen şirketlerin önümüzdeki beş-on yıl içerisinde yapmak zorunda kalacağı dönüşümün erken bir versiyonu.
@@ -717,7 +728,7 @@ sonra aynı çalışanlardan:
 
 demek change management açısından oldukça zor bir denklem.
 
-Benim çıkardığım sonuç
+## Sonuç: Süreç tasarımı, bağlam ve karar mimarisi
 Ben AI'ın insanları tamamen ikame edemeyeceğini düşünmüyorum.
 
 Bence edecek.

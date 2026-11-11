@@ -26,9 +26,21 @@ Steve Jobs insanların sahip olmak isteyeceği ürünleri yaratmak konusunda tar
 
 Tim Cook ise o ürünlerin yüz milyonlarca adet üretilebilmesini, dünyanın her yerine ulaştırılabilmesini ve bunu yaparken Apple’ın olağanüstü marjlar üretmesini sağlayan makineyi kurdu
 
-Bence Cook’un gerçek mirası tam olarak burada başlıyor
 
-Jobs Apple’a ruhunu verdi, Cook ise metabolizmasını kurdu
+## Özet: Tim Cook Dönemi Apple Bilançosu (2011–2026)
+
+Tim Cook, 2011’de Steve Jobs’tan yaklaşık 350 milyar dolar piyasa değeri ve 108 milyar dolar yıllık gelirle devraldığı Apple’ı; 2026 itibarıyla yaklaşık 4 trilyon dolar piyasa değerine, 416 milyar doların üzerinde yıllık gelire ve 2,5 milyarı aşan aktif cihaza taşıdı. Cook’un asıl mirası yalnızca donanım ya da marka gücü değil; tedarik zinciri, stok devri, ön ödemeli kapasite kontratları ve sermaye tahsisinde kurduğu küresel operasyon mimarisidir.
+
+| Gösterge | 2011 (Devir) | 2026 (Cook Dönemi Sonu) | Not / Kaynak |
+| :--- | :--- | :--- | :--- |
+| Piyasa Değeri | ~350 milyar $ | ~4 trilyon $ | +%2.000 üzeri değer artışı |
+| Yıllık Gelir | ~108 milyar $ | 416 milyar $+ | Donanım + 100B+ $ Services |
+| Aktif Cihaz Sayısı | Sınırlı iOS tabanı | 2,5 milyar+ cihaz | Yüksek ekosistem kilidi |
+| Hissedar Getirisi & Sevkiyat | — | 1T+ $ sermaye / ~3,1B iPhone | Financial Times verisi |
+
+## Cook’un Gerçek Mirası: Görünmeyen Operasyon Makinesi
+
+## Steve Jobs vs. Tim Cook: Ürün Ruhu ve Operasyon Metabolizması
 Steve Jobs ve Tim Cook’u aynı liderlik kriterleriyle değerlendirmek çok doğru değil
 
 Jobs bir ürün insanıydı
@@ -93,7 +105,7 @@ Jobs sürekli yeni talep alanları yaratıyordu
 
 Cook ise mevcut talebin etrafındaki ekonomiyi mükemmelleştirdi
 
-Asıl hikâye 2011’de değil 1998’de başladı
+## Asıl Hikâye 2011’de Değil, 1998 Tedarik Devriminde Başladı
 Tim Cook’un Apple üzerindeki etkisini anlamak için CEO olduğu 2011’e değil, Apple’a katıldığı 1998 yılına gitmek gerekiyor
 
 O dönemde Apple bugün bildiğimiz Apple değildi
@@ -364,7 +376,7 @@ Rekabet stratejisinin kendisidir
 
 Ve Cook bunu çok erken anlamıştı
 
-Apple tedarik zincirini yalnızca optimize etmedi, üzerinde güç kurdu
+## Apple Tedarik Zinciri Üzerinde Nasıl Stratejik Güç Kurdu?
 Burada paylaştığın 2025 tarihli Journal of Business Research çalışması bence Cook modelinin bugünkü halini anlamak açısından çok değerli
 
 Makale Apple tedarikçisi Goertek üzerinden Apple’ın global value chain içerisindeki gücünü inceliyor
@@ -450,7 +462,7 @@ cost + resilience + control + optionality
 
 haline geliyor
 
-Ama Cook’un kurduğu mükemmel makinenin bir paradoksu var
+## Çin ve Asya Tedarik Ekosisteminin Paradoksu
 Apple’ın Çin’de kurduğu üretim sistemi o kadar iyi optimize edildi ki aynı sistemi başka bir ülkeye taşımak son derece zor
 
 Bu Cook mirasının hem gücü hem zayıflığı
@@ -600,7 +612,7 @@ Apple Car için yaklaşık on yıl çalışıldı ve proje 2024’te iptal edild
 
 Vision Pro teknolojik anlamda inanılmaz bir mühendislik ürünü olmasına rağmen 3.500 dolar üzerindeki fiyatıyla henüz iPhone veya Apple Watch ölçeğinde bir tüketici kategorisi yaratamadı.
 
-Ve en önemlisi yapay zekâ
+## Cook Döneminde Yapay Zekâ ve İnovasyon Eleştirisi
 
 Reuters’ın nisan ayındaki Cook–Ternus geçişi haberinin daha ilk cümlelerinde Apple’ın AI konusunda geriden geldiğine vurgu yapması tesadüf değil
 
@@ -704,7 +716,7 @@ Bu yüzden Apple’ı yeniden mühendislik etti
 
 
 
-Şimdi John Ternus’un önündeki soru
+## Yeni CEO John Ternus’un Önündeki Sınav
 John Ternus kötü durumda bir Apple devralmıyor
 
 Tam tersine
@@ -749,7 +761,7 @@ Belki Apple’ın önündeki dönem yeniden ürün odaklı bir dönem olacak
 
 Bunu zaman gösterecek
 
-Tim Cook’un bana bıraktığı growth dersi
+## Tim Cook’un Büyüme ve Operasyon Stratejisi Dersi
 Ben Cook’un Apple tarihindeki yerini tek cümlede anlatmak zorunda olsaydım şöyle söylerdim
 
 Steve Jobs Apple’ın insanların neden isteyeceği ürünler yapacağını çözdü, Tim Cook ise o isteği dünyanın en verimli ekonomik makinelerinden birine çevirdi

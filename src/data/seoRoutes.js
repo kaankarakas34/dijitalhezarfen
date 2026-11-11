@@ -29,7 +29,7 @@ export const CORE_SEO_ROUTES = [
     path: '/',
     priority: '1.0',
     changefreq: 'daily',
-    title: 'Dijital Hezarfen | Girişimcilik Akademisi, Uygulama ve Medya Ekosistemi',
+    title: 'Dijital Hezarfen | Teknoloji, Finans & Girişimcilik',
     description:
       'Kaan Karakaş ve Haydar Karakaş imzalı derinlemesine teknoloji, finans ve girişimcilik analizleri; Akademi, Uygulama ve Büyüme & Yatırım ekosistemi.',
     h1: 'Dijital Hezarfen: Teknoloji, Finans ve Girişimcilik Yayınları',

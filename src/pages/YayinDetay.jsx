@@ -33,6 +33,15 @@ function setMetaAttribute(selector, attributes) {
   element.setAttribute('content', attributes.content);
 }
 
+function smartTrimMeta(text, maxLen = 158) {
+  if (!text) return '';
+  const clean = text.trim();
+  if (clean.length <= maxLen) return clean;
+  const sliced = clean.slice(0, maxLen - 1);
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${(lastSpace > 90 ? sliced.slice(0, lastSpace) : sliced).replace(/[,:;—-]+$/, '')}.`;
+}
+
 function setCanonical(url) {
   let element = document.head.querySelector('link[rel="canonical"]');
   if (!element) {
@@ -793,11 +802,12 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
     const canonicalUrl = `${siteBaseUrl}${articleMeta.path}`;
     const imageUrl = getAbsoluteImageUrl(articleMeta.image);
     const seoTitle = articleMeta.seoTitle || `${articleMeta.title} | ${siteName}`;
+    const metaDesc = smartTrimMeta(articleMeta.seoDesc || articleMeta.desc, 158);
 
     document.title = seoTitle;
     setCanonical(canonicalUrl);
 
-    setMetaAttribute('meta[name="description"]', { name: 'description', content: articleMeta.desc });
+    setMetaAttribute('meta[name="description"]', { name: 'description', content: metaDesc });
     setMetaAttribute('meta[name="author"]', { name: 'author', content: articleMeta.author });
     setMetaAttribute('meta[name="keywords"]', { name: 'keywords', content: articleMeta.keywords?.join(', ') || articleMeta.title });
     setMetaAttribute('meta[name="robots"]', { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' });
@@ -805,7 +815,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
     setMetaAttribute('meta[property="og:type"]', { property: 'og:type', content: 'article' });
     setMetaAttribute('meta[property="og:site_name"]', { property: 'og:site_name', content: siteName });
     setMetaAttribute('meta[property="og:title"]', { property: 'og:title', content: seoTitle });
-    setMetaAttribute('meta[property="og:description"]', { property: 'og:description', content: articleMeta.desc });
+    setMetaAttribute('meta[property="og:description"]', { property: 'og:description', content: metaDesc });
     setMetaAttribute('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
     setMetaAttribute('meta[property="og:image"]', { property: 'og:image', content: imageUrl });
     setMetaAttribute('meta[property="og:image:alt"]', { property: 'og:image:alt', content: articleMeta.imageAlt || articleMeta.title });

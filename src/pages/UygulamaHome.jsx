@@ -50,10 +50,14 @@ export default function UygulamaHome({ onOpenApplyModal, onNavigate }) {
           <h2 className="text-3xl font-extrabold text-white text-center font-sans mb-12">Hizmet Alanları & Örnek Çıktılar</h2>
           <div className="grid grid-cols-1 gap-4">
             {services.map((s, idx) => (
-              <div 
+              <a
                 key={idx}
+                href={s.path}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate(s.path);
+                }}
                 className="group p-6 rounded-2xl glass border border-white/5 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-cyan-500/20 transition-all cursor-pointer"
-                onClick={() => onNavigate(s.path)}
               >
                 <div className="space-y-2">
                   <h3 className="text-lg font-bold text-white group-hover:text-cyber-cyan transition-colors">{s.area}</h3>
@@ -61,11 +65,11 @@ export default function UygulamaHome({ onOpenApplyModal, onNavigate }) {
                     <strong className="text-gray-300">Örnek Çıktılar:</strong> {s.sample}
                   </p>
                 </div>
-                <button className="flex items-center gap-1.5 text-xs font-bold text-cyber-cyan group-hover:underline cursor-pointer shrink-0">
+                <span className="flex items-center gap-1.5 text-xs font-bold text-cyber-cyan group-hover:underline shrink-0">
                   <span>Hizmeti İncele</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
+                </span>
+              </a>
             ))}
           </div>
 

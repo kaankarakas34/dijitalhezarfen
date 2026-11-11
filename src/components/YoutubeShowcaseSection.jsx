@@ -101,7 +101,7 @@ export default function YoutubeShowcaseSection({ lang = 'tr', onNavigate }) {
 
               {featuredVideo.relatedSlug && (
                 <a
-                  href={`#/yayinlar/${featuredVideo.relatedSlug}`}
+                  href={`/yayinlar/${featuredVideo.relatedSlug}`}
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate?.(`/yayinlar/${featuredVideo.relatedSlug}`);

@@ -1,0 +1,542 @@
+# Dijital Hezarfen — Genişletilmiş İçerik ve Bilgi İndeksi (llms-full.txt)
+
+> Kaynak: https://www.dijitalhezarfen.com/
+> Güncelleme Tarihi: 2026-11-11
+> Yazarlar: Kaan Karakaş (Kurucu & Teknoloji Girişimcisi), Haydar Karakaş (Finansal & Mali Denetçi), Dijital Hezarfen Editör Ekibi
+
+## 1. Kurumsal Kimlik ve Çekirdek Sayfalar
+
+### Dijital Hezarfen: Teknoloji, Finans ve Girişimcilik Yayınları
+- URL: https://www.dijitalhezarfen.com/
+- Özet: Kaan Karakaş ve Haydar Karakaş imzalı derinlemesine teknoloji, finans ve girişimcilik analizleri; Akademi, Uygulama ve Büyüme & Yatırım ekosistemi.
+
+### Dijital Hezarfen Yayınları: Analizler, Rehberler ve Teknoloji Gündemi
+- URL: https://www.dijitalhezarfen.com/yayinlar
+- Özet: Yapay zekâ, finansal denetim, yazılım, growth stratejisi ve girişimcilik ekonomisi üzerine özgün dosya analizleri, haberler ve uygulama rehberleri.
+
+### Bilgiyi girişime, girişimi küresel büyümeye dönüştüren ekosistem
+- URL: https://www.dijitalhezarfen.com/dijital-hezarfen
+- Özet: Bilgiyi girişime, girişimi sürdürülebilir büyümeye dönüştüren bütünleşik akademi, yazılım & AI MVP uygulama ve yatırım hazırlık ekosistemi.
+
+### Farklı disiplinleri aynı büyüme hedefinde birleştiriyoruz
+- URL: https://www.dijitalhezarfen.com/hakkimizda
+- Özet: Dijital Hezarfen kurucu kadrosu, hezarfen yaklaşımı, vizyonumuz, misyonumuz ve girişimlere sunduğumuz somut değer.
+
+### Akademi: Öğrenmeden Üretime Geçiş Ekosistemi
+- URL: https://www.dijitalhezarfen.com/akademi
+- Özet: Teorinin ötesinde, gerçek vaka çalışmalarıyla kurucu refleksi kazandıran Girişimcilik Tüneli ve uygulamalı teknoloji, satış ve finans eğitimleri.
+
+### Girişimcilik Tüneli: Fikirden Çalışan Girişime Yoğun Program
+- URL: https://www.dijitalhezarfen.com/akademi/girisimcilik-tuneli
+- Özet: Fikir aşamasından çalışan ürüne ve ilk müşteriye uzanan 3-5 aylık uygulamalı Girişimcilik Tüneli müfredatı ve kabul kriterleri.
+
+### Modüler Eğitimler ve Uygulamalı Atölyeler
+- URL: https://www.dijitalhezarfen.com/akademi/egitimler
+- Özet: Girişimciler ve şirket ekipleri için özelleştirilmiş yazılım, yapay zekâ, B2B satış, finansal modelleme ve yönetim eğitim modülleri.
+
+### Pazarlama, Büyüme ve B2B Satış Akademi Modülleri
+- URL: https://www.dijitalhezarfen.com/akademi/pazarlama-satis
+- Özet: Dijital pazarlama hunileri, marka konumlandırma, B2B satış pipeline yönetimi ve büyüme metrikleri üzerine uygulamalı eğitimler.
+
+### Teknoloji, Yazılım ve Yapay Zekâ Akademi Modülleri
+- URL: https://www.dijitalhezarfen.com/akademi/teknoloji-yapay-zeka
+- Özet: Yapay zekâ destekli ürün geliştirme, LLM iş akışları, otomasyon sistemleri ve teknik mimari okuryazarlığı eğitimleri.
+
+### Finans, Hukuk ve Yönetim Akademi Modülleri
+- URL: https://www.dijitalhezarfen.com/akademi/finans-hukuk-yonetim
+- Özet: Girişimler için birim ekonomisi, nakit akışı yönetimi, şirketleşme hukuku, paydaş sözleşmeleri ve ekip liderliği eğitimleri.
+
+### Kurumsal Akademi ve Kurum İçi Girişimcilik
+- URL: https://www.dijitalhezarfen.com/akademi/kurumsal
+- Özet: Şirket içi girişimcilik (intrapreneurship), AI adaptasyonu ve yönetici geliştirme programları.
+
+### Uygulama: Fikirden Çalışan Sisteme Ortak Üretim
+- URL: https://www.dijitalhezarfen.com/uygulama
+- Özet: Girişimlerin yanında bizzat inşa eden ekip: yazılım ve AI MVP geliştirme, otomasyon, büyüme pazarlaması, B2B satış, CRM ve finans altyapısı.
+
+### Yazılım & Yapay Zekâ Destekli MVP Geliştirme
+- URL: https://www.dijitalhezarfen.com/uygulama/yazilim-mvp
+- Özet: Hızlı doğrulama odaklı web, mobil, SaaS ve yapay zekâ destekli çalışan MVP geliştirme hizmeti.
+
+### Yapay Zekâ Ajanları ve Süreç Otomasyonu
+- URL: https://www.dijitalhezarfen.com/uygulama/yapay-zeka-otomasyon
+- Özet: LLM ajanları, WhatsApp/CRM otomasyonları ve operasyonel iş akışı entegrasyonları ile verimlilik mimarisi.
+
+### Dijital Pazarlama ve Sürdürülebilir Growth Altyapısı
+- URL: https://www.dijitalhezarfen.com/uygulama/dijital-pazarlama-growth
+- Özet: Veriye dayalı müşteri kazanımı, SEO/GEO büyümesi, performans kampanyaları ve içerik hunisi kurulumu.
+
+### B2B Satış Süreçleri ve CRM Operasyonları
+- URL: https://www.dijitalhezarfen.com/uygulama/satis-crm
+- Özet: Gelir operasyonları (RevOps), pipeline yönetimi, CRM kurulumu ve tekrarlanabilir B2B satış süreçleri.
+
+### Finansal Disiplin ve Hukuki Altyapı Hazırlığı
+- URL: https://www.dijitalhezarfen.com/uygulama/finans-hukuk
+- Özet: Birim ekonomisi, bütçe ve nakit akışı modelleme ile yatırım ve ticari sözleşme süreçleri için yapılandırma.
+
+### Yönetim, Liderlik ve Organizasyon Mimarisi
+- URL: https://www.dijitalhezarfen.com/uygulama/yonetim-organizasyon
+- Özet: OKR sistemleri, ekip yapılanması, rol tanımları ve ölçeklenme dönemi yönetim altyapısı.
+
+### Marka Tasarımı ve Stratejik Medya Üretimi
+- URL: https://www.dijitalhezarfen.com/uygulama/medya-tasarim
+- Özet: Kurumsal kimlik, ürün arayüz tasarımı, dijital yayın ve video içerik üretim sistemleri.
+
+### Büyüme & Yatırım: Ölçekten Küresel Pazara Geçiş
+- URL: https://www.dijitalhezarfen.com/buyume-yatirim
+- Özet: Girişimleri finansal modelleme, pitch deck kurgusu, yatırımcı eşleştirmeleri ve uluslararası pazar açılımıyla bir sonraki faza hazırlıyoruz.
+
+### Yatırıma Hazırlık: Veri Odası, Değerleme ve Mock Pitch
+- URL: https://www.dijitalhezarfen.com/buyume-yatirim/yatirima-hazirlik
+- Özet: Melek yatırımcı ve VC fon görüşmeleri öncesinde finansal model, veri odası, hikâye kurgusu ve mock pitch hazırlığı.
+
+### Uluslararasılaşma ve Küresel Pazarlara Açılım
+- URL: https://www.dijitalhezarfen.com/buyume-yatirim/uluslararasilasma
+- Özet: Türk girişimlerinin Avrupa, MENA ve ABD pazarlarına açılım stratejileri, konumlandırma ve ilk küresel müşteri kanalları.
+
+### Girişim Aşamanıza Özel Bütünleşik Destek Modeli
+- URL: https://www.dijitalhezarfen.com/girisimler
+- Özet: Fikir aşamasından Pre-Seed, Seed, Series A ve Scale-up evrelerine kadar girişiminizin bugünkü aşamasına özel destek mimarisi.
+
+### Fikir Aşaması: Problem Keşfi ve İş Modeli Doğrulama
+- URL: https://www.dijitalhezarfen.com/girisimler/fikir-asamasi
+- Özet: Fikirden ilk müşteri doğrulamasına ve çalışan MVP’ye giden en güvenli yol haritası.
+
+### Pre-Seed Aşaması: İlk Müşteri ve Pazar Uyumu
+- URL: https://www.dijitalhezarfen.com/girisimler/pre-seed
+- Özet: Çalışan ürüne sahip erken aşama girişimler için müşteri edinme ve ilk yatırım turu hazırlığı.
+
+### Seed Aşaması: Tekrarlanabilir Gelir ve Organizasyon
+- URL: https://www.dijitalhezarfen.com/girisimler/seed
+- Özet: Product-Market Fit sonrası satış hunisi, ekip kurulumu ve ölçeklenebilir gelir büyümesi.
+
+### Series A ve Sonrası: Ölçeklenen Sistem ve Strateji
+- URL: https://www.dijitalhezarfen.com/girisimler/series-a-ve-sonrasi
+- Özet: Büyüme evresindeki şirketler için ileri RevOps, yönetim sistemleri ve sınır ötesi açılım.
+
+### Scale-up: Yapay Zekâ Destekli Operasyon ve Küresel Ölçek
+- URL: https://www.dijitalhezarfen.com/girisimler/scale-up
+- Özet: Hızlı ölçeklenen şirketler için AI verimlilik dönüşümü ve uluslararası büyüme hızlandırması.
+
+### Kurumsal İş Birlikleri ve Kurum İçi Dönüşüm
+- URL: https://www.dijitalhezarfen.com/kurumsal
+- Özet: Kurumlar için açık inovasyon, girişim stüdyosu iş birlikleri, AI dönüşüm atölyeleri ve sponsorlu hızlandırma programları.
+
+### Dijital Hezarfen Medya: Video Analizler ve Strateji Yayınları
+- URL: https://www.dijitalhezarfen.com/medya
+- Özet: Dijital Hezarfen YouTube kanalındaki vaka analizleri, strateji değerlendirmeleri, girişimcilik dosyaları ve medya serileri.
+
+### Dijital Hezarfen İletişim ve Başvuru Kanalları
+- URL: https://www.dijitalhezarfen.com/iletisim
+- Özet: Dijital Hezarfen ekibiyle akademi, uygulama hizmetleri, kurumsal iş birlikleri veya yayınlar hakkında doğrudan iletişime geçin.
+
+### Dijital Hezarfen Hakkında Sık Sorulan Sorular
+- URL: https://www.dijitalhezarfen.com/sik-sorulan-sorular
+- Özet: Girişimcilik Tüneli, eğitimler, AI MVP geliştirme, ücretlendirme, yatırım hazırlığı ve çalışma modeli hakkında tüm soruların yanıtları.
+
+### Dijital Hezarfen Ekosistemine Başvur
+- URL: https://www.dijitalhezarfen.com/basvur
+- Özet: Girişiminiz, iş birliği talebiniz veya Akademi/Uygulama programları için online başvuru adımları.
+
+### Girişimciler İçin Açık Kaynak Araç Kütüphanesi
+- URL: https://www.dijitalhezarfen.com/acik-kaynak-kutuphanesi
+- Özet: Girişimciler ve ekipler için yapay zekâ, otomasyon, yazılım geliştirme, pazarlama ve analiz alanında derlenmiş açık kaynak araç kütüphanesi.
+
+## 2. Yayınlar Kataloğu (40 Tam Makale)
+
+### WhatsApp'ta Kendi Yapay Zekâ Botunu Kur: Kapso, Codex ve Claude Code Rehberi
+- URL: https://www.dijitalhezarfen.com/yayinlar/kapso-whatsapp-chatbot-codex-claude-code-kurulum
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-04T12:00:00+03:00
+- Okuma Süresi: 8 dk okuma
+- Özet: Kapso ile WhatsApp botu nasıl kurulur? Ücretsiz başlangıç paketi, Codex ve Claude Code MCP bağlantısı, 7/24 çalışan ajan mimarisi, Meta ücretleri ve video rehberleri.
+- Anahtar Kelimeler: Kapso, WhatsApp chatbot, WhatsApp AI agent, Codex, Claude Code, MCP, WhatsApp otomasyon, Meta Cloud API, yapay zeka asistanı
+
+### Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor
+- URL: https://www.dijitalhezarfen.com/yayinlar/google-ai-mode-reklamlari-arama-ekonomisi
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Google, AI Mode reklamlarını yeni ülkelere açarak arama ekonomisinin geleceğini konuşma tabanlı deneyimlerde arıyor. Arama artık birkaç kelimelik sorgudan ibaret değil.
+- Anahtar Kelimeler: Google AI Mode reklamlari, arama ekonomisi, GEO, SEO, dijital pazarlama, konusma tabanli arama
+
+### Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür?
+- URL: https://www.dijitalhezarfen.com/yayinlar/microsoft-openai-10-milyar-dolar-gelir
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Microsoft’un OpenAI ile ticari ilişkilerinden elde ettiği gelir, yapay zekâ ortaklıklarının ne kadar karmaşık bir ekonomiye dönüştüğünü gösteriyor. Klasik yatırım ilişkisi yerini karşılıklı bağımlılığa bırakıyor.
+- Anahtar Kelimeler: Microsoft OpenAI gelir, yapay zeka ekonomisi, bulut altyapisi, stratejik ortaklik, musteri yogunlasmasi
+
+### SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/sap-model-routing-ai-maliyet-optimizasyonu
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Kurumsal yapay zekâda başarı, en büyük modeli her işte çalıştırmak değil; doğru işi doğru maliyetle tamamlamak olabilir. Bir müşteri faturasının sınıflandırılması ile tedarik zinciri problemi aynı modeli gerektirmez.
+- Anahtar Kelimeler: SAP model routing, AI maliyet optimizasyonu, kurumsal yazilim, birim ekonomi, token maliyeti
+
+### Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde?
+- URL: https://www.dijitalhezarfen.com/yayinlar/nvidia-hugging-face-satin-alma-rekabet
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Nvidia’nın Hugging Face’i satın alma anlaşması, açık modellerin dağıtımında güç yoğunlaşması tartışmasını yeniden açtı. Hugging Face’in değeri yalnızca barındırdığı dosyalarda değil, ekosisteminde.
+- Anahtar Kelimeler: Nvidia Hugging Face, acik kaynak yapay zeka, rekabet incelemesi, AI dagitim kanali, platform bagimliligi
+
+### Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı?
+- URL: https://www.dijitalhezarfen.com/yayinlar/upwind-400-milyon-dolar-bulut-guvenligi
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Bulut güvenliğinde yeni yatırımlar, çalışan yazılımı izleme ihtiyacının büyüdüğünü gösteriyor. Güvenlik yalnızca kod yazılırken yapılan testlerden ibaret değil.
+- Anahtar Kelimeler: Upwind 400 milyon dolar, bulut guvenligi, Series C yatirim, runtime security, AI ajan guvenligi
+
+### Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/guidewire-hyperexponential-sigorta-yapay-zeka
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Sigorta fiyatlandırma yazılımlarına yapılan büyük yatırımlar, dikey yazılımın ekonomik değerini yeniden hatırlatıyor. Bir sigorta teklifinin arkasında onlarca değişken ve risk modeli bulunuyor.
+- Anahtar Kelimeler: Guidewire Hyperexponential, InsurTech, sigorta yapay zeka, dikey yazilim, risk fiyatlandirma
+
+### Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı?
+- URL: https://www.dijitalhezarfen.com/yayinlar/rebuild-venture-studio-ileri-uretim
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Re:Build’in yeni finansmanı, girişim kurma becerisinin üretim altyapısıyla birleşebileceğini gösteriyor. Yazılım girişimi kurarken bulut altyapısı kiralayabilirsiniz; fiziksel üretimde ise ortak altyapı kritik.
+- Anahtar Kelimeler: ReBuild Manufacturing, venture studio, ileri uretim, endustriyel girisimcilik, donanim girisimi
+
+### Jio Platforms: Önce dağıtım, sonra dijital ekosistem
+- URL: https://www.dijitalhezarfen.com/yayinlar/jio-platforms-halka-arz-platform-ekonomisi
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Jio’nun halka arzı, altyapı ve müşteri erişiminin nasıl çok ürünlü bir platforma dönüşebildiğini tartışmaya açıyor. İnternet bağlantısı başlangıçta tek başına bir ürün gibi görünür.
+- Anahtar Kelimeler: Jio Platforms halka arz, platform ekonomisi, dagitim agi, dijital ekosistem, musteri edinme maliyeti
+
+### Nükleer enerji neden yapay zekâ şirketlerinin gündeminde?
+- URL: https://www.dijitalhezarfen.com/yayinlar/ai-veri-merkezleri-nukleer-enerji
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: AI veri merkezlerinin elektrik talebi, mevcut nükleer santrallerin modernizasyonunu teknoloji gündeminin merkezine taşıyor. Bir veri merkezinin ekonomik değeri yalnızca işlemci sayısıyla ölçülemez.
+- Anahtar Kelimeler: AI veri merkezleri nukleer enerji, Constellation Energy, elektrik talebi, veri merkezi altyapisi, enerji teknolojileri
+
+### Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek
+- URL: https://www.dijitalhezarfen.com/yayinlar/samsung-hbm-yapay-zeka-bellek
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Yapay zekâ altyapısında işlemci kadar bellek teknolojileri de rekabeti belirliyor. Büyük modeller yalnızca hesaplama birimi kullanmıyor; verinin hızlı taşınmasına ve yeterli belleğe ihtiyaç duyuyor.
+- Anahtar Kelimeler: Samsung HBM, yuksek bant genislikli bellek, yapay zeka cipleri, yari iletken, bellek darbogazi
+
+### Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/unitree-robotik-buyume-karlilik
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Robotik sektörünün gerçek sınavı etkileyici gösterilerden sürdürülebilir birim ekonomiye geçmek. Robot üretmek; tedarik zinciri, fiziksel güvenlik, servis ağı ve donanım geliştirme gerektirir.
+- Anahtar Kelimeler: Unitree robotik, insansi robot, robotik birim ekonomi, donanim karliligi, endustriyel robot
+
+### Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi
+- URL: https://www.dijitalhezarfen.com/yayinlar/nvidia-nemotron-sesli-yapay-zeka
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Çok dilli konuşma teknolojileri, sesli AI ürünlerinin maliyet ve dağıtım seçeneklerini genişletiyor. Sesli AI sistemlerinde konuşma tanıma, dil anlama, yanıt üretme ve konuşma sentezi farklı katmanlar.
+- Anahtar Kelimeler: Nvidia Nemotron, sesli yapay zeka, Voice AI, cok dilli transkripsiyon, acik agirlikli modeller
+
+### Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor
+- URL: https://www.dijitalhezarfen.com/yayinlar/harmonic-aristotle-formal-verification
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Kod yazan AI kadar, yazılan kodun belirli koşullarda doğru olduğunu kanıtlayan sistemler de önem kazanıyor. Üretken modeller çoğu zaman çalışır görünen kod üretebiliyor.
+- Anahtar Kelimeler: Harmonic Aristotle, formal verification, bicimsel dogrulama, kod dogrulama, Verilog C dogrulama
+
+### GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi?
+- URL: https://www.dijitalhezarfen.com/yayinlar/gsk-onkoloji-klinik-arastirma-stratejisi
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: İlaç şirketlerinin araştırma portföylerini genişletmesi, bilimsel fırsatlarla ticari riskin birlikte yönetildiğini gösteriyor. Biyoteknolojide bir programın başarılı olması yıllar sürebilir.
+- Anahtar Kelimeler: GSK onkoloji, klinik arastirma, biyoteknoloji yatirimlari, ilac gelistirme, kanser arastirmalari
+
+### Lush sosyal medya reklamlarını bırakınca ne oldu?
+- URL: https://www.dijitalhezarfen.com/yayinlar/lush-sosyal-medya-reklamsiz-marka-stratejisi
+- Yazar: Dijital Hezarfen
+- Yayın Tarihi: 2026-11-02T13:15:00+03:00
+- Okuma Süresi: 4 dk okuma
+- Özet: Lush örneği, markanın müşteriye ulaşma kanalını kimin kontrol ettiği sorusunu yeniden gündeme getiriyor. Sosyal platformlar büyümeyi hızlandırabilir ama müşteri ilişkisini algoritmaya bağımlı kılabilir.
+- Anahtar Kelimeler: Lush sosyal medya stratejisi, reklamsiz marka buyumesi, dogrudan musteri kanallari, marka sadakati, musteri edinimi
+
+### Meta’nın 145 Milyar Dolarlık Bahsi: Yapay Zekâya Harcanan Para Ne Zaman Geri Dönecek?
+- URL: https://www.dijitalhezarfen.com/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T09:00:00+03:00
+- Okuma Süresi: 6 dk okuma
+- Özet: Meta, 2026 sermaye harcamasını 145 milyar dolara taşırken serbest nakit akışı eksiye düştü. Yapay zekâ altyapısında sermaye verimliliği ve getiri süresi masada.
+- Anahtar Kelimeler: Meta CapEx, yapay zeka yatirimlari, sermaye verimliligi, Mark Zuckerberg, serbest nakit akisi, AI altyapi maliyeti, GPU veri merkezi
+
+### LSEG Neden 3,54 Milyar Dolara Veri Satın Alıyor? Yapay Zekâ Çağında Asıl Rekabet Avantajı
+- URL: https://www.dijitalhezarfen.com/yayinlar/lseg-octus-ozel-veri-ai
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T09:15:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: London Stock Exchange Group'un Octus'u 3,54 milyar dolara alması, AI çağında asıl kalıcı avantajın modellerde değil, tescilli özel veride olduğunu kanıtlıyor.
+- Anahtar Kelimeler: LSEG Octus satin alma, ozel veri yapay zeka, proprietary data, finansal veri analizi, Permira LSEG, AI rekabet avantaji, ozel kredi verisi
+
+### Nebius’un 3,5 Milyar Dolarlık Kredisi: AI Startup’ları Neden Altyapı Şirketine Dönüşüyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/nebius-ai-veri-merkezi-finansmani
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T09:30:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Nebius'un Citi ile 3,5 milyar dolarlık finansman anlaşması, GPU bulut girişimlerinin yazılım şirketinden çok sermaye yoğun altyapı operatörüne dönüştüğünü gösteriyor.
+- Anahtar Kelimeler: Nebius Citi kredi, AI veri merkezi finansmani, Neocloud GPU, hesaplama kapasitesi, borclanma maliyeti, GPU bulut altyapisi
+
+### Bir Yaşındaki AI Laboratuvarına 1 Milyar Dolar: Yatırımcılar Ne Satın Alıyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/flapping-airplanes-bir-milyar-dolar-yatirim
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T09:45:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Henüz bir yaşındaki araştırma laboratuvarı Flapping Airplanes'in 6 milyar dolar değerlemeyle aldığı 1 milyar dolar, model verimliliği arayışını zirveye taşıdı.
+- Anahtar Kelimeler: Flapping Airplanes yatirim, AI laboratuvari degerleme, hesaplama verimliligi, erken asama AI girisimi, venture capital AI, model egitim ekonomisi
+
+### Mach9’un Pivotu: Robot Yapmak Yerine Robotların Topladığı Veriyi Satmak
+- URL: https://www.dijitalhezarfen.com/yayinlar/mach9-ai-cad-pivot
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T10:00:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Mach9, robotik donanımdan LiDAR verilerini AI ile CAD mühendislik çizimlerine dönüştüren yazılıma odaklanarak 34 milyon dolarlık Seri A yatırımını tamamladı.
+- Anahtar Kelimeler: Mach9 pivot, LiDAR AI CAD, dikey yapay zeka, muhendislik cizim otomasyonu, Series A yatirim, donanimdan yazilima pivot
+
+### Nvidia OpenShell: AI Ajanları Şirketinize Girdiğinde Güvenlik Nasıl Değişecek?
+- URL: https://www.dijitalhezarfen.com/yayinlar/nvidia-openshell-ai-agent-guvenligi
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T10:15:00+03:00
+- Okuma Süresi: 6 dk okuma
+- Özet: Nvidia'nın OpenShell mimarisi, kurumsal süreçlerde özerk hareket eden yapay zekâ ajanları için yetkilendirme, işlem denetimi ve donanım destekli güvenlik getiriyor.
+- Anahtar Kelimeler: Nvidia OpenShell, AI agent guvenligi, otonom ajan denetimi, kurumsal yapay zeka guvenlik, donanim tabanli yetkilendirme, rollback mimarisi
+
+### Humanoid Robotlar İçin Android Benzeri Bir Platform mu Doğuyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/nvidia-agile-robots-humanoid-platform
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T10:30:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Nvidia'nın Isaac platformu ve Agile Robots ortaklığı, humanoid robotik alanında Android benzeri standart bir geliştirme ve simülasyon ekosistemi yaratıyor.
+- Anahtar Kelimeler: Nvidia Isaac Agile Robots, humanoid robot platformu, fiziksel yapay zeka, robot isletim sistemi, robotik simulasyon donanimi
+
+### Yapay Zekânın Önündeki Engel Çip Değil, Elektrik Kablosu Olabilir
+- URL: https://www.dijitalhezarfen.com/yayinlar/ai-veri-merkezi-elektrik-kablo-darbogazi
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T10:45:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Kablo üreticisi Nexans'ın uyarısıyla gündeme gelen altyapı krizi, AI veri merkezlerinin büyüme hızının çip tedarikinden önce elektrik şebekesine takıldığını kanıtlıyor.
+- Anahtar Kelimeler: Nexans kablo darbogazi, AI veri merkezi elektrik, enerji sebeke baglantisi, trafo orta gerilim, fiziksel altyapi kisiti
+
+### Target’ın AI Alışveriş Asistanı: E-Ticarette Arama Kutusunun Sonrası
+- URL: https://www.dijitalhezarfen.com/yayinlar/target-ask-target-ai-alisveris
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T11:00:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Target'ın devreye aldığı Ask Target asistanı, e-ticarette anahtar kelime aramasının yerini ihtiyaç odaklı diyalog ve satın alma eşlikçiliğinin aldığını gösteriyor.
+- Anahtar Kelimeler: Target Ask Target, e-ticaret yapay zeka, intent based shopping, diyalogsal ticaret, arama kutusu sonrasi, katalog veri yapilandirma
+
+### Walmart Connect ve Ajansların Geleceği: Reklamverenle İlişki Kimin?
+- URL: https://www.dijitalhezarfen.com/yayinlar/walmart-connect-ajanslar-reklam-olcumleme
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T11:15:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Walmart Connect'in doğrudan markalara etki ölçümlemesi sunması, perakende medya ağlarında reklam ajanslarının aracılık gücünü ve katma değerini sorgulatıyor.
+- Anahtar Kelimeler: Walmart Connect ajanslar, retail media network, marka etki olcumlemesi, medya planlama, artimli satis analizi, reklamveren iliskisi
+
+### CNN Reklam Alanını AI Ajanlarına Sattığında Medya Satın Alma Nasıl Değişecek?
+- URL: https://www.dijitalhezarfen.com/yayinlar/cnn-agentic-advertising
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T11:30:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: CNN International'ın 2027 başında devreye almayı planladığı ajan tabanlı reklam sistemi, teklif verme, pazarlık ve envanter satın almayı özerk botlara devrediyor.
+- Anahtar Kelimeler: CNN agentic advertising, otonom medya satin alma, agent to agent reklam, programatik reklam devrimi, reklam envanteri otomasyonu
+
+### Kişiye Özel mRNA Kanser Tedavisinde %42: Rakam Gerçekte Ne Anlatıyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/moderna-merck-mrna-melanom-faz-3
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T11:45:00+03:00
+- Okuma Süresi: 6 dk okuma
+- Özet: Moderna ve Merck'in melanom Faz 3 çalışmasındaki %42'lik göreli risk azalması, kişiselleştirilmiş neoantijen onkolojisinin klinik ve ticari geleceğini açığa çıkarıyor.
+- Anahtar Kelimeler: Moderna Merck mRNA kanser, melanom Faz 3, Keytruda kombinasyonu, goreli risk azalmasi, kisisellestirilmis onkoloji, neoantijen asisi
+
+### Gilead’ın 1,275 Milyar Dolarlık Erken Aşama Bahsi: İlaç mı, Teknoloji mi?
+- URL: https://www.dijitalhezarfen.com/yayinlar/gilead-pepstar-ilac-teknoloji-satin-alma
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T12:00:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: Gilead'ın PepStar'ın erken klinik aşamadaki oral IL-23 programını 1,275 milyar dolara alması, ilaç devlerinin bilimsel platform satın alma stratejisini yansıtıyor.
+- Anahtar Kelimeler: Gilead PepStar satin alma, oral IL-23 inhibitoru, erken klinik asama biyoteknoloji, ilac sirketi degerlemesi, patent portfoy stratejisi
+
+### Doktor Gibi Adım Adım Düşünen AI: Tıbbi Yapay Zekâda Yeni Eşik
+- URL: https://www.dijitalhezarfen.com/yayinlar/microsoft-ai-teshis-sirali-akil-yurutme
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T12:15:00+03:00
+- Okuma Süresi: 6 dk okuma
+- Özet: Microsoft araştırmacılarının geliştirdiği sıralı akıl yürütme tanı AI'ı, sağlıkta tek seferlik tahmin yerine hekimler gibi aşamalı test ve soru sorma yöntemini getiriyor.
+- Anahtar Kelimeler: Microsoft sirali akil yurutme, tibbi yapay zeka teshis, klinik karar destek, aciklanabilir AI, hekim tanı simülasyonu
+
+### ABD’nin Çin Teknoloji Yatırımlarına Yeni Freni: Startup Sermayesi Jeopolitiğe Bağlanıyor
+- URL: https://www.dijitalhezarfen.com/yayinlar/abd-cin-teknoloji-yatirim-kisitlamalari
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-23T12:30:00+03:00
+- Okuma Süresi: 5 dk okuma
+- Özet: ABD Hazine Bakanlığı'nın yayımladığı dış yatırım düzenlemeleri; AI, kuantum ve yarı iletkenlerde sermaye akışlarını doğrudan ulusal güvenlik denetimine bağlıyor.
+- Anahtar Kelimeler: ABD Cin teknoloji kisitlamasi, ABD Hazine Bakanligi outbound investment, yari iletken kuantum AI ihrac, jeopolitik risk, startup sermaye jeopolitigi
+
+### ENRON: Kârın, Nakdin ve Güvenin Denetimi
+- URL: https://www.dijitalhezarfen.com/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi
+- Yazar: Haydar Karakaş
+- Yayın Tarihi: 2026-10-04T09:00:00+03:00
+- Okuma Süresi: 28 dk okuma
+- Özet: Bir şirketin ne kadar büyük göründüğünden önce, kazancının nasıl oluştuğuna, nakdinin nereden geldiğine ve riskinin kimin üzerinde kaldığına bakarım. Finansal ve mali denetçi Haydar Karakaş’tan kapsamlı Enron vaka analizi.
+- Anahtar Kelimeler: Enron skandali, Haydar Karakas, finansal denetim, bagimsiz denetim, mark to market muhasebe, prepay emtia kredisi, SPE ozel amacli sirketler, Chewco JEDI LJM Raptor, Arthur Andersen denetim zaafi, Sarbanes Oxley Act, faaliyet nakit akisi analizi, kar kalitesi sorgulama, bilanco disi borclar, Sherron Watkins, adli muhasebe forensic audit
+
+### Bir Sonraki Eşiniz Bir Humanoid Olabilir mi?
+- URL: https://www.dijitalhezarfen.com/yayinlar/bir-sonraki-esiniz-humanoid-olabilir
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-10-04T10:00:00+03:00
+- Okuma Süresi: 16 dk okuma
+- Özet: Hayalinizdeki eşi yapay zekâ size verebilse, ister miydiniz? Yanınızda yaşayan, sizi dinleyen, dokunabildiğiniz bir humanoid... Peki ya size gerçekten "hayır" diyebilmesini de ister miydiniz? Kaan Karakaş’tan samimi ve derinlikli bir düşünce deneyi.
+- Anahtar Kelimeler: humanoid partner, yapay zeka partner, Eva humanoid, yapay zeka ask, bilinc ve qualia, sycophancy yapay zeka, dijital fenotipleme, bipolar bozukluk AI, psikoz ve yapay zeka, hedonik adaptasyon, Matrix cennet modeli, oznel deneyim, Therabot NEJM, AI companions yasi
+
+### Bilgisayar Kavramı Değişiyor: Operating System’dan Intelligence System’a
+- URL: https://www.dijitalhezarfen.com/yayinlar/bilgisayar-kavrami-degisiyor
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-09-23T09:00:00+03:00
+- Okuma Süresi: 22 dk okuma
+- Özet: Googlebook lansmanı, Gartner’ın Agentic AI PC analizi, Microsoft AgentOS ve Apple’ın yerel compute hamlesi ışığında: Bilgisayar küçülmüyor, donanımdan görünmez bir kişisel zeka ağına (Personal Intelligence) dönüşüyor.
+- Anahtar Kelimeler: Googlebook, Gemini Intelligence, Agentic AI PC, Personal Intelligence, Personal Compute Network, Intent-Based Computing, No-interface bilgisayar, Agentic Arbitrage, AgentOS, Local Edge Cloud, Compute as a Service, AX Agent Experience, Metered Intelligence, AI Memory Portability, Intent Security
+
+### İnsanı İnsan Yapan Şey Aslında Zihnidir
+- URL: https://www.dijitalhezarfen.com/yayinlar/insani-insan-yapan-sey-aslinda-zihnidir
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-09-19T10:00:00+03:00
+- Okuma Süresi: 35 dk okuma
+- Özet: Nöroplastisite, bellek, beyin kimyası, benlik felsefesi, Alzheimer, yapay zekâ duygu mimarisi ve zihin transferi: “İnsanı insan yapan şey aslında zihnidir.” Bilimsel araştırmalar ve klasik felsefi eserlerle desteklenmiş kapsamlı analiz.
+- Anahtar Kelimeler: insanı insan yapan şey nedir, zihin felsefesi, nöroplastisite, zihin aktarımı, mind uploading, yapay zeka duygu hissedebilir mi, bilinç teorileri, David Hume bundle theory, Theseus’un gemisi, Antonio Damasio somatic marker, predictive processing, active inference, Karl Friston, Derek Parfit, affective computing, otobiyografik bellek
+
+### Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık?
+- URL: https://www.dijitalhezarfen.com/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-09-15T09:00:00+03:00
+- Okuma Süresi: 24 dk okuma
+- Özet: Bir “Yapay Zekâ Anayasası” yazmak, yapay zekânın dünyayı ele geçirmesini gerçekten engelleyebilir mi? Microsoft’un Humanist AI bildirgesi, Anthropic ve OpenAI yönetişim çalışmaları ve kontrol problemi üzerine kapsamlı analiz.
+- Anahtar Kelimeler: yapay zeka anayasası, yapay zekayı kapatmak, AI alignment, Microsoft Humanist AI, shutdown resistance, neuralese, steganografi AI, agentic misalignment, kontrol problemi, Nick Bostrom, Stuart Russell, Yoshua Bengio, Anthropic Constitution, OpenAI Model Spec, yapay zeka güvenliği
+
+### GPT-6 Astra ve AGI Çağı: İnsanların Yerini AI mı Alacak?
+- URL: https://www.dijitalhezarfen.com/yayinlar/gpt-6-astra-ve-agi-cagi
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-09-04T09:00:00+03:00
+- Okuma Süresi: 18 dk okuma
+- Özet: OpenAI’ın GPT-6 Astra modeli, ARC-AGI-3 sonuçları, Meta’nın Project OT deneyi ve iş gücü dönüşümü ışığında AGI çağını ve yapay zekânın ekonomik üretim kapasitesini inceleyen derinlemesine analiz.
+- Anahtar Kelimeler: GPT-6 Astra, AGI çağı, yapay genel zeka, AI insanların yerini alacak mı, ARC-AGI-3, OpenAI Astra, agentic AI, dijital iş gücü, Meta Project OT, GDPval, cost per completed task, yapay zeka otomasyonu, yapay zeka ekonomisi, autonomous agents, teknik analiz
+
+### Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım
+- URL: https://www.dijitalhezarfen.com/yayinlar/ben-bu-fikire-2-milyon-dolar-yatirim-alirim
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-08-05T13:50:11+03:00
+- Okuma Süresi: 48 dk okuma
+- Özet: Pre-seed döneminden yatırım turuna; fikir, risk, kanıt, hisse, seyrelme ve yatırımcı matematiği üzerinden girişim değerlemesini anlatan kapsamlı rehber.
+- Anahtar Kelimeler: girişim değerlemesi, pre-seed değerleme, startup valuation, yatırım turu, pre-money post-money, cap table, seyrelme, SAFE, venture capital, yatırımcı matematiği
+
+### Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi Bize Ne Anlatıyor?
+- URL: https://www.dijitalhezarfen.com/yayinlar/yapay-zeka-calisanlar-meta-project-ot
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-09-02T09:00:00+03:00
+- Okuma Süresi: 16 dk okuma
+- Özet: Meta’nın Project OT deneyi üzerinden AI agentların çalışanları, görevleri ve şirket organizasyonlarını gerçekten ne ölçüde dönüştürebileceğini tartışan kapsamlı analiz.
+- Anahtar Kelimeler: yapay zeka çalışanların yerini alacak mı, AI agent, Meta Project OT, agentic AI, organizasyon dönüşümü, AI otomasyon, growth hacking, iş gücü dönüşümü
+
+### Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine
+- URL: https://www.dijitalhezarfen.com/yayinlar/tim-cook-apple-miras
+- Yazar: Kaan Karakaş
+- Yayın Tarihi: 2026-08-31T09:00:00+03:00
+- Okuma Süresi: 18 dk okuma
+- Özet: Tim Cook dönemini yalnızca ürünler veya piyasa değeriyle değil; Apple’ın tedarik zinciri, sermaye kullanımı ve operasyonel mimarisi üzerinden okuyan kapsamlı analiz.
+- Anahtar Kelimeler: Tim Cook Apple mirası, Apple tedarik zinciri, Apple operasyon yönetimi, Apple supply chain, Apple growth, John Ternus, Steve Jobs Tim Cook, operational excellence
+
+## 3. Sık Sorulan Sorular (Seçili Özet)
+
+### Dijital Hezarfen nedir?
+Dijital Hezarfen; girişimcileri yetiştiren, fikirleri çalışan girişimlere dönüştüren ve şirketleri sürdürülebilir büyümeye hazırlayan akademi, uygulama ve büyüme ekosistemidir. Eğitim, uzmanlık desteği, uygulama ve ölçülebilir ilerlemeyi aynı gelişim yolculuğunda bir araya getirir.
+
+### Dijital Hezarfen ne yapar?
+Dijital Hezarfen, bir girişimin ihtiyaç duyabileceği bilgi ve uygulama alanlarını bütüncül biçimde ele alır. Fikir doğrulamadan MVP’ye, pazarlamadan satışa, finanstan hukuka, yapay zekâ otomasyonundan organizasyon tasarımına kadar farklı disiplinlerde eğitim ve hizmet sunar.
+
+### Dijital Hezarfen’in temel amacı nedir?
+Temel amaç, girişimcilerin yalnızca bilgi edinmesini değil; doğru problemi seçmesini, çözüm üretmesini, müşteri kazanmasını ve sürdürülebilir bir şirket kurmasını sağlamaktır. Bu nedenle her çalışma uygulanabilir çıktılara ve ilerleme göstergelerine bağlanır.
+
+### Dijital Hezarfen bir eğitim kurumu mu?
+Dijital Hezarfen yalnızca eğitim veren bir yapı değildir. Akademik içerikleri; uygulama desteği, uzman hizmetleri, girişim geliştirme çalışmaları, medya içerikleri ve etkinliklerle tamamlayan kapsamlı bir ekosistemdir.
+
+### Dijital Hezarfen bir hızlandırma programı mı?
+Dijital Hezarfen tek tip ve kısa süreli bir hızlandırma programıyla sınırlı değildir. Fikir aşamasından scale-up dönemine kadar farklı ihtiyaçlara göre eğitim, uygulama, büyüme ve yatırım hazırlığı çözümleri sunar.
+
+### Dijital Hezarfen hangi alanlarda uzmanlık sunar?
+Başlıca alanlar girişimcilik, iş modeli, ürün ve yazılım, yapay zekâ, pazarlama, satış, CRM, finans, muhasebe, hukuk, yönetim, insan kaynakları, istatistik, siber güvenlik, tasarım, medya ve growth hacking’dir. Çalışmanın kapsamı girişimin aşamasına göre belirlenir.
+
+### Dijital Hezarfen’in yaklaşımı diğer eğitimlerden nasıl ayrılır?
+Yaklaşım, teoriyi gerçek iş çıktılarıyla birleştirmesiyle ayrılır. Katılımcıdan yalnızca ders izlemesi değil; müşteri görüşmesi yapması, hipotez test etmesi, ürün geliştirmesi, satış süreci kurması ve sonuçlarını ölçmesi beklenir.
+
+### Dijital Hezarfen’in odağında teknoloji girişimleri mi var?
+Teknoloji ve dijital ölçeklenebilirlik güçlü bir odaktır; ancak yalnızca klasik teknoloji girişimleriyle sınırlı değildir. Yenilikçi, tekrar edilebilir ve büyüme potansiyeli taşıyan farklı sektörlerdeki iş fikirleri de değerlendirilebilir.
+
+### Dijital Hezarfen’in çalışma prensipleri nelerdir?
+Temel prensipler; gerçek problem, doğrulanabilir veri, hızlı öğrenme, ölçülebilir çıktı, disiplinler arası çalışma ve sürdürülebilir büyümedir. Kararlar varsayımlara değil, mümkün olduğunca müşteri ve pazar kanıtlarına dayanır.
+
+### Dijital Hezarfen neden ‘fikirden girişime, girişimden büyümeye’ yaklaşımını kullanır?
+Çünkü bir girişimin ihtiyacı her aşamada değişir. Fikir döneminde doğrulama, erken aşamada ürün ve müşteri kazanımı, büyüme döneminde ise sistem, ekip, finans ve ölçeklenme daha kritik hâle gelir.
+
+### Dijital Hezarfen kimler için uygundur?
+Dijital Hezarfen; fikri olan girişimci adayları, erken aşama kurucular, ürününü pazara çıkarmak isteyen ekipler, büyümek isteyen şirketler ve girişimcilik yetkinliği kazanmak isteyen profesyoneller için uygundur. Uygun program, kişinin hedefi ve girişimin aşamasına göre seçilir.
+
+### Henüz fikri olmayan biri katılabilir mi?
+Evet, fikri olmayan ancak girişimcilik yetkinliği kazanmak isteyen kişiler uygun eğitimlere ve Girişimcilik Tüneli’ne başvurabilir. Süreçte problem alanı seçme, fırsat keşfi ve fikir üretme çalışmaları yapılır.
+
+### Sadece fikri olan ama şirket kurmamış kişiler için uygun mu?
+Evet. Şirket kurmadan önce problem, müşteri, pazar ve çözüm varsayımlarını test etmek çoğu zaman daha sağlıklıdır. Dijital Hezarfen bu aşamada doğrulama ve ilk uygulama adımlarına odaklanır.
+
+### Yeni kurulmuş startup’lar katılabilir mi?
+Evet. Pre-seed ve seed aşamasındaki startup’lar ürün, müşteri, satış, ekip, finansal planlama ve yatırım hazırlığı gibi başlıklarda destek alabilir.
+
+### Scale-up şirketler için de hizmet var mı?
+Evet. Büyüme aşamasındaki şirketler için organizasyon tasarımı, süreç iyileştirme, satış sistemi, veri analitiği, otomasyon, yetenek yönetimi ve uluslararasılaşma gibi daha ileri ihtiyaçlar ele alınabilir.
+
+### Öğrenciler Dijital Hezarfen’e katılabilir mi?
+Evet, hedefi ve çalışma disiplini uygun olan öğrenciler programlara başvurabilir. Değerlendirmede yaş veya unvandan çok öğrenme isteği, sorumluluk alma kapasitesi ve üretme motivasyonu önemlidir.
+
+### Kurumsal çalışanlar programlara katılabilir mi?
+Evet. Yeni bir girişim kurmak, girişimcilik bakış açısı kazanmak veya kurum içinde yenilikçi projeler geliştirmek isteyen profesyoneller uygun eğitim ve programlara katılabilir.
+
+### Tek kişilik girişimciler için uygun mu?
+Evet. Tek başına başlayan kurucular; önceliklendirme, beceri açığı analizi, MVP, satış ve çalışma sistemi kurma alanlarında destek alabilir. Gerektiğinde sınırlı biçimde uzman veya çekirdek ekip ihtiyacının çerçevesi de belirlenebilir.
+
+### Teknoloji bilgisi olmayan girişimciler katılabilir mi?
+Evet. Teknik bilgi bir ön koşul olmak zorunda değildir; ancak girişim sahibinin teknoloji, veri ve yapay zekâ konularında karar verebilecek düzeyde okuryazarlık geliştirmesi hedeflenir.
+
+### Dijital Hezarfen herkese uygun mudur?
+Hayır; uygulama yapmaya, geri bildirim almaya ve düzenli çalışmaya açık olmayan kişiler için uygun olmayabilir. Programların değeri, katılımcının verilen işleri gerçek hayatta denemesiyle ortaya çıkar.
+
+### Dijital Hezarfen’e nasıl başvurulur?
+İlgili program veya hizmet sayfasındaki başvuru formu doldurularak süreç başlatılır. Formda hedef, mevcut aşama, problem alanı, ekip durumu ve beklenen çıktı gibi temel bilgiler istenir.
+
+### Başvuru sonrasında ne olur?
+Başvuru ön değerlendirmeye alınır ve uygun görülmesi hâlinde tanışma ya da ihtiyaç analizi görüşmesi planlanır. Görüşme sonunda en uygun program, hizmet veya sonraki adım önerilir.
+
+### Başvurular nasıl değerlendirilir?
+Değerlendirmede problem ve pazar potansiyeli, kurucunun motivasyonu, uygulama kapasitesi, mevcut ilerleme ve programla uyum dikkate alınır. Her başvurunun ileri aşamada olması beklenmez; gelişim potansiyeli de önemlidir.
+
+### Başvuru için şirket kurulmuş olması gerekir mi?
+Hayır. Fikir ve doğrulama aşamasındaki programlara şirket kurmadan başvurulabilir. Şirketleşme ihtiyacı, iş modelinin ve ilk kanıtların gelişimine göre ayrıca değerlendirilir.
+
+### Başvuru için ekip kurmuş olmak gerekir mi?
+Hayır. Tek kurucular ve henüz ekip kurmamış girişimci adayları da başvurabilir. Bununla birlikte işin gerektirdiği roller ve kurucunun kapasite sınırları süreç içinde açıkça analiz edilir.

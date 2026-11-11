@@ -1,0 +1,46 @@
+# Dijital Hezarfen
+
+> Dijital Hezarfen; girişimcileri yetiştiren Akademi (Girişimcilik Tüneli ve modüler eğitimler), fikirleri çalışan ürünlere dönüştüren Uygulama (yazılım, AI MVP, growth, satış, CRM, finans) ve Büyüme & Yatırım süreçlerini tek çatı altında birleştiren, aynı zamanda Kaan Karakaş ve Haydar Karakaş imzalı derinlemesine teknoloji ve finans yayınları üreten bir girişimcilik ekosistemidir.
+
+Öne çıkan yayınlar, YouTube video analizleri ve program detayları `https://www.dijitalhezarfen.com` üzerinde sunulur. Türkçe ve İngilizce desteklidir; birincil yayın dili Türkçedir.
+
+## Ekosistem ve Programlar
+
+- [Ana Sayfa](https://www.dijitalhezarfen.com/): Öne çıkan yazar dosyaları, teknoloji gündemi akışı, YouTube video analizleri ve ekosistem sütunları.
+- [Akademi](https://www.dijitalhezarfen.com/akademi): Girişimciler ve yöneticiler için uygulamalı eğitim ve refleks geliştirme merkezi.
+- [Girişimcilik Tüneli](https://www.dijitalhezarfen.com/akademi/girisimcilik-tuneli): 3-5 aylık yoğun kurucu yetiştirme, fikir doğrulama ve MVP programı.
+- [Uygulama Hizmetleri](https://www.dijitalhezarfen.com/uygulama): Yazılım, AI MVP, otomasyon, dijital pazarlama, B2B satış/CRM ve finans altyapı inşası.
+- [Büyüme & Yatırım](https://www.dijitalhezarfen.com/buyume-yatirim): Finansal modelleme, pitch deck kurgusu, yatırıma hazırlık ve küresel büyüme.
+- [Girişimler İçin](https://www.dijitalhezarfen.com/girisimler): Fikir aşamasından Pre-Seed, Seed, Series A ve Scale-up evrelerine göre destek modeli.
+- [Dijital Hezarfen Nedir?](https://www.dijitalhezarfen.com/dijital-hezarfen): Vizyon, çalışma modeli ve farklılaşan yaklaşımımız.
+- [Hakkımızda](https://www.dijitalhezarfen.com/hakkimizda): Kurucu ekibimiz, misyonumuz ve vizyonumuz.
+- [Sık Sorulan Sorular](https://www.dijitalhezarfen.com/sik-sorulan-sorular): Programlar, kabul kriterleri ve çalışma modeli hakkında kapsamlı SSS.
+
+## Öne Çıkan Yazar Yayınları (Kaan Karakaş & Haydar Karakaş)
+
+- [ENRON: Kârın, Nakdin ve Güvenin Denetimi](https://www.dijitalhezarfen.com/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi): Haydar Karakaş (28 dk okuma) — Bir şirketin ne kadar büyük göründüğünden önce, kazancının nasıl oluştuğuna, nakdinin nereden geldiğine ve riskinin kimin üzerinde kaldığına bakarım. Finansal ve mali denetçi Haydar Karakaş’tan kapsamlı Enron vaka analizi.
+- [Bir Sonraki Eşiniz Bir Humanoid Olabilir mi?](https://www.dijitalhezarfen.com/yayinlar/bir-sonraki-esiniz-humanoid-olabilir): Kaan Karakaş (16 dk okuma) — Hayalinizdeki eşi yapay zekâ size verebilse, ister miydiniz? Yanınızda yaşayan, sizi dinleyen, dokunabildiğiniz bir humanoid... Peki ya size gerçekten "hayır" diyebilmesini de ister miydiniz? Kaan Karakaş’tan samimi ve derinlikli bir düşünce deneyi.
+- [Bilgisayar Kavramı Değişiyor: Operating System’dan Intelligence System’a](https://www.dijitalhezarfen.com/yayinlar/bilgisayar-kavrami-degisiyor): Kaan Karakaş (22 dk okuma) — Googlebook lansmanı, Gartner’ın Agentic AI PC analizi, Microsoft AgentOS ve Apple’ın yerel compute hamlesi ışığında: Bilgisayar küçülmüyor, donanımdan görünmez bir kişisel zeka ağına (Personal Intelligence) dönüşüyor.
+- [İnsanı İnsan Yapan Şey Aslında Zihnidir](https://www.dijitalhezarfen.com/yayinlar/insani-insan-yapan-sey-aslinda-zihnidir): Kaan Karakaş (35 dk okuma) — Nöroplastisite, bellek, beyin kimyası, benlik felsefesi, Alzheimer, yapay zekâ duygu mimarisi ve zihin transferi: “İnsanı insan yapan şey aslında zihnidir.” Bilimsel araştırmalar ve klasik felsefi eserlerle desteklenmiş kapsamlı analiz.
+- [Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık?](https://www.dijitalhezarfen.com/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik): Kaan Karakaş (24 dk okuma) — Bir “Yapay Zekâ Anayasası” yazmak, yapay zekânın dünyayı ele geçirmesini gerçekten engelleyebilir mi? Microsoft’un Humanist AI bildirgesi, Anthropic ve OpenAI yönetişim çalışmaları ve kontrol problemi üzerine kapsamlı analiz.
+- [GPT-6 Astra ve AGI Çağı: İnsanların Yerini AI mı Alacak?](https://www.dijitalhezarfen.com/yayinlar/gpt-6-astra-ve-agi-cagi): Kaan Karakaş (18 dk okuma) — OpenAI’ın GPT-6 Astra modeli, ARC-AGI-3 sonuçları, Meta’nın Project OT deneyi ve iş gücü dönüşümü ışığında AGI çağını ve yapay zekânın ekonomik üretim kapasitesini inceleyen derinlemesine analiz.
+- [Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım](https://www.dijitalhezarfen.com/yayinlar/ben-bu-fikire-2-milyon-dolar-yatirim-alirim): Kaan Karakaş (48 dk okuma) — Pre-seed döneminden yatırım turuna; fikir, risk, kanıt, hisse, seyrelme ve yatırımcı matematiği üzerinden girişim değerlemesini anlatan kapsamlı rehber.
+- [Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi Bize Ne Anlatıyor?](https://www.dijitalhezarfen.com/yayinlar/yapay-zeka-calisanlar-meta-project-ot): Kaan Karakaş (16 dk okuma) — Meta’nın Project OT deneyi üzerinden AI agentların çalışanları, görevleri ve şirket organizasyonlarını gerçekten ne ölçüde dönüştürebileceğini tartışan kapsamlı analiz.
+- [Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine](https://www.dijitalhezarfen.com/yayinlar/tim-cook-apple-miras): Kaan Karakaş (18 dk okuma) — Tim Cook dönemini yalnızca ürünler veya piyasa değeriyle değil; Apple’ın tedarik zinciri, sermaye kullanımı ve operasyonel mimarisi üzerinden okuyan kapsamlı analiz.
+
+## Medya & Video Yayınları
+
+- [Medya Merkezi](https://www.dijitalhezarfen.com/medya): Tüm YouTube analizleri ve yayın formatları.
+- [Hızlı Yatırım Alacak 5 Yatırım Fikri — Y Combinator Request for Startups](https://www.youtube.com/watch?v=o-5n3DZc2IM): Kaan Karakaş — Y Combinator’ın güncel Request for Startups listesi üzerinden yatırımcı iştahının yöneldiği beş somut ürün alanı.
+- [Toys ‘R’ Us Neden Battı? Çocukluğumuzun Cenneti Nasıl Çöktü?](https://www.youtube.com/watch?v=1CwbcdcBDe4): Kaan Karakaş — Kaldıraçlı satın alma borç yükü, e-ticaret geçişindeki gecikme ve perakende devinin çöküş dersi.
+- [1 Milyar Dolar Zarar Eden Apple Nasıl Zirveye Çıktı? | Steve Jobs’un Stratejisi - Bölüm 1](https://www.youtube.com/watch?v=lDa1QuSBnqs): Kaan Karakaş — İflasın eşiğindeki Apple’da ürün sadeleştirme, konumlandırma ve stratejik odaklanma kararlarının anatomisi.
+- [Tupperware Neden Battı? Milyar Dolarlık İmparatorluğun Çöküşü](https://www.youtube.com/watch?v=HRnM46raoCw): Kaan Karakaş — Doğrudan satış modelinin tıkanması, perakende dönüşümüne direnç ve nakit döngüsündeki kırılma.
+- [Her Kurulan İş Startup Değildir! Startup Nedir?](https://www.youtube.com/watch?v=X8BuD6qlmbA): Kaan Karakaş — Klasik işletme ile ölçeklenebilir teknoloji girişimi arasındaki sermaye, büyüme ve iş modeli farkları.
+- [Bir Sonraki Eşiniz Bir Humanoid Olabilir mi? | Yapay Zekâ, Robotlar ve Aşkın Geleceği](https://www.youtube.com/watch?v=Xd_UwHJORg4): Kaan Karakaş — Fiziksel yapay zekâ ve insansı robotların yalnızlık ekonomisi, bağlanma psikolojisi ve toplumsal düzen üzerindeki etkileri.
+
+## Optional
+
+- [Tüm Yayınlar Arşivi](https://www.dijitalhezarfen.com/yayinlar): Sitedeki 40+ analiz, rehber ve haber dosyasının tam dizini.
+- [Açık Kaynak Araç Kütüphanesi](https://www.dijitalhezarfen.com/acik-kaynak-kutuphanesi): Girişimciler için seçili açık kaynak yazılım ve yapay zekâ araçları.
+- [İletişim](https://www.dijitalhezarfen.com/iletisim): Doğrudan başvuru, iş birliği ve iletişim kanalları.
+- [Tam İçerik Dizini (llms-full.txt)](https://www.dijitalhezarfen.com/llms-full.txt): Tüm sayfaların ve makalelerin genişletilmiş özet indeks dosyası.

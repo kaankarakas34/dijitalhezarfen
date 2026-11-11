@@ -131,7 +131,7 @@ export default function MediaSection({ lang }) {
 
                 <div className="mt-8 pt-4 border-t border-white/5">
                   <a
-                    href="#"
+                    href="/medya"
                     className="w-full py-2.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center justify-center gap-1.5 group/link font-sans"
                   >
                     <span>{t.btnBrowse}</span>

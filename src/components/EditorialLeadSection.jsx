@@ -80,7 +80,7 @@ export default function EditorialLeadSection({ lang = 'tr', onNavigate }) {
           {/* Main Featured Author Story (Left 7 Columns) */}
           <article className="lg:col-span-7 group">
             <a
-              href={`#${leadStory.path}`}
+              href={leadStory.path}
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate?.(leadStory.path);
@@ -140,7 +140,7 @@ export default function EditorialLeadSection({ lang = 'tr', onNavigate }) {
                 {isTr ? 'Öne Çıkan Yazar Yazıları' : 'Featured Author Essays'}
               </h2>
               <a
-                href="#/yayinlar"
+                href="/yayinlar"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate?.('/yayinlar');
@@ -156,7 +156,7 @@ export default function EditorialLeadSection({ lang = 'tr', onNavigate }) {
               {railStories.map((story) => (
                 <article key={story.slug} className="py-4 first:pt-3 last:pb-1 group">
                   <a
-                    href={`#${story.path}`}
+                    href={story.path}
                     onClick={(e) => {
                       e.preventDefault();
                       onNavigate?.(story.path);
@@ -204,7 +204,7 @@ export default function EditorialLeadSection({ lang = 'tr', onNavigate }) {
                 {isTr ? 'Yazarlardan Diğer İncelemeler' : 'More Essays from Authors'}
               </h2>
               <a
-                href="#/yayinlar"
+                href="/yayinlar"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate?.('/yayinlar');
@@ -220,7 +220,7 @@ export default function EditorialLeadSection({ lang = 'tr', onNavigate }) {
               {stripStories.map((story) => (
                 <article key={story.slug} className="group flex flex-col justify-between">
                   <a
-                    href={`#${story.path}`}
+                    href={story.path}
                     onClick={(e) => {
                       e.preventDefault();
                       onNavigate?.(story.path);

@@ -147,7 +147,7 @@ export default function Blog({ lang }) {
 
                 <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
                   <span className="text-[10px] text-gray-500 font-semibold">{t.author}</span>
-                  <a href="#" className="flex items-center gap-1.5 text-xs font-bold text-cyber-cyan hover:underline group/link font-sans">
+                  <a href="/yayinlar" className="flex items-center gap-1.5 text-xs font-bold text-cyber-cyan hover:underline group/link font-sans">
                     <span>{t.readBtn}</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
                   </a>

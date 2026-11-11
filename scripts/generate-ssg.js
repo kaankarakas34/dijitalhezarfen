@@ -3,6 +3,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 const projectRoot = process.cwd();
+const publicDir = path.join(projectRoot, 'public');
 const distDir = path.join(projectRoot, 'dist');
 const templateHtmlPath = path.join(distDir, 'index.html');
 
@@ -11,10 +12,23 @@ if (!fs.existsSync(templateHtmlPath)) {
   process.exit(1);
 }
 
-const templateHtml = fs.readFileSync(templateHtmlPath, 'utf8');
+const rawTemplateHtml = fs.readFileSync(templateHtmlPath, 'utf8');
 
-// Dynamic import of articles from compiled source or ES module
-const { articles, articleCategories } = await import(pathToFileURL(path.join(projectRoot, 'src', 'data', 'articles.js')).href);
+const importData = (relPath) => import(pathToFileURL(path.join(projectRoot, relPath)).href);
+
+const { articles, articleCategories } = await importData('src/data/articles.js');
+const { youtubeVideos } = await importData('src/data/youtubeVideos.js');
+const { faqData, faqCategories } = await importData('src/data/faqData.js');
+const {
+  SITE_ORIGIN,
+  SITE_NAME,
+  DEFAULT_OG_IMAGE,
+  ORGANIZATION_SAME_AS,
+  PERSON_ENTITIES,
+  CORE_SEO_ROUTES
+} = await importData('src/data/seoRoutes.js');
+
+const TODAY_ISO = new Date().toISOString().slice(0, 10);
 
 function slugify(text) {
   return text
@@ -34,7 +48,7 @@ function slugify(text) {
 
 function escapeHtml(str) {
   if (!str) return '';
-  return str
+  return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -42,7 +56,158 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-function parseMarkdownToHtml(markdown, sources = []) {
+function getInitials(name) {
+  return (name || 'DH')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join('');
+}
+
+function toAbsoluteUrl(relOrAbs) {
+  if (!relOrAbs) return DEFAULT_OG_IMAGE;
+  return relOrAbs.startsWith('http') ? relOrAbs : `${SITE_ORIGIN}${relOrAbs.startsWith('/') ? '' : '/'}${relOrAbs}`;
+}
+
+function toOgRasterUrl(imagePath) {
+  if (!imagePath || imagePath.endsWith('.svg')) {
+    return DEFAULT_OG_IMAGE;
+  }
+  return toAbsoluteUrl(imagePath);
+}
+
+function buildTrustNavFooterHtml() {
+  return `
+    <footer class="mt-16 pt-8 border-t border-white/10 text-xs text-gray-400">
+      <nav aria-label="Kurumsal ve Ekosistem Bağlantıları" class="flex flex-wrap gap-x-5 gap-y-2">
+        <a href="/" class="hover:text-cyan-400">Ana Sayfa</a>
+        <a href="/yayinlar" class="hover:text-cyan-400">Tüm Yayınlar</a>
+        <a href="/akademi" class="hover:text-cyan-400">Akademi</a>
+        <a href="/akademi/girisimcilik-tuneli" class="hover:text-cyan-400">Girişimcilik Tüneli</a>
+        <a href="/uygulama" class="hover:text-cyan-400">Uygulama Hizmetleri</a>
+        <a href="/buyume-yatirim" class="hover:text-cyan-400">Büyüme &amp; Yatırım</a>
+        <a href="/medya" class="hover:text-cyan-400">Medya &amp; YouTube</a>
+        <a href="/dijital-hezarfen" class="hover:text-cyan-400">Dijital Hezarfen Nedir?</a>
+        <a href="/hakkimizda" class="hover:text-cyan-400">Hakkımızda</a>
+        <a href="/sik-sorulan-sorular" class="hover:text-cyan-400">Sık Sorulan Sorular</a>
+        <a href="/iletisim" class="hover:text-cyan-400">İletişim</a>
+      </nav>
+    </footer>
+  `;
+}
+
+function buildOrganizationSchema() {
+  return {
+    '@type': 'Organization',
+    '@id': `${SITE_ORIGIN}/#organization`,
+    name: SITE_NAME,
+    url: `${SITE_ORIGIN}/`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_ORIGIN}/favicon.svg`,
+      width: 60,
+      height: 60
+    },
+    description:
+      'Dijital Hezarfen; girişimcileri yetiştiren, fikirleri çalışan ürünlere dönüştüren ve şirketleri sürdürülebilir büyümeye taşıyan akademi, uygulama ve medya ekosistemidir.',
+    sameAs: ORGANIZATION_SAME_AS,
+    founder: [
+      { '@type': 'Person', '@id': `${SITE_ORIGIN}/#person-kaan-karakas`, name: 'Kaan Karakaş' }
+    ]
+  };
+}
+
+function buildPersonSchemas() {
+  return Object.values(PERSON_ENTITIES).map((person) => ({
+    '@type': 'Person',
+    '@id': `${SITE_ORIGIN}/#person-${slugify(person.name)}`,
+    name: person.name,
+    jobTitle: person.jobTitle,
+    description: person.bio,
+    url: person.url,
+    worksFor: { '@id': `${SITE_ORIGIN}/#organization` },
+    ...(person.sameAs?.length ? { sameAs: person.sameAs } : {})
+  }));
+}
+
+function buildVideoSchemas() {
+  return youtubeVideos.map((v) => ({
+    '@type': 'VideoObject',
+    '@id': `${SITE_ORIGIN}/medya#video-${v.id}`,
+    name: v.title.tr,
+    description: v.summary.tr,
+    thumbnailUrl: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`,
+    embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+    contentUrl: `https://www.youtube.com/watch?v=${v.id}`,
+    author: { '@type': 'Person', name: v.author },
+    publisher: { '@id': `${SITE_ORIGIN}/#organization` }
+  }));
+}
+
+function injectHeadAndRoot(baseHtml, {
+  title,
+  description,
+  canonicalUrl,
+  ogType = 'website',
+  ogImage = DEFAULT_OG_IMAGE,
+  ogImageAlt = SITE_NAME,
+  extraMeta = '',
+  jsonLd,
+  semanticBodyHtml
+}) {
+  let html = baseHtml;
+
+  html = html.replace(/<title>.*?<\/title>/is, `<title>${escapeHtml(title)}</title>`);
+  html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${escapeHtml(description)}" />`);
+
+  // Strip base head tags that we replace with route-exact versions
+  const stripPatterns = [
+    /<link\s+rel="canonical"[^>]*>\s*/gi,
+    /<meta\s+name="robots"[^>]*>\s*/gi,
+    /<meta\s+property="og:[^"]*"[^>]*>\s*/gi,
+    /<meta\s+name="twitter:[^"]*"[^>]*>\s*/gi
+  ];
+  for (const pattern of stripPatterns) {
+    html = html.replace(pattern, '');
+  }
+
+  const headInject = `
+    <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    ${extraMeta}
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="${SITE_NAME}" />
+    <meta property="og:type" content="${ogType}" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:title" content="${escapeHtml(title)}" />
+    <meta property="og:description" content="${escapeHtml(description)}" />
+    <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
+    <meta property="og:image" content="${escapeHtml(ogImage)}" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="${escapeHtml(ogImageAlt)}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${escapeHtml(title)}" />
+    <meta name="twitter:description" content="${escapeHtml(description)}" />
+    <meta name="twitter:image" content="${escapeHtml(ogImage)}" />
+    <meta name="twitter:image:alt" content="${escapeHtml(ogImageAlt)}" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" id="page-json-ld">
+${JSON.stringify(jsonLd, null, 2)}
+    </script>
+  `;
+
+  html = html.replace('</head>', `${headInject}\n  </head>`);
+  html = html.replace('<div id="root"></div>', `<div id="root">${semanticBodyHtml}</div>`);
+  return html;
+}
+
+function parseMarkdownToHtml(markdown) {
   const rawLines = markdown.split(/\r?\n/);
   let html = '';
   let inList = false;
@@ -119,17 +284,16 @@ function parseMarkdownToHtml(markdown, sources = []) {
     }
 
     if (line.startsWith('|')) {
-      // Markdown table parsing
       const tableLines = [line];
       while (i + 1 < rawLines.length && rawLines[i + 1].trim().startsWith('|')) {
         i++;
         tableLines.push(rawLines[i].trim());
       }
       if (tableLines.length >= 2) {
-        const parseCells = (row) => row.split('|').slice(1, -1).map(c => c.trim());
+        const parseCells = (row) => row.split('|').slice(1, -1).map((c) => c.trim());
         const headers = parseCells(tableLines[0]);
-        const dataRows = tableLines.slice(1).filter(r => !/^\|[\s\-:]+(\|[\s\-:]+)+\|?$/.test(r)).map(parseCells);
-        html += `<div class="my-8 overflow-x-auto rounded-2xl border border-white/10 bg-[#0A0E17]/80"><table class="w-full text-left text-xs sm:text-sm border-collapse min-w-[500px]"><thead><tr class="border-b border-white/10 bg-white/[0.04]">${headers.map(h => `<th class="py-3 px-4 text-cyan-400 font-bold uppercase text-[11px]">${renderInline(h)}</th>`).join('')}</tr></thead><tbody class="divide-y divide-white/5">${dataRows.map(r => `<tr class="hover:bg-white/[0.02]">${r.map((c, cIdx) => `<td class="py-3 px-4 ${cIdx === 0 ? 'font-medium text-white' : 'text-gray-300'}">${renderInline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+        const dataRows = tableLines.slice(1).filter((r) => !/^\|[\s\-:]+(\|[\s\-:]+)+\|?$/.test(r)).map(parseCells);
+        html += `<div class="my-8 overflow-x-auto rounded-2xl border border-white/10 bg-[#0A0E17]/80"><table class="w-full text-left text-xs sm:text-sm border-collapse min-w-[500px]"><thead><tr class="border-b border-white/10 bg-white/[0.04]">${headers.map((h) => `<th class="py-3 px-4 text-cyan-400 font-bold uppercase text-[11px]">${renderInline(h)}</th>`).join('')}</tr></thead><tbody class="divide-y divide-white/5">${dataRows.map((r) => `<tr class="hover:bg-white/[0.02]">${r.map((c, cIdx) => `<td class="py-3 px-4 ${cIdx === 0 ? 'font-medium text-white' : 'text-gray-300'}">${renderInline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
         continue;
       }
     }
@@ -153,9 +317,7 @@ function parseMarkdownToHtml(markdown, sources = []) {
     }
   }
 
-  if (inList) {
-    html += '</ul>';
-  }
+  if (inList) html += '</ul>';
   if (inCode && codeBuffer.length > 0) {
     html += `<pre class="my-6 p-4 rounded-xl border border-cyan-500/20 bg-[#070A12] text-cyan-200 font-mono text-xs sm:text-sm overflow-x-auto"><code>${escapeHtml(codeBuffer.join('\n'))}</code></pre>`;
   }
@@ -163,9 +325,11 @@ function parseMarkdownToHtml(markdown, sources = []) {
   return html;
 }
 
-console.log('Generating static HTML (SSG) for all articles...');
-
-let generatedCount = 0;
+// =========================================================================
+// 1. Pre-render All 40 Article Pages
+// =========================================================================
+console.log('Generating static HTML (SSG) for articles...');
+const ssgArticles = [];
 
 for (const art of articles) {
   if (!art.source) continue;
@@ -176,86 +340,56 @@ for (const art of articles) {
     continue;
   }
 
+  ssgArticles.push(art);
   const rawText = fs.readFileSync(rawFilePath, 'utf8');
-  const bodyHtml = parseMarkdownToHtml(rawText, art.sources || []);
-  const canonicalUrl = `https://dijitalhezarfen.com/yayinlar/${art.slug}`;
-  const imageUrl = art.image.startsWith('http') ? art.image : `https://dijitalhezarfen.com${art.image}`;
-  const categoryLabel = articleCategories.find(c => c.id === art.category)?.label.tr || 'Haberler';
+  const bodyHtml = parseMarkdownToHtml(rawText);
+  const canonicalUrl = `${SITE_ORIGIN}/yayinlar/${art.slug}`;
+  const ogImageUrl = toOgRasterUrl(art.image);
+  const categoryLabel = articleCategories.find((c) => c.id === art.category)?.label.tr || 'Haberler';
   const topicLabel = art.topic?.tr || '';
   const leadText = art.lead?.tr || art.desc.tr;
   const schemaType = art.category === 'haber' ? 'NewsArticle' : (art.category === 'rapor' ? 'TechArticle' : 'Article');
+  const authorEntity = PERSON_ENTITIES[art.author];
+  const resolvedAuthorBio = art.authorBio || authorEntity?.bio || '';
+  const resolvedAuthorRole = art.authorRole || authorEntity?.jobTitle || 'Kurucu & Teknoloji Girişimcisi';
 
-  // JSON-LD Schema
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': schemaType,
         '@id': `${canonicalUrl}#article`,
-        isPartOf: {
-          '@type': 'WebPage',
-          '@id': canonicalUrl
-        },
+        isPartOf: { '@type': 'WebPage', '@id': canonicalUrl },
         headline: art.title.tr,
         name: art.title.tr,
         description: art.desc.tr,
-        image: [imageUrl],
-        author: art.author === 'Dijital Hezarfen'
-          ? {
-              '@type': 'Organization',
-              name: 'Dijital Hezarfen',
-              url: 'https://dijitalhezarfen.com'
-            }
+        image: [ogImageUrl],
+        author: art.author === SITE_NAME
+          ? { '@type': 'Organization', '@id': `${SITE_ORIGIN}/#organization`, name: SITE_NAME, url: `${SITE_ORIGIN}/` }
           : {
               '@type': 'Person',
+              '@id': `${SITE_ORIGIN}/#person-${slugify(art.author)}`,
               name: art.author,
-              jobTitle: art.authorRole || 'Kurucu & Teknoloji Girişimcisi',
-              url: 'https://dijitalhezarfen.com/#/dijital-hezarfen'
+              jobTitle: resolvedAuthorRole,
+              url: `${SITE_ORIGIN}/dijital-hezarfen`,
+              ...(authorEntity?.sameAs?.length ? { sameAs: authorEntity.sameAs } : {})
             },
-        publisher: {
-          '@type': 'Organization',
-          name: 'Dijital Hezarfen',
-          url: 'https://dijitalhezarfen.com',
-          logo: {
-            '@type': 'ImageObject',
-            url: 'https://dijitalhezarfen.com/favicon.svg',
-            width: 60,
-            height: 60
-          }
-        },
-        mainEntityOfPage: {
-          '@type': 'WebPage',
-          '@id': canonicalUrl
-        },
+        publisher: buildOrganizationSchema(),
+        mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
         datePublished: art.publishedAt,
         dateModified: art.modifiedAt || art.publishedAt,
         articleSection: categoryLabel,
         keywords: art.keywords?.join(', '),
         inLanguage: 'tr-TR',
-        citation: art.sources?.map(s => s.url)
+        citation: art.sources?.map((s) => s.url)
       },
       {
         '@type': 'BreadcrumbList',
         '@id': `${canonicalUrl}#breadcrumb`,
         itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Ana Sayfa',
-            item: 'https://dijitalhezarfen.com/'
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Yayınlar',
-            item: 'https://dijitalhezarfen.com/yayinlar'
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: art.title.tr,
-            item: canonicalUrl
-          }
+          { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: `${SITE_ORIGIN}/` },
+          { '@type': 'ListItem', position: 2, name: 'Yayınlar', item: `${SITE_ORIGIN}/yayinlar` },
+          { '@type': 'ListItem', position: 3, name: art.title.tr, item: canonicalUrl }
         ]
       }
     ]
@@ -271,7 +405,7 @@ for (const art of articles) {
           name: 'Kapso ile WhatsApp botu kod yazmadan kurulabilir mi?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Kapso’nun Workflows ve Agent arayüzü temel SSS ve kural bazlı mesajlaşmaları görsel olarak kurmayı kolaylaştırır. Codex ve Claude Code da gereken kod veya yapılandırmayı üretebilir. Ancak Meta Business doğrulaması, WhatsApp Business API izinleri ve şablon onayları gibi idari süreçler devam eder.'
+            text: 'Kapso’nun Workflows ve Agent arayüzü temel SSS ve kural bazlı mesajlaşmaları görsel olarak kurmayı kolaylaştırır. Codex ve Claude Code da gereken kod veya yapılandırmayı üretebilir.'
           }
         },
         {
@@ -279,7 +413,7 @@ for (const art of articles) {
           name: 'Codex veya Claude Code açık değilken bot çalışır mı?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Evet. Codex ve Claude Code geliştirme asistanıdır; botun 7/24 kesintisiz çalışması Kapso içinde yayınlanan bir Workflow/Agent veya bulutta barındırılan sunucusuz (serverless) webhook mimarisiyle sağlanır.'
+            text: 'Evet. Codex ve Claude Code geliştirme asistanıdır; botun 7/24 kesintisiz çalışması Kapso içinde yayınlanan bir Workflow/Agent veya bulutta barındırılan sunucusuz webhook mimarisiyle sağlanır.'
           }
         },
         {
@@ -287,191 +421,522 @@ for (const art of articles) {
           name: 'Mevcut WhatsApp Business numaramla kurabilir miyim?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Evet. WhatsApp Business App Coexistence seçeneğiyle numara telefonda kalırken Kapso ile paralel kullanılabilir. Yüksek hacimli kurumsal yapılar için ise numarayı müstakil Cloud API’ye taşımak (BYOSIM) daha kararlıdır.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: 'Meta onaylı mesaj şablonları ne zaman gereklidir?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'İşletmenin konuşmayı ilk başlattığı durumlarda (örneğin Meta reklam formundan gelen lead’e yazarken) veya 24 saatlik müşteri hizmeti penceresi dışındaki mesajlarda Meta onaylı şablon kullanımı zorunludur.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: 'Ücretsiz 2.000 mesaj, 2.000 ücretsiz yapay zekâ yanıtı mı?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Hayır. 2.000 mesaj Kapso platformunun aylık kotasıdır. Meta’nın 1 Ekim 2026 itibarıyla geçerli servis mesajı tarifesi (aylık numara başına 1.000 ücretsiz servis mesajı) ve seçilen yapay zekâ modelinin token API bedelleri ayrıca hesaplanır.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: 'Claude aboneliğim varsa AI model API’si de ücretsiz olur mu?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Hayır. Kodlama için kullanılan Claude Code oturumu ile 7/24 canlıda çalışan botun model API tüketimi ayrı faturalandırılır; botun çağırdığı model API kredisi ayrıca gereklidir.'
+            text: 'Evet. WhatsApp Business App Coexistence seçeneğiyle numara telefonda kalırken Kapso ile paralel kullanılabilir.'
           }
         }
       ]
     });
   }
 
-  // Build semantic article HTML to inject into #root
   const articleSemanticHtml = `
-    <div class="min-h-screen bg-[#000000] text-gray-100 selection:bg-cyan-500/30 selection:text-white">
-      <article class="pt-28 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <!-- Breadcrumb Navigation -->
-        <nav aria-label="Ekmek kırıntısı" class="flex items-center gap-2 text-xs text-gray-500 mb-6">
-          <a href="/" class="hover:text-cyan-400 transition-colors">Ana Sayfa</a>
+    <div class="min-h-screen bg-[#000000] text-gray-100">
+      <main class="pt-28 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <nav aria-label="Ekmek kırıntısı" class="flex items-center gap-2 text-xs text-gray-400 mb-6">
+          <a href="/" class="hover:text-cyan-400">Ana Sayfa</a>
           <span>/</span>
-          <a href="/yayinlar" class="hover:text-cyan-400 transition-colors">Yayınlar</a>
+          <a href="/yayinlar" class="hover:text-cyan-400">Yayınlar</a>
           <span>/</span>
-          <span class="text-gray-400 truncate max-w-xs">${escapeHtml(categoryLabel)}</span>
+          <span>${escapeHtml(categoryLabel)}</span>
         </nav>
 
-        <!-- Meta badges -->
         <div class="flex flex-wrap items-center gap-3 text-xs text-gray-400 mb-6">
-          <span class="rounded-lg bg-cyan-500/10 text-cyan-400 px-3 py-1 font-bold border border-cyan-500/20">${escapeHtml(categoryLabel)}</span>
-          ${topicLabel ? `<span class="rounded-lg bg-white/5 text-gray-300 px-3 py-1 font-semibold border border-white/10">${escapeHtml(topicLabel)}</span>` : ''}
+          <span>${escapeHtml(categoryLabel)}</span>
+          ${topicLabel ? `<span>•</span><span>${escapeHtml(topicLabel)}</span>` : ''}
+          <span>•</span>
           <span>Yayın: <time dateTime="${art.publishedAt}">${escapeHtml(art.date.tr)}</time></span>
-          ${art.eventDate?.tr ? `<span>•</span><span>Olay Tarihi: ${escapeHtml(art.eventDate.tr)}</span>` : ''}
           <span>•</span>
           <span>${escapeHtml(art.readTime.tr)}</span>
           <span>•</span>
-          <span>Yazar: <strong class="text-white">${escapeHtml(art.author)}</strong></span>
+          <span>Yazar: <strong>${escapeHtml(art.author)}</strong></span>
         </div>
 
-        <!-- H1 Headline -->
         <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-8">${escapeHtml(art.title.tr)}</h1>
 
-        <!-- Lead Description -->
         <div class="border-l-4 border-cyan-500/60 pl-4 py-2 my-6 bg-white/[0.02]">
           <p class="text-lg sm:text-xl text-gray-200 font-light leading-relaxed">${escapeHtml(leadText)}</p>
         </div>
 
-        <!-- Hero Image -->
         <figure class="my-8 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
-          <img src="${art.image}" alt="${escapeHtml(art.imageAlt || art.title.tr)}" class="w-full aspect-[16/9] object-cover" loading="eager" />
-          ${art.imageAlt ? `<figcaption class="text-center text-xs text-gray-400 py-2.5 px-4 bg-[#080B12] border-t border-white/5">${escapeHtml(art.imageAlt)}</figcaption>` : ''}
+          <img src="${art.image}" alt="${escapeHtml(art.imageAlt || art.title.tr)}" width="1600" height="900" class="w-full aspect-[16/9] object-cover" loading="eager" />
+          ${art.imageAlt ? `<figcaption class="text-center text-xs text-gray-400 py-2.5 px-4">${escapeHtml(art.imageAlt)}</figcaption>` : ''}
         </figure>
 
-        <!-- Article Body -->
         <div class="article-content space-y-6">
           ${bodyHtml}
         </div>
 
-        <!-- Sources Section -->
         ${art.sources?.length ? `
-          <div id="kaynaklar" class="mt-16 pt-8 border-t border-white/10">
+          <section id="kaynaklar" class="mt-16 pt-8 border-t border-white/10">
             <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-4">Kaynaklar ve Doğrulama Bağlantıları</h2>
-            <p class="text-xs text-gray-400 mb-4 font-light">${
-              art.sources.some(s => s.isHomepage)
-                ? 'Bu içerikteki olgusal arka plan için başvurulan doğrulama başlangıç bağlantıları aşağıda yer almaktadır. Yayıncı ana sayfası niteliğindeki bağlantılar özgül birincil haber URL’si yerine geçmez; doğrulama başlangıç noktası olarak sunulmuştur.'
-                : 'Bu içerikteki olgusal arka plan ve referans bağlantıları aşağıda yer almaktadır:'
-            }</p>
             <ul class="space-y-2">
-              ${art.sources.map(s => `
+              ${art.sources.map((s) => `
                 <li class="p-3 rounded-xl border border-white/5 bg-white/3 text-xs text-gray-300">
-                  <a href="${s.url}" target="_blank" rel="noreferrer noopener" class="text-cyan-400 hover:underline font-medium block">
+                  <a href="${escapeHtml(s.url)}" target="_blank" rel="noreferrer noopener" class="text-cyan-400 hover:underline font-medium block">
                     ${escapeHtml(s.label)}
                   </a>
-                  <span class="text-[10px] text-gray-500 font-mono">${escapeHtml(s.url)}</span>
                 </li>
               `).join('')}
             </ul>
-          </div>
+          </section>
         ` : ''}
 
-        <!-- Author Bio Box -->
-        ${art.author !== 'Dijital Hezarfen' && !art.hideAuthorBio ? `
-        <div class="mt-16 rounded-2xl border border-white/10 bg-[#0C1220] p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
-          <div class="w-16 h-16 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 font-bold text-xl font-mono shrink-0">
-            KK
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white">${escapeHtml(art.author)}</h3>
-            <span class="text-xs text-cyan-400 font-medium">${escapeHtml(art.authorRole || 'Kurucu & Teknoloji Girişimcisi')}</span>
-            <p class="text-xs sm:text-sm text-gray-400 mt-2 font-light leading-relaxed">${escapeHtml(art.authorBio || '')}</p>
-          </div>
-        </div>
+        ${art.author !== SITE_NAME && !art.hideAuthorBio ? `
+          <section class="mt-12 rounded-2xl border border-white/10 bg-[#0C1220] p-6 flex items-start gap-4">
+            <div class="w-16 h-16 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-300 font-bold text-xl shrink-0">
+              ${getInitials(art.author)}
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">${escapeHtml(art.author)}</h3>
+              <p class="text-xs text-cyan-400 font-medium">${escapeHtml(resolvedAuthorRole)}</p>
+              <p class="text-xs sm:text-sm text-gray-400 mt-2 font-light leading-relaxed">${escapeHtml(resolvedAuthorBio)}</p>
+            </div>
+          </section>
         ` : ''}
-      </article>
+
+        ${buildTrustNavFooterHtml()}
+      </main>
     </div>
   `;
 
-  // Inject meta tags into template <head>
-  let pageHtml = templateHtml;
-
-  // Replace <title>
-  const pageTitle = art.seoTitle || `${art.title.tr} | Dijital Hezarfen`;
-  pageHtml = pageHtml.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(pageTitle)}</title>`);
-
-  // Replace <meta name="description">
-  pageHtml = pageHtml.replace(/<meta name="description" content=".*?" \/>/i, `<meta name="description" content="${escapeHtml(art.desc.tr)}" />`);
-
-  // Remove duplicate default og:type, og:site_name, twitter:card, and robots from base template before injecting article head tags
-  pageHtml = pageHtml.replace(/<meta property="og:type" content="website" \/>\s*/i, '');
-  pageHtml = pageHtml.replace(/<meta property="og:site_name" content="Dijital Hezarfen" \/>\s*/i, '');
-  pageHtml = pageHtml.replace(/<meta name="twitter:card" content="summary_large_image" \/>\s*/i, '');
-  pageHtml = pageHtml.replace(/<meta name="robots" content=".*?" \/>\s*/i, '');
-
-  // Build custom head injection
-  const headInject = `
-    <link rel="canonical" href="${canonicalUrl}" />
+  const pageTitle = art.seoTitle || `${art.title.tr} | ${SITE_NAME}`;
+  const extraMeta = `
     <meta name="author" content="${escapeHtml(art.author)}" />
     <meta name="keywords" content="${escapeHtml(art.keywords?.join(', ') || '')}" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="Dijital Hezarfen" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="${escapeHtml(pageTitle)}" />
-    <meta property="og:description" content="${escapeHtml(art.desc.tr)}" />
-    <meta property="og:url" content="${canonicalUrl}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:image:width" content="1600" />
-    <meta property="og:image:height" content="900" />
-    <meta property="og:image:alt" content="${escapeHtml(art.imageAlt || art.title.tr)}" />
     <meta property="article:published_time" content="${art.publishedAt}" />
     <meta property="article:modified_time" content="${art.modifiedAt || art.publishedAt}" />
     <meta property="article:author" content="${escapeHtml(art.author)}" />
     <meta property="article:section" content="${escapeHtml(categoryLabel)}" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
-    <meta name="twitter:description" content="${escapeHtml(art.desc.tr)}" />
-    <meta name="twitter:image" content="${imageUrl}" />
-    <meta name="twitter:image:alt" content="${escapeHtml(art.imageAlt || art.title.tr)}" />
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json" id="article-json-ld">
-${JSON.stringify(jsonLd, null, 2)}
-    </script>
   `;
 
-  pageHtml = pageHtml.replace('</head>', `${headInject}\n</head>`);
+  const pageHtml = injectHeadAndRoot(rawTemplateHtml, {
+    title: pageTitle,
+    description: art.desc.tr,
+    canonicalUrl,
+    ogType: 'article',
+    ogImage: ogImageUrl,
+    ogImageAlt: art.imageAlt || art.title.tr,
+    extraMeta,
+    jsonLd,
+    semanticBodyHtml: articleSemanticHtml
+  });
 
-  // Inject prerendered semantic HTML into <div id="root">
-  pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${articleSemanticHtml}</div>`);
-
-  // Save to dist/yayinlar/{slug}/index.html
   const targetDir = path.join(distDir, 'yayinlar', art.slug);
-  if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir, { recursive: true });
-
+  fs.mkdirSync(targetDir, { recursive: true });
   fs.writeFileSync(path.join(targetDir, 'index.html'), pageHtml, 'utf8');
-
-  // Also save flat dist/yayinlar/{slug}.html for static server setups
   fs.writeFileSync(path.join(distDir, 'yayinlar', `${art.slug}.html`), pageHtml, 'utf8');
 
-  // Also save root-level dist/{slug}/index.html for direct /{slug}/ access
   const rootSlugDir = path.join(distDir, art.slug);
-  if (!fs.existsSync(rootSlugDir)) fs.mkdirSync(rootSlugDir, { recursive: true });
+  fs.mkdirSync(rootSlugDir, { recursive: true });
   fs.writeFileSync(path.join(rootSlugDir, 'index.html'), pageHtml, 'utf8');
-
-  generatedCount++;
 }
 
-console.log(`Successfully pre-rendered ${generatedCount} static HTML articles in dist/yayinlar/!`);
+// =========================================================================
+// 2. Pre-render Homepage (/) + All 33 Core Application Routes
+// =========================================================================
+console.log('Generating static HTML (SSG) for homepage and core routes...');
+
+const authorEssays = ssgArticles.filter((a) => a.author !== SITE_NAME && a.category !== 'haber');
+const newsArticles = ssgArticles.filter((a) => !authorEssays.some((e) => e.slug === a.slug));
+
+// Pre-render Homepage dist/index.html
+const homeRoute = CORE_SEO_ROUTES.find((r) => r.path === '/');
+const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    buildOrganizationSchema(),
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_ORIGIN}/#website`,
+      url: `${SITE_ORIGIN}/`,
+      name: SITE_NAME,
+      description: homeRoute.description,
+      inLanguage: 'tr-TR',
+      publisher: { '@id': `${SITE_ORIGIN}/#organization` },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${SITE_ORIGIN}/yayinlar?q={search_term_string}`,
+        'query-input': 'required name=search_term_string'
+      }
+    },
+    ...buildPersonSchemas(),
+    {
+      '@type': 'ItemList',
+      '@id': `${SITE_ORIGIN}/#featured-essays`,
+      name: 'Öne Çıkan Yazar Yayınları',
+      itemListElement: authorEssays.slice(0, 9).map((a, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        url: `${SITE_ORIGIN}/yayinlar/${a.slug}`,
+        name: a.title.tr
+      }))
+    },
+    ...buildVideoSchemas()
+  ]
+};
+
+const leadStory = ssgArticles.find((a) => a.slug === 'enron-karin-nakdin-ve-guvenin-denetimi') || authorEssays[0] || ssgArticles[0];
+const homeSemanticHtml = `
+  <div class="min-h-screen bg-[#000000] text-gray-100">
+    <header class="max-w-7xl mx-auto px-4 pt-6 pb-4 border-b border-white/10">
+      <nav aria-label="Ana Menü" class="flex flex-wrap gap-4 text-sm text-gray-300">
+        <a href="/">Dijital Hezarfen</a>
+        <a href="/yayinlar">Yayınlarımız</a>
+        <a href="/akademi">Akademi</a>
+        <a href="/uygulama">Uygulama</a>
+        <a href="/buyume-yatirim">Büyüme &amp; Yatırım</a>
+        <a href="/medya">Medya</a>
+        <a href="/hakkimizda">Hakkımızda</a>
+        <a href="/iletisim">İletişim</a>
+      </nav>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+      <section aria-label="Öne Çıkan Yazar Yayını">
+        <h1>${escapeHtml(leadStory ? leadStory.title.tr : homeRoute.h1)}</h1>
+        <p>${escapeHtml(leadStory ? leadStory.desc.tr : homeRoute.lead)}</p>
+        ${leadStory ? `<p>Yazar: <strong>${escapeHtml(leadStory.author)}</strong> — <a href="/yayinlar/${leadStory.slug}">Dosyayı Oku</a></p>` : ''}
+      </section>
+
+      <section aria-label="Yazarlardan Öne Çıkan İncelemeler">
+        <h2>Öne Çıkan Yazar Yayınları (Kaan Karakaş &amp; Haydar Karakaş)</h2>
+        <ul>
+          ${authorEssays.slice(0, 12).map((a) => `
+            <li>
+              <a href="/yayinlar/${a.slug}">${escapeHtml(a.title.tr)}</a>
+              <span> (${escapeHtml(a.author)}) — ${escapeHtml(a.desc.tr)}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </section>
+
+      <section aria-label="Haberler ve Rehberler">
+        <h2>Teknoloji Haberleri, Strateji Analizleri ve Uygulama Rehberleri</h2>
+        <ul>
+          ${newsArticles.slice(0, 18).map((a) => `
+            <li>
+              <a href="/yayinlar/${a.slug}">${escapeHtml(a.title.tr)}</a>
+              <span> — ${escapeHtml(a.desc.tr)}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </section>
+
+      <section aria-label="YouTube Video Yayınları">
+        <h2>Dijital Hezarfen YouTube Video Yayınları</h2>
+        <ul>
+          ${youtubeVideos.map((v) => `
+            <li>
+              <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noreferrer noopener">${escapeHtml(v.title.tr)}</a>
+              <span> (${escapeHtml(v.author)}) — ${escapeHtml(v.summary.tr)}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </section>
+
+      <section aria-label="Biz Ne Yapıyoruz">
+        <h2>Biz Ne Yapıyoruz? Akademi, Uygulama ve Büyüme &amp; Yatırım</h2>
+        <article>
+          <h3><a href="/akademi">01. Akademi — Girişimcilik Tüneli ve Modüler Eğitimler</a></h3>
+          <p>Teorik anlatımların ötesinde; kurucuların ürün, müşteri doğrulama, teknoloji ve yönetim reflekslerini gerçek vakalarla inşa ediyoruz.</p>
+        </article>
+        <article>
+          <h3><a href="/uygulama">02. Uygulama — Fikirden Çalışan Sisteme</a></h3>
+          <p>Yazılım ve yapay zekâ destekli MVP üretiminden dijital pazarlama, B2B satış, CRM ve finans altyapısına kadar sahada birlikte kuruyoruz.</p>
+        </article>
+        <article>
+          <h3><a href="/buyume-yatirim">03. Büyüme &amp; Yatırım — Ölçekten Küresel Pazara</a></h3>
+          <p>Girişimleri finansal modelleme, pitch deck kurgusu, yatırımcı görüşmeleri ve uluslararası büyüme stratejileriyle bir sonraki aşamaya hazırlıyoruz.</p>
+        </article>
+      </section>
+
+      ${buildTrustNavFooterHtml()}
+    </main>
+  </div>
+`;
+
+const homeHtml = injectHeadAndRoot(rawTemplateHtml, {
+  title: homeRoute.title,
+  description: homeRoute.description,
+  canonicalUrl: `${SITE_ORIGIN}/`,
+  ogType: 'website',
+  ogImage: DEFAULT_OG_IMAGE,
+  ogImageAlt: 'Dijital Hezarfen | Girişimcilik Akademisi, Uygulama ve Medya Ekosistemi',
+  jsonLd: homeJsonLd,
+  semanticBodyHtml: homeSemanticHtml
+});
+fs.writeFileSync(path.join(distDir, 'index.html'), homeHtml, 'utf8');
+
+// Pre-render all non-root core routes
+const flatFaqItems = faqCategories.flatMap((cat) =>
+  (faqData[cat.id] || []).map((item) => ({ ...item, categoryLabel: cat.label }))
+);
+
+let coreRouteCount = 1; // already counted '/'
+for (const route of CORE_SEO_ROUTES) {
+  if (route.path === '/') continue;
+
+  const routeUrl = `${SITE_ORIGIN}${route.path}`;
+  const graph = [
+    buildOrganizationSchema(),
+    {
+      '@type': 'WebPage',
+      '@id': `${routeUrl}#webpage`,
+      url: routeUrl,
+      name: route.title,
+      description: route.description,
+      inLanguage: 'tr-TR',
+      isPartOf: { '@id': `${SITE_ORIGIN}/#organization` }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${routeUrl}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: `${SITE_ORIGIN}/` },
+        { '@type': 'ListItem', position: 2, name: route.h1, item: routeUrl }
+      ]
+    }
+  ];
+
+  let extraSectionHtml = '';
+
+  if (route.path === '/yayinlar') {
+    graph.push({
+      '@type': 'ItemList',
+      name: 'Dijital Hezarfen Yayınları',
+      itemListElement: ssgArticles.map((a, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        url: `${SITE_ORIGIN}/yayinlar/${a.slug}`,
+        name: a.title.tr
+      }))
+    });
+    extraSectionHtml = `
+      <section>
+        <h2>Tüm Yayınlar (${ssgArticles.length})</h2>
+        <ul>
+          ${ssgArticles.map((a) => `
+            <li>
+              <a href="/yayinlar/${a.slug}">${escapeHtml(a.title.tr)}</a>
+              <span> — ${escapeHtml(a.author)} | ${escapeHtml(a.date.tr)}: ${escapeHtml(a.desc.tr)}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </section>
+    `;
+  } else if (route.path === '/medya') {
+    graph.push(...buildVideoSchemas());
+    extraSectionHtml = `
+      <section>
+        <h2>Dijital Hezarfen YouTube Videoları</h2>
+        <ul>
+          ${youtubeVideos.map((v) => `
+            <li>
+              <h3>${escapeHtml(v.title.tr)}</h3>
+              <p>${escapeHtml(v.summary.tr)}</p>
+              <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noreferrer noopener">YouTube’da İzle</a>
+            </li>
+          `).join('')}
+        </ul>
+      </section>
+    `;
+  } else if (route.path === '/sik-sorulan-sorular') {
+    const topFaqs = flatFaqItems.slice(0, 35);
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${routeUrl}#faq`,
+      mainEntity: topFaqs.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a
+        }
+      }))
+    });
+    extraSectionHtml = `
+      <section>
+        <h2>Sık Sorulan Sorular Arşivi (${flatFaqItems.length} Soru)</h2>
+        ${topFaqs.map((item) => `
+          <article>
+            <h3>${escapeHtml(item.q)}</h3>
+            <p>${escapeHtml(item.a)}</p>
+          </article>
+        `).join('')}
+      </section>
+    `;
+  } else if (route.path === '/hakkimizda' || route.path === '/dijital-hezarfen') {
+    graph.push(...buildPersonSchemas());
+    extraSectionHtml = `
+      <section>
+        <h2>Yazarlar ve Ekosistem Liderleri</h2>
+        ${Object.values(PERSON_ENTITIES).map((p) => `
+          <article>
+            <h3>${escapeHtml(p.name)} — ${escapeHtml(p.jobTitle)}</h3>
+            <p>${escapeHtml(p.bio)}</p>
+          </article>
+        `).join('')}
+      </section>
+    `;
+  }
+
+  const routeSemanticHtml = `
+    <div class="min-h-screen bg-[#000000] text-gray-100">
+      <main class="max-w-5xl mx-auto px-4 pt-28 pb-16 space-y-8">
+        <nav aria-label="Ekmek kırıntısı" class="text-xs text-gray-400">
+          <a href="/">Ana Sayfa</a> / <span>${escapeHtml(route.h1)}</span>
+        </nav>
+        <h1>${escapeHtml(route.h1)}</h1>
+        <p>${escapeHtml(route.lead || route.description)}</p>
+        ${extraSectionHtml}
+        ${buildTrustNavFooterHtml()}
+      </main>
+    </div>
+  `;
+
+  const routeHtml = injectHeadAndRoot(rawTemplateHtml, {
+    title: route.title,
+    description: route.description,
+    canonicalUrl: routeUrl,
+    ogType: 'website',
+    ogImage: DEFAULT_OG_IMAGE,
+    ogImageAlt: route.title,
+    jsonLd: { '@context': 'https://schema.org', '@graph': graph },
+    semanticBodyHtml: routeSemanticHtml
+  });
+
+  const cleanRel = route.path.replace(/^\/+/, '');
+  const outDir = path.join(distDir, cleanRel);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, 'index.html'), routeHtml, 'utf8');
+  fs.writeFileSync(path.join(distDir, `${cleanRel}.html`), routeHtml, 'utf8');
+  coreRouteCount++;
+}
+
+// =========================================================================
+// 3. Auto-generate Unified sitemap.xml (public + dist) with www canonical
+// =========================================================================
+const sitemapUrls = [
+  ...CORE_SEO_ROUTES.map((r) => ({
+    loc: `${SITE_ORIGIN}${r.path}`,
+    lastmod: TODAY_ISO,
+    changefreq: r.changefreq,
+    priority: r.priority
+  })),
+  ...ssgArticles.map((art) => ({
+    loc: `${SITE_ORIGIN}/yayinlar/${art.slug}`,
+    lastmod: art.modifiedAt || art.publishedAt || TODAY_ISO,
+    changefreq: art.featured ? 'weekly' : 'monthly',
+    priority: art.featured ? '0.9' : '0.8',
+    image: toOgRasterUrl(art.image),
+    imageTitle: art.title.tr
+  }))
+];
+
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${sitemapUrls
+  .map(
+    (entry) => `  <url>
+    <loc>${escapeHtml(entry.loc)}</loc>
+    <lastmod>${entry.lastmod}</lastmod>
+    <changefreq>${entry.changefreq}</changefreq>
+    <priority>${entry.priority}</priority>${
+      entry.image
+        ? `
+    <image:image>
+      <image:loc>${escapeHtml(entry.image)}</image:loc>
+      <image:title>${escapeHtml(entry.imageTitle)}</image:title>
+    </image:image>`
+        : ''
+    }
+  </url>`
+  )
+  .join('\n')}
+</urlset>
+`;
+
+fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf8');
+fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf8');
+
+// =========================================================================
+// 4. Auto-generate GEO Standard llms.txt & llms-full.txt (public + dist)
+// =========================================================================
+const llmsTxt = `# Dijital Hezarfen
+
+> Dijital Hezarfen; girişimcileri yetiştiren Akademi (Girişimcilik Tüneli ve modüler eğitimler), fikirleri çalışan ürünlere dönüştüren Uygulama (yazılım, AI MVP, growth, satış, CRM, finans) ve Büyüme & Yatırım süreçlerini tek çatı altında birleştiren, aynı zamanda Kaan Karakaş ve Haydar Karakaş imzalı derinlemesine teknoloji ve finans yayınları üreten bir girişimcilik ekosistemidir.
+
+Öne çıkan yayınlar, YouTube video analizleri ve program detayları \`https://www.dijitalhezarfen.com\` üzerinde sunulur. Türkçe ve İngilizce desteklidir; birincil yayın dili Türkçedir.
+
+## Ekosistem ve Programlar
+
+- [Ana Sayfa](${SITE_ORIGIN}/): Öne çıkan yazar dosyaları, teknoloji gündemi akışı, YouTube video analizleri ve ekosistem sütunları.
+- [Akademi](${SITE_ORIGIN}/akademi): Girişimciler ve yöneticiler için uygulamalı eğitim ve refleks geliştirme merkezi.
+- [Girişimcilik Tüneli](${SITE_ORIGIN}/akademi/girisimcilik-tuneli): 3-5 aylık yoğun kurucu yetiştirme, fikir doğrulama ve MVP programı.
+- [Uygulama Hizmetleri](${SITE_ORIGIN}/uygulama): Yazılım, AI MVP, otomasyon, dijital pazarlama, B2B satış/CRM ve finans altyapı inşası.
+- [Büyüme & Yatırım](${SITE_ORIGIN}/buyume-yatirim): Finansal modelleme, pitch deck kurgusu, yatırıma hazırlık ve küresel büyüme.
+- [Girişimler İçin](${SITE_ORIGIN}/girisimler): Fikir aşamasından Pre-Seed, Seed, Series A ve Scale-up evrelerine göre destek modeli.
+- [Dijital Hezarfen Nedir?](${SITE_ORIGIN}/dijital-hezarfen): Vizyon, çalışma modeli ve farklılaşan yaklaşımımız.
+- [Hakkımızda](${SITE_ORIGIN}/hakkimizda): Kurucu ekibimiz, misyonumuz ve vizyonumuz.
+- [Sık Sorulan Sorular](${SITE_ORIGIN}/sik-sorulan-sorular): Programlar, kabul kriterleri ve çalışma modeli hakkında kapsamlı SSS.
+
+## Öne Çıkan Yazar Yayınları (Kaan Karakaş & Haydar Karakaş)
+
+${authorEssays
+  .map((a) => `- [${a.title.tr}](${SITE_ORIGIN}/yayinlar/${a.slug}): ${a.author} (${a.readTime.tr}) — ${a.desc.tr}`)
+  .join('\n')}
+
+## Medya & Video Yayınları
+
+- [Medya Merkezi](${SITE_ORIGIN}/medya): Tüm YouTube analizleri ve yayın formatları.
+${youtubeVideos
+  .map((v) => `- [${v.title.tr}](https://www.youtube.com/watch?v=${v.id}): ${v.author} — ${v.summary.tr}`)
+  .join('\n')}
+
+## Optional
+
+- [Tüm Yayınlar Arşivi](${SITE_ORIGIN}/yayinlar): Sitedeki ${ssgArticles.length}+ analiz, rehber ve haber dosyasının tam dizini.
+- [Açık Kaynak Araç Kütüphanesi](${SITE_ORIGIN}/acik-kaynak-kutuphanesi): Girişimciler için seçili açık kaynak yazılım ve yapay zekâ araçları.
+- [İletişim](${SITE_ORIGIN}/iletisim): Doğrudan başvuru, iş birliği ve iletişim kanalları.
+- [Tam İçerik Dizini (llms-full.txt)](${SITE_ORIGIN}/llms-full.txt): Tüm sayfaların ve makalelerin genişletilmiş özet indeks dosyası.
+`;
+
+const llmsFullTxt = `# Dijital Hezarfen — Genişletilmiş İçerik ve Bilgi İndeksi (llms-full.txt)
+
+> Kaynak: ${SITE_ORIGIN}/
+> Güncelleme Tarihi: ${TODAY_ISO}
+> Yazarlar: Kaan Karakaş (Kurucu & Teknoloji Girişimcisi), Haydar Karakaş (Finansal & Mali Denetçi), Dijital Hezarfen Editör Ekibi
+
+## 1. Kurumsal Kimlik ve Çekirdek Sayfalar
+
+${CORE_SEO_ROUTES.map((r) => `### ${r.h1}\n- URL: ${SITE_ORIGIN}${r.path}\n- Özet: ${r.description}`).join('\n\n')}
+
+## 2. Yayınlar Kataloğu (${ssgArticles.length} Tam Makale)
+
+${ssgArticles
+  .map(
+    (a) => `### ${a.title.tr}
+- URL: ${SITE_ORIGIN}/yayinlar/${a.slug}
+- Yazar: ${a.author}
+- Yayın Tarihi: ${a.publishedAt}
+- Okuma Süresi: ${a.readTime.tr}
+- Özet: ${a.desc.tr}
+- Anahtar Kelimeler: ${(a.keywords || []).join(', ')}`
+  )
+  .join('\n\n')}
+
+## 3. Sık Sorulan Sorular (Seçili Özet)
+
+${flatFaqItems
+  .slice(0, 25)
+  .map((f) => `### ${f.q}\n${f.a}`)
+  .join('\n\n')}
+`;
+
+fs.writeFileSync(path.join(publicDir, 'llms.txt'), llmsTxt, 'utf8');
+fs.writeFileSync(path.join(distDir, 'llms.txt'), llmsTxt, 'utf8');
+fs.writeFileSync(path.join(publicDir, 'llms-full.txt'), llmsFullTxt, 'utf8');
+fs.writeFileSync(path.join(distDir, 'llms-full.txt'), llmsFullTxt, 'utf8');
+
+console.log(
+  `Successfully pre-rendered ${ssgArticles.length} articles, ${coreRouteCount} core routes (including /), ${sitemapUrls.length} sitemap URLs, and llms.txt + llms-full.txt!`
+);

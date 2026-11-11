@@ -159,7 +159,7 @@ export default function WhatWeDoSection({ lang = 'tr', onNavigate }) {
                     {pillar.subLinks.map((sub) => (
                       <a
                         key={sub.path}
-                        href={`#${sub.path}`}
+                        href={sub.path}
                         onClick={(e) => {
                           e.preventDefault();
                           onNavigate?.(sub.path);
@@ -175,7 +175,7 @@ export default function WhatWeDoSection({ lang = 'tr', onNavigate }) {
 
                 {/* Primary Pillar Page Link */}
                 <a
-                  href={`#${pillar.path}`}
+                  href={pillar.path}
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate?.(pillar.path);

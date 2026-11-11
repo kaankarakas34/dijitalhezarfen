@@ -136,7 +136,7 @@ export default function BlogSection({ lang, onNavigate }) {
               {/* Action Read button */}
               <div className="p-6 pt-0 mt-4 border-t border-white/5 pt-4">
                 <a
-                  href="#"
+                  href={post.path}
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate?.(post.path);

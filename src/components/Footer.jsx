@@ -138,8 +138,8 @@ export default function Footer({ onNavigate, lang }) {
           
           {/* Logo & About */}
           <div className="lg:col-span-2 space-y-5">
-            <a href="#" className="flex items-center gap-2.5 group" onClick={handleScrollToTop}>
-              <img src={logoBlue} alt="Dijital Hezarfen" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
+            <a href="/" className="flex items-center gap-2.5 group" onClick={handleScrollToTop}>
+              <img src={logoBlue} alt="Dijital Hezarfen" width="140" height="32" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
             </a>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm font-light">
               {t.aboutText}
@@ -170,7 +170,7 @@ export default function Footer({ onNavigate, lang }) {
                 {footerLinks[columnKey].map((link) => (
                   <li key={link.name}>
                     <a
-                      href="#"
+                      href={link.path}
                       onClick={(e) => handleNavClick(e, link.path)}
                       className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors duration-200"
                     >
@@ -193,9 +193,9 @@ export default function Footer({ onNavigate, lang }) {
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>© {new Date().getFullYear()} Dijital Hezarfen. {t.rights}</p>
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-white transition-colors">{t.privacy}</a>
-            <a href="#" className="hover:text-white transition-colors">{t.terms}</a>
-            <a href="#" className="hover:text-white transition-colors">{t.kvkk}</a>
+            <a href="/otomasyon/gizlilik" className="hover:text-white transition-colors">{t.privacy}</a>
+            <a href="/otomasyon/kullanim" className="hover:text-white transition-colors">{t.terms}</a>
+            <a href="/sik-sorulan-sorular" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="hover:text-white transition-colors">{t.kvkk}</a>
           </div>
         </div>
       </div>

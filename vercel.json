@@ -19,11 +19,7 @@
       "destination": "/yayinlar/:slug/index.html"
     },
     {
-      "source": "/:slug(kapso-whatsapp-chatbot-codex-claude-code-kurulum|google-ai-mode-reklamlari-arama-ekonomisi|microsoft-openai-10-milyar-dolar-gelir|sap-model-routing-ai-maliyet-optimizasyonu|nvidia-hugging-face-satin-alma-rekabet|upwind-400-milyon-dolar-bulut-guvenligi|guidewire-hyperexponential-sigorta-yapay-zeka|rebuild-venture-studio-ileri-uretim|jio-platforms-halka-arz-platform-ekonomisi|ai-veri-merkezleri-nukleer-enerji|samsung-hbm-yapay-zeka-bellek|unitree-robotik-buyume-karlilik|nvidia-nemotron-sesli-yapay-zeka|harmonic-aristotle-formal-verification|gsk-onkoloji-klinik-arastirma-stratejisi|lush-sosyal-medya-reklamsiz-marka-stratejisi)",
-      "destination": "/yayinlar/:slug/index.html"
-    },
-    {
-      "source": "/((?!otomasyon/|assets/|articles/|images/|favicon.svg|icons.svg|robots.txt|sitemap.xml|yayinlar/).*)",
+      "source": "/:path((?!otomasyon|assets|articles|images|yayinlar|favicon\\.svg|icons\\.svg|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt).*)",
       "destination": "/index.html"
     }
   ],
@@ -34,6 +30,19 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(llms\\.txt|llms-full\\.txt)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
         }
       ]
     },
@@ -59,6 +68,10 @@
       "source": "/(.*)",
       "headers": [
         {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
@@ -69,6 +82,14 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://ipapi.co; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
         }
       ]
     }

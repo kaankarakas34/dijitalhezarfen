@@ -112,4 +112,4 @@ Disallow: /admin/
 Disallow: /taslak/
 
 # Sitemaps
-Sitemap: https://dijitalhezarfen.com/sitemap.xml
+Sitemap: https://www.dijitalhezarfen.com/sitemap.xml

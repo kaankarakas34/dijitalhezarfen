@@ -96,8 +96,8 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '/')}>
-              <img src={logoWhite} alt="Dijital Hezarfen" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
+            <a href="/" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '/')}>
+              <img src={logoWhite} alt="Dijital Hezarfen" width="140" height="32" className="h-8 w-auto object-contain group-hover:opacity-90 transition-opacity" />
             </a>
           </div>
 
@@ -129,13 +129,13 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')} className="block group">
+                            <a href="/akademi/girisimcilik-tuneli" onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.tunnel}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.tunnelDesc}</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/akademi/egitimler')} className="block group">
+                            <a href="/akademi/egitimler" onClick={(e) => handleNavClick(e, '/akademi/egitimler')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.modular}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.modularDesc}</span>
                             </a>
@@ -150,13 +150,13 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/uygulama/yazilim-mvp')} className="block group">
+                            <a href="/uygulama/yazilim-mvp" onClick={(e) => handleNavClick(e, '/uygulama/yazilim-mvp')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.mvp}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.mvpDesc}</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/uygulama')} className="block group">
+                            <a href="/uygulama" onClick={(e) => handleNavClick(e, '/uygulama')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.appServices}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.appServicesDesc}</span>
                             </a>
@@ -171,13 +171,13 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim/yatirima-hazirlik')} className="block group">
+                            <a href="/buyume-yatirim/yatirima-hazirlik" onClick={(e) => handleNavClick(e, '/buyume-yatirim/yatirima-hazirlik')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.fundraising}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.fundraisingDesc}</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim/uluslararasilasma')} className="block group">
+                            <a href="/buyume-yatirim/uluslararasilasma" onClick={(e) => handleNavClick(e, '/buyume-yatirim/uluslararasilasma')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.globalGrowth}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.globalGrowthDesc}</span>
                             </a>
@@ -209,7 +209,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
             </div>
 
             <a
-              href="#"
+              href="/yayinlar"
               onClick={(e) => handleNavClick(e, '/yayinlar')}
               className="flex items-center px-4 py-3 rounded-xl text-sm font-semibold text-gray-300 hover:text-white hover:bg-white/3 transition-all duration-200"
             >
@@ -241,7 +241,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/dijital-hezarfen')} className="block group">
+                            <a href="/dijital-hezarfen" onClick={(e) => handleNavClick(e, '/dijital-hezarfen')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.vision}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.visionDesc}</span>
                             </a>
@@ -256,13 +256,13 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/hakkimizda')} className="block group">
+                            <a href="/hakkimizda" onClick={(e) => handleNavClick(e, '/hakkimizda')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.teamDesc}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.teamDesc}</span>
                             </a>
                           </li>
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="block group">
+                            <a href="/sik-sorulan-sorular" onClick={(e) => handleNavClick(e, '/sik-sorulan-sorular')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.acceptance}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.acceptanceDesc}</span>
                             </a>
@@ -277,7 +277,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="block group">
+                            <a href="/buyume-yatirim" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.investorDesc}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.investorDesc}</span>
                             </a>
@@ -333,7 +333,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleApplyClick('girisim'); }} className="block group">
+                            <a href="/basvur" onClick={(e) => { e.preventDefault(); handleApplyClick('girisim'); }} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.lookingForTeam}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.lookingForTeamDesc}</span>
                             </a>
@@ -347,7 +347,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleApplyClick('tunel'); }} className="block group">
+                            <a href="/basvur" onClick={(e) => { e.preventDefault(); handleApplyClick('tunel'); }} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.lookingForJob}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.lookingForJobDesc}</span>
                             </a>
@@ -362,7 +362,7 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
                         </h4>
                         <ul className="space-y-3.5">
                           <li>
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleApplyClick('girisim'); }} className="block group">
+                            <a href="/basvur" onClick={(e) => { e.preventDefault(); handleApplyClick('girisim'); }} className="block group">
                               <span className="text-xs font-bold text-white group-hover:text-cyber-cyan transition-colors block">{t.lookingForFounder}</span>
                               <span className="text-[10px] text-gray-400 mt-0.5 block leading-tight">{t.lookingForFounderDesc}</span>
                             </a>
@@ -452,22 +452,22 @@ export default function Navbar({ onOpenApplyModal, onNavigate, lang, onLanguageC
               {/* Programlar */}
               <div className="space-y-1">
                 <div className="text-[10px] font-bold text-cyber-cyan uppercase tracking-wider px-2">{t.programs}</div>
-                <a href="#" onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.tunnel}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/uygulama')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.appServices}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.growthVenture}</a>
+                <a href="/akademi/girisimcilik-tuneli" onClick={(e) => handleNavClick(e, '/akademi/girisimcilik-tuneli')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.tunnel}</a>
+                <a href="/uygulama" onClick={(e) => handleNavClick(e, '/uygulama')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.appServices}</a>
+                <a href="/buyume-yatirim" onClick={(e) => handleNavClick(e, '/buyume-yatirim')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.growthVenture}</a>
               </div>
 
               {/* Yayınlarımız */}
               <div className="space-y-1 pt-2 border-t border-white/5">
                 <div className="text-[10px] font-bold text-violet-400 uppercase tracking-wider px-2">{t.publications}</div>
-                <a href="#" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.publications}</a>
+                <a href="/yayinlar" onClick={(e) => handleNavClick(e, '/yayinlar')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.publications}</a>
               </div>
 
               {/* Hakkımızda */}
               <div className="space-y-1 pt-2 border-t border-white/5">
                 <div className="text-[10px] font-bold text-pink-400 uppercase tracking-wider px-2">{t.about}</div>
-                <a href="#" onClick={(e) => handleNavClick(e, '/dijital-hezarfen')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.vision}</a>
-                <a href="#" onClick={(e) => handleNavClick(e, '/hakkimizda')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.teamDesc}</a>
+                <a href="/dijital-hezarfen" onClick={(e) => handleNavClick(e, '/dijital-hezarfen')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.vision}</a>
+                <a href="/hakkimizda" onClick={(e) => handleNavClick(e, '/hakkimizda')} className="flex items-center gap-3 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 text-xs font-semibold">{t.teamDesc}</a>
               </div>
 
               {/* Kariyer */}

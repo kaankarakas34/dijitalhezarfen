@@ -3,7 +3,7 @@ import PageHero from '../components/UI/PageHero';
 import { ArrowUpRight, BarChart3, BookOpen, Clock, FileText, Newspaper, Search, Sparkles, Video } from 'lucide-react';
 import { articleCategories, articles, localizedArticle } from '../data/articles';
 
-export default function Yayinlar({ lang }) {
+export default function Yayinlar({ lang, onNavigate }) {
   const isTr = lang === 'tr';
   const [activeCategory, setActiveCategory] = useState('hepsi');
   const [searchQuery, setSearchQuery] = useState('');
@@ -107,7 +107,16 @@ export default function Yayinlar({ lang }) {
                 </div>
                 <p className="text-sm sm:text-base text-gray-300 leading-relaxed">{featured.desc}</p>
               </div>
-              <a href={`#${featured.path}`} className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white hover:text-cyber-cyan transition-colors">
+              <a
+                href={featured.path}
+                onClick={(e) => {
+                  if (onNavigate) {
+                    e.preventDefault();
+                    onNavigate(featured.path);
+                  }
+                }}
+                className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white hover:text-cyber-cyan transition-colors"
+              >
                 {t.read}
                 <ArrowUpRight className="w-4 h-4" />
               </a>
@@ -179,7 +188,16 @@ export default function Yayinlar({ lang }) {
                     </p>
                     <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
                       <span className="text-[11px] text-gray-500">{t.authorLabel}: {publication.author}</span>
-                      <a href={`#${publication.path}`} className="inline-flex items-center gap-1.5 text-xs font-bold text-cyber-cyan">
+                      <a
+                        href={publication.path}
+                        onClick={(e) => {
+                          if (onNavigate) {
+                            e.preventDefault();
+                            onNavigate(publication.path);
+                          }
+                        }}
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-cyber-cyan"
+                      >
                         {t.read}
                         <ArrowUpRight className="w-3.5 h-3.5" />
                       </a>

@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local SEO & GEO toolkits, Python venv, and generated audit outputs
+.seo-geo-tools/
+reports/seo-geo/

@@ -16,7 +16,7 @@ import {
 import { articleCategories, articles, getArticleBySlug, localizedArticle } from '../data/articles';
 
 const siteName = 'Dijital Hezarfen';
-const siteBaseUrl = 'https://dijitalhezarfen.com';
+const siteBaseUrl = 'https://www.dijitalhezarfen.com';
 const defaultTitle = 'Dijital Hezarfen | Girişimcilik Akademisi & Uygulama Ekosistemi';
 const defaultDescription = 'Dijital Hezarfen; girişimcileri yetiştiren, fikirleri girişime dönüştüren ve şirketleri büyüten akademi, uygulama ve büyüme ekosistemidir.';
 
@@ -93,12 +93,14 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
             '@type': 'Person',
             name: article.author,
             jobTitle: article.authorRole || (article.author === 'Haydar Karakaş' ? 'Finansal & Mali Denetçi' : 'Kurucu & Teknoloji Girişimcisi'),
-            url: `${siteBaseUrl}/#/dijital-hezarfen`
+            url: `${siteBaseUrl}/dijital-hezarfen`,
+            sameAs: article.author === 'Kaan Karakaş' ? ['https://www.youtube.com/channel/UC0xVK9RzlDyFcVMm_iGiARA'] : undefined
           },
       publisher: {
         '@type': 'Organization',
         name: siteName,
         url: siteBaseUrl,
+        sameAs: ['https://www.youtube.com/channel/UC0xVK9RzlDyFcVMm_iGiARA'],
         logo: {
           '@type': 'ImageObject',
           url: `${siteBaseUrl}/favicon.svg`,
@@ -131,7 +133,7 @@ function setJsonLd(article, categoryLabel, url, imageUrl) {
           '@type': 'ListItem',
           position: 2,
           name: 'Yayınlar',
-          item: `${siteBaseUrl}/#/yayinlar`
+          item: `${siteBaseUrl}/yayinlar`
         },
         {
           '@type': 'ListItem',
@@ -616,7 +618,7 @@ function renderFormattedContent(text, onNavigate, sources = []) {
       parts.push(
         <a
           key={`l-${match.index}`}
-          href={isInternal ? `#${linkUrl.replace(/^#/, '')}` : linkUrl}
+          href={isInternal ? linkUrl.replace(/^#/, '') : linkUrl}
           onClick={(e) => {
             if (isInternal) {
               e.preventDefault();
@@ -913,11 +915,11 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
 
             {/* Semantic Breadcrumbs */}
             <nav aria-label="Ekmek kırıntısı" className="flex items-center gap-2 text-xs text-gray-500 mb-4">
-              <a href="#/" onClick={(e) => { e.preventDefault(); onNavigate('/'); }} className="hover:text-cyber-cyan transition-colors">
+              <a href="/" onClick={(e) => { e.preventDefault(); onNavigate('/'); }} className="hover:text-cyber-cyan transition-colors">
                 Ana Sayfa
               </a>
               <span>/</span>
-              <a href="#/yayinlar" onClick={(e) => { e.preventDefault(); onNavigate('/yayinlar'); }} className="hover:text-cyber-cyan transition-colors">
+              <a href="/yayinlar" onClick={(e) => { e.preventDefault(); onNavigate('/yayinlar'); }} className="hover:text-cyber-cyan transition-colors">
                 Yayınlar
               </a>
               <span>/</span>
@@ -1402,7 +1404,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
               </p>
               <div className="flex items-center justify-center sm:justify-start gap-3 text-xs text-cyber-cyan font-semibold">
                 <a
-                  href="#/dijital-hezarfen"
+                  href="/dijital-hezarfen"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('/dijital-hezarfen');
@@ -1413,7 +1415,7 @@ export default function YayinDetay({ slug, lang, onNavigate }) {
                 </a>
                 <span className="text-gray-600">•</span>
                 <a
-                  href="#/yayinlar"
+                  href="/yayinlar"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('/yayinlar');

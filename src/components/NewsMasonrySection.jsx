@@ -108,7 +108,7 @@ export default function NewsMasonrySection({ lang = 'tr', onNavigate }) {
                 className="break-inside-avoid mb-6 rounded-2xl bg-[#0F1424]/80 border border-white/10 hover:border-cyan-500/40 transition-colors duration-200 overflow-hidden group"
               >
                 <a
-                  href={`#${item.path}`}
+                  href={item.path}
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate?.(item.path);
@@ -200,7 +200,7 @@ export default function NewsMasonrySection({ lang = 'tr', onNavigate }) {
               </button>
             )}
             <a
-              href="#/yayinlar"
+              href="/yayinlar"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate?.('/yayinlar');

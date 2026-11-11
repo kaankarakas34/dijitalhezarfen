@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build && node scripts/generate-ssg.js",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "audit:seo-geo": "node scripts/seo-geo-audit.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

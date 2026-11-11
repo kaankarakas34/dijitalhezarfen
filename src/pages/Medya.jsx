@@ -67,7 +67,7 @@ export default function Medya({ lang = 'tr', onNavigate }) {
                     <p className="text-sm text-gray-400 mt-2 leading-relaxed font-light">{s.desc}</p>
                   </div>
                   <a
-                    href="#/yayinlar"
+                    href="/yayinlar"
                     onClick={(e) => {
                       e.preventDefault();
                       onNavigate('/yayinlar');

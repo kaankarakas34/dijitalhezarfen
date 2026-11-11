@@ -1,481 +1,608 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://dijitalhezarfen.com/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://www.dijitalhezarfen.com/</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/kapso-whatsapp-chatbot-codex-claude-code-kurulum</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://www.dijitalhezarfen.com/yayinlar</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/dijital-hezarfen</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/hakkimizda</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi/girisimcilik-tuneli</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi/egitimler</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi/pazarlama-satis</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi/teknoloji-yapay-zeka</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi/finans-hukuk-yonetim</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/akademi/kurumsal</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/yazilim-mvp</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/yapay-zeka-otomasyon</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/dijital-pazarlama-growth</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/satis-crm</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/finans-hukuk</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/yonetim-organizasyon</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/uygulama/medya-tasarim</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/buyume-yatirim</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/buyume-yatirim/yatirima-hazirlik</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/buyume-yatirim/uluslararasilasma</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/girisimler</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/girisimler/fikir-asamasi</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/girisimler/pre-seed</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/girisimler/seed</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/girisimler/series-a-ve-sonrasi</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/girisimler/scale-up</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/kurumsal</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/medya</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/iletisim</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/sik-sorulan-sorular</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/basvur</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/acik-kaynak-kutuphanesi</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/kapso-whatsapp-chatbot-codex-claude-code-kurulum</loc>
+    <lastmod>2026-11-04T12:00:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/kapso-whatsapp-bot-kapak.webp</image:loc>
-      <image:title>WhatsApp&apos;ta Kendi Yapay Zekâ Botunu Kur: Kapso, Codex ve Claude Code Rehberi</image:title>
-      <image:caption>Kapso üzerinden WhatsApp bağlantısı; Codex ve Claude Code ile yapay zekâ botu kurulumunun şematik anlatımı</image:caption>
+      <image:loc>https://www.dijitalhezarfen.com/images/kapso-whatsapp-bot-kapak.webp</image:loc>
+      <image:title>WhatsApp&#39;ta Kendi Yapay Zekâ Botunu Kur: Kapso, Codex ve Claude Code Rehberi</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/google-ai-mode-reklamlari-arama-ekonomisi</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/google-ai-mode-reklamlari-arama-ekonomisi</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/google-ai-mode-reklamlari-arama-ekonomisi-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/google-ai-mode-reklamlari-arama-ekonomisi-kapak.webp</image:loc>
       <image:title>Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor</image:title>
-      <image:caption>Google AI Mode reklamları: Arama motoru artık konuşmanın içinde satış yapıyor konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/microsoft-openai-10-milyar-dolar-gelir</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/microsoft-openai-10-milyar-dolar-gelir</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/microsoft-openai-10-milyar-dolar-gelir-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/microsoft-openai-10-milyar-dolar-gelir-kapak.webp</image:loc>
       <image:title>Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür?</image:title>
-      <image:caption>Microsoft–OpenAI ilişkisi: Bir yatırım nasıl dev bir gelir kanalına dönüşür? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/sap-model-routing-ai-maliyet-optimizasyonu</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/sap-model-routing-ai-maliyet-optimizasyonu</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/sap-model-routing-ai-maliyet-optimizasyonu-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/sap-model-routing-ai-maliyet-optimizasyonu-kapak.webp</image:loc>
       <image:title>SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor?</image:title>
-      <image:caption>SAP neden en güçlü yapay zekâ modelini kullanmak istemiyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/nvidia-hugging-face-satin-alma-rekabet</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/nvidia-hugging-face-satin-alma-rekabet</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/nvidia-hugging-face-satin-alma-rekabet-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/nvidia-hugging-face-satin-alma-rekabet-kapak.webp</image:loc>
       <image:title>Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde?</image:title>
-      <image:caption>Nvidia ve Hugging Face: Açık yapay zekânın kapısı kimin elinde? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/upwind-400-milyon-dolar-bulut-guvenligi</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/upwind-400-milyon-dolar-bulut-guvenligi</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/upwind-400-milyon-dolar-bulut-guvenligi-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/upwind-400-milyon-dolar-bulut-guvenligi-kapak.webp</image:loc>
       <image:title>Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı?</image:title>
-      <image:caption>Upwind 400 milyon dolar topladı: Güvenlik neden AI çağının temel altyapısı? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/guidewire-hyperexponential-sigorta-yapay-zeka</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/guidewire-hyperexponential-sigorta-yapay-zeka</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/guidewire-hyperexponential-sigorta-yapay-zeka-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/guidewire-hyperexponential-sigorta-yapay-zeka-kapak.webp</image:loc>
       <image:title>Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor?</image:title>
-      <image:caption>Guidewire–Hyperexponential: Sigortacılıkta yapay zekâ neden milyarlar ediyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/rebuild-venture-studio-ileri-uretim</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/rebuild-venture-studio-ileri-uretim</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/rebuild-venture-studio-ileri-uretim-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/rebuild-venture-studio-ileri-uretim-kapak.webp</image:loc>
       <image:title>Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı?</image:title>
-      <image:caption>Re:Build ve 2,1 milyar dolar: Venture Studio modeli fabrikaya taşınır mı? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/jio-platforms-halka-arz-platform-ekonomisi</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/jio-platforms-halka-arz-platform-ekonomisi</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/jio-platforms-halka-arz-platform-ekonomisi-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/jio-platforms-halka-arz-platform-ekonomisi-kapak.webp</image:loc>
       <image:title>Jio Platforms: Önce dağıtım, sonra dijital ekosistem</image:title>
-      <image:caption>Jio Platforms: Önce dağıtım, sonra dijital ekosistem konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/ai-veri-merkezleri-nukleer-enerji</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/ai-veri-merkezleri-nukleer-enerji</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/ai-veri-merkezleri-nukleer-enerji-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/ai-veri-merkezleri-nukleer-enerji-kapak.webp</image:loc>
       <image:title>Nükleer enerji neden yapay zekâ şirketlerinin gündeminde?</image:title>
-      <image:caption>Nükleer enerji neden yapay zekâ şirketlerinin gündeminde? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/samsung-hbm-yapay-zeka-bellek</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/samsung-hbm-yapay-zeka-bellek</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/samsung-hbm-yapay-zeka-bellek-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/samsung-hbm-yapay-zeka-bellek-kapak.webp</image:loc>
       <image:title>Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek</image:title>
-      <image:caption>Samsung ve HBM yarışı: Yapay zekânın görünmeyen darboğazı bellek konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/unitree-robotik-buyume-karlilik</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/unitree-robotik-buyume-karlilik</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/unitree-robotik-buyume-karlilik-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/unitree-robotik-buyume-karlilik-kapak.webp</image:loc>
       <image:title>Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor?</image:title>
-      <image:caption>Unitree: Robot satışları büyürken kârlılık neden zorlaşıyor? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/nvidia-nemotron-sesli-yapay-zeka</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/nvidia-nemotron-sesli-yapay-zeka</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/nvidia-nemotron-sesli-yapay-zeka-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/nvidia-nemotron-sesli-yapay-zeka-kapak.webp</image:loc>
       <image:title>Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi</image:title>
-      <image:caption>Nvidia Nemotron: Çok dilli sesli yapay zekâda açık modellerin yükselişi konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/harmonic-aristotle-formal-verification</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/harmonic-aristotle-formal-verification</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/harmonic-aristotle-formal-verification-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/harmonic-aristotle-formal-verification-kapak.webp</image:loc>
       <image:title>Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor</image:title>
-      <image:caption>Harmonic Aristotle: Yapay zekâ kodu üretmekten doğrulamaya geçiyor konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/gsk-onkoloji-klinik-arastirma-stratejisi</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/gsk-onkoloji-klinik-arastirma-stratejisi</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/gsk-onkoloji-klinik-arastirma-stratejisi-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/gsk-onkoloji-klinik-arastirma-stratejisi-kapak.webp</image:loc>
       <image:title>GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi?</image:title>
-      <image:caption>GSK ve onkoloji yarışı: Daha fazla klinik program daha fazla başarı demek mi? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/lush-sosyal-medya-reklamsiz-marka-stratejisi</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/lush-sosyal-medya-reklamsiz-marka-stratejisi</loc>
+    <lastmod>2026-11-02T13:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/lush-sosyal-medya-reklamsiz-marka-stratejisi-kapak.webp</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/lush-sosyal-medya-reklamsiz-marka-stratejisi-kapak.webp</image:loc>
       <image:title>Lush sosyal medya reklamlarını bırakınca ne oldu?</image:title>
-      <image:caption>Lush sosyal medya reklamlarını bırakınca ne oldu? konusunu kavramsal olarak anlatan editoryal kapak görseli.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/meta-ai-yatirimlari-sermaye-verimliligi</loc>
+    <lastmod>2026-10-23T09:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/meta-ai-yatirimlari-sermaye-verimliligi.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Meta’nın 145 Milyar Dolarlık Bahsi: Yapay Zekâya Harcanan Para Ne Zaman Geri Dönecek?</image:title>
-      <image:caption>Meta, 2026 sermaye harcamasını 145 milyar dolara taşırken serbest nakit akışı eksiye düştü. Yapay zekâ altyapısında sermaye verimliliği ve getiri süresi masada.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/lseg-octus-ozel-veri-ai</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/lseg-octus-ozel-veri-ai</loc>
+    <lastmod>2026-10-23T09:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/lseg-octus-ozel-veri-ai.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>LSEG Neden 3,54 Milyar Dolara Veri Satın Alıyor? Yapay Zekâ Çağında Asıl Rekabet Avantajı</image:title>
-      <image:caption>London Stock Exchange Group&apos;un Octus&apos;u 3,54 milyar dolara alması, AI çağında asıl kalıcı avantajın modellerde değil, tescilli özel veride olduğunu kanıtlıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/nebius-ai-veri-merkezi-finansmani</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/nebius-ai-veri-merkezi-finansmani</loc>
+    <lastmod>2026-10-23T09:30:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/nebius-ai-veri-merkezi-finansmani.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Nebius’un 3,5 Milyar Dolarlık Kredisi: AI Startup’ları Neden Altyapı Şirketine Dönüşüyor?</image:title>
-      <image:caption>Nebius&apos;un Citi ile 3,5 milyar dolarlık finansman anlaşması, GPU bulut girişimlerinin yazılım şirketinden çok sermaye yoğun altyapı operatörüne dönüştüğünü gösteriyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/flapping-airplanes-bir-milyar-dolar-yatirim</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/flapping-airplanes-bir-milyar-dolar-yatirim</loc>
+    <lastmod>2026-10-23T09:45:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/flapping-airplanes-bir-milyar-dolar-yatirim.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Bir Yaşındaki AI Laboratuvarına 1 Milyar Dolar: Yatırımcılar Ne Satın Alıyor?</image:title>
-      <image:caption>Henüz bir yaşındaki araştırma laboratuvarı Flapping Airplanes&apos;in 6 milyar dolar değerlemeyle aldığı 1 milyar dolar, model verimliliği arayışını zirveye taşıdı.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/mach9-ai-cad-pivot</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/mach9-ai-cad-pivot</loc>
+    <lastmod>2026-10-23T10:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/mach9-ai-cad-pivot.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Mach9’un Pivotu: Robot Yapmak Yerine Robotların Topladığı Veriyi Satmak</image:title>
-      <image:caption>Mach9, robotik donanımdan LiDAR verilerini AI ile CAD mühendislik çizimlerine dönüştüren yazılıma odaklanarak 34 milyon dolarlık Seri A yatırımını tamamladı.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/nvidia-openshell-ai-agent-guvenligi</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/nvidia-openshell-ai-agent-guvenligi</loc>
+    <lastmod>2026-10-23T10:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/nvidia-openshell-ai-agent-guvenligi.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Nvidia OpenShell: AI Ajanları Şirketinize Girdiğinde Güvenlik Nasıl Değişecek?</image:title>
-      <image:caption>Nvidia&apos;nın OpenShell mimarisi, kurumsal süreçlerde özerk hareket eden yapay zekâ ajanları için yetkilendirme, işlem denetimi ve donanım destekli güvenlik getiriyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/nvidia-agile-robots-humanoid-platform</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/nvidia-agile-robots-humanoid-platform</loc>
+    <lastmod>2026-10-23T10:30:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/nvidia-agile-robots-humanoid-platform.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Humanoid Robotlar İçin Android Benzeri Bir Platform mu Doğuyor?</image:title>
-      <image:caption>Nvidia&apos;nın Isaac platformu ve Agile Robots ortaklığı, humanoid robotik alanında Android benzeri standart bir geliştirme ve simülasyon ekosistemi yaratıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/ai-veri-merkezi-elektrik-kablo-darbogazi</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/ai-veri-merkezi-elektrik-kablo-darbogazi</loc>
+    <lastmod>2026-10-23T10:45:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/ai-veri-merkezi-elektrik-kablo-darbogazi.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Yapay Zekânın Önündeki Engel Çip Değil, Elektrik Kablosu Olabilir</image:title>
-      <image:caption>Kablo üreticisi Nexans&apos;ın uyarısıyla gündeme gelen altyapı krizi, AI veri merkezlerinin büyüme hızının çip tedarikinden önce elektrik şebekesine takıldığını kanıtlıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/target-ask-target-ai-alisveris</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/target-ask-target-ai-alisveris</loc>
+    <lastmod>2026-10-23T11:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/target-ask-target-ai-alisveris.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Target’ın AI Alışveriş Asistanı: E-Ticarette Arama Kutusunun Sonrası</image:title>
-      <image:caption>Target&apos;ın devreye aldığı Ask Target asistanı, e-ticarette anahtar kelime aramasının yerini ihtiyaç odaklı diyalog ve satın alma eşlikçiliğinin aldığını gösteriyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/walmart-connect-ajanslar-reklam-olcumleme</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/walmart-connect-ajanslar-reklam-olcumleme</loc>
+    <lastmod>2026-10-23T11:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/walmart-connect-ajanslar-reklam-olcumleme.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Walmart Connect ve Ajansların Geleceği: Reklamverenle İlişki Kimin?</image:title>
-      <image:caption>Walmart Connect&apos;in doğrudan markalara etki ölçümlemesi sunması, perakende medya ağlarında reklam ajanslarının aracılık gücünü ve katma değerini sorgulatıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/cnn-agentic-advertising</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/cnn-agentic-advertising</loc>
+    <lastmod>2026-10-23T11:30:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/cnn-agentic-advertising.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>CNN Reklam Alanını AI Ajanlarına Sattığında Medya Satın Alma Nasıl Değişecek?</image:title>
-      <image:caption>CNN International&apos;ın 2027 başında devreye almayı planladığı ajan tabanlı reklam sistemi, teklif verme, pazarlık ve envanter satın almayı özerk botlara devrediyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/moderna-merck-mrna-melanom-faz-3</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/moderna-merck-mrna-melanom-faz-3</loc>
+    <lastmod>2026-10-23T11:45:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/moderna-merck-mrna-melanom-faz-3.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Kişiye Özel mRNA Kanser Tedavisinde %42: Rakam Gerçekte Ne Anlatıyor?</image:title>
-      <image:caption>Moderna ve Merck&apos;in melanom Faz 3 çalışmasındaki %42&apos;lik göreli risk azalması, kişiselleştirilmiş neoantijen onkolojisinin klinik ve ticari geleceğini açığa çıkarıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/gilead-pepstar-ilac-teknoloji-satin-alma</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/gilead-pepstar-ilac-teknoloji-satin-alma</loc>
+    <lastmod>2026-10-23T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/gilead-pepstar-ilac-teknoloji-satin-alma.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Gilead’ın 1,275 Milyar Dolarlık Erken Aşama Bahsi: İlaç mı, Teknoloji mi?</image:title>
-      <image:caption>Gilead&apos;ın PepStar&apos;ın erken klinik aşamadaki oral IL-23 programını 1,275 milyar dolara alması, ilaç devlerinin bilimsel platform satın alma stratejisini yansıtıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/microsoft-ai-teshis-sirali-akil-yurutme</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/microsoft-ai-teshis-sirali-akil-yurutme</loc>
+    <lastmod>2026-10-23T12:15:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/microsoft-ai-teshis-sirali-akil-yurutme.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>Doktor Gibi Adım Adım Düşünen AI: Tıbbi Yapay Zekâda Yeni Eşik</image:title>
-      <image:caption>Microsoft araştırmacılarının geliştirdiği sıralı akıl yürütme tanı AI&apos;ı, sağlıkta tek seferlik tahmin yerine hekimler gibi aşamalı test ve soru sorma yöntemini getiriyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/abd-cin-teknoloji-yatirim-kisitlamalari</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/abd-cin-teknoloji-yatirim-kisitlamalari</loc>
+    <lastmod>2026-10-23T12:30:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/abd-cin-teknoloji-yatirim-kisitlamalari.svg</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
       <image:title>ABD’nin Çin Teknoloji Yatırımlarına Yeni Freni: Startup Sermayesi Jeopolitiğe Bağlanıyor</image:title>
-      <image:caption>ABD Hazine Bakanlığı&apos;nın yayımladığı dış yatırım düzenlemeleri; AI, kuantum ve yarı iletkenlerde sermaye akışlarını doğrudan ulusal güvenlik denetimine bağlıyor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/enron-karin-nakdin-ve-guvenin-denetimi</loc>
+    <lastmod>2026-10-04T12:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.dijitalhezarfen.com/images/enron-karin-nakdin-ve-guvenin-denetimi.png</image:loc>
+      <image:title>ENRON: Kârın, Nakdin ve Güvenin Denetimi</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/bir-sonraki-esiniz-humanoid-olabilir</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/bir-sonraki-esiniz-humanoid-olabilir</loc>
+    <lastmod>2026-10-04T10:50:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/bir-sonraki-esiniz-humanoid-olabilir.png</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/bir-sonraki-esiniz-humanoid-olabilir.png</image:loc>
       <image:title>Bir Sonraki Eşiniz Bir Humanoid Olabilir mi?</image:title>
-      <image:caption>Yapay partnerlik, bilinç, psikolojik destek ve duygusal bağ analizi</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/bilgisayar-kavrami-degisiyor</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/bilgisayar-kavrami-degisiyor</loc>
+    <lastmod>2026-09-23T11:40:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/bilgisayar-kavrami-degisiyor.png</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/bilgisayar-kavrami-degisiyor.png</image:loc>
       <image:title>Bilgisayar Kavramı Değişiyor: Operating System’dan Intelligence System’a</image:title>
-      <image:caption>Googlebook, Agentic AI PC ve Personal Intelligence çağı</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/insani-insan-yapan-sey-aslinda-zihnidir</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/insani-insan-yapan-sey-aslinda-zihnidir</loc>
+    <lastmod>2026-09-19T12:50:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/insani-insan-yapan-sey-aslinda-zihnidir.png</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/insani-insan-yapan-sey-aslinda-zihnidir.png</image:loc>
       <image:title>İnsanı İnsan Yapan Şey Aslında Zihnidir</image:title>
-      <image:caption>İnsan beyni, sinirsel ağlar, bilinç ve yapay zekâ felsefesi</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik</loc>
+    <lastmod>2026-09-15T19:30:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik.png</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/yapay-zekayi-kapatmakta-cok-mu-gec-kaldik.png</image:loc>
       <image:title>Yapay Zekâyı Kapatmakta Çok mu Geç Kaldık?</image:title>
-      <image:caption>Yapay zekâ anayasası, alignment ve otonom sistem kontrol odası</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/gpt-6-astra-ve-agi-cagi</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/gpt-6-astra-ve-agi-cagi</loc>
+    <lastmod>2026-09-04T23:20:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/gpt-6-astra-agi-cagi.png</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/gpt-6-astra-agi-cagi.png</image:loc>
       <image:title>GPT-6 Astra ve AGI Çağı: İnsanların Yerini AI mı Alacak?</image:title>
-      <image:caption>GPT-6 Astra ve AGI Çağı analiz yazısı için otonom yapay zekâ ağları ve dijital iş gücü mimarisi</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/yapay-zeka-calisanlar-meta-project-ot</loc>
-    <lastmod>2026-09-02</lastmod>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/ben-bu-fikire-2-milyon-dolar-yatirim-alirim</loc>
+    <lastmod>2026-09-02T16:30:00+03:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/yapay-zeka-calisanlar-meta-project-ot.png</image:loc>
-      <image:title>Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/ben-bu-fikire-2-milyon-dolar-yatirim-alirim</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/ben-bu-fikire-2-milyon-dolar.png</image:loc>
+      <image:loc>https://www.dijitalhezarfen.com/images/ben-bu-fikire-2-milyon-dolar.png</image:loc>
       <image:title>Ben Bu Fikire 2 Milyon Dolar Yatırım Alırım</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/yayinlar/tim-cook-apple-miras</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/yapay-zeka-calisanlar-meta-project-ot</loc>
+    <lastmod>2026-09-02T15:30:00+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://dijitalhezarfen.com/images/tim-cook-apple-miras.png</image:loc>
-      <image:title>Tim Cook’un Apple’a bıraktığı asıl miras</image:title>
+      <image:loc>https://www.dijitalhezarfen.com/images/yapay-zeka-calisanlar-meta-project-ot.png</image:loc>
+      <image:title>Yapay Zekâ Çalışanların Yerini Almaya Hazır mı? Meta’nın Project OT Deneyi Bize Ne Anlatıyor?</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://dijitalhezarfen.com/girisimler</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/akademi</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/uygulama</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/buyume-yatirim</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/medya</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/kurumsal</loc>
+    <loc>https://www.dijitalhezarfen.com/yayinlar/tim-cook-apple-miras</loc>
+    <lastmod>2026-09-02T15:30:00+03:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/iletisim</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dijitalhezarfen.com/sik-sorulan-sorular</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.dijitalhezarfen.com/images/tim-cook-apple-miras.png</image:loc>
+      <image:title>Tim Cook’un Apple’a bıraktığı asıl miras: Ürünlerden daha büyük bir makine</image:title>
+    </image:image>
   </url>
 </urlset>

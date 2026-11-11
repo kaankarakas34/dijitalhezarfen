@@ -32,7 +32,7 @@ function runPython(scriptPath, args = [], parseJson = true, input = undefined) {
     cwd: ROOT_DIR,
     encoding: 'utf8',
     input,
-    timeout: 90000,
+    timeout: 240000,
     env: {
       ...process.env,
       PYTHONIOENCODING: 'utf-8',

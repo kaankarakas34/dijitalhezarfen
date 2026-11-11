@@ -6,7 +6,7 @@ import WhatWeDoSection from '../components/WhatWeDoSection';
 
 export default function Home({ onNavigate, lang }) {
   return (
-    <div className="bg-[#080A0F]">
+    <div className="bg-[#000000]">
       {/* 1. Giriş: Yazarlardan (Kaan Karakaş & Haydar Karakaş) Öne Çıkan Yayınlar */}
       <EditorialLeadSection lang={lang} onNavigate={onNavigate} />
 

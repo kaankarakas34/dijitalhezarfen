@@ -225,7 +225,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#080A0F] text-[#F3F4F0] flex flex-col justify-between font-sans selection:bg-cyan-400/25 selection:text-white relative">
+    <div className="min-h-screen bg-[#000000] text-gray-100 flex flex-col justify-between font-sans selection:bg-cyan-500/30 selection:text-white relative">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-md focus:bg-cyan-400 focus:text-[#080A0F] focus:font-semibold focus:text-xs"

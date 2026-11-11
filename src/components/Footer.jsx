@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import logoBlue from '../../logo/Dijital Hezarfen (9).png';
 
 const Github = (props) => (
@@ -30,7 +30,7 @@ const Youtube = (props) => (
   </svg>
 );
 
-export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
+export default function Footer({ onNavigate, lang }) {
   const isTr = lang === 'tr';
 
   const t = {
@@ -99,7 +99,7 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
         {/* Buttons Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto font-sans">
           <button
-            onClick={() => onOpenApplyModal('girisim')}
+            onClick={() => onNavigate('/girisimler')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-cyber text-[#0B0F19] hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnVenture}</span>
@@ -107,7 +107,7 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
           </button>
           
           <button
-            onClick={() => onOpenApplyModal('tunel')}
+            onClick={() => onNavigate('/akademi/girisimcilik-tuneli')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-gradient-violet text-white hover:shadow-lg hover:shadow-violet-500/25 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnTunnel}</span>
@@ -123,7 +123,7 @@ export default function Footer({ onOpenApplyModal, onNavigate, lang }) {
           </button>
 
           <button
-            onClick={() => onOpenApplyModal('kurumsal')}
+            onClick={() => onNavigate('/kurumsal')}
             className="flex items-center justify-between px-6 py-4 rounded-xl font-semibold text-sm bg-white/5 border border-white/10 hover:border-white/20 text-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-0.5 group cursor-pointer"
           >
             <span>{t.btnCorporate}</span>
